@@ -1,0 +1,12 @@
+# Compiled
+*.elc
+
+# Packaging
+.cask
+
+# github-elpa
+.github-elpa-working/
+
+# Cask repository
+
+cask-repository/
