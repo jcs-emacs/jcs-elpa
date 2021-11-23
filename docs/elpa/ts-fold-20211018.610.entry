@@ -1,0 +1,17 @@
+(ts-fold .
+	 [(20211018 610)
+	  ((emacs
+	    (26 1))
+	   (tree-sitter
+	    (0 15 1))
+	   (s
+	    (1 9 0))
+	   (fringe-helper
+	    (1 0 1)))
+	  "Code folding using tree-sitter" tar
+	  ((:commit . "d6fbca3748a113c1ededbf20d84712048ade74da")
+	   (:authors
+	    ("Junyi Hou" . "junyi.yi.hou@gmail.com")
+	    ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
+	   (:maintainer "Junyi Hou" . "junyi.yi.hou@gmail.com")
+	   (:url . "https://github.com/jcs090218/ts-fold"))])

@@ -1,0 +1,3 @@
+(1
+ (jayces-mode . [(20200720 1038) ((emacs (24 3))) "Major mode for editing JayCeS file" single ((:commit . "8c447e3db8beed2ce5a16e445bc0f1ab3eff34c9") (:authors ("Shen, Jen-Chieh" . "jcs090218@gmail.com")) (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com") (:url . "https://github.com/jcs-elpa/jayces-mode"))])
+ (ts-fold . [(20211018 610) ((emacs (26 1)) (tree-sitter (0 15 1)) (s (1 9 0)) (fringe-helper (1 0 1))) "Code folding using tree-sitter" tar ((:commit . "d6fbca3748a113c1ededbf20d84712048ade74da") (:authors ("Junyi Hou" . "junyi.yi.hou@gmail.com") ("Shen, Jen-Chieh" . "jcs090218@gmail.com")) (:maintainer "Junyi Hou" . "junyi.yi.hou@gmail.com") (:url . "https://github.com/jcs090218/ts-fold"))]))

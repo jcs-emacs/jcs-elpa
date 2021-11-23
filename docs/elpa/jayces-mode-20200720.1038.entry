@@ -1,0 +1,10 @@
+(jayces-mode .
+	     [(20200720 1038)
+	      ((emacs
+		(24 3)))
+	      "Major mode for editing JayCeS file" single
+	      ((:commit . "8c447e3db8beed2ce5a16e445bc0f1ab3eff34c9")
+	       (:authors
+		("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
+	       (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
+	       (:url . "https://github.com/jcs-elpa/jayces-mode"))])
