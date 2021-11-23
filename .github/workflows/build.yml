@@ -22,6 +22,11 @@ jobs:
       with:
         version: 'snapshot'
 
+    - name: Set git config
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+
     - uses: actions/checkout@v2
 
     - name: Build packages
@@ -32,8 +37,6 @@ jobs:
     - name: Push to repo
       continue-on-error: true
       run: |
-        git config user.name github-actions
-        git config user.email github-actions@github.com
         git add .
         git commit -m "Update ELPA"
         git push
