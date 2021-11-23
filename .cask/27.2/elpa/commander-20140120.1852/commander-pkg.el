@@ -1,0 +1,2 @@
+;;; Generated package description from commander.el  -*- no-byte-compile: t -*-
+(define-package "commander" "20140120.1852" "Emacs command line parser" '((s "1.6.0") (dash "2.0.0") (cl-lib "0.3") (f "0.6.1")) :commit "9ba1456b0a389a2f7b42b6f42a4208ddd87ce609" :authors '(("Johan Andersson" . "johan.rejeep@gmail.com")) :maintainer '("Johan Andersson" . "johan.rejeep@gmail.com") :keywords '("cli" "argv") :url "http://github.com/rejeep/commander.el")
