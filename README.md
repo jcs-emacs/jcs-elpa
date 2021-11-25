@@ -6,7 +6,7 @@
 
 ELPA for [jcs-emacs](https://github.com/jcs090218/jcs-emacs), using [github-elpa](https://github.com/10sr/github-elpa)
 
-## How to use?
+## 🔨 How to use?
 
 Add the following to your configuration:
 
