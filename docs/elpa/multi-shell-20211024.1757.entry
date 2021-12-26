@@ -1,0 +1,10 @@
+(multi-shell .
+	     [(20211024 1757)
+	      ((emacs
+		(24 4)))
+	      "Managing multiple shell buffers" single
+	      ((:commit . "9d70711a8778644f0c59248f708490d88f9735a6")
+	       (:authors
+		("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
+	       (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
+	       (:url . "https://github.com/jcs-elpa/multi-shell"))])
