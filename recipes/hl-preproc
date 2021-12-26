@@ -1,0 +1,1 @@
+(hl-preproc :repo "emacs-vs/hl-preproc" :fetcher github)

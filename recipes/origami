@@ -1,0 +1,1 @@
+(origami :repo "elp-revive/origami.el" :fetcher github)

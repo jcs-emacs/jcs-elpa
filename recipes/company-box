@@ -1,0 +1,4 @@
+(company-box
+ :repo "elp-revive/company-box"
+ :fetcher github
+ :files (:defaults "images"))

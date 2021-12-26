@@ -1,0 +1,1 @@
+(eldoc-meta-net :repo "emacs-vs/eldoc-meta-net" :fetcher github)
