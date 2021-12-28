@@ -1,9 +1,0 @@
-(asoc .
-      [(20170917 1031)
-       nil "alist functions and macros" single
-       ((:commit . "4a3309a9f250656da6f4a9d34feedf4f5666b17a")
-	(:authors
-	 ("Troy Pracy" . "troyp7@gmail.com"))
-	(:maintainer "Troy Pracy" . "troyp7@gmail.com")
-	(:keywords "alist" "data-types")
-	(:url . "https://github.com/troyp/asoc.el"))])
