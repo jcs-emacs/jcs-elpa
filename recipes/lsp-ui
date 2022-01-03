@@ -1,3 +1,0 @@
-(lsp-ui :repo "jcs-PR/lsp-ui"
-        :fetcher github
-        :files (:defaults "lsp-ui-doc.html" "resources"))
