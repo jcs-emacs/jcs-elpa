@@ -1,5 +1,5 @@
 (lsp-ui .
-	[(20220103 648)
+	[(20220103 652)
 	 ((emacs
 	   (26 1))
 	  (dash
@@ -9,7 +9,7 @@
 	  (markdown-mode
 	   (2 3)))
 	 "UI modules for lsp-mode" tar
-	 ((:commit . "11722ec017329486de787237118c213540e9436a")
+	 ((:commit . "26325e58153c659fe291b4970fd2c034a173e46b")
 	  (:authors
 	   ("Sebastien Chapuis <sebastien@chapu.is>, Fangrui Song" . "i@maskray.me"))
 	  (:maintainer "Sebastien Chapuis <sebastien@chapu.is>, Fangrui Song" . "i@maskray.me")
