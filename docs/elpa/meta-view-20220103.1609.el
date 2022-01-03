@@ -1,14 +1,14 @@
 ;;; meta-view.el --- View metadata from .NET assemblies  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2021  Shen, Jen-Chieh
+;; Copyright (C) 2021-2022  Shen, Jen-Chieh
 ;; Created date 2021-06-24 14:01:15
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Description: View metadata from .NET assemblies
 ;; Keyword: assembly metadata source
 ;; Version: 0.1.0
-;; Package-Version: 20211020.631
-;; Package-Commit: 85e0f1c79ce79b27146900bab008e03e227dee6c
+;; Package-Version: 20220103.1609
+;; Package-Commit: 6626c166aec681e29083bdd7f9518529c4b8f3b8
 ;; Package-Requires: ((emacs "26.1") (csharp-mode "0.11.0") (meta-net "1.1.0") (ht "2.3") (f "0.20.0"))
 ;; URL: https://github.com/emacs-vs/meta-view
 

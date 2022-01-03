@@ -1,5 +1,5 @@
 (eldoc-meta-net .
-		[(20211020 618)
+		[(20220103 1608)
 		 ((emacs
 		   (26 1))
 		  (meta-net
@@ -9,7 +9,7 @@
 		  (csharp-mode
 		   (1 0 2)))
 		 "Eldoc support for meta-net" single
-		 ((:commit . "478691bdf140d67a1cd2653336353a73f3f52faf")
+		 ((:commit . "416134e3ec64cc8b0b80fc50f2593244e78202ac")
 		  (:authors
 		   ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 		  (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")

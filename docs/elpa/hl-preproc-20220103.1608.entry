@@ -1,11 +1,11 @@
 (hl-preproc .
-	    [(20210714 334)
+	    [(20220103 1608)
 	     ((emacs
 	       (24 4))
 	      (meta-net
 	       (1 1 0)))
 	     "Unhighlight invalid preprocessor region" single
-	     ((:commit . "7d3236f6b94bdd5ff0e56d41f5a3f970100eb4b9")
+	     ((:commit . "3dc46115d77a03950c5df64ad04d78b4a3af6cc7")
 	      (:authors
 	       ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 	      (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")

@@ -1,5 +1,5 @@
 (meta-view .
-	   [(20211020 631)
+	   [(20220103 1609)
 	    ((emacs
 	      (26 1))
 	     (csharp-mode
@@ -11,7 +11,7 @@
 	     (f
 	      (0 20 0)))
 	    "View metadata from .NET assemblies" single
-	    ((:commit . "85e0f1c79ce79b27146900bab008e03e227dee6c")
+	    ((:commit . "6626c166aec681e29083bdd7f9518529c4b8f3b8")
 	     (:authors
 	      ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 	     (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")

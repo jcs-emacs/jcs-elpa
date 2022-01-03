@@ -1,14 +1,14 @@
 ;;; eldoc-meta-net.el --- Eldoc support for meta-net  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2021  Shen, Jen-Chieh
+;; Copyright (C) 2021-2022  Shen, Jen-Chieh
 ;; Created date 2021-07-12 23:32:13
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Description: Eldoc support for meta-net
 ;; Keyword: eldoc c# dotnet sdk
 ;; Version: 0.1.0
-;; Package-Version: 20211020.618
-;; Package-Commit: 478691bdf140d67a1cd2653336353a73f3f52faf
+;; Package-Version: 20220103.1608
+;; Package-Commit: 416134e3ec64cc8b0b80fc50f2593244e78202ac
 ;; Package-Requires: ((emacs "26.1") (meta-net "1.1.0") (ht "2.3") (csharp-mode "1.0.2"))
 ;; URL: https://github.com/emacs-vs/eldoc-meta-net
 

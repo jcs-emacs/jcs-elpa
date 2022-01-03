@@ -1,14 +1,14 @@
 ;;; hl-preproc.el --- Unhighlight invalid preprocessor region  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2021  Shen, Jen-Chieh
+;; Copyright (C) 2021-2022  Shen, Jen-Chieh
 ;; Created date 2021-07-03 17:07:11
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Description: Unhighlight invalid preprocessor region
 ;; Keyword: preprocessor
 ;; Version: 0.1.0
-;; Package-Version: 20210714.334
-;; Package-Commit: 7d3236f6b94bdd5ff0e56d41f5a3f970100eb4b9
+;; Package-Version: 20220103.1608
+;; Package-Commit: 3dc46115d77a03950c5df64ad04d78b4a3af6cc7
 ;; Package-Requires: ((emacs "24.4") (meta-net "1.1.0"))
 ;; URL: https://github.com/emacs-vs/hl-preproc
 

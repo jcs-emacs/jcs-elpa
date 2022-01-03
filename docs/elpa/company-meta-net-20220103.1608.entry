@@ -1,5 +1,5 @@
 (company-meta-net .
-		  [(20210713 1659)
+		  [(20220103 1608)
 		   ((emacs
 		     (25 1))
 		    (company
@@ -9,7 +9,7 @@
 		    (ht
 		     (2 3)))
 		   "Company completion for C# project using meta-net" single
-		   ((:commit . "6dbb809f3c0a8950b9d5b420c3be2806f1411d8e")
+		   ((:commit . "4a151dca307250f55a0c89e83fb27b67f7787fea")
 		    (:authors
 		     ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 		    (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")

@@ -1,14 +1,14 @@
 ;;; company-meta-net.el --- Company completion for C# project using meta-net  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2021  Shen, Jen-Chieh
+;; Copyright (C) 2021-2022  Shen, Jen-Chieh
 ;; Created date 2021-06-24 21:19:45
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Description: Company completion for C# project using meta-net
 ;; Keyword: csproj csharp company
 ;; Version: 0.1.0
-;; Package-Version: 20210713.1659
-;; Package-Commit: 6dbb809f3c0a8950b9d5b420c3be2806f1411d8e
+;; Package-Version: 20220103.1608
+;; Package-Commit: 4a151dca307250f55a0c89e83fb27b67f7787fea
 ;; Package-Requires: ((emacs "25.1") (company "0.8.12") (meta-net "1.1.0") (ht "2.3"))
 ;; URL: https://github.com/emacs-vs/company-meta-net
 
