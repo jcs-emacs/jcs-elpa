@@ -1,5 +1,5 @@
 (origami .
-	 [(20211011 726)
+	 [(20220103 1603)
 	  ((emacs
 	    (27 1))
 	   (s
@@ -9,7 +9,7 @@
 	   (fringe-helper
 	    (1 0 1)))
 	  "Flexible text folding" tar
-	  ((:commit . "adf3cf1b813d93cfd7153a3e3799232e8545366b")
+	  ((:commit . "bff920404c23ed953b1597e464435317f1437b93")
 	   (:authors
 	    ("Greg Sexton" . "gregsexton@gmail.com"))
 	   (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
