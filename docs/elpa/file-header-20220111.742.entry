@@ -1,11 +1,9 @@
 (file-header .
-	     [(20200720 1023)
+	     [(20220111 742)
 	      ((emacs
-		(24 4))
-	       (s
-		(1 12 0)))
+		(24 4)))
 	      "Highly customizable self design file header" single
-	      ((:commit . "7d54ce38f3cc7ce013fb01a95f4fe8102e59ba00")
+	      ((:commit . "0484d553b0e55c2f2e57599959ba81649ccd10e7")
 	       (:authors
 		("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")

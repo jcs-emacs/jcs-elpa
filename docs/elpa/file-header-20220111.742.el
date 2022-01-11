@@ -1,15 +1,15 @@
 ;;; file-header.el --- Highly customizable self design file header  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2018  Shen, Jen-Chieh
+;; Copyright (C) 2018-2022  Shen, Jen-Chieh
 ;; Created date 2018-12-24 16:49:42
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Description: Highly customizable self design file header.
 ;; Keyword: file header
 ;; Version: 0.1.2
-;; Package-Version: 20200720.1023
-;; Package-Commit: 7d54ce38f3cc7ce013fb01a95f4fe8102e59ba00
-;; Package-Requires: ((emacs "24.4") (s "1.12.0"))
+;; Package-Version: 20220111.742
+;; Package-Commit: 0484d553b0e55c2f2e57599959ba81649ccd10e7
+;; Package-Requires: ((emacs "24.4"))
 ;; URL: https://github.com/jcs-elpa/file-header
 
 ;; This file is NOT part of GNU Emacs.
@@ -34,8 +34,6 @@
 
 ;;; Code:
 
-(require 's)
-
 (defgroup file-header nil
   "Highly customizable self design file header."
   :prefix "file-header-"
@@ -47,6 +45,10 @@
   :type 'string
   :group 'file-header)
 
+(defun file-header--s-replace (old new s)
+  "Replace OLD with NEW in S."
+  (replace-regexp-in-string (regexp-quote old) new s t t))
+
 (defun file-header--get-string-from-file (path)
   "Return PATH's file content."
   (with-temp-buffer
@@ -56,28 +58,26 @@
 (defun file-header--parse-ini (path)
   "Parse a .ini file from PATH."
   (let ((tmp-ini (file-header--get-string-from-file path))
-        (tmp-ini-list '()) (tmp-pair-list nil)
         (tmp-keyword "") (tmp-value "")
-        (count 0))
+        (count 0) tmp-ini-list tmp-pair-list)
     (setq tmp-ini (split-string tmp-ini "\n"))
 
     (dolist (tmp-line tmp-ini)
-      ;; check not comment.
+      ;; check not comment
       (when (not (string-match-p "#" tmp-line))
-        ;; Split it.
+        ;; Split it
         (setq tmp-pair-list (split-string tmp-line "="))
 
-        ;; Assign to temporary variables.
-        (setq tmp-keyword (nth 0 tmp-pair-list))
-        (setq tmp-value (nth 1 tmp-pair-list))
+        ;; Assign to temporary variables
+        (setq tmp-keyword (nth 0 tmp-pair-list)
+              tmp-value (nth 1 tmp-pair-list))
 
-        ;; Check empty value.
-        (when (and (not (string= tmp-keyword ""))
-                   (not (equal tmp-value nil)))
-          (let ((tmp-list '()))
+        ;; Check empty value
+        (when (and (not (string= tmp-keyword "")) tmp-value)
+          (let (tmp-list)
             (push tmp-keyword tmp-list)
             (setq tmp-ini-list (append tmp-ini-list tmp-list)))
-          (let ((tmp-list '()))
+          (let (tmp-list)
             (push tmp-value tmp-list)
             (setq tmp-ini-list (append tmp-ini-list tmp-list)))))
       (setq count (1+ count)))
@@ -88,18 +88,18 @@
 ;;;###autoload
 (defun file-header-swap-keyword-template (template-str)
   "Swap all keyword in TEMPLATE-STR to proper information."
-  (let ((tmp-ini-list '()) (tmp-keyword "") (tmp-value "") (tmp-index 0))
+  (let ((tmp-keyword "") (tmp-value "") (tmp-index 0) tmp-ini-list)
     ;; parse and get the list of keyword and value.
     (setq tmp-ini-list (file-header--parse-ini file-header-template-config-filepath))
 
     (while (< tmp-index (length tmp-ini-list))
-      (setq tmp-keyword (nth tmp-index tmp-ini-list))
-      (setq tmp-value (nth (1+ tmp-index) tmp-ini-list))
+      (setq tmp-keyword (nth tmp-index tmp-ini-list)
+            tmp-value (nth (1+ tmp-index) tmp-ini-list))
 
       ;; Add `#' infront and behind the keyword.
       ;; For instance, `CREATOR' -> `#CREATOR#'.
-      (setq tmp-keyword (concat "#" tmp-keyword))
-      (setq tmp-keyword (concat tmp-keyword "#"))
+      (setq tmp-keyword (concat "#" tmp-keyword)
+            tmp-keyword (concat tmp-keyword "#"))
 
       ;; NOTE: Check keyword exist before replacing it.
       ;; Or else it will cause `max-lisp-eval-depth' error.
@@ -108,16 +108,15 @@
         (if (string-match-p "(" tmp-value)
             (progn
               ;; Remove `(' and `)', if is a function.
-              (setq tmp-value (s-replace "(" "" tmp-value))
-              (setq tmp-value (s-replace ")" "" tmp-value))
-
-              (setq template-str (s-replace tmp-keyword
-                                            (funcall (intern tmp-value))
-                                            template-str)))
+              (setq tmp-value (file-header--s-replace "(" "" tmp-value)
+                    tmp-value (file-header--s-replace ")" "" tmp-value)
+                    template-str (file-header--s-replace tmp-keyword
+                                                         (funcall (intern tmp-value))
+                                                         template-str)))
           ;; Replace it normally with a string.
-          (setq template-str (s-replace tmp-keyword
-                                        tmp-value
-                                        template-str))))
+          (setq template-str (file-header--s-replace tmp-keyword
+                                                     tmp-value
+                                                     template-str))))
       ;; Add 2 to skip keyword and value at the same time.
       (setq tmp-index (+ tmp-index 2))))
 
