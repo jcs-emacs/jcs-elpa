@@ -7,8 +7,8 @@
 ;; Description: Completion style for flx
 ;; Keyword: flx completion style
 ;; Version: 0.1.0
-;; Package-Version: 20220119.916
-;; Package-Commit: bea20c6db5922045c4c737437a5aa6c691d781f2
+;; Package-Version: 20220119.930
+;; Package-Commit: 03cd0a161d253a66ed28b8704053cf68c6364513
 ;; Package-Requires: ((emacs "24.3") (flx "0.5"))
 ;; URL: https://github.com/jcs-elpa/flx-style
 
@@ -38,7 +38,7 @@
 (require 'flx)
 
 (defvar flx-style-cache nil
-  "Stores company-mode's flx-cache.")
+  "Stores flx-cache.")
 
 (defun flx-style-commonality (strs)
   "Return the largest string that fuzzy matches all STRS."
@@ -160,10 +160,12 @@
              (+ (length prefix)
                 (cl-position (apply #'max holes) holes)))))))))
 
+;;;###autoload
 (defun flx-style-try-completion (string table predicate point)
   "Fuzzy version of completion-try-completion"
   (flx-style-completion string table predicate point))
 
+;;;###autoload
 (defun flx-style-all-completions (string table predicate point)
   "Fuzzy version of completion-all-completions"
   (flx-style-completion string table predicate point 'all))
