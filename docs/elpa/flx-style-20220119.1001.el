@@ -7,8 +7,8 @@
 ;; Description: Completion style for flx
 ;; Keyword: flx completion style
 ;; Version: 0.1.0
-;; Package-Version: 20220119.930
-;; Package-Commit: 9099901c571c512694cfef3db30e6d7f50608a51
+;; Package-Version: 20220119.1001
+;; Package-Commit: b23c21c329c5a6c7bd24362c95c67f7502fd9f96
 ;; Package-Requires: ((emacs "24.3") (flx "0.5"))
 ;; URL: https://github.com/jcs-elpa/flx-style
 
@@ -100,11 +100,9 @@
     (dolist (str strs)
       (dolist (hole (flx-style-find-holes common str))
         (cl-incf (elt holes hole))))
-
     (cons common (append holes nil))))
 
-(defun flx-style-completion (string table predicate point
-                                    &optional all-p)
+(defun flx-style-completion (string table predicate point &optional all-p)
   "Helper function implementing a fuzzy completion-style"
   (let* ((beforepoint (substring string 0 point))
          (afterpoint (substring string point))
