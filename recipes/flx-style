@@ -1,0 +1,1 @@
+(flx-style :repo "jcs-elpa/flx-style" :fetcher github)
