@@ -57,3 +57,14 @@ jobs:
 
     - name: Generate archive .json
       run: make build
+
+    - name: Set git config
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+
+    - name: Push to repo
+      continue-on-error: true
+      run: |
+        git add .
+        git push
