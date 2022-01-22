@@ -2,27 +2,32 @@
 ;;; Commentary:
 ;;; Code:
 
-(require 'package)
+(defconst archive-contents-string
+  (with-temp-buffer
+    (insert-file-contents "../elpa/archive-contents")
+    (buffer-string))
+  "Archive content string.")
 
-(setq package-archives
-      '(("jcs" . "https://jcs-emacs.github.io/elpa/elpa/")))
+(defconst archive-contents
+  (eval (thing-at-point--read-from-whole-string
+         (concat "'" archive-contents-string)))
+  "Turn it into lisp object..")
 
-(setq package-enable-at-startup nil  ; To avoid initializing twice
-      package-check-signature nil)
-
-(package-refresh-contents)
+(pop archive-contents)  ; remove 1
 
 (let (json)
-  (dolist (pkg package-archive-contents)
-    (let* ((pkg-name (car pkg)) (desc (car (cdr pkg)))
-           (version (package-desc-version desc))
-           (summary (package-desc-summary desc))
-           (extras (package-desc-extras desc))
-           (url (cdr (assq :url extras))))
-      (push (cons "name" pkg-name) json)
-      (push (cons "summary" summary) json)
-      (push (cons "version" version) json)
-      (push (cons "url" url) json)))
+  (dolist (pkg archive-contents)
+    (let* ((pkg-name (car pkg)) (desc (cdr pkg))
+           (version (aref desc 0))
+           (summary (aref desc 2))
+           (extras (aref desc 4))
+           (url (cdr (assq :url extras)))
+           object)
+      (push (cons "name" pkg-name) object)
+      (push (cons "summary" summary) object)
+      (push (cons "version" version) object)
+      (push (cons "url" url) object)
+      (push object json)))
   (write-region (json-encode json) nil "../archive.json"))
 
 ;; Local Variables:
