@@ -6,5 +6,5 @@ CASK ?= cask
 .PHONY: startup
 
 build:
-	@echo "Testing..."
+	@echo "Building archive json..."
 	@$(EMACS) -nw --batch -l "./docs/scripts/build.el"
