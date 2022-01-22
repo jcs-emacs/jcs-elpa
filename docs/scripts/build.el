@@ -12,7 +12,18 @@
 
 (package-refresh-contents)
 
-(message "%s" package-archive-contents)
+(let (json)
+  (dolist (pkg package-archive-contents)
+    (let* ((pkg-name (car pkg)) (desc (car (cdr pkg)))
+           (version (package-desc-version desc))
+           (summary (package-desc-summary desc))
+           (extras (package-desc-extras desc))
+           (url (cdr (assq :url extras))))
+      (push (cons "name" pkg-name) json)
+      (push (cons "summary" summary) json)
+      (push (cons "version" version) json)
+      (push (cons "url" url) json)))
+  (write-region (json-encode json) nil "../archive.json"))
 
 ;; Local Variables:
 ;; coding: utf-8
