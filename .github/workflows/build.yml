@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build:  # Build package archive
     runs-on: ubuntu-latest
     steps:
     - uses: purcell/setup-emacs@master
@@ -41,6 +41,7 @@ jobs:
         git add .
         git push
 
+  # Generate archive.json file for website
   generate_json:
     needs: [build]
     runs-on: ubuntu-latest
