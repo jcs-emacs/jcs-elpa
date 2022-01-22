@@ -8,3 +8,13 @@
  */
 
 "use strict";
+
+const archive_url = "https://raw.githubusercontent.com/jcs-emacs/elpa/master/docs/archive.json";
+
+$(document).ready(function(){
+  $.getJSON(archive_url, function(data){
+    console.log(data);
+  }).fail(function(){
+    console.log("An error has occurred.");
+  });
+});
