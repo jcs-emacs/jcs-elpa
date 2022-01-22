@@ -32,11 +32,7 @@
       (push (cons "version" version) object)
       (push (cons "url" url) object)
       (push object json)))
-  (write-region (json-encode json) nil "./docs/archive.json")
-  (message "json: %s" (with-temp-buffer
-                        (insert-file-contents "./docs/archive.json")
-                        (buffer-string)))
-  )
+  (write-region (json-encode json) nil "./archive.json"))
 
 ;; Local Variables:
 ;; coding: utf-8
