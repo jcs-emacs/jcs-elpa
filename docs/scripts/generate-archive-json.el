@@ -12,6 +12,8 @@
     (buffer-string))
   "Archive content string.")
 
+(message "%s" archive-contents-string)
+
 (defconst archive-contents
   (eval (car (read-from-string (concat "'" archive-contents-string))))
   "Turn it into lisp object.")
