@@ -13,8 +13,8 @@
   "Archive content string.")
 
 (defconst archive-contents
-  (eval (thing-at-point--read-from-whole-string
-         (concat "'" archive-contents-string)))
+  `(,(thing-at-point--read-from-whole-string
+      (concat "'" archive-contents-string)))
   "Turn it into lisp object.")
 
 (pop archive-contents)  ; remove 1
