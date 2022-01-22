@@ -12,6 +12,8 @@
     (buffer-string))
   "Archive content string.")
 
+(message ">>> %s" archive-contents-string)
+
 (defconst archive-contents
   (eval (thing-at-point--read-from-whole-string
          (concat "'" archive-contents-string)))
