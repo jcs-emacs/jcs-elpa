@@ -4,7 +4,8 @@
 
 (defconst archive-contents-string
   (with-temp-buffer
-    (insert-file-contents "../elpa/archive-contents")
+    (or (ignore-errors (insert-file-contents "../elpa/archive-contents"))
+        (ignore-errors (insert-file-contents "./elpa/archive-contents")))
     (buffer-string))
   "Archive content string.")
 
