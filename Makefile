@@ -7,4 +7,4 @@ CASK ?= cask
 
 build:
 	@echo "Building archive json..."
-	@$(EMACS) -nw --batch -l "./docs/scripts/build.el"
+	@$(EMACS) -nw --batch -l "./docs/scripts/generate-archive-json.el"
