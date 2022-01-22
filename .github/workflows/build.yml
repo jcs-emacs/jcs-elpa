@@ -35,30 +35,8 @@ jobs:
         cask install
         cask exec github-elpa update
 
-    - name: Push to repo
-      continue-on-error: true
-      run: |
-        git add .
-        git push
-
-  # Generate archive.json file for website
-  generate_json:
-    needs: [build]
-    runs-on: ubuntu-latest
-    steps:
-    - uses: purcell/setup-emacs@master
-      with:
-        version: 27.2
-
-    - uses: actions/checkout@v2
-
     - name: Generate archive .json
       run: make build
-
-    - name: Set git config
-      run: |
-        git config user.name github-actions
-        git config user.email github-actions@github.com
 
     - name: Push to repo
       continue-on-error: true
