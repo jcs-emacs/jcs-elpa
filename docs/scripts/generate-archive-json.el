@@ -1,4 +1,4 @@
-;;; build.el --- Build archive json  -*- lexical-binding: t -*-
+;;; generate-archive-json.el --- Build archive json  -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
 
@@ -37,4 +37,4 @@
 ;; coding: utf-8
 ;; no-byte-compile: t
 ;; End:
-;;; build.el ends here
+;;; generate-archive-json.el ends here
