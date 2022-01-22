@@ -18,7 +18,7 @@ jobs:
     - uses: purcell/setup-emacs@master
       with:
         version: 27.2
-    
+
     - uses: conao3/setup-cask@master
       with:
         version: 'snapshot'
@@ -40,3 +40,19 @@ jobs:
       run: |
         git add .
         git push
+
+  generate_json:
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: purcell/setup-emacs@master
+      with:
+        version: 27.2
+
+    - uses: conao3/setup-cask@master
+      with:
+        version: 'snapshot'
+
+    - uses: actions/checkout@v2
+
+    
