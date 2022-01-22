@@ -12,7 +12,7 @@
     (buffer-string))
   "Archive content string.")
 
-(message "%s" archive-contents-string)
+(message ">>>>>> %s" archive-contents-string)
 
 ;; Local Variables:
 ;; coding: utf-8
