@@ -1,8 +1,8 @@
-;;; build.el --- Test the configuration  -*- lexical-binding: t -*-
+;;; build.el --- Build archive json  -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
 
-(require 'pakcage)
+(require 'package)
 
 (setq package-archives
       '(("jcs" . "https://jcs-emacs.github.io/elpa/elpa/")))
