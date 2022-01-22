@@ -10,7 +10,7 @@
 (setq package-enable-at-startup nil  ; To avoid initializing twice
       package-check-signature nil)
 
-(package-initialize)
+(package-refresh-contents)
 
 (message "%s" package-archive-contents)
 
