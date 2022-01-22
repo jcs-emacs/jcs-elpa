@@ -2,6 +2,8 @@
 ;;; Commentary:
 ;;; Code:
 
+(require 'thingatpt)
+
 (defconst archive-contents-string
   (with-temp-buffer
     (or (ignore-errors (insert-file-contents "../elpa/archive-contents"))
