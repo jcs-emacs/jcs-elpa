@@ -31,7 +31,7 @@
       (push (cons "version" version) object)
       (push (cons "url" url) object)
       (push object json)))
-  (write-region (json-encode json) nil "../archive.json"))
+  (write-region (json-encode json) nil "./archive.json"))
 
 ;; Local Variables:
 ;; coding: utf-8
