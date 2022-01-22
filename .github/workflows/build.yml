@@ -50,10 +50,6 @@ jobs:
       with:
         version: 27.2
 
-    - uses: conao3/setup-cask@master
-      with:
-        version: 'snapshot'
-
     - uses: actions/checkout@v2
 
     - name: Generate archive .json
