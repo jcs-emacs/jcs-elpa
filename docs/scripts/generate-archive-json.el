@@ -12,12 +12,9 @@
     (buffer-string))
   "Archive content string.")
 
-(defvar archive-contents nil
+(defconst archive-contents
+  (eval '())
   "Turn it into lisp object.")
-
-(setq archive-contents
-      (eval (thing-at-point--read-from-whole-string
-             (concat "'" archive-contents-string))))
 
 (pop archive-contents)  ; remove 1
 
