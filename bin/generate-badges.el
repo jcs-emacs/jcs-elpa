@@ -14,13 +14,13 @@
 
 (ignore-errors (delete-directory output-dir t))  ; clean up first
 
-(jcs-print "mkdir!")
+(message "mkdir!")
 (make-directory output-dir)
 
-(jcs-print "?")
+(message "?")
 
 (dolist (pkg archive-contents)
-  (jcs-print pkg)
+  (message "%s" pkg)
   (let* ((pkg-name (car pkg)) (desc (cdr pkg))
          (version (aref desc 0))
          (version (mapconcat (lambda (item) (format "%s" item)) version "."))
