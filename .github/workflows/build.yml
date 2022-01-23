@@ -42,6 +42,7 @@ jobs:
       continue-on-error: true
       run: |
         git pull
+        git status
         git add .
         git commit -m "Update archive.json"
         git push
