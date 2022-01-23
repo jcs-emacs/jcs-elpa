@@ -51,7 +51,7 @@ $(document).ready(function(){
         '<tr>' +
           '<td><a href="' + desc.url + '">' + desc.name + '</a></td>' +
           '<td><a href="' + desc.url + '">' + desc.summary + '</a></td>' +
-          '<td>' + desc.version + '⭳</td>' +
+          '<td><a href="' + desc.url + '">' + desc.version + ' ⮛</a></td>' +
           '<td><a href="' + base_url + 'recipes/' + desc.name + '">🍴</a></td>' +
           '<td><a href="' + desc.url + '">' + desc.source + '</a></td>' +
           '<td><img src="' + base_url_raw + 'master/badges/' + desc.name + '.svg"/></td>' +
