@@ -7,7 +7,7 @@
 
 (defconst archive-contents-string
   (with-temp-buffer
-    (or (ignore-errors (insert-file-contents "../elpa/archive-contents"))
+    (or (ignore-errors (insert-file-contents "../docs/elpa/archive-contents"))
         (ignore-errors (insert-file-contents "./docs/elpa/archive-contents")))  ; CI
     (buffer-string))
   "Archive content string.")
@@ -32,7 +32,7 @@
       (push (cons "version" (mapconcat (lambda (item) (format "%s" item)) version ".")) object)
       (push (cons "url" url) object)
       (push (reverse object) json)))
-  (write-region (json-encode (reverse json)) nil "./docs/archive.json"))
+  (write-region (json-encode (reverse json)) nil "../docs/archive.json"))
 
 ;; Local Variables:
 ;; coding: utf-8
