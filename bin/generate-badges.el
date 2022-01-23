@@ -2,8 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 
-(load-file "./prepare.el")
-
+(load-file "./bin/prepare.el")
 (require 'url-handlers)
 
 (defconst svg-url-format
@@ -17,6 +16,13 @@
 (make-directory output-dir)
 
 
+
+(dolist (pkg archive-contents)
+  (let* ((pkg-name (car pkg)) (desc (cdr pkg))
+         (version (aref desc 0))
+         (version (mapconcat (lambda (item) (format "%s" item)) version ".")))
+    (url-copy-file (format svg-url-format version)
+                   (concat output-dir pkg-name ".svg"))))
 
 ;; Local Variables:
 ;; coding: utf-8
