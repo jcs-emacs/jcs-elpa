@@ -46,5 +46,5 @@ jobs:
       run: |
         git pull
         git add .
-        git commit -m "Update archive.json"
+        git commit -m "Update data"
         git push
