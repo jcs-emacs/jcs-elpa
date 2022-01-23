@@ -10,11 +10,15 @@
 "use strict";
 
 const archive_url = "https://raw.githubusercontent.com/jcs-emacs/elpa/master/docs/archive.json";
+var archive = null;
 
 $(document).ready(function(){
+
   $.getJSON(archive_url, function(data){
+    archive = data;
     console.log(data);
   }).fail(function(){
     console.log("An error has occurred.");
   });
+
 });
