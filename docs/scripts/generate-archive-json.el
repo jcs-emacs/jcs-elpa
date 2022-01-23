@@ -31,7 +31,7 @@
       (push (cons "summary" summary) object)
       (push (cons "version" version) object)
       (push (cons "url" url) object)
-      (push object json)))
+      (push (reverse object) json)))
   (write-region (json-encode (reverse json)) nil "./docs/archive.json"))
 
 ;; Local Variables:
