@@ -32,7 +32,7 @@
       (push (cons "version" (mapconcat (lambda (item) (format "%s" item)) version ".")) object)
       (push (cons "url" url) object)
       (push (reverse object) json)))
-  (write-region (json-encode (reverse json)) nil "../docs/archive.json"))
+  (write-region (json-encode (reverse json)) nil "./docs/archive.json"))
 
 ;; Local Variables:
 ;; coding: utf-8
