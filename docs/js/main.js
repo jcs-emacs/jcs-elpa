@@ -9,8 +9,9 @@
 
 "use strict";
 
-const base_url = "https://raw.githubusercontent.com/jcs-emacs/jcs-elpa/";
-const archive_url = base_url + "master/docs/archive.json";
+const base_url = "https://github.com/jcs-emacs/jcs-elpa/blob/master/";
+const base_url_raw = "https://raw.githubusercontent.com/jcs-emacs/jcs-elpa/";
+const archive_url = base_url_raw + "master/docs/archive.json";
 
 $(document).ready(function(){
   var packageList = $('#package-list');
@@ -22,9 +23,10 @@ $(document).ready(function(){
         '<tr>' +
           '<td>' + desc.name + '</td>' +
           '<td>' + desc.summary + '</td>' +
-          '<td>' + desc.version + '</td>' +
-          '<td>' + 'github' + '</td>' +
-          '<td><img src="' + base_url + 'master/badges/' + desc.name + '.svg"/></td>' +
+          '<td>' + desc.version + '⭳</td>' +
+          '<td><a href="' + base_url + 'recipes/' + desc.name + '">🍴</a></td>' +
+          '<td><a href="' + desc.url + '">' + desc.source + '</a></td>' +
+          '<td><img src="' + base_url_raw + 'master/badges/' + desc.name + '.svg"/></td>' +
           '</tr>');
     }
   }).fail(function(){
