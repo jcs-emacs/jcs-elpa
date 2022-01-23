@@ -17,7 +17,9 @@
       (push (cons "summary" summary) object)
       (push (cons "version" version) object)
       (push (cons "url" url) object)
-      (push (reverse object) json)))
+      (setq object (reverse object))
+      (message "Generating... %s" object)
+      (push object json)))
   (write-region (json-encode (reverse json)) nil "./docs/archive.json"))
 
 ;; Local Variables:

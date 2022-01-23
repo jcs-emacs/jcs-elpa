@@ -20,9 +20,11 @@
 (dolist (pkg archive-contents)
   (let* ((pkg-name (car pkg)) (desc (cdr pkg))
          (version (aref desc 0))
-         (version (mapconcat (lambda (item) (format "%s" item)) version ".")))
-    (url-copy-file (format svg-url-format version)
-                   (concat output-dir pkg-name ".svg"))))
+         (version (mapconcat (lambda (item) (format "%s" item)) version "."))
+         (url (format svg-url-format version))
+         (file (concat output-dir pkg-name ".svg")))
+    (message "Download SVG from `%s` to `%s`" url file)
+    (url-copy-file url file)))
 
 ;; Local Variables:
 ;; coding: utf-8
