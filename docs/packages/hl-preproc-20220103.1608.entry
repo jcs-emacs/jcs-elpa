@@ -1,0 +1,12 @@
+(hl-preproc .
+	    [(20220103 1608)
+	     ((emacs
+	       (24 4))
+	      (meta-net
+	       (1 1 0)))
+	     "Unhighlight invalid preprocessor region" single
+	     ((:commit . "8fb45f62beb78d2ec3926283bad72cacfd86441f")
+	      (:authors
+	       ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
+	      (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
+	      (:url . "https://github.com/emacs-vs/hl-preproc"))])

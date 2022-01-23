@@ -1,0 +1,10 @@
+(github-tags .
+	     [(20210817 745)
+	      ((emacs
+		(24 3)))
+	      "Retrieve tags information through GitHub API" single
+	      ((:commit . "3cee9a9090903c01007c517d275d19d835b1b319")
+	       (:authors
+		("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
+	       (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
+	       (:url . "https://github.com/jcs-elpa/github-tags"))])
