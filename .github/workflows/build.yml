@@ -33,7 +33,7 @@ jobs:
     - name: Build packages
       run: |
         cask install
-        cask exec github-elpa update
+        cask exec github-elpa update -a "./docs/packages"
 
     - name: Generate archive.json file
       run: make generate_archive_json
