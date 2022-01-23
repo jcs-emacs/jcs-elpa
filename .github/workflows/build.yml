@@ -38,6 +38,14 @@ jobs:
     - name: Generate archive.json file
       run: make generate_archive_json
 
+    - name: Push to repo
+      continue-on-error: true
+      run: |
+        git pull
+        git add .
+        git commit -m "Update archive.json"
+        git push
+
     - name: Generate SVG badges
       run: make generate_badges
 
@@ -46,5 +54,5 @@ jobs:
       run: |
         git pull
         git add .
-        git commit -m "Update data"
+        git commit -m "Update SVG badges"
         git push
