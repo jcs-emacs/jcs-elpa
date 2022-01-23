@@ -1,2 +1,0 @@
-
-Unhighlight invalid preprocessor region

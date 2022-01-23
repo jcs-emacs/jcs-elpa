@@ -1,2 +1,0 @@
-
-Completion style for flx
