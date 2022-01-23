@@ -3,8 +3,12 @@ SHELL := /usr/bin/env bash
 EMACS ?= emacs
 CASK ?= cask
 
-.PHONY: startup
+.PHONY: generate_archive_json generate_badges
 
-build:
-	@echo "Building archive json..."
+generate_archive_json:
+	@echo "Generating archive.json file..."
 	@$(EMACS) -nw --batch -l "./bin/generate-archive-json.el"
+
+generate_badges:
+	@echo "Generating badges.."
+	@$(EMACS) -nw --batch -l "./bin/generate-badges.el"

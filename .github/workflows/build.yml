@@ -35,8 +35,11 @@ jobs:
         cask install
         cask exec github-elpa update
 
-    - name: Generate archive .json
-      run: make build
+    - name: Generate archive.json file
+      run: make generate_archive_json
+
+    - name: Generate SVG badges
+      run: make generate_badges
 
     - name: Push to repo
       continue-on-error: true
