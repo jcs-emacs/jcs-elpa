@@ -15,7 +15,7 @@ Add the following to your configuration:
 ```el
 (setq package-archives
       `(,@package-archives
-        ("jcs-elpa" . "https://jcs-emacs.github.io/jcs-elpa/elpa/")))
+        ("jcs-elpa" . "https://jcs-emacs.github.io/jcs-elpa/packages/")))
 ```
 
 ## Contribute
