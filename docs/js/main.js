@@ -18,6 +18,7 @@ var archive = null;
 $(document).ready(function(){
   var packageList = $('#package-list');
   var filter = $('#filter');
+  var state = $('#state');
 
   $.getJSON(archive_url, function(data){
     archive = data;
@@ -40,6 +41,8 @@ $(document).ready(function(){
 
   function disply(query) {
     packageList.empty();
+    state.text('Current List of ' + archive.length + ' Packages');
+
     for (let index = 0; index < archive.length; ++index) {
       let desc = archive[index];
       if (!filtering(query, desc))
