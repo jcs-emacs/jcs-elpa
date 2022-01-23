@@ -10,4 +10,17 @@
 
 body {
   /* background-color: #1E1E1E; */
+  /* color: #D2D2D2; */
+}
+
+#package-table {
+  /* color: #D2D2D2; */
+}
+
+h5 {
+  color: #6B8E23;
+}
+
+a {
+  text-decoration: none;
 }
