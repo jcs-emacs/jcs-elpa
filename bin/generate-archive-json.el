@@ -13,6 +13,7 @@
            (extras (aref desc 4))
            (url (cdr (assq :url extras)))
            (source (cond ((string-match-p "github" url) "github")
+                         ((string-match-p "gitlab" url) "gitlab")
                          (t "git")))
            object)
       (push (cons "name" pkg-name) object)
