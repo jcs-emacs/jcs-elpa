@@ -1,4 +1,4 @@
-;;; generate-badges-version.el --- Generate all SVG badges  -*- lexical-binding: t -*-
+;;; generate-badges-version.el --- Generate SVG badges, version  -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
 
