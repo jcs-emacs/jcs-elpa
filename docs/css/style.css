@@ -9,8 +9,11 @@
  */
 
 body {
-  /* background-color: #1E1E1E; */
-  /* color: #D2D2D2; */
+  background-color: #FFFFFF;
+  background-image:  url('../etc/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #package-table {
