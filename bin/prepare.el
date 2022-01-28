@@ -2,6 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 
+(require 'package)
 (require 'thingatpt)
 (require 'json)
 
