@@ -4,11 +4,12 @@
 
 (load-file "./bin/prepare.el")
 
+(defconst supported-source '("github" "gitlab")
+  "List of supported sources.")
+
 (defun tree-url (source url commit)
   "Return tree url."
-  (if (member source '("github" "gitlab"))
-      (concat url "/tree/" commit)
-    url))
+  (if (member source supported-source) (concat url "/tree/" commit) url))
 
 (let (json)
   (dolist (pkg archive-contents)
@@ -18,9 +19,9 @@
            (extras (aref desc 4))
            (url (cdr (assq :url extras)))
            (commit (cdr (assq :commit extras)))
-           (source (cond ((string-match-p "github" url) "github")
-                         ((string-match-p "gitlab" url) "gitlab")
-                         (t "git")))
+           (source (or (cl-some (lambda (elm) (and (string-match-p elm url) elm))
+                                supported-source)
+                       "git"))
            object)
       (push (cons "name" pkg-name) object)
       (push (cons "summary" summary) object)
