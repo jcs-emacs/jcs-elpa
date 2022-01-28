@@ -4,6 +4,12 @@
 
 (load-file "./bin/prepare.el")
 
+(defun tree-url (source url commit)
+  "Return tree url."
+  (if (member source '("github" "gitlab"))
+      (concat url "/tree/" commit)
+    url))
+
 (let (json)
   (dolist (pkg archive-contents)
     (let* ((pkg-name (car pkg)) (desc (cdr pkg))
@@ -23,6 +29,7 @@
       (push (cons "url" url) object)
       (push (cons "source" source) object)
       (push (cons "commit" commit) object)
+      (push (cons "tree" (tree-url source url commit)) object)
       (setq object (reverse object))
       (message "Generating... %s" object)
       (push object json)))
