@@ -8,7 +8,7 @@
 ;; Keyword: multiple shell terminal
 ;; Version: 0.1.1
 ;; Package-Version: 20211024.1757
-;; Package-Commit: f36defaf7c543464b212d7ed7fcc61de46c795d5
+;; Package-Commit: 9261922d617de671135bf108e4887356623e3a68
 ;; Package-Requires: ((emacs "24.4"))
 ;; URL: https://github.com/jcs-elpa/multi-shell
 
