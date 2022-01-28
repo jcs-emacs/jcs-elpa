@@ -1,4 +1,4 @@
-;;; generate-badges.el --- Generate all SVG badges  -*- lexical-binding: t -*-
+;;; generate-badges-version.el --- Generate all SVG badges  -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
 
@@ -29,4 +29,4 @@
 ;; coding: utf-8
 ;; no-byte-compile: t
 ;; End:
-;;; generate-badges.el ends here
+;;; generate-badges-version.el ends here
