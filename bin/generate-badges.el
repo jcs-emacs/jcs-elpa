@@ -9,11 +9,11 @@
   "https://img.shields.io/badge/jcs%%20elpa-%s-6B8E23.svg"
   "Format to generate badges.")
 
-(defconst output-dir "./badges/"  ; CI
+(defconst output-dir "./badges/v/"  ; CI
   "Where the badges store.")
 
 (ignore-errors (delete-directory output-dir t))  ; clean up first
-(make-directory output-dir)
+(make-directory output-dir t)                    ; recursive
 
 (dolist (pkg archive-contents)
   (message "%s" pkg)
