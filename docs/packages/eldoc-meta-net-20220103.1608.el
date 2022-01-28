@@ -8,7 +8,7 @@
 ;; Keyword: eldoc c# dotnet sdk
 ;; Version: 0.1.0
 ;; Package-Version: 20220103.1608
-;; Package-Commit: 7af5705e1dd89819197de2c9669ff0237b396a05
+;; Package-Commit: d60a05cd91d9c644d2c3ca2dd78aafab016467d3
 ;; Package-Requires: ((emacs "26.1") (meta-net "1.1.0") (ht "2.3") (csharp-mode "1.0.2"))
 ;; URL: https://github.com/emacs-vs/eldoc-meta-net
 
