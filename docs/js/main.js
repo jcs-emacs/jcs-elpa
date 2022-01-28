@@ -53,7 +53,7 @@ $(document).ready(function(){
           '<td><a href="' + desc.url + '">' + desc.summary + '</a></td>' +
           '<td><a href="' + desc.url + '">' + desc.version + ' ⮛</a></td>' +
           '<td><a href="' + base_url + 'recipes/' + desc.name + '">🍴</a></td>' +
-          '<td><a href="' + desc.url + '">' + desc.source + '</a></td>' +
+          '<td><a href="' + desc.tree + '">' + desc.source + '</a></td>' +
           '<td><img src="' + base_url_raw + 'master/badges/v/' + desc.name + '.svg"/></td>' +
           '</tr>');
     }
