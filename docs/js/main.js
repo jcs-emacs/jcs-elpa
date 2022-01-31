@@ -17,45 +17,66 @@ var archive = null;
 
 $(document).ready(function(){
   var packageList = $('#package-list');
-  var filter = $('#filter');
   var state = $('#state');
+  var table = $('#package-table');
 
   $.getJSON(archive_url, function(data){
     archive = data;
-    disply('');
+    state.text('Current List of ' + archive.length + ' Packages');
+    table.DataTable({
+      "data": archive,
+      "bLengthChange": false,
+      "pageLength": '50',
+      "processing": true,
+      "autoWidth": false,
+      "destroy": true,
+      "scrollCollapse": true,
+      "dom": 'lrt',
+      "language": {
+        search: "",
+        "searchPlaceholder": "Enter filter terms",
+      },
+      "columns": [
+        { /* Name */
+          "render": function (data, type, row, meta) {
+            return '<a href="' + row.url + '">' + row.name + '</a>';
+          },
+        },
+        { /* Summary */
+          "render": function (data, type, row, meta) {
+            return '<a href="' + row.url + '">' + row.summary + '</a>';
+          },
+        },
+        { /* Version */
+          "render": function (data, type, row, meta) {
+            return '<a href="' + row.url + '">' + row.version + ' ⮛</a>';
+          }
+        },
+        { /* Recipe */
+          "render": function (data, type, row, meta) {
+            return '<a href="' + base_url + 'recipes/' + row.name + '">🍴</a>';
+          }
+        },
+        { /* Source */
+          "render": function (data, type, row, meta) {
+            return '<a href="' + row.tree + '">' + row.source + '</a>';
+          },
+
+        },
+        { /* Badge */
+          "render": function (data, type, row, meta) {
+            return '<img src="' + base_url_raw + 'master/badges/v/' + row.name + '.svg"/>';
+          }
+        },
+      ],
+    });
+
   }).fail(function(){
     console.log("An error has occurred.");
   });
 
-  filter.on('input', function() {
-    disply(filter.val());
+  /* Replace search box with my own filter input! */
+  $('#filter').keyup(function () {
+    table.dataTable().fnFilter(this.value);
   });
-
-  function filtering(query, desc) {
-    if (query === '' ||
-        desc.name.includes(query) ||
-        desc.summary.includes(query))
-      return true;
-    return false;
-  }
-
-  function disply(query) {
-    packageList.empty();
-    state.text('Current List of ' + archive.length + ' Packages');
-
-    for (let index = 0; index < archive.length; ++index) {
-      let desc = archive[index];
-      if (!filtering(query, desc))
-        continue;
-      packageList.append(
-        '<tr>' +
-          '<td><a href="' + desc.url + '">' + desc.name + '</a></td>' +
-          '<td><a href="' + desc.url + '">' + desc.summary + '</a></td>' +
-          '<td><a href="' + desc.url + '">' + desc.version + ' ⮛</a></td>' +
-          '<td><a href="' + base_url + 'recipes/' + desc.name + '">🍴</a></td>' +
-          '<td><a href="' + desc.tree + '">' + desc.source + '</a></td>' +
-          '<td><img src="' + base_url_raw + 'master/badges/v/' + desc.name + '.svg"/></td>' +
-          '</tr>');
-    }
-  }
 });

@@ -27,3 +27,7 @@ h5 {
 a {
   text-decoration: none;
 }
+
+#table-div {
+  border-style: none !important;
+}
