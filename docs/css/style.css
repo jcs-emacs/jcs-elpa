@@ -31,3 +31,12 @@ a {
 #table-div {
   border-style: none !important;
 }
+
+/* Hide search box */
+#package-table_wrapper > .row:first-of-type  {
+  display: none;
+}
+
+#package-table_wrapper > .row:last-of-type  {
+  margin-top: 20px;
+}

@@ -31,7 +31,6 @@ $(document).ready(function(){
       "autoWidth": false,
       "destroy": true,
       "scrollCollapse": true,
-      "dom": 'lrt',
       "language": {
         search: "",
         "searchPlaceholder": "Enter filter terms",
