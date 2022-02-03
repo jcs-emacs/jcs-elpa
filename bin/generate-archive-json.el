@@ -21,6 +21,7 @@
            (commit (cdr (assq :commit extras)))
            (source (or (cl-some (lambda (elm) (and (string-match-p elm url) elm))
                                 supported-source)
+                       (and (string-match-p "hg[.]" url) "hg")
                        "git"))
            object)
       (push (cons "name" pkg-name) object)
