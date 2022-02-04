@@ -35,37 +35,39 @@ $(document).ready(function(){
         search: "",
         "searchPlaceholder": "Enter filter terms",
       },
+      "columnDefs": [
+        { "orderable": false, "targets": [3, 5], },
+      ],
       "columns": [
-        { /* Name */
+        { /* Name: 1 */
           "render": function (data, type, row, meta) {
             return '<a href="' + row.url + '">' + row.name + '</a>';
           },
         },
-        { /* Summary */
+        { /* Summary: 2 */
           "render": function (data, type, row, meta) {
             return '<a href="' + row.url + '">' + row.summary + '</a>';
           },
         },
-        { /* Version */
+        { /* Version: 3 */
           "render": function (data, type, row, meta) {
             return '<a href="' + row.url + '">' + row.version + ' ⮛</a>';
-          }
+          },
         },
-        { /* Recipe */
+        { /* Recipe: 4 */
           "render": function (data, type, row, meta) {
             return '<a href="' + base_url + 'recipes/' + row.name + '">🍴</a>';
-          }
+          },
         },
-        { /* Source */
+        { /* Source: 5 */
           "render": function (data, type, row, meta) {
             return '<a href="' + row.tree + '">' + row.source + '</a>';
           },
-
         },
-        { /* Badge */
+        { /* Badge: 6 */
           "render": function (data, type, row, meta) {
             return '<img src="' + base_url_raw + 'master/badges/v/' + row.name + '.svg"/>';
-          }
+          },
         },
       ],
     });
