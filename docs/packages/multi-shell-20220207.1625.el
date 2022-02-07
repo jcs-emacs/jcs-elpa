@@ -7,8 +7,8 @@
 ;; Description: Managing multiple shell buffers.
 ;; Keyword: multiple shell terminal
 ;; Version: 0.1.1
-;; Package-Version: 20220207.1455
-;; Package-Commit: d92fbca713137fae509b1b32366049899a794f03
+;; Package-Version: 20220207.1625
+;; Package-Commit: 982c9ea8f4805377faa9c9fcb7c3786bc61c2811
 ;; Package-Requires: ((emacs "25.1"))
 ;; URL: https://github.com/jcs-elpa/multi-shell
 
@@ -83,6 +83,12 @@
 (defun multi-shell--prefix-name ()
   "Return shell name's prefix."
   (format "*%s: <" multi-shell-prefer-shell-type))
+
+(defun multi-shell--next-valid-index ()
+  "Return next valid index to generate new shell."
+  (let ((index 0))
+    (while (get-buffer (multi-shell--form-name-by-id index)) (cl-incf index))
+    index))
 
 (defun multi-shell--cycle-delta-live-shell-list (st val)
   "Cycle through the live shell list the delta VAL and ST."
