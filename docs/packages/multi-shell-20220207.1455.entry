@@ -1,9 +1,9 @@
 (multi-shell .
-	     [(20211024 1757)
+	     [(20220207 1455)
 	      ((emacs
-		(24 4)))
+		(25 1)))
 	      "Managing multiple shell buffers" single
-	      ((:commit . "9261922d617de671135bf108e4887356623e3a68")
+	      ((:commit . "d92fbca713137fae509b1b32366049899a794f03")
 	       (:authors
 		("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
