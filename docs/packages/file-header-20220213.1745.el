@@ -7,9 +7,9 @@
 ;; Description: Highly customizable self design file header.
 ;; Keyword: file header
 ;; Version: 0.1.2
-;; Package-Version: 20220111.742
-;; Package-Commit: 1fcaf1a6621ce49cd9abfda309d2865d8b25087e
-;; Package-Requires: ((emacs "24.4"))
+;; Package-Version: 20220213.1745
+;; Package-Commit: b3f6efb781a353fcb3f877a8e85809757ae3ce71
+;; Package-Requires: ((emacs "25.1"))
 ;; URL: https://github.com/jcs-elpa/file-header
 
 ;; This file is NOT part of GNU Emacs.
@@ -57,14 +57,14 @@
 
 (defun file-header--parse-ini (path)
   "Parse a .ini file from PATH."
-  (let ((tmp-ini (file-header--get-string-from-file path))
-        (tmp-keyword "") (tmp-value "")
-        (count 0) tmp-ini-list tmp-pair-list)
-    (setq tmp-ini (split-string tmp-ini "\n"))
+  (let* ((tmp-ini (file-header--get-string-from-file path))
+         (tmp-ini (split-string tmp-ini "\n"))
+         (tmp-keyword "") (tmp-value "")
+         (count 0) tmp-ini-list tmp-pair-list)
 
     (dolist (tmp-line tmp-ini)
       ;; check not comment
-      (when (not (string-match-p "#" tmp-line))
+      (unless (string-match-p "#" tmp-line)
         ;; Split it
         (setq tmp-pair-list (split-string tmp-line "="))
 
@@ -80,45 +80,41 @@
           (let (tmp-list)
             (push tmp-value tmp-list)
             (setq tmp-ini-list (append tmp-ini-list tmp-list)))))
-      (setq count (1+ count)))
+      (cl-incf count))
 
-    ;; return list.
+    ;; return list
     tmp-ini-list))
 
 ;;;###autoload
 (defun file-header-swap-keyword-template (template-str)
   "Swap all keyword in TEMPLATE-STR to proper information."
   (let ((tmp-keyword "") (tmp-value "") (tmp-index 0) tmp-ini-list)
-    ;; parse and get the list of keyword and value.
+    ;; parse and get the list of keyword and value
     (setq tmp-ini-list (file-header--parse-ini file-header-template-config-filepath))
 
     (while (< tmp-index (length tmp-ini-list))
       (setq tmp-keyword (nth tmp-index tmp-ini-list)
             tmp-value (nth (1+ tmp-index) tmp-ini-list))
 
-      ;; Add `#' infront and behind the keyword.
-      ;; For instance, `CREATOR' -> `#CREATOR#'.
-      (setq tmp-keyword (concat "#" tmp-keyword)
-            tmp-keyword (concat tmp-keyword "#"))
+      ;; Add `#' infront and behind the keyword; for instance, `CREATOR' to `#CREATOR#'
+      (setq tmp-keyword (format "#%s#" tmp-keyword))
 
-      ;; NOTE: Check keyword exist before replacing it.
-      ;; Or else it will cause `max-lisp-eval-depth' error.
+      ;; NOTE: Check keyword exist before replacing it
+      ;; Or else it will cause `max-lisp-eval-depth' error
       (when (string-match-p tmp-keyword template-str)
-        ;; Check if the value is a function?
-        (if (string-match-p "(" tmp-value)
-            (progn
-              ;; Remove `(' and `)', if is a function.
-              (setq tmp-value (file-header--s-replace "(" "" tmp-value)
-                    tmp-value (file-header--s-replace ")" "" tmp-value)
-                    template-str (file-header--s-replace tmp-keyword
-                                                         (funcall (intern tmp-value))
-                                                         template-str)))
-          ;; Replace it normally with a string.
+        ;; Check if the value is a snippet
+        (if (string-match-p "`" tmp-value)
+            ;; Remove ` for evaluation
+            (setq tmp-value (file-header--s-replace "`" "" tmp-value)
+                  template-str (file-header--s-replace tmp-keyword
+                                                       (eval (thing-at-point--read-from-whole-string tmp-value))
+                                                       template-str))
+          ;; Replace it normally with a string
           (setq template-str (file-header--s-replace tmp-keyword
                                                      tmp-value
                                                      template-str))))
-      ;; Add 2 to skip keyword and value at the same time.
-      (setq tmp-index (+ tmp-index 2))))
+      ;; Add 2 to skip keyword and value at the same time
+      (cl-incf tmp-index 2)))
 
   ;; return itself.
   template-str)
