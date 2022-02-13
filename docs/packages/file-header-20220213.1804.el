@@ -7,8 +7,8 @@
 ;; Description: Highly customizable self design file header.
 ;; Keyword: file header
 ;; Version: 0.1.2
-;; Package-Version: 20220213.1745
-;; Package-Commit: b3f6efb781a353fcb3f877a8e85809757ae3ce71
+;; Package-Version: 20220213.1804
+;; Package-Commit: 4da993a8a0840536f373192fedd1588930726ea8
 ;; Package-Requires: ((emacs "25.1"))
 ;; URL: https://github.com/jcs-elpa/file-header
 
@@ -33,6 +33,8 @@
 ;;
 
 ;;; Code:
+
+(require 'thingatpt)
 
 (defgroup file-header nil
   "Highly customizable self design file header."
