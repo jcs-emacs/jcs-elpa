@@ -1,0 +1,14 @@
+(preview-it .
+	    [(20220214 1208)
+	     ((emacs
+	       (26 1))
+	      (posframe
+	       (1 1 7))
+	      (request
+	       (0 3 0)))
+	     "Preview anything at point" single
+	     ((:commit . "13c519b2429687ed67cfacdb959c1a1d66eceaea")
+	      (:authors
+	       ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
+	      (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
+	      (:url . "https://github.com/jcs-elpa/preview-it"))])
