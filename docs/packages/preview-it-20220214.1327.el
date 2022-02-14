@@ -7,8 +7,8 @@
 ;; Description: Preview anything at point.
 ;; Keyword: preview image path file
 ;; Version: 1.1.0
-;; Package-Version: 20220214.1222
-;; Package-Commit: 4a7996c052acda8086b36991edf023bb48c28904
+;; Package-Version: 20220214.1327
+;; Package-Commit: 472239723526918b5e3f4e4f482b717c2547bb2f
 ;; Package-Requires: ((emacs "26.1") (posframe "1.1.7") (request "0.3.0"))
 ;; URL: https://github.com/jcs-elpa/preview-it
 
@@ -210,11 +210,15 @@
                  :border-width 10
                  :background-color "#2A2D38"))
 
+(defun preview-it--next ()
+  "Hide tooltip after first post command."
+  (preview-it--stop-preview)
+  (remove-hook 'post-command-hook #'preview-it--next))
+
 (defun preview-it--post ()
-  "Global post command."
-  (unless (memq this-command '(preview-it))
-    (preview-it--stop-preview)
-    (remove-hook 'post-command-hook #'preview-it--post)))
+  "Register for next post command."
+  (add-hook 'post-command-hook #'preview-it--next)
+  (remove-hook 'post-command-hook #'preview-it--post))
 
 (defun preview-it--start-preview ()
   "Trigger to start previewing."
