@@ -8,7 +8,7 @@
 ;; Keyword: file header
 ;; Version: 0.1.2
 ;; Package-Version: 20220213.1804
-;; Package-Commit: 4da993a8a0840536f373192fedd1588930726ea8
+;; Package-Commit: 7dd65c8270bbc7f8a6e61e1746ce452c78d4d362
 ;; Package-Requires: ((emacs "25.1"))
 ;; URL: https://github.com/jcs-elpa/file-header
 
