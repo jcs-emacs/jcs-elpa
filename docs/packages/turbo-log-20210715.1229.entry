@@ -3,7 +3,7 @@
 	    ((emacs
 	      (24 4)))
 	    "Automating the process of writing meaningful log messages" single
-	    ((:commit . "ffce6014f0ceae9e4cab07d520a0326dd5106a02")
+	    ((:commit . "cdf1072c5bb3332594c0ca5e20ac9b993484eada")
 	     (:authors
 	      ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 	     (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
