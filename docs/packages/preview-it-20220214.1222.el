@@ -7,8 +7,8 @@
 ;; Description: Preview anything at point.
 ;; Keyword: preview image path file
 ;; Version: 1.1.0
-;; Package-Version: 20220214.1208
-;; Package-Commit: 13c519b2429687ed67cfacdb959c1a1d66eceaea
+;; Package-Version: 20220214.1222
+;; Package-Commit: 4a7996c052acda8086b36991edf023bb48c28904
 ;; Package-Requires: ((emacs "26.1") (posframe "1.1.7") (request "0.3.0"))
 ;; URL: https://github.com/jcs-elpa/preview-it
 
@@ -48,6 +48,7 @@
 (require 'shr)
 (require 'image-mode)
 
+(require 'posframe)
 (require 'request)
 
 (defgroup preview-it nil
@@ -138,7 +139,7 @@
   "Execute BODY inside preview buffer."
   (declare (indent 0) (debug t))
   `(with-current-buffer (get-buffer-create preview-it--buffer-name)
-     (let (buffer-read-only) ,@body)))
+     (let ((inhibit-read-only t)) ,@body)))
 
 ;;
 ;; (@* "Url" )
