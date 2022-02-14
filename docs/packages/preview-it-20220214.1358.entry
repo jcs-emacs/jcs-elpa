@@ -1,5 +1,5 @@
 (preview-it .
-	    [(20220214 1327)
+	    [(20220214 1358)
 	     ((emacs
 	       (26 1))
 	      (posframe
@@ -7,7 +7,7 @@
 	      (request
 	       (0 3 0)))
 	     "Preview anything at point" single
-	     ((:commit . "472239723526918b5e3f4e4f482b717c2547bb2f")
+	     ((:commit . "4c1430cc04b57dc6f343796c722e315c97333e3f")
 	      (:authors
 	       ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 	      (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")

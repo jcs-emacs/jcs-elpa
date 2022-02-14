@@ -7,8 +7,8 @@
 ;; Description: Preview anything at point.
 ;; Keyword: preview image path file
 ;; Version: 1.1.0
-;; Package-Version: 20220214.1327
-;; Package-Commit: 472239723526918b5e3f4e4f482b717c2547bb2f
+;; Package-Version: 20220214.1358
+;; Package-Commit: 4c1430cc04b57dc6f343796c722e315c97333e3f
 ;; Package-Requires: ((emacs "26.1") (posframe "1.1.7") (request "0.3.0"))
 ;; URL: https://github.com/jcs-elpa/preview-it
 
@@ -58,8 +58,8 @@
   :link '(url-link :tag "Repository" "https://github.com/jcs-elpa/preview-it"))
 
 (defface preview-it-background
-  '((((background light)) :background "#B3B3B3")
-    (t :background "#272A36"))
+  '((((background light)) :background "#E9EAED")
+    (t :background "#2A2D38"))
   "Background color of the preview buffer."
   :group 'preview-it)
 
@@ -208,7 +208,7 @@
   "Show preview frame."
   (posframe-show preview-it--buffer-name :position (point)
                  :border-width 10
-                 :background-color "#2A2D38"))
+                 :background-color (face-background 'preview-it-background)))
 
 (defun preview-it--next ()
   "Hide tooltip after first post command."
