@@ -24,6 +24,14 @@
 
 (defun get-fetcher (name) "Get fetcher." (recipe-get name :fetcher))
 (defun get-url (name) "Get url." (recipe-get name :url))
+(defun get-repo (name) "Get repo." (recipe-get name :repo))
+
+(defun construct-url (name source)
+  "Construct the url by SOURCE."
+  (when-let ((repo (get-repo name)))
+    (pcase source
+      ("github" (concat "https://github.com/" repo))
+      ("gitlab" (concat "https://gitlab.com/" repo)))))
 
 (let (json)
   (dolist (pkg archive-contents)
@@ -31,9 +39,12 @@
            (version (package-version-join (aref desc 0)))
            (summary (aref desc 2))
            (extras (aref desc 4))
-           (url (or (cdr (assq :url extras)) (get-url pkg-name) ""))
+           (source (get-fetcher pkg-name))  ; fetcher
+           (url (or (cdr (assq :url extras))         ; get from `archive-contents'
+                    (get-url pkg-name)               ; get from `recipe'
+                    (construct-url pkg-name source)  ; try construct url
+                    ""))
            (commit (cdr (assq :commit extras)))
-           (source (get-fetcher pkg-name))
            (tree (tree-url source url commit))
            object)
       (setq object

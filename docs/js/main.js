@@ -61,6 +61,7 @@ $(document).ready(function(){
         },
         { /* Source: 5 */
           "render": function (data, type, row, meta) {
+            if (row.tree === "") return row.source;
             return '<a href="' + row.tree + '">' + row.source + '</a>';
           },
         },
