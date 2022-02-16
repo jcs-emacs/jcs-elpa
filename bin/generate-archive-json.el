@@ -22,8 +22,8 @@
   "Return recipe data."
   (when-let ((data (recipe-data name))) (plist-get data prop)))
 
-(defun get-fetcher (name) "Get fetcher." (recipe-get :fetcher))
-(defun get-url (name) "Get url." (recipe-get :url))
+(defun get-fetcher (name) "Get fetcher." (recipe-get name :fetcher))
+(defun get-url (name) "Get url." (recipe-get name :url))
 
 (let (json)
   (dolist (pkg archive-contents)
