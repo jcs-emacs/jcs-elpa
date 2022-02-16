@@ -28,6 +28,7 @@
 
 (defun construct-url (name source)
   "Construct the url by SOURCE."
+  (jcs-print ">>>" (get-repo name))
   (when-let ((repo (get-repo name)))
     (pcase source
       ("github" (concat "https://github.com/" repo))
