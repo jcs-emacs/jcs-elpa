@@ -20,11 +20,6 @@
 
 (pop archive-contents)  ; remove 1
 
-(message "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-;;(message "%s" archive-contents)  ; log out `archive-contents'
-(dolist (data archive-contents) (message "%s" data))
-(message "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-
 ;; Local Variables:
 ;; coding: utf-8
 ;; no-byte-compile: t

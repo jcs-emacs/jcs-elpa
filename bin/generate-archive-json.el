@@ -17,7 +17,7 @@
            (version (package-version-join (aref desc 0)))
            (summary (aref desc 2))
            (extras (aref desc 4))
-           (url (cdr (assq :url extras)))
+           (url (or (cdr (assq :url extras)) ""))
            (commit (cdr (assq :commit extras)))
            (source (or (cl-some (lambda (elm) (and (string-match-p elm url) elm))
                                 supported-source)
