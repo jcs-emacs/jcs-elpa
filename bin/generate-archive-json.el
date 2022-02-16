@@ -28,8 +28,8 @@
 
 (defun construct-url (name source)
   "Construct the url by SOURCE."
-  (message ">>> %s" (get-repo name))
   (when-let ((repo (get-repo name)))
+    (message ">>> %s %s" (get-repo name) source)
     (pcase source
       ("github" (concat "https://github.com/" repo))
       ("gitlab" (concat "https://gitlab.com/" repo)))))
