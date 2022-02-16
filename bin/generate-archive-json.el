@@ -27,7 +27,7 @@
 (defun get-repo (name) "Get repo." (recipe-get name :repo))
 
 (defun construct-url (name source)
-  "Construct the url by SOURCE."
+  "Construct the url by SOURCE.d"
   (when-let ((repo (get-repo name)))
     (pcase source
       ("github" (concat "https://github.com/" repo))
