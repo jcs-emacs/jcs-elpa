@@ -29,9 +29,11 @@
 (defun construct-url (name source)
   "Construct the url by SOURCE."
   (when-let ((repo (get-repo name)))
-    (message ">>> %s %s" (get-repo name) source)
+    (message ">>> %s %s" (get-repo name) source (concat "https://github.com/" repo))
     (pcase source
-      ("github" (concat "https://github.com/" repo))
+      ("github"
+       (message "checkin...")
+       (concat "https://github.com/" repo))
       ("gitlab" (concat "https://gitlab.com/" repo)))))
 
 (let (json)
@@ -48,6 +50,7 @@
            (commit (cdr (assq :commit extras)))
            (tree (tree-url source url commit))
            object)
+      (message ">>>>>> %s" url)
       (setq object
             `(("name"    . ,pkg-name)
               ("summary" . ,summary)
