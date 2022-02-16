@@ -4,12 +4,19 @@
 
 (load-file "./bin/prepare.el")
 
-(defconst supported-source '("github" "gitlab")
-  "List of supported sources.")
-
 (defun tree-url (source url commit)
   "Return tree url."
-  (if (member source supported-source) (concat url "/tree/" commit) url))
+  (pcase source
+    ((or "github" "gitlab") (concat url "/tree/" commit))
+    (_ url)))
+
+(defun get-fetcher (name)
+  "Get fetcher."
+  (when-let* ((file (format "./recipes/%s" name))
+              (content (file-to-string file))
+              (data (eval (thing-at-point--read-from-whole-string (concat "'" content)))))
+    (pop data)  ; remove name
+    (plist-get data :fetcher)))
 
 (let (json)
   (dolist (pkg archive-contents)
@@ -19,10 +26,7 @@
            (extras (aref desc 4))
            (url (or (cdr (assq :url extras)) ""))
            (commit (cdr (assq :commit extras)))
-           (source (or (cl-some (lambda (elm) (and (string-match-p elm url) elm))
-                                supported-source)
-                       (and (string-match-p "hg[.]" url) "hg")
-                       "git"))
+           (source (get-fetcher pkg-name))
            (tree (tree-url source url commit))
            object)
       (setq object

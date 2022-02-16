@@ -5,6 +5,7 @@
 (require 'package)
 (require 'thingatpt)
 (require 'json)
+(require 'subr-x)
 
 (defconst archive-contents-string
   (with-temp-buffer
@@ -19,6 +20,13 @@
   "Turn it into lisp object.")
 
 (pop archive-contents)  ; remove 1
+
+;;
+;;; Util
+
+(defun file-to-string (file)
+  "File to string function."
+  (with-temp-buffer (insert-file-contents file) (buffer-string)))
 
 ;; Local Variables:
 ;; coding: utf-8
