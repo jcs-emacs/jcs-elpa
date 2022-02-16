@@ -21,7 +21,7 @@
 (pop archive-contents)  ; remove 1
 
 (message "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-(message archive-contents)  ; log out `archive-contents'
+(message "%s" archive-contents)  ; log out `archive-contents'
 (message "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
 ;; Local Variables:
