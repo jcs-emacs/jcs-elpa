@@ -21,7 +21,8 @@
 (pop archive-contents)  ; remove 1
 
 (message "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-(message "%s" archive-contents)  ; log out `archive-contents'
+;;(message "%s" archive-contents)  ; log out `archive-contents'
+(dolist (data archive-contents) (message "%s" data))
 (message "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
 ;; Local Variables:
