@@ -1,0 +1,1 @@
+(hlsl-mode :repo "darfink/hlsl-mode" :fetcher github)
