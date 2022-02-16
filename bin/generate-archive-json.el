@@ -47,7 +47,6 @@
            (commit (cdr (assq :commit extras)))
            (tree (tree-url source url commit))
            object)
-      (message ">>>>>> %s" url)
       (setq object
             `(("name"    . ,pkg-name)
               ("summary" . ,summary)
