@@ -1,0 +1,1 @@
+(message-clean-mode :repo "jcs-elpa/message-clean-mode" :fetcher github)
