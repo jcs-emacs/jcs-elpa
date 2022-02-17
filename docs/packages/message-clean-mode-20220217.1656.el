@@ -7,9 +7,9 @@
 ;; Description: Keep messages buffer clean
 ;; Keyword: messages clean
 ;; Version: 0.1.0
-;; Package-Version: 20220217.1038
-;; Package-Commit: 2061ed02889f4b71b8b4bfbe4df03f8311b366ff
-;; Package-Requires: ((emacs "24.4") (noflet "0.0.15"))
+;; Package-Version: 20220217.1656
+;; Package-Commit: 6860e01dbd76746bd4be67c496f7648cd76294f0
+;; Package-Requires: ((emacs "24.4"))
 ;; URL: https://github.com/jcs-elpa/message-clean-mode
 
 ;; This file is NOT part of GNU Emacs.
@@ -34,8 +34,6 @@
 
 ;;; Code:
 
-(require 'noflet)
-
 (defgroup message-clean nil
   "Keep messages buffer clean."
   :prefix "message-clean-mode-"
@@ -53,35 +51,19 @@
   :type 'boolean
   :group 'message-clean)
 
-(defcustom message-clean-mode-extra-handlers
-  '(signal)
-  "List of function to mute."
-  :type 'list
-  :group 'message-clean)
-
-(defmacro message-clean-mode--noflet (&rest body)
-  "Defined local functions with `noflet'."
-  (declare (indent 0) (debug t))
-  (let (bindings)
-    (dolist (fnc message-clean-mode-extra-handlers)
-      (push `(,fnc (error-symbol data)
-                   (message "%s: %s" error-symbol data))  ; replace with `message'
-            bindings))
-    (apply 'noflet|expand bindings body)))
-
 (defun message-clean-mode--mute (fnc &rest args)
   "Mute any commands (FNC, ARGS)."
   (let ((inhibit-message message-clean-mode-inhibit-echo)
         message-log-max)
-    (message-clean-mode--noflet (apply fnc args))))
+    (apply fnc args)))
 
 (defun message-clean-mode--enable ()
-  "Enable `message-clean-mode'."
+  "Enable function `message-clean-mode'."
   (dolist (cmd message-clean-mode-commands)
     (advice-add cmd :around #'message-clean-mode--mute)))
 
 (defun message-clean-mode--disable ()
-  "Disable `message-clean-mode'."
+  "Disable function `message-clean-mode'."
   (dolist (cmd message-clean-mode-commands)
     (advice-remove cmd #'message-clean-mode--mute)))
 
