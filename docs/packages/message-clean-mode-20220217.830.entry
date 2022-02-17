@@ -1,0 +1,12 @@
+(message-clean-mode .
+		    [(20220217 830)
+		     ((emacs
+		       (24 4))
+		      (noflet
+		       (0 0 15)))
+		     "Keep messages buffer clean" single
+		     ((:commit . "9e498d0d8e16ca746a88937eb9096a0a4ef96339")
+		      (:authors
+		       ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
+		      (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
+		      (:url . "https://github.com/jcs-elpa/message-clean-mode"))])
