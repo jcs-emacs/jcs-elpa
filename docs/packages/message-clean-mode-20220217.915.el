@@ -7,8 +7,8 @@
 ;; Description: Keep messages buffer clean
 ;; Keyword: messages clean
 ;; Version: 0.1.0
-;; Package-Version: 20220217.830
-;; Package-Commit: 9e498d0d8e16ca746a88937eb9096a0a4ef96339
+;; Package-Version: 20220217.915
+;; Package-Commit: 428245a1cc21c6fcf72a8e1061a695bf359cc243
 ;; Package-Requires: ((emacs "24.4") (noflet "0.0.15"))
 ;; URL: https://github.com/jcs-elpa/message-clean-mode
 
@@ -53,12 +53,26 @@
   :type 'boolean
   :group 'message-clean)
 
+(defcustom message-clean-mode-extra-handlers
+  '(user-error)
+  "List of function to mute."
+  :type 'list
+  :group 'message-clean)
+
+(defmacro message-clean-mode--noflet (&rest body)
+  "Defined local functions with `noflet'."
+  (declare (indent 0) (debug t))
+  (dolist (fnc message-clean-mode-extra-handlers)
+    (eval `(noflet ((,fnc (format &rest args)
+                          (message "%s: %s"(format "%s" ',fnc)
+                                   (format-message format args))))
+             ,@body))))
+
 (defun message-clean-mode--mute (fnc &rest args)
   "Mute any commands (FNC, ARGS."
   (let ((inhibit-message message-clean-mode-inhibit-echo)
         message-log-max)
-    (noflet ((user-error (format &rest args)))
-      (apply fnc args))))
+    (message-clean-mode--noflet (apply fnc args))))
 
 (defun message-clean-mode--enable ()
   "Enable `message-clean-mode'."
