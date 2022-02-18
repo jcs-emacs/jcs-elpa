@@ -7,8 +7,8 @@
 ;; Description: List buffers relative to project.
 ;; Keyword: buffer menu project
 ;; Version: 0.1.0
-;; Package-Version: 20220217.1740
-;; Package-Commit: 077759a7330ed8418d031d884e2ff8a66eb208e9
+;; Package-Version: 20220218.705
+;; Package-Commit: 34b6bb6a8f472b9374a24ed7f61e3f546eeb03fb
 ;; Package-Requires: ((emacs "25.1") (f "0.20.0"))
 ;; URL: https://github.com/jcs-elpa/buffer-menu-project
 
@@ -73,6 +73,7 @@
     (with-current-buffer (list-buffers-noselect nil buffers)
       (setq buffer-menu-project-name name
             buffer-menu-project-buffers buffers)
+      (rename-buffer (format "*Buffer List*: %s" name) t)
       (current-buffer))))
 
 ;;;###autoload
