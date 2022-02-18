@@ -7,8 +7,8 @@
 ;; Description: List buffers relative to project.
 ;; Keyword: buffer menu project
 ;; Version: 0.1.0
-;; Package-Version: 20220218.705
-;; Package-Commit: 34b6bb6a8f472b9374a24ed7f61e3f546eeb03fb
+;; Package-Version: 20220218.719
+;; Package-Commit: 0d18ddcc9417306e894d069781a2869bf4b7134d
 ;; Package-Requires: ((emacs "25.1") (f "0.20.0"))
 ;; URL: https://github.com/jcs-elpa/buffer-menu-project
 
@@ -66,14 +66,26 @@
   "Return project name."
   (f-base (project-root (project-current t))))
 
+(defun buffer-menu-project--list-buffers-noselect (name &optional files-only buffer-list)
+  "Borrow from function `list-buffers-noselect'."
+  (let ((old-buffer (current-buffer))
+        (buffer (get-buffer-create (format "*Buffer List*: %s" name))))
+    (with-current-buffer buffer
+      (Buffer-menu-mode)
+      (setq Buffer-menu-files-only
+            (and files-only (>= (prefix-numeric-value files-only) 0)))
+      (list-buffers--refresh buffer-list old-buffer)
+      (tabulated-list-print))
+    buffer))
+
 (defun buffer-menu-project--buffers ()
   "Return buffer menu buffer for current project buffer."
   (when-let ((buffers (buffer-menu-project--buffer-list))
              (name (buffer-menu-project--name)))
-    (with-current-buffer (list-buffers-noselect nil buffers)
+    (with-current-buffer
+        (buffer-menu-project--list-buffers-noselect name nil buffers)
       (setq buffer-menu-project-name name
             buffer-menu-project-buffers buffers)
-      (rename-buffer (format "*Buffer List*: %s" name) t)
       (current-buffer))))
 
 ;;;###autoload
@@ -85,7 +97,7 @@
 
 ;;;###autoload
 (defun buffer-menu-project-other-window ()
-  "Same with command `buffer-menu' but show only project buffers."
+  "Same with command `buffer-menu-project' but in other window."
   (interactive)
   (when-let ((create (buffer-menu-project--buffers)))
     (switch-to-buffer-other-window create)))
