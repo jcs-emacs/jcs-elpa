@@ -8,7 +8,7 @@
 ;; Keyword: messages clean
 ;; Version: 0.1.0
 ;; Package-Version: 20220217.1656
-;; Package-Commit: 6860e01dbd76746bd4be67c496f7648cd76294f0
+;; Package-Commit: 1152420052cb32b88619498d58b39cee28fe9926
 ;; Package-Requires: ((emacs "24.4"))
 ;; URL: https://github.com/jcs-elpa/message-clean-mode
 

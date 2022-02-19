@@ -7,7 +7,7 @@
 	      (request
 	       (0 3 0)))
 	     "Preview anything at point" single
-	     ((:commit . "4c1430cc04b57dc6f343796c722e315c97333e3f")
+	     ((:commit . "eab63e5469da061a8b60f064cb1df1d2b7cff74d")
 	      (:authors
 	       ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 	      (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
