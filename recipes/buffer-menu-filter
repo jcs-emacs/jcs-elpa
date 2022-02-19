@@ -1,0 +1,1 @@
+(buffer-menu-filter :repo "jcs-elpa/buffer-menu-filter" :fetcher github)
