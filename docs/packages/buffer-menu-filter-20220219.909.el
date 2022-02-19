@@ -7,8 +7,8 @@
 ;; Description: Filter buffer-menu items using fake header.
 ;; Keyword: buffer menu filter
 ;; Version: 0.1.0
-;; Package-Version: 20220219.902
-;; Package-Commit: 211f3bd3f69fc43cf6dc6a627cc7432b2e5cc3c3
+;; Package-Version: 20220219.909
+;; Package-Commit: 8b39b30f688f21be55b99273846d79e391e023bd
 ;; Package-Requires: ((emacs "26.1") (flx "0.6.1") (ht "2.0"))
 ;; URL: https://github.com/jcs-elpa/buffer-menu-filter
 
@@ -193,7 +193,6 @@ If BUFFER isn't showing; then execute ERROR operations instead."
   "Do filtering the buffer list."
   (buffer-menu-filter--jump-to-buffer-windows
    diminish-buffer-menu-name
-   :type 'regex
    :success
    (lambda ()
      (let ((scoring-table (ht-create)) scoring-keys)
