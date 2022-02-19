@@ -1,11 +1,13 @@
 (buffer-menu-filter .
-		    [(20220219 846)
+		    [(20220219 851)
 		     ((emacs
 		       (26 1))
+		      (flx
+		       (0 6 1))
 		      (ht
 		       (2 0)))
 		     "Filter buffer-menu items using fake header" single
-		     ((:commit . "e3976b7b8658e678bf122f963d2b01ae23640472")
+		     ((:commit . "a29d1432fd7637ce2c604aeeef279f674b3d3048")
 		      (:authors
 		       ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 		      (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
