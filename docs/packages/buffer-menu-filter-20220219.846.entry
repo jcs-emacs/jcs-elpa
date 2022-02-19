@@ -1,0 +1,12 @@
+(buffer-menu-filter .
+		    [(20220219 846)
+		     ((emacs
+		       (26 1))
+		      (ht
+		       (2 0)))
+		     "Filter buffer-menu items using fake header" single
+		     ((:commit . "e3976b7b8658e678bf122f963d2b01ae23640472")
+		      (:authors
+		       ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
+		      (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
+		      (:url . "https://github.com/jcs-elpa/buffer-menu-filter"))])
