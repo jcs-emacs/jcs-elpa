@@ -8,7 +8,7 @@
 ;; Keyword: csproj csharp company
 ;; Version: 0.1.0
 ;; Package-Version: 20220103.1608
-;; Package-Commit: 774a40f421adefd3c2d70f617801865d270b13e4
+;; Package-Commit: 71b389b2e24b6c0a4e251c565708c10b6c530a92
 ;; Package-Requires: ((emacs "25.1") (company "0.8.12") (meta-net "1.1.0") (ht "2.3"))
 ;; URL: https://github.com/emacs-vs/company-meta-net
 
