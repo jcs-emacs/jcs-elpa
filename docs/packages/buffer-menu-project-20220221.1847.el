@@ -7,9 +7,9 @@
 ;; Description: List buffers relative to project.
 ;; Keyword: buffer menu project
 ;; Version: 0.1.0
-;; Package-Version: 20220218.719
-;; Package-Commit: 2f705b3791096f72427c97ce02313589006e7a5c
-;; Package-Requires: ((emacs "25.1") (f "0.20.0"))
+;; Package-Version: 20220221.1847
+;; Package-Commit: 416a947a48e996485656cf4338250d405bb3bd0b
+;; Package-Requires: ((emacs "25.1") (project "0.8.1") (f "0.20.0"))
 ;; URL: https://github.com/jcs-elpa/buffer-menu-project
 
 ;; This file is NOT part of GNU Emacs.
@@ -34,6 +34,7 @@
 
 ;;; Code:
 
+(require 'cl-lib)
 (require 'subr-x)
 
 (require 'project)

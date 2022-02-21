@@ -1,11 +1,13 @@
 (buffer-menu-project .
-		     [(20220218 719)
+		     [(20220221 1847)
 		      ((emacs
 			(25 1))
+		       (project
+			(0 8 1))
 		       (f
 			(0 20 0)))
 		      "List buffers relative to project" single
-		      ((:commit . "2f705b3791096f72427c97ce02313589006e7a5c")
+		      ((:commit . "416a947a48e996485656cf4338250d405bb3bd0b")
 		       (:authors
 			("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 		       (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
