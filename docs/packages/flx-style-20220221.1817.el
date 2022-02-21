@@ -6,9 +6,9 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Description: Completion style for flx
 ;; Keyword: flx completion style
-;; Version: 0.1.0
-;; Package-Version: 20220221.1802
-;; Package-Commit: c6c504780c3ebc6d386c0057f6d4a0640cf6a1f4
+;; Version: 0.1.1
+;; Package-Version: 20220221.1817
+;; Package-Commit: daddb35c569d9c8c38506a263eb3a33eb194be33
 ;; Package-Requires: ((emacs "24.3") (flx "0.5"))
 ;; URL: https://github.com/jcs-elpa/flx-style
 
