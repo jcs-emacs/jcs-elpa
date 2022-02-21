@@ -1,11 +1,11 @@
 (flx-style .
-	   [(20220119 1001)
+	   [(20220221 1748)
 	    ((emacs
 	      (24 3))
 	     (flx
 	      (0 5)))
 	    "Completion style for flx" single
-	    ((:commit . "9662f11769c96e813b028124dd11e8f60e8724ed")
+	    ((:commit . "c4886f8905a2fedd596cb735c9d5184164021a0b")
 	     (:authors
 	      ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 	     (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")

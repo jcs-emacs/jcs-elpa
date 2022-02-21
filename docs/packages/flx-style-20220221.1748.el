@@ -7,8 +7,8 @@
 ;; Description: Completion style for flx
 ;; Keyword: flx completion style
 ;; Version: 0.1.0
-;; Package-Version: 20220119.1001
-;; Package-Commit: 9662f11769c96e813b028124dd11e8f60e8724ed
+;; Package-Version: 20220221.1748
+;; Package-Commit: c4886f8905a2fedd596cb735c9d5184164021a0b
 ;; Package-Requires: ((emacs "24.3") (flx "0.5"))
 ;; URL: https://github.com/jcs-elpa/flx-style
 
@@ -47,12 +47,9 @@
               (lambda (strs)
                 (let ((hash-value (gethash strs commonality-cache nil)))
                   (if hash-value
-                      (if (eq hash-value 'nothing)
-                          nil
-                        hash-value)
-
+                      (if (eq hash-value 'nothing) nil hash-value)
                     (setq strs (mapcar #'string-to-list strs))
-                    (let ((res) (tried) (idx))
+                    (let (res tried idx)
                       (dolist (char (car strs))
                         (unless (memq char tried)
                           (catch 'notfound
@@ -74,19 +71,15 @@
                                        (if (> (length a) (length b)) a b))
                                      res)
                                   nil))
-                      (puthash strs
-                               (if res res 'nothing)
-                               commonality-cache)
+                      (puthash strs (or res 'nothing) commonality-cache)
                       res))))))
     (concat (fuzzy-commonality strs))))
 
 (defun flx-style-find-holes (merged str)
   "Find positions in MERGED, where insertion by the user is likely, wrt. STR"
-  (let ((holes) (matches (cdr (flx-score str merged flx-style-cache))))
+  (let ((matches (cdr (flx-score str merged flx-style-cache))) holes)
     (dolist (i (number-sequence 0 (- (length matches) 2)))
-      (when (>
-             (elt matches (1+ i))
-             (1+ (elt matches i)))
+      (when (> (elt matches (1+ i)) (1+ (elt matches i)))
         (push (1+ i) holes)))
     (unless (<= (length str) (car (last matches)))
       (push (length merged) holes))
@@ -94,27 +87,26 @@
 
 (defun flx-style-merge (strs)
   "Merge a collection of strings, including their collective holes"
-  (let ((common (flx-style-commonality strs))
-        (holes))
-    (setq holes (make-vector (1+ (length common)) 0))
+  (let* ((common (flx-style-commonality strs))
+         (holes (make-vector (1+ (length common)) 0)))
     (dolist (str strs)
       (dolist (hole (flx-style-find-holes common str))
         (cl-incf (elt holes hole))))
     (cons common (append holes nil))))
 
-(defun flx-style-completion (string table predicate point &optional all-p)
+(defun flx-style-completion (string table pred point &optional all-p)
   "Helper function implementing a fuzzy completion-style"
   (let* ((beforepoint (substring string 0 point))
          (afterpoint (substring string point))
-         (boundaries (completion-boundaries beforepoint table predicate afterpoint))
-         (prefix (substring beforepoint 0 (car boundaries)))
+         (bounds (completion-boundaries beforepoint table pred afterpoint))
+         (prefix (substring beforepoint 0 (car bounds)))
          (infix (concat
-                 (substring beforepoint (car boundaries))
-                 (substring afterpoint 0 (cdr boundaries))))
-         (suffix (substring afterpoint (cdr boundaries)))
+                 (substring beforepoint (car bounds))
+                 (substring afterpoint 0 (cdr bounds))))
+         (suffix (substring afterpoint (cdr bounds)))
          ;; |-              string                  -|
          ;;              point^
-         ;;            |-  boundaries -|
+         ;;            |-  bounds -|
          ;; |- prefix -|-    infix    -|-  suffix   -|
          ;;
          ;; Infix is the part supposed to be completed by table, AFAIKT.
@@ -126,47 +118,47 @@
                           infix
                           "")))
          (completion-regexp-list (cons regexp completion-regexp-list))
-         (candidates (or (all-completions prefix table predicate)
-                         (all-completions infix table predicate))))
-
+         (all (or (all-completions prefix table pred)
+                  ;;(all-completions infix table pred)  ; TODO: Do we need this?
+                  )))
     (if all-p
         ;; Implement completion-all-completions interface
-        (when candidates
+        (when all
           ;; Not doing this may result in an error.
-          (setcdr (last candidates) (length prefix))
-          candidates)
+          (setcdr (last all) (length prefix))
+          all)
       ;; Implement completion-try-completions interface
-      (if (= (length candidates) 1)
-          (if (equal infix (car candidates))
+      (if (= (length all) 1)
+          (if (equal infix (car all))
               t
             ;; Avoid quirk of double / for filename completion. I don't
             ;; know how this is *supposed* to be handled.
-            (when (and (> (length (car candidates)) 0)
+            (when (and (> (length (car all)) 0)
                        (> (length suffix) 0)
-                       (char-equal (aref (car candidates)
-                                         (1- (length (car candidates))))
+                       (char-equal (aref (car all)
+                                         (1- (length (car all))))
                                    (aref suffix 0)))
               (setq suffix (substring suffix 1)))
-            (cons (concat prefix (car candidates) suffix)
-                  (length (concat prefix (car candidates)))))
+            (cons (concat prefix (car all) suffix)
+                  (length (concat prefix (car all)))))
         (if (= (length infix) 0)
             (cons string point)
           (cl-destructuring-bind (merged . holes)
-              (flx-style-merge candidates)
+              (flx-style-merge all)
             (cons
              (concat prefix merged suffix)
              (+ (length prefix)
                 (cl-position (apply #'max holes) holes)))))))))
 
 ;;;###autoload
-(defun flx-style-try-completion (string table predicate point)
+(defun flx-style-try-completion (string table pred point)
   "Fuzzy version of completion-try-completion"
-  (flx-style-completion string table predicate point))
+  (flx-style-completion string table pred point))
 
 ;;;###autoload
-(defun flx-style-all-completions (string table predicate point)
+(defun flx-style-all-completions (string table pred point)
   "Fuzzy version of completion-all-completions"
-  (flx-style-completion string table predicate point 'all))
+  (flx-style-completion string table pred point 'all))
 
 ;;;###autoload
 (add-to-list 'completion-styles-alist
