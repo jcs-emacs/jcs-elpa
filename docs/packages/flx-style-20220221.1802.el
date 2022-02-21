@@ -7,8 +7,8 @@
 ;; Description: Completion style for flx
 ;; Keyword: flx completion style
 ;; Version: 0.1.0
-;; Package-Version: 20220221.1759
-;; Package-Commit: ec66c4d3f552a727640819cabb80efbd9dfcf47a
+;; Package-Version: 20220221.1802
+;; Package-Commit: c6c504780c3ebc6d386c0057f6d4a0640cf6a1f4
 ;; Package-Requires: ((emacs "24.3") (flx "0.5"))
 ;; URL: https://github.com/jcs-elpa/flx-style
 
@@ -52,12 +52,10 @@
           (unless (memq char tried)
             (catch 'notfound
               (setq idx (mapcar (lambda (str)
-                                  (or
-                                   (cl-position char str)
-                                   (throw 'notfound nil)))
+                                  (or (cl-position char str) (throw 'notfound nil)))
                                 strs))
               (push (cons char
-                          (fuzzy-commonality
+                          (flx-style--commonality-hash
                            (cl-mapcar (lambda (str idx)
                                         (cl-subseq str (1+ idx)))
                                       strs idx)))
