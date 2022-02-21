@@ -7,8 +7,8 @@
 ;; Description: Keep messages buffer clean
 ;; Keyword: messages clean
 ;; Version: 0.1.0
-;; Package-Version: 20220217.1656
-;; Package-Commit: 1152420052cb32b88619498d58b39cee28fe9926
+;; Package-Version: 20220221.812
+;; Package-Commit: 76059216c42de2e425cc2848123a85e8d9e5770b
 ;; Package-Requires: ((emacs "24.4"))
 ;; URL: https://github.com/jcs-elpa/message-clean-mode
 
@@ -40,32 +40,41 @@
   :group 'convenience
   :link '(url-link :tag "Repository" "https://github.com/jcs-elpa/message-clean-mode"))
 
-(defcustom message-clean-mode-commands
+(defcustom message-clean-mode-mute-commands
+  '()
+  "List of commands to mute completely."
+  :type 'list
+  :group 'message-clean)
+
+(defcustom message-clean-mode-echo-commands
   '()
   "List of commands to inhibit log to *Messages* buffer."
   :type 'list
   :group 'message-clean)
 
-(defcustom message-clean-mode-inhibit-echo nil
-  "Non-nil to hide message from echo area."
-  :type 'boolean
-  :group 'message-clean)
-
 (defun message-clean-mode--mute (fnc &rest args)
   "Mute any commands (FNC, ARGS)."
-  (let ((inhibit-message message-clean-mode-inhibit-echo)
-        message-log-max)
+  (let ((inhibit-message t) message-log-max)
+    (apply fnc args)))
+
+(defun message-clean-mode--echo (fnc &rest args)
+  "Mute any commands (FNC, ARGS)."
+  (let (inhibit-message message-log-max)
     (apply fnc args)))
 
 (defun message-clean-mode--enable ()
   "Enable function `message-clean-mode'."
-  (dolist (cmd message-clean-mode-commands)
-    (advice-add cmd :around #'message-clean-mode--mute)))
+  (dolist (cmd message-clean-mode-mute-commands)
+    (advice-add cmd :around #'message-clean-mode--mute))
+  (dolist (cmd message-clean-mode-echo-commands)
+    (advice-add cmd :around #'message-clean-mode--echo)))
 
 (defun message-clean-mode--disable ()
   "Disable function `message-clean-mode'."
-  (dolist (cmd message-clean-mode-commands)
-    (advice-remove cmd #'message-clean-mode--mute)))
+  (dolist (cmd message-clean-mode-mute-commands)
+    (advice-remove cmd #'message-clean-mode--mute))
+  (dolist (cmd message-clean-mode-echo-commands)
+    (advice-remove cmd #'message-clean-mode--echo)))
 
 ;;;###autoload
 (define-minor-mode message-clean-mode
