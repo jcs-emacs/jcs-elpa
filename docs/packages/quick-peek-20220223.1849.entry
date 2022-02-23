@@ -1,9 +1,9 @@
 (quick-peek .
-	    [(20220223 1812)
+	    [(20220223 1849)
 	     ((emacs
 	       (24 3)))
 	     "Inline quick-peek windows" single
-	     ((:commit . "bee107dd79d91aca39088f0c4256c1d9ed8da588")
+	     ((:commit . "746c75110e3e149dbeeb9e4d39d9465d141708ed")
 	      (:authors
 	       ("Clément Pit-Claudel" . "clement.pitclaudel@live.com"))
 	      (:maintainer "Clément Pit-Claudel" . "clement.pitclaudel@live.com")
