@@ -4,8 +4,8 @@
 
 ;; Author: Clément Pit-Claudel <clement.pitclaudel@live.com>
 ;; Keywords: tools help doc convenience
-;; Package-Version: 20220223.1849
-;; Package-Commit: 746c75110e3e149dbeeb9e4d39d9465d141708ed
+;; Package-Version: 20220223.1938
+;; Package-Commit: 5eadb029d2e3abe92de54a995fb00ee425bf9bf8
 ;; Package-Requires: ((emacs "24.3"))
 ;; Version: 1.0
 
@@ -195,7 +195,7 @@ Optionally adds an ELLIPSIS at the end."
       (setq lvl (quick-peek--last-visible-line-in-window)
             ln-diff (- lvl ln-current))
       (when (< ln-diff default-max-h)
-        (scroll-up-line (- default-max-h ln-diff))))))
+        (ignore-errors (scroll-up-line (- default-max-h ln-diff)))))))
 
 (defun quick-peek--insert-spacer (pos _str-before _str-after)
   "Insert a thin horizontal line at POS.
