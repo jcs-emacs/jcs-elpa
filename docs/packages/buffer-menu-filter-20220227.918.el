@@ -7,8 +7,8 @@
 ;; Description: Filter buffer-menu items using fake header.
 ;; Keyword: buffer menu filter
 ;; Version: 0.1.0
-;; Package-Version: 20220227.915
-;; Package-Commit: f5b958ebdac79e17c7af2d1a5e0ffff786f6d2be
+;; Package-Version: 20220227.918
+;; Package-Commit: 5d7a250e7b4f3e095a911ef9db5fe620f1e120d3
 ;; Package-Requires: ((emacs "26.1") (flx "0.6.1") (ht "2.0"))
 ;; URL: https://github.com/jcs-elpa/buffer-menu-filter
 
@@ -64,6 +64,9 @@
   "Filter delay time."
   :type 'float
   :group 'buffer-menu-filter)
+
+(defconst buffer-menu-filter-name "*Buffer List*"
+  "Buffer name for *Buffer List*.")
 
 (defvar buffer-menu-filter--first-enter nil
   "Record if fake header already appears.")
@@ -194,7 +197,7 @@ If BUFFER isn't showing; then execute ERROR operations instead."
 (defun buffer-menu-filter--filter-list ()
   "Do filtering the buffer list."
   (buffer-menu-filter--jump-to-buffer-windows
-   diminish-buffer-menu-name
+   buffer-menu-filter-name
    :success
    (lambda ()
      (let ((scoring-table (ht-create)) scoring-keys)
