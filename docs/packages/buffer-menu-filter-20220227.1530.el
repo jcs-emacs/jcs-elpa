@@ -7,8 +7,8 @@
 ;; Description: Filter buffer-menu items using fake header.
 ;; Keyword: buffer menu filter
 ;; Version: 0.1.0
-;; Package-Version: 20220227.932
-;; Package-Commit: f3d809df5f0fd1308fa74a0b6c59acd7064eed38
+;; Package-Version: 20220227.1530
+;; Package-Commit: 8e1a0f111d321bc47993cbca5ed4f1fbe399fe05
 ;; Package-Requires: ((emacs "26.1") (buffer-menu-project "0.1.0") (flx "0.6.1") (ht "2.0"))
 ;; URL: https://github.com/jcs-elpa/buffer-menu-filter
 
@@ -73,7 +73,8 @@
   "Record if fake header already appears.")
 
 (defvar buffer-menu-filter--return-delay nil
-  "Record if hit return when display not ready; once it is ready we redo the action.")
+  "Record if hit return when display not ready; once it is ready we redo the
+action.")
 
 (defvar buffer-menu-filter--score-standard 0
   "Standard score that minimum to reach, or else delete it.
