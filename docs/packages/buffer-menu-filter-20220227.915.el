@@ -7,8 +7,8 @@
 ;; Description: Filter buffer-menu items using fake header.
 ;; Keyword: buffer menu filter
 ;; Version: 0.1.0
-;; Package-Version: 20220219.909
-;; Package-Commit: b92e2fb722ca7ca509cc13db4f3d7d0dfa0bc2fe
+;; Package-Version: 20220227.915
+;; Package-Commit: f5b958ebdac79e17c7af2d1a5e0ffff786f6d2be
 ;; Package-Requires: ((emacs "26.1") (flx "0.6.1") (ht "2.0"))
 ;; URL: https://github.com/jcs-elpa/buffer-menu-filter
 
@@ -60,6 +60,11 @@
     "/" "?" "|" " ")
   "List of key to bind.")
 
+(defcustom buffer-menu-filter-delay 0.2
+  "Filter delay time."
+  :type 'float
+  :group 'buffer-menu-filter)
+
 (defvar buffer-menu-filter--first-enter nil
   "Record if fake header already appears.")
 
@@ -73,11 +78,8 @@ From scale 0 to 100.")
 (defvar buffer-menu-filter--done-filtering t
   "Flag to check if done filtering.")
 
-(defvar buffer-menu-filter--filter-timer nil
+(defvar buffer-menu-filter--timer nil
   "Store filter timer function.")
-
-(defvar buffer-menu-filter--filter-delay 0.1
-  "Filter delay time.")
 
 (defvar buffer-menu-filter--pattern ""
   "Search pattern.")
@@ -246,10 +248,10 @@ If BUFFER isn't showing; then execute ERROR operations instead."
   (buffer-menu-filter--update-header-string)
   (buffer-menu-filter--safe-print-fake-header)
   (unless (string-empty-p buffer-menu-filter--pattern)
-    (setq buffer-menu-filter--filter-timer (buffer-menu-filter--kill-timer buffer-menu-filter--filter-timer)
+    (setq buffer-menu-filter--timer (buffer-menu-filter--kill-timer buffer-menu-filter--timer)
           buffer-menu-filter--done-filtering nil
-          buffer-menu-filter--filter-timer
-          (run-with-idle-timer buffer-menu-filter--filter-delay
+          buffer-menu-filter--timer
+          (run-with-idle-timer buffer-menu-filter-delay
                                nil #'buffer-menu-filter--filter-list))))
 
 (defun buffer-menu-filter--input (key-input &optional add-del-num)
