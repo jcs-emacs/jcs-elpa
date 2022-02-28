@@ -7,8 +7,8 @@
 ;; Description: Preview anything at point.
 ;; Keyword: preview image path file
 ;; Version: 1.1.0
-;; Package-Version: 20220228.708
-;; Package-Commit: c4a50fe77b7fd347e3b3e2992e6a50a2fb9cf341
+;; Package-Version: 20220228.712
+;; Package-Commit: f8c06102d0363676b2ff1da8635a6d1b2ce422b9
 ;; Package-Requires: ((emacs "26.1") (posframe "1.1.7") (request "0.3.0") (gh-md "0.1.1"))
 ;; URL: https://github.com/jcs-elpa/preview-it
 
@@ -228,7 +228,7 @@
       (preview-it--mute-apply (preview-it--render-file path)))
      ;; TODO: Not sure if there are other cases.
      ((string-match-p "http[s]*://" path)  ; request
-      (preview-it--render-url)))
+      (preview-it--render-url path)))
     (unless (preview-it--content-empty-p)
       (preview-it--show)
       (add-hook 'post-command-hook #'preview-it--post))))
