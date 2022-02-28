@@ -7,9 +7,9 @@
 ;; Description: Preview anything at point.
 ;; Keyword: preview image path file
 ;; Version: 1.1.0
-;; Package-Version: 20220214.1358
-;; Package-Commit: eab63e5469da061a8b60f064cb1df1d2b7cff74d
-;; Package-Requires: ((emacs "26.1") (posframe "1.1.7") (request "0.3.0"))
+;; Package-Version: 20220228.708
+;; Package-Commit: c4a50fe77b7fd347e3b3e2992e6a50a2fb9cf341
+;; Package-Requires: ((emacs "26.1") (posframe "1.1.7") (request "0.3.0") (gh-md "0.1.1"))
 ;; URL: https://github.com/jcs-elpa/preview-it
 
 ;; This file is NOT part of GNU Emacs.
@@ -50,6 +50,7 @@
 
 (require 'posframe)
 (require 'request)
+(require 'gh-md)
 
 (defgroup preview-it nil
   "Preview anything at point."
@@ -66,6 +67,11 @@
 (defcustom preview-it-delay 0.4
   "Seconds delay to show preview."
   :type 'float
+  :group 'preview-it)
+
+(defcustom preview-it-render-md nil
+  "Set to non-nil, render markdown file."
+  :type 'boolean
   :group 'preview-it)
 
 (defconst preview-it--buffer-name "*preview-it*"
@@ -116,6 +122,13 @@
 ;; (@* "Util" )
 ;;
 
+(defmacro preview-it--mute-apply (&rest body)
+  "Execute BODY without message."
+  (declare (indent 0) (debug t))
+  `(let (message-log-max)
+     (with-temp-message (or (current-message) nil)
+       (let ((inhibit-message t)) ,@body))))
+
 (defun preview-it--is-contain-list-string-regexp (in-list in-str)
   "Check if IN-STR contain in any string in the IN-LIST."
   (cl-some (lambda (lb-sub-str) (string-match-p lb-sub-str in-str)) in-list))
@@ -164,42 +177,58 @@
 ;; (@* "Core" )
 ;;
 
-(defun preview-it--get-info ()
-  "Return possible preview information."
-  (or (ffap-url-at-point) (ffap-file-at-point)))
-
 (defun preview-it--content-empty-p ()
   "Return non-nil if content is empty."
   (string-empty-p (preview-it--with-preview-buffer (buffer-string))))
+
+(defun preview-it--save-window-layout (fnc &rest args)
+  "Advice execute around FNC, ARGS."
+  (save-window-excursion (apply fnc args))
+  (advice-remove 'gh-md--callback #'preview-it--save-window-layout))  ; Remove self
+
+(defun preview-it--render-file (path)
+  "Render local file PATH."
+  (let ((ext (file-name-extension path)))
+    (cond
+     ((member ext preview-it--image-extensions)
+      (preview-it--with-preview-buffer
+        (ignore-errors (insert-image-file path))
+        (image-mode)))
+     ((and preview-it-render-md (member ext '("md" "markdown")))
+      (advice-add 'gh-md--callback :around #'preview-it--save-window-layout)
+      (let ((gh-md-buffer-name preview-it--buffer-name))
+        (preview-it--with-preview-buffer
+          (ignore-errors (insert-file-contents path))
+          (gh-md-render-buffer))))
+     ;; TODO: This method is very slow, need to find other replacement.
+     ((preview-it--text-file-p path)
+      (setq path (expand-file-name path))
+      (preview-it--with-preview-buffer
+        (insert-file-contents path)
+        (let ((buffer-file-name path)) (delay-mode-hooks (set-auto-mode)))
+        (ignore-errors (font-lock-ensure)))))))
+
+(defun preview-it--render-url (path)
+  "Render http PATH."
+  (setq preview-it--url-request
+        (request
+          path
+          :type "GET"
+          :parser 'buffer-string
+          :success 'preview-it--receive-data)))
 
 ;;;###autoload
 (defun preview-it ()
   "Preview thing at point."
   (interactive)
-  (when-let ((info (preview-it--get-info)))
+  (when-let ((path (ffap-guesser)))
     (preview-it--with-preview-buffer (erase-buffer))
     (cond
-     ((preview-it--is-file-p info)  ; file
-      (cond ((member (file-name-extension info) preview-it--image-extensions)
-             (let ((inhibit-message t) message-log-max)
-               (preview-it--with-preview-buffer
-                 (ignore-errors (insert-image-file info))
-                 (image-mode))))
-            ;; TODO: This method is very slow, need to find other replacement.
-            ((preview-it--text-file-p info)
-             (setq info (expand-file-name info))
-             (preview-it--with-preview-buffer
-               (insert-file-contents info)
-               (let ((buffer-file-name info)) (delay-mode-hooks (set-auto-mode)))
-               (ignore-errors (font-lock-ensure))))))
+     ((preview-it--is-file-p path)  ; file
+      (preview-it--mute-apply (preview-it--render-file path)))
      ;; TODO: Not sure if there are other cases.
-     ((string-match-p "http[s]*://" info)  ; request
-      (setq preview-it--url-request
-            (request
-              info
-              :type "GET"
-              :parser 'buffer-string
-              :success 'preview-it--receive-data))))
+     ((string-match-p "http[s]*://" path)  ; request
+      (preview-it--render-url)))
     (unless (preview-it--content-empty-p)
       (preview-it--show)
       (add-hook 'post-command-hook #'preview-it--post))))
