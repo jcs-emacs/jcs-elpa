@@ -1,5 +1,5 @@
 (company-box .
-	     [(20220130 1543)
+	     [(20220228 1138)
 	      ((emacs
 		(27 1))
 	       (dash
@@ -9,7 +9,7 @@
 	       (frame-local
 		(0 0 1)))
 	      "Company front-end with icons" tar
-	      ((:commit . "2de7383e52b526b64f8f482c6100bc178e990a85")
+	      ((:commit . "546f70479ad62a18ed096a3bbb7efa5e0b97e746")
 	       (:authors
 		("Sebastien Chapuis" . "sebastien@chapu.is"))
 	       (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
