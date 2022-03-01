@@ -1,9 +1,9 @@
 (message-clean-mode .
-		    [(20220221 812)
+		    [(20220301 748)
 		     ((emacs
-		       (24 4)))
+		       (25 1)))
 		     "Keep messages buffer clean" single
-		     ((:commit . "76059216c42de2e425cc2848123a85e8d9e5770b")
+		     ((:commit . "9356e75915e44164b02a80aa29ccf95b38723506")
 		      (:authors
 		       ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 		      (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
