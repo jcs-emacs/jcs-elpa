@@ -7,8 +7,8 @@
 ;; Description: Automatically show/hide scroll-bars as needed.
 ;; Keyword: scrollbar
 ;; Version: 0.1.0
-;; Package-Version: 20220302.736
-;; Package-Commit: 9e1a517928e678a4cbc8c64e62711d4a6ef1f2e2
+;; Package-Version: 20220302.1640
+;; Package-Commit: f203d63fe00bb5dda512599c51b0221d839f3510
 ;; Package-Requires: ((emacs "26.1"))
 ;; URL: https://github.com/jcs-elpa/auto-scroll-bar
 
@@ -111,16 +111,18 @@
 
 (defun auto-scroll-bar--show-h-p ()
   "Return non-nil if we should show the horizontal scroll-bar."
-  (when horizontal-scroll-bar
-    (save-excursion
-      (move-to-window-line 0)
-      (let ((count 0) (target (auto-scroll-bar--window-height)) break)
-        (while (and (not (eobp)) (< count target) (not break))
-          (if (< (auto-scroll-bar--window-width) (- (line-end-position) (line-beginning-position)))
-              (setq break t)
-            (forward-line 1)
-            (cl-incf count)))
-        break))))
+  (and
+   horizontal-scroll-bar
+   truncate-lines
+   (save-excursion
+     (move-to-window-line 0)
+     (let ((count 0) (target (auto-scroll-bar--window-height)) break)
+       (while (and (not (eobp)) (< count target) (not break))
+         (if (< (auto-scroll-bar--window-width) (- (line-end-position) (line-beginning-position)))
+             (setq break t)
+           (forward-line 1)
+           (cl-incf count)))
+       break))))
 
 (defun auto-scroll-bar--disabled-p ()
   "Return non-nil if scroll-bars should be ignored."
