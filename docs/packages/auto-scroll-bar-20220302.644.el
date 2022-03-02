@@ -7,8 +7,8 @@
 ;; Description: Automatically show/hide scroll-bars as needed.
 ;; Keyword: scrollbar
 ;; Version: 0.1.0
-;; Package-Version: 20220302.636
-;; Package-Commit: db18863ea2b713fa54f6a3fdf114dc0e3aa4e7a6
+;; Package-Version: 20220302.644
+;; Package-Commit: b46294108b05462b9aea3963534d18be649287ef
 ;; Package-Requires: ((emacs "26.1"))
 ;; URL: https://github.com/jcs-elpa/auto-scroll-bar
 
@@ -147,6 +147,7 @@ and SHOW-H."
 
 (defun auto-scroll-bar--enable ()
   "Enable function `auto-scroll-bar-mode'."
+  (add-hook 'window-size-change-functions #'auto-scroll-bar--change)
   (add-hook 'post-command-hook #'auto-scroll-bar--change)  ; post command, less buggy
   (toggle-scroll-bar 1)
   (when auto-scroll-bar-horizontal (toggle-horizontal-scroll-bar 1))
@@ -156,6 +157,7 @@ and SHOW-H."
 
 (defun auto-scroll-bar--disable ()
   "Disable function `auto-scroll-bar-mode'."
+  (remove-hook 'window-size-change-functions #'auto-scroll-bar--change)
   (remove-hook 'post-command-hook #'auto-scroll-bar--change)
   (toggle-scroll-bar -1)
   (toggle-horizontal-scroll-bar -1))
