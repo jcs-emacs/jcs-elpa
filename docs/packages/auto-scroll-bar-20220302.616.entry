@@ -1,9 +1,9 @@
 (auto-scroll-bar .
-		 [(20220302 605)
+		 [(20220302 616)
 		  ((emacs
 		    (26 1)))
 		  "Automatically show/hide scroll-bars as needed" single
-		  ((:commit . "1434fe100b5d473a7174b71d7b5a5658ef6863a8")
+		  ((:commit . "2fd8c16eb2c4f96788fa9d931ee5d969bc5021b3")
 		   (:authors
 		    ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 		   (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")

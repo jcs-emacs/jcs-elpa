@@ -7,8 +7,8 @@
 ;; Description: Automatically show/hide scroll-bars as needed.
 ;; Keyword: scrollbar
 ;; Version: 0.1.0
-;; Package-Version: 20220302.605
-;; Package-Commit: 1434fe100b5d473a7174b71d7b5a5658ef6863a8
+;; Package-Version: 20220302.616
+;; Package-Commit: 2fd8c16eb2c4f96788fa9d931ee5d969bc5021b3
 ;; Package-Requires: ((emacs "26.1"))
 ;; URL: https://github.com/jcs-elpa/auto-scroll-bar
 
@@ -58,14 +58,6 @@
   "Set to non-nil to auto show/hide horizontal-scroll-bar."
   :type 'boolean
   :group 'auto-scroll-bar)
-
-(defcustom auto-scroll-bar-delay 0.2
-  "Time to update scroll-bars state."
-  :type 'float
-  :group 'auto-scroll-bar)
-
-(defvar auto-scroll-bar--timer nil
-  "Timer to do the show/hide task.")
 
 ;;
 ;; (@* "Util" )
@@ -125,7 +117,12 @@
 
 (defun auto-scroll-bar--update (win show-v show-h &optional persistent)
   "Update scrollbar WIN, SHOW-V, SHOW-H, PERSISTENT."
-  (set-window-scroll-bars win nil show-v nil show-h persistent)
+  ;;(set-window-scroll-bars win nil show-v nil show-h persistent)
+  (let* ((bars (window-scroll-bars win))
+         (shown-v (nth 2 bars))
+         (shown-h (nth 5 bars)))
+    (when (or (not (eq shown-v show-v)) (not (eq shown-h show-h)))
+      (set-window-scroll-bars win nil show-v nil show-h persistent)))
   (save-window-excursion (ignore-errors (enlarge-window 1))))  ; refresh
 
 (defun auto-scroll-bar--show-hide (win)
@@ -137,16 +134,10 @@
             (show-h (auto-scroll-bar--show-h-p)))
         (auto-scroll-bar--update win show-v show-h)))))
 
-(defun auto-scroll-bar--start-task ()
-  ""
-  (auto-scroll-bar--with-no-redisplay
-    (dolist (win (window-list)) (auto-scroll-bar--show-hide win))))
-
 (defun auto-scroll-bar--change (&rest _)
   "Window state change."
-  (when (timerp auto-scroll-bar--timer) (cancel-timer auto-scroll-bar--timer))
-  (setq auto-scroll-bar--timer
-        (run-with-idle-timer auto-scroll-bar-delay nil #'auto-scroll-bar--start-task)))
+  (auto-scroll-bar--with-no-redisplay
+    (dolist (win (window-list)) (auto-scroll-bar--show-hide win))))
 
 (defun auto-scroll-bar--enable ()
   "Enable function `auto-scroll-bar-mode'."
