@@ -7,8 +7,8 @@
 ;; Description: Automatically show/hide scroll-bars as needed.
 ;; Keyword: scrollbar
 ;; Version: 0.1.0
-;; Package-Version: 20220302.701
-;; Package-Commit: 43ad5a28f48163ad29cf5ea96113686b190c5842
+;; Package-Version: 20220302.736
+;; Package-Commit: 30286ef015183d1229de605a7b30062813ed0794
 ;; Package-Requires: ((emacs "26.1"))
 ;; URL: https://github.com/jcs-elpa/auto-scroll-bar
 
@@ -106,7 +106,8 @@
 (defun auto-scroll-bar--show-v-p ()
   "Return non-nil if we should show the vertical scroll-bar."
   (and vertical-scroll-bar
-       (not (string= (format-mode-line mode-line-percent-position) "All"))))
+       (not (and (= (point-min) (window-start))
+                 (= (point-max) (window-end nil t))))))
 
 (defun auto-scroll-bar--show-h-p ()
   "Return non-nil if we should show the horizontal scroll-bar."
