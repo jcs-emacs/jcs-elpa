@@ -7,8 +7,8 @@
 ;; Description: Automatically show/hide scroll-bars as needed.
 ;; Keyword: scrollbar
 ;; Version: 0.1.0
-;; Package-Version: 20220302.625
-;; Package-Commit: eb560bb2b007cbcee4e758a09b279b886929937f
+;; Package-Version: 20220302.636
+;; Package-Commit: db18863ea2b713fa54f6a3fdf114dc0e3aa4e7a6
 ;; Package-Requires: ((emacs "26.1"))
 ;; URL: https://github.com/jcs-elpa/auto-scroll-bar
 
@@ -151,7 +151,8 @@ and SHOW-H."
   (toggle-scroll-bar 1)
   (when auto-scroll-bar-horizontal (toggle-horizontal-scroll-bar 1))
   (when auto-scroll-bar-hide-minibuffer
-    (auto-scroll-bar--update (minibuffer-window) nil nil t)))
+    (auto-scroll-bar--update (minibuffer-window) nil nil t))
+  (auto-scroll-bar--change))  ; execute once
 
 (defun auto-scroll-bar--disable ()
   "Disable function `auto-scroll-bar-mode'."
