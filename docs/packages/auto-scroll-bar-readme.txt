@@ -1,2 +1,2 @@
 
-Automatically show/hide scroll-bar.
+Automatically show/hide scroll-bars as needed.
