@@ -1,0 +1,10 @@
+(fextern .
+	 [(20220308 1147)
+	  ((emacs
+	    (24 3)))
+	  "Record file external states" single
+	  ((:commit . "4e58a9d22ec4b53d05c6058d219d4a3310938f38")
+	   (:authors
+	    ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
+	   (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
+	   (:url . "https://github.com/emacs-vs/fextern"))])

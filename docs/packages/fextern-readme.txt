@@ -1,0 +1,2 @@
+
+Record file external states.
