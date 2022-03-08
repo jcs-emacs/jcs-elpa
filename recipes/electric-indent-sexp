@@ -1,1 +1,1 @@
-(electric-indent-sexp :repo "jcs-elpa/electric-indent-sexp" :fetcher github)
+(electric-indent-sexp :repo "fextern/electric-indent-sexp" :fetcher github)
