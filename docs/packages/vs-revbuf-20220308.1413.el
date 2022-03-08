@@ -7,8 +7,8 @@
 ;; Description: Revert buffers like Visual Studio.
 ;; Keyword: revert vs
 ;; Version: 0.1.0
-;; Package-Version: 20220308.1407
-;; Package-Commit: 91d51c22de873e469e31b2445b4d17fa6c8727bd
+;; Package-Version: 20220308.1413
+;; Package-Commit: e10c54a5b4245cc3159ff031178b026ab9619ab9
 ;; Package-Requires: ((emacs "27.1") (fextern "0.1.0"))
 ;; URL: https://github.com/emacs-vs/vs-revbuf
 
@@ -93,10 +93,9 @@ This occurs when file was opened but has moved to somewhere else externally."
   (interactive)
   ;; Record all the enabled mode that you want to remain enabled after
   ;; revert the file.
-  (let ((was-readonly (if buffer-read-only 1 -1))
-        (was-g-hl-line (if (and (featurep 'hl-line) global-hl-line-mode) 1 -1))
-        (was-flycheck (if (and (featurep 'flycheck) flycheck-mode) 1 -1))
-        (was-page-lines (if (and (featurep 'page-break-lines) page-break-lines-mode) 1 -1)))
+  (let ((was-readonly buffer-read-only)
+        (was-flycheck (and (featurep 'flycheck) flycheck-mode))
+        (was-page-lines (and (featurep 'page-break-lines) page-break-lines-mode)))
     ;; Revert it!
     (ignore-errors (revert-buffer :ignore-auto :noconfirm :preserve-modes))
     (fextern-update-buffer-save-string)
@@ -105,10 +104,9 @@ This occurs when file was opened but has moved to somewhere else externally."
                    (called-interactively-p 'interactive)))
       (line-reminder-clear-reminder-lines-sign))
     ;; Revert all the enabled modes
-    (read-only-mode was-readonly)
-    (when (featurep 'hl-line) (global-hl-line-mode was-g-hl-line))
-    (when (featurep 'flycheck) (flycheck-mode was-flycheck))
-    (when (featurep 'page-break-lines) (page-break-lines-mode was-page-lines))))
+    (when was-readonly (read-only-mode 1))
+    (when was-flycheck (flycheck-mode 1))
+    (when was-page-lines (page-break-lines-mode 1))))
 
 (defun vs-revbuf--all-invalid-buffers ()
   "Revert all invalid buffers."
