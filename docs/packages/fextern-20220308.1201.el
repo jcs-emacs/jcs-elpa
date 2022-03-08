@@ -1,15 +1,15 @@
-;;; fextern.el --- Record file external states  -*- lexical-binding: t; -*-
+;;; fextern.el --- Record file external stats  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2022  Shen, Jen-Chieh
 ;; Created date 2022-03-08 17:30:07
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
-;; Description: Record file external states.
-;; Keyword: externally file states
+;; Description: Record file external stats.
+;; Keyword: externally file stats
 ;; Version: 0.1.0
-;; Package-Version: 20220308.1147
-;; Package-Commit: 4e58a9d22ec4b53d05c6058d219d4a3310938f38
-;; Package-Requires: ((emacs "24.3"))
+;; Package-Version: 20220308.1201
+;; Package-Commit: 6a211cd45057ae884278a496992d66da537ab4a2
+;; Package-Requires: ((emacs "25.1"))
 ;; URL: https://github.com/emacs-vs/fextern
 
 ;; This file is NOT part of GNU Emacs.
@@ -29,7 +29,7 @@
 
 ;;; Commentary:
 ;;
-;; Record file external states.
+;; Record file external stats.
 ;;
 
 ;;; Code:
@@ -42,15 +42,14 @@
 This variable is used to check if file are edited externally.")
 
 ;;;###autoload
-(defun fextern--update-buffer-save-string (&rest _)
+(defun fextern-update-buffer-save-string (&rest _)
   "Update variable `fextern-buffer-save-string-md5' once."
   (setq fextern-buffer-save-string-md5 (md5 (buffer-string))))
 
 ;;;###autoload
-(advice-add 'save-buffer :after #'fextern--update-buffer-save-string)
-
+(advice-add 'save-buffer :after #'fextern-update-buffer-save-string)
 ;;;###autoload
-(add-hook 'find-file-hook #'fextern--update-buffer-save-string)
+(add-hook 'find-file-hook #'fextern-update-buffer-save-string)
 
 ;;
 ;; (@* "Util" )

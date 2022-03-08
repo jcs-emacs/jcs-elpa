@@ -1,2 +1,2 @@
 
-Record file external states.
+Record file external stats.
