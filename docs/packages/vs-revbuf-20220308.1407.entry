@@ -1,11 +1,11 @@
 (vs-revbuf .
-	   [(20220308 1347)
+	   [(20220308 1407)
 	    ((emacs
 	      (27 1))
 	     (fextern
 	      (0 1 0)))
 	    "Revert buffers like Visual Studio" single
-	    ((:commit . "1eaab8a3a070c184ef96cdf614153b9ebed8b80b")
+	    ((:commit . "91d51c22de873e469e31b2445b4d17fa6c8727bd")
 	     (:authors
 	      ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 	     (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
