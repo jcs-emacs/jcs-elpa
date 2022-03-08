@@ -1,0 +1,1 @@
+(fextern :repo "emacs-vs/fextern" :fetcher github)
