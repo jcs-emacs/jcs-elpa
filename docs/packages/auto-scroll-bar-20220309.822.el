@@ -7,8 +7,8 @@
 ;; Description: Automatically show/hide scroll-bars as needed.
 ;; Keyword: scrollbar
 ;; Version: 0.1.0
-;; Package-Version: 20220302.1640
-;; Package-Commit: 9b52b5e77081abb05fc2b1ae7063abab6cbb9046
+;; Package-Version: 20220309.822
+;; Package-Commit: b88b1ff62ee6c3bd8f7b03698e74fa175e9daabf
 ;; Package-Requires: ((emacs "26.1"))
 ;; URL: https://github.com/jcs-elpa/auto-scroll-bar
 
@@ -79,6 +79,7 @@
          buffer-list-update-hook
          display-buffer-alist
          window-configuration-change-hook
+         window-scroll-functions
          window-size-change-functions
          window-state-change-hook)
      ,@body))
@@ -154,25 +155,34 @@ and SHOW-H."
             (show-h (auto-scroll-bar--show-h-p)))
         (auto-scroll-bar--update win show-v show-h)))))
 
-(defun auto-scroll-bar--change (&rest _)
-  "Window state change."
+(defun auto-scroll-bar--hide-minibuffer ()
+  "Hide minibuffer when variable `auto-scroll-bar-hide-minibuffer' is enabled."
+  (when auto-scroll-bar-hide-minibuffer
+    (auto-scroll-bar--update (minibuffer-window) nil nil t)))
+
+(defun auto-scroll-bar--size-change (&rest _)
+  "Show/Hide all visible windows."
   (auto-scroll-bar--with-no-redisplay
-    (dolist (win (window-list)) (auto-scroll-bar--show-hide win))))
+    (dolist (win (window-list)) (auto-scroll-bar--show-hide win))
+    (auto-scroll-bar--hide-minibuffer)))
+
+(defun auto-scroll-bar--scroll (&optional window &rest _)
+  "Show/Hide scroll-bar on WINDOW."
+  (auto-scroll-bar--with-no-redisplay
+    (when (windowp window) (auto-scroll-bar--show-hide window))))
 
 (defun auto-scroll-bar--enable ()
   "Enable function `auto-scroll-bar-mode'."
-  (add-hook 'window-size-change-functions #'auto-scroll-bar--change)
-  (add-hook 'post-command-hook #'auto-scroll-bar--change)  ; post command, less buggy
+  (add-hook 'window-size-change-functions #'auto-scroll-bar--size-change)
+  (add-hook 'window-scroll-functions #'auto-scroll-bar--scroll)
   (toggle-scroll-bar 1)
   (when auto-scroll-bar-horizontal (toggle-horizontal-scroll-bar 1))
-  (when auto-scroll-bar-hide-minibuffer
-    (auto-scroll-bar--update (minibuffer-window) nil nil t))
-  (auto-scroll-bar--change))  ; execute once
+  (auto-scroll-bar--size-change))  ; execute once
 
 (defun auto-scroll-bar--disable ()
   "Disable function `auto-scroll-bar-mode'."
-  (remove-hook 'window-size-change-functions #'auto-scroll-bar--change)
-  (remove-hook 'post-command-hook #'auto-scroll-bar--change)
+  (remove-hook 'window-size-change-functions #'auto-scroll-bar--size-change)
+  (remove-hook 'window-scroll-functions #'auto-scroll-bar--scroll)
   (toggle-scroll-bar -1)
   (toggle-horizontal-scroll-bar -1))
 
