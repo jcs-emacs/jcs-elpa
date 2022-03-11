@@ -7,8 +7,8 @@
 ;; Description: Minor mode accomplish editing experience in Visual Studio.
 ;; Keyword: editing vs
 ;; Version: 0.1.0
-;; Package-Version: 20220311.1503
-;; Package-Commit: d6234859789e456832785bc425891b61e2b158bc
+;; Package-Version: 20220311.1736
+;; Package-Commit: 0e7a001ccd39453f1a1daafb9f24a8c0ecc8f9fd
 ;; Package-Requires: ((emacs "24.3"))
 ;; URL: https://github.com/emacs-vs/vs-edit-mode
 
@@ -75,7 +75,7 @@
   :lighter " VS-Edit"
   :group vs-edit
   (when vs-edit-mode
-    (when (memq major-mode vs-edit-active-modes)
+    (unless (memq major-mode vs-edit-active-modes)
       (vs-edit-mode -1))))
 
 (defun vs-edit-turn-on-mode ()
