@@ -1,9 +1,9 @@
 (vs-edit-mode .
-	      [(20220311 1500)
+	      [(20220311 1503)
 	       ((emacs
 		 (24 3)))
 	       "Minor mode accomplish editing experience in Visual Studio" single
-	       ((:commit . "b8b623143ef098beafc7770f59af61806177e754")
+	       ((:commit . "d6234859789e456832785bc425891b61e2b158bc")
 		(:authors
 		 ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
