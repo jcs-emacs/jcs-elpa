@@ -1,0 +1,1 @@
+(vs-edit-mode :repo "emacs-vs/vs-edit-mode" :fetcher github)
