@@ -7,8 +7,8 @@
 ;; Description: Automatically show/hide scroll-bars as needed.
 ;; Keyword: scrollbar
 ;; Version: 0.1.0
-;; Package-Version: 20220309.822
-;; Package-Commit: b88b1ff62ee6c3bd8f7b03698e74fa175e9daabf
+;; Package-Version: 20220313.1830
+;; Package-Commit: e637f81cf3550a12b98309b623b550a157204fe3
 ;; Package-Requires: ((emacs "26.1"))
 ;; URL: https://github.com/jcs-elpa/auto-scroll-bar
 
@@ -143,8 +143,8 @@ and SHOW-H."
 (defun auto-scroll-bar--update (win show-v show-h &optional persistent)
   "Update scrollbar WIN, SHOW-V, SHOW-H, PERSISTENT."
   (when (auto-scroll-bar--toggle-p win show-v show-h)
-    (set-window-scroll-bars win nil show-v nil show-h persistent))
-  (save-window-excursion (ignore-errors (enlarge-window 1))))  ; refresh
+    (set-window-scroll-bars win nil show-v nil show-h persistent)
+    (save-window-excursion (ignore-errors (enlarge-window 1)))))  ; refresh
 
 (defun auto-scroll-bar--show-hide (win)
   "Show/Hide scroll-bar for WIN."
