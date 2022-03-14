@@ -1,1 +1,1 @@
-(yes-no :fetcher wiki)
+(yes-no :url "https://www.emacswiki.org/emacs/yes-no.el" :fetcher wiki)
