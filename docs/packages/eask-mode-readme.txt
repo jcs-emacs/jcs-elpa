@@ -1,2 +1,2 @@
 
-major mode for editing Cask files.
+major mode for editing Eask files.
