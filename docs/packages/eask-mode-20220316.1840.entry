@@ -1,9 +1,9 @@
 (eask-mode .
-	   [(20220316 1705)
+	   [(20220316 1840)
 	    ((emacs
 	      (24 3)))
 	    "major mode for editing Eask files" single
-	    ((:commit . "c99b3e20db12f91d0e06b5bbf1cf911a9eebd2d3")
+	    ((:commit . "e08ab8d3bd3e9c34e9f1c2438063e2b783c43667")
 	     (:authors
 	      ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 	     (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
