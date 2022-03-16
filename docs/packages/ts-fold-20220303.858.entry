@@ -9,7 +9,7 @@
 	   (fringe-helper
 	    (1 0 1)))
 	  "Code folding using tree-sitter" tar
-	  ((:commit . "247058db79781aeffeae2b464eceecb6e53294f4")
+	  ((:commit . "9f445a7fd9ef8083526b231fbac5195699e95cb2")
 	   (:authors
 	    ("Junyi Hou" . "junyi.yi.hou@gmail.com")
 	    ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
