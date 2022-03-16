@@ -7,8 +7,8 @@
 ;; Description: major mode for editing Eask files.
 ;; Keyword: eask
 ;; Version: 0.1.0
-;; Package-Version: 20220315.1846
-;; Package-Commit: f7b9c16f313ebea398a1e98e7cf4b22c44207797
+;; Package-Version: 20220316.700
+;; Package-Commit: 1242c72bb14dbc565d6d36e32273a8ebcc5f456b
 ;; Package-Requires: ((emacs "24.3"))
 ;; URL: https://github.com/emacs-eask/eask-mode
 
@@ -41,36 +41,28 @@
     (modify-syntax-entry ?: "_" table)
     table))
 
-(defface eask-mode-source-face
-  '((t :inherit font-lock-variable-name-face))
-  "Face for known eask sources."
-  :group 'eask-mode)
-
 (defface eask-mode-symbol-face
   '((t :inherit font-lock-constant-face))
   "Face for highlighting symbols (e.g. :git) in Eask files."
   :group 'eask-mode)
 
-(defvar eask-mode-font-lock-keywords
+(defconst eask-mode-font-lock-keywords
   `((,(regexp-opt
        '("package" "package-file" "files" "depends-on" "development" "source" "source-priority")
        'symbols)
      . font-lock-keyword-face)
-    (,(regexp-opt
-       '("gnu" "melpa-stable" "melpa" "marmalade" "SC" "org")
-       'symbols)
-     . eask-mode-source-face)
     (,(rx symbol-start
           (or ":github" ":gitlab" "bitbucket" "wiki"
               ":git" ":bzr" ":hg" ":darcs" ":fossil" ":svn" ":cvs")
           symbol-end)
-     . eask-mode-symbol-face)))
+     . eask-mode-symbol-face))
+  "Keywords in Eask file.")
 
 ;;;###autoload
 (define-derived-mode eask-mode emacs-lisp-mode "Eask"
   "Major mode for editing Eask files."
   :syntax-table eask-mode-syntax-table
-  (setq font-lock-defaults '(eask-mode-font-lock-keywords))
+  (font-lock-add-keywords 'eask-mode eask-mode-font-lock-keywords)
   ;; FIXME: toggling comments only applies to the current line,
   ;; breaking multiline sexps.
   (setq-local comment-start ";; "
