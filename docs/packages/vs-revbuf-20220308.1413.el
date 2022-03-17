@@ -8,7 +8,7 @@
 ;; Keyword: revert vs
 ;; Version: 0.1.0
 ;; Package-Version: 20220308.1413
-;; Package-Commit: db0f2f40d09ccc5b3e6c1aa7c708fc0cb50f2837
+;; Package-Commit: 9b3098e887d3315575b158357b04ad5e3d3e220d
 ;; Package-Requires: ((emacs "27.1") (fextern "0.1.0"))
 ;; URL: https://github.com/emacs-vs/vs-revbuf
 

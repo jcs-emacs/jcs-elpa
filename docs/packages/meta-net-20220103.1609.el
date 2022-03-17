@@ -8,7 +8,7 @@
 ;; Keyword: assembly xml utility
 ;; Version: 1.1.0
 ;; Package-Version: 20220103.1609
-;; Package-Commit: 7ad10353a989db2ed455fd062140cea3693ab11c
+;; Package-Commit: 83680c48bd89745cd4e8ad74b312963e179bcc9f
 ;; Package-Requires: ((emacs "25.1") (ht "2.3") (f "0.20.0") (s "1.12.0"))
 ;; URL: https://github.com/emacs-vs/meta-net
 
