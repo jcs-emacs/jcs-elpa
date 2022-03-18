@@ -35,9 +35,7 @@ jobs:
         git config user.email github-actions@github.com
 
     - name: Build packages
-      run: |
-        eask install
-        eask exec github-elpa update -a "./docs/packages"
+      run: make build
 
     - name: Generate archive.json file
       run: make generate_archive_json

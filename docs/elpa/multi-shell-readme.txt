@@ -1,2 +1,0 @@
-
-Managing multiple shell buffers.

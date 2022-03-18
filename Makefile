@@ -3,7 +3,12 @@ SHELL := /usr/bin/env bash
 EMACS ?= emacs
 EASK ?= eask
 
-.PHONY: generate_archive_json generate_badges_version generate_badges_downloads
+.PHONY: build generate_archive_json generate_badges_version generate_badges_downloads
+
+build:
+	@echo "Building packages..."
+	@$(EASK) install
+	@$(EASK) exec github-elpa update -a "./docs/packages"
 
 generate_archive_json:
 	@echo "Generating archive.json file..."
