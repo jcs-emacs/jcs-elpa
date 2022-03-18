@@ -3,6 +3,7 @@
 
 # Packaging
 .cask
+.eask
 
 # github-elpa
 .github-elpa-working/
