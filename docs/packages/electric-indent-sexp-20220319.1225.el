@@ -7,8 +7,8 @@
 ;; Description: Automatically indent entire balanced expression block.
 ;; Keyword: indent sexp electric
 ;; Version: 0.1.0
-;; Package-Version: 20220319.1007
-;; Package-Commit: 705ddeb7c61983d3fffb0f5f43465818ea908591
+;; Package-Version: 20220319.1225
+;; Package-Commit: 28618f755ad5c52d40acdb7c4d1029af0b84f268
 ;; Package-Requires: ((emacs "25.1"))
 ;; URL: https://github.com/jcs-elpa/electric-indent-sexp
 
@@ -76,22 +76,34 @@
   :type 'alist
   :group 'electric-indent-sexp)
 
+(defcustom electric-indent-sexp-auto-chars t
+  "Automatically update chars for major-mode."
+  :type 'boolean
+  :group 'electric-indent-sexp)
+
 (defvar electric-indent-sexp--chars-default electric-indent-chars
   "Store default indent characters.")
+
+(defmacro electric-indent-sexp--mute-apply (&rest body)
+  "Execute BODY without message."
+  (declare (indent 0) (debug t))
+  `(let ((inhibit-message t) message-log-max) ,@body))
 
 (defun electric-indent-sexp--post-self-insert (fn &rest args)
   "Execute around function `electric-indent-post-self-insert-function'."
   (when (apply fn args)
-    (let ((inhibit-message t) message-log-max)
+    (electric-indent-sexp--mute-apply
       (when-let ((beg (save-excursion (ignore-errors (backward-sexp)) (point)))
                  (end (point)))
         (unless (= beg end) (indent-region beg end))))))
 
+;;;###autoload
 (defun electric-indent-sexp-update-chars ()
   "Update `electric-indent-chars' according to `electric-indent-sexp-chars-alist'."
-  (setq-local electric-indent-chars
-              (or (cdr (assq major-mode electric-indent-sexp-chars-alist))
-                  electric-indent-sexp--chars-default)))  ; default
+  (when electric-indent-sexp-auto-chars
+    (setq-local electric-indent-chars
+                (or (cdr (assq major-mode electric-indent-sexp-chars-alist))
+                    electric-indent-sexp--chars-default))))  ; default
 
 (defun electric-indent-sexp--enable ()
   "Enable function `electric-indent-sexp-mode'."

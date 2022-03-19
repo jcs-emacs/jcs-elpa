@@ -1,9 +1,9 @@
 (electric-indent-sexp .
-		      [(20220319 1007)
+		      [(20220319 1225)
 		       ((emacs
 			 (25 1)))
 		       "Automatically indent entire balanced expression block" single
-		       ((:commit . "705ddeb7c61983d3fffb0f5f43465818ea908591")
+		       ((:commit . "28618f755ad5c52d40acdb7c4d1029af0b84f268")
 			(:authors
 			 ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 			(:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
