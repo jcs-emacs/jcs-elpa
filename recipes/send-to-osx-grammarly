@@ -1,0 +1,4 @@
+(send-to-osx-grammarly
+ :repo "emacs-grammarly/send-to-osx-grammarly"
+ :fetcher github
+ :files (:defaults "scripts"))
