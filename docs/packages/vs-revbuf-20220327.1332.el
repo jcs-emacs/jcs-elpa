@@ -6,9 +6,9 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Description: Revert buffers like Visual Studio.
 ;; Keyword: revert vs
-;; Version: 0.1.0
-;; Package-Version: 20220308.1413
-;; Package-Commit: 42df6b1fb9d1b21b57b823082de670823a952951
+;; Version: 0.1.1
+;; Package-Version: 20220327.1332
+;; Package-Commit: 04a51c1b6492afe2f832f35df16aa4ff7abd5ff3
 ;; Package-Requires: ((emacs "27.1") (fextern "0.1.0"))
 ;; URL: https://github.com/emacs-vs/vs-revbuf
 
@@ -50,6 +50,11 @@
   :type 'boolean
   :group 'vs-revbuf)
 
+(defcustom vs-revbuf-on-identical nil
+  "Revert buffers even buffer and file (on dist) have the same content."
+  :type 'boolean
+  :group 'vs-revbuf)
+
 (defconst vs-revbuf--msg-edit-extern "
 The file has been changed externally, and has no unsaved changes inside this editor.
 Do you want to reload it? "
@@ -87,6 +92,12 @@ This occurs when file was opened but has moved to somewhere else externally."
 ;; (@* "Core" )
 ;;
 
+(defun vs-revbuf--buffer-identical ()
+  "Return t if the buffer is identical on the disk."
+  (let ((buffer-md5 (md5 (buffer-string)))
+        (file-md5 (md5 (fextern--file-content buffer-file-name))))
+    (string= buffer-md5 file-md5)))
+
 ;;;###autoload
 (defun vs-revbuf-no-confirm ()
   "Revert buffer without confirmation."
@@ -120,7 +131,11 @@ This occurs when file was opened but has moved to somewhere else externally."
   "Revert all valid buffers."
   (dolist (buf (fextern--valid-buffer-list))
     (with-current-buffer buf
-      (when (or (not (buffer-modified-p)) vs-revbuf--interactive-p)
+      (when (and
+             (or (not (buffer-modified-p)) vs-revbuf--interactive-p)
+             ;; Handle identical condition
+             (or vs-revbuf-on-identical
+                 (not (vs-revbuf--buffer-identical))))
         (vs-revbuf-no-confirm)))))
 
 (defun vs-revbuf-ask-all (bufs &optional index)
