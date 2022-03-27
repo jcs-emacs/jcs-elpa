@@ -9,7 +9,7 @@
 	   (fringe-helper
 	    (1 0 1)))
 	  "Flexible text folding" tar
-	  ((:commit . "cb0d97301fc4381acf586f17c11c7bed9318b8ef")
+	  ((:commit . "28e9a35e8ca3e3edd5fe01dbbdd81bbd466ef5ba")
 	   (:authors
 	    ("Greg Sexton" . "gregsexton@gmail.com"))
 	   (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
