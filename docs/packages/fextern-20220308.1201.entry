@@ -3,7 +3,7 @@
 	  ((emacs
 	    (25 1)))
 	  "Record file external stats" single
-	  ((:commit . "eb9e9f10e12df982e8367aee83ac2a6abf66ee94")
+	  ((:commit . "fa453dd049b1d0f1d0da93d0bde18e3ceac3f6e7")
 	   (:authors
 	    ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 	   (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")

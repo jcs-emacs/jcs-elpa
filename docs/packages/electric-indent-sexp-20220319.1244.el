@@ -8,7 +8,7 @@
 ;; Keyword: indent sexp electric
 ;; Version: 0.1.0
 ;; Package-Version: 20220319.1244
-;; Package-Commit: 6328468170b135237ff018957207f8ede79218ea
+;; Package-Commit: ce9d8c850c004bb4cfd53bd8692077cf4ecce50a
 ;; Package-Requires: ((emacs "25.1"))
 ;; URL: https://github.com/jcs-elpa/electric-indent-sexp
 

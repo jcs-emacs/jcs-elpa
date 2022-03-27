@@ -3,7 +3,7 @@
 	       ((emacs
 		 (24 3)))
 	       "Minor mode accomplish editing experience in Visual Studio" single
-	       ((:commit . "1c3373356a8c9c5c06ea62dee3ffec8da8615690")
+	       ((:commit . "75c946a9299d77323523286b79f19eb607f10fac")
 		(:authors
 		 ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
