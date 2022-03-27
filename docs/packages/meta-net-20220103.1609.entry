@@ -9,7 +9,7 @@
 	    (s
 	     (1 12 0)))
 	   "Parse .NET assembly's XML" single
-	   ((:commit . "29af47f2ebba256a912438d60dfbd763aa3abbbc")
+	   ((:commit . "27148621ff22048f6c285ea1f307322623c524c6")
 	    (:authors
 	     ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 	    (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
