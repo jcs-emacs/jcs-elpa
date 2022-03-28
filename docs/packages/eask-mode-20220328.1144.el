@@ -7,8 +7,8 @@
 ;; Description: major mode for editing Eask files.
 ;; Keyword: eask
 ;; Version: 0.1.0
-;; Package-Version: 20220316.1840
-;; Package-Commit: c70a4888e37a5ff5cf182d5ca93393ca45bcc63f
+;; Package-Version: 20220328.1144
+;; Package-Commit: 4c0c7f992a8e51cb0cfb3442373d937e649c9d70
 ;; Package-Requires: ((emacs "24.3"))
 ;; URL: https://github.com/emacs-eask/eask-mode
 
@@ -74,6 +74,8 @@
 
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("/Eask\\'" . eask-mode))
+;;;###autoload
+(add-to-list 'auto-mode-alist '("/Easkfile\\'" . eask-mode))
 
 (provide 'eask-mode)
 ;;; eask-mode.el ends here
