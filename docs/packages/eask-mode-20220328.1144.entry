@@ -3,7 +3,7 @@
 	    ((emacs
 	      (24 3)))
 	    "major mode for editing Eask files" single
-	    ((:commit . "4c0c7f992a8e51cb0cfb3442373d937e649c9d70")
+	    ((:commit . "cd899b3a3d31cebdb1ac6291f44ac38d297400d8")
 	     (:authors
 	      ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 	     (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
