@@ -7,8 +7,8 @@
 ;; Description: major mode for editing Eask files.
 ;; Keyword: eask
 ;; Version: 0.1.0
-;; Package-Version: 20220330.1352
-;; Package-Commit: 3479bac74c0b5faf77c5a0298123a018de9e3ae1
+;; Package-Version: 20220330.1852
+;; Package-Commit: 1f0f73ae99a5e1402188712c6b1437e0527803c3
 ;; Package-Requires: ((emacs "24.3"))
 ;; URL: https://github.com/emacs-eask/eask-mode
 
@@ -51,7 +51,7 @@
        '("package" "package-file" "files"
          "depends-on" "development"
          "source" "source-priority"
-         "exec-path" "exec-paths" "load-path" "load-paths")
+         "exec-paths" "load-paths")
        'symbols)
      . font-lock-keyword-face)
     (,(rx symbol-start
