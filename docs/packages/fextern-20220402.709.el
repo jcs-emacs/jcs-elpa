@@ -7,8 +7,8 @@
 ;; Description: Record file external stats.
 ;; Keyword: externally file stats
 ;; Version: 0.1.0
-;; Package-Version: 20220308.1201
-;; Package-Commit: fa453dd049b1d0f1d0da93d0bde18e3ceac3f6e7
+;; Package-Version: 20220402.709
+;; Package-Commit: 86e54c4e6a02ae55af2c9fbba9945c4231aaccb3
 ;; Package-Requires: ((emacs "25.1"))
 ;; URL: https://github.com/emacs-vs/fextern
 
@@ -41,15 +41,31 @@
   "Buffer string when buffer is saved; this value encrypted with md5 algorithm.
 This variable is used to check if file are edited externally.")
 
+(defvar-local fextern-buffer-newly-created nil
+  "Set to t if buffer is newly created.")
+
 ;;;###autoload
 (defun fextern-update-buffer-save-string (&rest _)
   "Update variable `fextern-buffer-save-string-md5' once."
   (setq fextern-buffer-save-string-md5 (md5 (buffer-string))))
 
 ;;;###autoload
-(advice-add 'save-buffer :after #'fextern-update-buffer-save-string)
+(defun fextern-after-save-buffer (&rest _)
+  "Advice after `save-buffer'."
+  (fextern-update-buffer-save-string)
+  (setq fextern-buffer-newly-created nil))
+
 ;;;###autoload
-(add-hook 'find-file-hook #'fextern-update-buffer-save-string)
+(defun fextern-find-file (&rest _)
+  "Hook `find-file'."
+  (fextern-update-buffer-save-string)
+  (unless (file-exists-p buffer-file-name)
+    (setq fextern-buffer-newly-created t)))
+
+;;;###autoload
+(advice-add 'save-buffer :after #'fextern-after-save-buffer)
+;;;###autoload
+(add-hook 'find-file-hook #'fextern-find-file)
 
 ;;
 ;; (@* "Util" )
