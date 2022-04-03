@@ -8,7 +8,7 @@
 ;; Keyword: buffer menu project
 ;; Version: 0.1.0
 ;; Package-Version: 20220221.1847
-;; Package-Commit: 9bdd2726f7e8f238c71ea6f5ccb195d28fdb69b6
+;; Package-Commit: d3cfc09b97f2ed350c5909873b936f631ea28425
 ;; Package-Requires: ((emacs "25.1") (project "0.8.1") (f "0.20.0"))
 ;; URL: https://github.com/jcs-elpa/buffer-menu-project
 

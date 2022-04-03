@@ -3,7 +3,7 @@
 	 ((emacs
 	   (25 1)))
 	 "flx in Rust using dynamic module" tar
-	 ((:commit . "1dd3b62e8dbf634f4a7fe7331cd9a296ad026c06")
+	 ((:commit . "425bc472894877187c9c93febf5290038c8f6da6")
 	  (:authors
 	   ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 	  (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
