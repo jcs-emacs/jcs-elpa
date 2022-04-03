@@ -7,8 +7,8 @@
 ;; Description: Revert buffers like Visual Studio.
 ;; Keyword: revert vs
 ;; Version: 0.1.1
-;; Package-Version: 20220403.742
-;; Package-Commit: b3696eaa2e8da935c07afe38216c004b9230d2f5
+;; Package-Version: 20220403.1127
+;; Package-Commit: d93b62889b12165d72ca728ae370ef057af46fda
 ;; Package-Requires: ((emacs "27.1") (fextern "0.1.0"))
 ;; URL: https://github.com/emacs-vs/vs-revbuf
 
@@ -66,6 +66,11 @@ Do you want to reload it and lose the changes made in this source editor? "
   "Message when edited externally and there are unsaved changes.")
 
 (defconst vs-revbuf--msg-edit-moved "
+The file has been moved (not found) externally, and has no unsaved changes inside this editor.
+Do you want to kill it? "
+  "Message when buffer is modify, but file has moved externally.")
+
+(defconst vs-revbuf--msg-edit-moved-and-unsaved "
 The file has unsaved changes inside this editor and has been moved (not found) externally.
 Do you want to kill it and lose the changes made in this source editor? "
   "Message when buffer is modify, but file has moved externally.")
@@ -77,7 +82,11 @@ Do you want to kill it and lose the changes made in this source editor? "
 ;; (@* "Externals" )
 ;;
 
+(defvar flycheck-mode)
+(defvar page-break-lines-mode)
+
 (declare-function flycheck-mode "ext:flycheck.el")
+(declare-function line-reminder-clear-reminder-lines-sign "ext:line-reminder.el")
 (declare-function page-break-lines-mode "ext:page-break-lines.el")
 
 ;;
@@ -133,12 +142,16 @@ This occurs when file was opened but has moved to somewhere else externally."
   "Revert all invalid buffers."
   (dolist (buf (vs-revbuf--invalid-buffer-list))
     (with-current-buffer buf
-      (unless fextern-buffer-newly-created
+      (unless fextern-buffer-newly-created  ; Execlude newly created buffer
+        ;; If we hit here, the file has been moved externally...
         (if (buffer-modified-p)
-            (when (yes-or-no-p (concat buffer-file-name "\n"
-                                       vs-revbuf--msg-edit-moved))
+            ;; There is unsaved changes!
+            (when (yes-or-no-p (concat buffer-file-name "\n" vs-revbuf--msg-edit-moved-and-unsaved))
               (vs-revbuf--kill-buffer-no-confirm))
-          (vs-revbuf--kill-buffer-no-confirm))))))
+          ;; No unsaved changes
+          (when (or vs-revbuf-ask-unsaved-changes-only
+                    (yes-or-no-p (concat buffer-file-name "\n" vs-revbuf--msg-edit-moved)))
+            (vs-revbuf--kill-buffer-no-confirm)))))))
 
 (defun vs-revbuf--all-valid-buffers ()
   "Revert all valid buffers."
