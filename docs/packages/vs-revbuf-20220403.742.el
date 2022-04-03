@@ -7,8 +7,8 @@
 ;; Description: Revert buffers like Visual Studio.
 ;; Keyword: revert vs
 ;; Version: 0.1.1
-;; Package-Version: 20220402.726
-;; Package-Commit: 88e060672e850c21cb0c39fde206fca67f3a996a
+;; Package-Version: 20220403.742
+;; Package-Commit: b3696eaa2e8da935c07afe38216c004b9230d2f5
 ;; Package-Requires: ((emacs "27.1") (fextern "0.1.0"))
 ;; URL: https://github.com/emacs-vs/vs-revbuf
 
@@ -134,9 +134,10 @@ This occurs when file was opened but has moved to somewhere else externally."
   (dolist (buf (vs-revbuf--invalid-buffer-list))
     (with-current-buffer buf
       (unless fextern-buffer-newly-created
-        (when (and (buffer-modified-p)
-                   (yes-or-no-p (concat buffer-file-name "\n"
-                                        vs-revbuf--msg-edit-moved)))
+        (if (buffer-modified-p)
+            (when (yes-or-no-p (concat buffer-file-name "\n"
+                                       vs-revbuf--msg-edit-moved))
+              (vs-revbuf--kill-buffer-no-confirm))
           (vs-revbuf--kill-buffer-no-confirm))))))
 
 (defun vs-revbuf--all-valid-buffers ()
