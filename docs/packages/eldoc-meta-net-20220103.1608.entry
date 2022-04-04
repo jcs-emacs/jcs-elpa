@@ -9,7 +9,7 @@
 		  (csharp-mode
 		   (1 0 2)))
 		 "Eldoc support for meta-net" single
-		 ((:commit . "98903aa4fd375d462a6728a1bdb304d19cc2ef2a")
+		 ((:commit . "8a70954ab09a7a4113696e545afc8588abc2a1e6")
 		  (:authors
 		   ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
 		  (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
