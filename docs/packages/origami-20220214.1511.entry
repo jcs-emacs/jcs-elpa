@@ -9,9 +9,9 @@
 	   (fringe-helper
 	    (1 0 1)))
 	  "Flexible text folding" tar
-	  ((:commit . "4d63ff13c72a2e6fdff28b0da474a2d7684dab26")
+	  ((:commit . "f5521df41edf5ffde782e20f3fe3201bf53c27c2")
 	   (:authors
 	    ("Greg Sexton" . "gregsexton@gmail.com"))
-	   (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
+	   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	   (:keywords "folding")
 	   (:url . "https://github.com/elp-revive/origami.el"))])

@@ -12,6 +12,6 @@
 	  ((:commit . "7127218040d651fa07c96dd0a4cfa8e4a652157b")
 	   (:authors
 	    ("Junyi Hou" . "junyi.yi.hou@gmail.com")
-	    ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
+	    ("Jen-Chieh" . "jcs090218@gmail.com"))
 	   (:maintainer "Junyi Hou" . "junyi.yi.hou@gmail.com")
 	   (:url . "https://github.com/jcs090218/ts-fold"))])

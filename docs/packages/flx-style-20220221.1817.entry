@@ -7,6 +7,6 @@
 	    "Completion style for flx" single
 	    ((:commit . "43117eeecf767b05c7f44eeec9801fa6e0d78b95")
 	     (:authors
-	      ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
-	     (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
+	      ("Jen-Chieh" . "jcs090218@gmail.com"))
+	     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	     (:url . "https://github.com/jcs-elpa/flx-style"))])

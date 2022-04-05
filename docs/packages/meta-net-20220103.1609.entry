@@ -11,6 +11,6 @@
 	   "Parse .NET assembly's XML" single
 	   ((:commit . "7b2563dc37f35dfa02043b5d932a45d192811843")
 	    (:authors
-	     ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
-	    (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
+	     ("Jen-Chieh" . "jcs090218@gmail.com"))
+	    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	    (:url . "https://github.com/emacs-vs/meta-net"))])

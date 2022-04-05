@@ -11,6 +11,6 @@
 		 "Eldoc support for meta-net" single
 		 ((:commit . "8a70954ab09a7a4113696e545afc8588abc2a1e6")
 		  (:authors
-		   ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
-		  (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
+		   ("Jen-Chieh" . "jcs090218@gmail.com"))
+		  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 		  (:url . "https://github.com/emacs-vs/eldoc-meta-net"))])

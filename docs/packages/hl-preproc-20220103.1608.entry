@@ -7,6 +7,6 @@
 	     "Unhighlight invalid preprocessor region" single
 	     ((:commit . "ebfbfd0286ccb342993a5d0c48670b61edc2a0b1")
 	      (:authors
-	       ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
-	      (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
+	       ("Jen-Chieh" . "jcs090218@gmail.com"))
+	      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	      (:url . "https://github.com/emacs-vs/hl-preproc"))])

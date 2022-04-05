@@ -11,6 +11,6 @@
 		     "Filter buffer-menu items using fake header" single
 		     ((:commit . "2f8fa42e29372cca21c53c2fb5a07c777e1a1db7")
 		      (:authors
-		       ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
-		      (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
+		       ("Jen-Chieh" . "jcs090218@gmail.com"))
+		      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 		      (:url . "https://github.com/jcs-elpa/buffer-menu-filter"))])

@@ -5,6 +5,6 @@
 	    "major mode for editing Eask files" single
 	    ((:commit . "1f0f73ae99a5e1402188712c6b1437e0527803c3")
 	     (:authors
-	      ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
-	     (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
+	      ("Jen-Chieh" . "jcs090218@gmail.com"))
+	     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	     (:url . "https://github.com/emacs-eask/eask-mode"))])

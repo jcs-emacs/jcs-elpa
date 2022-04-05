@@ -9,6 +9,6 @@
 		      "List buffers relative to project" single
 		      ((:commit . "d3cfc09b97f2ed350c5909873b936f631ea28425")
 		       (:authors
-			("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
-		       (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
+			("Jen-Chieh" . "jcs090218@gmail.com"))
+		       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 		       (:url . "https://github.com/jcs-elpa/buffer-menu-project"))])

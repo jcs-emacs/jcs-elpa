@@ -2,7 +2,4 @@
 	   [(20160306 1437)
 	    nil "major mode for Open HLSL shader files" single
 	    ((:commit . "c9c80ce43a274a78ffdaa662e23ef81408d25549")
-	     (:authors
-	      ("gbuffer"))
-	     (:maintainer "gbuffer")
 	     (:keywords "languages" "hlsl" "shader"))])

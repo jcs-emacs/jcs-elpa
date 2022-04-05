@@ -7,6 +7,6 @@
 	    "Revert buffers like Visual Studio" single
 	    ((:commit . "7c3e65d0f54e8e2d1090d95aca1388e813ad9bdd")
 	     (:authors
-	      ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
-	     (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
+	      ("Jen-Chieh" . "jcs090218@gmail.com"))
+	     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	     (:url . "https://github.com/emacs-vs/vs-revbuf"))])

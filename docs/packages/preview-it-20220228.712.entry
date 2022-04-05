@@ -11,6 +11,6 @@
 	     "Preview anything at point" single
 	     ((:commit . "6e7cb8ded4a4408eebf1d104f507d12bf210a1c6")
 	      (:authors
-	       ("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
-	      (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
+	       ("Jen-Chieh" . "jcs090218@gmail.com"))
+	      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	      (:url . "https://github.com/jcs-elpa/preview-it"))])

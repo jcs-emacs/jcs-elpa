@@ -5,6 +5,6 @@
 	      "Highly customizable self design file header" single
 	      ((:commit . "b354e5434eb2dd930fe1c81d1bf0bed44eeb3edb")
 	       (:authors
-		("Shen, Jen-Chieh" . "jcs090218@gmail.com"))
-	       (:maintainer "Shen, Jen-Chieh" . "jcs090218@gmail.com")
+		("Jen-Chieh" . "jcs090218@gmail.com"))
+	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	       (:url . "https://github.com/jcs-elpa/file-header"))])
