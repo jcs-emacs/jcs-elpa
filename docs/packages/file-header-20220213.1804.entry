@@ -3,7 +3,7 @@
 	      ((emacs
 		(25 1)))
 	      "Highly customizable self design file header" single
-	      ((:commit . "b354e5434eb2dd930fe1c81d1bf0bed44eeb3edb")
+	      ((:commit . "52fc538665284a3edccc52bf5c19ea8e35747a38")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

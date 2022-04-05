@@ -3,7 +3,7 @@
 	      ((emacs
 		(25 1)))
 	      "Managing multiple shell buffers" single
-	      ((:commit . "5555ba852f4bde837b5279a07e96b0311578d366")
+	      ((:commit . "19d8a7da1ec72e87c5742d17ef5df102eac47da1")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
