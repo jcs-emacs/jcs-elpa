@@ -8,7 +8,7 @@
 ;; Keyword: externally file stats
 ;; Version: 0.1.0
 ;; Package-Version: 20220402.709
-;; Package-Commit: dc81f6e52c0a002451d11dc019c090a3a283a84a
+;; Package-Commit: f107c34d4932e920b70a7df3d9a1d2090f53a6b1
 ;; Package-Requires: ((emacs "25.1"))
 ;; URL: https://github.com/emacs-vs/fextern
 
