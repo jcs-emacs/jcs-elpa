@@ -3,7 +3,7 @@
 		       ((emacs
 			 (25 1)))
 		       "Automatically indent entire balanced expression block" single
-		       ((:commit . "e43f2cb42f563d83faf0d37065a816d36873ef75")
+		       ((:commit . "34509f3b0ded5e7113258475b29f89c9715dbe9d")
 			(:authors
 			 ("Jen-Chieh" . "jcs090218@gmail.com"))
 			(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
