@@ -22,7 +22,7 @@
          (url (format svg-url-format version))
          (file (concat output-dir pkg-name ".svg")))
     (message "Download SVG from `%s` to `%s`" url file)
-    (url-copy-file url file)))
+    (url-copy-file url file t)))
 
 ;; Local Variables:
 ;; coding: utf-8
