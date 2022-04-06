@@ -14,6 +14,10 @@ generate_archive_json:
 	@echo "Generating archive.json file..."
 	@$(EMACS) -nw --batch -l "./bin/generate-archive-json.el"
 
+generate_badges_system:
+	@echo "Generating system badges.."
+	@$(EMACS) -nw --batch -l "./bin/generate-badges-system.el"
+
 generate_badges_version:
 	@echo "Generating version badges.."
 	@$(EMACS) -nw --batch -l "./bin/generate-badges-version.el"
