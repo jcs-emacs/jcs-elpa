@@ -1,4 +1,4 @@
-;;; generate-badges-system.el --- Generate SVG badges, version  -*- lexical-binding: t -*-
+;;; generate-badges-system.el --- Generate SVG badges, system  -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
 
@@ -6,15 +6,27 @@
 (require 'url-handlers)
 
 (defconst svg-url-format
-  "https://img.shields.io/badge/Emacs-%s-7F5AB6.svg?logo=gnu%20emacs&logoColor=white"
+  "https://img.shields.io/badge/Emacs-%s-7F5AB6.svg?logo=gnu%%20emacs&logoColor=white"
   "Format to generate badges.")
 
 (defconst output-dir "./badges/"
   "Where the badges store.")
 
-(ignore-errors (delete-directory output-dir t))  ; clean up first
-(make-directory output-dir t)                    ; recursive
+(ignore-errors (make-directory output-dir t))
 
+;; System
+(let* ((url (cond
+             ((memq system-type '(cygwin windows-nt ms-dos))
+              "https://img.shields.io/badge/-Windows-lightblue?logo=windows&style=flat&logoColor=blue")
+             ((memq system-type '(darwin))
+              "https://img.shields.io/badge/-macOS-lightgrey?logo=apple&style=flat&logoColor=white")
+             ((memq system-type '(gnu/linux))
+              "https://img.shields.io/badge/-Linux-fcc624?logo=linux&style=flat&logoColor=black")))
+       (file (concat output-dir "system.svg")))
+  (message "Download SVG from `%s` to `%s`" url file)
+  (url-copy-file url file t))
+
+;; Emacs
 (let* ((url (format svg-url-format emacs-version))
        (file (concat output-dir "emacs.svg")))
   (message "Download SVG from `%s` to `%s`" url file)
