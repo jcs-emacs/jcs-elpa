@@ -1,0 +1,1 @@
+(buffer-move :repo "elp-revive/buffer-move" :fetcher github)
