@@ -12,16 +12,16 @@ build:
 
 generate_archive_json:
 	@echo "Generating archive.json file..."
-	@$(EMACS) -nw --batch -l "./bin/generate-archive-json.el"
+	@$(EASK) load "./bin/generate-archive-json.el"
 
 generate_badges_system:
 	@echo "Generating system badges.."
-	@$(EMACS) -nw --batch -l "./bin/generate-badges-system.el"
+	@$(EASK) load "./bin/generate-badges-system.el"
 
 generate_badges_version:
 	@echo "Generating version badges.."
-	@$(EMACS) -nw --batch -l "./bin/generate-badges-version.el"
+	@$(EASK) load "./bin/generate-badges-version.el"
 
 generate_badges_downloads:
 	@echo "Generating downloads badges.."
-	@$(EMACS) -nw --batch -l "./bin/generate-badges-downloads.el"
+	@$(EASK) load "./bin/generate-badges-downloads.el"
