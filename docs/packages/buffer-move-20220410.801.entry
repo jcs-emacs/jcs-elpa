@@ -1,8 +1,0 @@
-(buffer-move .
-	     [(20220410 801)
-	      ((emacs
-		(24 1)))
-	      "easily swap buffers" single
-	      ((:commit . "e0b4441db7b532a587266f9be6fc5f0f42d7b397")
-	       (:keywords "convenience")
-	       (:url . "https://github.com/lukhas/buffer-move/"))])
