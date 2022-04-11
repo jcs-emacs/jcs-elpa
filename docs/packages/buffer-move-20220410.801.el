@@ -9,7 +9,7 @@
 ;;          Geyslan G. Bem <geyslan@gmail.com>
 ;; URL: https://github.com/lukhas/buffer-move/
 ;; Package-Version: 20220410.801
-;; Package-Commit: 90320c38c3c1cdb4c85647b6eaad2a5be47c82c1
+;; Package-Commit: b493db42b28b95cca3fbbb147f0b2562c01b7c52
 ;; Version: 0.6.3
 ;; Package-Requires: ((emacs "24.1"))
 ;; Keywords: convenience
