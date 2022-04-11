@@ -8,7 +8,7 @@
 ;; Keyword: jayces major mode
 ;; Version: 0.0.2
 ;; Package-Version: 20200720.1038
-;; Package-Commit: cf12a4e963dadb3d1460a0a3ad7b4f32598aab52
+;; Package-Commit: e9105d9c109c50c0a04ec6ed070d632c83261c66
 ;; Package-Requires: ((emacs "24.3"))
 ;; URL: https://github.com/jcs-elpa/jayces-mode
 
