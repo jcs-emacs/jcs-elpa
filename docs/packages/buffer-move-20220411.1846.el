@@ -1,15 +1,17 @@
 ;;; buffer-move.el --- easily swap buffers
 
 ;; Copyright (C) 2004-2014  Lucas Bonnet <lucas@rincevent.net>
-;; Copyright (C) 2014  Mathis Hofer <mathis@fsfe.org>
+;; Copyright (C) 2014       Mathis Hofer <mathis@fsfe.org>
 ;; Copyright (C) 2014-2015  Geyslan G. Bem <geyslan@gmail.com>
+;; Copyright (C) 2022       Jen-Chieh Shen <jcs090218@gmail.com>
 
-;; Authors: Lucas Bonnet <lucas@rincevent.net>
-;;          Mathis Hofer <mathis@fsfe.org>
-;;          Geyslan G. Bem <geyslan@gmail.com>
-;; URL: https://github.com/lukhas/buffer-move/
-;; Package-Version: 20220410.801
-;; Package-Commit: e0b4441db7b532a587266f9be6fc5f0f42d7b397
+;; Authors:    Lucas Bonnet <lucas@rincevent.net>
+;;             Mathis Hofer <mathis@fsfe.org>
+;;             Geyslan G. Bem <geyslan@gmail.com>
+;; Maintainer: Jen-Chieh Shen <jcs090218@gmail.com>
+;; URL: https://github.com/elp-revive/buffer-move/
+;; Package-Version: 20220411.1846
+;; Package-Commit: 39a651e9e30056922ab58caea030960cbfd72374
 ;; Version: 0.6.3
 ;; Package-Requires: ((emacs "24.1"))
 ;; Keywords: convenience
