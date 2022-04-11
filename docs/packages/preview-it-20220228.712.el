@@ -8,7 +8,7 @@
 ;; Keyword: preview image path file
 ;; Version: 1.1.0
 ;; Package-Version: 20220228.712
-;; Package-Commit: 06311a7398940b6bfc4feb4fbbc510e3d8327181
+;; Package-Commit: 30cd44f286da4d17085d9ed7c0ff23eecb99df11
 ;; Package-Requires: ((emacs "26.1") (posframe "1.1.7") (request "0.3.0") (gh-md "0.1.1"))
 ;; URL: https://github.com/jcs-elpa/preview-it
 

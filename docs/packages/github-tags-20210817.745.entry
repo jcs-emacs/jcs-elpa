@@ -3,7 +3,7 @@
 	      ((emacs
 		(24 3)))
 	      "Retrieve tags information through GitHub API" single
-	      ((:commit . "574831f89c4044021787b6f59ad17172d488bca5")
+	      ((:commit . "ce1db5d451c3da8aa443a73c0cf7c77679c12f0b")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

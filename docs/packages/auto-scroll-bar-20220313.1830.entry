@@ -3,7 +3,7 @@
 		  ((emacs
 		    (26 1)))
 		  "Automatically show/hide scroll-bars as needed" single
-		  ((:commit . "8f9f6d6140d9ad9d8465a4dd041c12b332b66312")
+		  ((:commit . "904c2efc274ddbdeaa794cbcb0e25d5f340d5f95")
 		   (:authors
 		    ("Jen-Chieh" . "jcs090218@gmail.com"))
 		   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

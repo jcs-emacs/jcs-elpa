@@ -11,7 +11,7 @@
 	     (f
 	      (0 20 0)))
 	    "View metadata from .NET assemblies" single
-	    ((:commit . "0296bad6e292ecfd75e741716194df1b7c61be87")
+	    ((:commit . "fb5f355f4b5eb7e77092ff40ff86a3dff9d44fb8")
 	     (:authors
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))
 	     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

@@ -8,7 +8,7 @@
 ;; Keyword: buffer menu filter
 ;; Version: 0.1.0
 ;; Package-Version: 20220227.1530
-;; Package-Commit: d28f20f0bafd825422e8b7fd37ac7a90530af7c1
+;; Package-Commit: 482fffe982b14aef2e053d2d167401e361b98e76
 ;; Package-Requires: ((emacs "26.1") (buffer-menu-project "0.1.0") (flx "0.6.1") (ht "2.0"))
 ;; URL: https://github.com/jcs-elpa/buffer-menu-filter
 
