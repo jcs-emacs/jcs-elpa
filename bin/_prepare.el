@@ -1,4 +1,4 @@
-;;; prepare.el --- Prepration  -*- lexical-binding: t -*-
+;;; _prepare.el --- Prepration  -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
 
@@ -32,4 +32,4 @@
 ;; coding: utf-8
 ;; no-byte-compile: t
 ;; End:
-;;; prepare.el ends here
+;;; _prepare.el ends here
