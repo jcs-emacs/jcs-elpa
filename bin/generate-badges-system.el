@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 
-(load-file "./bin/prepare.el")
+(load-file "./bin/_prepare.el")
 (require 'url-handlers)
 
 (defconst svg-url-format
