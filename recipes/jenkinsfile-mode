@@ -1,0 +1,1 @@
+(jenkinsfile-mode :repo "elp-revive/jenkinsfile-mode" :fetcher github)
