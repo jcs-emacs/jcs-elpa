@@ -7,8 +7,8 @@
 ;; Description: Automatically indent entire balanced expression block.
 ;; Keyword: indent sexp electric
 ;; Version: 0.1.0
-;; Package-Version: 20220319.1244
-;; Package-Commit: a18ca6cf62975d207f9345f141bc9f67607b2e61
+;; Package-Version: 20220414.2251
+;; Package-Commit: eb4451b67584657a8e2582b9a2a970ffd54d5886
 ;; Package-Requires: ((emacs "25.1"))
 ;; URL: https://github.com/jcs-elpa/electric-indent-sexp
 
@@ -108,7 +108,8 @@
 (defun electric-indent-sexp--enable ()
   "Enable function `electric-indent-sexp-mode'."
   (advice-add 'electric-indent-post-self-insert-function :around #'electric-indent-sexp--post-self-insert)
-  (add-hook 'after-change-major-mode-hook #'electric-indent-sexp-update-chars))
+  (add-hook 'after-change-major-mode-hook #'electric-indent-sexp-update-chars)
+  (electric-indent-sexp-update-chars))
 
 (defun electric-indent-sexp--disable ()
   "Disable function `electric-indent-sexp-mode'."
