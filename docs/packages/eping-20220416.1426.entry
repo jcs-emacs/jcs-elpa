@@ -1,0 +1,11 @@
+(eping .
+       [(20220416 1426)
+	((emacs
+	  (25 1)))
+	"Ping websites to check internet connectivity" tar
+	((:commit . "e3ef5d4ba2a2331a5ff23a84777bd73718a4a47f")
+	 (:authors
+	  ("Sean Hutchings" . "seanhut@yandex.com"))
+	 (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
+	 (:keywords "comm" "processes" "terminals" "unix")
+	 (:url . "https://github.com/sean-hut/eping"))])
