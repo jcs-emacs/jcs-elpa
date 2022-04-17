@@ -1,0 +1,1 @@
+(flycheck-eask :repo "emacs-eask/flycheck-eask" :fetcher github)
