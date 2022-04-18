@@ -7,8 +7,8 @@
 ;; Description: major mode for editing Eask files.
 ;; Keyword: eask
 ;; Version: 0.1.0
-;; Package-Version: 20220330.1852
-;; Package-Commit: 77c4e2f5e868cbb21efadc5b27b59a64117f459a
+;; Package-Version: 20220418.539
+;; Package-Commit: 4b2751c0bc1c74d871465d2519111c1143cf9c2d
 ;; Package-Requires: ((emacs "24.3"))
 ;; URL: https://github.com/emacs-eask/eask-mode
 
@@ -68,9 +68,9 @@
   (font-lock-add-keywords 'eask-mode eask-mode-font-lock-keywords)
   ;; FIXME: toggling comments only applies to the current line,
   ;; breaking multiline sexps.
-  (setq-local comment-start ";; "
-              comment-end ""
-              indent-line-function #'lisp-indent-line))
+  (setq-local comment-start ";; ")
+  (setq-local comment-end "")
+  (setq-local indent-line-function #'lisp-indent-line))
 
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("/Eask\\'" . eask-mode))
