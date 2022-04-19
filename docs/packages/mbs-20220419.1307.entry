@@ -3,7 +3,7 @@
       ((emacs
 	(26 1)))
       "Minibuffer Stats" single
-      ((:commit . "5fbb14afd07e340773b72f5c52fd8e27104cc052")
+      ((:commit . "ecd2fba760093f8473dfffe019431f60fc2b5d57")
        (:authors
 	("Jen-Chieh" . "jcs090218@gmail.com"))
        (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
