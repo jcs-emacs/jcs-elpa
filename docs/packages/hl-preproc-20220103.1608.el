@@ -8,7 +8,7 @@
 ;; Keyword: preprocessor
 ;; Version: 0.1.0
 ;; Package-Version: 20220103.1608
-;; Package-Commit: f3ad13f16c92564ee83c4cf0e73b94ab95085ca3
+;; Package-Commit: b39799d33cb7a2ae477a2258335f0d25eba5fa05
 ;; Package-Requires: ((emacs "24.4") (meta-net "1.1.0"))
 ;; URL: https://github.com/emacs-vs/hl-preproc
 

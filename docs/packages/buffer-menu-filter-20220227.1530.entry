@@ -9,7 +9,7 @@
 		      (ht
 		       (2 0)))
 		     "Filter buffer-menu items using fake header" single
-		     ((:commit . "bea69f5222e54e6a2902cfa51841e0b264295db2")
+		     ((:commit . "31ff2833db48816a99feda1c07ec28bcffd485fe")
 		      (:authors
 		       ("Jen-Chieh" . "jcs090218@gmail.com"))
 		      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

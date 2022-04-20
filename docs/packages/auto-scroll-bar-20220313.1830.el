@@ -8,7 +8,7 @@
 ;; Keyword: scrollbar
 ;; Version: 0.1.0
 ;; Package-Version: 20220313.1830
-;; Package-Commit: 9b66450f40cd4239023683248bdd41b4a561d574
+;; Package-Commit: 81c34b6b47fe73f80f77fa3913c0bdb7187631bd
 ;; Package-Requires: ((emacs "26.1"))
 ;; URL: https://github.com/jcs-elpa/auto-scroll-bar
 
