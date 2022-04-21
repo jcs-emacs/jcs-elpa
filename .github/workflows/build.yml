@@ -15,6 +15,9 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+env:
+  REPO_BADGES: 'jcs-emacs/badges'
+
 jobs:
   build:
     runs-on: ubuntu-latest
