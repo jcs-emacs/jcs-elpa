@@ -78,3 +78,21 @@ jobs:
         git add .
         git commit -m "Update SVG badges - version"
         git push
+
+    - name: Move badges to home
+      run: mv ./badges/ ~/
+
+    - name: Checkout badges repository
+      uses: actions/checkout@v3
+      with:
+        repository: ${{ env.REPO_BADGES }}
+        persist-credentials: false
+        fetch-depth: 0
+
+    - name: Move badges to repository (Unix)
+      if: matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest'
+      run: mv -f ~/badges/* ./elpa/
+
+    - name: Move badges to repository (Windows)
+      if: matrix.os == 'windows-latest'
+      run: mv -Force ~/badges/* ./elpa/

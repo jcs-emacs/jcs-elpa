@@ -9,9 +9,10 @@
 
 "use strict";
 
-const base_url = "https://github.com/jcs-emacs/jcs-elpa/blob/master/";
-const base_url_raw = "https://raw.githubusercontent.com/jcs-emacs/jcs-elpa/";
-const archive_url = base_url_raw + "master/docs/archive.json";
+const base_url = 'https://github.com/jcs-emacs/jcs-elpa/blob/master/';
+const base_url_raw = 'https://raw.githubusercontent.com/jcs-emacs/jcs-elpa/';
+const badge_url_raw = 'https://raw.githubusercontent.com/jcs-emacs/badges/';
+const archive_url = base_url_raw + 'master/docs/archive.json';
 
 var archive = null;
 
@@ -67,7 +68,7 @@ $(document).ready(function(){
         },
         { /* Badge: 6 */
           "render": function (data, type, row, meta) {
-            return '<img src="' + base_url_raw + 'master/badges/v/' + row.name + '.svg"/>';
+            return '<img src="' + badge_url_raw + 'master/elpa/v/' + row.name + '.svg"/>';
           },
         },
       ],
