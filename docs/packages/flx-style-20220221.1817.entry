@@ -5,7 +5,7 @@
 	     (flx
 	      (0 5)))
 	    "Completion style for flx" single
-	    ((:commit . "c31bdaaf10420a49e4c03639e78a8237b34bd270")
+	    ((:commit . "30d1cbc91bc2050f418e4449d35df36e79722eb1")
 	     (:authors
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))
 	     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

@@ -5,7 +5,7 @@
 		 (flycheck
 		  (0 14)))
 		"Eask support in Flycheck" single
-		((:commit . "0cdc3848b1fe92a33ebebfa9cd2d678dd420125f")
+		((:commit . "ceec2fda12745cf3c14326d161075db3a26dbba5")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

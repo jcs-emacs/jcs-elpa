@@ -3,7 +3,7 @@
 	      ((emacs
 		(24 1)))
 	      "easily swap buffers" single
-	      ((:commit . "78c2ea3f2ca26abe02a6b9f1b0e71777a7455f57")
+	      ((:commit . "a6e76b68b7aabc2c1b2183a9c930699d1c9c0cd8")
 	       (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
 	       (:keywords "convenience")
 	       (:url . "https://github.com/elp-revive/buffer-move/"))])
