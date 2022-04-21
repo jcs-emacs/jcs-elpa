@@ -77,7 +77,10 @@ jobs:
         fetch-depth: 0
 
     - name: Move badges to repository
-      run: mv -f ~/badges/* ./elpa/
+      run: |
+        rm -rf ./elpa/*
+        mkdir elpa
+        mv -f ~/badges/* ./elpa/
 
     - name: Set git config
       run: |
