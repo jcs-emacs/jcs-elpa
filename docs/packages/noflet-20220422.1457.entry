@@ -1,0 +1,9 @@
+(noflet .
+	[(20220422 1457)
+	 nil "locally override functions" single
+	 ((:commit . "22bb46649a39b2ad660fb2c44de77e3922c7d5b3")
+	  (:authors
+	   ("Nic Ferrier" . "nferrier@ferrier.me.uk"))
+	  (:maintainer "Nic Ferrier" . "nferrier@ferrier.me.uk")
+	  (:keywords "lisp")
+	  (:url . "https://github.com/elp-revive/noflet"))])
