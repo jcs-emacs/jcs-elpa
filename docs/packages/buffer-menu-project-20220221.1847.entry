@@ -7,7 +7,7 @@
 		       (f
 			(0 20 0)))
 		      "List buffers relative to project" single
-		      ((:commit . "5265f45edbf8fc7d8ef346adb31ec05417cfa41e")
+		      ((:commit . "0d82c77c25055c51d86559b6b38a1a6ad46085a0")
 		       (:authors
 			("Jen-Chieh" . "jcs090218@gmail.com"))
 		       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
