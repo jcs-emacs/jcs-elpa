@@ -3,7 +3,7 @@
 	      ((emacs
 		(24 3)))
 	      "Major mode for editing JayCeS file" single
-	      ((:commit . "95242100c6e3d0e43817275be06f985ecae2270a")
+	      ((:commit . "dcaaf844b324db9d3aadd331d867f25bba7886b7")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
