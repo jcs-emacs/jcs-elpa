@@ -1,4 +1,4 @@
-name: System
+name: Packages
 
 on:
   workflow_run:
@@ -33,7 +33,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Generate SVG badges (system)
-      run: make generate_badges_system
+      run: make generate_badge_packages
 
     - name: Move badges to home
       run: mv ./badges/ ~/
@@ -47,8 +47,7 @@ jobs:
 
     - name: Move badges to repository
       run: |
-        rm -rf ./elpa/emacs.svg
-        rm -rf ./elpa/system.svg
+        rm -rf ./elpa/packages.svg
         mv -f ~/badges/* ./elpa/
 
     - name: Set git config
