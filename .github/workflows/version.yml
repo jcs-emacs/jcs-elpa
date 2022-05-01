@@ -47,7 +47,7 @@ jobs:
 
     - name: Move badges to repository
       run: |
-        rm -rf ./elpa/*
+        rm -rf ./elpa/v/*
         mv -f ~/badges/* ./elpa/
 
     - name: Set git config
