@@ -15,7 +15,7 @@ env:
   REPO_BADGES: 'jcs-emacs/badges'
 
 jobs:
-  build:
+  generate_badge:
     runs-on: ubuntu-latest
     steps:
     - uses: jcs090218/setup-emacs@master

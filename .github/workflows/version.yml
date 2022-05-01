@@ -1,14 +1,10 @@
 name: Version
 
 on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
-  schedule:
-    - cron:  '0 * * * *'
+  workflow_run:
+    workflows: ["Build"]
+    types:
+      - completed
   workflow_dispatch:
 
 concurrency:
@@ -19,7 +15,7 @@ env:
   REPO_BADGES: 'jcs-emacs/badges'
 
 jobs:
-  build:
+  generate_badge:
     runs-on: ubuntu-latest
     steps:
     - uses: jcs090218/setup-emacs@master
