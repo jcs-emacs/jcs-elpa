@@ -60,9 +60,9 @@ jobs:
       run: |
         git pull
         git add .
-        git commit -m "Update SVG badges - SYSTEM"
+        git commit -m "Update SVG badges - PACKAGES"
 
-    - name: Push generated badges - SYSTEM
+    - name: Push generated badges - PACKAGES
       continue-on-error: true
       uses: ad-m/github-push-action@master
       with:
