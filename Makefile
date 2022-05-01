@@ -10,13 +10,17 @@ build:
 	@$(EASK) install
 	@$(EASK) exec github-elpa update -a "./docs/packages"
 
+generate_archive_json:
+	@echo "Generating archive.json file..."
+	@$(EASK) load "./bin/generate-archive-json.el"
+
 generate_badges_system:
 	@echo "Generating system badges.."
 	@$(EASK) load "./bin/generate-badges-system.el"
 
-generate_archive_json:
-	@echo "Generating archive.json file..."
-	@$(EASK) load "./bin/generate-archive-json.el"
+generate_badge_packages:
+	@echo "Generating packages badge.."
+	@$(EASK) load "./bin/generate-badge-packages.el"
 
 generate_badges_version:
 	@echo "Generating version badges.."
