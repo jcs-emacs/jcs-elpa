@@ -1,6 +1,7 @@
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 [![Emacs Version](https://raw.githubusercontent.com/jcs-emacs/badges/master/elpa/emacs.svg)](https://www.gnu.org/software/emacs/download.html)
 [![Linux](https://raw.githubusercontent.com/jcs-emacs/badges/master/elpa/system.svg)](#)
+[![Packages](https://raw.githubusercontent.com/jcs-emacs/badges/master/elpa/packages.svg)](#)
 
 # jcs-elpa
 
