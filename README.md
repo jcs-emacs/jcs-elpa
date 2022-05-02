@@ -17,10 +17,17 @@ ELPA for [jcs-emacs](https://github.com/jcs-emacs/jcs-emacs), using [github-elpa
 
 Add the following to your configuration:
 
-```el
+```elisp
 (setq package-archives
       `(,@package-archives
         ("jcs-elpa" . "https://jcs-emacs.github.io/jcs-elpa/packages/")))
+```
+
+Use priority if you don't want this archive overridden with other larger archives:
+
+```elisp
+(setq package-archive-priorities '(("melpa"    . 5)
+                                   ("jcs-elpa" . 0))
 ```
 
 ## Contribute
