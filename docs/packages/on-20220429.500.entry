@@ -1,0 +1,11 @@
+(on .
+    [(20220429 500)
+     ((emacs
+       (27 1)))
+     "Hooks for faster startup" single
+     ((:commit . "d70ebc60ed04a2958776116f4a6afca3dc7c0bf6")
+      (:authors
+       ("Alex Griffin" . "a@ajgrf.com"))
+      (:maintainer "Alex Griffin" . "a@ajgrf.com")
+      (:keywords "convenience")
+      (:url . "https://github.com/ajgrf/on.el"))])
