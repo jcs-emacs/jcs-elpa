@@ -5,7 +5,7 @@
 ;; Author: Nic Ferrier <nferrier@ferrier.me.uk>
 ;; Keywords: lisp
 ;; Package-Version: 20220422.1457
-;; Package-Commit: aca466d4a929d00d93b5f5e9a970595abd6f554a
+;; Package-Commit: a7f4361473f4dc995d70dc490acbd1529e171964
 ;; Version: 0.0.15
 ;; Url: https://github.com/elp-revive/noflet
 

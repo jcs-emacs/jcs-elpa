@@ -5,5 +5,5 @@
 		    (groovy-mode
 		     (2 0)))
 		   "Major mode for editing Jenkins declarative pipeline syntax" single
-		   ((:commit . "759f13a4b455cf64f243b793604ff3e6414126fc")
+		   ((:commit . "18e62158626b72b024fa34fb73aab63f9e4fd369")
 		    (:url . "https://github.com/elp-revive/jenkinsfile-mode"))])

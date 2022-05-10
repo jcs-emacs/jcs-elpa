@@ -8,7 +8,7 @@
 ;; Keyword: editing vs
 ;; Version: 0.1.0
 ;; Package-Version: 20220311.1736
-;; Package-Commit: 70319e88f381cfb57c5d929aae6de6efd67576fd
+;; Package-Commit: 049c42eaf440ada3f9fd1feea40971e6ca4d6da6
 ;; Package-Requires: ((emacs "24.3"))
 ;; URL: https://github.com/emacs-vs/vs-edit-mode
 

@@ -6,7 +6,7 @@
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-eask/flycheck-eask
 ;; Package-Version: 20220417.1052
-;; Package-Commit: 32e1217522173eed94c59cd39769a6a1f80afe28
+;; Package-Commit: fad1f1d81964a1e66467898402f694375e1def0c
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (flycheck "0.14"))
 ;; Keywords: eask
