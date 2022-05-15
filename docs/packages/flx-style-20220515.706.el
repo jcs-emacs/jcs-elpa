@@ -7,8 +7,8 @@
 ;; Description: Completion style for flx
 ;; Keyword: flx completion style
 ;; Version: 0.1.1
-;; Package-Version: 20220221.1817
-;; Package-Commit: effd0411831c904866274fb9e7759ac2fb2a03f2
+;; Package-Version: 20220515.706
+;; Package-Commit: da2985f45e24a72b2139269c2cbc05dbb476d25c
 ;; Package-Requires: ((emacs "24.3") (flx "0.5"))
 ;; URL: https://github.com/jcs-elpa/flx-style
 
@@ -36,6 +36,12 @@
 
 (require 'cl-lib)
 (require 'flx)
+
+(defgroup flx-style nil
+  "Completion style for flx."
+  :prefix "flx-style-"
+  :group 'convenience
+  :link '(url-link :tag "Repository" "https://github.com/jcs-elpa/flx-style"))
 
 (defvar flx-style-cache nil
   "Stores flx-cache.")
@@ -123,9 +129,21 @@
     (if all-p
         ;; Implement completion-all-completions interface
         (when all
-          ;; Not doing this may result in an error.
-          (setcdr (last all) (length prefix))
-          all)
+          (nconc
+           (mapcar
+            (lambda (x)
+              (setq x (copy-sequence x))
+              (let* ((score
+                      (if (fboundp 'flx-rs-score)
+                          (flx-rs-score x string)
+                        (flx-score x string flx-strings-cache))))
+                (put-text-property 0 1 'completion-score
+                                   (car score)
+                                   x)
+                (setq x (flx-propertize x score)))
+              x)
+            all)
+           (length prefix)))
       ;; Implement completion-try-completions interface
       (if (= (length all) 1)
           (if (equal infix (car all))
