@@ -8,7 +8,7 @@
 ;; Keyword: flx completion style
 ;; Version: 0.1.1
 ;; Package-Version: 20220515.706
-;; Package-Commit: da2985f45e24a72b2139269c2cbc05dbb476d25c
+;; Package-Commit: 9d0311e962cb0a1f09c3f4dbdc5363913985c706
 ;; Package-Requires: ((emacs "24.3") (flx "0.5"))
 ;; URL: https://github.com/jcs-elpa/flx-style
 
