@@ -5,8 +5,8 @@
 ;; Author: Alex Griffin <a@ajgrf.com>
 ;; Maintainer: Alex Griffin <a@ajgrf.com>
 ;; Version: 0.1.0
-;; Package-Version: 20220429.500
-;; Package-Commit: d70ebc60ed04a2958776116f4a6afca3dc7c0bf6
+;; Package-Version: 20220520.500
+;; Package-Commit: 76eaf85131a44b01ab45fb26f855c458f038eee4
 ;; Keywords: convenience
 ;; Homepage: https://github.com/ajgrf/on.el
 ;; Package-Requires: ((emacs "27.1"))
@@ -58,6 +58,15 @@
   "Transient hooks run before the first interactively opened buffer.")
 (put 'on-first-buffer-hook 'permanent-local t)
 
+(defvar on-switch-buffer-hook nil
+  "A list of hooks run after changing the current buffer.")
+
+(defvar on-switch-window-hook nil
+  "A list of hooks run after changing the focused windows.")
+
+(defvar on-switch-frame-hook nil
+  "A list of hooks run after changing the focused frame.")
+
 (defvar on-init-ui-hook nil
   "List of hooks to run when the UI has been initialized.")
 
@@ -96,6 +105,16 @@ TRIGGER-HOOK is a list of quoted hooks and/or sharp-quoted functions."
             ((add-hook hook fn -101)))
       fn)))
 
+(defun on-run-switch-buffer-hooks-h (&optional _)
+  (run-hooks 'on-switch-buffer-hook))
+
+(defun on-run-switch-window-or-frame-hooks-h (&optional _)
+  (unless (equal (old-selected-frame) (selected-frame))
+    (run-hooks 'on-switch-frame-hook))
+  (unless (or (minibufferp)
+              (equal (old-selected-window) (minibuffer-window)))
+    (run-hooks 'on-switch-window-hook)))
+
 (defun on-init-ui-h (&optional _)
   "Initialize user interface by applying its hooks.
 
@@ -105,6 +124,13 @@ triggering hooks during startup."
 
   ;; Add trigger hooks to `on-first-buffer-hook'.
   (on-run-hook-on 'on-first-buffer-hook '(window-buffer-change-functions server-visit-hook))
+
+  ;; Initialize `on-switch-window-hook' and `on-switch-frame-hook'
+  (add-hook 'window-selection-change-functions #'on-run-switch-window-or-frame-hooks-h)
+  ;; Initialize `on-switch-buffer-hook'
+  (add-hook 'window-buffer-change-functions #'on-run-switch-buffer-hooks-h)
+  ;; `window-buffer-change-functions' doesn't trigger for files visited via the server.
+  (add-hook 'server-visit-hook #'on-run-switch-buffer-hooks-h)
 
   ;; Only execute this function once.
   (remove-hook 'window-buffer-change-functions #'on-init-ui-h))
