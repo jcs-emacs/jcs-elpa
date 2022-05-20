@@ -3,7 +3,7 @@
      ((emacs
        (27 1)))
      "Hooks for faster startup" single
-     ((:commit . "76eaf85131a44b01ab45fb26f855c458f038eee4")
+     ((:commit . "83baed07a105c135190d49d7ec77f95e8f38fa54")
       (:authors
        ("Alex Griffin" . "a@ajgrf.com"))
       (:maintainer "Alex Griffin" . "a@ajgrf.com")

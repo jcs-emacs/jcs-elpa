@@ -6,7 +6,7 @@
 ;; Maintainer: Alex Griffin <a@ajgrf.com>
 ;; Version: 0.1.0
 ;; Package-Version: 20220520.500
-;; Package-Commit: 76eaf85131a44b01ab45fb26f855c458f038eee4
+;; Package-Commit: 83baed07a105c135190d49d7ec77f95e8f38fa54
 ;; Keywords: convenience
 ;; Homepage: https://github.com/ajgrf/on.el
 ;; Package-Requires: ((emacs "27.1"))
@@ -140,7 +140,7 @@ triggering hooks during startup."
 (add-hook 'window-buffer-change-functions #'on-init-ui-h -100)
 
 (unless noninteractive
-  (on-run-hook-on 'on-first-buffer-hook '(find-file-hook))
+  (on-run-hook-on 'on-first-buffer-hook '(find-file-hook on-switch-buffer-hook))
   (on-run-hook-on 'on-first-file-hook   '(find-file-hook dired-initial-position-hook))
   (on-run-hook-on 'on-first-input-hook  '(pre-command-hook)))
 
