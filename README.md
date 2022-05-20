@@ -1,12 +1,18 @@
 <p align="center">
-<img src="./docs/etc/sink_black.png#gh-light-mode-only" width="30%"/>
-<img src="./docs/etc/sink_white.png#gh-dark-mode-only" width="30%"/>
+<img src="./docs/etc/sink_black.png#gh-light-mode-only" width="20%"/>
+<img src="./docs/etc/sink_white.png#gh-dark-mode-only" width="20%"/>
 </p>
+
+<br/>
 
 <p align="center">
 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg" alt="License"></a>
 <a href="https://www.gnu.org/software/emacs/download.html"><img src="https://raw.githubusercontent.com/jcs-emacs/badges/master/elpa/emacs.svg" alt="Emacs"></a>
 <a href="#"><img src="https://raw.githubusercontent.com/jcs-emacs/badges/master/elpa/packages.svg" alt="Packages"></a>
+</p>
+
+<p align="center">
+<a href="#"><img src="https://raw.githubusercontent.com/jcs-emacs/badges/master/elpa/system.svg" alt="System"></a>
 </p>
 
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
