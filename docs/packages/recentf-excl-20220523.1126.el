@@ -7,8 +7,8 @@
 ;; Description: Exclude commands for recent files
 ;; Keyword: excl exclude recentf
 ;; Version: 0.1.0
-;; Package-Version: 20220523.1120
-;; Package-Commit: bfffc5b631484e3a96701d330c4bc09658279c29
+;; Package-Version: 20220523.1126
+;; Package-Commit: 3ec090d0cdcd2df5112d302da8eebd3f2f91bd9b
 ;; Package-Requires: ((emacs "26.1"))
 ;; URL: https://github.com/jcs-elpa/recentf-excl
 
@@ -33,8 +33,6 @@
 ;;
 
 ;;; Code:
-
-(require 'recentf)
 
 (defgroup recentf-excl nil
   "Exclude commands for recent files."

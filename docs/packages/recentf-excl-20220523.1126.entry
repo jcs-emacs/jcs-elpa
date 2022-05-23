@@ -1,9 +1,9 @@
 (recentf-excl .
-	      [(20220523 1120)
+	      [(20220523 1126)
 	       ((emacs
 		 (26 1)))
 	       "Exclude commands for recent files" single
-	       ((:commit . "bfffc5b631484e3a96701d330c4bc09658279c29")
+	       ((:commit . "3ec090d0cdcd2df5112d302da8eebd3f2f91bd9b")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
