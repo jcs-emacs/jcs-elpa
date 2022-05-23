@@ -7,8 +7,8 @@
 ;; Description: Record file external stats.
 ;; Keyword: externally file stats
 ;; Version: 0.1.0
-;; Package-Version: 20220402.709
-;; Package-Commit: 23bbdffb14ad8953e86cb9b98d69ebe7014bebf3
+;; Package-Version: 20220523.1712
+;; Package-Commit: 2f5bf2a6a0fd5361b5021bf97d2dcdc260fdc269
 ;; Package-Requires: ((emacs "25.1"))
 ;; URL: https://github.com/emacs-vs/fextern
 
@@ -59,7 +59,7 @@ This variable is used to check if file are edited externally.")
 (defun fextern-find-file (&rest _)
   "Hook `find-file'."
   (fextern-update-buffer-save-string)
-  (unless (file-exists-p buffer-file-name)
+  (unless (ignore-errors (file-exists-p buffer-file-name))
     (setq fextern-buffer-newly-created t)))
 
 ;;;###autoload
