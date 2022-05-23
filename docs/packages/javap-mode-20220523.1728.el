@@ -1,7 +1,7 @@
 ;;; javap-mode.el --- Javap major mode
 ;;; Version: 9
-;; Package-Version: 20220523.1721
-;; Package-Commit: b2ec3244de7c835d28bd3a8460464fe894318e62
+;; Package-Version: 20220523.1728
+;; Package-Commit: 25c3cd0d13b122fa1f06c054e319ef8218f9b48f
 ;;; URL: http://github.com/elp-revive/javap-mode
 
 ;; Copyright (C) 2011 Kevin Downey
@@ -95,28 +95,28 @@
          (new-b-name (concat "*javap " b-name ".class" "*"))
          (new-buf (get-buffer new-b-name))
          (old-buf (buffer-name))
-         (done (lambda (&rest args)
+         (done (lambda (&rest _)
                  (interactive)
                  (progn
                    (kill-buffer (current-buffer))
                    (kill-buffer old-buf)))))
-    (progn
-      (if new-buf
+    (if new-buf
+        (switch-to-buffer new-buf)
+      (let ((new-buf (get-buffer-create new-b-name)))
+        (progn
           (switch-to-buffer new-buf)
-        (let ((new-buf (get-buffer-create new-b-name)))
-          (progn
-            (switch-to-buffer new-buf)
-            (call-process "javap" nil new-buf nil "-c" "-l" "-classpath" "." b-name)
-            ;; (call-process "javap" nil new-buf nil "-c" "-l" "-package" "-protected" "-private" "-classpath" "." b-name)
-            (setq buffer-read-only 't)
-            (set-window-point (selected-window) 0))))
-      (javap-mode)
-      (local-set-key [(q)] done))))
+          (call-process "javap" nil new-buf nil "-c" "-l" "-classpath" "." b-name)
+          ;; (call-process "javap" nil new-buf nil "-c" "-l" "-package" "-protected" "-private" "-classpath" "." b-name)
+          (setq buffer-read-only 't)
+          (set-window-point (selected-window) 0))))
+    (javap-mode)
+    (local-set-key [(q)] done)))
 
 ;;;###autoload
 (add-hook 'find-file-hook
-          (lambda (&rest args)
-            (when (string= ".class" (substring (buffer-file-name) -6 nil))
+          (lambda (&rest _)
+            (when (and (buffer-file-name)
+                       (string= ".class" (substring (buffer-file-name) -6 nil)))
               (javap-buffer))))
 
 (provide 'javap-mode)
