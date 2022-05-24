@@ -8,7 +8,7 @@
 ;; Keyword: excl exclude recentf
 ;; Version: 0.1.0
 ;; Package-Version: 20220523.1126
-;; Package-Commit: 3ec090d0cdcd2df5112d302da8eebd3f2f91bd9b
+;; Package-Commit: fba18f88a91f94d8aeecb3e67828c91e18212e87
 ;; Package-Requires: ((emacs "26.1"))
 ;; URL: https://github.com/jcs-elpa/recentf-excl
 
