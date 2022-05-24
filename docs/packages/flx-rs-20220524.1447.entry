@@ -1,9 +1,9 @@
 (flx-rs .
-	[(20211109 614)
+	[(20220524 1447)
 	 ((emacs
 	   (25 1)))
 	 "flx in Rust using dynamic module" tar
-	 ((:commit . "9af1aeec7722ee3e8506c86333a4c336fceed948")
+	 ((:commit . "9e03c0961bf374e62ee6701a86ccb0829244d558")
 	  (:authors
 	   ("Jen-Chieh" . "jcs090218@gmail.com"))
 	  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
