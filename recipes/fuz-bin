@@ -1,0 +1,4 @@
+(fuz-bin
+ :repo "jcs-elpa/fuz-bin"
+ :fetcher github
+ :files (:defaults "bin"))
