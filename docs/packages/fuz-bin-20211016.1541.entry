@@ -3,7 +3,7 @@
 	  ((emacs
 	    (26 1)))
 	  "Fast and precise fuzzy scoring/matching utils" tar
-	  ((:commit . "85cb256e8c04fc0c39692d2a152d002ace5f8ec0")
+	  ((:commit . "4a7d6f700eac0b1221dd26560ea8feeb833629e8")
 	   (:authors
 	    ("Zhu Zihao" . "all_but_last@163.com")
 	    ("Jen-Chieh" . "jcs090218@gmail.com"))
