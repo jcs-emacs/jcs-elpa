@@ -7,7 +7,7 @@ EASK ?= eask
 
 build:
 	@echo "Building packages..."
-	@$(EASK) install
+	@$(EASK) install-deps
 	@$(EASK) exec github-elpa update -a "./docs/packages"
 
 generate_archive_json:
