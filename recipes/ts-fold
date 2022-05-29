@@ -1,1 +1,1 @@
-(ts-fold :repo "jcs090218/ts-fold" :fetcher github)
+(ts-fold :repo "jcs-elpa/ts-fold" :fetcher github)
