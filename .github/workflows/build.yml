@@ -29,7 +29,7 @@ jobs:
 
     - uses: emacs-eask/setup-eask@master
       with:
-        version: '0.6.23'
+        version: 'snapshot'
 
     - uses: actions/checkout@v2
 
