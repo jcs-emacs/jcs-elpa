@@ -7,8 +7,8 @@
 ;; Description: Record file external stats.
 ;; Keyword: externally file stats
 ;; Version: 0.1.0
-;; Package-Version: 20220523.1712
-;; Package-Commit: 2f5bf2a6a0fd5361b5021bf97d2dcdc260fdc269
+;; Package-Version: 20220530.2035
+;; Package-Commit: 178d1f87ad8880b13b6f5271137c22b1281a514a
 ;; Package-Requires: ((emacs "25.1"))
 ;; URL: https://github.com/emacs-vs/fextern
 
