@@ -39,6 +39,7 @@ jobs:
         git config user.email github-actions@github.com
 
     - name: Build packages
+      continue-on-error: true
       run: make build
 
     - name: Generate archive.json file
