@@ -11,7 +11,7 @@
 ;; Maintainer: Jen-Chieh Shen <jcs090218@gmail.com>
 ;; URL: https://github.com/elp-revive/buffer-move/
 ;; Package-Version: 20220411.1846
-;; Package-Commit: a0abbac10aff46f5eb2d95eefaa482ee9711c736
+;; Package-Commit: 0d2fa576a48b153488b90322ae5c4462c7e15db8
 ;; Version: 0.6.3
 ;; Package-Requires: ((emacs "24.1"))
 ;; Keywords: convenience

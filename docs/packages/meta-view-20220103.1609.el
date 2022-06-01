@@ -8,7 +8,7 @@
 ;; Keyword: assembly metadata source
 ;; Version: 0.1.0
 ;; Package-Version: 20220103.1609
-;; Package-Commit: d8c9c16a1a6076a2c9654ae86ef305b90ff71e29
+;; Package-Commit: e219a54c0639489c60758f30f4d66887f4e8c497
 ;; Package-Requires: ((emacs "26.1") (csharp-mode "0.11.0") (meta-net "1.1.0") (ht "2.3") (f "0.20.0"))
 ;; URL: https://github.com/emacs-vs/meta-view
 

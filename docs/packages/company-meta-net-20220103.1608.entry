@@ -9,7 +9,7 @@
 		    (ht
 		     (2 3)))
 		   "Company completion for C# project using meta-net" single
-		   ((:commit . "8b3e62d62f63436e514adf892d69978b39e3a5b7")
+		   ((:commit . "6fed3f75ec56525e64339429d89f56ed44ecec2c")
 		    (:authors
 		     ("Jen-Chieh" . "jcs090218@gmail.com"))
 		    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

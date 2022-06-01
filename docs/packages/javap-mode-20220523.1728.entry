@@ -1,5 +1,5 @@
 (javap-mode .
 	    [(20220523 1728)
 	     nil "Javap major mode" single
-	     ((:commit . "ecd32522e4507fe5f212152bc204acf84f890fc4")
+	     ((:commit . "cbe40095186d31be7351bdb9eaf45004354dd87c")
 	      (:url . "http://github.com/elp-revive/javap-mode"))])

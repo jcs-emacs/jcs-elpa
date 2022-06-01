@@ -1,7 +1,7 @@
 ;;; javap-mode.el --- Javap major mode
 ;;; Version: 9
 ;; Package-Version: 20220523.1728
-;; Package-Commit: ecd32522e4507fe5f212152bc204acf84f890fc4
+;; Package-Commit: cbe40095186d31be7351bdb9eaf45004354dd87c
 ;;; URL: http://github.com/elp-revive/javap-mode
 
 ;; Copyright (C) 2011 Kevin Downey
