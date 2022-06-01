@@ -8,7 +8,7 @@
 ;; Keyword: github tags
 ;; Version: 0.1.0
 ;; Package-Version: 20210817.745
-;; Package-Commit: 4e853ef706b7025f24d9c184b884752a220356df
+;; Package-Commit: 4c60fc83eeb9ae0c417bd6e6a65f60d25bf15895
 ;; Package-Requires: ((emacs "24.3"))
 ;; URL: https://github.com/jcs-elpa/github-tags
 
