@@ -8,7 +8,7 @@
 ;; Keyword: eask
 ;; Version: 0.1.0
 ;; Package-Version: 20220418.539
-;; Package-Commit: c57eca12ce86185aeb449ea93d0affb8933c3834
+;; Package-Commit: 3fcd794df00e99db7a70675d688494f45086f2c6
 ;; Package-Requires: ((emacs "24.3"))
 ;; URL: https://github.com/emacs-eask/eask-mode
 
