@@ -8,7 +8,7 @@
 ;; Keyword: vertico flx
 ;; Version: 0.1.0
 ;; Package-Version: 20220419.1314
-;; Package-Commit: 45941fec503ca0967035440a3c344dbff4b9cec5
+;; Package-Commit: 096b12a9386c9194c58424d3735e23b5eb0496aa
 ;; Package-Requires: ((emacs "27.1") (vertico "0.22") (flx "0.5") (flx-style "0.1.1") (ht "2.0") (f "0.20.0") (mbs "0.1.0"))
 ;; URL: https://github.com/jcs-elpa/vertico-flx
 

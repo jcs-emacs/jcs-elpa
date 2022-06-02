@@ -1,7 +1,7 @@
 (noflet .
 	[(20220422 1457)
 	 nil "locally override functions" single
-	 ((:commit . "66c68ae3ed67dcc2426ced061ad0e6de40b41cc7")
+	 ((:commit . "711b24f8b8fbb09c44fd3fad0eebd909aedf082a")
 	  (:authors
 	   ("Nic Ferrier" . "nferrier@ferrier.me.uk"))
 	  (:maintainer "Nic Ferrier" . "nferrier@ferrier.me.uk")

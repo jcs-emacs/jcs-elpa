@@ -15,7 +15,7 @@
 	       (mbs
 		(0 1 0)))
 	      "Flx integration for vertico" single
-	      ((:commit . "45941fec503ca0967035440a3c344dbff4b9cec5")
+	      ((:commit . "096b12a9386c9194c58424d3735e23b5eb0496aa")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

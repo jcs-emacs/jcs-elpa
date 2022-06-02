@@ -8,7 +8,7 @@
 ;; Keyword: minibuffer stats
 ;; Version: 0.1.0
 ;; Package-Version: 20220419.1307
-;; Package-Commit: b88130faa277956e9d04decc288c15fe0cf85e14
+;; Package-Commit: f2b0f79a78d155695b706fdab978b23c15937380
 ;; Package-Requires: ((emacs "26.1"))
 ;; URL: https://github.com/jcs-elpa/mbs
 

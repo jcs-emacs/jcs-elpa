@@ -3,7 +3,7 @@
 		     ((emacs
 		       (25 1)))
 		     "Keep messages buffer clean" single
-		     ((:commit . "646807a066135cca09bd3d671bded323fdaffaa3")
+		     ((:commit . "5888a46ef9c0f10fc2b0fdea1f26d8271071b016")
 		      (:authors
 		       ("Jen-Chieh" . "jcs090218@gmail.com"))
 		      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

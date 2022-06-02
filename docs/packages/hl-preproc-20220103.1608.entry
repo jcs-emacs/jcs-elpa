@@ -5,7 +5,7 @@
 	      (meta-net
 	       (1 1 0)))
 	     "Unhighlight invalid preprocessor region" single
-	     ((:commit . "4208ee14575def2685d297933e43a2f647472beb")
+	     ((:commit . "323fe40db7281d116d07ea1fc6a44f3724ce2ecb")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
 	      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
