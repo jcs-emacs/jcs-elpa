@@ -7,8 +7,8 @@
 ;; Description: Flx integration for vertico.
 ;; Keyword: vertico flx
 ;; Version: 0.1.0
-;; Package-Version: 20220419.1314
-;; Package-Commit: 096b12a9386c9194c58424d3735e23b5eb0496aa
+;; Package-Version: 20220605.530
+;; Package-Commit: 9ccebe45f1f89fae5e5332e012b086a57add42a4
 ;; Package-Requires: ((emacs "27.1") (vertico "0.22") (flx "0.5") (flx-style "0.1.1") (ht "2.0") (f "0.20.0") (mbs "0.1.0"))
 ;; URL: https://github.com/jcs-elpa/vertico-flx
 
@@ -146,7 +146,7 @@ If optional argument FLIP is non-nil, reverse query and pattern order."
 
 (defun vertico-flx--disable ()
   "Disable `vertico-flx-mode'."
-  (setq vertico-sort-function vertico-flx--old-sort-functio)  ; revert
+  (setq vertico-sort-function vertico-flx--old-sort-function)  ; revert
   (remove-hook 'minibuffer-setup-hook #'vertico-flx--minibuffer-setup)
   (remove-hook 'minibuffer-exit-hook #'vertico-flx--minibuffer-exit))
 
