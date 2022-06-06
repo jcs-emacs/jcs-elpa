@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-eask/flycheck-eask
-;; Package-Version: 20220417.1052
-;; Package-Commit: f97090550f9a9c7da5285d7a9cd0701167580f5d
+;; Package-Version: 20220606.1724
+;; Package-Commit: a80f661692d86301c68074fcd50fd4605c970090
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (flycheck "0.14"))
 ;; Keywords: eask
@@ -42,7 +42,7 @@
   :link '(url-link :tag "Github" "https://github.com/emacs-eask/flycheck-eask"))
 
 (flycheck-define-checker eask
-  "A linter for textlint."
+  "A linter for Eask-file."
   :command ("eask" "check-eask")
   :error-patterns
   ((error line-start (file-name) ":" line ":" column " Error: "

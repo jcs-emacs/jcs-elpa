@@ -1,11 +1,11 @@
 (flycheck-eask .
-	       [(20220417 1052)
+	       [(20220606 1724)
 		((emacs
 		  (26 1))
 		 (flycheck
 		  (0 14)))
 		"Eask support in Flycheck" single
-		((:commit . "f97090550f9a9c7da5285d7a9cd0701167580f5d")
+		((:commit . "a80f661692d86301c68074fcd50fd4605c970090")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
