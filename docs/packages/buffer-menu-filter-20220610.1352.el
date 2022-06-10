@@ -7,8 +7,8 @@
 ;; Description: Filter buffer-menu items using fake header.
 ;; Keyword: buffer menu filter
 ;; Version: 0.1.0
-;; Package-Version: 20220227.1530
-;; Package-Commit: c840a465e22974e0b7c7abdae898924037ad6419
+;; Package-Version: 20220610.1352
+;; Package-Commit: 8e49d852badeb8c5c1ce28ae3422d2cc4d08cc69
 ;; Package-Requires: ((emacs "26.1") (buffer-menu-project "0.1.0") (flx "0.6.1") (ht "2.0"))
 ;; URL: https://github.com/jcs-elpa/buffer-menu-filter
 
@@ -64,6 +64,11 @@
 (defcustom buffer-menu-filter-delay 0.2
   "Filter delay time."
   :type 'float
+  :group 'buffer-menu-filter)
+
+(defcustom buffer-menu-filter-score-fn 'flx-score
+  "Function used for scoring candidates."
+  :type 'symbol
   :group 'buffer-menu-filter)
 
 (defconst buffer-menu-filter-name "*Buffer List*"
@@ -207,7 +212,7 @@ If BUFFER isn't showing; then execute ERROR operations instead."
          (let* ((id (tabulated-list-get-id))
                 (entry (tabulated-list-get-entry))
                 (buf-name (buffer-name id))
-                (scoring (flx-score buf-name buffer-menu-filter--pattern))
+                (scoring (funcall buffer-menu-filter-score-fn buf-name buffer-menu-filter--pattern))
                 ;; Ensure score is not `nil'
                 (score (cond ((listp scoring) (nth 0 scoring))
                              ((vectorp scoring) (aref scoring 0))
