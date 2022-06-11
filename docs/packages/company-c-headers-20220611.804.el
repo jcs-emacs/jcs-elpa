@@ -6,8 +6,8 @@
 ;; Author: Alastair Rankine <alastair@girtby.net>
 ;; Maintainer: Jen-Chieh Shen <jcs090218@gmail.com>
 ;; Keywords: development company
-;; Package-Version: 20220611.754
-;; Package-Commit: 44eff9e248844e61b9b6b0cf2df95b167f082a11
+;; Package-Version: 20220611.804
+;; Package-Commit: 570004af77f0cfd51e175fa85bc2216385777ee7
 ;; URL: http://github.com/elp-revive/company-c-headers
 ;; Package-Requires: ((emacs "26.1") (company "0.8"))
 ;; Version: 0.1.0
@@ -129,8 +129,9 @@ Filters on the appropriate regex for the current major mode."
     (setq candidates (sort candidates #'string<))
 
     ;; Add the delimiter and metadata
-    (mapcar (lambda (C) (propertize (concat delim C) 'directory dir)) candidates)
-    ))
+    (if (or (string= delim "\"") (string= delim "<"))
+        (mapcar (lambda (C) (propertize (concat delim C) 'directory dir)) candidates)
+      candidates)))
 
 (defun company-c-headers--candidates (prefix)
   "Return candidates for PREFIX."
