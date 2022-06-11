@@ -5,7 +5,7 @@
 		     (company
 		      (0 8)))
 		    "Company mode backend for C/C++ header files" single
-		    ((:commit . "570004af77f0cfd51e175fa85bc2216385777ee7")
+		    ((:commit . "5cbd317049cbbc5de5902f52262867e51f7cb0ac")
 		     (:authors
 		      ("Alastair Rankine" . "alastair@girtby.net"))
 		     (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
