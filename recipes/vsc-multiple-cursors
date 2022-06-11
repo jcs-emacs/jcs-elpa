@@ -1,0 +1,1 @@
+(vsc-multiple-cursors :repo "emacs-vs/vsc-multiple-cursors" :fetcher github)
