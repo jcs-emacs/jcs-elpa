@@ -1,11 +1,11 @@
 (vsc-multiple-cursors .
-		      [(20220611 936)
+		      [(20220611 1232)
 		       ((emacs
 			 (27 1))
 			(multiple-cursors
 			 (1 4 0)))
 		       "multiple-curosrs integration behave like VSCode" single
-		       ((:commit . "2f9980f75777e45b12564fa8540eaf0ddae08e6a")
+		       ((:commit . "d91a38f819c63afc0da134752be7040c8738a73e")
 			(:authors
 			 ("Jen-Chieh" . "jcs090218@gmail.com"))
 			(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
