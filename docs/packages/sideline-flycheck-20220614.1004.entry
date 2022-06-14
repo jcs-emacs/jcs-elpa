@@ -1,0 +1,14 @@
+(sideline-flycheck .
+		   [(20220614 1004)
+		    ((emacs
+		      (26 1))
+		     (flycheck
+		      (0 14))
+		     (sideline
+		      (0 1 0)))
+		    "Show flycheck errors with sideline" single
+		    ((:commit . "91d7f2d43cc8abbf96bcae389553b6d722c8bad9")
+		     (:authors
+		      ("Jen-Chieh" . "jcs090218@gmail.com"))
+		     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		     (:url . "https://github.com/jcs-elpa/sideline-flycheck"))])
