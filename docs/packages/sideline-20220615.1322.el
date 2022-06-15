@@ -6,9 +6,9 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Description: Show informations on the side
 ;; Keyword: sideline
-;; Version: 0.1.0
-;; Package-Version: 20220615.1311
-;; Package-Commit: a6377fc9636486856db404f04a15f67882e97c11
+;; Version: 0.1.1
+;; Package-Version: 20220615.1322
+;; Package-Commit: 6b93ded69686fc5bd3b7ccde8334720814dc12c4
 ;; Package-Requires: ((emacs "26.1"))
 ;; URL: https://github.com/jcs-elpa/sideline
 
@@ -67,8 +67,13 @@
   "Face used to highlight action text."
   :group 'sideline)
 
-(defcustom sideline-backends-skip-current-line t
-  "Don't display at line."
+(defcustom sideline-backends-left-skip-current-line t
+  "Don't display left sideline in current line."
+  :type 'boolean
+  :group 'sideline)
+
+(defcustom sideline-backends-right-skip-current-line t
+  "Don't display right sideline in current line."
   :type 'boolean
   :group 'sideline)
 
@@ -371,12 +376,11 @@ If argument ON-LEFT is non-nil, it will align to the left instead of right."
 (defun sideline-render ()
   "Render sideline once."
   (run-hooks 'sideline-pre-render-hook)
-  (if sideline-backends-skip-current-line
-      (let ((mark (list (line-beginning-position))))
-        (setq sideline--occupied-lines-left mark
-              sideline--occupied-lines-right mark))
-    (setq sideline--occupied-lines-left nil
-          sideline--occupied-lines-right nil))
+  (let ((mark (list (line-beginning-position))))
+    (setq sideline--occupied-lines-left
+          (if sideline-backends-left-skip-current-line mark nil))
+    (setq sideline--occupied-lines-right
+          (if sideline-backends-right-skip-current-line mark nil)))
   (sideline--delete-ovs)
   (sideline--render-backends sideline-backends-left t)
   (sideline--render-backends sideline-backends-right nil)
