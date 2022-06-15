@@ -7,7 +7,7 @@
 		     (flycheck
 		      (0 14)))
 		    "Show flycheck errors with sideline" single
-		    ((:commit . "52801f817c257955f82a37108044b68ae8833190")
+		    ((:commit . "12aeee5654da6726d9bba7289677b6629deaf91f")
 		     (:authors
 		      ("Jen-Chieh" . "jcs090218@gmail.com"))
 		     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

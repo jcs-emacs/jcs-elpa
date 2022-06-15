@@ -8,7 +8,7 @@
 ;; Keyword: sideline flycheck
 ;; Version: 0.1.0
 ;; Package-Version: 20220615.712
-;; Package-Commit: 52801f817c257955f82a37108044b68ae8833190
+;; Package-Commit: 12aeee5654da6726d9bba7289677b6629deaf91f
 ;; Package-Requires: ((emacs "26.1") (sideline "0.1.0") (flycheck "0.14"))
 ;; URL: https://github.com/jcs-elpa/sideline-flycheck
 

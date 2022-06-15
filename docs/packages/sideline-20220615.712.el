@@ -8,7 +8,7 @@
 ;; Keyword: sideline
 ;; Version: 0.1.0
 ;; Package-Version: 20220615.712
-;; Package-Commit: dfbe93b3628daac9b7e995ef8e0b712772169aee
+;; Package-Commit: 3fbcc982e9c2c909230acefe37f181003cb5ef5e
 ;; Package-Requires: ((emacs "26.1"))
 ;; URL: https://github.com/jcs-elpa/sideline
 
