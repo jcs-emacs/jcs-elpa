@@ -7,8 +7,8 @@
 ;; Description: Show informations on the side
 ;; Keyword: sideline
 ;; Version: 0.1.1
-;; Package-Version: 20220615.1322
-;; Package-Commit: 6b93ded69686fc5bd3b7ccde8334720814dc12c4
+;; Package-Version: 20220615.2045
+;; Package-Commit: bfd7f8c1e03132f4ab615093dd2aaba1aa1db078
 ;; Package-Requires: ((emacs "26.1"))
 ;; URL: https://github.com/jcs-elpa/sideline
 
@@ -105,6 +105,11 @@
 (defcustom sideline-reset-hook nil
   "Hooks runs once the sideline is reset in `post-command-hook'."
   :type 'hook
+  :group 'sideline)
+
+(defcustom sideline-inhibit-display-function #'sideline-stop-p
+  "Function call to determine weather to display sideline or not."
+  :type 'function
   :group 'sideline)
 
 (defvar-local sideline--overlays nil
@@ -373,18 +378,25 @@ If argument ON-LEFT is non-nil, it will align to the left instead of right."
                            (sideline--render cands action face on-left))))))
         (sideline--render candidates action face on-left)))))
 
+(defun sideline-stop-p ()
+  "Return non-nil if the sideline should not be display."
+  (or (region-active-p)
+      (bound-and-true-p company-pseudo-tooltip-overlay)
+      (bound-and-true-p lsp-ui-peek--overlay)))
+
 (defun sideline-render ()
   "Render sideline once."
-  (run-hooks 'sideline-pre-render-hook)
-  (let ((mark (list (line-beginning-position))))
-    (setq sideline--occupied-lines-left
-          (if sideline-backends-left-skip-current-line mark nil))
-    (setq sideline--occupied-lines-right
-          (if sideline-backends-right-skip-current-line mark nil)))
   (sideline--delete-ovs)
-  (sideline--render-backends sideline-backends-left t)
-  (sideline--render-backends sideline-backends-right nil)
-  (run-hooks 'sideline-post-render-hook))
+  (unless (funcall sideline-inhibit-display-function)
+    (run-hooks 'sideline-pre-render-hook)
+    (let ((mark (list (line-beginning-position))))
+      (setq sideline--occupied-lines-left
+            (if sideline-backends-left-skip-current-line mark nil))
+      (setq sideline--occupied-lines-right
+            (if sideline-backends-right-skip-current-line mark nil)))
+    (sideline--render-backends sideline-backends-left t)
+    (sideline--render-backends sideline-backends-right nil)
+    (run-hooks 'sideline-post-render-hook)))
 
 (defun sideline--post-command ()
   "Post command."
