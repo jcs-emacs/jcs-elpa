@@ -7,8 +7,8 @@
 ;; Description: Show informations on the side
 ;; Keyword: sideline
 ;; Version: 0.1.0
-;; Package-Version: 20220615.712
-;; Package-Commit: e53a56beadcf3252d6b9eb408cc4bba2741ee687
+;; Package-Version: 20220615.1259
+;; Package-Commit: 26d2cf81bb309bf87915262a710182349474c4ec
 ;; Package-Requires: ((emacs "26.1"))
 ;; URL: https://github.com/jcs-elpa/sideline
 
@@ -227,7 +227,7 @@ calculate to the right side."
       (when (< str-len (- column-end pos-end))
         (cons column-end pos-end)))))
 
-(defun sideline--find-line (str-len on-left &optional direction)
+(defun sideline--find-line (str-len on-left &optional direction exceeded)
   "Find a line where the string can be inserted.
 
 Argument STR-LEN is the length of the message, use to calculate the alignment.
@@ -235,7 +235,10 @@ Argument STR-LEN is the length of the message, use to calculate the alignment.
 If argument ON-LEFT is non-nil, it will align to the left instead of right.
 
 See variable `sideline-order' document string for optional argument DIRECTION
-for details."
+for details.
+
+Optional argument EXCEEDED is set to non-nil when we have already searched
+available lines in both directions (up & down)."
   (let ((bol (window-start)) (eol (window-end))
         (occupied-lines (if on-left sideline--occupied-lines-left
                           sideline--occupied-lines-right))
@@ -246,7 +249,9 @@ for details."
     (save-excursion
       (while (not break-it)
         (if skip-first (setq skip-first nil)
-          (forward-line (if going-up -1 1)))
+          (forward-line (if going-up -1 1))
+          (when (or (= (point) (point-min)) (= (point) (point-max)))
+            (setq break-it t)))
         (unless (if going-up (<= bol (point)) (<= (point) eol))
           (setq break-it t))
         (when (and (not (memq (line-beginning-position) occupied-lines))
@@ -260,7 +265,8 @@ for details."
         (setq sideline--occupied-lines-left occupied-lines)
       (setq sideline--occupied-lines-right occupied-lines))
     (or pos-ov
-        (sideline--find-line str-len on-left (if going-up 'down 'up)))))
+        (and (not exceeded)
+             (sideline--find-line str-len on-left (if going-up 'down 'up) t)))))
 
 (defun sideline--create-keymap (action candidate)
   "Create keymap for sideline ACTION.
