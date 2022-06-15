@@ -7,8 +7,8 @@
 ;; Description: Show informations on the side
 ;; Keyword: sideline
 ;; Version: 0.1.0
-;; Package-Version: 20220614.804
-;; Package-Commit: 56b33cbdd3d3371ec7ccb466f9a44afc6b96731f
+;; Package-Version: 20220615.612
+;; Package-Commit: de2336a885ce8929c5565bd9a616033aa513a80b
 ;; Package-Requires: ((emacs "26.1"))
 ;; URL: https://github.com/jcs-elpa/sideline
 
@@ -35,6 +35,7 @@
 ;;; Code:
 
 (require 'cl-lib)
+(require 'face-remap)
 (require 'rect)
 (require 'subr-x)
 
@@ -97,6 +98,35 @@
 
 (defvar-local sideline--occupied-lines-right nil
   "Occupied lines on the right.")
+
+;;
+;; (@* "Entry" )
+;;
+
+(defun sideline--enable ()
+  "Enable `sideline' in current buffer."
+  (add-hook 'post-command-hook #'sideline--post-command nil t))
+
+(defun sideline--disable ()
+  "Disable `sideline' in current buffer."
+  (remove-hook 'post-command-hook #'sideline--post-command t)
+  (sideline--reset))
+
+;;;###autoload
+(define-minor-mode sideline-mode
+  "Minor mode 'sideline-mode'."
+  :lighter " Sideline"
+  :group sideline
+  (if sideline-mode (sideline--enable) (sideline--disable)))
+
+(defun sideline--turn-on-sideline-mode ()
+  "Turn on the 'sideline-mode'."
+  (sideline-mode 1))
+
+;;;###autoload
+(define-globalized-minor-mode global-sideline-mode
+  sideline-mode sideline--turn-on-sideline-mode
+  :require 'sideline)
 
 ;;
 ;; (@* "Util" )
@@ -338,35 +368,6 @@ If argument ON-LEFT is non-nil, it will align to the left instead of right."
   "Clean up for next use."
   (setq sideline--last-bound nil)
   (sideline--delete-ovs))
-
-;;
-;; (@* "Entry" )
-;;
-
-(defun sideline--enable ()
-  "Enable `sideline' in current buffer."
-  (add-hook 'post-command-hook #'sideline--post-command nil t))
-
-(defun sideline--disable ()
-  "Disable `sideline' in current buffer."
-  (remove-hook 'post-command-hook #'sideline--post-command t)
-  (sideline--reset))
-
-;;;###autoload
-(define-minor-mode sideline-mode
-  "Minor mode 'sideline-mode'."
-  :lighter " Sideline"
-  :group sideline
-  (if sideline-mode (sideline--enable) (sideline--disable)))
-
-(defun sideline--turn-on-sideline-mode ()
-  "Turn on the 'sideline-mode'."
-  (sideline-mode 1))
-
-;;;###autoload
-(define-globalized-minor-mode global-sideline-mode
-  sideline-mode sideline--turn-on-sideline-mode
-  :require 'sideline)
 
 (provide 'sideline)
 ;;; sideline.el ends here
