@@ -4,13 +4,12 @@
 ;; Created date 2022-03-08 19:54:08
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
-;; Description: Revert buffers like Visual Studio.
-;; Keyword: revert vs
-;; Version: 0.1.1
-;; Package-Version: 20220403.1127
-;; Package-Commit: 1d9d6627982984b077bcf153dfa9be73e79edb81
-;; Package-Requires: ((emacs "27.1") (fextern "0.1.0"))
 ;; URL: https://github.com/emacs-vs/vs-revbuf
+;; Package-Version: 20220616.1847
+;; Package-Commit: 6527b22f47c398ace5be14d9f205c08baceb0cac
+;; Version: 0.1.1
+;; Package-Requires: ((emacs "27.1") (fextern "0.1.0"))
+;; Keywords: revert vs
 
 ;; This file is NOT part of GNU Emacs.
 

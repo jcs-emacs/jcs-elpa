@@ -4,13 +4,12 @@
 ;; Created date 2022-03-11 22:10:58
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
-;; Description: Minor mode accomplish editing experience in Visual Studio.
-;; Keyword: editing vs
-;; Version: 0.1.0
-;; Package-Version: 20220311.1736
-;; Package-Commit: 5979bfbadfc49d89d665849bf2047203e41a1dd9
-;; Package-Requires: ((emacs "24.3"))
 ;; URL: https://github.com/emacs-vs/vs-edit-mode
+;; Package-Version: 20220616.1846
+;; Package-Commit: 80491c146bf0f74c660f8ef6ee700e3768df35e3
+;; Version: 0.1.0
+;; Package-Requires: ((emacs "24.3"))
+;; Keywords: editing vs
 
 ;; This file is NOT part of GNU Emacs.
 

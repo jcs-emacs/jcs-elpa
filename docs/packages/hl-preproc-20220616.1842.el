@@ -4,13 +4,12 @@
 ;; Created date 2021-07-03 17:07:11
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
-;; Description: Unhighlight invalid preprocessor region
-;; Keyword: preprocessor
-;; Version: 0.1.0
-;; Package-Version: 20220103.1608
-;; Package-Commit: 323fe40db7281d116d07ea1fc6a44f3724ce2ecb
-;; Package-Requires: ((emacs "24.4") (meta-net "1.1.0"))
 ;; URL: https://github.com/emacs-vs/hl-preproc
+;; Package-Version: 20220616.1842
+;; Package-Commit: 876f033703e1dc77c068d1daf8ccf4b03cea9bac
+;; Version: 0.1.0
+;; Package-Requires: ((emacs "24.4") (meta-net "1.1.0"))
+;; Keywords: preprocessor
 
 ;; This file is NOT part of GNU Emacs.
 

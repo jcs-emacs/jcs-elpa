@@ -4,13 +4,12 @@
 ;; Created date 2021-06-24 14:01:15
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
-;; Description: View metadata from .NET assemblies
-;; Keyword: assembly metadata source
-;; Version: 0.1.0
-;; Package-Version: 20220103.1609
-;; Package-Commit: 49464c034acf9562d761d05df393e9ce682cdf60
-;; Package-Requires: ((emacs "26.1") (csharp-mode "0.11.0") (meta-net "1.1.0") (ht "2.3") (f "0.20.0"))
 ;; URL: https://github.com/emacs-vs/meta-view
+;; Package-Version: 20220616.1844
+;; Package-Commit: 8e1ed277665ef008aa7a0852eddeac19fc526539
+;; Version: 0.1.0
+;; Package-Requires: ((emacs "26.1") (csharp-mode "0.11.0") (meta-net "1.1.0") (ht "2.3") (f "0.20.0"))
+;; Keywords: assembly metadata source
 
 ;; This file is NOT part of GNU Emacs.
 

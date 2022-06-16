@@ -4,13 +4,12 @@
 ;; Created date 2022-03-08 17:30:07
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
-;; Description: Record file external stats.
-;; Keyword: externally file stats
-;; Version: 0.1.0
-;; Package-Version: 20220530.2035
-;; Package-Commit: 9a2a75f13612c4edb1804f23767d80ca654a7d9d
-;; Package-Requires: ((emacs "25.1"))
 ;; URL: https://github.com/emacs-vs/fextern
+;; Package-Version: 20220616.1840
+;; Package-Commit: 72e3d3b0944d7eb214111da3826211931a2bacdf
+;; Version: 0.1.0
+;; Package-Requires: ((emacs "25.1"))
+;; Keywords: externally file stats
 
 ;; This file is NOT part of GNU Emacs.
 

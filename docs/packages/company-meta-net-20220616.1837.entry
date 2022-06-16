@@ -1,5 +1,5 @@
 (company-meta-net .
-		  [(20220103 1608)
+		  [(20220616 1837)
 		   ((emacs
 		     (25 1))
 		    (company
@@ -9,8 +9,9 @@
 		    (ht
 		     (2 3)))
 		   "Company completion for C# project using meta-net" single
-		   ((:commit . "ca7d07ca3840bb95e9d576bf5701b94dd118b183")
+		   ((:commit . "864050127f78f023d3dc6470bdc31511945a214e")
 		    (:authors
 		     ("Jen-Chieh" . "jcs090218@gmail.com"))
 		    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		    (:keywords "csproj" "csharp" "company")
 		    (:url . "https://github.com/emacs-vs/company-meta-net"))])

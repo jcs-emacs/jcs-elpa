@@ -1,12 +1,13 @@
 (hl-preproc .
-	    [(20220103 1608)
+	    [(20220616 1842)
 	     ((emacs
 	       (24 4))
 	      (meta-net
 	       (1 1 0)))
 	     "Unhighlight invalid preprocessor region" single
-	     ((:commit . "323fe40db7281d116d07ea1fc6a44f3724ce2ecb")
+	     ((:commit . "876f033703e1dc77c068d1daf8ccf4b03cea9bac")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
 	      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	      (:keywords "preprocessor")
 	      (:url . "https://github.com/emacs-vs/hl-preproc"))])

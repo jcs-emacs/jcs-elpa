@@ -4,13 +4,12 @@
 ;; Created date 2022-02-19 15:21:40
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
-;; Description: Filter buffer-menu items using fake header.
-;; Keyword: buffer menu filter
-;; Version: 0.1.0
-;; Package-Version: 20220610.1352
-;; Package-Commit: 8e49d852badeb8c5c1ce28ae3422d2cc4d08cc69
-;; Package-Requires: ((emacs "26.1") (buffer-menu-project "0.1.0") (flx "0.6.1") (ht "2.0"))
 ;; URL: https://github.com/jcs-elpa/buffer-menu-filter
+;; Package-Version: 20220616.1900
+;; Package-Commit: 74263ee30f66e78ff76c4c9dd58e86376c329bc0
+;; Version: 0.1.0
+;; Package-Requires: ((emacs "26.1") (buffer-menu-project "0.1.0") (flx "0.6.1") (ht "2.0"))
+;; Keywords: buffer menu filter
 
 ;; This file is NOT part of GNU Emacs.
 

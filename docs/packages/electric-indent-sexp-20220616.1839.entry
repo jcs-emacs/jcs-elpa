@@ -1,10 +1,11 @@
 (electric-indent-sexp .
-		      [(20220414 2251)
+		      [(20220616 1839)
 		       ((emacs
 			 (25 1)))
 		       "Automatically indent entire balanced expression block" single
-		       ((:commit . "e3394cc021a8763f62004cf4756bca04c4acbc48")
+		       ((:commit . "b20143cb99ffb76a965d60cb2012dd71914ecab8")
 			(:authors
 			 ("Jen-Chieh" . "jcs090218@gmail.com"))
 			(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+			(:keywords "indent" "sexp" "electric")
 			(:url . "https://github.com/jcs-elpa/electric-indent-sexp"))])

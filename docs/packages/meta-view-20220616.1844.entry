@@ -1,5 +1,5 @@
 (meta-view .
-	   [(20220103 1609)
+	   [(20220616 1844)
 	    ((emacs
 	      (26 1))
 	     (csharp-mode
@@ -11,8 +11,9 @@
 	     (f
 	      (0 20 0)))
 	    "View metadata from .NET assemblies" single
-	    ((:commit . "49464c034acf9562d761d05df393e9ce682cdf60")
+	    ((:commit . "8e1ed277665ef008aa7a0852eddeac19fc526539")
 	     (:authors
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))
 	     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	     (:keywords "assembly" "metadata" "source")
 	     (:url . "https://github.com/emacs-vs/meta-view"))])

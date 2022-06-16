@@ -1,5 +1,5 @@
 (buffer-menu-project .
-		     [(20220221 1847)
+		     [(20220616 1900)
 		      ((emacs
 			(25 1))
 		       (project
@@ -7,8 +7,9 @@
 		       (f
 			(0 20 0)))
 		      "List buffers relative to project" single
-		      ((:commit . "4d2202bd2f51c0a9a108e84e9ecc108852d4fbb6")
+		      ((:commit . "4d0d2aff9a130655b70692489a99b9f5fe3e20c5")
 		       (:authors
 			("Jen-Chieh" . "jcs090218@gmail.com"))
 		       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		       (:keywords "buffer" "menu" "project")
 		       (:url . "https://github.com/jcs-elpa/buffer-menu-project"))])

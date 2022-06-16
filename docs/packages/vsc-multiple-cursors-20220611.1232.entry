@@ -5,7 +5,7 @@
 			(multiple-cursors
 			 (1 4 0)))
 		       "multiple-curosrs integration behave like VSCode" single
-		       ((:commit . "d91a38f819c63afc0da134752be7040c8738a73e")
+		       ((:commit . "f097bfd708c2b92bed0af5e6965bc1b2781a2efa")
 			(:authors
 			 ("Jen-Chieh" . "jcs090218@gmail.com"))
 			(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

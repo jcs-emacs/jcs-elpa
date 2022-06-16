@@ -4,13 +4,12 @@
 ;; Created date 2022-02-17 15:26:10
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
-;; Description: List buffers relative to project.
-;; Keyword: buffer menu project
-;; Version: 0.1.0
-;; Package-Version: 20220221.1847
-;; Package-Commit: 4d2202bd2f51c0a9a108e84e9ecc108852d4fbb6
-;; Package-Requires: ((emacs "25.1") (project "0.8.1") (f "0.20.0"))
 ;; URL: https://github.com/jcs-elpa/buffer-menu-project
+;; Package-Version: 20220616.1900
+;; Package-Commit: 4d0d2aff9a130655b70692489a99b9f5fe3e20c5
+;; Version: 0.1.0
+;; Package-Requires: ((emacs "25.1") (project "0.8.1") (f "0.20.0"))
+;; Keywords: buffer menu project
 
 ;; This file is NOT part of GNU Emacs.
 

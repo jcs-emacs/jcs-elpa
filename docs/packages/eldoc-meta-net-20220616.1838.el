@@ -4,13 +4,12 @@
 ;; Created date 2021-07-12 23:32:13
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
-;; Description: Eldoc support for meta-net
-;; Keyword: eldoc c# dotnet sdk
-;; Version: 0.1.0
-;; Package-Version: 20220103.1608
-;; Package-Commit: ae0d424ab8a695c97c40b713ab9de8af973cd242
-;; Package-Requires: ((emacs "26.1") (meta-net "1.1.0") (ht "2.3") (csharp-mode "1.0.2"))
 ;; URL: https://github.com/emacs-vs/eldoc-meta-net
+;; Package-Version: 20220616.1838
+;; Package-Commit: 9f0fd51d8f4636782a4eedc21f9450d16288eec5
+;; Version: 0.1.0
+;; Package-Requires: ((emacs "26.1") (meta-net "1.1.0") (ht "2.3") (csharp-mode "1.0.2"))
+;; Keywords: eldoc c# dotnet sdk
 
 ;; This file is NOT part of GNU Emacs.
 

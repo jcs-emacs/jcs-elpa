@@ -9,7 +9,7 @@
 	       (frame-local
 		(0 0 1)))
 	      "Company front-end with icons" tar
-	      ((:commit . "9297cccd458f707acff2ef49d061afab81946665")
+	      ((:commit . "8bd15fa18d440f6f43ee05644ebc5f2bb03546bf")
 	       (:authors
 		("Sebastien Chapuis" . "sebastien@chapu.is"))
 	       (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")

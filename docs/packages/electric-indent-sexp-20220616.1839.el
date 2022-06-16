@@ -4,13 +4,12 @@
 ;; Created date 2022-02-22 17:10:55
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
-;; Description: Automatically indent entire balanced expression block.
-;; Keyword: indent sexp electric
-;; Version: 0.1.0
-;; Package-Version: 20220414.2251
-;; Package-Commit: e3394cc021a8763f62004cf4756bca04c4acbc48
-;; Package-Requires: ((emacs "25.1"))
 ;; URL: https://github.com/jcs-elpa/electric-indent-sexp
+;; Package-Version: 20220616.1839
+;; Package-Commit: b20143cb99ffb76a965d60cb2012dd71914ecab8
+;; Version: 0.1.0
+;; Package-Requires: ((emacs "25.1"))
+;; Keywords: indent sexp electric
 
 ;; This file is NOT part of GNU Emacs.
 
