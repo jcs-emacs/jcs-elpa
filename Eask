@@ -2,6 +2,9 @@
          "0.0.0"
          "ELPA for jcs-emacs, using github-elpa")
 
+(website-url "https://github.com/jcs-emacs/jcs-elpa")
+(keywords "elpa")
+
 (source "gnu")
 (source "celpa")
 (source "melpa")
