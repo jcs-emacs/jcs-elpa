@@ -1,0 +1,11 @@
+(flx-rs .
+	[(20220616 1913)
+	 ((emacs
+	   (25 1)))
+	 "flx in Rust using dynamic module" tar
+	 ((:commit . "913e0fbf49180f4ba228ef53ecb5571951eed087")
+	  (:authors
+	   ("Jen-Chieh" . "jcs090218@gmail.com"))
+	  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	  (:keywords "fuzzy")
+	  (:url . "https://github.com/jcs-elpa/flx-rs"))])

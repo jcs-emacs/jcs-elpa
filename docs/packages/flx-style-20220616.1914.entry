@@ -1,0 +1,13 @@
+(flx-style .
+	   [(20220616 1914)
+	    ((emacs
+	      (24 3))
+	     (flx
+	      (0 5)))
+	    "Completion style for flx" single
+	    ((:commit . "97e8e60e03c2ad17a6e5fa5c4af03688580cf308")
+	     (:authors
+	      ("Jen-Chieh" . "jcs090218@gmail.com"))
+	     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	     (:keywords "flx" "completion" "style")
+	     (:url . "https://github.com/jcs-elpa/flx-style"))])

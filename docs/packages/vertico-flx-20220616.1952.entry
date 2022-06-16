@@ -1,0 +1,23 @@
+(vertico-flx .
+	     [(20220616 1952)
+	      ((emacs
+		(27 1))
+	       (vertico
+		(0 22))
+	       (flx
+		(0 5))
+	       (flx-style
+		(0 1 1))
+	       (ht
+		(2 0))
+	       (f
+		(0 20 0))
+	       (mbs
+		(0 1 0)))
+	      "Flx integration for vertico" single
+	      ((:commit . "16ae72f39ba1243b58664f1606484b75647a0519")
+	       (:authors
+		("Jen-Chieh" . "jcs090218@gmail.com"))
+	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	       (:keywords "vertico" "flx")
+	       (:url . "https://github.com/jcs-elpa/vertico-flx"))])

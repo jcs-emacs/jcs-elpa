@@ -1,0 +1,11 @@
+(sideline .
+	  [(20220616 1946)
+	   ((emacs
+	     (26 1)))
+	   "Show informations on the side" single
+	   ((:commit . "18446c149be0c68b390c9c37fc5a80fb84d0cc2a")
+	    (:authors
+	     ("Jen-Chieh" . "jcs090218@gmail.com"))
+	    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	    (:keywords "sideline")
+	    (:url . "https://github.com/jcs-elpa/sideline"))])

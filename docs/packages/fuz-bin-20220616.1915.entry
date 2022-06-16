@@ -1,0 +1,12 @@
+(fuz-bin .
+	 [(20220616 1915)
+	  ((emacs
+	    (26 1)))
+	  "Fast and precise fuzzy scoring/matching utils" tar
+	  ((:commit . "505fece23f54785cc1bb918df8026db64a5dcc13")
+	   (:authors
+	    ("Zhu Zihao" . "all_but_last@163.com")
+	    ("Jen-Chieh" . "jcs090218@gmail.com"))
+	   (:maintainer "Zhu Zihao" . "all_but_last@163.com")
+	   (:keywords "lisp")
+	   (:url . "https://github.com/jcs-elpa/fuz-bin"))])
