@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/auto-scroll-bar
-;; Package-Version: 20220616.1856
-;; Package-Commit: 75d01ad4c5f432a8b325d3cd3a5bd7c8c0a7735f
+;; Package-Version: 20220618.653
+;; Package-Commit: 8bda044ad7b741abc239b9df177e65ad0f969ea9
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: scrollbar
@@ -172,11 +172,13 @@ and SHOW-H."
 
 (defun auto-scroll-bar--enable ()
   "Enable function `auto-scroll-bar-mode'."
-  (add-hook 'window-size-change-functions #'auto-scroll-bar--size-change)
-  (add-hook 'window-scroll-functions #'auto-scroll-bar--scroll)
-  (toggle-scroll-bar 1)
-  (when auto-scroll-bar-horizontal (toggle-horizontal-scroll-bar 1))
-  (auto-scroll-bar--size-change))  ; execute once
+  (cond ((display-graphic-p)
+         (add-hook 'window-size-change-functions #'auto-scroll-bar--size-change)
+         (add-hook 'window-scroll-functions #'auto-scroll-bar--scroll)
+         (toggle-scroll-bar 1)
+         (when auto-scroll-bar-horizontal (toggle-horizontal-scroll-bar 1))
+         (auto-scroll-bar--size-change))  ; execute once
+        (t (auto-scroll-bar-mode -1))))
 
 (defun auto-scroll-bar--disable ()
   "Disable function `auto-scroll-bar-mode'."
