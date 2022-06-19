@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/sideline
-;; Package-Version: 20220619.1327
-;; Package-Commit: e5aaab3ae21e437446126a571d98a3479bf27002
+;; Package-Version: 20220619.1922
+;; Package-Commit: 169c49e7da8d557f8fd4f386766647d19c89e18d
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: sideline
@@ -319,7 +319,8 @@ ON-LEFT for details."
       ((len-cand (length candidate))
        (title
         (progn
-          (add-face-text-property 0 len-cand face nil candidate)
+          (unless (get-text-property 0 'face candidate)
+            (add-face-text-property 0 len-cand face nil candidate))
           (when action
             (let ((keymap (sideline--create-keymap action candidate)))
               (add-text-properties 0 len-cand `(keymap ,keymap mouse-face highlight) candidate)))
@@ -398,9 +399,9 @@ If argument ON-LEFT is non-nil, it will align to the left instead of right."
       (bound-and-true-p company-pseudo-tooltip-overlay)
       (bound-and-true-p lsp-ui-peek--overlay)))
 
-(defun sideline-render (buffer)
+(defun sideline-render (&optional buffer)
   "Render sideline once in the BUFFER."
-  (sideline--with-buffer buffer
+  (sideline--with-buffer (or buffer (current-buffer))
     (unless (funcall sideline-inhibit-display-function)
       (run-hooks 'sideline-pre-render-hook)
       (let ((mark (list (line-beginning-position))))
@@ -408,6 +409,7 @@ If argument ON-LEFT is non-nil, it will align to the left instead of right."
               (if sideline-backends-left-skip-current-line mark nil))
         (setq sideline--occupied-lines-right
               (if sideline-backends-right-skip-current-line mark nil)))
+      (sideline--delete-ovs)  ; for function call externally
       (sideline--render-backends sideline-backends-left t)
       (sideline--render-backends sideline-backends-right nil)
       (run-hooks 'sideline-post-render-hook))))

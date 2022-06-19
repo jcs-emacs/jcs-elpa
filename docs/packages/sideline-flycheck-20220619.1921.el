@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/sideline-flycheck
-;; Package-Version: 20220616.1947
-;; Package-Commit: 439f00de71bf042215f2542ed5ddee2e0734fd6e
+;; Package-Version: 20220619.1921
+;; Package-Commit: 126ca04c2f13ceb00d9ec2d64fe07d3bd29284d7
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (sideline "0.1.1") (flycheck "0.14"))
 ;; Keywords: sideline flycheck
@@ -75,7 +75,14 @@ Argument COMMAND is required in sideline backend."
              sideline-flycheck--callback
              sideline-flycheck--cleared-p)
     (setq sideline-flycheck--cleared-p nil)
-    (funcall sideline-flycheck--callback (mapcar #'flycheck-error-message errors))))
+    (let (msgs)
+      (dolist (err errors)
+        (let* ((level (flycheck-error-level err))
+               (face (if (eq level 'info) 'success level))
+               (msg (flycheck-error-message err)))
+          (add-face-text-property 0 (length msg) face nil msg)
+          (push msg msgs)))
+      (funcall sideline-flycheck--callback msgs))))
 
 (defun sideline-flycheck--reset ()
   "After sideline is reset."
