@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/sideline
-;; Package-Version: 20220616.1946
-;; Package-Commit: 18446c149be0c68b390c9c37fc5a80fb84d0cc2a
+;; Package-Version: 20220619.1327
+;; Package-Commit: e5aaab3ae21e437446126a571d98a3479bf27002
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: sideline
@@ -221,13 +221,13 @@
   (+ (apply '+ lengths)
      (if (display-graphic-p) 1 2)))
 
-(defun sideline--compute-height nil
+(defun sideline--compute-height ()
   "Return a fixed size for text in sideline."
   (if (null text-scale-mode-remapping)
       '(height 1)
     ;; Readjust height when text-scale-mode is used
     (list 'height
-          (/ 1 (or (plist-get (cdr text-scale-mode-remapping) :height)
+          (/ 1 (or (plist-get (cdar text-scale-mode-remapping) :height)
                    1)))))
 
 (defun sideline--calc-space (str-len on-left)
