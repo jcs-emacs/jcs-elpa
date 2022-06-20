@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/sideline-flycheck
-;; Package-Version: 20220619.1921
-;; Package-Commit: 126ca04c2f13ceb00d9ec2d64fe07d3bd29284d7
+;; Package-Version: 20220620.1511
+;; Package-Commit: e3be63c86e56c153c5ef60b0f4a7917347348c41
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (sideline "0.1.1") (flycheck "0.14"))
 ;; Keywords: sideline flycheck
@@ -100,7 +100,7 @@ Argument COMMAND is required in sideline backend."
     (setq-local flycheck-display-errors-function sideline-flycheck--old-display-function)
     (setq sideline-flycheck--old-display-function nil)
     (remove-hook 'sideline-reset-hook #'sideline-flycheck--reset t)
-    (sideline-render))))  ; rerender sideline once
+    (sideline-render))))  ; update sideline once
 
 (provide 'sideline-flycheck)
 ;;; sideline-flycheck.el ends here

@@ -1,9 +1,9 @@
 (sideline .
-	  [(20220620 1124)
+	  [(20220620 1512)
 	   ((emacs
 	     (26 1)))
 	   "Show informations on the side" single
-	   ((:commit . "cc7512134461aff5cd00784ffb2509ffd0509870")
+	   ((:commit . "bfc5a50b6adde28ac5ed3938d28e0e2992628d9b")
 	    (:authors
 	     ("Jen-Chieh" . "jcs090218@gmail.com"))
 	    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

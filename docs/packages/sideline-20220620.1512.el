@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/sideline
-;; Package-Version: 20220620.1124
-;; Package-Commit: cc7512134461aff5cd00784ffb2509ffd0509870
+;; Package-Version: 20220620.1512
+;; Package-Commit: bfc5a50b6adde28ac5ed3938d28e0e2992628d9b
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: sideline
@@ -128,13 +128,17 @@
 (defvar-local sideline--occupied-lines-right nil
   "Occupied lines on the right.")
 
+(defvar-local sideline--text-scale-mode-amount nil
+  "Record of last variable `text-scale-mode-amount'.")
+
 ;;
 ;; (@* "Entry" )
 ;;
 
 (defun sideline--enable ()
   "Enable `sideline' in current buffer."
-  (setq sideline--last-bound-or-point t)  ; render immediately
+  (setq sideline--last-bound-or-point t  ; render immediately
+        sideline--text-scale-mode-amount text-scale-mode-amount)
   (add-hook 'post-command-hook #'sideline--post-command nil t))
 
 (defun sideline--disable ()
@@ -404,13 +408,13 @@ If argument ON-LEFT is non-nil, it will align to the left instead of right."
   "Render sideline once in the BUFFER."
   (sideline--with-buffer (or buffer (current-buffer))
     (unless (funcall sideline-inhibit-display-function)
-      (run-hooks 'sideline-pre-render-hook)
       (let ((mark (list (line-beginning-position))))
         (setq sideline--occupied-lines-left
               (if sideline-backends-left-skip-current-line mark nil))
         (setq sideline--occupied-lines-right
               (if sideline-backends-right-skip-current-line mark nil)))
       (sideline--delete-ovs)  ; for function call externally
+      (run-hooks 'sideline-pre-render-hook)
       (sideline--render-backends sideline-backends-left t)
       (sideline--render-backends sideline-backends-right nil)
       (run-hooks 'sideline-post-render-hook))))
@@ -418,16 +422,24 @@ If argument ON-LEFT is non-nil, it will align to the left instead of right."
 (defvar-local sideline--delay-timer nil
   "Timer for delay.")
 
+(defun sideline--do-render-p ()
+  "Return non-nil if we should re-render sidelines in the post-command."
+  (let ((bound-or-point (or (bounds-of-thing-at-point 'symbol) (point))))
+    (when (or (not (equal sideline--last-bound-or-point bound-or-point))
+              (not (equal sideline--text-scale-mode-amount text-scale-mode-amount)))
+      ;; update
+      (setq sideline--last-bound-or-point bound-or-point
+            sideline--text-scale-mode-amount text-scale-mode-amount)
+      t)))
+
 (defun sideline--post-command ()
   "Post command."
-  (let ((bound (or (bounds-of-thing-at-point 'symbol) (point))))
-    (unless (equal sideline--last-bound-or-point bound)
-      (setq sideline--last-bound-or-point bound)  ; update
-      (sideline--delete-ovs)
-      (sideline--kill-timer sideline--delay-timer)
-      (setq sideline--delay-timer
-            (run-with-idle-timer sideline-delay nil #'sideline-render (current-buffer)))
-      (run-hooks 'sideline-reset-hook))))
+  (when (sideline--do-render-p)
+    (sideline--delete-ovs)
+    (sideline--kill-timer sideline--delay-timer)
+    (setq sideline--delay-timer
+          (run-with-idle-timer sideline-delay nil #'sideline-render (current-buffer)))
+    (run-hooks 'sideline-reset-hook)))
 
 (defun sideline--reset ()
   "Clean up for next use."
