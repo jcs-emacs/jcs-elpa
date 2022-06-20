@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/sideline
-;; Package-Version: 20220620.1512
-;; Package-Commit: bfc5a50b6adde28ac5ed3938d28e0e2992628d9b
+;; Package-Version: 20220620.1520
+;; Package-Commit: d33559b22f77a79b0c048fac63d886e17138a39e
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: sideline
@@ -54,8 +54,14 @@
   :type 'list
   :group 'sideline)
 
-(defcustom sideline-order 'up
-  "Display order."
+(defcustom sideline-order-left 'down
+  "Display order on the left sidelines."
+  :type '(choice (const :tag "Search up" up)
+                 (const :tag "Search down" down))
+  :group 'line-reminder)
+
+(defcustom sideline-order-right 'up
+  "Display order on the right sidelines."
   :type '(choice (const :tag "Search up" up)
                  (const :tag "Search down" down))
   :group 'line-reminder)
@@ -340,7 +346,8 @@ FACE, and ON-LEFT for details."
                            `cursor t))
              (propertize title 'display (sideline--compute-height))))
        (len-str (length str))
-       (pos-ov (sideline--find-line len-title on-left sideline-order)))
+       (pos-ov (sideline--find-line len-title on-left (if on-left sideline-order-left
+                                                        sideline-order-right))))
     ;; Create overlay
     (let* ((pos-start (car pos-ov)) (pos-end (cdr pos-ov))
            (empty-ln (= pos-start pos-end))
