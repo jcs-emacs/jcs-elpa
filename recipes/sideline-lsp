@@ -1,0 +1,1 @@
+(sideline-lsp :repo "jcs-elpa/sideline-lsp" :fetcher github)
