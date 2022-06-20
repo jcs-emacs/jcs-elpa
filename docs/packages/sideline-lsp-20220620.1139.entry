@@ -1,5 +1,5 @@
 (sideline-lsp .
-	      [(20220620 1057)
+	      [(20220620 1139)
 	       ((emacs
 		 (27 1))
 		(sideline
@@ -9,9 +9,11 @@
 		(dash
 		 (2 18 0))
 		(ht
-		 (2 4)))
+		 (2 4))
+		(s
+		 (1 12 0)))
 	       "Show lsp information with sideline" single
-	       ((:commit . "63d5650c6830ac78bc5e20d701d710c0bf33fd0d")
+	       ((:commit . "df27cc009e2a9cd216c0e925a12caba27c3799bf")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

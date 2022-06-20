@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/sideline
-;; Package-Version: 20220620.342
-;; Package-Commit: 7f20e37a33c447b9ff4137162686799081c87e85
+;; Package-Version: 20220620.1124
+;; Package-Commit: cc7512134461aff5cd00784ffb2509ffd0509870
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: sideline
@@ -134,6 +134,7 @@
 
 (defun sideline--enable ()
   "Enable `sideline' in current buffer."
+  (setq sideline--last-bound-or-point t)  ; render immediately
   (add-hook 'post-command-hook #'sideline--post-command nil t))
 
 (defun sideline--disable ()
@@ -299,7 +300,7 @@ Argument CANDIDATE is the data for users."
     (define-key map [down-mouse-1]
                 (lambda ()
                   (interactive)
-                  (funcall action sideline--last-bound-or-point candidate)))
+                  (funcall action candidate)))
     map))
 
 ;;

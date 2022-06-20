@@ -5,10 +5,10 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/sideline-lsp
-;; Package-Version: 20220620.1057
-;; Package-Commit: 63d5650c6830ac78bc5e20d701d710c0bf33fd0d
+;; Package-Version: 20220620.1139
+;; Package-Commit: df27cc009e2a9cd216c0e925a12caba27c3799bf
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "27.1") (sideline "0.1.0") (lsp-mode "6.0") (dash "2.18.0") (ht "2.4"))
+;; Package-Requires: ((emacs "27.1") (sideline "0.1.0") (lsp-mode "6.0") (dash "2.18.0") (ht "2.4") (s "1.12.0"))
 ;; Keywords: sideline lsp
 
 ;; This file is not part of GNU Emacs.
@@ -38,6 +38,7 @@
 (require 'dash)
 (require 'ht)
 (require 'lsp-mode)
+(require 's)
 (require 'sideline)
 
 (defgroup sideline-lsp nil
@@ -55,6 +56,11 @@ otherwise the actions will be updated when user changes current point."
                  (const point))
   :group 'sideline-lsp)
 
+(defcustom sideline-lsp-ignore-duplicate nil
+  "Ignore duplicates when there is a same symbol with the same contents."
+  :type 'boolean
+  :group 'sideline-lsp)
+
 (defcustom sideline-lsp-actions-kind-regex "quickfix.*\\|refactor.*"
   "Regex for the code actions kinds to show in the sideline."
   :type 'string
@@ -66,12 +72,7 @@ otherwise the actions will be updated when user changes current point."
   "Face used to highlight code action text."
   :group 'sideline-lsp)
 
-(defcustom sideline-lsp-actions-symbol "💡"
-  "Code action icon."
-  :type 'string
-  :group 'sideline-lsp)
-
-(defcustom sideline-lsp-code-actions-prefix ""
+(defcustom sideline-lsp-code-actions-prefix "💡 "
   "Prefix to insert before the code action title.
 This can be used to insert, for example, an unicode character: 💡"
   :type 'string
@@ -87,11 +88,12 @@ This can be used to insert, for example, an unicode character: 💡"
 Argument COMMAND is required in sideline backend."
   (cl-case command
     (`candidates
-     (when (or (lsp--capability "codeActionProvider")
-               (lsp--registered-capability "textDocument/codeAction"))
+     (when (and (bound-and-true-p lsp-managed-mode)  ; check connection
+                (or (lsp--capability "codeActionProvider")
+                    (lsp--registered-capability "textDocument/codeAction")))
        (cons :async #'sideline-lsp--run)))
     (`action
-     (lambda (bound candidate &rest _)
+     (lambda (candidate &rest _)
        (funcall (ht-get sideline-lsp--ht-code-actions candidate))))))
 
 (defun sideline-lsp--line-diags (line)
@@ -112,7 +114,6 @@ Execute CALLBACK to display candidates in sideline."
          (line-widen (or (and (buffer-narrowed-p) (save-restriction (widen) (line-number-at-pos)))
                          (line-number-at-pos)))
          (doc-id (lsp--text-document-identifier)))
-    (setq lsp-ui-sideline--last-line-number line-widen)
     (lsp-request-async
      "textDocument/codeAction"
      (-let (((start . end) (if (eq sideline-lsp-update-mode 'line)
@@ -124,12 +125,12 @@ Execute CALLBACK to display candidates in sideline."
              :context (list :diagnostics (sideline-lsp--line-diags (1- line-widen)))))
      (lambda (actions)
        (when (eq (current-buffer) buffer)
-         (sideline-lsp--code-actions callback actions bol eol)))
+         (sideline-lsp--code-actions callback actions)))
      :mode 'tick
      :cancel-token :sideline-lsp-code-actions)))
 
-(defun sideline-lsp--code-actions (callback actions bol eol)
-  "Show code ACTIONS with in BOL to EOL.
+(defun sideline-lsp--code-actions (callback actions)
+  "Show code ACTIONS.
 
 Execute CALLBACK to display candidates in sideline."
   (when sideline-lsp-actions-kind-regex
@@ -143,14 +144,15 @@ Execute CALLBACK to display candidates in sideline."
         ((title (->> (lsp:code-action-title action)
                      (replace-regexp-in-string "[\n\t ]+" " ")
                      (replace-regexp-in-string " " " ")
-                     (concat (unless sideline-lsp-actions-symbol
-                               sideline-lsp-code-actions-prefix))))
+                     (concat sideline-lsp-code-actions-prefix)))
          (code-action (lambda () (save-excursion (lsp-execute-code-action action))))
          (len (length title))
          (title (progn
                   (add-face-text-property 0 len 'sideline-lsp-code-action nil title)
-                  (concat sideline-lsp-actions-symbol " " title))))
-      (ht-set sideline-lsp--ht-code-actions title code-action)))
+                  title)))
+      (when (or (not sideline-lsp-ignore-duplicate)
+                (not (member title (ht-keys sideline-lsp--ht-code-actions))))
+        (ht-set sideline-lsp--ht-code-actions title code-action))))
   (funcall callback (ht-keys sideline-lsp--ht-code-actions)))
 
 (provide 'sideline-lsp)
