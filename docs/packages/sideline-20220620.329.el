@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/sideline
-;; Package-Version: 20220620.318
-;; Package-Commit: dba7611a2a3a73c76c6fd09efb6ddc425eb9cae7
+;; Package-Version: 20220620.329
+;; Package-Commit: 11d949cd6a968286e10d7c50272f1faa926888b0
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: sideline
@@ -313,8 +313,8 @@ Argument CANDIDATE is the data for users."
 (defun sideline--create-ov (candidate action face on-left)
   "Create information (CANDIDATE) overlay.
 
-See function `sideline--render' document string for arguments ACTION, FACE, and
-ON-LEFT for details."
+See function `sideline--render-candidates' document string for arguments ACTION,
+FACE, and ON-LEFT for details."
   (when-let*
       ((len-cand (length candidate))
        (title
@@ -355,7 +355,7 @@ ON-LEFT for details."
 ;; (@* "Async" )
 ;;
 
-(defun sideline--render (candidates action face on-left)
+(defun sideline--render-candidates (candidates action face on-left)
   "Render a list of backends (CANDIDATES).
 
 Argument ACTION is the code action callback.
@@ -364,8 +364,9 @@ Argument FACE is optional face to render text; default face is
 `sideline-default'.
 
 Argument ON-LEFT is a flag indicates rendering alignment."
-  (dolist (candidate candidates)
-    (sideline--create-ov candidate action face on-left)))
+  (let ((inhibit-field-text-motion t))
+    (dolist (candidate candidates)
+      (sideline--create-ov candidate action face on-left))))
 
 ;;
 ;; (@* "Core" )
@@ -389,8 +390,8 @@ If argument ON-LEFT is non-nil, it will align to the left instead of right."
                    (lambda (cands &rest _)
                      (sideline--with-buffer buffer
                        (when sideline-mode
-                         (sideline--render cands action face on-left)))))
-        (sideline--render candidates action face on-left)))))
+                         (sideline--render-candidates cands action face on-left)))))
+        (sideline--render-candidates candidates action face on-left)))))
 
 (defun sideline-stop-p ()
   "Return non-nil if the sideline should not be display."
@@ -418,8 +419,7 @@ If argument ON-LEFT is non-nil, it will align to the left instead of right."
 
 (defun sideline--post-command ()
   "Post command."
-  (let ((inhibit-field-text-motion t)
-        (bound (or (bounds-of-thing-at-point 'symbol) (point))))
+  (let ((bound (or (bounds-of-thing-at-point 'symbol) (point))))
     (unless (equal sideline--last-bound-or-point bound)
       (setq sideline--last-bound-or-point bound)  ; update
       (sideline--delete-ovs)
