@@ -3,7 +3,7 @@
 	   ((emacs
 	     (26 1)))
 	   "Show informations on the side" single
-	   ((:commit . "26dcc8b9c414c6cf43414d667f6f73f0fa545b73")
+	   ((:commit . "7f20e37a33c447b9ff4137162686799081c87e85")
 	    (:authors
 	     ("Jen-Chieh" . "jcs090218@gmail.com"))
 	    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/sideline
 ;; Package-Version: 20220620.342
-;; Package-Commit: 26dcc8b9c414c6cf43414d667f6f73f0fa545b73
+;; Package-Commit: 7f20e37a33c447b9ff4137162686799081c87e85
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: sideline

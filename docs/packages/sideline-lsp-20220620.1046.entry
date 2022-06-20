@@ -1,0 +1,17 @@
+(sideline-lsp .
+	      [(20220620 1046)
+	       ((emacs
+		 (27 1))
+		(lsp-mode
+		 (6 0))
+		(dash
+		 (2 18 0))
+		(ht
+		 (2 4)))
+	       "Show lsp information with sideline" single
+	       ((:commit . "eae363ee030608d2551e93ef8a51045979a5b276")
+		(:authors
+		 ("Jen-Chieh" . "jcs090218@gmail.com"))
+		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		(:keywords "sideline" "lsp")
+		(:url . "https://github.com/jcs-elpa/sideline-lsp"))])
