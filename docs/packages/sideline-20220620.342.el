@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/sideline
-;; Package-Version: 20220620.329
-;; Package-Commit: 11d949cd6a968286e10d7c50272f1faa926888b0
+;; Package-Version: 20220620.342
+;; Package-Commit: 26dcc8b9c414c6cf43414d667f6f73f0fa545b73
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: sideline
@@ -218,7 +218,7 @@
 
 (defun sideline--align (&rest lengths)
   "Align sideline string by LENGTHS from the right of the window."
-  (+ (apply '+ lengths)
+  (+ (apply #'+ lengths)
      (if (display-graphic-p) 1 2)))
 
 (defun sideline--compute-height ()
