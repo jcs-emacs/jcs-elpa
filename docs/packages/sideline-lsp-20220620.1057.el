@@ -5,10 +5,10 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/sideline-lsp
-;; Package-Version: 20220620.1046
-;; Package-Commit: eae363ee030608d2551e93ef8a51045979a5b276
+;; Package-Version: 20220620.1057
+;; Package-Commit: 63d5650c6830ac78bc5e20d701d710c0bf33fd0d
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "27.1") (lsp-mode "6.0") (dash "2.18.0") (ht "2.4"))
+;; Package-Requires: ((emacs "27.1") (sideline "0.1.0") (lsp-mode "6.0") (dash "2.18.0") (ht "2.4"))
 ;; Keywords: sideline lsp
 
 ;; This file is not part of GNU Emacs.
@@ -38,6 +38,7 @@
 (require 'dash)
 (require 'ht)
 (require 'lsp-mode)
+(require 'sideline)
 
 (defgroup sideline-lsp nil
   "Show lsp information with sideline."
@@ -77,7 +78,7 @@ This can be used to insert, for example, an unicode character: 💡"
   :group 'sideline-lsp)
 
 (defvar-local sideline-lsp--ht-code-actions nil
-  "Holds code actions in (string. action) to display in sideline.")
+  "Holds code actions in (string . action) to display in sideline.")
 
 ;;;###autoload
 (defun sideline-lsp (command)
@@ -88,13 +89,13 @@ Argument COMMAND is required in sideline backend."
     (`candidates
      (when (or (lsp--capability "codeActionProvider")
                (lsp--registered-capability "textDocument/codeAction"))
-       (cons :async #'sideline--run)))
+       (cons :async #'sideline-lsp--run)))
     (`action
      (lambda (bound candidate &rest _)
        (funcall (ht-get sideline-lsp--ht-code-actions candidate))))))
 
 (defun sideline-lsp--line-diags (line)
-  ""
+  "Return LINE's diagnostics."
   (->> (--filter
         (let ((range (lsp-get it :range)))
           (or (-some-> range (lsp-get :start) (lsp-get :line) (= line))
@@ -102,8 +103,10 @@ Argument COMMAND is required in sideline backend."
         (lsp--get-buffer-diagnostics))
        (apply 'vector)))
 
-(defun sideline--run (callback &rest _)
-  ""
+(defun sideline-lsp--run (callback &rest _)
+  "Send async request.
+
+Execute CALLBACK to display candidates in sideline."
   (let* ((buffer (current-buffer))
          (bol (line-beginning-position)) (eol (line-end-position))
          (line-widen (or (and (buffer-narrowed-p) (save-restriction (widen) (line-number-at-pos)))
@@ -126,7 +129,9 @@ Argument COMMAND is required in sideline backend."
      :cancel-token :sideline-lsp-code-actions)))
 
 (defun sideline-lsp--code-actions (callback actions bol eol)
-  "Show code ACTIONS."
+  "Show code ACTIONS with in BOL to EOL.
+
+Execute CALLBACK to display candidates in sideline."
   (when sideline-lsp-actions-kind-regex
     (setq actions (seq-filter (-lambda ((&CodeAction :kind?))
                                 (or (not kind?)
