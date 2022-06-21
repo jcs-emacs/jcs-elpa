@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/sideline
-;; Package-Version: 20220621.1249
-;; Package-Commit: 1d2d439835cd6af319f14f512d66b79f8cc3e05b
+;; Package-Version: 20220621.1342
+;; Package-Commit: 3823c8bfb3ff08ba87376170bf6a4bf9c2fd6dc7
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: sideline
@@ -122,9 +122,6 @@
   :type 'function
   :group 'sideline)
 
-(defconst sideline-char-width (string-pixel-width " ")
-  "Holds the system character width.")
-
 (defvar-local sideline--overlays nil
   "Displayed overlays.")
 
@@ -183,9 +180,10 @@
 
 (defun sideline--str-len (str)
   "Calculate STR in pixel width."
-  (let ((len (string-pixel-width str)))
-    (+ (/ len sideline-char-width)
-       (if (zerop (% len sideline-char-width)) 0 1))))  ; add one if exceeed
+  (let ((width (string-pixel-width " "))
+        (len (string-pixel-width str)))
+    (+ (/ len width)
+       (if (zerop (% len width)) 0 1))))  ; add one if exceeed
 
 (defun sideline--kill-timer (timer)
   "Kill TIMER."
