@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/sideline
-;; Package-Version: 20220621.1342
-;; Package-Commit: 3823c8bfb3ff08ba87376170bf6a4bf9c2fd6dc7
+;; Package-Version: 20220621.1856
+;; Package-Commit: 546eaee7dbc5f843a852d0ac804d45ffc1b26841
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: sideline
@@ -58,13 +58,13 @@
   "Display order on the left sidelines."
   :type '(choice (const :tag "Search up" up)
                  (const :tag "Search down" down))
-  :group 'line-reminder)
+  :group 'sideline)
 
 (defcustom sideline-order-right 'up
   "Display order on the right sidelines."
   :type '(choice (const :tag "Search up" up)
                  (const :tag "Search down" down))
-  :group 'line-reminder)
+  :group 'sideline)
 
 (defface sideline-default
   '((((background light)) :foreground "DarkOrange")
@@ -180,7 +180,7 @@
 
 (defun sideline--str-len (str)
   "Calculate STR in pixel width."
-  (let ((width (string-pixel-width " "))
+  (let ((width (window-font-width))
         (len (string-pixel-width str)))
     (+ (/ len width)
        (if (zerop (% len width)) 0 1))))  ; add one if exceeed
@@ -226,7 +226,7 @@
 
 (defun sideline--window-width ()
   "Correct window width for sideline."
-  (- (min (window-text-width) (window-body-width))
+  (- (window-max-chars-per-line)
      (sideline--margin-width)
      (or (and (>= emacs-major-version 27)
               ;; We still need this number when calculating available space
@@ -236,17 +236,8 @@
 
 (defun sideline--align (&rest lengths)
   "Align sideline string by LENGTHS from the right of the window."
-  (+ (apply #'+ lengths)
-     (if (display-graphic-p) 1 2)))
-
-(defun sideline--compute-height ()
-  "Return a fixed size for text in sideline."
-  (if (null text-scale-mode-remapping)
-      '(height 1)
-    ;; Readjust height when text-scale-mode is used
-    (list 'height
-          (/ 1 (or (plist-get (cdar text-scale-mode-remapping) :height)
-                   1)))))
+  (list (* (window-font-width)
+           (+ (apply #'+ lengths) (if (display-graphic-p) 1 2)))))
 
 (defun sideline--calc-space (str-len on-left)
   "Calculate space in current line.
@@ -345,17 +336,25 @@ FACE, ON-LEFT, and ORDER for details."
           (if on-left (format sideline-format-left candidate)
             (format sideline-format-right candidate))))
        (len-title (sideline--str-len title))
+       (pos-ov (sideline--find-line len-title on-left order))
+       (pos-start (car pos-ov)) (pos-end (cdr pos-ov))
+       (offset (if (or on-left (zerop (window-hscroll))) 0
+                 (save-excursion
+                   (goto-char pos-start)
+                   (goto-char (line-end-position))
+                   (cond ((zerop (current-column)) 0)
+                         ((<= (current-column) (window-hscroll))
+                          (- 0 (current-column)))
+                         (t (- 0 (window-hscroll)))))))
        (margin (sideline--margin-width))
        (str (concat
              (unless on-left
-               (propertize " " 'display `((space :align-to (- right ,(sideline--align (1- len-title) margin)))
+               (propertize " " 'display `((space :align-to (- right ,(sideline--align (1- len-title) margin offset)))
                                           (space :width 0))
                            `cursor t))
-             (propertize title 'display (sideline--compute-height))))
-       (len-str (length str))
-       (pos-ov (sideline--find-line len-title on-left order)))
+             title)))
     ;; Create overlay
-    (let* ((pos-start (car pos-ov)) (pos-end (cdr pos-ov))
+    (let* ((len-str (length str))
            (empty-ln (= pos-start pos-end))
            (ov (make-overlay pos-start (if empty-ln pos-start (+ pos-start len-str))
                              nil t t)))
