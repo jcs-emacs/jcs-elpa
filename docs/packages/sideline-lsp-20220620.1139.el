@@ -6,7 +6,7 @@
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/sideline-lsp
 ;; Package-Version: 20220620.1139
-;; Package-Commit: df27cc009e2a9cd216c0e925a12caba27c3799bf
+;; Package-Commit: 5b4b24aa5e5160e1abb4357763d6e27bf974362c
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (sideline "0.1.0") (lsp-mode "6.0") (dash "2.18.0") (ht "2.4") (s "1.12.0"))
 ;; Keywords: sideline lsp
