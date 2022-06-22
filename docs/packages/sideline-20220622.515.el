@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline
 ;; Package-Version: 20220622.515
-;; Package-Commit: 5b600012bdba1ed5843ae528f73eecca5c0475e3
+;; Package-Commit: 0620825fbce98b2f0ac551dd93394eb14fc70eda
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: sideline
