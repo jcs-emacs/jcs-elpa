@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline-blame
-;; Package-Version: 20220622.1703
-;; Package-Commit: 1246e48511187fb7cc02c60ebdc37174df58cefd
+;; Package-Version: 20220622.1727
+;; Package-Commit: c45cd5d8cb4f5e3f831326ddf46d8f712b7e2ea3
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (sideline "0.1.0") (vc-msg "1.1.1"))
 ;; Keywords: sideline blame
@@ -67,13 +67,21 @@
   :type 'string
   :group 'sideline-blame)
 
+(defface sideline-blame
+  '((t :foreground "#7a88cf"
+       :background nil
+       :italic t))
+  "Face for blame info."
+  :group 'sideline-blame)
+
 ;;;###autoload
 (defun sideline-blame (command)
   "Backend for sideline.
 
 Argument COMMAND is required in sideline backend."
   (cl-case command
-    (`candidates (cons :async #'sideline-blame--get-message))))
+    (`candidates (cons :async #'sideline-blame--get-message))
+    (`face 'sideline-blame)))
 
 (defun sideline-blame--get-message (callback &rest _)
   "Return the message.
