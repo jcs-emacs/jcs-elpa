@@ -5,10 +5,10 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline-lsp
-;; Package-Version: 20220622.515
-;; Package-Commit: 7e1338edbd20bdf15a112d2f290859d90350610a
+;; Package-Version: 20220622.1005
+;; Package-Commit: 446f72a717d13018ebbfc741f0a6c812bd0438bf
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "27.1") (sideline "0.1.0") (lsp-mode "6.0") (dash "2.18.0") (ht "2.4") (s "1.12.0"))
+;; Package-Requires: ((emacs "29") (sideline "0.1.0") (lsp-mode "6.0") (dash "2.18.0") (ht "2.4") (s "1.12.0"))
 ;; Keywords: sideline lsp
 
 ;; This file is not part of GNU Emacs.

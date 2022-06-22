@@ -5,10 +5,10 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline-flycheck
-;; Package-Version: 20220622.516
-;; Package-Commit: 094a61308a6a59a1f36ecd682ca49c5e331e226f
+;; Package-Version: 20220622.1004
+;; Package-Commit: ad97a64c80b20324210ba0f83625e0891d374435
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "26.1") (sideline "0.1.1") (flycheck "0.14"))
+;; Package-Requires: ((emacs "29") (sideline "0.1.1") (flycheck "0.14"))
 ;; Keywords: sideline flycheck
 
 ;; This file is NOT part of GNU Emacs.
