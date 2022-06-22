@@ -1,1 +1,1 @@
-(sideline-lsp :repo "jcs-elpa/sideline-lsp" :fetcher github)
+(sideline-lsp :repo "emacs-sideline/sideline-lsp" :fetcher github)
