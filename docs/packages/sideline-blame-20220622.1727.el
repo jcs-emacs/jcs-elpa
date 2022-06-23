@@ -6,7 +6,7 @@
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline-blame
 ;; Package-Version: 20220622.1727
-;; Package-Commit: c45cd5d8cb4f5e3f831326ddf46d8f712b7e2ea3
+;; Package-Commit: 00f0abffc4ba97286471db8aa28ff5dab650e34d
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (sideline "0.1.0") (vc-msg "1.1.1"))
 ;; Keywords: sideline blame

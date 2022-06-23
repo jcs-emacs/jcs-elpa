@@ -7,7 +7,7 @@
 		  (vc-msg
 		   (1 1 1)))
 		 "Show blame messages with sideline" single
-		 ((:commit . "c45cd5d8cb4f5e3f831326ddf46d8f712b7e2ea3")
+		 ((:commit . "00f0abffc4ba97286471db8aa28ff5dab650e34d")
 		  (:authors
 		   ("Jen-Chieh" . "jcs090218@gmail.com"))
 		  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
