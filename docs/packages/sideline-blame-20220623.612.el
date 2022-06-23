@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline-blame
-;; Package-Version: 20220623.549
-;; Package-Commit: fb5280de5e66e18e3dce43bc513e5a13c4bfb16d
+;; Package-Version: 20220623.612
+;; Package-Commit: a8538aaee57d756c6754558108afa4300c29ce31
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (sideline "0.1.0") (vc-msg "1.1.1"))
 ;; Keywords: sideline blame
@@ -33,6 +33,7 @@
 
 ;;; Code:
 
+(require 'cl-lib)
 (require 'subr-x)
 
 (require 'sideline)

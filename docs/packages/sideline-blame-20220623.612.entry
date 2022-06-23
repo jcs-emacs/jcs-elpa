@@ -1,5 +1,5 @@
 (sideline-blame .
-		[(20220623 549)
+		[(20220623 612)
 		 ((emacs
 		   (27 1))
 		  (sideline
@@ -7,7 +7,7 @@
 		  (vc-msg
 		   (1 1 1)))
 		 "Show blame messages with sideline" single
-		 ((:commit . "fb5280de5e66e18e3dce43bc513e5a13c4bfb16d")
+		 ((:commit . "a8538aaee57d756c6754558108afa4300c29ce31")
 		  (:authors
 		   ("Jen-Chieh" . "jcs090218@gmail.com"))
 		  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
