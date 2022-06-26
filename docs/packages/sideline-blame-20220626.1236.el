@@ -5,11 +5,11 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline-blame
-;; Package-Version: 20220623.612
-;; Package-Commit: a8538aaee57d756c6754558108afa4300c29ce31
+;; Package-Version: 20220626.1236
+;; Package-Commit: 94b35e18a95c00f1122adfc30b24ad3ed32329be
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (sideline "0.1.0") (vc-msg "1.1.1"))
-;; Keywords: sideline blame
+;; Keywords: convenience blame
 
 ;; This file is not part of GNU Emacs.
 

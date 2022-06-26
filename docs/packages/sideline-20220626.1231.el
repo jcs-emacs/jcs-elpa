@@ -5,11 +5,11 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline
-;; Package-Version: 20220622.1506
-;; Package-Commit: a27738d1f35691c342ff6d8bb465fa1b0ed4767d
+;; Package-Version: 20220626.1231
+;; Package-Commit: 137540a1279848cfd878c823b497dc8337bfa1c9
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1"))
-;; Keywords: sideline
+;; Keywords: convenience
 
 ;; This file is NOT part of GNU Emacs.
 
@@ -342,7 +342,7 @@ FACE, ON-LEFT, and ORDER for details."
        (offset (if (or on-left (zerop (window-hscroll))) 0
                  (save-excursion
                    (goto-char pos-start)
-                   (goto-char (line-end-position))
+                   (end-of-line)
                    (cond ((zerop (current-column)) 0)
                          ((<= (current-column) (window-hscroll))
                           (- 0 (current-column)))

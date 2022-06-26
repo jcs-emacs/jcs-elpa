@@ -5,11 +5,11 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline-flymake
-;; Package-Version: 20220623.609
-;; Package-Commit: 257484edc523b717d95b0d4979c188157df144cf
+;; Package-Version: 20220626.1236
+;; Package-Commit: 029415833e08f089c3561b4043d30843d2e8aa02
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (sideline "0.1.0"))
-;; Keywords: sideline flymake
+;; Keywords: convenience flymake
 
 ;; This file is not part of GNU Emacs.
 

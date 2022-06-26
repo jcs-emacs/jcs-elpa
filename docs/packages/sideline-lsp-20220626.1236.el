@@ -5,11 +5,11 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline-lsp
-;; Package-Version: 20220623.612
-;; Package-Commit: 05dc042bba7690472d524335ac6d977a36e86542
+;; Package-Version: 20220626.1236
+;; Package-Commit: 59e85974add644c960e607b79915fe1997f11486
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (sideline "0.1.0") (lsp-mode "6.0") (dash "2.18.0") (ht "2.4") (s "1.12.0"))
-;; Keywords: sideline lsp
+;; Keywords: convenience lsp
 
 ;; This file is not part of GNU Emacs.
 
