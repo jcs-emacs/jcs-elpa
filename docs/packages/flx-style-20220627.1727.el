@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/flx-style
-;; Package-Version: 20220616.1914
-;; Package-Commit: 97e8e60e03c2ad17a6e5fa5c4af03688580cf308
+;; Package-Version: 20220627.1727
+;; Package-Commit: 08608b177bcbfdce932eb1a14a664523df9f63a5
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "24.3") (flx "0.5"))
 ;; Keywords: flx completion style
@@ -134,8 +134,8 @@
               (setq x (copy-sequence x))
               (let* ((score
                       (if (fboundp 'flx-rs-score)
-                          (flx-rs-score x string)
-                        (flx-score x string flx-strings-cache))))
+                          (flx-rs-score x infix)
+                        (flx-score x infix flx-strings-cache))))
                 (put-text-property 0 1 'completion-score
                                    (car score)
                                    x)
