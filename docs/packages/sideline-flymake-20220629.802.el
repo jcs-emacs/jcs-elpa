@@ -5,9 +5,9 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline-flymake
-;; Package-Version: 20220626.1236
-;; Package-Commit: 029415833e08f089c3561b4043d30843d2e8aa02
-;; Version: 0.1.0
+;; Package-Version: 20220629.802
+;; Package-Commit: 3320d2416a255b0b8d7abb314883e103d66aeb07
+;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1") (sideline "0.1.0"))
 ;; Keywords: convenience flymake
 
@@ -28,7 +28,15 @@
 
 ;;; Commentary:
 ;;
-;; Show flymake errors with sideline.
+;; This package allows display flymake errors with sideline.
+;;
+;; 1) Add sideline-flymake to sideline backends list,
+;;
+;;   (setq sideline-backends-right '(sideline-flymake))
+;;
+;; 2) Then enable sideline-mode in the target buffer,
+;;
+;;   M-x sideline-mode
 ;;
 
 ;;; Code:

@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline-flycheck
-;; Package-Version: 20220628.615
-;; Package-Commit: bf463b3d215759b30646797a430c758987189e62
+;; Package-Version: 20220629.752
+;; Package-Commit: a1fd5368acbc8cd15e00d23a0bf6f19d24f5c061
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (sideline "0.1.1") (flycheck "0.14") (ht "2.4"))
 ;; Keywords: convenience flycheck
@@ -28,7 +28,15 @@
 
 ;;; Commentary:
 ;;
-;; Show flycheck errors with sideline.
+;; This package allows display flycheck errors with sideline.
+;;
+;; 1) Add sideline-flycheck to sideline backends list,
+;;
+;;   (setq sideline-backends-right '(sideline-flycheck))
+;;
+;; 2) Then enable sideline-mode in the target buffer,
+;;
+;;   M-x sideline-mode
 ;;
 
 ;;; Code:

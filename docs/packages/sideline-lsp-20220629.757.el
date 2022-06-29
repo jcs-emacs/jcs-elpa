@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline-lsp
-;; Package-Version: 20220626.1236
-;; Package-Commit: 59e85974add644c960e607b79915fe1997f11486
+;; Package-Version: 20220629.757
+;; Package-Commit: 8833cc33383ef3cc1b003be239cd5092b565ac34
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (sideline "0.1.0") (lsp-mode "6.0") (dash "2.18.0") (ht "2.4") (s "1.12.0"))
 ;; Keywords: convenience lsp
@@ -28,7 +28,17 @@
 
 ;;; Commentary:
 ;;
-;; Show lsp information with sideline.
+;; Support for lsp code actions,
+;;
+;; 1) Add sideline-lsp to sideline backends list,
+;;
+;;   (setq sideline-backends-right '(sideline-lsp))
+;;
+;; 2) Then enable sideline-mode in the target buffer,
+;;
+;;   M-x sideline-mode
+;;
+;; Make sure your have lsp-mode enabled, and connected to the language server.
 ;;
 
 ;;; Code:

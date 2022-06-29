@@ -1,11 +1,11 @@
 (sideline-flymake .
-		  [(20220626 1236)
+		  [(20220629 802)
 		   ((emacs
 		     (27 1))
 		    (sideline
 		     (0 1 0)))
 		   "Show flymake errors with sideline" single
-		   ((:commit . "029415833e08f089c3561b4043d30843d2e8aa02")
+		   ((:commit . "3320d2416a255b0b8d7abb314883e103d66aeb07")
 		    (:authors
 		     ("Jen-Chieh" . "jcs090218@gmail.com"))
 		    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

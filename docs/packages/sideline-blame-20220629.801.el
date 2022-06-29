@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline-blame
-;; Package-Version: 20220626.1236
-;; Package-Commit: 94b35e18a95c00f1122adfc30b24ad3ed32329be
+;; Package-Version: 20220629.801
+;; Package-Commit: 6e9fb45caea9031554e6e2110e39e219a407779e
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (sideline "0.1.0") (vc-msg "1.1.1"))
 ;; Keywords: convenience blame
@@ -28,7 +28,23 @@
 
 ;;; Commentary:
 ;;
-;; Show blame messages with sideline.
+;; This package displays blame information,
+;;
+;; 1) Add sideline-blame to sideline backends list,
+;;
+;;   (setq sideline-backends-right '(sideline-blame))
+;;
+;; 2) Then enable sideline-mode in the target buffer,
+;;
+;;   M-x sideline-mode
+;;
+;; This package uses vc-msg, make sure your project uses one of the following
+;; version control system:
+;;
+;;   * Git
+;;   * Mercurial
+;;   * Subversion
+;;   * Perforce
 ;;
 
 ;;; Code:

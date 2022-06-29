@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline
-;; Package-Version: 20220629.702
-;; Package-Commit: d456b71691c76bcbd7e5b3208d4bbaeebcaef547
+;; Package-Version: 20220629.744
+;; Package-Commit: 08ba0e27a41ad7b214106c9f80480150750b60cb
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: convenience
@@ -28,7 +28,18 @@
 
 ;;; Commentary:
 ;;
-;; Show information on the side.
+;; This library provides the frontend UI to display information either on the
+;; left/right side of the buffer window.
+;;
+;; 1) You would need to first set up the backends,
+;;
+;;   (setq sideline-backends-left '(sideline-flycheck))
+;;
+;; 2) Then enable the sideline in the target buffer,
+;;
+;;   M-x sideline-mode
+;;
+;; For backends choice, see https://github.com/emacs-sideline/sideline#-example-projects
 ;;
 
 ;;; Code:
