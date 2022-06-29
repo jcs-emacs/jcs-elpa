@@ -1,2 +1,2 @@
 
-Show informations on the side.
+Show information on the side.

@@ -1,12 +1,12 @@
-;;; sideline.el --- Show informations on the side  -*- lexical-binding: t; -*-
+;;; sideline.el --- Show information on the side  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2022  Shen, Jen-Chieh
 ;; Created date 2022-06-13 22:08:26
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline
-;; Package-Version: 20220626.1231
-;; Package-Commit: 137540a1279848cfd878c823b497dc8337bfa1c9
+;; Package-Version: 20220629.702
+;; Package-Commit: d456b71691c76bcbd7e5b3208d4bbaeebcaef547
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: convenience
@@ -28,7 +28,7 @@
 
 ;;; Commentary:
 ;;
-;; Show informations on the side.
+;; Show information on the side.
 ;;
 
 ;;; Code:
@@ -40,7 +40,7 @@
 (require 'subr-x)
 
 (defgroup sideline nil
-  "Show informations on the side."
+  "Show information on the side."
   :prefix "sideline-"
   :group 'tool
   :link '(url-link :tag "Repository" "https://github.com/emacs-sideline/sideline"))
