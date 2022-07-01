@@ -1,0 +1,1 @@
+(wat-mode :repo "devonsparks/wat-mode" :fetcher github)
