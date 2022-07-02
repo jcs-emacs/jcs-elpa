@@ -4,8 +4,8 @@
 ;; Maintainer: takeokunn
 ;;             Jen-Chieh Shen <jcs090218@gmail.com>
 ;; Version: 0.1
-;; Package-Version: 20220702.1856
-;; Package-Commit: 0e0250de9d66af6fbadfc5449272641e7fda185c
+;; Package-Version: 20220702.1859
+;; Package-Commit: 9272a09eb300401fdcc99adaf900520d273bbffb
 ;; Package-Requires: ((emacs "24.4") (company "0.8.12") (dockerfile-mode "1.0"))
 ;; Homepage: https://github.com/elp-revive/company-dockerfile
 ;; Keywords: convenience
@@ -82,6 +82,7 @@
         (push item res)))
     res))
 
+;;;###autoload
 (defun company-dockerfile (command &optional arg &rest ignored)
   "Dockerfile backend for company mode."
   (interactive (list 'interactive))

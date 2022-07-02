@@ -1,5 +1,5 @@
 (company-dockerfile .
-		    [(20220702 1856)
+		    [(20220702 1859)
 		     ((emacs
 		       (24 4))
 		      (company
@@ -7,7 +7,7 @@
 		      (dockerfile-mode
 		       (1 0)))
 		     "Company mode backend for dockefile" single
-		     ((:commit . "0e0250de9d66af6fbadfc5449272641e7fda185c")
+		     ((:commit . "9272a09eb300401fdcc99adaf900520d273bbffb")
 		      (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
 		      (:keywords "convenience")
 		      (:url . "https://github.com/elp-revive/company-dockerfile"))])
