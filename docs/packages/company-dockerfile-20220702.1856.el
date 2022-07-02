@@ -4,9 +4,9 @@
 ;; Maintainer: takeokunn
 ;;             Jen-Chieh Shen <jcs090218@gmail.com>
 ;; Version: 0.1
-;; Package-Version: 20220702.1850
-;; Package-Commit: 8ac668536730071005d631997fee558ea641820f
-;; Package-Requires: ((emacs "24.4") (company-mode "0.6.7") (dockerfile-mode "1.0"))
+;; Package-Version: 20220702.1856
+;; Package-Commit: 0e0250de9d66af6fbadfc5449272641e7fda185c
+;; Package-Requires: ((emacs "24.4") (company "0.8.12") (dockerfile-mode "1.0"))
 ;; Homepage: https://github.com/elp-revive/company-dockerfile
 ;; Keywords: convenience
 
