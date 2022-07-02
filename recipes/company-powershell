@@ -1,0 +1,4 @@
+(company-powershell
+ :repo "nverno/company-powershell"
+ :fetcher github
+ :files (:defaults "commands.ps1"))
