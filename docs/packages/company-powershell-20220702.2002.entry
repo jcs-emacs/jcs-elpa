@@ -1,11 +1,13 @@
 (company-powershell .
-		    [(20220702 1939)
+		    [(20220702 2002)
 		     ((emacs
 		       (26 1))
 		      (company
-		       (0 8 12)))
+		       (0 8 12))
+		      (ht
+		       (2 4)))
 		     "No description available." tar
-		     ((:commit . "e668c14b8db98bade86bd48d87933026ffb6eedf")
+		     ((:commit . "ab709e95301b43226000b333a6549bc897a4c8d3")
 		      (:authors
 		       ("Noah Peart" . "noah.v.peart@gmail.com"))
 		      (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
