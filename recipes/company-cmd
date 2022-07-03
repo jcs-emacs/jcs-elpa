@@ -1,0 +1,1 @@
+(company-cmd :repo "elp-revive/company-cmd" :fetcher github)
