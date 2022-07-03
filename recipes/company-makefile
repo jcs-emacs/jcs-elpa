@@ -1,0 +1,1 @@
+(company-makefile :repo "elp-revive/company-makefile" :fetcher github)
