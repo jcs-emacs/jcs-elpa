@@ -1,0 +1,13 @@
+(company-makefile .
+		  [(20220703 1620)
+		   ((emacs
+		     (26 1))
+		    (company
+		     (0 8 12)))
+		   "completion backend for gnu makefiles" tar
+		   ((:commit . "ebfa77ed4f18b5cbb818908f98d7d7e3c97e0fca")
+		    (:authors
+		     ("Noah Peart" . "noah.v.peart@gmail.com"))
+		    (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
+		    (:keywords "convenience" "matching")
+		    (:url . "https://github.com/elp-revive/company-makefile"))])
