@@ -6,7 +6,7 @@ EASK ?= eask
 build:
 	@echo "Building packages..."
 	@$(EASK) install-deps
-	@$(EASK) load "./scripts/build.el"
+	@$(EASK) load "./scripts/build.el" --allow-error
 
 generate_archive_json:
 	@echo "Generating archive.json file..."
