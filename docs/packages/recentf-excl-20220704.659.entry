@@ -1,0 +1,11 @@
+(recentf-excl .
+	      [(20220704 659)
+	       ((emacs
+		 (26 1)))
+	       "Exclude commands for recent files" single
+	       ((:commit . "70ac4e5120f5123755062ea5cee7296598168cd0")
+		(:authors
+		 ("Jen-Chieh" . "jcs090218@gmail.com"))
+		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		(:keywords "convenience" "excl" "exclude" "recentf")
+		(:url . "https://github.com/jcs-elpa/recentf-excl"))])

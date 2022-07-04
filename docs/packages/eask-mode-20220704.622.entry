@@ -1,0 +1,11 @@
+(eask-mode .
+	   [(20220704 622)
+	    ((emacs
+	      (24 3)))
+	    "major mode for editing Eask files" single
+	    ((:commit . "55107eb9e3f2ac2d2dd9b8b002fd2ab30edfc062")
+	     (:authors
+	      ("Jen-Chieh" . "jcs090218@gmail.com"))
+	     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	     (:keywords "lisp" "eask")
+	     (:url . "https://github.com/emacs-eask/eask-mode"))])

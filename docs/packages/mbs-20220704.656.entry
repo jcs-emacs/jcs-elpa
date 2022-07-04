@@ -1,0 +1,11 @@
+(mbs .
+     [(20220704 656)
+      ((emacs
+	(26 1)))
+      "Minibuffer Stats" single
+      ((:commit . "909b83b614ce69448fed3beed19eaacb256cf36b")
+       (:authors
+	("Jen-Chieh" . "jcs090218@gmail.com"))
+       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+       (:keywords "convenience" "minibuffer" "stats")
+       (:url . "https://github.com/jcs-elpa/mbs"))])

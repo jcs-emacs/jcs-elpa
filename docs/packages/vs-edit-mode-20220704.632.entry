@@ -1,0 +1,11 @@
+(vs-edit-mode .
+	      [(20220704 632)
+	       ((emacs
+		 (24 3)))
+	       "Minor mode accomplish editing experience in Visual Studio" single
+	       ((:commit . "71fc7825dfb466bb001644d2449772127e400732")
+		(:authors
+		 ("Jen-Chieh" . "jcs090218@gmail.com"))
+		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		(:keywords "convenience" "editing" "vs")
+		(:url . "https://github.com/emacs-vs/vs-edit-mode"))])

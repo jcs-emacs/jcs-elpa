@@ -1,0 +1,11 @@
+(fextern .
+	 [(20220704 631)
+	  ((emacs
+	    (25 1)))
+	  "Record file external stats" single
+	  ((:commit . "d67de4ff805c3624d43599f596985c39a54a16c0")
+	   (:authors
+	    ("Jen-Chieh" . "jcs090218@gmail.com"))
+	   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	   (:keywords "convenience" "externally" "file" "stats")
+	   (:url . "https://github.com/emacs-vs/fextern"))])
