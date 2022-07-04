@@ -6,24 +6,24 @@ EASK ?= eask
 build:
 	@echo "Building packages..."
 	@$(EASK) install-deps
-	@$(EASK) exec github-elpa update -a "./docs/packages"
+	@$(EASK) load "./scripts/build.el" --allow-error
 
 generate_archive_json:
 	@echo "Generating archive.json file..."
-	@$(EASK) load "./bin/generate-archive-json.el"
+	@$(EASK) load "./scripts/generate-archive-json.el"
 
 generate_badges_system:
 	@echo "Generating system badges.."
-	@$(EASK) load "./bin/generate-badges-system.el"
+	@$(EASK) load "./scripts/generate-badges-system.el"
 
 generate_badge_packages:
 	@echo "Generating packages badge.."
-	@$(EASK) load "./bin/generate-badge-packages.el"
+	@$(EASK) load "./scripts/generate-badge-packages.el"
 
 generate_badges_version:
 	@echo "Generating version badges.."
-	@$(EASK) load "./bin/generate-badges-version.el"
+	@$(EASK) load "./scripts/generate-badges-version.el"
 
 generate_badges_downloads:
 	@echo "Generating downloads badges.."
-	@$(EASK) load "./bin/generate-badges-downloads.el"
+	@$(EASK) load "./scripts/generate-badges-downloads.el"
