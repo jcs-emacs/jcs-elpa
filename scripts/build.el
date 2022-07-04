@@ -21,7 +21,7 @@
     (message ":: github-elpa: packaging recipe %s" recipe)
     (let ((package-build-tar-executable (or github-elpa-tar-executable
                                             package-build-tar-executable)))
-      (package-build-archive recipe)))
+      (message "output: %s" (ignore-errors (package-build-archive recipe)))))
   (package-build-cleanup))
 
 ;; Local Variables:
