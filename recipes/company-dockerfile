@@ -1,1 +1,1 @@
-(company-dockerfile :repo "elp-revive/company-dockerfile" :fetcher github)
+(company-dockerfile :repo "takeokunn/company-dockerfile" :fetcher github)
