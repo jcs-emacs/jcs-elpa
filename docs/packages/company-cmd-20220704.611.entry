@@ -1,5 +1,5 @@
 (company-cmd .
-	     [(20220703 1546)
+	     [(20220704 611)
 	      ((emacs
 		(26 1))
 	       (company
@@ -7,7 +7,7 @@
 	       (ht
 		(2 4)))
 	      "company backend for cmd/batch" single
-	      ((:commit . "367d93a32990b07baf3fe97a64a510407ffc14c8")
+	      ((:commit . "cf393156e92fb2ac503dfa328e7e96b547fc2a97")
 	       (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
 	       (:keywords "convenience")
 	       (:url . "https://github.com/elp-revive/company-cmd"))])

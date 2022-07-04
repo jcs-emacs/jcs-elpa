@@ -1,12 +1,13 @@
-;;; company-cmd.el --- company backend for cmd/batch -*- lexical-binding: t -*-
+;;; company-cmd.el --- company backend for cmd/batch  -*- lexical-binding: t -*-
 
 ;; This is free and unencumbered software released into the public domain.
 
 ;; Author: Noah Peart
 ;; Maintainer: Jen-Chieh Shen <jcs090218@gmail.com>
 ;; URL: https://github.com/elp-revive/company-cmd
-;; Package-Version: 20220703.1546
-;; Package-Commit: 367d93a32990b07baf3fe97a64a510407ffc14c8
+;; Package-Version: 20220704.611
+;; Package-Commit: cf393156e92fb2ac503dfa328e7e96b547fc2a97
+;; Version: 0.0.1
 ;; Package-Requires: ((emacs "26.1") (company "0.8.12") (ht "2.4"))
 ;; Keywords: convenience
 

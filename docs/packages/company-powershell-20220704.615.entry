@@ -1,5 +1,5 @@
 (company-powershell .
-		    [(20220702 2002)
+		    [(20220704 615)
 		     ((emacs
 		       (26 1))
 		      (company
@@ -7,8 +7,9 @@
 		      (ht
 		       (2 4)))
 		     "No description available." tar
-		     ((:commit . "ab709e95301b43226000b333a6549bc897a4c8d3")
+		     ((:commit . "138390a137ef131ec6583b2519d39076d44e3e1a")
 		      (:authors
 		       ("Noah Peart" . "noah.v.peart@gmail.com"))
 		      (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
+		      (:keywords "convenience")
 		      (:url . "https://github.com/elp-revive/company-powershell"))])
