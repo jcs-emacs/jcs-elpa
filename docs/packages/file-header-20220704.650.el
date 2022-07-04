@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/file-header
 ;; Package-Version: 20220704.650
-;; Package-Commit: 09bea3a0f42b2e8c1042bd550b2c3a818be0843f
+;; Package-Commit: 8ce46b0e19ec099efcf68e45b0aab25ded770055
 ;; Version: 0.1.2
 ;; Package-Requires: ((emacs "25.1"))
 ;; Keywords: convenience file header

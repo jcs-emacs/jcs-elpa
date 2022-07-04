@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/mbs
 ;; Package-Version: 20220704.656
-;; Package-Commit: 909b83b614ce69448fed3beed19eaacb256cf36b
+;; Package-Commit: 4b56d20da5c5b1bfcb83e3df34b2020591d3b098
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: convenience minibuffer stats

@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/buffer-menu-filter
 ;; Package-Version: 20220704.646
-;; Package-Commit: 08fbd33bd09498b19fa0dce1211b0b8c35bad572
+;; Package-Commit: 94a1d7722ed603be97ec72e43cc553809099e690
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (buffer-menu-project "0.1.0") (flx "0.6.1") (ht "2.0"))
 ;; Keywords: convenience buffer menu filter

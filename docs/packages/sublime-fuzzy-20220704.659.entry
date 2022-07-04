@@ -3,7 +3,7 @@
 		((emacs
 		  (25 1)))
 		"Fuzzy matching algorithm like Sublime Text's string search" tar
-		((:commit . "e8652a5bc4d2a99b5d7517612beec1136b33b8c2")
+		((:commit . "206a5bd7789701e51af5bacf1eea07140462dff7")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

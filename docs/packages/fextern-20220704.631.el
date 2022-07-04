@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/fextern
 ;; Package-Version: 20220704.631
-;; Package-Commit: d67de4ff805c3624d43599f596985c39a54a16c0
+;; Package-Commit: bd69c1b54132838a49d5c95db63dbf1c479efbb6
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "25.1"))
 ;; Keywords: convenience externally file stats

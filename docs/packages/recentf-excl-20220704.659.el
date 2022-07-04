@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/recentf-excl
 ;; Package-Version: 20220704.659
-;; Package-Commit: 70ac4e5120f5123755062ea5cee7296598168cd0
+;; Package-Commit: 258ac22ddcdabf91564cd50555c5b63a1addb8f1
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: convenience excl exclude recentf

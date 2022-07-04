@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-edit-mode
 ;; Package-Version: 20220704.632
-;; Package-Commit: 71fc7825dfb466bb001644d2449772127e400732
+;; Package-Commit: 7a4f8d0dfe1528d08fac1750f9f87b3be92ae66c
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "24.3"))
 ;; Keywords: convenience editing vs

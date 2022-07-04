@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/message-clean-mode
 ;; Package-Version: 20220704.656
-;; Package-Commit: 5b1f6a9b57360a000f90bb59acdde2dafa61932c
+;; Package-Commit: 69cb2149d32fad278e90fb508160205352870489
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "25.1"))
 ;; Keywords: convenience messages clean

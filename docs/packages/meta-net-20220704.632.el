@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/meta-net
 ;; Package-Version: 20220704.632
-;; Package-Commit: 23002c1e94a39fd600f56f1c3c0a25d082b6a8c3
+;; Package-Commit: bcea12e916de7653c7cebbe2f24b8d3936b4e206
 ;; Version: 1.1.0
 ;; Package-Requires: ((emacs "25.1") (ht "2.3") (f "0.20.0") (s "1.12.0"))
 ;; Keywords: convenience assembly xml utility

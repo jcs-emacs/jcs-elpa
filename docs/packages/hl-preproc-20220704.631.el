@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/hl-preproc
 ;; Package-Version: 20220704.631
-;; Package-Commit: bc6a52a626b4735010e56fec8d31c8d1f581a2cf
+;; Package-Commit: 6ac4d9070cbe6c83e27e8eac2d69f530878046bb
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "24.4") (meta-net "1.1.0"))
 ;; Keywords: convenience preprocessor

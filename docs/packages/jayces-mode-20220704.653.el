@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/jayces-mode
 ;; Package-Version: 20220704.653
-;; Package-Commit: 719b140ea1cf1a8b15046c85cca4b2b818750754
+;; Package-Commit: 114e23a4b36e85c5f785d5bd6e2e538222ce0252
 ;; Version: 0.0.2
 ;; Package-Requires: ((emacs "24.3"))
 ;; Keywords: lisp jayces

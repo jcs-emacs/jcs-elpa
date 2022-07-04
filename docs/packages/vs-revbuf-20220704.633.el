@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-revbuf
 ;; Package-Version: 20220704.633
-;; Package-Commit: 560d0556039b8831f59fca147db39aef894cfbbd
+;; Package-Commit: baf89d68162436cb42cd8a787696cc5bf2c54f5f
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1") (fextern "0.1.0"))
 ;; Keywords: convenience revert vs

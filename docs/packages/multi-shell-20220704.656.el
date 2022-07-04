@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/multi-shell
 ;; Package-Version: 20220704.656
-;; Package-Commit: 726f72da0d0f3878c7cdeac831d7ea29f8595b20
+;; Package-Commit: 551641847318c596c5f8283c80ee7a097b9dc102
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "25.1"))
 ;; Keywords: convenience multiple shell terminal
