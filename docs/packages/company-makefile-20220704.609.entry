@@ -1,11 +1,11 @@
 (company-makefile .
-		  [(20220703 1620)
+		  [(20220704 609)
 		   ((emacs
 		     (26 1))
 		    (company
 		     (0 8 12)))
 		   "completion backend for gnu makefiles" tar
-		   ((:commit . "58d5b717624b35c0ca20bf9425511fa266dd9e16")
+		   ((:commit . "3987789c0ee79bd546dd262db102d2481fff843b")
 		    (:authors
 		     ("Noah Peart" . "noah.v.peart@gmail.com"))
 		    (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
