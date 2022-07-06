@@ -1,0 +1,1 @@
+(eglot-ltex :repo "emacs-languagetool/eglot-ltex" :fetcher github)
