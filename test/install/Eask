@@ -1,0 +1,14 @@
+(package "jcs-elpa/test"
+         "0.0.0"
+         "Test to install jcs-elpa packages")
+
+(website-url "https://github.com/jcs-emacs/jcs-elpa/test")
+(keywords "elpa" "test")
+
+(source "jcs-elpa")
+
+;; List of packages from jcs-elpa
+(depends-on "asoc")
+(depends-on "auto-scroll-bar")
+(depends-on "eask-mode")
+(depends-on "fextern")
