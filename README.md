@@ -29,6 +29,7 @@
 
 [![Build](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/build.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/build.yml)
 [![pages-build-deployment](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/pages/pages-build-deployment)
+[![Install](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/install.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/install.yml)
 
 [![System](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/system.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/system.yml)
 [![Version](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/version.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/version.yml)
