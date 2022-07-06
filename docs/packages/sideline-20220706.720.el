@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline
-;; Package-Version: 20220629.744
-;; Package-Commit: 08ba0e27a41ad7b214106c9f80480150750b60cb
+;; Package-Version: 20220706.720
+;; Package-Commit: f905137ccd77812fe37bc1d6c8a2017a277a46bb
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: convenience
@@ -455,10 +455,10 @@ If argument ON-LEFT is non-nil, it will align to the left instead of right."
   "Timer for delay.")
 
 (defvar-local sideline--ex-window-start nil
-  "Holds previouse window start point; this will detect vertical scrolling.")
+  "Holds previous window start point; this will detect vertical scrolling.")
 
 (defvar-local sideline--ex-window-hscroll nil
-  "Holds previouse window hscroll; this will detect horizontal scrolling.")
+  "Holds previous window hscroll; this will detect horizontal scrolling.")
 
 (defun sideline--do-render-p ()
   "Return non-nil if we should re-render sidelines in the post-command."
