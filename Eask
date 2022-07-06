@@ -6,7 +6,6 @@
 (keywords "elpa")
 
 (source "gnu")
-(source "celpa")
 (source "melpa")
 (source "jcs-elpa")
 
