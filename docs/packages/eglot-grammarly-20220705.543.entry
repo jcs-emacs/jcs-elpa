@@ -5,7 +5,7 @@
 		   (eglot
 		    (1 4)))
 		  "Eglot Clients for Grammarly" single
-		  ((:commit . "5eba6f26b1ebdd2e578543573479295f307ffc3b")
+		  ((:commit . "edec165c79ab4c333d8ec7e52a8b35f181c8da06")
 		   (:authors
 		    ("Jen-Chieh" . "jcs090218@gmail.com"))
 		   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

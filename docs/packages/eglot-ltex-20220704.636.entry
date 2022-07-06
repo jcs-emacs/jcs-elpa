@@ -1,0 +1,15 @@
+(eglot-ltex .
+	    [(20220704 636)
+	     ((emacs
+	       (24 3))
+	      (eglot
+	       (1 4))
+	      (f
+	       (0 20 0)))
+	     "Eglot Clients for LTEX" single
+	     ((:commit . "b7da9071cc6af6912f2d46a059a878b542276ac9")
+	      (:authors
+	       ("Jen-Chieh" . "jcs090218@gmail.com"))
+	      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	      (:keywords "convenience" "eglot" "languagetool" "checker")
+	      (:url . "https://github.com/emacs-languagetool/eglot-ltex"))])
