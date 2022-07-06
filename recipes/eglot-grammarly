@@ -1,0 +1,1 @@
+(eglot-grammarly :repo "emacs-grammarly/eglot-grammarly" :fetcher github)
