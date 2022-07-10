@@ -1,0 +1,12 @@
+(company-autoconf .
+		  [(20220710 1631)
+		   ((emacs
+		     (26 1))
+		    (company
+		     (0 8 12)))
+		   "completion for autoconf script" tar
+		   ((:commit . "8e25dd720c5d487e3b6175a02dc09bf3522db923")
+		    (:authors
+		     ("Noah Peart" . "noah.v.peart@gmail.com"))
+		    (:maintainer "Noah Peart" . "noah.v.peart@gmail.com")
+		    (:url . "https://github.com/elp-revive/company-autoconf"))])
