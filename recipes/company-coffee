@@ -1,0 +1,1 @@
+(company-coffee :repo "elp-revive/company-coffee" :fetcher github)
