@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline
 ;; Package-Version: 20220706.720
-;; Package-Commit: f905137ccd77812fe37bc1d6c8a2017a277a46bb
+;; Package-Commit: 32c2c9f8d752073c2b637ea8f0b4473804339f64
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: convenience
