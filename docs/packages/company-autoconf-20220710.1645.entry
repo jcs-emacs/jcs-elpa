@@ -1,11 +1,11 @@
 (company-autoconf .
-		  [(20220710 1631)
+		  [(20220710 1645)
 		   ((emacs
 		     (26 1))
 		    (company
 		     (0 8 12)))
 		   "completion for autoconf script" tar
-		   ((:commit . "8e25dd720c5d487e3b6175a02dc09bf3522db923")
+		   ((:commit . "a4a6ba8ce63680f9335a282f5cdd8d8c566714de")
 		    (:authors
 		     ("Noah Peart" . "noah.v.peart@gmail.com"))
 		    (:maintainer "Noah Peart" . "noah.v.peart@gmail.com")
