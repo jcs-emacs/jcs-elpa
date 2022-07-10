@@ -1,0 +1,12 @@
+(company-coffee .
+		[(20220710 1615)
+		 ((emacs
+		   (26 1))
+		  (company
+		   (0 8 12)))
+		 "No description available." single
+		 ((:commit . "4b4f9f095e52c2e6f4d2a200391471075a5cc38f")
+		  (:authors
+		   ("Noah Peart" . "noah.v.peart@gmail.com"))
+		  (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
+		  (:url . "https://github.com/elp-revive/company-coffee"))])
