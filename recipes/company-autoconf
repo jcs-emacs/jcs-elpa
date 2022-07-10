@@ -1,0 +1,4 @@
+(company-autoconf
+ :repo "elp-revive/company-autoconf"
+ :fetcher github
+ :files (:defaults "macros.dat"))
