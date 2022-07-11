@@ -6,7 +6,7 @@
 ;; Maintainer: Jen-Chieh Shen <jcs090218@gmail.com>
 ;; URL: https://github.com/elp-revive/company-cmd
 ;; Package-Version: 20220704.611
-;; Package-Commit: cf393156e92fb2ac503dfa328e7e96b547fc2a97
+;; Package-Commit: 97902557bf567afa5da14f2df65410b4aab0a282
 ;; Version: 0.0.1
 ;; Package-Requires: ((emacs "26.1") (company "0.8.12") (ht "2.4"))
 ;; Keywords: convenience

@@ -5,7 +5,7 @@
 ;;             Jen-Chieh Shen <jcs090218@gmail.com>
 ;; Version: 0.1
 ;; Package-Version: 20220702.1859
-;; Package-Commit: 0a65110652371496e82c92b138b08bd0665c24d5
+;; Package-Commit: cfb423e77136763bb0f06b289a8435671270e156
 ;; Package-Requires: ((emacs "24.4") (company "0.8.12") (dockerfile-mode "1.0"))
 ;; Homepage: https://github.com/elp-revive/company-dockerfile
 ;; Keywords: convenience

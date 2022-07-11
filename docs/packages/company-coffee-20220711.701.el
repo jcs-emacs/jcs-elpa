@@ -1,4 +1,4 @@
-;;; company-coffee --- Emacs coffee completion  -*- lexical-binding: t; -*-
+;;; company-coffee.el --- Emacs coffee completion  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2016, Noah Peart
 ;; Copyright (C) 2022, Jen-Chieh Shen
@@ -6,9 +6,11 @@
 ;; Author: Noah Peart <noah.v.peart@gmail.com>
 ;; Maintainer: Jen-Chieh Shen <jcs090218@gmail.com>
 ;; URL: https://github.com/elp-revive/company-coffee
-;; Package-Version: 20220710.1615
-;; Package-Commit: 4b4f9f095e52c2e6f4d2a200391471075a5cc38f
+;; Package-Version: 20220711.701
+;; Package-Commit: 541d697ab9ef7ff0cb4f060a9322a0f282e65538
+;; Version: 0.0.1
 ;; Package-Requires: ((emacs "26.1") (company "0.8.12"))
+;; Keywords: convenience
 
 ;; This file is not part of GNU Emacs.
 ;;
@@ -34,8 +36,7 @@
 
 ;;; Code:
 
-(eval-when-compile
-  (require 'cl-lib))
+(eval-when-compile (require 'cl-lib))
 
 (require 'company)
 
@@ -84,17 +85,16 @@
     ))
 
 (defvar company-coffee-keywords
-  (eval-when-compile
-    (sort
-     (append
-      (cl-loop for (k . v) in company-coffee-compares
-               do (put-text-property 0 1 'annot v k)
-               collect k)
-      (cl-loop for (k . v) in company-coffee-math
-               do (put-text-property 0 1 'annot v k)
-               collect k)
-      company-coffee-words)
-     'string<)))
+  (sort
+   (append
+    (cl-loop for (k . v) in company-coffee-compares
+             do (put-text-property 0 1 'annot v k)
+             collect k)
+    (cl-loop for (k . v) in company-coffee-math
+             do (put-text-property 0 1 'annot v k)
+             collect k)
+    company-coffee-words)
+   'string<))
 
 (defun company-coffee-prefix ()
   (and (derived-mode-p major-mode company-coffee-modes)

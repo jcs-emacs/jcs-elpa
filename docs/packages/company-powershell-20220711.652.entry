@@ -1,13 +1,13 @@
 (company-powershell .
-		    [(20220704 615)
+		    [(20220711 652)
 		     ((emacs
 		       (26 1))
 		      (company
 		       (0 8 12))
 		      (ht
 		       (2 4)))
-		     "No description available." tar
-		     ((:commit . "138390a137ef131ec6583b2519d39076d44e3e1a")
+		     "Emacs autocompletion backend for powershell" tar
+		     ((:commit . "0380259960aeac873c7bec1e9c5218da0a82c358")
 		      (:authors
 		       ("Noah Peart" . "noah.v.peart@gmail.com"))
 		      (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
