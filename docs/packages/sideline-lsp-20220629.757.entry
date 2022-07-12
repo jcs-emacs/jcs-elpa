@@ -13,7 +13,7 @@
 		(s
 		 (1 12 0)))
 	       "Show lsp information with sideline" single
-	       ((:commit . "7d855c61198901c70e3d11339a040373b84e4202")
+	       ((:commit . "6e2215608bfb3582e361d05a9c91c4f53c95b02e")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

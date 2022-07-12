@@ -6,7 +6,7 @@
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline-lsp
 ;; Package-Version: 20220629.757
-;; Package-Commit: 7d855c61198901c70e3d11339a040373b84e4202
+;; Package-Commit: 6e2215608bfb3582e361d05a9c91c4f53c95b02e
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (sideline "0.1.0") (lsp-mode "6.0") (dash "2.18.0") (ht "2.4") (s "1.12.0"))
 ;; Keywords: convenience lsp
