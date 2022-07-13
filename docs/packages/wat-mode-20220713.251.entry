@@ -1,7 +1,7 @@
 (wat-mode .
-	  [(20181022 2317)
+	  [(20220713 251)
 	   nil "A major mode for WebAssembly" tar
-	   ((:commit . "f34fc84879a99130283a124cd196041b474213e1")
+	   ((:commit . "46b4df83e92c585295d659d049560dbf190fe501")
 	    (:authors
 	     ("Devon Sparks" . "devon.sparks@gmail.com"))
 	    (:maintainer "Devon Sparks" . "devon.sparks@gmail.com")
