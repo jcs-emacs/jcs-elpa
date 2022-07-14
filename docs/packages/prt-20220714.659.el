@@ -5,10 +5,10 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/prt
-;; Package-Version: 20220714.625
-;; Package-Commit: ba23b015b35d20c443133188f5411d08926c19b1
+;; Package-Version: 20220714.659
+;; Package-Commit: 0561268235c637b5aca3bcf0919a5f21359df6d1
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "27.1"))
+;; Package-Requires: ((emacs "27.1") (spinner "1.7.4"))
 ;; Keywords: convenience
 
 ;; This file is NOT part of GNU Emacs.
@@ -33,31 +33,52 @@
 
 ;;; Code:
 
+(require 'spinner)
+
 (defgroup prt nil
   "Progress Reporter Library."
   :prefix "prt-"
   :group 'tool
   :link '(url-link :tag "Repository" "https://github.com/jcs-elpa/prt"))
 
+(defcustom prt-pulse-characters (if (boundp 'progress-reporter--pulse-characters)
+                                    progress-reporter--pulse-characters
+                                  ["-" "\\" "|" "/"])
+  "Characters to use for pulsing progress reporters."
+  :type 'vector
+  :group 'prt)
+
 (defmacro prt--silent (&rest body)
   "Execute BODY without write it to message buffer."
   (declare (indent 0) (debug t))
   `(let (message-log-max) ,@body))
 
+(defun prt--pulse-characters ()
+  "Return a valid vector with pulse characters."
+  (cond ((vectorp prt-pulse-characters) prt-pulse-characters)
+        ((symbolp prt-pulse-characters) (cdr (assoc prt-pulse-characters spinner-types)))
+        (t (user-error "Invalid pulse characters: %s" prt-pulse-characters))))
+
+(defmacro prt--env (&rest body)
+  "Execute BODY with setup environment."
+  (declare (indent 0) (debug t))
+  `(let ((progress-reporter--pulse-characters (prt--pulse-characters))) ,@body))
+
 ;;;###autoload
 (defun prt-create (message &optional min-value max-value current-value min-change min-time)
   "Create a progress reporter."
-  (make-progress-reporter message min-value max-value current-value min-change min-time))
+  (prt--env (make-progress-reporter message min-value max-value current-value min-change min-time)))
 
 (defun prt-update (reporter &optional value suffix)
   "Report progress of an operation in the echo area."
-  (progress-reporter-update reporter value suffix))
+  (prt--env (progress-reporter-update reporter value suffix)))
 
 (defun prt-done (reporter &optional message)
   "Print reporter's message followed by word \"done\" in echo area."
-  (prt--silent
-    (progress-reporter-done reporter)
-    (when message (message message))))
+  (prt--env
+    (prt--silent
+      (progress-reporter-done reporter)
+      (when message (message message)))))
 
 ;;;###autoload
 (defmacro prt-with (message &rest body)
