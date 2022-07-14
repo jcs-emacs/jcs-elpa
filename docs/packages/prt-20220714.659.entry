@@ -5,7 +5,7 @@
        (spinner
 	(1 7 4)))
       "Progress Reporter Library" single
-      ((:commit . "0561268235c637b5aca3bcf0919a5f21359df6d1")
+      ((:commit . "aca37951bc3596ec52c28df1fd472c8cbe11f280")
        (:authors
 	("Jen-Chieh" . "jcs090218@gmail.com"))
        (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
