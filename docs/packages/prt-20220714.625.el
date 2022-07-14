@@ -5,10 +5,10 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/prt
-;; Package-Version: 20220714.618
-;; Package-Commit: e862eda951b35ee73e5ef646e94b2f4267e45a2c
-;; Version: 0.0.1
-;; Package-Requires: ((emacs "26.1"))
+;; Package-Version: 20220714.625
+;; Package-Commit: ba23b015b35d20c443133188f5411d08926c19b1
+;; Version: 0.1.0
+;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: convenience
 
 ;; This file is NOT part of GNU Emacs.

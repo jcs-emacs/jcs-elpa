@@ -1,9 +1,9 @@
 (prt .
-     [(20220714 618)
+     [(20220714 625)
       ((emacs
-	(26 1)))
+	(27 1)))
       "Progress Reporter Library" single
-      ((:commit . "e862eda951b35ee73e5ef646e94b2f4267e45a2c")
+      ((:commit . "ba23b015b35d20c443133188f5411d08926c19b1")
        (:authors
 	("Jen-Chieh" . "jcs090218@gmail.com"))
        (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
