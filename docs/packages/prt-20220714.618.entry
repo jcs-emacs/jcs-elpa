@@ -1,0 +1,11 @@
+(prt .
+     [(20220714 618)
+      ((emacs
+	(26 1)))
+      "Progress Reporter Library" single
+      ((:commit . "e862eda951b35ee73e5ef646e94b2f4267e45a2c")
+       (:authors
+	("Jen-Chieh" . "jcs090218@gmail.com"))
+       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+       (:keywords "convenience")
+       (:url . "https://github.com/jcs-elpa/prt"))])
