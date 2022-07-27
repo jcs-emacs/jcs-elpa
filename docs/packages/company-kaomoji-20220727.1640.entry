@@ -1,0 +1,11 @@
+(company-kaomoji .
+		 [(20220727 1640)
+		  ((emacs
+		    (26 1)))
+		  "company-mode backend for kaomoji" single
+		  ((:commit . "a04da739f6320ea30e62b8018fbdd5fd8540ae54")
+		   (:authors
+		    ("Jen-Chieh" . "jcs090218@gmail.com"))
+		   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		   (:keywords "matching" "kaomoji")
+		   (:url . "https://github.com/jcs-elpa/company-kaomoji"))])

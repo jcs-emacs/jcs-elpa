@@ -1,9 +1,9 @@
 (kaomoji .
-	 [(20220727 1619)
+	 [(20220727 1634)
 	  ((emacs
 	    (24 3)))
 	  "Input kaomoji superb easily" tar
-	  ((:commit . "6b54bf4284d21e254bdaf40b7a52db194fc7aca1")
+	  ((:commit . "a2e78406afdcb7d5650975006a69afd3e7c4c6ac")
 	   (:authors
 	    ("Ono Hiroko" . "azazabc123@gmail.com"))
 	   (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
