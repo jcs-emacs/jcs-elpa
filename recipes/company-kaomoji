@@ -1,0 +1,1 @@
+(company-kaomoji :repo "jcs-elpa/company-kaomoji" :fetcher github)
