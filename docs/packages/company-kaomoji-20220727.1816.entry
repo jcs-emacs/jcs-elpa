@@ -1,9 +1,15 @@
 (company-kaomoji .
-		 [(20220727 1640)
+		 [(20220727 1816)
 		  ((emacs
-		    (26 1)))
-		  "company-mode backend for kaomoji" single
-		  ((:commit . "a04da739f6320ea30e62b8018fbdd5fd8540ae54")
+		    (26 1))
+		   (company
+		    (0 8 12))
+		   (kaomoji
+		    (0 1 0))
+		   (ht
+		    (2 0)))
+		  "Company backend for Kaomoj" single
+		  ((:commit . "854a98e6dcabbedbe90d71cd7021cea3f34c9e86")
 		   (:authors
 		    ("Jen-Chieh" . "jcs090218@gmail.com"))
 		   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
