@@ -1,0 +1,1 @@
+(kaomoji :repo "elp-revive/kaomoji.el" :fetcher github)
