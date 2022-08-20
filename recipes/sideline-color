@@ -1,0 +1,1 @@
+(sideline-color :repo "emacs-sideline/sideline-color" :fetcher github)
