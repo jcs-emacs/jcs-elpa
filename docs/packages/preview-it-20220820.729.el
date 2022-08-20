@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/preview-it
-;; Package-Version: 20220704.658
-;; Package-Commit: 8baad31ee6288fb359ec5ca49eb40791c614ec69
+;; Package-Version: 20220820.729
+;; Package-Commit: 4cc722722d4b040f0af2780086817f87085b5cf8
 ;; Version: 1.1.0
 ;; Package-Requires: ((emacs "26.1") (posframe "1.1.7") (request "0.3.0") (gh-md "0.1.1"))
 ;; Keywords: convenience preview image path file
@@ -43,6 +43,7 @@
 ;;; Code:
 
 (require 'cl-lib)
+(require 'faces)
 (require 'ffap)
 (require 'shr)
 (require 'image-mode)
@@ -71,6 +72,11 @@
 (defcustom preview-it-render-md nil
   "Set to non-nil, render markdown file."
   :type 'boolean
+  :group 'preview-it)
+
+(defcustom preview-it-color-text "▓▒░"
+  "String to display color."
+  :type 'string
   :group 'preview-it)
 
 (defconst preview-it--buffer-name "*preview-it*"
@@ -147,11 +153,29 @@
   "Check if PATH a file path."
   (and (file-exists-p path) (not (file-directory-p path))))
 
+(defun preview-it--thing-at-point (thing &optional no-properties)
+  "Same with function `thing-at-point' but respect region.
+
+Arguments THING and NO-PROPERTIES have same effect to function `thing-at-point'."
+  (if (use-region-p)
+      (if no-properties
+          (buffer-substring-no-properties (region-beginning) (region-end))
+        (buffer-substring (region-beginning) (region-end)))
+    (thing-at-point thing no-properties)))
+
 (defmacro preview-it--with-preview-buffer (&rest body)
   "Execute BODY inside preview buffer."
   (declare (indent 0) (debug t))
   `(with-current-buffer (get-buffer-create preview-it--buffer-name)
      (let ((inhibit-read-only t)) ,@body)))
+
+(defmacro preview-it--try-display (&rest body)
+  "Try to display frame after executing BODY form."
+  (declare (indent 0) (debug t))
+  `(progn
+     (preview-it--with-preview-buffer (erase-buffer))
+     ,@body
+     (preview-it--show)))
 
 ;;
 ;; (@* "Url" )
@@ -216,27 +240,36 @@
           :parser 'buffer-string
           :success 'preview-it--receive-data)))
 
+(defun preview-it--render-color (color)
+  "Render COLOR."
+  (preview-it--with-preview-buffer
+    (insert (propertize preview-it-color-text 'font-lock-face `(:foreground ,color)) " " color)))
+
 ;;;###autoload
 (defun preview-it ()
   "Preview thing at point."
   (interactive)
-  (when-let ((path (ffap-guesser)))
-    (preview-it--with-preview-buffer (erase-buffer))
-    (cond
-     ((preview-it--is-file-p path)  ; file
-      (preview-it--mute-apply (preview-it--render-file path)))
-     ;; TODO: Not sure if there are other cases.
-     ((string-match-p "http[s]*://" path)  ; request
-      (preview-it--render-url path)))
-    (unless (preview-it--content-empty-p)
-      (preview-it--show)
-      (add-hook 'post-command-hook #'preview-it--post))))
+  (cond
+   ((when-let ((path (ffap-guesser)))
+      (preview-it--try-display
+        (cond
+         ((preview-it--is-file-p path)  ; file
+          (preview-it--mute-apply (preview-it--render-file path)))
+         ;; TODO: Not sure if there are other cases.
+         ((string-match-p "http[s]*://" path)  ; request
+          (preview-it--render-url path))))))
+   ((when-let* ((text (preview-it--thing-at-point 'symbol t))
+                (color (color-values text)))
+      (preview-it--try-display
+        (preview-it--render-color text))))))
 
 (defun preview-it--show ()
   "Show preview frame."
-  (posframe-show preview-it--buffer-name :position (point)
-                 :border-width 10
-                 :background-color (face-background 'preview-it-background)))
+  (unless (preview-it--content-empty-p)
+    (posframe-show preview-it--buffer-name :position (point)
+                   :border-width 10
+                   :background-color (face-background 'preview-it-background))
+    (add-hook 'post-command-hook #'preview-it--post)))
 
 (defun preview-it--next ()
   "Hide tooltip after first post command."
