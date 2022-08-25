@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/auto-scroll-bar
 ;; Package-Version: 20220704.731
-;; Package-Commit: 68d92c43f998f4d0c03f26a89843f4baf60a7917
+;; Package-Commit: 57c68e7fa931e8043e1629bf4c71fee3df49decc
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: convenience scrollbar

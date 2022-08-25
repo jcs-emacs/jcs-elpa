@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-languagetool/eglot-ltex
 ;; Package-Version: 20220704.636
-;; Package-Commit: c6729b8869f69c602df7e4153a08e4f4900e4a5a
+;; Package-Commit: c533a793e1f65c197269c8425405579a7112eddb
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "24.3") (eglot "1.4") (f "0.20.0"))
 ;; Keywords: convenience eglot languagetool checker

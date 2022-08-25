@@ -3,7 +3,7 @@
 	       ((emacs
 		 (26 1)))
 	       "Exclude commands for recent files" single
-	       ((:commit . "4fa7a789c23cd7dba12be7686658d6562f8757ce")
+	       ((:commit . "70ac4e5120f5123755062ea5cee7296598168cd0")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

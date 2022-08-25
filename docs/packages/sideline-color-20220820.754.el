@@ -6,7 +6,7 @@
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline-color
 ;; Package-Version: 20220820.754
-;; Package-Commit: 41ca7b66ed7fe8cbda401ba6f4e76e012be07c54
+;; Package-Commit: d59012f7a7e642ca9f5de6ac31fe01baff3512da
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (sideline "0.1.0"))
 ;; Keywords: convenience color

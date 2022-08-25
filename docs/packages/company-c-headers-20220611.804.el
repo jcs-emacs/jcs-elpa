@@ -7,7 +7,7 @@
 ;; Maintainer: Jen-Chieh Shen <jcs090218@gmail.com>
 ;; Keywords: development company
 ;; Package-Version: 20220611.804
-;; Package-Commit: bfb7484b7e50358de3ae10eaa0003082f0c24f10
+;; Package-Commit: 570004af77f0cfd51e175fa85bc2216385777ee7
 ;; URL: http://github.com/elp-revive/company-c-headers
 ;; Package-Requires: ((emacs "26.1") (company "0.8"))
 ;; Version: 0.1.0

@@ -4,7 +4,7 @@
 ;; Copyright (c) 2022 Jen-Chieh Shen
 
 ;; Package-Requires: ((emacs "24") (groovy-mode "2.0"))
-;; Package-Commit: 2f8700dc99cd86440c9603641949d08fc69a62b4
+;; Package-Commit: d7f145cf7e909547e213deb91e3300e4caa49667
 ;; Package-Version: 20220414.1203
 ;; Package-X-Original-Version: 0.0.1
 ;; Homepage: https://github.com/elp-revive/jenkinsfile-mode

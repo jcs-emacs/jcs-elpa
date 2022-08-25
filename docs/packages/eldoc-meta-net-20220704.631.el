@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/eldoc-meta-net
 ;; Package-Version: 20220704.631
-;; Package-Commit: d68a8d7cbbe85708dcc342d5f6ff34b81c61cdee
+;; Package-Commit: b9ed131ddf3f8c2181f26768c871bee80ae40938
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (meta-net "1.1.0") (ht "2.3") (csharp-mode "1.0.2"))
 ;; Keywords: convenience eldoc c# dotnet sdk

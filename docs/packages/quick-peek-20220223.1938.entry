@@ -3,7 +3,7 @@
 	     ((emacs
 	       (24 3)))
 	     "Inline quick-peek windows" single
-	     ((:commit . "831a678250a8145878dc94b84ce4ac7b5b8e9e3c")
+	     ((:commit . "5eadb029d2e3abe92de54a995fb00ee425bf9bf8")
 	      (:authors
 	       ("Clément Pit-Claudel" . "clement.pitclaudel@live.com"))
 	      (:maintainer "Clément Pit-Claudel" . "clement.pitclaudel@live.com")

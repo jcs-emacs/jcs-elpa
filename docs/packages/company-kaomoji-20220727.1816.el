@@ -6,7 +6,7 @@
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/company-kaomoji
 ;; Package-Version: 20220727.1816
-;; Package-Commit: 0890c715ef6495b132c561cd482b05ee74e53bc7
+;; Package-Commit: 0c4b26fb19de00ac3fcbb63673d4a0faa9c9b9f0
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (company "0.8.12") (kaomoji "0.1.0") (ht "2.0"))
 ;; Keywords: matching kaomoji

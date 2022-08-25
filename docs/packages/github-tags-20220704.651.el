@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/github-tags
 ;; Package-Version: 20220704.651
-;; Package-Commit: 455875793700ad907a16074c9380810a45d456fb
+;; Package-Commit: f20be7e8d276b5962c7bb3c6d366b8ff9762bb1a
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "24.3"))
 ;; Keywords: vc github tags

@@ -5,7 +5,7 @@
 ;; Author: Tony Aldon <tony.aldon.adm@gmail.com>
 ;; Version: 0.1
 ;; Package-Version: 20211105.1700
-;; Package-Commit: 59ff8976ce789c0c594fd4756cbeb5354b6178d2
+;; Package-Commit: 94c37f63fcfec9cdde6b99457b4dac5275589d95
 ;; Package-Requires: ((emacs "27.1") (dash "2.17.0") (s "1.12.0"))
 ;; Keywords: outlines
 ;; Homepage: https://github.com/tonyaldon/org-bars

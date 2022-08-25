@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/preview-it
 ;; Package-Version: 20220820.729
-;; Package-Commit: 6792a129d41c26dd9107920958ed239e38da1fca
+;; Package-Commit: 4cc722722d4b040f0af2780086817f87085b5cf8
 ;; Version: 1.1.0
 ;; Package-Requires: ((emacs "26.1") (posframe "1.1.7") (request "0.3.0") (gh-md "0.1.1"))
 ;; Keywords: convenience preview image path file

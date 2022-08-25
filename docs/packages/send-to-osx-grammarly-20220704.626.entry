@@ -3,7 +3,7 @@
 			((emacs
 			  (24 3)))
 			"A simple plugin to sent text to Grammarly" tar
-			((:commit . "5180a33663f1f1018913113d49df0a0f0853112f")
+			((:commit . "c11512e73b5948dfb84289ae303919cb03f1de33")
 			 (:authors
 			  ("Marcin Magnus" . "m.magnus@zoho.com"))
 			 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

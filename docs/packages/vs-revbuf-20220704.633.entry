@@ -5,7 +5,7 @@
 	     (fextern
 	      (0 1 0)))
 	    "Revert buffers like Visual Studio" single
-	    ((:commit . "bc4ab5ba6f277adf476b15e90abb712d0a4aac20")
+	    ((:commit . "560d0556039b8831f59fca147db39aef894cfbbd")
 	     (:authors
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))
 	     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

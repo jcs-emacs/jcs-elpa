@@ -5,7 +5,7 @@
 		  (sideline
 		   (0 1 0)))
 		 "Show color information with sideline" single
-		 ((:commit . "41ca7b66ed7fe8cbda401ba6f4e76e012be07c54")
+		 ((:commit . "d59012f7a7e642ca9f5de6ac31fe01baff3512da")
 		  (:authors
 		   ("Jen-Chieh" . "jcs090218@gmail.com"))
 		  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

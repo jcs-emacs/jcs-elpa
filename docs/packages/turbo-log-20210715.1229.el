@@ -8,7 +8,7 @@
 ;; Keyword: log debug
 ;; Version: 0.1.0
 ;; Package-Version: 20210715.1229
-;; Package-Commit: 88bc180084562f8e3d9539430b662b569d0d5965
+;; Package-Commit: 3e092221cb4d131331e967a27515c33262cff4dd
 ;; Package-Requires: ((emacs "24.4"))
 ;; URL: https://github.com/jcs-elpa/turbo-log
 
