@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-eask/eask-mode
 ;; Package-Version: 20220704.622
-;; Package-Commit: 55107eb9e3f2ac2d2dd9b8b002fd2ab30edfc062
+;; Package-Commit: 3f9b0261ce23d84d5919fa3bd2fa3b257c6606eb
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "24.3"))
 ;; Keywords: lisp eask

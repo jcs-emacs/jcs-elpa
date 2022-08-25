@@ -3,7 +3,7 @@
 	((emacs
 	  (25 1)))
 	"Ping websites to check internet connectivity" tar
-	((:commit . "0442573a70e497cc6096ab6081646f4b7987d315")
+	((:commit . "29262660cdd291fbc45467f0bcee71426f830090")
 	 (:authors
 	  ("Sean Hutchings" . "seanhut@yandex.com"))
 	 (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")

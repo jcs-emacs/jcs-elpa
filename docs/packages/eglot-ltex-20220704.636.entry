@@ -7,7 +7,7 @@
 	      (f
 	       (0 20 0)))
 	     "Eglot Clients for LTEX" single
-	     ((:commit . "43db4c764a4b897cf188a6ac9cea595485126cce")
+	     ((:commit . "c6729b8869f69c602df7e4153a08e4f4900e4a5a")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
 	      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

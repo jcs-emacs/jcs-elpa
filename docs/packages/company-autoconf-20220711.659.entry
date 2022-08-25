@@ -5,7 +5,7 @@
 		    (company
 		     (0 8 12)))
 		   "completion for autoconf script" tar
-		   ((:commit . "aa01edbd6e5b8c8c22a3925856803839c02b2c3b")
+		   ((:commit . "b7faf4702702444dadc41b165fa5dceea52ad3a6")
 		    (:authors
 		     ("Noah Peart" . "noah.v.peart@gmail.com"))
 		    (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")

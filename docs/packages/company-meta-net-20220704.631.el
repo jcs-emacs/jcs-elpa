@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/company-meta-net
 ;; Package-Version: 20220704.631
-;; Package-Commit: 2a2f3dde0b98dad0c1a50479d377632106d2b5ef
+;; Package-Commit: c4e64ca46343bbdbe8b085ec0635a65a1d78a751
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "25.1") (company "0.8.12") (meta-net "1.1.0") (ht "2.3"))
 ;; Keywords: convenience csproj csharp company

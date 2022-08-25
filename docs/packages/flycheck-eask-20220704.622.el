@@ -5,7 +5,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-eask/flycheck-eask
 ;; Package-Version: 20220704.622
-;; Package-Commit: 6827be8be78b31f999473425a3f33323bafa189d
+;; Package-Commit: 4fefe1db49c4171c514bc6ef7d122bf2c0285be9
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (flycheck "0.14"))
 ;; Keywords: lisp eask

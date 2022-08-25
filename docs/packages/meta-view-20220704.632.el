@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/meta-view
 ;; Package-Version: 20220704.632
-;; Package-Commit: 3d2d9900a6450f20c373930ac84d00cdf5bbd404
+;; Package-Commit: f17260444ad743812694e4e9a2f5318bb79a5c11
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (csharp-mode "0.11.0") (meta-net "1.1.0") (ht "2.3") (f "0.20.0"))
 ;; Keywords: convenience assembly metadata source

@@ -3,7 +3,7 @@
 	  ((emacs
 	    (24 3)))
 	  "Input kaomoji superb easily" tar
-	  ((:commit . "a2e78406afdcb7d5650975006a69afd3e7c4c6ac")
+	  ((:commit . "3fe3af42138fbf17638ca5f5468b8b9ffa2c28c1")
 	   (:authors
 	    ("Ono Hiroko" . "azazabc123@gmail.com"))
 	   (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")

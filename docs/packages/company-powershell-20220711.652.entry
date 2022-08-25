@@ -7,7 +7,7 @@
 		      (ht
 		       (2 4)))
 		     "Emacs autocompletion backend for powershell" tar
-		     ((:commit . "0380259960aeac873c7bec1e9c5218da0a82c358")
+		     ((:commit . "f51f3fd4dc5dee9d1ffdb45a9f34747472b35ae2")
 		      (:authors
 		       ("Noah Peart" . "noah.v.peart@gmail.com"))
 		      (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")

@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-grammarly/eglot-grammarly
 ;; Package-Version: 20220705.543
-;; Package-Commit: 4777d3289a54b4cd18c473fc85203cdad89928c4
+;; Package-Commit: 0fa29df6d875c1dbab0c3ecb02a56f147c6b6692
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "24.3") (eglot "1.4"))
 ;; Keywords: convenience eglot grammarly checker

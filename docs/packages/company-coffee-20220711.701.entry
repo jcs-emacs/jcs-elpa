@@ -5,7 +5,7 @@
 		  (company
 		   (0 8 12)))
 		 "Emacs coffee completion" single
-		 ((:commit . "541d697ab9ef7ff0cb4f060a9322a0f282e65538")
+		 ((:commit . "cadff9a5636a3aa2923ac1f8208e9add80de7ed8")
 		  (:authors
 		   ("Noah Peart" . "noah.v.peart@gmail.com"))
 		  (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")

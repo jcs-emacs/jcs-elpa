@@ -7,7 +7,7 @@
 ;; Maintainer: Jen-Chieh Shen <jcs090218@gmail.com>
 ;; URL: https://github.com/elp-revive/company-coffee
 ;; Package-Version: 20220711.701
-;; Package-Commit: 541d697ab9ef7ff0cb4f060a9322a0f282e65538
+;; Package-Commit: cadff9a5636a3aa2923ac1f8208e9add80de7ed8
 ;; Version: 0.0.1
 ;; Package-Requires: ((emacs "26.1") (company "0.8.12"))
 ;; Keywords: convenience

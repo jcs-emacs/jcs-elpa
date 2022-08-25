@@ -7,7 +7,7 @@
 	       (ht
 		(2 4)))
 	      "company backend for cmd/batch" single
-	      ((:commit . "97902557bf567afa5da14f2df65410b4aab0a282")
+	      ((:commit . "b78d315a8a7bc1747acc8ce10be5c84a43da964c")
 	       (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
 	       (:keywords "convenience")
 	       (:url . "https://github.com/elp-revive/company-cmd"))])
