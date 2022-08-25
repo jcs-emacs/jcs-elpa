@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/buffer-menu-project
 ;; Package-Version: 20220704.646
-;; Package-Commit: 4bf684f2308cad9618bc55a565e30e5f2d491894
+;; Package-Commit: 7a9505868f46d0658d5bc63a7b91bd4455434268
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "25.1") (project "0.8.1") (f "0.20.0"))
 ;; Keywords: convenience buffer menu project

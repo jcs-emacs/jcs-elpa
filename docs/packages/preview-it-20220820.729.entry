@@ -9,7 +9,7 @@
 	      (gh-md
 	       (0 1 1)))
 	     "Preview anything at point" single
-	     ((:commit . "4cc722722d4b040f0af2780086817f87085b5cf8")
+	     ((:commit . "6792a129d41c26dd9107920958ed239e38da1fca")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
 	      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

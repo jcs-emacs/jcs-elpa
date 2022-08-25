@@ -9,7 +9,7 @@
 		   (ht
 		    (2 0)))
 		  "Company backend for Kaomoj" single
-		  ((:commit . "854a98e6dcabbedbe90d71cd7021cea3f34c9e86")
+		  ((:commit . "0890c715ef6495b132c561cd482b05ee74e53bc7")
 		   (:authors
 		    ("Jen-Chieh" . "jcs090218@gmail.com"))
 		   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

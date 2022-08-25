@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/prt
 ;; Package-Version: 20220714.659
-;; Package-Commit: aca37951bc3596ec52c28df1fd472c8cbe11f280
+;; Package-Commit: 357d0cfcd231949de36e637557b2a121b8fded7b
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (spinner "1.7.4"))
 ;; Keywords: convenience

@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/vertico-flx
 ;; Package-Version: 20220704.700
-;; Package-Commit: 4d35ccef8d2ace47ca9e4ef0d8455c19095d2e69
+;; Package-Commit: 59bc61e7b3214d3a6f073047af2b6fd98e4695ff
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (vertico "0.22") (flx "0.5") (flx-style "0.1.1") (ht "2.0") (f "0.20.0") (mbs "0.1.0"))
 ;; Keywords: convenience vertico flx
