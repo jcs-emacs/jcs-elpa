@@ -738,4 +738,4 @@ Example:
 
 ;;; asoc ends here
 
-;;; asoc.el ends here
+^;;; asoc.el ends here

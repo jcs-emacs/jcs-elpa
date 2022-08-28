@@ -519,3 +519,5 @@ The name should similar to namepsace syntax, `System.Collections.UI`, etc."
 
 (provide 'meta-view)
 ;;; meta-view.el ends here
+
+^;;; meta-view.el ends here

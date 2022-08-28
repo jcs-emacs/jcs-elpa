@@ -182,3 +182,5 @@ any other key exits this function."
 (provide 'buffer-move)
 
 ;;; buffer-move.el ends here
+
+^;;; buffer-move.el ends here

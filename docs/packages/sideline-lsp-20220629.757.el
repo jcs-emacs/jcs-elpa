@@ -168,3 +168,5 @@ Execute CALLBACK to display candidates in sideline."
 
 (provide 'sideline-lsp)
 ;;; sideline-lsp.el ends here
+
+^;;; sideline-lsp.el ends here

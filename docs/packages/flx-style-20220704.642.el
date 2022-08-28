@@ -185,3 +185,5 @@
 
 (provide 'flx-style)
 ;;; flx-style.el ends here
+
+^;;; flx-style.el ends here

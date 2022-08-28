@@ -223,3 +223,5 @@ Optional argument INDEX is used to loop through BUFS."
 
 (provide 'vs-revbuf)
 ;;; vs-revbuf.el ends here
+
+^;;; vs-revbuf.el ends here

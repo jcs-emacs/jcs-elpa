@@ -79,3 +79,5 @@
 
 (provide 'recentf-excl)
 ;;; recentf-excl.el ends here
+
+^;;; recentf-excl.el ends here

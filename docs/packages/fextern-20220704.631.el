@@ -107,3 +107,5 @@ This variable is used to check if file are edited externally.")
 
 (provide 'fextern)
 ;;; fextern.el ends here
+
+^;;; fextern.el ends here

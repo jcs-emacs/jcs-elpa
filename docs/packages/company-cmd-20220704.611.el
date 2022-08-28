@@ -122,3 +122,5 @@ the candidates are all uppercase."
 
 (provide 'company-cmd)
 ;;; company-cmd.el ends here
+
+^;;; company-cmd.el ends here

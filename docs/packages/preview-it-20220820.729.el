@@ -294,3 +294,5 @@ Arguments THING and NO-PROPERTIES have same effect to function `thing-at-point'.
 
 (provide 'preview-it)
 ;;; preview-it.el ends here
+
+^;;; preview-it.el ends here

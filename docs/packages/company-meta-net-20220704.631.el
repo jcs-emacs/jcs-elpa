@@ -281,3 +281,5 @@ Arguments COMMAND, ARG and IGNORED are standard arguments from `company-mode`."
 
 (provide 'company-meta-net)
 ;;; company-meta-net.el ends here
+
+^;;; company-meta-net.el ends here

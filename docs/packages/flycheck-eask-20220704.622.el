@@ -62,3 +62,5 @@
 
 (provide 'flycheck-eask)
 ;;; flycheck-eask.el ends here
+
+^;;; flycheck-eask.el ends here

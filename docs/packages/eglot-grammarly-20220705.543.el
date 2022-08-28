@@ -67,3 +67,5 @@ Link: https://github.com/znck/grammarly"
 
 (provide 'eglot-grammarly)
 ;;; eglot-grammarly.el ends here
+
+^;;; eglot-grammarly.el ends here

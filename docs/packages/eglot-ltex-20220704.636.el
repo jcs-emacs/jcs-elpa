@@ -71,3 +71,5 @@ This file is use to activate the language server."
 
 (provide 'eglot-ltex)
 ;;; eglot-ltex.el ends here
+
+^;;; eglot-ltex.el ends here

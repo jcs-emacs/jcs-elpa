@@ -279,3 +279,5 @@ ADD-DEL-NUM : Addition or deletion number."
 
 (provide 'buffer-menu-filter)
 ;;; buffer-menu-filter.el ends here
+
+^;;; buffer-menu-filter.el ends here

@@ -177,3 +177,5 @@ maintainers refuse to add the correct indentation spec to
 
 (provide 'noflet)
 ;;; noflet.el ends here
+
+^;;; noflet.el ends here

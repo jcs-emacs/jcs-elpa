@@ -197,3 +197,5 @@ and SHOW-H."
 
 (provide 'auto-scroll-bar)
 ;;; auto-scroll-bar.el ends here
+
+^;;; auto-scroll-bar.el ends here

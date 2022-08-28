@@ -146,3 +146,5 @@
 
 (provide 'message-clean-mode)
 ;;; message-clean-mode.el ends here
+
+^;;; message-clean-mode.el ends here

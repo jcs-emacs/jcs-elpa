@@ -113,3 +113,5 @@ Argument COMMAND is required in sideline backend."
 
 (provide 'sideline-flycheck)
 ;;; sideline-flycheck.el ends here
+
+^;;; sideline-flycheck.el ends here

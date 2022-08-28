@@ -62,3 +62,5 @@
 
 (provide 'mbs)
 ;;; mbs.el ends here
+
+^;;; mbs.el ends here

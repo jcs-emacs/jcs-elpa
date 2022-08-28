@@ -121,3 +121,5 @@
 
 (provide 'javap-mode)
 ;;; javap-mode.el ends here
+
+^;;; javap-mode.el ends here

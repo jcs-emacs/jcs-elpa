@@ -83,3 +83,5 @@ Argument COMMAND is required in sideline backend."
 
 (provide 'sideline-flymake)
 ;;; sideline-flymake.el ends here
+
+^;;; sideline-flymake.el ends here

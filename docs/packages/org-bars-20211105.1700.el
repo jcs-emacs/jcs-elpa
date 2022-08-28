@@ -628,3 +628,5 @@ This is meant to be used in `post-command-hook'."
 
 (provide 'org-bars)
 ;;; org-bars.el ends here
+
+^;;; org-bars.el ends here

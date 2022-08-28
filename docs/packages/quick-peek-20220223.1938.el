@@ -339,3 +339,5 @@ Return the number of overlays hidden."
 
 (provide 'quick-peek)
 ;;; quick-peek.el ends here
+
+^;;; quick-peek.el ends here

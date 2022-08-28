@@ -91,4 +91,4 @@
 
 ;;; hlsls-mode.el ends here
 
-;;; hlsl-mode.el ends here
+^;;; hlsl-mode.el ends here
