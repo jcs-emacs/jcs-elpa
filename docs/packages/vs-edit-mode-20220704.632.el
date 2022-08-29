@@ -179,5 +179,3 @@
 
 (provide 'vs-edit-mode)
 ;;; vs-edit-mode.el ends here
-
-^;;; vs-edit-mode.el ends here

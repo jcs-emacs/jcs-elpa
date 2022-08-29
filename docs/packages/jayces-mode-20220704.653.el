@@ -126,5 +126,3 @@
 
 (provide 'jayces-mode)
 ;;; jayces-mode.el ends here
-
-^;;; jayces-mode.el ends here

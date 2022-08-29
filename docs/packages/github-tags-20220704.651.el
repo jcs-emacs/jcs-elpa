@@ -92,5 +92,3 @@
 
 (provide 'github-tags)
 ;;; github-tags.el ends here
-
-^;;; github-tags.el ends here

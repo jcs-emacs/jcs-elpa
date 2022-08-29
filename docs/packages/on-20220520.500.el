@@ -146,5 +146,3 @@ triggering hooks during startup."
 
 (provide 'on)
 ;;; on.el ends here
-
-^;;; on.el ends here

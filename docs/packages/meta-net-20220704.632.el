@@ -564,5 +564,3 @@ See function `meta-net--type-data-get' for arguments XML and TYPE."
 
 (provide 'meta-net)
 ;;; meta-net.el ends here
-
-^;;; meta-net.el ends here

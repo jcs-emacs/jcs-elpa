@@ -382,5 +382,3 @@ We use this to eliminate not possible candidates."
 
 (provide 'eldoc-meta-net)
 ;;; eldoc-meta-net.el ends here
-
-^;;; eldoc-meta-net.el ends here

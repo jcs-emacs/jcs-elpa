@@ -104,5 +104,3 @@
 
 (provide 'buffer-menu-project)
 ;;; buffer-menu-project.el ends here
-
-^;;; buffer-menu-project.el ends here

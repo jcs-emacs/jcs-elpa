@@ -197,5 +197,3 @@ Filters on the appropriate regex for the current major mode."
 (provide 'company-c-headers)
 
 ;;; company-c-headers.el ends here
-
-^;;; company-c-headers.el ends here

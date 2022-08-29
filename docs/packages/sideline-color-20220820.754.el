@@ -83,5 +83,3 @@ Argument COMMAND is required in sideline backend."
 
 (provide 'sideline-color)
 ;;; sideline-color.el ends here
-
-^;;; sideline-color.el ends here

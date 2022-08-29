@@ -119,5 +119,3 @@
 
 (provide 'company-coffee)
 ;;; company-coffee.el ends here
-
-^;;; company-coffee.el ends here

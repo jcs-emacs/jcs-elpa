@@ -225,5 +225,3 @@ If REFRESH is non-nil, refresh cache once."
 
 (provide 'hl-preproc)
 ;;; hl-preproc.el ends here
-
-^;;; hl-preproc.el ends here

@@ -136,5 +136,3 @@
 
 (provide 'vsc-multiple-cursors)
 ;;; vsc-multiple-cursors.el ends here
-
-^;;; vsc-multiple-cursors.el ends here

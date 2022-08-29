@@ -305,5 +305,3 @@ Run this manually when editing this file to get an updated the list of keywords.
 
 (provide 'jenkinsfile-mode)
 ;;; jenkinsfile-mode.el ends here
-
-^;;; jenkinsfile-mode.el ends here

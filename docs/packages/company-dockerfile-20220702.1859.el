@@ -94,5 +94,3 @@
 
 (provide 'company-dockerfile)
 ;;; company-dockerfile.el ends here
-
-^;;; company-dockerfile.el ends here

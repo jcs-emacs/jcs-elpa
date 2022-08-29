@@ -159,5 +159,3 @@ If optional argument FLIP is non-nil, reverse query and pattern order."
 
 (provide 'vertico-flx)
 ;;; vertico-flx.el ends here
-
-^;;; vertico-flx.el ends here

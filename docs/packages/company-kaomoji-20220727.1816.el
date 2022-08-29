@@ -111,5 +111,3 @@ Arguments COMMAND, ARG and IGNORED are standard arguments from `company-mode`."
 
 (provide 'company-kaomoji)
 ;;; company-kaomoji.el ends here
-
-^;;; company-kaomoji.el ends here

@@ -239,5 +239,3 @@
 
 (provide 'multi-shell)
 ;;; multi-shell.el ends here
-
-^;;; multi-shell.el ends here

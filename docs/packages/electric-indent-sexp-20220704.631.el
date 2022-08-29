@@ -125,5 +125,3 @@
 
 (provide 'electric-indent-sexp)
 ;;; electric-indent-sexp.el ends here
-
-^;;; electric-indent-sexp.el ends here

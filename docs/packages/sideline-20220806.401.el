@@ -495,5 +495,3 @@ If argument ON-LEFT is non-nil, it will align to the left instead of right."
 
 (provide 'sideline)
 ;;; sideline.el ends here
-
-^;;; sideline.el ends here

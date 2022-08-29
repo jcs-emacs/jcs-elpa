@@ -88,5 +88,3 @@
 
 (provide 'prt)
 ;;; prt.el ends here
-
-^;;; prt.el ends here

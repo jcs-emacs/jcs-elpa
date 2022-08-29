@@ -132,5 +132,3 @@ Argument COMMAND is required in sideline backend."
 
 (provide 'sideline-blame)
 ;;; sideline-blame.el ends here
-
-^;;; sideline-blame.el ends here

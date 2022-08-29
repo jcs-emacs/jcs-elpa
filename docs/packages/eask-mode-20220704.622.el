@@ -79,5 +79,3 @@
 
 (provide 'eask-mode)
 ;;; eask-mode.el ends here
-
-^;;; eask-mode.el ends here

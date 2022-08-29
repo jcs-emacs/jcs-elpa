@@ -152,5 +152,3 @@ Arguments BEG and END are region parameters."
 
 (provide 'turbo-log)
 ;;; turbo-log.el ends here
-
-^;;; turbo-log.el ends here
