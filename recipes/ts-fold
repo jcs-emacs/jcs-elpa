@@ -1,1 +1,1 @@
-(ts-fold :repo "jcs-elpa/ts-fold" :fetcher github)
+(ts-fold :repo "emacs-tree-sitter/ts-fold" :fetcher github)
