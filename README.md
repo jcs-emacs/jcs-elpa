@@ -42,9 +42,7 @@ ELPA for [jcs-emacs](https://github.com/jcs-emacs/jcs-emacs), using [github-elpa
 Add the following to your configuration:
 
 ```elisp
-(setq package-archives
-      `(,@package-archives
-        ("jcs-elpa" . "https://jcs-emacs.github.io/jcs-elpa/packages/")))
+(add-to-list 'package-archives '( "jcs-elpa" . "https://jcs-emacs.github.io/jcs-elpa/packages/") t)
 ```
 
 Use priority if you don't want this archive overridden with other larger archives:
