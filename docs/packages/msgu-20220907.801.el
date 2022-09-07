@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/msgu
-;; Package-Version: 20220907.728
-;; Package-Commit: 84f75cd0e36213d02d137833fd0ba7970e8c3ba9
+;; Package-Version: 20220907.801
+;; Package-Commit: 5f1d14db7695109a12ce30346beb2d5523981c4c
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "24.3"))
 ;; Keywords: lisp
@@ -39,6 +39,12 @@
   :group 'convenience
   :link '(url-link :tag "Repository" "https://github.com/jcs-elpa/msgu"))
 
+(defcustom msgu-log-max (or (ignore-errors (default-value 'message-log-max))
+                            1000)
+  "`message-log-max' for unsilencing."
+  :type 'integer
+  :group 'msgu)
+
 (defmacro msgu-inhibit-log (&rest body)
   "Execute BODY without write it to message buffer."
   (declare (indent 0) (debug t))
@@ -56,7 +62,7 @@
 (defmacro msgu-unsilent (&rest body)
   "Execute BODY with ensuring message log."
   (declare (indent 0) (debug t))
-  `(let ((message-log-max 1000)) ,@body))
+  `(let ((message-log-max msgu-log-max)) ,@body))
 
 ;;;###autoload
 (defun msgu-current (fmt &rest args)
@@ -64,6 +70,46 @@
   (message "%s%s"
            (if (current-message) (concat (current-message) "\n\n") "")
            (apply #'format fmt args)))
+
+;;
+;; (@* "Util" )
+;;
+
+(defcustom msgu-sleep-seconds 0.4
+  "Default seconds to sleep after calling `msgu-sleep' function."
+  :type 'number
+  :group 'msgu)
+
+(defcustom msgu-sit-seconds 100
+  "Default seconds to sit after calling `msgu-sit' function."
+  :type 'number
+  :group 'msgu)
+
+;;;###autoload
+(defun msgu-sleep (&optional seconds milliseconds)
+  "Wrap `sleep-for' function width default SECONDS and MILLISECONDS."
+  (sleep-for (or seconds msgu-sleep-seconds) milliseconds))
+
+;;;###autoload
+(defun msgu-sit (&optional seconds nodisp)
+  "Wrap `sit-for' function with default SECONDS and NODISP."
+  (sit-for (or seconds msgu-sit-seconds) nodisp))
+
+;;
+;; (@* "Color" )
+;;
+
+;; TOPIC: How to preserve color in *Messages* buffer?
+;; SOURCE: https://emacs.stackexchange.com/questions/20171/how-to-preserve-color-in-messages-buffer
+
+(defun msgu-color (fmt &rest args)
+  "Like function `message' but preserve color in the buffer."
+  (msgu-inhibit-log (apply 'message fmt args))
+  (with-current-buffer (messages-buffer)
+    (save-excursion
+      (goto-char (point-max))
+      (let ((inhibit-read-only t))
+        (insert (apply 'format fmt args))))))
 
 (provide 'msgu)
 ;;; msgu.el ends here

@@ -1,9 +1,9 @@
 (msgu .
-      [(20220907 728)
+      [(20220907 801)
        ((emacs
 	 (24 3)))
        "Utility functions help output the messages" single
-       ((:commit . "84f75cd0e36213d02d137833fd0ba7970e8c3ba9")
+       ((:commit . "5f1d14db7695109a12ce30346beb2d5523981c4c")
 	(:authors
 	 ("Jen-Chieh" . "jcs090218@gmail.com"))
 	(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
