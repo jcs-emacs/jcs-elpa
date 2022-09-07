@@ -5,10 +5,10 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/message-clean-mode
-;; Package-Version: 20220704.656
-;; Package-Commit: 5b1f6a9b57360a000f90bb59acdde2dafa61932c
+;; Package-Version: 20220907.731
+;; Package-Commit: 427e8d261f4ce970dfcd1ba625761d0b80c345c9
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "25.1"))
+;; Package-Requires: ((emacs "25.1") (msgu "0.1.0"))
 ;; Keywords: convenience messages clean
 
 ;; This file is NOT part of GNU Emacs.
@@ -35,6 +35,8 @@
 
 (require 'cl-lib)
 (require 'subr-x)
+
+(require 'msgu)
 
 (defgroup message-clean nil
   "Keep messages buffer clean."
@@ -104,7 +106,7 @@
 
 (defun message-clean-mode--mute (fnc &rest args)
   "Mute any commands (FNC, ARGS)."
-  (let ((inhibit-message t) message-log-max)
+  (msgu-silent
     (apply #'message-clean-mode--apply (called-interactively-p 'interactive) fnc args)))
 
 (defun message-clean-mode--echo (fnc &rest args)

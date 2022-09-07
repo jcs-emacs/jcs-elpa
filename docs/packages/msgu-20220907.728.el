@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/msgu
-;; Package-Version: 20220907.700
-;; Package-Commit: 33a56c7744f38abc6f9bc1b87e0970bbaf000a4a
+;; Package-Version: 20220907.728
+;; Package-Commit: 84f75cd0e36213d02d137833fd0ba7970e8c3ba9
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "24.3"))
 ;; Keywords: lisp
@@ -39,23 +39,24 @@
   :group 'convenience
   :link '(url-link :tag "Repository" "https://github.com/jcs-elpa/msgu"))
 
-(defmacro msgu-unsilent (&rest body)
-  "Execute BODY with ensuring message log."
+(defmacro msgu-inhibit-log (&rest body)
+  "Execute BODY without write it to message buffer."
   (declare (indent 0) (debug t))
-  `(let ((message-log-max 1000)) ,@body))
+  `(let (message-log-max) ,@body))
 
 ;;;###autoload
 (defmacro msgu-silent (&rest body)
   "Execute BODY without message."
   (declare (indent 0) (debug t))
-  `(let (message-log-max)
+  `(msgu-inhibit-log
      (with-temp-message (or (current-message) nil)
        (let ((inhibit-message t)) ,@body))))
 
-(defmacro msgu-no-log-apply (&rest body)
-  "Execute BODY without write it to message buffer."
+;;;###autoload
+(defmacro msgu-unsilent (&rest body)
+  "Execute BODY with ensuring message log."
   (declare (indent 0) (debug t))
-  `(let (message-log-max) ,@body))
+  `(let ((message-log-max 1000)) ,@body))
 
 ;;;###autoload
 (defun msgu-current (fmt &rest args)
