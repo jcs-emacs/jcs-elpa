@@ -5,10 +5,10 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/msgu
-;; Package-Version: 20220907.801
-;; Package-Commit: 5f1d14db7695109a12ce30346beb2d5523981c4c
+;; Package-Version: 20220907.808
+;; Package-Commit: a32c9793210017d54fd688b1c41615200f7449d2
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "24.3"))
+;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: lisp
 
 ;; This file is not part of GNU Emacs.
@@ -66,7 +66,9 @@
 
 ;;;###autoload
 (defun msgu-current (fmt &rest args)
-  "Log messages with current message on top if available."
+  "Log messages with current message on top if available.
+
+Arguments FMT and ARGS are used for format message."
   (message "%s%s"
            (if (current-message) (concat (current-message) "\n\n") "")
            (apply #'format fmt args)))
@@ -103,7 +105,9 @@
 ;; SOURCE: https://emacs.stackexchange.com/questions/20171/how-to-preserve-color-in-messages-buffer
 
 (defun msgu-color (fmt &rest args)
-  "Like function `message' but preserve color in the buffer."
+  "Like function `message' but preserve color in the buffer.
+
+Arguments FMT and ARGS are used for format message."
   (msgu-inhibit-log (apply 'message fmt args))
   (with-current-buffer (messages-buffer)
     (save-excursion
