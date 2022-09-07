@@ -1,0 +1,1 @@
+(msgu :repo "jcs-elpa/msgu" :fetcher github)
