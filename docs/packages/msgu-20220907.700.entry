@@ -1,0 +1,11 @@
+(msgu .
+      [(20220907 700)
+       ((emacs
+	 (24 3)))
+       "Utility functions help output the messages" single
+       ((:commit . "33a56c7744f38abc6f9bc1b87e0970bbaf000a4a")
+	(:authors
+	 ("Jen-Chieh" . "jcs090218@gmail.com"))
+	(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	(:keywords "lisp")
+	(:url . "https://github.com/jcs-elpa/msgu"))])
