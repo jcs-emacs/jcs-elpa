@@ -1,0 +1,1 @@
+(flymake-eask :repo "emacs-eask/flymake-eask" :fetcher github)
