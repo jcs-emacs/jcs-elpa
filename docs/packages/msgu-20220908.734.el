@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/msgu
-;; Package-Version: 20220907.808
-;; Package-Commit: a32c9793210017d54fd688b1c41615200f7449d2
+;; Package-Version: 20220908.734
+;; Package-Commit: 690df6d067fd2d79f975d4d34f58e1350e417dc3
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: lisp
@@ -64,15 +64,6 @@
   (declare (indent 0) (debug t))
   `(let ((message-log-max msgu-log-max)) ,@body))
 
-;;;###autoload
-(defun msgu-current (fmt &rest args)
-  "Log messages with current message on top if available.
-
-Arguments FMT and ARGS are used for format message."
-  (message "%s%s"
-           (if (current-message) (concat (current-message) "\n\n") "")
-           (apply #'format fmt args)))
-
 ;;
 ;; (@* "Util" )
 ;;
@@ -114,6 +105,24 @@ Arguments FMT and ARGS are used for format message."
       (goto-char (point-max))
       (let ((inhibit-read-only t))
         (insert (apply 'format fmt args))))))
+
+;;
+;; (@* "Others" )
+;;
+
+(defcustom msgu-currnet-format "%s\n\n"
+  "String use to format current message."
+  :type 'string
+  :group 'msgu)
+
+;;;###autoload
+(defun msgu-current (fmt &rest args)
+  "Log messages with current message on top if available.
+
+Arguments FMT and ARGS are used for format message."
+  (message "%s%s"
+           (if (current-message) (format msgu-currnet-format (current-message)) "")
+           (apply #'format fmt args)))
 
 (provide 'msgu)
 ;;; msgu.el ends here
