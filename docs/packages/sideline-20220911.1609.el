@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline
-;; Package-Version: 20220911.1417
-;; Package-Commit: 8c51719d4687c839324b4b04a909d2d45f80697a
+;; Package-Version: 20220911.1609
+;; Package-Commit: 48714f3503d16469dac325dbc909a4a9a3e4a804
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: convenience
@@ -85,8 +85,8 @@
   :group 'sideline)
 
 (defface sideline-backend
-  '((((background light)) :foreground "#D6D6D6")
-    (t :foreground "#3E3E3E"))
+  '((((background light)) :foreground "#7F7F7F")
+    (t :foreground "#9B9B9B"))
   "Face used to highlight action text."
   :group 'sideline)
 
