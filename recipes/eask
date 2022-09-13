@@ -1,1 +1,0 @@
-(eask :repo "emacs-eask/eask" :fetcher github)
