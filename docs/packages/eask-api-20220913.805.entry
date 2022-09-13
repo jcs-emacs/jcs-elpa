@@ -1,9 +1,9 @@
 (eask-api .
-	  [(20220913 450)
+	  [(20220913 805)
 	   ((emacs
 	     (26 1)))
 	   "Eask API" single
-	   ((:commit . "dfabbb401aee3203c3b648525ee412bfe3ad23d8")
+	   ((:commit . "4780bef9b33d992dc50eb3a093bef2eed495a72f")
 	    (:authors
 	     ("Jen-Chieh" . "jcs090218@gmail.com"))
 	    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
