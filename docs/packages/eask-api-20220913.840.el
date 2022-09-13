@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-eask/eask-api
-;; Package-Version: 20220913.805
-;; Package-Commit: 4780bef9b33d992dc50eb3a093bef2eed495a72f
+;; Package-Version: 20220913.840
+;; Package-Commit: 755f614c5caf06954d6e812d95e1f9018a1921cc
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: lisp eask api
@@ -32,7 +32,6 @@
 ;;
 
 ;;; Code:
-
 
 ;; ~/lisp/checker/check-eask.el
 (defvar eask--checker-log nil)
@@ -1664,4 +1663,8 @@ Standard is, 0 (error), 1 (warning), 2 (info), 3 (log), 4 or above (debug)."
   :type 'string)
 
 (provide 'eask-api)
+;; Local Variables:
+;; coding: utf-8
+;; no-byte-compile: t
+;; End:
 ;;; eask-api.el ends here
