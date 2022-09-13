@@ -4,9 +4,9 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
-;; URL: https://github.com/emacs-eask/eask
-;; Package-Version: 20220913.441
-;; Package-Commit: 3b731fa771ae4f71c2fa853eab0575bc8b1d4b1a
+;; URL: https://github.com/emacs-eask/eask-api
+;; Package-Version: 20220913.450
+;; Package-Commit: dfabbb401aee3203c3b648525ee412bfe3ad23d8
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: lisp eask api
