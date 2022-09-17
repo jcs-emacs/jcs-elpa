@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/file-header
-;; Package-Version: 20220917.1936
-;; Package-Commit: c3adb21dc0e1569ee18e57033d671916478d7e69
+;; Package-Version: 20220917.1940
+;; Package-Commit: f993abcb0932624fa16c5d7e3970a77e06c5ef80
 ;; Version: 0.1.2
 ;; Package-Requires: ((emacs "25.1") (f "0.20.0") (s "1.12.0"))
 ;; Keywords: convenience file header
@@ -81,6 +81,7 @@
 Arguments LANG and FILE see function `file-header--insert' for more information.
 
 Optional argument DOC-STRING is optional document string."
+  (declare (doc-string 4) (indent 3))
   (or name (error "Cannot define '%s' as a function" name))
   `(defun ,name nil ,doc-string (file-header--insert ,lang ,file)))
 
