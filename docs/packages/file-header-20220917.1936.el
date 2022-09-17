@@ -5,10 +5,10 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/file-header
-;; Package-Version: 20220704.650
-;; Package-Commit: 09bea3a0f42b2e8c1042bd550b2c3a818be0843f
+;; Package-Version: 20220917.1936
+;; Package-Commit: c3adb21dc0e1569ee18e57033d671916478d7e69
 ;; Version: 0.1.2
-;; Package-Requires: ((emacs "25.1"))
+;; Package-Requires: ((emacs "25.1") (f "0.20.0") (s "1.12.0"))
 ;; Keywords: convenience file header
 
 ;; This file is NOT part of GNU Emacs.
@@ -35,30 +35,58 @@
 
 (require 'thingatpt)
 
+(require 'f)
+(require 's)
+
 (defgroup file-header nil
   "Highly customizable self design file header."
   :prefix "file-header-"
   :group 'convenience
   :link '(url-link :tag "Repository" "https://github.com/jcs-elpa/file-header"))
 
-(defcustom file-header-template-config-filepath ""
+(defcustom file-header-template-config-filepath
+  (concat user-emacs-directory "templates/config.properties")
   "File path ot template config properties."
   :type 'string
   :group 'file-header)
 
-(defun file-header--s-replace (old new s)
-  "Replace OLD with NEW in S."
-  (replace-regexp-in-string (regexp-quote old) new s t t))
+(defcustom file-header-template-dir
+  (concat user-emacs-directory "templates/")
+  "Template directory path for file headers."
+  :type 'string
+  :group 'file-header)
 
-(defun file-header--get-string-from-file (path)
+;;
+;; (@* "Util" )
+;;
+
+(defun file-header--file-content (path)
   "Return PATH's file content."
-  (with-temp-buffer
-    (insert-file-contents path)
-    (buffer-string)))
+  (if (file-exists-p path)
+      (with-temp-buffer (insert-file-contents path) (buffer-string))
+    ""))
+
+;;
+;; (@* "Core" )
+;;
+
+(defun file-header--insert (lang file)
+  "Insert file header by LANG and it's FILE path."
+  (file-header-insert-template-by-file-path (f-join file-header-template-dir lang file)))
+
+;;;###autoload
+(defmacro file-header-defins (name lang file &optional doc-string)
+  "Define insertfion function with NAME.
+
+Arguments LANG and FILE see function `file-header--insert' for more information.
+
+Optional argument DOC-STRING is optional document string."
+  (or name (error "Cannot define '%s' as a function" name))
+  `(defun ,name nil ,doc-string (file-header--insert ,lang ,file)))
 
 (defun file-header--parse-ini (path)
   "Parse a .ini file from PATH."
-  (let* ((tmp-ini (file-header--get-string-from-file path))
+  (let* ((tmp-ini (file-header--file-content path))
          (tmp-ini (split-string tmp-ini "\n"))
          (tmp-keyword "") (tmp-value "")
          (count 0) tmp-ini-list tmp-pair-list)
@@ -106,14 +134,14 @@
         ;; Check if the value is a snippet
         (if (string-match-p "`" tmp-value)
             ;; Remove ` for evaluation
-            (setq tmp-value (file-header--s-replace "`" "" tmp-value)
-                  template-str (file-header--s-replace tmp-keyword
-                                                       (eval (thing-at-point--read-from-whole-string tmp-value))
-                                                       template-str))
+            (setq tmp-value (s-replace "`" "" tmp-value)
+                  template-str (s-replace tmp-keyword
+                                          (eval (thing-at-point--read-from-whole-string tmp-value))
+                                          template-str))
           ;; Replace it normally with a string
-          (setq template-str (file-header--s-replace tmp-keyword
-                                                     tmp-value
-                                                     template-str))))
+          (setq template-str (s-replace tmp-keyword
+                                        tmp-value
+                                        template-str))))
       ;; Add 2 to skip keyword and value at the same time
       (cl-incf tmp-index 2)))
 
@@ -123,7 +151,7 @@
 ;;;###autoload
 (defun file-header-get-template-by-file-path (path)
   "Swap all keywords then return it from the PATH."
-  (file-header-swap-keyword-template (file-header--get-string-from-file path)))
+  (file-header-swap-keyword-template (file-header--file-content path)))
 
 ;;;###autoload
 (defun file-header-insert-template-by-file-path (path)
