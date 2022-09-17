@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/file-header
-;; Package-Version: 20220917.1940
-;; Package-Commit: f993abcb0932624fa16c5d7e3970a77e06c5ef80
+;; Package-Version: 20220917.1943
+;; Package-Commit: 0715130655e931ef3122ee3f3dd76df12edd0c92
 ;; Version: 0.1.2
 ;; Package-Requires: ((emacs "25.1") (f "0.20.0") (s "1.12.0"))
 ;; Keywords: convenience file header
@@ -65,6 +65,11 @@
   (if (file-exists-p path)
       (with-temp-buffer (insert-file-contents path) (buffer-string))
     ""))
+
+;;;###autoload
+(defun file-header-template-string (path)
+  "Read template from PATH to string."
+  (file-header--file-content (f-join file-header-template-dir path)))
 
 ;;
 ;; (@* "Core" )
