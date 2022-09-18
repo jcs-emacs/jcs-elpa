@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/file-header
-;; Package-Version: 20220917.1943
-;; Package-Commit: 0715130655e931ef3122ee3f3dd76df12edd0c92
+;; Package-Version: 20220918.728
+;; Package-Commit: 4083e50f0b6fea2d5a94a52b538b9f7258f5252a
 ;; Version: 0.1.2
 ;; Package-Requires: ((emacs "25.1") (f "0.20.0") (s "1.12.0"))
 ;; Keywords: convenience file header
@@ -33,6 +33,7 @@
 
 ;;; Code:
 
+(require 'cl-lib)
 (require 'thingatpt)
 
 (require 'f)
@@ -89,6 +90,20 @@ Optional argument DOC-STRING is optional document string."
   (declare (doc-string 4) (indent 3))
   (or name (error "Cannot define '%s' as a function" name))
   `(defun ,name nil ,doc-string (file-header--insert ,lang ,file)))
+
+;;;###autoload
+(defmacro file-header-defsrc (name prompt options &rest cases)
+  "Define file header source function with NAME.
+
+Arugment PROMPT is the question to ask for completion; argument OPTIONS is used
+for completion read.
+
+The rest of the arguments CASES are use to fill insertion's condition."
+  (declare (indent 2))
+  (or name (error "Cannot define '%s' as a function" name))
+  `(defun ,name (source)
+     (interactive (list (completing-read ,prompt ,options)))
+     (pcase (cl-position source ,options :test 'string=) ,@cases)))
 
 (defun file-header--parse-ini (path)
   "Parse a .ini file from PATH."
