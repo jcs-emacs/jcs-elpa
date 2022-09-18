@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-revbuf
-;; Package-Version: 20220918.837
-;; Package-Commit: 2966d8f197641fdf7ebf0f94971e516508b98167
+;; Package-Version: 20220918.847
+;; Package-Commit: 1858cd77bd61e5219c9b439b4550c48a7d5dc547
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1") (fextern "0.1.0"))
 ;; Keywords: convenience revert vs
@@ -216,7 +216,7 @@ Optional argument INDEX is used to loop through BUFS."
 
 ;;;###autoload
 (define-minor-mode vs-revbuf-mode
-  "Minor mode 'vs-revbuf-mode'."
+  "Minor mode `vs-revbuf-mode'."
   :global t
   :require 'vs-revbuf-mode
   :group 'vs-revbuf
