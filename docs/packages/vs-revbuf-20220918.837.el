@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-revbuf
-;; Package-Version: 20220704.633
-;; Package-Commit: 560d0556039b8831f59fca147db39aef894cfbbd
+;; Package-Version: 20220918.837
+;; Package-Commit: 2966d8f197641fdf7ebf0f94971e516508b98167
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1") (fextern "0.1.0"))
 ;; Keywords: convenience revert vs
@@ -203,7 +203,8 @@ Optional argument INDEX is used to loop through BUFS."
 
 (defun vs-revbuf--focus-in (&rest _)
   "Hook when focus in."
-  (when (frame-focus-state) (vs-revbuf-all)))
+  (when (and (frame-focus-state) (null (active-minibuffer-window)))
+    (vs-revbuf-all)))
 
 (defun vs-revbuf-mode--enable ()
   "Enable function `vs-revbuf-mode'."
