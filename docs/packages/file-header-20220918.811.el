@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/file-header
-;; Package-Version: 20220918.807
-;; Package-Commit: 87391a2c7a15b914f00ee02439e7e7f644db29a2
+;; Package-Version: 20220918.811
+;; Package-Commit: 7f4ea8e1262673744f853fc3174eb2243acf7e28
 ;; Version: 0.1.2
 ;; Package-Requires: ((emacs "25.1") (f "0.20.0") (s "1.12.0"))
 ;; Keywords: convenience file header
@@ -98,7 +98,7 @@ Optional argument DOC-STRING is optional document string."
 Arugment PROMPT is the question to ask for completion; argument OPTIONS is used
 for completion read.
 
-The rest of the arguments CASES are use to fill insertion's condition."
+The rest of the arguments BODY are use to fill insertion's condition."
   (declare (indent 2))
   (or name (error "Cannot define '%s' as a function" name))
   `(defun ,name (source)
