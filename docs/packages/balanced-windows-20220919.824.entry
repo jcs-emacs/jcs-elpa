@@ -1,0 +1,11 @@
+(balanced-windows .
+		  [(20220919 824)
+		   ((emacs
+		     (25 1)))
+		   "Keep windows balanced" single
+		   ((:commit . "fd360ca6416e56d8df92bbcb0f7aec37e201f2e7")
+		    (:authors
+		     ("wouter bolsterlee" . "wouter@bolsterl.ee"))
+		    (:maintainer "wouter bolsterlee" . "wouter@bolsterl.ee")
+		    (:keywords "convenience")
+		    (:url . "https://github.com/elp-revive/emacs-balanced-windows"))])
