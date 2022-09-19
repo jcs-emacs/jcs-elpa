@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/file-header
-;; Package-Version: 20220918.811
-;; Package-Commit: 7f4ea8e1262673744f853fc3174eb2243acf7e28
+;; Package-Version: 20220919.532
+;; Package-Commit: ba8b9ad60bd217a84baaff978a99223795955821
 ;; Version: 0.1.2
 ;; Package-Requires: ((emacs "25.1") (f "0.20.0") (s "1.12.0"))
 ;; Keywords: convenience file header
@@ -36,8 +36,9 @@
 (require 'cl-lib)
 (require 'thingatpt)
 
-(require 'f)
-(require 's)
+(eval-when-compile
+  (require 'f)
+  (require 's))
 
 (defgroup file-header nil
   "Highly customizable self design file header."
@@ -70,6 +71,7 @@
 ;;;###autoload
 (defun file-header-template-string (path)
   "Read template from PATH to string."
+  (require 'f)
   (file-header--file-content (f-join file-header-template-dir path)))
 
 ;;
@@ -78,6 +80,7 @@
 
 (defun file-header--insert (lang file)
   "Insert file header by LANG and it's FILE path."
+  (require 'f)
   (file-header-insert-template-by-file-path (f-join file-header-template-dir lang file)))
 
 ;;;###autoload
@@ -138,6 +141,7 @@ The rest of the arguments BODY are use to fill insertion's condition."
 ;;;###autoload
 (defun file-header-swap-keyword-template (template-str)
   "Swap all keyword in TEMPLATE-STR to proper information."
+  (require 's)
   (let ((tmp-keyword "") (tmp-value "") (tmp-index 0) tmp-ini-list)
     ;; parse and get the list of keyword and value
     (setq tmp-ini-list (file-header--parse-ini file-header-template-config-filepath))
