@@ -5,10 +5,10 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/file-header
-;; Package-Version: 20220919.601
-;; Package-Commit: 1c2b4f76f08917ecc2ea16d575a676080f064806
+;; Package-Version: 20220919.606
+;; Package-Commit: f0fc3de4d57a7547529e8ee7b196a8131ce3a45d
 ;; Version: 0.1.2
-;; Package-Requires: ((emacs "28.1") (f "0.20.0"))
+;; Package-Requires: ((emacs "28.1"))
 ;; Keywords: convenience file header
 
 ;; This file is NOT part of GNU Emacs.
@@ -35,9 +35,6 @@
 
 (require 'cl-lib)
 (require 'thingatpt)
-
-(eval-when-compile
-  (require 'f))
 
 (defgroup file-header nil
   "Highly customizable self design file header."
@@ -67,11 +64,14 @@
       (with-temp-buffer (insert-file-contents path) (buffer-string))
     ""))
 
+(defun file-header--f-join (&rest args)
+  "Concatenate ARGS to path."
+  (cl-reduce (lambda (a b) (expand-file-name b a)) args))
+
 ;;;###autoload
 (defun file-header-template-string (path)
   "Read template from PATH to string."
-  (require 'f)
-  (file-header--file-content (f-join file-header-template-dir path)))
+  (file-header--file-content (file-header--f-join file-header-template-dir path)))
 
 ;;
 ;; (@* "Core" )
@@ -79,8 +79,7 @@
 
 (defun file-header--insert (lang file)
   "Insert file header by LANG and it's FILE path."
-  (require 'f)
-  (file-header-insert-template-by-file-path (f-join file-header-template-dir lang file)))
+  (file-header-insert-template-by-file-path (file-header--f-join file-header-template-dir lang file)))
 
 ;;;###autoload
 (defmacro file-header-defins (name lang file &optional doc-string)
