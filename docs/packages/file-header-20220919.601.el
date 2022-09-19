@@ -5,10 +5,10 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/file-header
-;; Package-Version: 20220919.532
-;; Package-Commit: ba8b9ad60bd217a84baaff978a99223795955821
+;; Package-Version: 20220919.601
+;; Package-Commit: 1c2b4f76f08917ecc2ea16d575a676080f064806
 ;; Version: 0.1.2
-;; Package-Requires: ((emacs "25.1") (f "0.20.0") (s "1.12.0"))
+;; Package-Requires: ((emacs "28.1") (f "0.20.0"))
 ;; Keywords: convenience file header
 
 ;; This file is NOT part of GNU Emacs.
@@ -37,8 +37,7 @@
 (require 'thingatpt)
 
 (eval-when-compile
-  (require 'f)
-  (require 's))
+  (require 'f))
 
 (defgroup file-header nil
   "Highly customizable self design file header."
@@ -141,7 +140,6 @@ The rest of the arguments BODY are use to fill insertion's condition."
 ;;;###autoload
 (defun file-header-swap-keyword-template (template-str)
   "Swap all keyword in TEMPLATE-STR to proper information."
-  (require 's)
   (let ((tmp-keyword "") (tmp-value "") (tmp-index 0) tmp-ini-list)
     ;; parse and get the list of keyword and value
     (setq tmp-ini-list (file-header--parse-ini file-header-template-config-filepath))
@@ -159,14 +157,14 @@ The rest of the arguments BODY are use to fill insertion's condition."
         ;; Check if the value is a snippet
         (if (string-match-p "`" tmp-value)
             ;; Remove ` for evaluation
-            (setq tmp-value (s-replace "`" "" tmp-value)
-                  template-str (s-replace tmp-keyword
-                                          (eval (thing-at-point--read-from-whole-string tmp-value))
-                                          template-str))
+            (setq tmp-value (string-replace "`" "" tmp-value)
+                  template-str (string-replace tmp-keyword
+                                               (eval (thing-at-point--read-from-whole-string tmp-value))
+                                               template-str))
           ;; Replace it normally with a string
-          (setq template-str (s-replace tmp-keyword
-                                        tmp-value
-                                        template-str))))
+          (setq template-str (string-replace tmp-keyword
+                                             tmp-value
+                                             template-str))))
       ;; Add 2 to skip keyword and value at the same time
       (cl-incf tmp-index 2)))
 
