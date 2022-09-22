@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline
-;; Package-Version: 20220922.459
-;; Package-Commit: 5d20f2131403562bda9074cde783ec9299b00c1a
+;; Package-Version: 20220922.508
+;; Package-Commit: 0bfdb6274cda0c19424c78804086ed93df96b4bb
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: convenience
@@ -171,6 +171,13 @@
 
 (defvar-local sideline--text-scale-mode-amount nil
   "Record of last variable `text-scale-mode-amount'.")
+
+;;
+;; (@* "Externals" )
+;;
+
+(declare-function string-pixel-width "subr-x.el")   ; TODO: remove this after 29.1
+(declare-function shr-string-pixel-width "shr.el")  ; TODO: remove this after 29.1
 
 ;;
 ;; (@* "Entry" )
