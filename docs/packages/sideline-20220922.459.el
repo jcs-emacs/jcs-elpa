@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline
-;; Package-Version: 20220922.453
-;; Package-Commit: 7c5891e08236851078a806def32c038ef178a9b4
+;; Package-Version: 20220922.459
+;; Package-Commit: 5d20f2131403562bda9074cde783ec9299b00c1a
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: convenience
@@ -219,6 +219,7 @@
   `(when (buffer-live-p ,buffer-or-name)
      (with-current-buffer ,buffer-or-name ,@body)))
 
+;; TODO: Use function `string-pixel-width' after 29.1
 (defun sideline--string-pixel-width (str)
   "Return the width of STR in pixels."
   (if (fboundp #'string-pixel-width)
