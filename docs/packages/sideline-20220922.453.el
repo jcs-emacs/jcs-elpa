@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline
-;; Package-Version: 20220911.1609
-;; Package-Commit: 48714f3503d16469dac325dbc909a4a9a3e4a804
+;; Package-Version: 20220922.453
+;; Package-Commit: 7c5891e08236851078a806def32c038ef178a9b4
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: convenience
@@ -47,7 +47,6 @@
 (require 'cl-lib)
 (require 'face-remap)
 (require 'rect)
-(require 'shr)
 (require 'subr-x)
 
 (defgroup sideline nil
@@ -220,12 +219,17 @@
   `(when (buffer-live-p ,buffer-or-name)
      (with-current-buffer ,buffer-or-name ,@body)))
 
+(defun sideline--string-pixel-width (str)
+  "Return the width of STR in pixels."
+  (if (fboundp #'string-pixel-width)
+      (string-pixel-width str)
+    (require 'shr)
+    (shr-string-pixel-width str)))
+
 (defun sideline--str-len (str)
   "Calculate STR in pixel width."
   (let ((width (window-font-width))
-        (len (if (fboundp #'string-pixel-width)
-                 (string-pixel-width str)
-               (shr-string-pixel-width str))))
+        (len (sideline--string-pixel-width str)))
     (+ (/ len width)
        (if (zerop (% len width)) 0 1))))  ; add one if exceeed
 
