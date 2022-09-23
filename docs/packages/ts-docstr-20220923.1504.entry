@@ -1,5 +1,5 @@
 (ts-docstr .
-	   [(20220923 1246)
+	   [(20220923 1504)
 	    ((emacs
 	      (27 1))
 	     (tree-sitter
@@ -11,7 +11,7 @@
 	     (msgu
 	      (0 1 0)))
 	    "A document string minor mode using tree-sitter" tar
-	    ((:commit . "875ff0a392a187177d5221601ec862c1997bfe54")
+	    ((:commit . "950b4f4a0fa6a0c224dafd7d461861821d626074")
 	     (:authors
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))
 	     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
