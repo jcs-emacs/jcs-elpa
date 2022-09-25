@@ -1,0 +1,11 @@
+(toggle-profiler .
+		 [(20220925 1438)
+		  ((emacs
+		    (26 1)))
+		  "Useful functions to interact with profiler" single
+		  ((:commit . "81a9deb64384ad1d930e4e6f70be184f05728966")
+		   (:authors
+		    ("Jen-Chieh" . "jcs090218@gmail.com"))
+		   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		   (:keywords "convenience")
+		   (:url . "https://github.com/jcs-elpa/toggle-profiler"))])
