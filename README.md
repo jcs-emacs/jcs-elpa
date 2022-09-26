@@ -1,31 +1,12 @@
-<p align="center">
-<img src="./docs/etc/sink_black.png#gh-light-mode-only" width="25%"/>
-<img src="./docs/etc/sink_white.png#gh-dark-mode-only" width="25%"/>
-</p>
-
-<br/>
-
-<p align="center">
 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg" alt="License"></a>
 <a href="https://www.gnu.org/software/emacs/download.html"><img src="https://raw.githubusercontent.com/jcs-emacs/badges/master/elpa/emacs.svg" alt="Emacs"></a>
 <a href="#"><img src="https://raw.githubusercontent.com/jcs-emacs/badges/master/elpa/packages.svg" alt="Packages"></a>
-</p>
-
-<p align="center">
 <a href="#"><img src="https://raw.githubusercontent.com/jcs-emacs/badges/master/elpa/system.svg" alt="System"></a>
-</p>
-
-<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
-**Table of Contents**
-
-- [jcs-elpa](#jcs-elpa)
-    - [🔨 How to use?](#🔨-how-to-use)
-    - [Contribute](#contribute)
-    - [📝 License](#📝-license)
-
-<!-- markdown-toc end -->
+<img align="right" src="./docs/etc/sink_black.png#gh-light-mode-only" width="25%"/>
+<img align="right" src="./docs/etc/sink_white.png#gh-dark-mode-only" width="25%"/>
 
 # jcs-elpa
+> ELPA for [jcs-emacs](https://github.com/jcs-emacs/jcs-emacs), using [github-elpa](https://github.com/10sr/github-elpa)
 
 [![Build](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/build.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/build.yml)
 [![pages-build-deployment](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/pages/pages-build-deployment)
@@ -35,7 +16,14 @@
 [![Version](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/version.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/version.yml)
 [![Packages](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/packages.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/packages.yml)
 
-ELPA for [jcs-emacs](https://github.com/jcs-emacs/jcs-emacs), using [github-elpa](https://github.com/10sr/github-elpa)
+## 🏆 Goal
+
+- Use built-in code over third-party library (`dash.el`, `s.el`, `f.el`, etc)
+- Reuse third-party libraries if possible to keep the maintenance (think of the entire ELPA is a one huge piece of software), but not required
+- Accept any packages, but they need to show some usefulness
+- Don't remake the wheel, try to search for existing packages before you create one
+- Contribute to existing packages that have similar features (unless the author refuses)
+- Keep up the package's maintenance if possible, and ask someone for help if you need to
 
 ## 🔨 How to use?
 
