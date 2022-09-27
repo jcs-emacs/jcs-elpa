@@ -1,0 +1,14 @@
+(turbo-log .
+	   [(20220821 2100)
+	    ((emacs
+	      (25 1))
+	     (tree-sitter
+	      (0 16 1))
+	     (s
+	      (1 12 0)))
+	    "The simple package for fast log selected region" single
+	    ((:commit . "bbe4077a834a89e56afda09806d87c9306d9c0be")
+	     (:authors
+	      ("Artur Yaroshenko" . "artawower@protonmail.com"))
+	     (:maintainer "Artur Yaroshenko" . "artawower@protonmail.com")
+	     (:url . "https://github.com/Artawower/turbo-log"))])
