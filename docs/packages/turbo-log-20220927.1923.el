@@ -4,8 +4,8 @@
 
 ;; Author: Artur Yaroshenko <artawower@protonmail.com>
 ;; URL: https://github.com/Artawower/turbo-log
-;; Package-Version: 20220821.2100
-;; Package-Commit: bbe4077a834a89e56afda09806d87c9306d9c0be
+;; Package-Version: 20220927.1923
+;; Package-Commit: 16ccfbac87f346fd77ef967aecb2908792d4359a
 ;; Package-Requires: ((emacs "25.1") (tree-sitter "0.16.1")  (s "1.12.0"))
 ;; Version: 2.1.2
 
@@ -85,8 +85,10 @@ When not provided entire region will be printed.")
 
 (defcustom turbo-log-loggers
   `((typescript-mode ,turbo-log--default-ecmascript-config)
+    (javascript-mode ,turbo-log--default-ecmascript-config)
     (js-mode ,turbo-log--default-ecmascript-config)
     (js2-mode ,turbo-log--default-ecmascript-config)
+    (js3-mode ,turbo-log--default-ecmascript-config)
     (typescript-tsx-mode ,turbo-log--default-ecmascript-config)
     (rjsx-mode ,turbo-log--default-ecmascript-config)
     (ng2-ts-mode ,turbo-log--default-ecmascript-config)
@@ -102,6 +104,8 @@ When not provided entire region will be printed.")
     (rustic-mode (:loggers ("println!(%s);" "{}")))
     (python-mode (:loggers ("print(%s)") :comment-string "#"))
     (emacs-lisp-mode (:loggers (("(message %s)" " %s")) :comment-string ";;" :argument-divider ""))
+    (lisp-mode (:loggers (("(message %s)" " %s")) :comment-string ";;" :argument-divider ""))
+    (lisp-interaction-mode (:loggers (("(message %s)" " %s")) :comment-string ";;" :argument-divider ""))
     (go-mode (:loggers ("fmt.Println(%s)"
                         ("fmt.Printf(%s)" " %v")))))
   "Mode/config pairs."
