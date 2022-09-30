@@ -9,12 +9,6 @@
 <a href="#"><img src="https://raw.githubusercontent.com/jcs-emacs/badges/master/elpa/packages.svg" alt="Packages"></a>
 <a href="#"><img src="https://raw.githubusercontent.com/jcs-emacs/badges/master/elpa/system.svg" alt="System"></a>
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="./docs/etc/logo/light/text.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="./docs/etc/logo/dark/text.svg">
-  <img align="right" width="40%" src="">
-</picture>
-
 # jcs-elpa
 > ELPA for [jcs-emacs](https://github.com/jcs-emacs/jcs-emacs), using [github-elpa](https://github.com/10sr/github-elpa)
 
