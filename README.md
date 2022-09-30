@@ -5,7 +5,7 @@
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="./docs/etc/sink/black.png">
   <source media="(prefers-color-scheme: dark)" srcset="./docs/etc/sink/white.png">
-  <img width="25%" src="">
+  <img width="25%" align="right" src="">
 </picture>
 
 # jcs-elpa
