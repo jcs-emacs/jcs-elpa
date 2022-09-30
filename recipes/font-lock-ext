@@ -1,0 +1,1 @@
+(font-lock-ext :repo "sensorflo/font-lock-ext" :fetcher github)
