@@ -2,8 +2,11 @@
 <a href="https://www.gnu.org/software/emacs/download.html"><img src="https://raw.githubusercontent.com/jcs-emacs/badges/master/elpa/emacs.svg" alt="Emacs"></a>
 <a href="#"><img src="https://raw.githubusercontent.com/jcs-emacs/badges/master/elpa/packages.svg" alt="Packages"></a>
 <a href="#"><img src="https://raw.githubusercontent.com/jcs-emacs/badges/master/elpa/system.svg" alt="System"></a>
-<img align="right" src="./docs/etc/sink_black.png#gh-light-mode-only" width="25%"/>
-<img align="right" src="./docs/etc/sink_white.png#gh-dark-mode-only" width="25%"/>
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="./docs/etc/sink/black.png">
+  <source media="(prefers-color-scheme: dark)" srcset="./docs/etc/sink/white.png">
+  <img width="25%" src="">
+</picture>
 
 # jcs-elpa
 > ELPA for [jcs-emacs](https://github.com/jcs-emacs/jcs-emacs), using [github-elpa](https://github.com/10sr/github-elpa)
