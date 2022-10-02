@@ -20,7 +20,7 @@
 [![Version](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/version.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/version.yml)
 [![Packages](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/packages.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/packages.yml)
 
-## 🏆 Goal
+## 🏆 Goals
 
 - Use built-in code over third-party library (`dash.el`, `s.el`, `f.el`, etc)
 - Reuse third-party libraries if possible to keep the maintenance (think of the entire ELPA is a one huge piece of software), but not required
