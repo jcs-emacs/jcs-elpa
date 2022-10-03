@@ -1,0 +1,13 @@
+(undo-tree-vf .
+	      [(20221003 1125)
+	       ((emacs
+		 (26 1))
+		(fill-page
+		 (0 3 7)))
+	       "visualizer follow mode for undo-tree" single
+	       ((:commit . "47e174d361edd54d1594cc16e08d797833581860")
+		(:authors
+		 ("Jen-Chieh" . "jcs090218@gmail.com"))
+		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		(:keywords "convenience")
+		(:url . "https://github.com/jcs-elpa/undo-tree-vf"))])
