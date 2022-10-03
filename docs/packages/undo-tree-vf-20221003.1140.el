@@ -5,10 +5,10 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/undo-tree-vf
-;; Package-Version: 20221003.1125
-;; Package-Commit: 47e174d361edd54d1594cc16e08d797833581860
+;; Package-Version: 20221003.1140
+;; Package-Commit: dfd197035db78aec35dc0368efcc4a5fa235da72
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "26.1") (fill-page "0.3.7"))
+;; Package-Requires: ((emacs "26.1") (undo-tree "0.8.2") (fill-page "0.3.7"))
 ;; Keywords: convenience
 
 ;; This file is not part of GNU Emacs.
