@@ -1,5 +1,5 @@
 (undo-tree-vf .
-	      [(20221003 1207)
+	      [(20221003 1217)
 	       ((emacs
 		 (26 1))
 		(undo-tree
@@ -7,7 +7,7 @@
 		(fill-page
 		 (0 3 7)))
 	       "visualizer follow mode for undo-tree" single
-	       ((:commit . "bd69e50e98107aab0fde54061e561347b2e7d9e7")
+	       ((:commit . "c0643ec6a809981aea01de6449a9006df39f7d99")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/undo-tree-vf
-;; Package-Version: 20221003.1207
-;; Package-Commit: bd69e50e98107aab0fde54061e561347b2e7d9e7
+;; Package-Version: 20221003.1217
+;; Package-Commit: c0643ec6a809981aea01de6449a9006df39f7d99
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (undo-tree "0.8.2") (fill-page "0.3.7"))
 ;; Keywords: convenience
@@ -81,20 +81,24 @@ If `undo-tree-mode' is not valid, we call undo/redo function according to ARG"
 ;; (@* "Entry" )
 ;;
 
+(defun undo-tree-vf--kill-visualizer ()
+  "Safe version `undo-tree-kill-visualizer'."
+  (when (and undo-tree-mode undo-tree-vf-mode)
+    (undo-tree-kill-visualizer)))
+
 (defun undo-tree-vf-mode--enable ()
   "Enable function `undo-tree-vf-mode'."
-  (advice-add #'save-buffer :after #'undo-tree-kill-visualizer)
-  (advice-add #'kill-this-buffer :after #'undo-tree-kill-visualizer))
+  (advice-add #'save-buffer :after #'undo-tree-vf--kill-visualizer)
+  (advice-add #'kill-this-buffer :after #'undo-tree-vf--kill-visualizer))
 
 (defun undo-tree-vf-mode--disable ()
   "Disable function `undo-tree-vf-mode'."
-  (advice-remove #'save-buffer #'undo-tree-kill-visualizer)
-  (advice-remove #'kill-this-buffer  #'undo-tree-kill-visualizer))
+  (advice-remove #'save-buffer #'undo-tree-vf--kill-visualizer)
+  (advice-remove #'kill-this-buffer  #'undo-tree-vf--kill-visualizer))
 
 ;;;###autoload
 (define-minor-mode undo-tree-vf-mode
   "Minor mode `undo-tree-vf-mode'."
-  :global t
   :require 'undo-tree-vf-mode
   :group 'undo-tree-vf
   (if undo-tree-vf-mode (undo-tree-vf-mode--enable) (undo-tree-vf-mode--disable)))
