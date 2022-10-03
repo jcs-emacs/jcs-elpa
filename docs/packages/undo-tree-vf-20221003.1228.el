@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/undo-tree-vf
-;; Package-Version: 20221003.1217
-;; Package-Commit: c0643ec6a809981aea01de6449a9006df39f7d99
+;; Package-Version: 20221003.1228
+;; Package-Commit: 4585eb2642fd7391fd0ce753b22695b78b76e45b
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (undo-tree "0.8.2") (fill-page "0.3.7"))
 ;; Keywords: convenience
@@ -60,31 +60,9 @@
   (let ((recenter-positions '(middle)))
     (ignore-errors (recenter-top-bottom))))
 
-(defmacro undo-tree-vf--if-buffer-window (buffer-or-name then &rest else)
-  "Execute THEN in window BUFFER-OR-NAME; otherwise ELSE will be executed."
-  (declare (indent 2) (debug t))
-  `(if-let ((win (ignore-errors (get-buffer-window-list ,buffer-or-name))))
-       (with-selected-window (nth 0 win) ,then)
-     ,@else))
-
-(defmacro undo-tree-vf--setup (arg &rest body)
-  "Set up BODY for undo/redo.
-
-If `undo-tree-mode' is not valid, we call undo/redo function according to ARG"
-  (declare (indent 1))
-  `(if (not undo-tree-mode)
-       (call-interactively (if ,arg undo-tree-vf-fallback-undo
-                             undo-tree-vf-fallback-redo))
-     ,@body))
-
 ;;
 ;; (@* "Entry" )
 ;;
-
-(defun undo-tree-vf--kill-visualizer ()
-  "Safe version `undo-tree-kill-visualizer'."
-  (when (and undo-tree-mode undo-tree-vf-mode)
-    (undo-tree-kill-visualizer)))
 
 (defun undo-tree-vf-mode--enable ()
   "Enable function `undo-tree-vf-mode'."
@@ -103,9 +81,31 @@ If `undo-tree-mode' is not valid, we call undo/redo function according to ARG"
   :group 'undo-tree-vf
   (if undo-tree-vf-mode (undo-tree-vf-mode--enable) (undo-tree-vf-mode--disable)))
 
+(defun undo-tree-vf--kill-visualizer (&rest _)
+  "Safe version `undo-tree-kill-visualizer'."
+  (when (and undo-tree-mode undo-tree-vf-mode)
+    (undo-tree-kill-visualizer)))
+
 ;;
 ;; (@* "Core" )
 ;;
+
+(defmacro undo-tree-vf--if-buffer-window (buffer-or-name then &rest else)
+  "Execute THEN in window BUFFER-OR-NAME; otherwise ELSE will be executed."
+  (declare (indent 2) (debug t))
+  `(if-let ((win (ignore-errors (get-buffer-window-list ,buffer-or-name))))
+       (with-selected-window (nth 0 win) ,then)
+     ,@else))
+
+(defmacro undo-tree-vf--setup (arg &rest body)
+  "Set up BODY for undo/redo.
+
+If `undo-tree-mode' is not valid, we call undo/redo function according to ARG"
+  (declare (indent 1))
+  `(if (or (not undo-tree-mode) (not undo-tree-vf-mode))
+       (call-interactively (if ,arg undo-tree-vf-fallback-undo
+                             undo-tree-vf-fallback-redo))
+     ,@body))
 
 (defun undo-tree-vf--visualize ()
   "Call `undo-tree-visualize' only in window that has higher height."
