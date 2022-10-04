@@ -1,9 +1,9 @@
 (fextern .
-	 [(20220704 631)
+	 [(20221004 1304)
 	  ((emacs
 	    (25 1)))
 	  "Record file external stats" single
-	  ((:commit . "d67de4ff805c3624d43599f596985c39a54a16c0")
+	  ((:commit . "ec0f998c91c0e81acc79f735bfa8638896469b9e")
 	   (:authors
 	    ("Jen-Chieh" . "jcs090218@gmail.com"))
 	   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
