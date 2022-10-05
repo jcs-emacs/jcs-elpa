@@ -1,5 +1,5 @@
 (ff-guard .
-	  [(20221005 1901)
+	  [(20221005 1923)
 	   ((emacs
 	     (26 1))
 	    (f
@@ -7,7 +7,7 @@
 	    (s
 	     (1 9 0)))
 	   "Create parent directory for non-existent file" single
-	   ((:commit . "7f373723ff3d911903c65d0d67e7d995428dfe4d")
+	   ((:commit . "4c6079c1d3fe80d8f116654c646648bc420a9bad")
 	    (:authors
 	     ("Jen-Chieh" . "jcs090218@gmail.com"))
 	    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
