@@ -1,0 +1,1 @@
+(ff-guard :repo "jcs-elpa/ff-guard" :fetcher github)
