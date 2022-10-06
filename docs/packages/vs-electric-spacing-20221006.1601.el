@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/vs-electric-spacing
-;; Package-Version: 20221006.1554
-;; Package-Commit: e8d32952a33be5ed87ef6b46901fa044cba931fb
+;; Package-Version: 20221006.1601
+;; Package-Commit: d1e4e5cc3180e3137289c188961752c5598b3643
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: convenience electric vs
@@ -41,24 +41,37 @@
   :group 'electricity
   :link '(url-link :tag "Repository" "https://github.com/jcs-elpa/vs-electric-spacing"))
 
+
+(defun vs-electric-spacing--char-before (&optional pos)
+  "Like `char-before' but return a string at POS."
+  (ignore-errors (string (char-before pos))))
+
+(defun vs-electric-spacing--char-after (&optional pos)
+  "Like `char-after' but return a string at POS."
+  (ignore-errors (string (char-after pos))))
+
 (defun vs-electric-spacing--post-self-insert (&rest _)
   "Hook function for `post-self-insert-hook'."
-  (let ((b-1 (string (char-before (1- (point)))))
-        (b-0 (string (char-before)))
-        (a-0 (string (char-after))))
+  (when-let* ((b-1 (vs-electric-spacing--char-before (1- (point))))
+              (b-0 (vs-electric-spacing--char-before))
+              (a-0 (vs-electric-spacing--char-after))
+              (a-1 (vs-electric-spacing--char-after (1+ (point)))))
     (pcase b-0
       ("{"
+       ;; Insert a space before {
        (unless (string= b-1 " ")
          (save-excursion
            (forward-char -1)
            (insert " ")))
+       ;; Insert a space between { }
        (when (string= a-0 "}") (insert " "))
-       (let ((a-1 (string (char-after (1+ (point))))))
-         (when (string= a-1 "}")
-           (save-excursion
-             (forward-char 1)
-             (insert " ")))))
+       ;; Insert a space after }
+       (when (string= a-1 "}")
+         (save-excursion
+           (forward-char 1)
+           (insert " "))))
       (";"
+       ;; Insert a space after ; (if needed)
        (when (and (not (eolp))
                   (string= b-1 " ")
                   (not (string= a-0 " ")))
