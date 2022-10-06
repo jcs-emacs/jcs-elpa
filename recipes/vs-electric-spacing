@@ -1,0 +1,1 @@
+(vs-electric-spacing :repo "emacs-vs/vs-electric-spacing" :fetcher github)
