@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/vs-electric-spacing
-;; Package-Version: 20221006.1547
-;; Package-Commit: ee25974c2025d241db94c50cff2249e75608da3c
+;; Package-Version: 20221006.1554
+;; Package-Commit: e8d32952a33be5ed87ef6b46901fa044cba931fb
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: convenience electric vs
@@ -57,8 +57,7 @@
          (when (string= a-1 "}")
            (save-excursion
              (forward-char 1)
-             (insert " "))
-           )))
+             (insert " ")))))
       (";"
        (when (and (not (eolp))
                   (string= b-1 " ")
@@ -79,7 +78,7 @@
 ;;;###autoload
 (define-minor-mode vs-electric-spacing-mode
   "Minor mode `vs-electric-spacing-mode'."
-  :group 'electricity
+  :group 'vs-electric-spacing
   (if vs-electric-spacing-mode (vs-electric-spacing--enable) (vs-electric-spacing--disable)))
 
 (defun vs-electric-spacing--turn-on ()
