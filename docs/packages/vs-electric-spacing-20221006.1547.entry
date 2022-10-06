@@ -1,0 +1,11 @@
+(vs-electric-spacing .
+		     [(20221006 1547)
+		      ((emacs
+			(26 1)))
+		      "Add spacing around operators like Visual Studio" single
+		      ((:commit . "ee25974c2025d241db94c50cff2249e75608da3c")
+		       (:authors
+			("Jen-Chieh" . "jcs090218@gmail.com"))
+		       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		       (:keywords "convenience" "electric" "vs")
+		       (:url . "https://github.com/jcs-elpa/vs-electric-spacing"))])
