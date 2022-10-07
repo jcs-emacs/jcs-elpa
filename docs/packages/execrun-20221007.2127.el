@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/execrun
-;; Package-Version: 20221007.2117
-;; Package-Commit: ba460e1a9074fe9992b6d6f1b819e45b853b448e
+;; Package-Version: 20221007.2127
+;; Package-Commit: 5ed20c3c5e736735e21c7ae16db2d1226b9841e4
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (f "0.20.0"))
 ;; Keywords: tools
@@ -57,6 +57,11 @@
   (concat "[[:ascii:]]*run[[:ascii:]]*" execrun-script-extension)
   "Name of the execute/run file script."
   :type 'string
+  :group 'execrun)
+
+(defcustom execrun-kill-buffer-function #'kill-this-buffer
+  "Function to kill output buffer."
+  :type 'function
   :group 'execrun)
 
 ;;
@@ -263,7 +268,7 @@ IN-OP : inpuit operation script."
       (save-window-excursion
         (execrun-previous)
         (setq prev-output-buf (current-buffer))))
-    (kill-this-buffer)
+    (funcall execrun-kill-buffer-function)
     (when prev-output-buf (switch-to-buffer prev-output-buf))))
 
 (provide 'execrun)
