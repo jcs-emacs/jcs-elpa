@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/execrun
-;; Package-Version: 20221007.2127
-;; Package-Commit: 5ed20c3c5e736735e21c7ae16db2d1226b9841e4
+;; Package-Version: 20221007.2132
+;; Package-Commit: 7e96a162c03838776bd9a4d432475c0df639a636
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (f "0.20.0"))
 ;; Keywords: tools
@@ -95,12 +95,14 @@
 
 (defun execrun--get-buffers (str type)
   "Return a list of buffers that match STR.
-TYPE is the return type; can be 'object or 'string."
+
+TYPE is the return type; can be `object or `string."
   (execrun--get-buffers-regexp (regexp-quote str) type))
 
 (defun execrun--get-buffers-regexp (regexp type)
   "Return a list of buffers that match REGEXP.
-TYPE is the return type; can be 'object or 'string."
+
+TYPE is the return type; can be `object or `string."
   (let (buf-lst buf-name)
     (if (not (stringp regexp))
         (user-error "[WARNING] Can't get buffers with this string/regexp: %s" regexp)
@@ -188,7 +190,7 @@ See function `execrun--string-compare-p' for argument TYPE."
 
 ;;;###autoload
 (defun execrun-project-file (file title)
-  "Compile IN-FILENAME from the project"
+  "Compile FILE from the project with TITLE."
   (interactive)
   (execrun-compile (jcs-find-file-in-project-and-current-dir file title)))
 
@@ -246,7 +248,7 @@ IN-OP : inpuit operation script."
         (bury-buffer)
         (execrun-set-compilation-index (1- index) output-lst)
         (setq break t))
-      (setq index (1+ index)))))
+      (cl-incf index))))
 
 ;;;###autoload
 (defun execrun-next ()
@@ -257,7 +259,7 @@ IN-OP : inpuit operation script."
       (when (equal (current-buffer) (nth index output-lst))
         (execrun-set-compilation-index (1+ index) output-lst)
         (setq break t))
-      (setq index (1+ index)))))
+      (cl-incf index))))
 
 ;;;###autoload
 (defun execrun-maybe-kill-buffer ()
