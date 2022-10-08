@@ -5,10 +5,10 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/fof
-;; Package-Version: 20221008.622
-;; Package-Commit: 0a7257d913d648f50f3ac2b7735141be74095e19
+;; Package-Version: 20221008.650
+;; Package-Commit: e1d5587209620dabfcf7af28ec3d86c71bf60862
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "26.1"))
+;; Package-Requires: ((emacs "28.1") (ffpc "0.1.0"))
 ;; Keywords: tools
 
 ;; This file is not part of GNU Emacs.
@@ -33,6 +33,9 @@
 
 ;;; Code:
 
+(require 'find-file)
+
+(require 'ffpc)
 
 (defgroup fof nil
   "Default configuration for `ff-find-other-file'."
@@ -41,31 +44,29 @@
   :link '(url-link :tag "Repository" "https://github.com/jcs-elpa/fof"))
 
 (defcustom fof-file-alist
-  '(;; C
-    ("\\.h$"   (".c" ".cpp" ".cin" ".m"))
-    ("\\.c$"   (".h" ".hpp" ".hin"))
-    ;; C++
-    ("\\.hpp$" (".cpp" ".c" ".cin" ".m"))
-    ("\\.cpp$" (".hpp" ".h" ".hin"))
-    ("\\.hin$" (".cin" ".c" ".cpp" ".m"))
-    ("\\.cin$" (".hin" ".h" ".hpp"))
-    ;; Objective-C
-    ("\\.m$"   (".h" ".hpp" ".hin"))
-    ;; aspx
-    ("\\.aspx$"    (".aspx.cs"))
-    ("\\.aspx.cs$" (".aspx"))
-    ;; coffee
-    ("\\.coffee$" (".js"))
-    ("\\.js$"     (".coffee")))
+  (append
+   cc-other-file-alist
+   ;; aspx
+   `(("\\.aspx$"    (".aspx.cs"))
+     ("\\.aspx.cs$" (".aspx")))
+   ;; coffee
+   `(("\\.coffee$" (".js"))
+     ("\\.js$"     (".coffee"))))
   "Default for `ff-other-file-alist'."
   :type 'alist
   :group 'fof)
+
+(defun fof--project-dirs ()
+  "Return a list of project directories."
+  (ffpc-directories-ignored-dir (or (ignore-errors (project-root (project-current)))
+                                    default-directory)))
 
 ;;;###autoload
 (defun fof ()
   "Find corresponding file to current buffer."
   (interactive)
-  (let ((ff-other-file-alist fof-file-alist))
+  (let ((ff-other-file-alist fof-file-alist)
+        (ff-search-directories (fof--project-dirs)))
     (call-interactively #'ff-find-other-file)))
 
 ;;;###autoload

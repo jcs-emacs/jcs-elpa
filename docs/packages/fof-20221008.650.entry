@@ -1,9 +1,11 @@
 (fof .
-     [(20221008 622)
+     [(20221008 650)
       ((emacs
-	(26 1)))
+	(28 1))
+       (ffpc
+	(0 1 0)))
       "Default configuration for `ff-find-other-file'" single
-      ((:commit . "0a7257d913d648f50f3ac2b7735141be74095e19")
+      ((:commit . "e1d5587209620dabfcf7af28ec3d86c71bf60862")
        (:authors
 	("Jen-Chieh" . "jcs090218@gmail.com"))
        (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

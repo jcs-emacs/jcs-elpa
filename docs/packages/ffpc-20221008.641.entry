@@ -1,5 +1,5 @@
 (ffpc .
-      [(20221008 431)
+      [(20221008 641)
        ((emacs
 	 (26 1))
 	(dash
@@ -7,7 +7,7 @@
 	(f
 	 (0 20 0)))
        "Find file in project or current directory" single
-       ((:commit . "4cf9f9fcbe46aae77e9400370012ff3a247175c2")
+       ((:commit . "1ab4937a1117e08e978610f627a69cba5e289092")
 	(:authors
 	 ("Jen-Chieh" . "jcs090218@gmail.com"))
 	(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

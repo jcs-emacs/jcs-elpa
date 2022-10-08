@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/ffpc
-;; Package-Version: 20221008.431
-;; Package-Commit: 4cf9f9fcbe46aae77e9400370012ff3a247175c2
+;; Package-Version: 20221008.641
+;; Package-Commit: 1ab4937a1117e08e978610f627a69cba5e289092
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (dash "2.12.0") (f "0.20.0"))
 ;; Keywords: lisp
@@ -32,6 +32,8 @@
 ;;
 
 ;;; Code:
+
+(require 'project)
 
 (require 'dash)
 (require 'f)
