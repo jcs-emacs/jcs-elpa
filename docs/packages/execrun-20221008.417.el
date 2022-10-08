@@ -5,10 +5,10 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/execrun
-;; Package-Version: 20221007.2132
-;; Package-Commit: 7e96a162c03838776bd9a4d432475c0df639a636
+;; Package-Version: 20221008.417
+;; Package-Commit: 2e23602fd2b3fc6181da25f4e3582865ed1c271e
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "26.1") (f "0.20.0"))
+;; Package-Requires: ((emacs "26.1") (ffpc "0.1.0") (f "0.20.0"))
 ;; Keywords: tools
 
 ;; This file is not part of GNU Emacs.
@@ -34,7 +34,9 @@
 ;;; Code:
 
 (require 'cl-lib)
+(require 'project)
 
+(require 'ffpc)
 (require 'f)
 
 (defgroup execrun nil
@@ -42,6 +44,9 @@
   :prefix "execrun-"
   :group 'tools
   :link '(url-link :tag "Repository" "https://github.com/jcs-elpa/execrun"))
+
+(defconst execrun-base-buffer-name "execrun"
+  "Base filename for compilation buffer.")
 
 (defconst execrun-script-extension
   (if (memq system-type '(cygwin windows-nt ms-dos)) "[.]bat" "[.]sh")
@@ -169,9 +174,6 @@ See function `execrun--string-compare-p' for argument TYPE."
 ;; (@* "Build & Run" )
 ;;
 
-(defconst execrun-base-buffer-name "execrun"
-  "Base filename for compilation buffer.")
-
 (defun execrun--form-file-prefix ()
   "Form the prefix of the compilation buffer name."
   (format "*%s*: " execrun-base-buffer-name))
@@ -192,7 +194,7 @@ See function `execrun--string-compare-p' for argument TYPE."
 (defun execrun-project-file (file title)
   "Compile FILE from the project with TITLE."
   (interactive)
-  (execrun-compile (jcs-find-file-in-project-and-current-dir file title)))
+  (execrun-compile (ffpc-project-or-current-dir file title)))
 
 ;;;###autoload
 (defun execrun-compile (in-op)

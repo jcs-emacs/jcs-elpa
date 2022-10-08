@@ -1,11 +1,13 @@
 (execrun .
-	 [(20221007 2132)
+	 [(20221008 417)
 	  ((emacs
 	    (26 1))
+	   (ffpc
+	    (0 1 0))
 	   (f
 	    (0 20 0)))
 	  "Run through `compilation-mode'" single
-	  ((:commit . "7e96a162c03838776bd9a4d432475c0df639a636")
+	  ((:commit . "2e23602fd2b3fc6181da25f4e3582865ed1c271e")
 	   (:authors
 	    ("Jen-Chieh" . "jcs090218@gmail.com"))
 	   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
