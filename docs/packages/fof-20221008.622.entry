@@ -1,0 +1,11 @@
+(fof .
+     [(20221008 622)
+      ((emacs
+	(26 1)))
+      "Default configuration for `ff-find-other-file'" single
+      ((:commit . "0a7257d913d648f50f3ac2b7735141be74095e19")
+       (:authors
+	("Jen-Chieh" . "jcs090218@gmail.com"))
+       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+       (:keywords "tools")
+       (:url . "https://github.com/jcs-elpa/fof"))])
