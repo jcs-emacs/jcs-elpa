@@ -1,0 +1,1 @@
+(fof :repo "jcs-elpa/fof" :fetcher github)
