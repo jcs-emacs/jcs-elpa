@@ -1,0 +1,1 @@
+(ffpc :repo "jcs-elpa/ffpc" :fetcher github)
