@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vsc-edit-mode
-;; Package-Version: 20221009.1335
-;; Package-Commit: d229bd9be202467267911b3ccbf0617270b7b937
+;; Package-Version: 20221009.1338
+;; Package-Commit: 9db19d42f81a2d7e2960312e5e20ee12779ea18b
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (indent-control "0.1.0"))
 ;; Keywords: convenience editing vs
@@ -73,11 +73,11 @@
 
 (defun vsc-edit-mode--turn-on ()
   "Turn on the `vsc-edit'."
-  (vsc-edit 1))
+  (vsc-edit-mode 1))
 
 ;;;###autoload
 (define-globalized-minor-mode global-vsc-edit-mode
-  vsc-edit vsc-edit-mode--turn-on
+  vsc-edit-mode vsc-edit-mode--turn-on
   :require 'vsc-edit)
 
 ;;
@@ -99,7 +99,7 @@
   (save-excursion (back-to-indentation) (current-column)))
 
 (defun vsc-edit--get-current-char-string ()
-  "Get the current character as the 'string'."
+  "Get the current character as the `string''."
   (if (char-before) (string (char-before)) ""))
 
 (defun vsc-edit--current-char-equal-p (c)
@@ -261,5 +261,5 @@
       (call-interactively #'yank)
       (ignore-errors (indent-region reg-beg (point))))))
 
-(provide 'vsc-edit)
+(provide 'vsc-edit-mode)
 ;;; vsc-edit-mode.el ends here
