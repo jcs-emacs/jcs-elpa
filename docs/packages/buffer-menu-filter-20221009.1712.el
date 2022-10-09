@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/buffer-menu-filter
-;; Package-Version: 20220704.646
-;; Package-Commit: 08fbd33bd09498b19fa0dce1211b0b8c35bad572
+;; Package-Version: 20221009.1712
+;; Package-Commit: 315d3f956c44f904fb2ec96c100887419449ebe0
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (buffer-menu-project "0.1.0") (flx "0.6.1") (ht "2.0"))
 ;; Keywords: convenience buffer menu filter
@@ -101,7 +101,7 @@ From scale 0 to 100.")
   "Assign this to `Buffer-menu-mode-hook'."
   (setq buffer-menu-filter--first-enter nil)
   (local-set-key (kbd "<return>") #'buffer-menu-filter-return)
-  (local-set-key (kbd "<backspace>") #'buffer-menu-filter-backspace)
+  (local-set-key (kbd "\177") #'buffer-menu-filter-backspace)
   (dolist (key-str buffer-menu-filter--key-list)
     (local-set-key key-str (lambda () (interactive) (buffer-menu-filter--input key-str)))))
 
