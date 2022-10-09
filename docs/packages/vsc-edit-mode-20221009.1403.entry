@@ -1,11 +1,15 @@
 (vsc-edit-mode .
-	       [(20221009 1338)
+	       [(20221009 1403)
 		((emacs
 		  (26 1))
 		 (indent-control
-		  (0 1 0)))
+		  (0 1 0))
+		 (company
+		  (0 8 12))
+		 (yasnippet
+		  (0 8 0)))
 		"Implement editing experience like VSCode" single
-		((:commit . "9db19d42f81a2d7e2960312e5e20ee12779ea18b")
+		((:commit . "94068aee217b828718e7c1ae008753eb5abe0c34")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

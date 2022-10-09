@@ -5,10 +5,10 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vsc-edit-mode
-;; Package-Version: 20221009.1338
-;; Package-Commit: 9db19d42f81a2d7e2960312e5e20ee12779ea18b
+;; Package-Version: 20221009.1403
+;; Package-Commit: 94068aee217b828718e7c1ae008753eb5abe0c34
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "26.1") (indent-control "0.1.0"))
+;; Package-Requires: ((emacs "26.1") (indent-control "0.1.0") (company "0.8.12") (yasnippet "0.8.0"))
 ;; Keywords: convenience editing vs
 
 ;; This file is not part of GNU Emacs.
@@ -36,6 +36,8 @@
 (require 'elec-pair)
 
 (require 'indent-control)
+(require 'company)
+(require 'yasnippet)
 
 (defgroup vsc-edit nil
   "Implement editing experience like VSCode."
@@ -61,6 +63,10 @@
     (define-key map (kbd "SPC") #'vsc-edit-space)
     (define-key map (kbd "S-SPC") #'vsc-edit-space)
     (define-key map (kbd "C-v") #'vsc-edit-yank)
+    (define-key map [tab] #'vsc-edit-tab)
+    (define-key map (kbd "TAB") #'vsc-edit-tab)
+    (define-key map [S-tab] #'vsc-edit-shift-tab)
+    (define-key map [backtab] #'vsc-edit-shift-tab)
     map)
   "Keymap for `execrun-mode'.")
 
@@ -260,6 +266,72 @@
     (let ((reg-beg (point)))
       (call-interactively #'yank)
       (ignore-errors (indent-region reg-beg (point))))))
+
+;;
+;; (@* "Backspace" )
+;;
+
+(defmacro vsc-edit--with-select-region (&rest body)
+  "Execute BODY and save region state."
+  (declare (indent 0) (debug t))
+  `(let* ((beg (region-beginning)) (end (region-end))
+          (at-beg (= (point) beg))
+          (ov (make-overlay beg end)))
+     (ignore-errors ,@body)
+     (goto-char (if at-beg (overlay-end ov) (overlay-start ov)))
+     (setq deactivate-mark nil)
+     (goto-char (if at-beg (overlay-start ov) (overlay-end ov)))
+     (delete-overlay ov)))
+
+(defun vsc-edit--lines-in-region (fnc &optional beg end)
+  "Execute FNC each line in region BEG to END."
+  (setq beg (or beg (region-beginning))
+        end (or end (region-end)))
+  (vsc-edit--with-select-region
+    (goto-char beg)
+    (while (and (<= (line-beginning-position) end) (not (eobp)))
+      (let ((delta (line-end-position)))
+        (funcall-interactively fnc)
+        (setq delta (- (line-end-position) delta)
+              end (+ end delta)))
+      (forward-line 1))))
+
+;;;###autoload
+(defun vsc-edit-tab ()
+  "Global TAB key."
+  (interactive)
+  (if (use-region-p)
+      (vsc-edit--lines-in-region
+       (lambda ()
+         (back-to-indentation)
+         (vsc-edit--insert-spaces-by-indent-level)))
+    (unless (ignore-errors (call-interactively #'yas-expand))
+      (if (company--active-p)
+          (call-interactively #'company-complete-selection)
+        (if (vsc-edit--current-line-empty-p)
+            (let ((pt (point)))
+              (indent-for-tab-command)
+              (when (= pt (point)) (vsc-edit--insert-spaces-by-indent-level)))
+          (vsc-edit--insert-spaces-by-indent-level))))))
+
+;;;###autoload
+(defun vsc-edit-shift-tab ()
+  "Global Shift+TAB key."
+  (interactive)
+  (if (use-region-p)
+      (vsc-edit--lines-in-region
+       (lambda ()
+         (back-to-indentation)
+         (let (delete-active-region)
+           (vsc-edit--backward-delete-spaces-by-indent-level))))
+    (unless (ignore-errors (call-interactively #'yas-expand))
+      (if (company--active-p)
+          (call-interactively #'company-complete-selection)
+        (if (vsc-edit--current-line-empty-p)
+            (let ((pt (point)))
+              (indent-for-tab-command)
+              (when (= pt (point)) (vsc-edit--backward-delete-spaces-by-indent-level)))
+          (vsc-edit--backward-delete-spaces-by-indent-level))))))
 
 (provide 'vsc-edit-mode)
 ;;; vsc-edit-mode.el ends here
