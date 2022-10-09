@@ -1,0 +1,1 @@
+(vsc-edit-mode :repo "emacs-vs/vsc-edit-mode" :fetcher github)
