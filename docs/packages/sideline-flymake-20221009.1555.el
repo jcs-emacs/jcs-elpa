@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline-flymake
-;; Package-Version: 20220629.802
-;; Package-Commit: 3320d2416a255b0b8d7abb314883e103d66aeb07
+;; Package-Version: 20221009.1555
+;; Package-Commit: e1e1f5cbdfa9ac352e884de97d68da4ea41cc060
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1") (sideline "0.1.0"))
 ;; Keywords: convenience flymake
@@ -75,6 +75,8 @@ Argument COMMAND is required in sideline backend."
         (let* ((text (flymake-diagnostic-text err))
                (type (flymake-diagnostic-type err))
                (face (cl-case type
+                       ('eglot-error 'error)
+                       ('eglot-warning 'warning)
                        (:error 'error)
                        (:warning 'warning)
                        (t 'success))))
