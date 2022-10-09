@@ -5,10 +5,10 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vsc-edit-mode
-;; Package-Version: 20221009.1403
-;; Package-Commit: 94068aee217b828718e7c1ae008753eb5abe0c34
+;; Package-Version: 20221009.1424
+;; Package-Commit: 2162a15b5212eab81d7b52a0bd234be150ba41d2
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "26.1") (indent-control "0.1.0") (company "0.8.12") (yasnippet "0.8.0"))
+;; Package-Requires: ((emacs "26.1") (indent-control "0.1.0") (company "0.8.12") (yasnippet "0.8.0") (msgu "0.1.0"))
 ;; Keywords: convenience editing vs
 
 ;; This file is not part of GNU Emacs.
@@ -35,6 +35,7 @@
 
 (require 'elec-pair)
 
+(require 'msgu)
 (require 'indent-control)
 (require 'company)
 (require 'yasnippet)
