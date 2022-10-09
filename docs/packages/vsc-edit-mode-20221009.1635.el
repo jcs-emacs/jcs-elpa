@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vsc-edit-mode
-;; Package-Version: 20221009.1626
-;; Package-Commit: 62c2d8f285931420d890c98a8bd7482d2d0e8ceb
+;; Package-Version: 20221009.1635
+;; Package-Commit: d420349dd0272c27af9b297ad31901c710d50485
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (indent-control "0.1.0") (company "0.8.12") (yasnippet "0.8.0") (msgu "0.1.0"))
 ;; Keywords: convenience editing vs
@@ -90,6 +90,10 @@
 ;;
 ;; (@* "Util" )
 ;;
+
+(defun vsc-edit--in-comment-or-string-p ()
+  "Return non-nil if inside comment or string."
+  (or (nth 4 (syntax-ppss)) (nth 8 (syntax-ppss))))
 
 (defun vsc-edit--before-first-char-at-line-p (&optional pt)
   "Return non-nil if there is nothing infront of the right from the PT."
@@ -238,7 +242,8 @@
       (let ((pt (point)))
         (ignore-errors (indent-for-tab-command))
         (when (= pt (point)) (vsc-edit-real-space)))
-    (if (or (vsc-edit--before-first-char-at-line-p) (bolp))
+    (if (and (or (vsc-edit--before-first-char-at-line-p) (bolp))
+             (not (vsc-edit--in-comment-or-string-p)))
         (vsc-edit--insert-spaces-by-indent-level)
       (vsc-edit-real-space))))
 
