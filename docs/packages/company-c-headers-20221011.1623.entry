@@ -1,5 +1,5 @@
 (company-c-headers .
-		   [(20221011 1559)
+		   [(20221011 1623)
 		    ((emacs
 		      (26 1))
 		     (company
@@ -7,7 +7,7 @@
 		     (f
 		      (0 20 0)))
 		    "Company mode backend for C/C++ header files" single
-		    ((:commit . "15d0386ba52a2e3cba44f7067818a786eeb43f21")
+		    ((:commit . "e9c25243b992fd8ad822312549b3844d45e7936a")
 		     (:authors
 		      ("Alastair Rankine" . "alastair@girtby.net"))
 		     (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")

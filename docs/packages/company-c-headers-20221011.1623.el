@@ -6,8 +6,8 @@
 ;; Author: Alastair Rankine <alastair@girtby.net>
 ;; Maintainer: Jen-Chieh Shen <jcs090218@gmail.com>
 ;; Keywords: convenience development company
-;; Package-Version: 20221011.1559
-;; Package-Commit: 15d0386ba52a2e3cba44f7067818a786eeb43f21
+;; Package-Version: 20221011.1623
+;; Package-Commit: e9c25243b992fd8ad822312549b3844d45e7936a
 ;; URL: http://github.com/elp-revive/company-c-headers
 ;; Package-Requires: ((emacs "26.1") (company "0.8") (f "0.20.0"))
 ;; Version: 0.1.0
@@ -193,12 +193,12 @@ Filters on the appropriate regex for the current major mode."
 
 (defun company-c-headers--guess-path (paths fn)
   "Complete a source root path with PATHS by guessing FN."
-  (let ((root (nth 0 paths)) (index 1))
+  (let ((root (nth 0 paths)) (index 0))
     (while (and root (< index (length paths)))
+      (cl-incf index)
       (let ((matched (ignore-errors (f-directories root fn))))
         (setq root (when matched (concat (nth 0 matched)
-                                         (nth index paths)))))
-      (cl-incf index))
+                                         (nth index paths))))))
     (when root (append (list root) (f-directories root nil t)))))
 
 ;;;###autoload
@@ -212,6 +212,12 @@ Filters on the appropriate regex for the current major mode."
       #'company-c-headers--version-check)
      (company-c-headers--guess-path
       '("C:/Program Files/Microsoft Visual Studio/" "/Community/VC/Tools/MSVC/" "/include/")
+      #'company-c-headers--version-check)
+     (company-c-headers--guess-path
+      '("C:/Program Files (x86)/Windows Kits/10/Include/")
+      #'company-c-headers--version-check)
+     (company-c-headers--guess-path
+      '("C:/Program Files/Windows Kits/10/Include/")
       #'company-c-headers--version-check)))
    ((eq system-type 'darwin)
     '("/usr/lib/" "/usr/local/lib/"
