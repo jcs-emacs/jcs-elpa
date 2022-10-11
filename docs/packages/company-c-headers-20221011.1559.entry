@@ -1,13 +1,15 @@
 (company-c-headers .
-		   [(20221011 1427)
+		   [(20221011 1559)
 		    ((emacs
 		      (26 1))
 		     (company
-		      (0 8)))
+		      (0 8))
+		     (f
+		      (0 20 0)))
 		    "Company mode backend for C/C++ header files" single
-		    ((:commit . "f7d8d683975b51917d73bf871942142d1768ae7b")
+		    ((:commit . "15d0386ba52a2e3cba44f7067818a786eeb43f21")
 		     (:authors
 		      ("Alastair Rankine" . "alastair@girtby.net"))
 		     (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
-		     (:keywords "development" "company")
+		     (:keywords "convenience" "development" "company")
 		     (:url . "http://github.com/elp-revive/company-c-headers"))])

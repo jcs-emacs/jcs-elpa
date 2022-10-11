@@ -5,13 +5,12 @@
 
 ;; Author: Alastair Rankine <alastair@girtby.net>
 ;; Maintainer: Jen-Chieh Shen <jcs090218@gmail.com>
-;; Keywords: development company
-;; Package-Version: 20221011.1427
-;; Package-Commit: f7d8d683975b51917d73bf871942142d1768ae7b
+;; Keywords: convenience development company
+;; Package-Version: 20221011.1559
+;; Package-Commit: 15d0386ba52a2e3cba44f7067818a786eeb43f21
 ;; URL: http://github.com/elp-revive/company-c-headers
-;; Package-Requires: ((emacs "26.1") (company "0.8"))
+;; Package-Requires: ((emacs "26.1") (company "0.8") (f "0.20.0"))
 ;; Version: 0.1.0
-
 ;; This file is not part of GNU Emacs.
 
 ;; This file is free software: you can redistribute it and/or modify
@@ -45,16 +44,18 @@
 
 ;;; Code:
 
-(require 'company)
-(require 'rx)
 (require 'cl-lib)
+(require 'rx)
+
+(require 'f)
+(require 'company)
 
 (defgroup company-c-headers nil
   "Completion back-end for C/C++ header files."
   :group 'company)
 
 (defcustom company-c-headers-path-system
-  '("/usr/include/" "/usr/local/include/")
+  #'company-c-headers-default-path-system
   "List of paths to search for system (i.e. angle-bracket delimited) header
 files.  Alternatively, a function can be supplied which returns the path list."
   :type '(choice (repeat directory)
@@ -64,8 +65,7 @@ files.  Alternatively, a function can be supplied which returns the path list."
   '(".")
   "List of paths to search for user (i.e. double-quote delimited) header files.
 Alternatively, a function can be supplied which returns the path list.  Note
-that paths in
-`company-c-headers-path-system' are implicitly appended."
+that paths in `company-c-headers-path-system' are implicitly appended."
   :type '(choice (repeat directory)
                  function))
 
@@ -87,7 +87,7 @@ that paths in
     (objc-mode  . ,(rx ".h" line-end)))
   "Assoc list of supported major modes and associated header file names.")
 
-(defun call-if-function (path)
+(defun company-c-headers--call-if-function (path)
   "If PATH is bound to a function, return the result of calling it.
 Otherwise just return the value."
   (if (functionp path) (funcall path) path))
@@ -127,10 +127,10 @@ Filters on the appropriate regex for the current major mode."
 (defun company-c-headers--candidates (prefix)
   "Return candidates for PREFIX."
   (let ((p (if (equal (aref prefix 0) ?\")
-               (call-if-function company-c-headers-path-user)
-             (call-if-function company-c-headers-path-system)))
+               (company-c-headers--call-if-function company-c-headers-path-user)
+             (company-c-headers--call-if-function company-c-headers-path-system)))
         (next (when (equal (aref prefix 0) ?\")
-                (call-if-function company-c-headers-path-system)))
+                (company-c-headers--call-if-function company-c-headers-path-system)))
         candidates)
     (while p
       (when (file-directory-p (car p))
@@ -181,6 +181,43 @@ Filters on the appropriate regex for the current major mode."
            (pcase (aref matched 0)
              (?\" (if (looking-at "\"") (end-of-line) (insert "\"")))
              (?<  (if (looking-at ">") (end-of-line) (insert ">"))))))))))
+
+;;
+;; (@* "Path" )
+;;
+
+(defun company-c-headers--version-check (path &rest _)
+  "Check for valid PATH."
+  (let ((dirname (f-filename path)))
+    (ignore-errors (version-to-list dirname))))
+
+(defun company-c-headers--guess-path (paths fn)
+  "Complete a source root path with PATHS by guessing FN."
+  (let ((root (nth 0 paths)) (index 1))
+    (while (and root (< index (length paths)))
+      (let ((matched (ignore-errors (f-directories root fn))))
+        (setq root (when matched (concat (nth 0 matched)
+                                         (nth index paths)))))
+      (cl-incf index))
+    (when root (append (list root) (f-directories root nil t)))))
+
+;;;###autoload
+(defun company-c-headers-default-path-system ()
+  "Return a list system path."
+  (cond
+   ((memq system-type '(cygwin windows-nt ms-dos))
+    (append
+     (company-c-headers--guess-path
+      '("C:/Program Files (x86)/Microsoft Visual Studio/" "/Community/VC/Tools/MSVC/" "/include/")
+      #'company-c-headers--version-check)
+     (company-c-headers--guess-path
+      '("C:/Program Files/Microsoft Visual Studio/" "/Community/VC/Tools/MSVC/" "/include/")
+      #'company-c-headers--version-check)))
+   ((eq system-type 'darwin)
+    '("/usr/lib/" "/usr/local/lib/"
+      "/usr/include/c++" "/usr/local/include/c++"))
+   ((eq system-type 'gnu/linux)
+    '("/usr/include/" "/usr/local/include/"))))
 
 (provide 'company-c-headers)
 ;;; company-c-headers.el ends here
