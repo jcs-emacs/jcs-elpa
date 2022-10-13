@@ -1,7 +1,9 @@
 (pkg-dm .
-	[(20221013 804)
+	[(20221013 1723)
 	 ((emacs
 	   (28 1))
+	  (elenv
+	   (0 1 0))
 	  (msgu
 	   (0 1 0))
 	  (prt
@@ -9,7 +11,7 @@
 	  (recentf-excl
 	   (0 1 0)))
 	 "Package dependencies management" tar
-	 ((:commit . "2e85121646c8ea4d353eb9be6984be664fbe9e8f")
+	 ((:commit . "bab4ed7cf87e75770dbf947fbca6ec4ee375e287")
 	  (:authors
 	   ("Jen-Chieh" . "jcs090218@gmail.com"))
 	  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
