@@ -5,10 +5,10 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/pkg-dm
-;; Package-Version: 20221013.742
-;; Package-Commit: 1d4c50495804796158ec3b41b33d94887880a1f2
+;; Package-Version: 20221013.749
+;; Package-Commit: f15b20df377e5f1ab97726f16f1f4571a40ab5aa
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "26.1") (msgu "0.1.0") (prt "0.1.0") (recentf-excl "0.1.0"))
+;; Package-Requires: ((emacs "28.1") (msgu "0.1.0") (prt "0.1.0") (recentf-excl "0.1.0"))
 ;; Keywords: maint
 
 ;; This file is not part of GNU Emacs.
@@ -222,11 +222,11 @@
 (defvar pkg-dm--use-real-delete-p t
   "Flag to check if we are really deleting a package.")
 
-(defun pkg-dm--package-delete (desc &optional dep)
+(defun pkg-dm-package-delete (desc &optional dep)
   "Safe way to remove package and it's DEP using PKG-DESC."
   (let ((name (package-desc-name desc))
         (used-elsewhere (package--used-elsewhere-p desc nil 'all)))
-    (dolist (tmp-desc used-elsewhere) (pkg-dm--package-delete tmp-desc name))
+    (dolist (tmp-desc used-elsewhere) (pkg-dm-package-delete tmp-desc name))
     (when desc
       (let ((pkg-dm--use-real-delete-p t))
         (when (msgu-silent (package-delete desc))
@@ -244,7 +244,7 @@
             (msgu-unsilent
               (message "[INFO] Package `%s` in used, mark `%s` for later deletion"
                        name (file-name-nondirectory pkg-dir)))))
-      (pkg-dm--package-delete desc))))
+      (pkg-dm-package-delete desc))))
 
 ;;
 ;; (@* "Core" )
@@ -298,7 +298,7 @@
 ;;;###autoload
 (define-minor-mode pkg-dm-mode
   "Minor mode `pkg-dm-mode'."
-  :group pkg-dm
+  :group 'pkg-dm
   :global t
   :lighter nil
   (if pkg-dm-mode (pkg-dm-mode--enable) (pkg-dm-mode--disable)))

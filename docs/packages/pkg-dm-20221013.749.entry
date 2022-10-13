@@ -1,7 +1,7 @@
 (pkg-dm .
-	[(20221013 742)
+	[(20221013 749)
 	 ((emacs
-	   (26 1))
+	   (28 1))
 	  (msgu
 	   (0 1 0))
 	  (prt
@@ -9,7 +9,7 @@
 	  (recentf-excl
 	   (0 1 0)))
 	 "Package dependencies management" single
-	 ((:commit . "1d4c50495804796158ec3b41b33d94887880a1f2")
+	 ((:commit . "f15b20df377e5f1ab97726f16f1f4571a40ab5aa")
 	  (:authors
 	   ("Jen-Chieh" . "jcs090218@gmail.com"))
 	  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
