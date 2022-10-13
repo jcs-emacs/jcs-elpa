@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/elenv
-;; Package-Version: 20221013.1733
-;; Package-Commit: 187030b9c80614caea07d33564c739595165ae99
+;; Package-Version: 20221013.1828
+;; Package-Commit: 628ed466de9358d3ff46bd9a6186bf825048605e
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26."))
 ;; Keywords: maint
@@ -32,6 +32,10 @@
 ;;
 
 ;;; Code:
+
+;;
+;; (@* "Operating System" )
+;;
 
 ;;;###autoload
 (defconst elenv-windows (memq system-type '(cygwin windows-nt ms-dos))
@@ -87,6 +91,14 @@
 (defmacro elenv-with-unix (&rest body)
   "Evaluate BODY in Unix."
   (declare (indent 0)) `(when elenv-unix ,@body))
+
+;;
+;; (@* "Graphic" )
+;;
+
+;;;###autoload
+(defconst elenv-graphic-p (display-graphic-p)
+  "Return t if graphic mode.")
 
 (provide 'elenv)
 ;;; elenv.el ends here
