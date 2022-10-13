@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/elenv
-;; Package-Version: 20221013.1714
-;; Package-Commit: 5090db88c795f954b17c97b2a9e0ae1be6636c0e
+;; Package-Version: 20221013.1733
+;; Package-Commit: 187030b9c80614caea07d33564c739595165ae99
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26."))
 ;; Keywords: maint
@@ -57,27 +57,33 @@
 (defconst elenv-unix (memq system-type '(aix berkeley-unix hpux usg-unix-v))
   "Unix")
 
+;;;###autoload
 (defmacro elenv-with-os (os &rest body)
   "Evaluate BODY by OS."
   (declare (indent 1))
   `(when (or (eq system-type ,os) (memq system-type ,os)) ,@body))
 
+;;;###autoload
 (defmacro elenv-with-windows (&rest body)
   "Evaluate BODY in Windows."
   (declare (indent 0)) `(when elenv-windows ,@body))
 
+;;;###autoload
 (defmacro elenv-with-macos (&rest body)
   "Evaluate BODY in macOS."
   (declare (indent 0)) `(when elenv-macos ,@body))
 
+;;;###autoload
 (defmacro elenv-with-linux (&rest body)
   "Evaluate BODY in Linux."
   (declare (indent 0)) `(when elenv-linux ,@body))
 
+;;;###autoload
 (defmacro elenv-with-bsd (&rest body)
   "Evaluate BODY in BSD."
   (declare (indent 0)) `(when elenv-bsd ,@body))
 
+;;;###autoload
 (defmacro elenv-with-unix (&rest body)
   "Evaluate BODY in Unix."
   (declare (indent 0)) `(when elenv-unix ,@body))
