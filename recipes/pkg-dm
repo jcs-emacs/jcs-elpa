@@ -1,0 +1,1 @@
+(pkg-dm :repo "jcs-elpa/pkg-dm" :fetcher github)
