@@ -1,0 +1,2 @@
+(package-build :repo "melpa/package-build"
+               :fetcher github)
