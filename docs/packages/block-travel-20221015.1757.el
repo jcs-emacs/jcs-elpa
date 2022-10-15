@@ -4,9 +4,9 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
-;; URL: https://github.com/jcs090218/block-travel
-;; Package-Version: 20221015.1440
-;; Package-Commit: 742fc147ffa93fa6174f2337d3892fd81ca8e868
+;; URL: https://github.com/jcs-elpa/block-travel
+;; Package-Version: 20221015.1757
+;; Package-Commit: e57d005a1b983ea68c2ec45b7a5593ee90aba225
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: convenience
@@ -33,6 +33,18 @@
 
 ;;; Code:
 
+;;
+;; (@* "Util" )
+;;
+
+(defun block-travel--current-line-empty-p ()
+  "Current line empty, but accept spaces/tabs in there.  (not absolute)."
+  (save-excursion (beginning-of-line) (looking-at "[[:space:]\t]*$")))
+
+;;
+;; (@* "Core" )
+;;
+
 ;;;###autoload
 (defun block-travel-up (&optional _)
   "Move to the previous line containing nothing but whitespaces or tabs."
@@ -44,7 +56,7 @@
 (defun block-travel-down (&optional _)
   "Move to the next line containing nothing but whitespaces or tabs."
   (interactive "^P")
-  (when (jcs-current-line-empty-p) (forward-line 1))
+  (when (block-travel--current-line-empty-p) (forward-line 1))
   (let ((sr-pt (save-excursion (re-search-forward "^[ \t]*\n" nil t))))
     (goto-char (or sr-pt (point-max)))
     (when sr-pt (forward-line -1))))
