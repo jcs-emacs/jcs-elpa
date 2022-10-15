@@ -5,10 +5,10 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vsc-edit-mode
-;; Package-Version: 20221015.1313
-;; Package-Commit: 2ccaf188d6572edfb21356f38b01318d3468e7c3
+;; Package-Version: 20221015.1339
+;; Package-Commit: 27cc0f8f0e08a02cc31952411d9977eb5f33f8e5
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "26.1") (indent-control "0.1.0") (company "0.8.12") (yasnippet "0.8.0") (msgu "0.1.0"))
+;; Package-Requires: ((emacs "26.1") (indent-control "0.1.0") (company "0.8.12") (yasnippet "0.8.0") (msgu "0.1.0") (mwim "0.4"))
 ;; Keywords: convenience editing vs
 
 ;; This file is not part of GNU Emacs.
@@ -37,6 +37,7 @@
 
 (require 'msgu)
 (require 'indent-control)
+(require 'mwim)
 (require 'company)
 (require 'yasnippet)
 
@@ -338,6 +339,57 @@
               (indent-for-tab-command)
               (when (= pt (point)) (vsc-edit--backward-delete-spaces-by-indent-level)))
           (vsc-edit--backward-delete-spaces-by-indent-level))))))
+
+;;
+;; (@* "BOL and EOL" )
+;;
+
+;;;###autoload
+(defun vsc-edit-beginning-of-visual-line ()
+  "Goto the beginning of visual line."
+  (interactive)
+  (let ((visual-line-column -1) first-line-in-non-truncate-line)
+    ;; First, record down the beginning of visual line point
+    (save-excursion
+      (call-interactively #'beginning-of-visual-line)
+      (setq visual-line-column (current-column)))
+
+    ;; Check if is the first line of non-truncate line mode
+    (when (= visual-line-column 0)
+      (setq first-line-in-non-truncate-line t))
+
+    (if first-line-in-non-truncate-line
+        (call-interactively #'mwim-beginning-of-code-or-line)
+      (let ((before-pt (point)))
+        (call-interactively #'beginning-of-visual-line)
+
+        ;; If before point is the same as the current point ; We call regaulr
+        ;; `beginning-of-line' function.
+        (when (= before-pt (point))
+          (call-interactively #'mwim-beginning-of-code-or-line))))))
+
+;;;###autoload
+(defun vsc-edit-end-of-visual-line ()
+  "Goto the end of visual line."
+  (interactive)
+  (let ((before-pt (point)))
+    (call-interactively #'end-of-visual-line)
+    ;; If before point is the same as the current point; we call regaulr
+    ;; `end-of-line' function.
+    (when (= before-pt (point)) (call-interactively #'mwim-end-of-line-or-code))))
+
+;;;###autoload
+(defun vsc-edit-beginning-of-line ()
+  "Goto the beginning of line."
+  (interactive)
+  (call-interactively (if truncate-lines #'mwim-beginning-of-code-or-line
+                        #'vsc-edit-beginning-of-visual-line)))
+
+;;;###autoload
+(defun vsc-edit-end-of-line ()
+  "Goto the end of line."
+  (interactive)
+  (call-interactively (if truncate-lines #'mwim-end-of-line-or-code #'vsc-edit-end-of-visual-line)))
 
 (provide 'vsc-edit-mode)
 ;;; vsc-edit-mode.el ends here
