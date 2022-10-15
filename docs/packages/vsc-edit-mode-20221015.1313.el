@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vsc-edit-mode
-;; Package-Version: 20221009.1635
-;; Package-Commit: d420349dd0272c27af9b297ad31901c710d50485
+;; Package-Version: 20221015.1313
+;; Package-Commit: 2ccaf188d6572edfb21356f38b01318d3468e7c3
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (indent-control "0.1.0") (company "0.8.12") (yasnippet "0.8.0") (msgu "0.1.0"))
 ;; Keywords: convenience editing vs
@@ -74,8 +74,8 @@
 ;;;###autoload
 (define-minor-mode vsc-edit-mode
   "Minor mode `vsc-edit'."
+  :lighter " VSC-Edit"
   :group vsc-edit
-  :lighter nil
   :keymap vsc-edit-mode-map)
 
 (defun vsc-edit-mode--turn-on ()

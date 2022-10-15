@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/elenv
-;; Package-Version: 20221013.1828
-;; Package-Commit: 628ed466de9358d3ff46bd9a6186bf825048605e
+;; Package-Version: 20221015.1008
+;; Package-Commit: 1e10b7f9c92aa8098bd6ba0a2aba8b80f7f3b1ed
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26."))
 ;; Keywords: maint
