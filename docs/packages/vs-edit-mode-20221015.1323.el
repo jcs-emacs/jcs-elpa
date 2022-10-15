@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-edit-mode
-;; Package-Version: 20220704.632
-;; Package-Commit: 71fc7825dfb466bb001644d2449772127e400732
+;; Package-Version: 20221015.1323
+;; Package-Commit: ce1d66d311359c10c420a9ef0825fa144d5b8799
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "24.3"))
 ;; Keywords: convenience editing vs
@@ -65,12 +65,14 @@
     (define-key map (kbd "{") #'vs-edit-opening-curly-bracket-key)
     (define-key map (kbd ";") #'vs-edit-semicolon-key)
     (define-key map (kbd "#") #'vs-edit-sharp-key)
+    (define-key map (kbd "<up>") #'vs-edit-previous-line)
+    (define-key map (kbd "<down>") #'vs-edit-next-line)
     map)
   "Keymap used in function `vs-edit-mode'.")
 
 ;;;###autoload
 (define-minor-mode vs-edit-mode
-  "Minor mode 'vs-edit-mode'."
+  "Minor mode `vs-edit-mode'."
   :lighter " VS-Edit"
   :group vs-edit
   (when vs-edit-mode
@@ -78,7 +80,7 @@
       (vs-edit-mode -1))))
 
 (defun vs-edit-turn-on-mode ()
-  "Turn on the 'vs-edit-mode'."
+  "Turn on the `vs-edit-mode'."
   (vs-edit-mode 1))
 
 ;;;###autoload
@@ -91,11 +93,7 @@
 ;; (@* "Util" )
 ;;
 
-(defun vs-edit--beginning-of-line-p ()
-  "Return non-nil if beginning of line."
-  (= (current-column) 0))
-
-(defun vs-edit--inside-comment-or-string-p ()
+(defun vs-edit--comment-or-string-p ()
   "Return non-nil if it's inside comment or string."
   (or (nth 4 (syntax-ppss)) (nth 8 (syntax-ppss))))
 
@@ -103,8 +101,12 @@
   "Delete region by default value."
   (when (use-region-p) (delete-region (region-beginning) (region-end))))
 
+(defun vs-edit--current-line-empty-p ()
+  "Current line empty, but accept spaces/tabs in there.  (not absolute)."
+  (save-excursion (beginning-of-line) (looking-at "[[:space:]\t]*$")))
+
 (defun vs-edit--current-char-string ()
-  "Get the current character as the 'string'."
+  "Get the current character as the `string'."
   (if (char-before) (string (char-before)) ""))
 
 (defun vs-edit--current-char-equal-p (c)
@@ -117,7 +119,7 @@
   "Check if current character a whitespace or a tab character?"
   (vs-edit--current-char-equal-p '(" " "\t")))
 
-(defun vs-edit--is-infront-first-char-at-line-p (&optional pt)
+(defun vs-edit--infront-first-char-at-line-p (&optional pt)
   "Return non-nil if there is nothing infront of the right from the PT."
   (save-excursion
     (when pt (goto-char pt))
@@ -131,7 +133,7 @@
   "For programming langauge that need `{`."
   (interactive)
   (vs-edit--delete-region)
-  (if (vs-edit--inside-comment-or-string-p)
+  (if (vs-edit--comment-or-string-p)
       (insert "{")
     (let (pretty-it space-infront)
       (unless (vs-edit--current-char-equal-p "{")
@@ -150,7 +152,7 @@
         (save-excursion
           (forward-char 2)
           (when (and (not (eobp))
-                     (not (vs-edit--beginning-of-line-p))
+                     (not (bolp))
                      (vs-edit--current-char-equal-p "}"))
             (backward-char 1)
             (insert " ")))))))
@@ -162,7 +164,7 @@
   (insert ";")
   (save-excursion
     (forward-char 1)
-    (when (and (not (vs-edit--beginning-of-line-p))
+    (when (and (not (bolp))
                (vs-edit--current-char-equal-p "}"))
       (backward-char 1)
       (insert " "))))
@@ -173,9 +175,34 @@
   (vs-edit--delete-region)
   (insert "#")
   (backward-char 1)
-  (when (vs-edit--is-infront-first-char-at-line-p)
+  (when (vs-edit--infront-first-char-at-line-p)
     (kill-region (line-beginning-position) (point)))
   (forward-char 1))
+
+;;
+;; (@* "Navigation" )
+;;
+
+(defun vs-edit--after-move-line ()
+  "Do stuff after smart move line."
+  (cond ((vs-edit--current-line-empty-p) (end-of-line))
+        ((and (vs-edit--infront-first-char-at-line-p)
+              (re-search-forward "[^[:space:]\t]" (line-end-position) t))
+         (forward-char -1))))
+
+;;;###autoload
+(defun vs-edit-previous-line ()
+  "Smart way to navigate to previous line."
+  (interactive)
+  (call-interactively #'previous-line)
+  (vs-edit--after-move-line))
+
+;;;###autoload
+(defun vs-edit-next-line ()
+  "Smart way to navigate to next line."
+  (interactive)
+  (call-interactively #'next-line)
+  (vs-edit--after-move-line))
 
 (provide 'vs-edit-mode)
 ;;; vs-edit-mode.el ends here
