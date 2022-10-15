@@ -1,0 +1,11 @@
+(block-travel .
+	      [(20221015 1440)
+	       ((emacs
+		 (26 1)))
+	       "Move to previous/next blank line" single
+	       ((:commit . "742fc147ffa93fa6174f2337d3892fd81ca8e868")
+		(:authors
+		 ("Jen-Chieh" . "jcs090218@gmail.com"))
+		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		(:keywords "convenience")
+		(:url . "https://github.com/jcs090218/block-travel"))])
