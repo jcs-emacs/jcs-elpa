@@ -1,0 +1,1 @@
+(maple-line :repo "honmaple/emacs-maple-line" :fetcher github)
