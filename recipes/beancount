@@ -1,0 +1,1 @@
+(beancount :repo "beancount/beancount-mode" :fetcher github)
