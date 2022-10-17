@@ -1,0 +1,11 @@
+(mint-mode .
+	   [(20220911 1007)
+	    ((emacs
+	      (25 1)))
+	    "Major mode for the Mint programming language" tar
+	    ((:commit . "33e299c3dab348b5c7d972d24f2dff590710135c")
+	     (:authors
+	      ("Diwank Tomer (" . "singh@diwank.name "))
+	     (:maintainer "Diwank Tomer (" . "singh@diwank.name ")
+	     (:keywords "mint" "languages" "processes" "convenience" "tools" "files")
+	     (:url . "https://github.com/creatorrr/emacs-mint-mode"))])
