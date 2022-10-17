@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/elenv
-;; Package-Version: 20221015.1008
-;; Package-Commit: 1e10b7f9c92aa8098bd6ba0a2aba8b80f7f3b1ed
+;; Package-Version: 20221017.1403
+;; Package-Commit: ecdb206e396f527e66682b4e0654d42b4f1db650
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26."))
 ;; Keywords: maint
@@ -60,6 +60,15 @@
 ;;;###autoload
 (defconst elenv-unix (memq system-type '(aix berkeley-unix hpux usg-unix-v))
   "Unix")
+
+;;;###autoload
+(defconst elenv-system-type
+  (cond (elenv-windows 'dos)
+        (elenv-macos   'mac)
+        (elenv-linux   'unix)
+        (elenv-bsd     'bsd)
+        (t             'unknown))
+  "Generic system type.")
 
 ;;;###autoload
 (defmacro elenv-with-os (os &rest body)
