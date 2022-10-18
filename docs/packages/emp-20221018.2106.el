@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/emp
-;; Package-Version: 20221018.2104
-;; Package-Commit: 341ae548ccfa59ff34ca438689745085827e44eb
+;; Package-Version: 20221018.2106
+;; Package-Commit: 665bdc2430d8070bac6fbaa9ed6fa3e23288ec84
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (async "1.9.3") (f "0.20.0") (buffer-wrap "0.1.5"))
 ;; Keywords: multimedia
@@ -305,7 +305,9 @@ LOOP is nil then we simply return nil."
   (message "EMP currently doesn't support his functionality"))
 
 (defun emp--music-file (&optional entry)
-  "Return a music filename from current item."
+  "Return a music filename from current item.
+
+If ENTRY exists, use that instead."
   (let ((entry (or entry (tabulated-list-get-entry))))
     (when (vectorp entry)
       (aref entry 2))))
