@@ -5,11 +5,11 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/emp
-;; Package-Version: 20221018.1447
-;; Package-Commit: a98b875c52dfe5021b583f69dc3fccd03ac02003
+;; Package-Version: 20221018.1510
+;; Package-Commit: dc39d3afe7616b0fc7fdcc023471f841fc749d1d
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (async "1.9.3") (f "0.20.0"))
-;; Keywords: music player playlist table meida
+;; Keywords: multimedia
 
 ;; This file is NOT part of GNU Emacs.
 
@@ -125,7 +125,9 @@
 (defun emp ()
   "Start `emp-mode'."
   (interactive)
-  (pop-to-buffer emp--buffer-name nil)
+  (if (get-buffer-window emp--buffer-name)
+      (pop-to-buffer emp--buffer-name nil)
+    (switch-to-buffer-other-window emp--buffer-name))
   (emp-mode))
 
 ;;
@@ -209,6 +211,7 @@
   (interactive)
   (when (processp emp--sound-process)
     (ignore-errors (kill-process emp--sound-process))
+    (ignore-errors (kill-buffer (process-buffer emp--sound-process)))
     (setq emp--sound-process nil)
     (unless emp--loop
       (setq emp--current-path ""))
@@ -241,7 +244,7 @@
     (emp--revert-buffer)))
 
 (defun emp-find-file (filename &rest _)
-  "Find the music file."
+  "Find the music FILENAME."
   (interactive
    (list (read-file-name "Select music file: " default-directory)))
   (push filename emp--paths)
