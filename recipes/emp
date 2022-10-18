@@ -1,0 +1,1 @@
+(emp :repo "jcs-elpa/emp" :fetcher github)
