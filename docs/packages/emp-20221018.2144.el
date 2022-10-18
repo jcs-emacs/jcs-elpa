@@ -5,10 +5,10 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/emp
-;; Package-Version: 20221018.2127
-;; Package-Commit: 5e95e74d1db1c252ba2f7281929e228983bf835b
+;; Package-Version: 20221018.2144
+;; Package-Commit: f9775691bb83fd7674277824aa586ea2e247b982
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "27.1") (async "1.9.3") (f "0.20.0") (buffer-wrap "0.1.5"))
+;; Package-Requires: ((emacs "27.1") (async "1.9.3") (f "0.20.0") (buffer-wrap "0.1.5") (msgu "0.1.0"))
 ;; Keywords: multimedia
 
 ;; This file is NOT part of GNU Emacs.
@@ -40,6 +40,7 @@
 (require 'async)
 (require 'buffer-wrap)
 (require 'f)
+(require 'msgu)
 
 (defgroup emp nil
   "Emacs Music Playlist."
@@ -197,9 +198,10 @@ This can be one of these value,
 
 (defun emp--save-history ()
   "Save history data."
-  (write-region (emp--list-to-string emp--paths)
-                nil
-                (expand-file-name emp--history-file)))
+  (msgu-inhibit-log
+    (write-region (emp--list-to-string emp--paths)
+                  nil
+                  (expand-file-name emp--history-file))))
 
 (defun emp--load-settings ()
   "Load settings file."
@@ -212,10 +214,11 @@ This can be one of these value,
 
 (defun emp--save-settings ()
   "Save settings file."
-  (write-region (emp--2-str (list :volume emp--volume
-                                  :mode emp--mode))
-                nil
-                (expand-file-name emp--settings-file)))
+  (msgu-inhibit-log
+    (write-region (emp--2-str (list :volume emp--volume
+                                    :mode emp--mode))
+                  nil
+                  (expand-file-name emp--settings-file))))
 
 (defun emp--revert-buffer ()
   "Revert `emp-mode' buffer."
