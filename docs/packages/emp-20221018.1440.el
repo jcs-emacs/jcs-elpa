@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/emp
-;; Package-Version: 20221018.1423
-;; Package-Commit: 2e831b6a40ddc1ec978e2cf51b4acdc89b96ef7f
+;; Package-Version: 20221018.1440
+;; Package-Commit: 97e3060c3bcfa971b8c6ae957dd54fa1dbd5a89e
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (async "1.9.3") (f "0.20.0"))
 ;; Keywords: music player playlist table meida
@@ -92,10 +92,11 @@
 (defvar emp-mode-map
   (let ((map (make-sparse-keymap)))
     (define-key map (kbd "M-f") #'emp-find-file)
+    (define-key map (kbd "<backspace>") #'emp-remove-file)
+    (define-key map (kbd "<delete>") #'emp-remove-file)
     (define-key map (kbd "RET") #'emp-select-music)
     (define-key map (kbd "<mouse-1>") #'emp-select-music)
     (define-key map (kbd "<space>") #'emp-stop-sound)
-    (define-key map (kbd "<backspace>") #'emp-stop-sound)
     (define-key map (kbd "M-<left>") #'emp-volume-dec)
     (define-key map (kbd "M-<right>") #'emp-volume-inc)
     (define-key map (kbd "l") #'emp-toggle-loop)
@@ -142,22 +143,43 @@
   "Read a file from PATH."
   (with-temp-buffer (insert-file-contents path) (buffer-string)))
 
+(defun emp--2-str (obj)
+  "Convert OBJ to string."
+  (format "%s" obj))
+
 ;;
 ;; (@* "Core" )
 ;;
 
 (defun emp--load-history ()
-  "Read history `emp--history-file' to data file `emp--paths'."
+  "Load history data."
   (unless (file-exists-p emp--history-file) (emp--save-history))
   (let ((paths (split-string (emp--read-file emp--history-file) "\n" t)))
+    ;; Remove path when file no longer exists!
     (setq paths (cl-remove-if-not (lambda (path) (file-exists-p path)) paths))
     (setq emp--paths paths)))
 
 (defun emp--save-history ()
-  "Write history `emp--paths' to data file `emp--history-file'."
+  "Save history data."
   (write-region (emp--list-to-string emp--paths)
                 nil
                 (expand-file-name emp--history-file)))
+
+(defun emp--load-settings ()
+  "Load settings file."
+  (unless (file-exists-p emp--settings-file) (emp--save-settings))
+  (let* ((pattern (emp--read-file emp--settings-file))
+         (data (eval (thing-at-point--read-from-whole-string
+                      (concat "'" pattern)))))
+    (setq emp--volume (plist-get data :volume)
+          emp--loop (plist-get data :loop))))
+
+(defun emp--save-settings ()
+  "Save settings file."
+  (write-region (emp--2-str (list :volume emp--volume
+                                  :loop emp--loop))
+                nil
+                (expand-file-name emp--settings-file)))
 
 (defun emp--revert-buffer ()
   "Revert `emp-mode' buffer."
@@ -204,6 +226,20 @@
   ;; TODO: ..
   (message "EMP currently doesn't support his functionality"))
 
+(defun emp--music-file ()
+  "Return a music filename from current item."
+  (let ((entry (tabulated-list-get-entry)))
+    (when (vectorp entry)
+      (aref entry 2))))
+
+(defun emp-select-music ()
+  "Play sound for current item."
+  (interactive)
+  (when-let ((path (emp--music-file)))
+    (emp--play-sound-async path emp--volume)
+    (setq emp--current-path path)
+    (emp--revert-buffer)))
+
 (defun emp-find-file (filename &rest _)
   "Find the music file."
   (interactive
@@ -211,6 +247,14 @@
   (push filename emp--paths)
   (emp--save-history)
   (emp))
+
+(defun emp-remove-file ()
+  "Remove a item."
+  (interactive)
+  (when-let ((path (emp--music-file)))
+    (setq emp--paths (cl-remove path emp--paths))
+    (emp--save-history)
+    (emp)))
 
 (defun emp-volume-dec ()
   "Decrease volume."
@@ -234,16 +278,6 @@
 ;;
 ;; (@* "Tabulated List" )
 ;;
-
-(defun emp-select-music ()
-  "Play sound for current item."
-  (interactive)
-  (let ((entry (tabulated-list-get-entry)))
-    (when (vectorp entry)
-      (let ((path (aref entry 2)))
-        (emp--play-sound-async path emp--volume)
-        (setq emp--current-path path)
-        (emp--revert-buffer)))))
 
 (defun emp--new-music-entry (path)
   "Add a music by PATH."
