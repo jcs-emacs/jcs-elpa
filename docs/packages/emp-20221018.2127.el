@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/emp
-;; Package-Version: 20221018.2118
-;; Package-Commit: b7d56702394c6f06dd500273cbd5f7e355165d4d
+;; Package-Version: 20221018.2127
+;; Package-Commit: 5e95e74d1db1c252ba2f7281929e228983bf835b
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (async "1.9.3") (f "0.20.0") (buffer-wrap "0.1.5"))
 ;; Keywords: multimedia
@@ -154,9 +154,14 @@ This can be one of these value,
 (defun emp ()
   "Start `emp-mode'."
   (interactive)
-  (if (get-buffer-window emp--buffer-name)
-      (pop-to-buffer emp--buffer-name nil)
-    (switch-to-buffer-other-window emp--buffer-name))
+  (switch-to-buffer (get-buffer-create emp--buffer-name))
+  (emp-mode))
+
+;;;###autoload
+(defun emp-other-window ()
+  "Start `emp-mode' in other window."
+  (interactive)
+  (switch-to-buffer-other-window (get-buffer-create emp--buffer-name))
   (emp-mode))
 
 ;;
