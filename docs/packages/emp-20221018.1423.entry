@@ -1,0 +1,15 @@
+(emp .
+     [(20221018 1423)
+      ((emacs
+	(26 1))
+       (async
+	(1 9 3))
+       (f
+	(0 20 0)))
+      "Emacs Music Playlist" single
+      ((:commit . "2e831b6a40ddc1ec978e2cf51b4acdc89b96ef7f")
+       (:authors
+	("Jen-Chieh" . "jcs090218@gmail.com"))
+       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+       (:keywords "music" "player" "playlist" "table" "meida")
+       (:url . "https://github.com/jcs-elpa/emp"))])
