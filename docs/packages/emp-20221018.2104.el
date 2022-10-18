@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/emp
-;; Package-Version: 20221018.2025
-;; Package-Commit: 2952de7c1e34a3af2bc8309499f662c80ee70b4d
+;; Package-Version: 20221018.2104
+;; Package-Commit: 341ae548ccfa59ff34ca438689745085827e44eb
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (async "1.9.3") (f "0.20.0") (buffer-wrap "0.1.5"))
 ;; Keywords: multimedia
@@ -224,20 +224,47 @@ This can be one of these value,
           (goto-char old-pt)))
     (error "[ERROR] Can't revert emp buffer if is not inside *emp* buffer list")))
 
-(defun emp--music-index ()
-  ""
-  (cl-position emp--current-path emp--paths :test 'string=))
+(defun emp--entry (index)
+  "Return entry by INDEX."
+  (when (and (<= index (length tabulated-list-entries))
+             (<= 0 index))
+    (cadr (nth index tabulated-list-entries))))
 
-(defun emp--after-play (path)
+(defun emp--music-index ()
+  "Return current music index."
+  (cl-position-if (lambda (entry)
+                    (equal emp--current-path (emp--music-file (cadr entry))))
+                  tabulated-list-entries))
+
+(defun emp--next-music (loop)
+  "Return the filename of the next music.
+
+If the music exceeded the list we return the first music instead, but when
+LOOP is nil then we simply return nil."
+  (when-let* ((current (emp--music-index))
+              (next (1+ (emp--music-index)))
+              (next (if (<= (length tabulated-list-entries) next)  ; exceeded
+                        (if loop 0 -1)
+                      next))
+              (entry (emp--entry next)))
+    (emp--music-file entry)))
+
+(defun emp--after-play ()
   "Execution after playing a music."
-  (cl-case emp--mode
-    (`single )  ; do nothing
-    (`single-repeat (emp--play-async path emp--volume))
-    (`cycle )
-    (`cycle-repeat )
-    (`random
-     ;; TODO: ..
-     )))
+  (when (get-buffer emp--buffer-name)
+    (with-current-buffer emp--buffer-name
+      (cl-case emp--mode
+        (`single )  ; do nothing
+        (`single-repeat (emp--play-async emp--current-path emp--volume))
+        (`cycle
+         (when-let ((next-music (emp--next-music nil)))
+           (emp--play-async next-music emp--volume)))
+        (`cycle-repeat (emp--play-async (emp--next-music t) emp--volume))
+        (`random
+         (when-let* ((index (random (length tabulated-list-entries)))
+                     (entry (emp--entry index))
+                     (random-music (emp--music-file entry)))
+           (emp--play-async random-music emp--volume)))))))
 
 (defun emp--play-async (path volume)
   "Async play sound file PATH and with VOLUME."
@@ -247,7 +274,7 @@ This can be one of these value,
   (setq emp--sound-process
         (async-start
          (lambda (&rest _) (play-sound-file path volume))
-         (lambda (&rest _) (emp--after-play path)))))
+         (lambda (&rest _) (emp--after-play)))))
 
 (defun emp-stop ()
   "Stop the sound from current process."
@@ -277,9 +304,9 @@ This can be one of these value,
   ;; TODO: ..
   (message "EMP currently doesn't support his functionality"))
 
-(defun emp--music-file ()
+(defun emp--music-file (&optional entry)
   "Return a music filename from current item."
-  (let ((entry (tabulated-list-get-entry)))
+  (let ((entry (or entry (tabulated-list-get-entry))))
     (when (vectorp entry)
       (aref entry 2))))
 
