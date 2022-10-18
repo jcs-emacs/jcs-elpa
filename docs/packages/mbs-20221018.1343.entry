@@ -1,9 +1,9 @@
 (mbs .
-     [(20220704 656)
+     [(20221018 1343)
       ((emacs
 	(26 1)))
       "Minibuffer Stats" single
-      ((:commit . "909b83b614ce69448fed3beed19eaacb256cf36b")
+      ((:commit . "b3f5c467a4a5882dcb7feb06448f1383127686e9")
        (:authors
 	("Jen-Chieh" . "jcs090218@gmail.com"))
        (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

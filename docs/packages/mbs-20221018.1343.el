@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/mbs
-;; Package-Version: 20220704.656
-;; Package-Commit: 909b83b614ce69448fed3beed19eaacb256cf36b
+;; Package-Version: 20221018.1343
+;; Package-Commit: b3f5c467a4a5882dcb7feb06448f1383127686e9
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: convenience minibuffer stats
@@ -33,32 +33,31 @@
 
 ;;; Code:
 
-(defun mbs-do-stuff (fnc &rest args)
-  "Execute FNC and ARGS in minibuffer the safe way."
-  (if (not (active-minibuffer-window))
-      (user-error "[ERROR] Minibuffer not active to do stuff: %s" fnc)
-    (save-selected-window
-      (select-window (active-minibuffer-window))
-      (apply fnc args))))
-
-(defun mbs--compare-p (name type)
-  "Compare `buffer-string' with NAME and TYPE."
-  (mbs-do-stuff (lambda () (jcs-string-compare-p name (buffer-string) type))))
+(defmacro mbs--with-minibuffer-env (&rest body)
+  "Execute BODY with minibuffer variables."
+  (declare (indent 0) (debug t))
+  `(let ((prompt (minibuffer-prompt))
+         (contents (minibuffer-contents)))
+     ,@body))
 
 ;;;###autoload
 (defun mbs-M-x-p ()
-  "Return non-nil if current minibuffer M-x."
-  (mbs--compare-p "M-x" 'regex))
+  "Return non-nil if current minibuffer `M-x'."
+  (mbs--with-minibuffer-env
+    (string-prefix-p "M-x" prompt)))
 
 ;;;###autoload
 (defun mbs-finding-file-p ()
   "Return non-nil if current minibuffer finding file."
-  (mbs--compare-p "Find file" 'regex))
+  (mbs--with-minibuffer-env
+    (or (string-prefix-p "Find " prompt)
+        (string-prefix-p "Select " prompt))))
 
 ;;;###autoload
 (defun mbs-renaming-p ()
   "Return non-nil if current minibuffer renaming."
-  (mbs--compare-p "New name:" 'regex))
+  (mbs--with-minibuffer-env
+    (string-prefix-p "New name:" prompt)))
 
 (provide 'mbs)
 ;;; mbs.el ends here
