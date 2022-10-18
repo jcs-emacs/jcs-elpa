@@ -5,10 +5,10 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/emp
-;; Package-Version: 20221018.1751
-;; Package-Commit: bf96815fd449e57fc06e8b06538322ce14654b10
+;; Package-Version: 20221018.2025
+;; Package-Commit: 2952de7c1e34a3af2bc8309499f662c80ee70b4d
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "27.1") (async "1.9.3") (f "0.20.0"))
+;; Package-Requires: ((emacs "27.1") (async "1.9.3") (f "0.20.0") (buffer-wrap "0.1.5"))
 ;; Keywords: multimedia
 
 ;; This file is NOT part of GNU Emacs.
@@ -33,10 +33,12 @@
 
 ;;; Code:
 
+(require 'cl-lib)
 (require 'files)
 (require 'tabulated-list)
 
 (require 'async)
+(require 'buffer-wrap)
 (require 'f)
 
 (defgroup emp nil
@@ -53,6 +55,11 @@
 (defcustom emp-volume-delta 5
   "Delta value to increase/decrease volume."
   :type 'integer
+  :group 'emp)
+
+(defcustom emp-dont-use-unicode nil
+  "If non-nil, don't use any unicode in the setup."
+  :type 'boolean
   :group 'emp)
 
 (defconst emp--history-file (f-join user-emacs-directory "emp" "history")
@@ -79,8 +86,16 @@
 (defvar emp--volume 20
   "Current play sound volume.")
 
-(defvar emp--loop nil
-  "Current play sound loop.")
+(defvar emp--mode 'single
+  "Current play mode.
+
+This can be one of these value,
+
+  - single
+  - single-repeat
+  - cycle
+  - cycle-repeat
+  - random")
 
 (defvar emp--current-path ""
   "Current play music path.")
@@ -99,7 +114,7 @@
     (define-key map (kbd "<space>") #'emp-stop)
     (define-key map (kbd "M-<left>") #'emp-volume-dec)
     (define-key map (kbd "M-<right>") #'emp-volume-inc)
-    (define-key map (kbd "l") #'emp-toggle-loop)
+    (define-key map (kbd "l") #'emp-cycle-mode)
     (define-key map (kbd "r") #'emp-replay)
     map)
   "Keymap for `emp-mode'.")
@@ -113,14 +128,27 @@
   (setq tabulated-list-format emp--format)
   (setq tabulated-list-padding 1)
   (setq-local tabulated-list--header-string
-              (format "> Volume: %s, Loop: %s"
-                      emp--volume
-                      (if emp--loop "On" "Off")))
+              (format "[?] Mode: %s, Volume: %s"
+                      (if emp-dont-use-unicode
+                          (cl-case emp--mode
+                            (`single "Single")
+                            (`single-repeat "Single-Repeat")
+                            (`cycle "Cycle")
+                            (`cycle-repeat "Cycle-Repeat")
+                            (`random "Random"))
+                        (cl-case emp--mode
+                          (`single "➡️")
+                          (`single-repeat "🔂")
+                          (`cycle "⬇️")
+                          (`cycle-repeat "🔃")
+                          (`random "🔀")))
+                      emp--volume))
   (setq tabulated-list-sort-key (cons "Title" nil))
   (tabulated-list-init-header)
   (setq tabulated-list-entries (emp--get-entries))
   (tabulated-list-print t)
-  (tabulated-list-print-fake-header))
+  (tabulated-list-print-fake-header)
+  (buffer-wrap-mode 1))
 
 ;;;###autoload
 (defun emp ()
@@ -175,12 +203,12 @@
          (data (eval (thing-at-point--read-from-whole-string
                       (concat "'" pattern)))))
     (setq emp--volume (plist-get data :volume)
-          emp--loop (plist-get data :loop))))
+          emp--mode (plist-get data :mode))))
 
 (defun emp--save-settings ()
   "Save settings file."
   (write-region (emp--2-str (list :volume emp--volume
-                                  :loop emp--loop))
+                                  :mode emp--mode))
                 nil
                 (expand-file-name emp--settings-file)))
 
@@ -196,6 +224,21 @@
           (goto-char old-pt)))
     (error "[ERROR] Can't revert emp buffer if is not inside *emp* buffer list")))
 
+(defun emp--music-index ()
+  ""
+  (cl-position emp--current-path emp--paths :test 'string=))
+
+(defun emp--after-play (path)
+  "Execution after playing a music."
+  (cl-case emp--mode
+    (`single )  ; do nothing
+    (`single-repeat (emp--play-async path emp--volume))
+    (`cycle )
+    (`cycle-repeat )
+    (`random
+     ;; TODO: ..
+     )))
+
 (defun emp--play-async (path volume)
   "Async play sound file PATH and with VOLUME."
   (emp-stop)
@@ -203,11 +246,8 @@
   (emp--revert-buffer)
   (setq emp--sound-process
         (async-start
-         (lambda (&rest _)
-           (play-sound-file path volume))
-         (lambda (&rest _)
-           (when emp--loop
-             (emp--play-async path emp--volume))))))
+         (lambda (&rest _) (play-sound-file path volume))
+         (lambda (&rest _) (emp--after-play path)))))
 
 (defun emp-stop ()
   "Stop the sound from current process."
@@ -216,15 +256,13 @@
     (ignore-errors (kill-process emp--sound-process))
     (ignore-errors (kill-buffer (process-buffer emp--sound-process)))
     (setq emp--sound-process nil)
-    (unless emp--loop
-      (setq emp--current-path ""))
     (emp--revert-buffer)))
 
 (defun emp-replay ()
   "Replay current music."
   (interactive)
   (unless (string-empty-p emp--current-path)
-    (emp--play-async emp--current-path emp--loop)
+    (emp--play-async emp--current-path emp--volume)
     (emp)))
 
 (defun emp-pause ()
@@ -279,10 +317,13 @@
   (setq emp--volume (min 100 (+ emp--volume (abs emp-volume-delta))))
   (emp))
 
-(defun emp-toggle-loop ()
-  "Toggle loop flag."
+(defun emp-cycle-mode ()
+  "Cycle play mode."
   (interactive)
-  (setq emp--loop (not emp--loop))
+  (let ((next (memq emp--mode '(single single-repeat cycle cycle-repeat random))))
+    (if (= 1 (length next))
+        (setq emp--mode 'single)
+      (setq emp--mode (nth 1 next))))
   (emp))
 
 ;;
