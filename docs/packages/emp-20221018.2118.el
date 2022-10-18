@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/emp
-;; Package-Version: 20221018.2106
-;; Package-Commit: 665bdc2430d8070bac6fbaa9ed6fa3e23288ec84
+;; Package-Version: 20221018.2118
+;; Package-Commit: b7d56702394c6f06dd500273cbd5f7e355165d4d
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (async "1.9.3") (f "0.20.0") (buffer-wrap "0.1.5"))
 ;; Keywords: multimedia
@@ -338,12 +338,14 @@ If ENTRY exists, use that instead."
   "Decrease volume."
   (interactive)
   (setq emp--volume (max 0 (- emp--volume (abs emp-volume-delta))))
+  (emp--save-settings)
   (emp))
 
 (defun emp-volume-inc ()
   "Increase volume."
   (interactive)
   (setq emp--volume (min 100 (+ emp--volume (abs emp-volume-delta))))
+  (emp--save-settings)
   (emp))
 
 (defun emp-cycle-mode ()
@@ -353,6 +355,7 @@ If ENTRY exists, use that instead."
     (if (= 1 (length next))
         (setq emp--mode 'single)
       (setq emp--mode (nth 1 next))))
+  (emp--save-settings)
   (emp))
 
 ;;
@@ -375,6 +378,7 @@ If ENTRY exists, use that instead."
 (defun emp--get-entries ()
   "Get all the music entries."
   (emp--load-history)
+  (emp--load-settings)
   (let (entries)
     (dolist (path emp--paths)
       (push (emp--new-music-entry path) entries))
@@ -388,6 +392,7 @@ If ENTRY exists, use that instead."
   "Run when window got focused in/out."
   (when (frame-focus-state)
     (emp--load-history)
+    (emp--load-settings)
     (ignore-errors (emp--revert-buffer))))
 
 (add-function :after after-focus-change-function #'emp--after-focus-change)
