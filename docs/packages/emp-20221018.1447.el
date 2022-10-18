@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/emp
-;; Package-Version: 20221018.1440
-;; Package-Commit: 97e3060c3bcfa971b8c6ae957dd54fa1dbd5a89e
+;; Package-Version: 20221018.1447
+;; Package-Commit: a98b875c52dfe5021b583f69dc3fccd03ac02003
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (async "1.9.3") (f "0.20.0"))
 ;; Keywords: music player playlist table meida
@@ -76,7 +76,7 @@
 (defvar emp--sound-process nil
   "Process that plays the sound.")
 
-(defvar emp--volume 60
+(defvar emp--volume 20
   "Current play sound volume.")
 
 (defvar emp--loop nil
@@ -93,7 +93,7 @@
   (let ((map (make-sparse-keymap)))
     (define-key map (kbd "M-f") #'emp-find-file)
     (define-key map (kbd "<backspace>") #'emp-remove-file)
-    (define-key map (kbd "<delete>") #'emp-remove-file)
+    (define-key map (kbd "DEL") #'emp-remove-file)
     (define-key map (kbd "RET") #'emp-select-music)
     (define-key map (kbd "<mouse-1>") #'emp-select-music)
     (define-key map (kbd "<space>") #'emp-stop-sound)
@@ -260,7 +260,6 @@
   "Decrease volume."
   (interactive)
   (setq emp--volume (max 0 (- emp--volume (abs emp-volume-delta))))
-
   (emp))
 
 (defun emp-volume-inc ()
