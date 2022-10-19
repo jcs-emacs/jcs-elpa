@@ -5,10 +5,10 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-edit-mode
-;; Package-Version: 20221015.1323
-;; Package-Commit: ce1d66d311359c10c420a9ef0825fa144d5b8799
+;; Package-Version: 20221019.1857
+;; Package-Commit: a43ad1a751e253662a5b156ba9cd42ebd8312d91
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "24.3"))
+;; Package-Requires: ((emacs "26.1") (ts-fold "0.1.0"))
 ;; Keywords: convenience editing vs
 
 ;; This file is NOT part of GNU Emacs.
@@ -32,6 +32,8 @@
 ;;
 
 ;;; Code:
+
+(require 'ts-fold)
 
 (defgroup vs-edit nil
   "Minor mode accomplish editing experience in Visual Studio."
@@ -93,9 +95,18 @@
 ;; (@* "Util" )
 ;;
 
+(defmacro vs-edit--point-at-pos (&rest body)
+  "Execute BODY when return point."
+  (declare (indent 0) (debug t))
+  `(save-excursion ,@body (point)))
+
+(defun vs-edit--comment-p ()
+  "Return non-nil if it's inside comment or string."
+  (nth 4 (syntax-ppss)))
+
 (defun vs-edit--comment-or-string-p ()
   "Return non-nil if it's inside comment or string."
-  (or (nth 4 (syntax-ppss)) (nth 8 (syntax-ppss))))
+  (or (vs-edit--comment-p) (nth 8 (syntax-ppss))))
 
 (defun vs-edit--delete-region ()
   "Delete region by default value."
@@ -203,6 +214,42 @@
   (interactive)
   (call-interactively #'next-line)
   (vs-edit--after-move-line))
+
+;;
+;; (@* "Folding" )
+;;
+
+(defun vs-edit--close-node ()  ; internal
+  "Close node at the end of line, inspired from Visual Studio."
+  (save-excursion
+    (end-of-line)
+    (when (vs-edit--comment-p) (back-to-indentation))
+    (ts-fold-close)))
+
+(defun vs-edit--open-node ()  ; internal
+  "Open node at the end of line, inspired from Visual Studio."
+  (save-excursion
+    (end-of-line)
+    (when (vs-edit--comment-p) (back-to-indentation))
+    (let ((before-pt (vs-edit--point-at-pos (beginning-of-visual-line)))
+          after-pt)
+      (ts-fold-open)
+      (setq after-pt (vs-edit--point-at-pos (beginning-of-visual-line)))
+      (unless (= after-pt before-pt)
+        (goto-char before-pt)
+        (end-of-line)))))
+
+;;;###autoload
+(defun vs-edit-close-node ()
+  "Close the current scope of the node."
+  (interactive)
+  (or (vs-edit--close-node) (ts-fold-close)))
+
+;;;###autoload
+(defun vs-edit-open-node ()
+  "Open the current scope of the node."
+  (interactive)
+  (or (vs-edit--open-node) (ts-fold-open)))
 
 (provide 'vs-edit-mode)
 ;;; vs-edit-mode.el ends here
