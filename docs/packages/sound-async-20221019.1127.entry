@@ -1,0 +1,13 @@
+(sound-async .
+	     [(20221019 1127)
+	      ((emacs
+		(26 1))
+	       (async
+		(1 9 3)))
+	      "Play sound asynchronously" single
+	      ((:commit . "324c07ad4624d6b31ba0a077c71ee2a56d0c392d")
+	       (:authors
+		("Jen-Chieh" . "jcs090218@gmail.com"))
+	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	       (:keywords "multimedia")
+	       (:url . "https://github.com/jcs-elpa/sound-async"))])
