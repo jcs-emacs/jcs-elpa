@@ -1,12 +1,12 @@
 ;;; emp.el --- Emacs Music Playlist  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2020  Shen, Jen-Chieh
+;; Copyright (C) 2020-2022  Shen, Jen-Chieh
 ;; Created date 2020-03-02 20:54:03
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/emp
-;; Package-Version: 20221018.2144
-;; Package-Commit: f9775691bb83fd7674277824aa586ea2e247b982
+;; Package-Version: 20221019.705
+;; Package-Commit: aea30d45625660a33c673349d0af1e74ff41401c
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (async "1.9.3") (f "0.20.0") (buffer-wrap "0.1.5") (msgu "0.1.0"))
 ;; Keywords: multimedia
