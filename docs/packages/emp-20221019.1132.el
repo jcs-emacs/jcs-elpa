@@ -5,10 +5,10 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/emp
-;; Package-Version: 20221019.712
-;; Package-Commit: 9d4117ab427ca22f928ee768cfc30a4de4163cc9
+;; Package-Version: 20221019.1132
+;; Package-Commit: b661c313c10a5d56a37266de26fb6bcbfa3bbe24
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "27.1") (async "1.9.3") (f "0.20.0") (buffer-wrap "0.1.5") (msgu "0.1.0"))
+;; Package-Requires: ((emacs "27.1") (sound-async "0.1.0") (f "0.20.0") (buffer-wrap "0.1.5") (msgu "0.1.0"))
 ;; Keywords: multimedia
 
 ;; This file is NOT part of GNU Emacs.
@@ -38,7 +38,7 @@
 (require 'tabulated-list)
 (require 'thingatpt)
 
-(require 'async)
+(require 'sound-async)
 (require 'buffer-wrap)
 (require 'f)
 (require 'msgu)
@@ -258,7 +258,7 @@ LOOP is nil then we simply return nil."
               (entry (emp--entry next)))
     (emp--music-file entry)))
 
-(defun emp--after-play ()
+(defun emp--after-play (&rest _)
   "Execution after playing a music."
   (when (get-buffer emp--buffer-name)
     (with-current-buffer emp--buffer-name
@@ -280,18 +280,13 @@ LOOP is nil then we simply return nil."
   (emp-stop)
   (setq emp--current-path path)
   (emp--revert-buffer)
-  (setq emp--sound-process
-        (async-start
-         (lambda (&rest _) (play-sound-file path volume))
-         (lambda (&rest _) (emp--after-play)))))
+  (setq emp--sound-process (sound-async-play path volume #'emp--after-play)))
 
 (defun emp-stop ()
   "Stop the sound from current process."
   (interactive)
   (when (processp emp--sound-process)
-    (ignore-errors (kill-process emp--sound-process))
-    (ignore-errors (kill-buffer (process-buffer emp--sound-process)))
-    (setq emp--sound-process nil)
+    (sound-async-stop emp--sound-process)
     (emp--revert-buffer)))
 
 (defun emp-replay ()
