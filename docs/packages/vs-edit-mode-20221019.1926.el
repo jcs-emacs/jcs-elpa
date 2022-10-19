@@ -5,10 +5,10 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-edit-mode
-;; Package-Version: 20221019.1911
-;; Package-Commit: bf319e5c8fa520d5dbf5b53cd4245e81cff901c0
+;; Package-Version: 20221019.1926
+;; Package-Commit: 8269173c9fe0c53248b66cc99aa0063a116d2075
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "26.1") (ts-fold "0.1.0"))
+;; Package-Requires: ((emacs "26.1") (mwim "0.4") (ts-fold "0.1.0"))
 ;; Keywords: convenience editing vs
 
 ;; This file is NOT part of GNU Emacs.
@@ -33,6 +33,7 @@
 
 ;;; Code:
 
+(require 'mwim)
 (require 'ts-fold)
 
 (defgroup vs-edit nil
@@ -136,6 +137,12 @@
     (when pt (goto-char pt))
     (null (re-search-backward "[^ \t]" (line-beginning-position) t))))
 
+(defun vs-edit--behind-last-char-at-line-p (&optional pt)
+  "Return non-nil if there is nothing behind of the right from the PT."
+  (save-excursion
+    (when pt (goto-char pt))
+    (null (re-search-forward "[^ \t]" (line-end-position) t))))
+
 ;;
 ;; (@* "Core" )
 ;;
@@ -214,6 +221,70 @@
   (interactive)
   (call-interactively #'next-line)
   (vs-edit--after-move-line))
+
+;;;###autoload
+(defun vs-edit-backward-word ()
+  "Smart backward a word."
+  (interactive)
+  (let ((start-pt (point)) (start-ln (line-number-at-pos))
+        (beg-ln (bolp))
+        (infront-first-char (vs-edit--infront-first-char-at-line-p)))
+    (backward-word 1)
+    (cond ((and infront-first-char (not beg-ln))
+           (goto-char start-pt)
+           (beginning-of-line))
+          ((and (not (= start-ln (line-number-at-pos))) (not beg-ln))
+           (goto-char start-pt)
+           (mwim-beginning-of-code-or-line))
+          ((>= (abs (- start-ln (line-number-at-pos))) 2)
+           (goto-char start-pt)
+           (forward-line -1)
+           (end-of-line)))))
+
+;;;###autoload
+(defun vs-edit-forward-word ()
+  "Smart forward a word."
+  (interactive)
+  (let ((start-pt (point))
+        (start-ln (line-number-at-pos))
+        (behind-last-char (vs-edit--behind-last-char-at-line-p)))
+    (forward-word 1)
+    (cond ((and (not (= start-ln (line-number-at-pos)))
+                (not behind-last-char))
+           (goto-char start-pt)
+           (end-of-line))
+          ((>= (abs (- start-ln (line-number-at-pos))) 2)
+           (goto-char start-pt)
+           (forward-line 1)
+           (mwim-beginning-of-code-or-line)))))
+
+;;;###autoload
+(defun vs-edit-backward-delete-word ()
+  "Backward deleteing ARG words in the smart way."
+  (interactive)
+  (if (use-region-p) (vs-edit--delete-region)
+    (let ((start-pt -1) (end-pt (point)) (start-ln-end-pt -1))
+      (save-excursion
+        (vs-edit-backward-word)
+        (setq start-pt (point)
+              start-ln-end-pt (line-end-position)))
+      (unless (= (line-number-at-pos start-pt) (line-number-at-pos end-pt))
+        (setq start-pt start-ln-end-pt))
+      (delete-region start-pt end-pt))))
+
+;;;###autoload
+(defun vs-edit-forward-delete-word ()
+  "Forward deleteing ARG words in the smart way."
+  (interactive)
+  (if (use-region-p) (vs-edit--delete-region)
+    (let ((start-pt (point)) (end-pt -1) (end-ln-start-pt -1))
+      (save-excursion
+        (vs-edit-forward-word)
+        (setq end-pt (point)
+              end-ln-start-pt (line-beginning-position)))
+      (unless (= (line-number-at-pos start-pt) (line-number-at-pos end-pt))
+        (setq end-pt end-ln-start-pt))
+      (delete-region start-pt end-pt))))
 
 ;;
 ;; (@* "Format" )
