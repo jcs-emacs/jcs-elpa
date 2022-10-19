@@ -1,0 +1,1 @@
+(sound-async :repo "jcs-elpa/sound-async" :fetcher github)
