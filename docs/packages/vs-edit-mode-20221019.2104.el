@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-edit-mode
-;; Package-Version: 20221019.1936
-;; Package-Commit: b685bda5e3d845e76641292549e12f97d9a3766a
+;; Package-Version: 20221019.2104
+;; Package-Commit: 2e7748afcb4a56a4158c16caeca5b7871d174668
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (mwim "0.4") (ts-fold "0.1.0"))
 ;; Keywords: convenience editing vs
@@ -224,9 +224,9 @@
   (vs-edit--after-move-line))
 
 ;;;###autoload
-(defun vs-edit-backward-word ()
+(defun vs-edit-backward-word (&optional _)
   "Smart backward a word."
-  (interactive)
+  (interactive "^P")
   (let ((start-pt (point)) (start-ln (line-number-at-pos))
         (beg-ln (bolp))
         (infront-first-char (vs-edit--infront-first-char-at-line-p)))
@@ -243,9 +243,9 @@
            (end-of-line)))))
 
 ;;;###autoload
-(defun vs-edit-forward-word ()
+(defun vs-edit-forward-word (&optional _)
   "Smart forward a word."
-  (interactive)
+  (interactive "^P")
   (let ((start-pt (point))
         (start-ln (line-number-at-pos))
         (behind-last-char (vs-edit--behind-last-char-at-line-p)))
