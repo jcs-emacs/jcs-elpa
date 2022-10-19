@@ -1,5 +1,5 @@
 (pkg-dm .
-	[(20221019 708)
+	[(20221019 1214)
 	 ((emacs
 	   (28 1))
 	  (elenv
@@ -13,7 +13,7 @@
 	  (s
 	   (1 12 0)))
 	 "Package dependencies management" tar
-	 ((:commit . "7f7b4401547314b885cd9d3d781ca8051562f9a6")
+	 ((:commit . "628457b60940d8512bd8cc71f83de82307754bbf")
 	  (:authors
 	   ("Jen-Chieh" . "jcs090218@gmail.com"))
 	  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
