@@ -1,5 +1,5 @@
 (emp .
-     [(20221019 705)
+     [(20221019 712)
       ((emacs
 	(27 1))
        (async
@@ -11,7 +11,7 @@
        (msgu
 	(0 1 0)))
       "Emacs Music Playlist" single
-      ((:commit . "aea30d45625660a33c673349d0af1e74ff41401c")
+      ((:commit . "9d4117ab427ca22f928ee768cfc30a4de4163cc9")
        (:authors
 	("Jen-Chieh" . "jcs090218@gmail.com"))
        (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

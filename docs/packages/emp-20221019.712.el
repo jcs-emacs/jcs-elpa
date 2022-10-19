@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/emp
-;; Package-Version: 20221019.705
-;; Package-Commit: aea30d45625660a33c673349d0af1e74ff41401c
+;; Package-Version: 20221019.712
+;; Package-Commit: 9d4117ab427ca22f928ee768cfc30a4de4163cc9
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (async "1.9.3") (f "0.20.0") (buffer-wrap "0.1.5") (msgu "0.1.0"))
 ;; Keywords: multimedia
@@ -36,6 +36,7 @@
 (require 'cl-lib)
 (require 'files)
 (require 'tabulated-list)
+(require 'thingatpt)
 
 (require 'async)
 (require 'buffer-wrap)
