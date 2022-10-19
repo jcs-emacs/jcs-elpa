@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-edit-mode
-;; Package-Version: 20221019.1926
-;; Package-Commit: 8269173c9fe0c53248b66cc99aa0063a116d2075
+;; Package-Version: 20221019.1936
+;; Package-Commit: b685bda5e3d845e76641292549e12f97d9a3766a
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (mwim "0.4") (ts-fold "0.1.0"))
 ;; Keywords: convenience editing vs
@@ -33,8 +33,9 @@
 
 ;;; Code:
 
-(require 'mwim)
-(require 'ts-fold)
+(eval-when-compile
+  (require 'mwim)
+  (require 'ts-fold))
 
 (defgroup vs-edit nil
   "Minor mode accomplish editing experience in Visual Studio."
