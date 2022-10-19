@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-edit-mode
-;; Package-Version: 20221019.1857
-;; Package-Commit: a43ad1a751e253662a5b156ba9cd42ebd8312d91
+;; Package-Version: 20221019.1911
+;; Package-Commit: bf319e5c8fa520d5dbf5b53cd4245e81cff901c0
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (ts-fold "0.1.0"))
 ;; Keywords: convenience editing vs
@@ -214,6 +214,23 @@
   (interactive)
   (call-interactively #'next-line)
   (vs-edit--after-move-line))
+
+;;
+;; (@* "Format" )
+;;
+
+;;;###autoload
+(defun vs-edit-format-document ()
+  "Format current document."
+  (interactive)
+  (indent-region (point-min) (point-max)))
+
+;;;###autoload
+(defun vs-edit-format-region-or-document ()
+  "Format the document if there are no region apply."
+  (interactive)
+  (if (use-region-p) (indent-region (region-beginning) (region-end))
+    (vs-edit-format-document)))
 
 ;;
 ;; (@* "Folding" )
