@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/recentf-excl
-;; Package-Version: 20221013.1852
-;; Package-Commit: 63a78d238fb7def70cae9d8d838cc14443a3d47c
+;; Package-Version: 20221020.1603
+;; Package-Commit: 2b29ac3225dfb3b03f01816be6bb657eed7f019b
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: convenience excl exclude recentf
@@ -77,7 +77,7 @@
 
 ;;;###autoload
 (define-minor-mode recentf-excl-mode
-  "Minor mode 'recentf-excl-mode'."
+  "Minor mode `recentf-excl-mode'."
   :global t
   :require 'recentf-excl-mode
   :group 'recentf-excl

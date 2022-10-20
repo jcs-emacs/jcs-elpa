@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vsc-multiple-cursors
-;; Package-Version: 20220704.632
-;; Package-Commit: 78f12e8caea0c02cfa8c1a50bc2cca7a6d79d453
+;; Package-Version: 20221020.1609
+;; Package-Commit: 2aafc8c47e7862fe6394a9a195df54f77be90f76
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (multiple-cursors "1.4.0"))
 ;; Keywords: convenience vscode vsc multiple-cursors
@@ -42,16 +42,25 @@
   :group 'tools
   :link '(url-link :tag "Repository" "https://github.com/emacs-vs/vsc-multiple-cursors"))
 
+(defcustom vsc-multiple-cursors-cancel-commands
+  '()
+  "List of command that would cancel multiple cursors."
+  :type 'list
+  :group 'vsc-multiple-cursors)
+
 (defcustom vsc-multiple-cursors-similarity 20
   "The standard similarity, the lower require more precision."
   :type 'number
   :group 'vsc-multiple-cursors)
 
+;;
+;; (@* "Core" )
+;;
+
 ;;;###autoload
 (defun vsc-multiple-cursors-mark-previous-like-this-line ()
   "Smart marking previous line."
   (interactive)
-  (require 'multiple-cursors)
   (let ((before-unmark-cur-cnt (mc/num-cursors))
         (unmark-do (ignore-errors (call-interactively #'mc/unmark-next-like-this))))
     (unless unmark-do
@@ -133,6 +142,53 @@
   (interactive)
   (setq vsc-multiple-cursors-similarity (1- vsc-multiple-cursors-similarity))
   (message "[INFO] MC similarity: %s" vsc-multiple-cursors-similarity))
+
+;;
+;; (@* "Cancellation" )
+;;
+
+(defun vsc-multiple-cursors--cancel-multiple-cursors (&rest _)
+  "Cancel the `multiple-cursors' behaviour."
+  (when (and (functionp 'mc/num-cursors) (> (mc/num-cursors) 1))
+    (mc/keyboard-quit)))
+
+(defun vsc-multiple-cursors--mc/mark-lines (num-lines direction)
+  "Override `mc/mark-lines' function."
+  (let ((cur-column (current-column)))
+    (dotimes (i (if (= num-lines 0) 1 num-lines))
+      (mc/save-excursion
+       (let ((furthest-cursor (cl-ecase direction
+                                (forwards  (mc/furthest-cursor-after-point))
+                                (backwards (mc/furthest-cursor-before-point)))))
+         (when (overlayp furthest-cursor)
+           (goto-char (overlay-get furthest-cursor 'point))
+           (when (= num-lines 0)
+             (mc/remove-fake-cursor furthest-cursor))))
+       (cl-ecase direction
+         (forwards (next-logical-line 1 nil))
+         (backwards (previous-logical-line 1 nil)))
+       (move-to-column cur-column)
+       (mc/create-fake-cursor-at-point)))))
+
+(defun vsc-multiple-cursors--enable ()
+  "Enable `vsc-multiple-cursors-mode'."
+  (dolist (cmd vsc-multiple-cursors-cancel-commands)
+    (advice-add cmd :after #'vsc-multiple-cursors--cancel-multiple-cursors))
+  (advice-add 'mc/mark-lines :override #'vsc-multiple-cursors--mc/mark-lines))
+
+(defun vsc-multiple-cursors--disable ()
+  "Disable `vsc-multiple-cursors-mode'."
+  (dolist (cmd vsc-multiple-cursors-cancel-commands)
+    (advice-remove cmd #'vsc-multiple-cursors--cancel-multiple-cursors))
+  (advice-remove 'mc/mark-lines #'vsc-multiple-cursors--mc/mark-lines))
+
+;;;###autoload
+(define-minor-mode vsc-multiple-cursors-mode
+  "Minor mode `vsc-multiple-cursors-mode'."
+  :global t
+  :require 'vsc-multiple-cursors-mode
+  :group 'vsc-multiple-cursors
+  (if vsc-multiple-cursors-mode (vsc-multiple-cursors--enable) (vsc-multiple-cursors--disable)))
 
 (provide 'vsc-multiple-cursors)
 ;;; vsc-multiple-cursors.el ends here
