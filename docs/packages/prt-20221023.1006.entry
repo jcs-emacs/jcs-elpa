@@ -1,11 +1,13 @@
 (prt .
-     [(20220714 659)
+     [(20221023 1006)
       ((emacs
 	(27 1))
        (spinner
-	(1 7 4)))
+	(1 7 4))
+       (msgu
+	(0 1 0)))
       "Progress Reporter Library" single
-      ((:commit . "0561268235c637b5aca3bcf0919a5f21359df6d1")
+      ((:commit . "844059223107409a37e72fdb6d4269183b926484")
        (:authors
 	("Jen-Chieh" . "jcs090218@gmail.com"))
        (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

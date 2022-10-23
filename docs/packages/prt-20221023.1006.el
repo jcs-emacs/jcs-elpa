@@ -5,10 +5,10 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/prt
-;; Package-Version: 20220714.659
-;; Package-Commit: 0561268235c637b5aca3bcf0919a5f21359df6d1
+;; Package-Version: 20221023.1006
+;; Package-Commit: 844059223107409a37e72fdb6d4269183b926484
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "27.1") (spinner "1.7.4"))
+;; Package-Requires: ((emacs "27.1") (spinner "1.7.4") (msgu "0.1.0"))
 ;; Keywords: convenience
 
 ;; This file is NOT part of GNU Emacs.
@@ -34,6 +34,7 @@
 ;;; Code:
 
 (require 'spinner)
+(require 'msgu)
 
 (defgroup prt nil
   "Progress Reporter Library."
@@ -47,11 +48,6 @@
   "Characters to use for pulsing progress reporters."
   :type 'vector
   :group 'prt)
-
-(defmacro prt--silent (&rest body)
-  "Execute BODY without write it to message buffer."
-  (declare (indent 0) (debug t))
-  `(let (message-log-max) ,@body))
 
 (defun prt--pulse-characters ()
   "Return a valid vector with pulse characters."
@@ -76,7 +72,7 @@
 (defun prt-done (reporter &optional message)
   "Print reporter's message followed by word \"done\" in echo area."
   (prt--env
-    (prt--silent
+    (msgu-silent
       (progress-reporter-done reporter)
       (when message (message message)))))
 
