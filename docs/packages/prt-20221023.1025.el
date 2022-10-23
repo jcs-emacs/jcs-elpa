@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/prt
-;; Package-Version: 20221023.1006
-;; Package-Commit: 844059223107409a37e72fdb6d4269183b926484
+;; Package-Version: 20221023.1025
+;; Package-Commit: cc4f53073246ad38fc53bda90055c496a2221bae
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (spinner "1.7.4") (msgu "0.1.0"))
 ;; Keywords: convenience
@@ -72,7 +72,7 @@
 (defun prt-done (reporter &optional message)
   "Print reporter's message followed by word \"done\" in echo area."
   (prt--env
-    (msgu-silent
+    (msgu-inhibit-log
       (progress-reporter-done reporter)
       (when message (message message)))))
 

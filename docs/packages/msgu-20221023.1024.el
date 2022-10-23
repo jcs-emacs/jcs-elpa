@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/msgu
-;; Package-Version: 20220908.734
-;; Package-Commit: 690df6d067fd2d79f975d4d34f58e1350e417dc3
+;; Package-Version: 20221023.1024
+;; Package-Commit: 0d95ab830391c697c6b0eb117d557b83ce4827fa
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: lisp
@@ -45,6 +45,7 @@
   :type 'integer
   :group 'msgu)
 
+;;;###autoload
 (defmacro msgu-inhibit-log (&rest body)
   "Execute BODY without write it to message buffer."
   (declare (indent 0) (debug t))
