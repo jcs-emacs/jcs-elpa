@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/electric-indent-sexp
-;; Package-Version: 20220923.833
-;; Package-Commit: 64b07a33b6405202338faf072333351e2cb659dc
+;; Package-Version: 20221024.1103
+;; Package-Commit: 8ecd873a7fb425d82935c911677e1cacac380511
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (msgu "0.1.0"))
 ;; Keywords: convenience indent sexp electric
@@ -54,6 +54,7 @@
     (groovy-mode           . (?\n ?\) ?\] ?\}))
     (javascript-mode       . (?\n ?\) ?\] ?\}))
     (js-mode               . (?\n ?\) ?\] ?\}))
+    (js-jsx-mode           . (?\n ?\) ?\] ?\}))
     (js2-mode              . (?\n ?\) ?\] ?\}))
     (js3-mode              . (?\n ?\) ?\] ?\}))
     (json-mode             . (?\n ?\) ?\] ?\}))
