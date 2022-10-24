@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vsc-edit-mode
-;; Package-Version: 20221015.1339
-;; Package-Commit: 27cc0f8f0e08a02cc31952411d9977eb5f33f8e5
+;; Package-Version: 20221024.952
+;; Package-Commit: 28ca56adf553bb3958b7c52332ce90855646588d
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (indent-control "0.1.0") (company "0.8.12") (yasnippet "0.8.0") (msgu "0.1.0") (mwim "0.4"))
 ;; Keywords: convenience editing vs
@@ -272,7 +272,8 @@
     (vsc-edit-delete-region)
     (let ((reg-beg (point)))
       (call-interactively #'yank)
-      (ignore-errors (indent-region reg-beg (point))))))
+      (when (vsc-edit-prog-mode-p)
+        (ignore-errors (indent-region reg-beg (point)))))))
 
 ;;
 ;; (@* "Backspace" )
