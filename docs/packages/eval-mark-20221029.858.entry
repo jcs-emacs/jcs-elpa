@@ -1,0 +1,11 @@
+(eval-mark .
+	   [(20221029 858)
+	    ((emacs
+	      (26 1)))
+	    "Evaluate then deactive mark" single
+	    ((:commit . "ab8abd301182d1576bc41965a675292f8e685f64")
+	     (:authors
+	      ("Jen-Chieh" . "jcs090218@gmail.com"))
+	     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	     (:keywords "lisp")
+	     (:url . "https://github.com/jcs-elpa/eval-mark"))])
