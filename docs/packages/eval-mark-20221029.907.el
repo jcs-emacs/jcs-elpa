@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/eval-mark
-;; Package-Version: 20221029.858
-;; Package-Commit: ab8abd301182d1576bc41965a675292f8e685f64
+;; Package-Version: 20221029.907
+;; Package-Commit: ba54456fed225012cf1daa6666e9d4dbafa1757e
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: lisp
@@ -41,7 +41,7 @@
   :link '(url-link :tag "Repository" "https://github.com/jcs-elpa/eval-mark"))
 
 (defcustom eval-mark-commands
-  '(eval-buffer eval-region)
+  '(eval-buffer eval-defun eval-region)
   "List of commands to handle."
   :type 'list
   :group 'eval-mark)
