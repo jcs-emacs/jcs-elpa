@@ -1,0 +1,11 @@
+(repos-window .
+	      [(20221103 2116)
+	       ((emacs
+		 (26 1)))
+	       "Reposition window if when needed" single
+	       ((:commit . "0b04112e24513f401041601fe941d59d7cd740d5")
+		(:authors
+		 ("Jen-Chieh" . "jcs090218@gmail.com"))
+		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		(:keywords "convenience")
+		(:url . "https://github.com/jcs-elpa/repos-window"))])
