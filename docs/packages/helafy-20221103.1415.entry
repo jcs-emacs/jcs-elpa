@@ -1,9 +1,9 @@
 (helafy .
-	[(20221103 1412)
+	[(20221103 1415)
 	 ((emacs
 	   (26 1)))
 	 "Minify/Uglify/Prettify contents" single
-	 ((:commit . "ecab964cc9adf70e9475f63e3534216a92c0d6d9")
+	 ((:commit . "1132b03e1402d3a6960cffdd3706a1c3c12840b1")
 	  (:authors
 	   ("Jen-Chieh" . "jcs090218@gmail.com"))
 	  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

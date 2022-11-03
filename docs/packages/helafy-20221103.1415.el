@@ -5,9 +5,9 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/helafy
-;; Package-Version: 20221103.1412
-;; Package-Commit: ecab964cc9adf70e9475f63e3534216a92c0d6d9
-;; Version: 0.0.1
+;; Package-Version: 20221103.1415
+;; Package-Commit: 1132b03e1402d3a6960cffdd3706a1c3c12840b1
+;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: convenience
 
