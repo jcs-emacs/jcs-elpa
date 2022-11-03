@@ -1,9 +1,9 @@
 (repos-window .
-	      [(20221103 2116)
+	      [(20221103 2135)
 	       ((emacs
 		 (26 1)))
 	       "Reposition window if when needed" single
-	       ((:commit . "0b04112e24513f401041601fe941d59d7cd740d5")
+	       ((:commit . "672e3ed80bbc44226945b37c3ec0e8266e9d5239")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
