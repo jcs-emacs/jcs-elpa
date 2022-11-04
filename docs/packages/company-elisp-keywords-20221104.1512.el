@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/company-elisp-keywords
-;; Package-Version: 20221104.1504
-;; Package-Commit: 49c08e0be1a7ef50e005c05ece1668a9c155739f
+;; Package-Version: 20221104.1512
+;; Package-Commit: 57ccea908f071693519919b838a18c65f58540d5
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (company "0.8.0"))
 ;; Keywords: lisp
@@ -53,9 +53,17 @@
 (defvar company-elisp-keywords--candidates nil
   "Cache for candidates.")
 
+;;
+;; (@* "Util" )
+;;
+
 (defun company-elisp-keywords--2-str (object)
   "Convert OBJECT to string."
   (format "%s" object))
+
+;;
+;; (@* "Core" )
+;;
 
 (defun company-elisp-keywords--prepare ()
   "Prepare data."
