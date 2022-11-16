@@ -54,7 +54,7 @@ jobs:
         git add .
         git commit -m "Update archive.json"
 
-    - name: Push generated badges - packages
+    - name: Push archive info
       continue-on-error: true
       uses: jcs090218/github-push-action@master
       with:
