@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-modeline
-;; Package-Version: 20221116.1424
-;; Package-Commit: 36faa746962fd6e75113cb2473785784cd7ecf64
+;; Package-Version: 20221116.1430
+;; Package-Commit: a9fbb7b619163e5a40ffde9f65e739967d3761e7
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (moody "0.7.1"))
 ;; Keywords: faces mode-line
@@ -50,34 +50,34 @@
 
 (defun jcs-modeline--enable ()
   "Enable function `jcs-modeline-mode'."
-  (setq jcs-modeline--default-mode-line mode-line-format
-        mode-line-format
-        '((:eval
-           (jcs-modeline-render
-            (quote
-             ("%e "
-              mode-line-front-space
-              mode-line-buffer-identification " "
-              (:eval (moody-tab (concat " " (format-mode-line mode-line-modes))))
-              " " (:eval (jcs-modeline--vc-project))))
-            (quote
-             ((:eval
-               (when (and (bound-and-true-p flycheck-mode)
-                          (or flycheck-current-errors
-                              (eq 'running flycheck-last-status-change)))
-                 (cl-loop for state in '((error   . "#FB4933")
-                                         (warning . "#FABD2F")
-                                         (info    . "#83A598"))
-                          as lighter = (jcs-modeline--flycheck-lighter (car state))
-                          when lighter
-                          concat (propertize lighter 'face `(:foreground ,(cdr state))))))
-              (:eval (jcs-modeline--vc-info)) " "
-              (:eval (moody-tab " %l : %c " 0 'up)) " %p "
-              mode-line-end-spaces)))))))
+  (setq jcs-modeline--default-mode-line mode-line-format)
+  (setq-default mode-line-format
+                '((:eval
+                   (jcs-modeline-render
+                    (quote
+                     ("%e "
+                      mode-line-front-space
+                      mode-line-buffer-identification " "
+                      (:eval (moody-tab (concat " " (format-mode-line mode-line-modes))))
+                      " " (:eval (jcs-modeline--vc-project))))
+                    (quote
+                     ((:eval
+                       (when (and (bound-and-true-p flycheck-mode)
+                                  (or flycheck-current-errors
+                                      (eq 'running flycheck-last-status-change)))
+                         (cl-loop for state in '((error   . "#FB4933")
+                                                 (warning . "#FABD2F")
+                                                 (info    . "#83A598"))
+                                  as lighter = (jcs-modeline--flycheck-lighter (car state))
+                                  when lighter
+                                  concat (propertize lighter 'face `(:foreground ,(cdr state))))))
+                      (:eval (jcs-modeline--vc-info)) " "
+                      (:eval (moody-tab " %l : %c " 0 'up)) " %p "
+                      mode-line-end-spaces)))))))
 
 (defun jcs-modeline--disable ()
   "Disable function `jcs-modeline-mode'."
-  (setq mode-line-format jcs-modeline--default-mode-line))
+  (setq-default mode-line-format jcs-modeline--default-mode-line))
 
 ;;;###autoload
 (define-minor-mode jcs-modeline-mode
