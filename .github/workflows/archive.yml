@@ -37,7 +37,7 @@ jobs:
         git config user.name github-actions
         git config user.email github-actions@github.com
 
-    - name: Commit archive-contents
+    - name: Commit built archive-contents
       continue-on-error: true
       run: |
         git pull

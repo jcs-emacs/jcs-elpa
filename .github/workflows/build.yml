@@ -48,7 +48,7 @@ jobs:
         git config user.name github-actions
         git config user.email github-actions@github.com
 
-    - name: Push generated archive.json
+    - name: Push updated packages
       continue-on-error: true
       run: |
         git pull
@@ -60,7 +60,5 @@ jobs:
       continue-on-error: true
       uses: jcs090218/github-push-action@master
       with:
-        repository: ${{ env.REPO_BADGES }}
-        github_token: ${{ secrets.PAT }}
         branch: master
         retry: ${{ strategy.job-total }}
