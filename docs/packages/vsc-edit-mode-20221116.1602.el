@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vsc-edit-mode
-;; Package-Version: 20221024.952
-;; Package-Commit: 28ca56adf553bb3958b7c52332ce90855646588d
+;; Package-Version: 20221116.1602
+;; Package-Commit: 43a9ba565e94c0e604c52e26db6bda8794af2d1b
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (indent-control "0.1.0") (company "0.8.12") (yasnippet "0.8.0") (msgu "0.1.0") (mwim "0.4"))
 ;; Keywords: convenience editing vs
@@ -150,9 +150,12 @@
 (defun vsc-edit-backspace ()
   "Backspace."
   (interactive)
-  (if (vsc-edit-prog-mode-p)
-      (vsc-edit-smart-backspace)
-    (vsc-edit-real-backspace)))
+  (cond ((use-region-p)
+         (delete-region (region-beginning) (region-end)))
+        ((vsc-edit-prog-mode-p)
+         (vsc-edit-smart-backspace))
+        (t
+         (vsc-edit-real-backspace))))
 
 ;;
 ;; (@* "Indentation" )
@@ -223,9 +226,12 @@
 (defun vsc-edit-delete ()
   "Delete."
   (interactive)
-  (if (vsc-edit-prog-mode-p)
-      (vsc-edit-smart-delete)
-    (vsc-edit-real-delete)))
+  (cond ((use-region-p)
+         (delete-region (region-beginning) (region-end)))
+        ((vsc-edit-prog-mode-p)
+         (vsc-edit-smart-delete))
+        (t
+         (vsc-edit-real-delete))))
 
 ;;
 ;; (@* "Space" )
@@ -252,6 +258,7 @@
 (defun vsc-edit-space ()
   "Space."
   (interactive)
+  (vsc-edit-delete-region)
   (if (vsc-edit-prog-mode-p)
       (vsc-edit-smart-space)
     (vsc-edit-real-space)))
