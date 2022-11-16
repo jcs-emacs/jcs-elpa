@@ -1,0 +1,15 @@
+(jcs-modeline .
+	      [(20221116 1811)
+	       ((emacs
+		 (27 1))
+		(moody
+		 (0 7 1))
+		(minions
+		 (0 3 7)))
+	       "A modeline for jcs-emacs" single
+	       ((:commit . "f4a1a1b4d9de7b3290588518f4a8ac512ec588e1")
+		(:authors
+		 ("Jen-Chieh" . "jcs090218@gmail.com"))
+		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		(:keywords "faces" "mode-line")
+		(:url . "https://github.com/jcs-emacs/jcs-modeline"))])
