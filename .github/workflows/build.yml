@@ -41,7 +41,7 @@ jobs:
 
     - name: Build packages
       continue-on-error: true
-      run: make build
+      run: make build_packages
 
     - name: Set git config
       run: |

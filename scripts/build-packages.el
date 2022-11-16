@@ -1,4 +1,4 @@
-;;; build.el --- Build package archive  -*- lexical-binding: t -*-
+;;; build-packages.el --- Build package archive  -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
 
@@ -35,4 +35,4 @@
 ;; coding: utf-8
 ;; no-byte-compile: t
 ;; End:
-;;; build.el ends here
+;;; build-packages.el ends here

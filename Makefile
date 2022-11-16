@@ -3,10 +3,10 @@ EASK ?= eask
 
 .PHONY: build test-install generate_badges_system generate_archive_json generate_badges_version generate_badges_downloads
 
-build:
+build_packages:
 	@echo "Building packages..."
 	@$(EASK) install-deps
-	@$(EASK) load "./scripts/build.el" --allow-error
+	@$(EASK) load "./scripts/build-packages.el" --allow-error
 
 build_archive_contents:
 	@echo "Building archive-contents file..."
