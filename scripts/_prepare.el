@@ -31,7 +31,7 @@
 ;;
 ;;; Build
 
-(require 'github-elpa)
+(require 'github-elpa nil t)
 
 (setq github-elpa-working-dir "./.github-elpa-working"
       github-elpa-archive-dir "./docs/packages"
