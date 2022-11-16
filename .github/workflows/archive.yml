@@ -42,6 +42,7 @@ jobs:
       run: |
         git add .
         git commit -m "Update archive-contents"
+        git push
 
     - name: Generate archive.json file
       run: make generate_archive_json
@@ -49,12 +50,7 @@ jobs:
     - name: Push generated archive.json
       continue-on-error: true
       run: |
+        git status
         git add .
         git commit -m "Update archive.json"
-
-    - name: Push archive info
-      continue-on-error: true
-      uses: jcs090218/github-push-action@master
-      with:
-        branch: master
-        retry: 7
+        git push
