@@ -2,27 +2,34 @@
 ;;; Commentary:
 ;;; Code:
 
-(require 'github-elpa)
+(load-file "./scripts/_prepare.el")
 
-(setq github-elpa-working-dir "./.github-elpa-working"
-      github-elpa-archive-dir "./docs/packages"
-      github-elpa-recipes-dir "./recipes")
+(defconst packages-per-section 50
+  "Build this many packages in one section.")
 
-(let ((package-build-working-dir (expand-file-name github-elpa-working-dir))
-      (package-build-archive-dir (expand-file-name github-elpa-archive-dir))
-      (package-build-recipes-dir (expand-file-name github-elpa-recipes-dir)))
-  ;;(github-elpa--git-check-repo)
-  ;;(github-elpa--git-check-workdir-clean)
+(defun recipe-in-section-p (count total current)
+  "Return t only when the recipe is in the right section."
+  (let ((min (1+ (* packages-per-section (1- current))))
+        (max (* packages-per-section current)))
+    (and (<= min count) (<= count max))))
+
+(with-package-build-env
   (make-directory package-build-archive-dir t)
-  ;; Currently no way to detect build failure...
-  (dolist (recipe (directory-files package-build-recipes-dir nil "^[^.]"))
-    (message "")
-    (message "")
-    (message ":: github-elpa: packaging recipe %s" recipe)
-    (let ((package-build-tar-executable (or github-elpa-tar-executable
-                                            package-build-tar-executable)))
-      (ignore-errors (package-build-archive recipe))))
-  (package-build-cleanup))
+  (let* ((recipes (directory-files package-build-recipes-dir nil "^[^.]"))
+         (total (ceiling (/ (float (length recipes)) (float packages-per-section))))
+         (current (string-to-number (getenv "ELPA_SECTION")))
+         (count 0))
+    (message "BUILD SECTION: %s" current)
+    (dolist (recipe recipes)
+      (cl-incf count)
+      (when (recipe-in-section-p count total current)
+        (message "")
+        (message "")
+        (message ":: github-elpa: packaging recipe %s" recipe)
+        (let ((package-build-tar-executable (or github-elpa-tar-executable
+                                                package-build-tar-executable)))
+          ;; Currently no way to detect build failure...
+          (ignore-errors (package-build-archive recipe)))))))
 
 ;; Local Variables:
 ;; coding: utf-8

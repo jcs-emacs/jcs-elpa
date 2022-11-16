@@ -1,0 +1,56 @@
+name: Archive
+
+on:
+  workflow_run:
+    workflows: ["Build"]
+    types:
+      - completed
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: jcs090218/setup-emacs@master
+      with:
+        version: 28.2
+
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+
+    - uses: emacs-eask/setup-eask@master
+      with:
+        version: 'snapshot'
+
+    - uses: actions/checkout@v2
+
+    - name: Build archive-contents file
+      run: make build_archive_contents
+
+    - name: Set git config
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+
+    - name: Commit built archive-contents
+      continue-on-error: true
+      run: |
+        git pull
+        git add .
+        git commit -m "Update archive-contents"
+
+    - name: Generate archive.json file
+      run: make generate_archive_json
+
+    - name: Push generated archive.json
+      continue-on-error: true
+      run: |
+        git pull
+        git add .
+        git commit -m "Update archive.json"
+        git push

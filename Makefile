@@ -8,6 +8,11 @@ build:
 	@$(EASK) install-deps
 	@$(EASK) load "./scripts/build.el" --allow-error
 
+build_archive_contents:
+	@echo "Building archive-contents file..."
+	@$(EASK) install-deps
+	@$(EASK) load "./scripts/build-archive-contents.el" --allow-error
+
 test-install:
 	@echo "Building packages..."
 	./test/install/run.sh

@@ -18,6 +18,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        section: [1, 2]
     steps:
     - uses: jcs090218/setup-emacs@master
       with:
@@ -33,27 +36,29 @@ jobs:
 
     - uses: actions/checkout@v2
 
-    - name: Set git config
-      run: |
-        git config user.name github-actions
-        git config user.email github-actions@github.com
+    - name: Expose section info
+      run: echo "ELPA_SECTION=${{ matrix.section }}" >> $GITHUB_ENV
 
     - name: Build packages
       continue-on-error: true
       run: make build
 
-    - name: Generate archive.json file
-      run: make generate_archive_json
+    - name: Set git config
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
 
-    - name: Push built packages
+    - name: Push updated packages
       continue-on-error: true
       run: |
         git pull
-        git add .
+        git add docs
+        git commit -m "Update packages in section ${{ matrix.section }}"
         git push
 
-    - name: Push generated archive.json
+    - name: Push generated badges - packages
       continue-on-error: true
-      run: |
-        git commit -m "Update archive.json"
-        git push
+      uses: jcs090218/github-push-action@master
+      with:
+        branch: master
+        retry: ${{ strategy.job-total }}
