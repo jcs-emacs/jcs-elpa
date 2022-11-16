@@ -1,4 +1,4 @@
-name: Archive JSON
+name: Archive
 
 on:
   workflow_run:
