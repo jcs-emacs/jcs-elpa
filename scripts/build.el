@@ -17,7 +17,7 @@
   (make-directory package-build-archive-dir t)
   (let* ((recipes (directory-files package-build-recipes-dir nil "^[^.]"))
          (total (ceiling (/ (float (length recipes)) (float packages-per-section))))
-         (current (getenv "ELPA_SECTION"))
+         (current (string-to-number (getenv "ELPA_SECTION")))
          (count 0))
     (message "BUILD SECTION: %s" current)
     (dolist (recipe recipes)
