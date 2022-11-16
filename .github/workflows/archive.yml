@@ -28,7 +28,8 @@ jobs:
         version: 'snapshot'
 
     - uses: actions/checkout@v2
-      ref: ${{ github.ref }}
+      with:
+        ref: ${{ github.ref }}
 
     - name: To latest
       run: git pull --rebase
