@@ -2,7 +2,7 @@ name: Install
 
 on:
   workflow_run:
-    workflows: ["Build"]
+    workflows: ["Archive"]
     types:
       - completed
   workflow_dispatch:
