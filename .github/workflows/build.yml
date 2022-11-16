@@ -36,7 +36,7 @@ jobs:
 
     - uses: actions/checkout@v2
 
-    - name: Build packages
+    - name: Expose section info
       run: echo "ELPA_SECTION=${{ matrix.section }}" >> $GITHUB_ENV
 
     - name: Build packages
