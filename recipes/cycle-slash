@@ -1,0 +1,1 @@
+(cycle-slash :repo "jcs-elpa/cycle-slash" :fetcher github)
