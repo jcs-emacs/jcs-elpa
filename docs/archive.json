@@ -72,6 +72,15 @@
     "tree": "https://github.com/elp-revive/buffer-move/"
   },
   {
+    "name": "change-case",
+    "summary": "Case conversion between camelCase, PascalCase, snake_case and more",
+    "version": "20210220.1445",
+    "url": "https://github.com/TakesxiSximada/change-case.el",
+    "source": "github",
+    "commit": "daa82dea863c168e9088a20b6f3e2df1e2a2f40c",
+    "tree": "https://github.com/TakesxiSximada/change-case.el"
+  },
+  {
     "name": "commander",
     "summary": "Emacs command line parser",
     "version": "20140120.1852",
