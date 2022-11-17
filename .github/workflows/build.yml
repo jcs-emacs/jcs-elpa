@@ -18,16 +18,15 @@ concurrency:
 env:
   # packages to build per section
   PER_SECTION: 50
-  # PER_SECTION * JOBS's must exceed the total recipes, or else it won't built
-  # the later packages!
-  JOBS: [1, 2]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        section: ${{ env.JOBS }}
+        # PER_SECTION * JOBS's must exceed the total recipes, or else it won't
+        # built the later packages!
+        section: [1, 2]
     steps:
     - uses: jcs090218/setup-emacs@master
       with:
