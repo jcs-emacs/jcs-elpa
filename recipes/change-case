@@ -1,0 +1,1 @@
+(change-case :repo "TakesxiSximada/change-case.el" :fetcher github)
