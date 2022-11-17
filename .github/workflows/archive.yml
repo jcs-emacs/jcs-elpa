@@ -28,26 +28,11 @@ jobs:
         version: 'snapshot'
 
     - uses: actions/checkout@v2
-      with:
-        ref: ${{ github.ref }}
-
-    - uses: [REMOVE] test
-      run: git status
-
-    - name: Build archive-contents file
-      run: make build_archive_contents
 
     - name: Set git config
       run: |
         git config user.name github-actions
         git config user.email github-actions@github.com
-
-    - name: Push built archive-contents
-      continue-on-error: true
-      run: |
-        git add .
-        git commit -m "Update archive-contents"
-        git push
 
     - name: Generate archive.json file
       run: make generate_archive_json

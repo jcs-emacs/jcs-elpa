@@ -61,4 +61,5 @@ jobs:
       uses: jcs090218/github-push-action@master
       with:
         branch: master
+        rebase: true
         retry: ${{ strategy.job-total }}
