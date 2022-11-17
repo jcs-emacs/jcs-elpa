@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-modeline
-;; Package-Version: 20221117.940
-;; Package-Commit: a3d36ee5b2b8349ce7eb5fdb7781e7952a5957fd
+;; Package-Version: 20221117.948
+;; Package-Commit: d4614d370ed8a57786a2bfbeb1e870cff4b9b81e
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (moody "0.7.1") (minions "0.3.7"))
 ;; Keywords: faces mode-line
@@ -32,6 +32,8 @@
 ;;
 
 ;;; Code:
+
+
 
 (require 'moody)
 (require 'minions)
