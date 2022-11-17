@@ -189,6 +189,15 @@
     "tree": "https://github.com/zerolfx/copilot.el"
   },
   {
+    "name": "cycle-slash",
+    "summary": "Cycle through slash, backslash, and double backslash",
+    "version": "20221117.1154",
+    "url": "https://github.com/jcs-elpa/cycle-slash",
+    "source": "github",
+    "commit": "839218d28c609ce1ff6ff2f84eb2edfd6f19e1f6",
+    "tree": "https://github.com/jcs-elpa/cycle-slash"
+  },
+  {
     "name": "eask-api",
     "summary": "Eask API",
     "version": "20220913.955",
