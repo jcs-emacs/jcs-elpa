@@ -1,17 +1,12 @@
 EMACS ?= emacs
 EASK ?= eask
 
-.PHONY: build test-install generate_badges_system generate_archive_json generate_badges_version generate_badges_downloads
+.PHONY: build_packages test-install generate_badges_system generate_archive_json generate_badges_version generate_badges_downloads
 
 build_packages:
 	@echo "Building packages..."
 	@$(EASK) install-deps
 	@$(EASK) load "./scripts/build-packages.el" --allow-error
-
-build_archive_contents:
-	@echo "Building archive-contents file..."
-	@$(EASK) install-deps
-	@$(EASK) load "./scripts/build-archive-contents.el" --allow-error
 
 test-install:
 	@echo "Building packages..."
