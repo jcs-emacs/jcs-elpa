@@ -308,10 +308,10 @@
   {
     "name": "ffpc",
     "summary": "Find file in project or current directory",
-    "version": "20221117.948",
+    "version": "20221117.958",
     "url": "https://github.com/jcs-elpa/ffpc",
     "source": "github",
-    "commit": "3f1a33fc0150e9459594006d2b234c8ace3ae675",
+    "commit": "2c17b9138148bbef342de8efc7af716770bf32ae",
     "tree": "https://github.com/jcs-elpa/ffpc"
   },
   {
@@ -461,10 +461,10 @@
   {
     "name": "jcs-modeline",
     "summary": "A modeline for jcs-emacs",
-    "version": "20221117.948",
+    "version": "20221117.958",
     "url": "https://github.com/jcs-emacs/jcs-modeline",
     "source": "github",
-    "commit": "d4614d370ed8a57786a2bfbeb1e870cff4b9b81e",
+    "commit": "e97ad898740aa9e7c3e8df7713306577c83fb2f6",
     "tree": "https://github.com/jcs-emacs/jcs-modeline"
   },
   {
