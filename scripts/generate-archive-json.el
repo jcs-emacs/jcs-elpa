@@ -33,6 +33,10 @@
       ("github" (concat "https://github.com/" repo))
       ("gitlab" (concat "https://gitlab.com/" repo)))))
 
+(defun pretty-json (json)
+  "Return pretty JSON."
+  (with-temp-buffer (insert json) (json-pretty-print-buffer) (buffer-string)))
+
 (let (json)
   (dolist (pkg archive-contents)
     (let* ((pkg-name (car pkg)) (desc (cdr pkg))
@@ -57,7 +61,7 @@
               ("tree"    . ,tree)))
       (message "Generating... %s" object)
       (push object json)))
-  (write-region (json-encode (reverse json)) nil "./docs/archive.json"))
+  (write-region (pretty-json (json-encode (reverse json))) nil "./docs/archive.json"))
 
 ;; Local Variables:
 ;; coding: utf-8
