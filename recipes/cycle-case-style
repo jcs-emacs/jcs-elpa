@@ -1,0 +1,1 @@
+(cycle-case-style :repo "jcs-elpa/cycle-case-style" :fetcher github)
