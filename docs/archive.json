@@ -200,10 +200,10 @@
   {
     "name": "cycle-case-style",
     "summary": "Cycle through case style (PascalCase, camelCase, etc)",
-    "version": "20221117.1845",
+    "version": "20221117.1901",
     "url": "https://github.com/jcs-elpa/cycle-case-style",
     "source": "github",
-    "commit": "dc7eae6ee4f86131998765fcc050633bc1e52371",
+    "commit": "f4a1d34ced3d4384ede85c998da9c8f1d074108d",
     "tree": "https://github.com/jcs-elpa/cycle-case-style"
   },
   {
