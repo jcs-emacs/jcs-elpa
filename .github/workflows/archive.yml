@@ -31,8 +31,8 @@ jobs:
       with:
         ref: ${{ github.ref }}
 
-    - name: To latest
-      run: git pull --rebase
+    - uses: [REMOVE] test
+      run: git status
 
     - name: Build archive-contents file
       run: make build_archive_contents
