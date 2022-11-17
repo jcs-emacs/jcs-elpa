@@ -5,7 +5,8 @@
 (load-file "./scripts/_prepare.el")
 
 (with-package-build-env
-  (package-build-cleanup))
+  ;;(package-build-cleanup)
+  )
 
 ;; Local Variables:
 ;; coding: utf-8

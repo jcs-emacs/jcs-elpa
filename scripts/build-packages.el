@@ -29,7 +29,8 @@
         (let ((package-build-tar-executable (or github-elpa-tar-executable
                                                 package-build-tar-executable)))
           ;; Currently no way to detect build failure...
-          (ignore-errors (package-build-archive recipe)))))))
+          (ignore-errors (package-build-archive recipe t)))))
+    (package-build-cleanup)))
 
 ;; Local Variables:
 ;; coding: utf-8
