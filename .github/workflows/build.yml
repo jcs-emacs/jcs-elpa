@@ -15,6 +15,9 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+env:
+  PER_SECTION: 50  # packages build per section
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -37,7 +40,9 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Expose section info
-      run: echo "ELPA_SECTION=${{ matrix.section }}" >> $GITHUB_ENV
+      run: |
+        echo "ELPA_SECTION=${{ matrix.section }}" >> $GITHUB_ENV
+        echo "PER_SECTION=${{ env.PER_SECTION }}" >> $GITHUB_ENV
 
     - name: Build packages
       continue-on-error: true
