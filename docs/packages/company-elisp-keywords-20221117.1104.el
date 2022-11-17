@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/company-elisp-keywords
-;; Package-Version: 20221104.1512
-;; Package-Commit: 57ccea908f071693519919b838a18c65f58540d5
+;; Package-Version: 20221117.1104
+;; Package-Commit: 2a6b96beb116202b3e7fd3d455d83bda7eaf1520
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (company "0.8.0"))
 ;; Keywords: lisp
@@ -44,12 +44,6 @@
   :group 'tool
   :link '(url-link :tag "Repository" "https://github.com/jcs-elpa/company-elisp-keywords"))
 
-(defcustom company-elisp-keywords-active-modes
-  '( emacs-lisp-mode)
-  "List of active major-modes."
-  :type 'list
-  :group 'company-elisp-keywords-active-modes)
-
 (defvar company-elisp-keywords--candidates nil
   "Cache for candidates.")
 
@@ -75,7 +69,7 @@
 (defun company-elisp-keywords--doc-buffer (candidate)
   "Return document for CANDIDATE."
   (company-doc-buffer
-   (company-elisp-keywords--2-str (cdr (assq candidate finder-known-keywords)))))
+   (company-elisp-keywords--2-str (cdr (assq (intern candidate) finder-known-keywords)))))
 
 ;;;###autoload
 (defun company-elisp-keywords (command &optional arg &rest ignored)
@@ -86,7 +80,7 @@ Arguments COMMAND, ARG and IGNORED are standard arguments from `company-mode`."
   (company-elisp-keywords--prepare)
   (cl-case command
     (`interactive (company-begin-backend 'company-elisp-keywords))
-    (`prefix (and (memq major-mode company-elisp-keywords-active-modes)
+    (`prefix (and (derived-mode-p 'emacs-lisp-mode)
                   (string-match-p "^;[; ]+Keywords:" (thing-at-point 'line))
                   (company-grab-symbol)))
     (`candidates company-elisp-keywords--candidates)
