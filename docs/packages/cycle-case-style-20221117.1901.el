@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/cycle-case-style
-;; Package-Version: 20221117.1845
-;; Package-Commit: dc7eae6ee4f86131998765fcc050633bc1e52371
+;; Package-Version: 20221117.1901
+;; Package-Commit: f4a1d34ced3d4384ede85c998da9c8f1d074108d
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "28.1") (change-case "9"))
 ;; Keywords: convenience
@@ -61,6 +61,9 @@
              (unless (= 1 (length (funcall (cdr parser) sentence)))
                (pcase (car parser)
                  ("PascalCase"
+                  ;; XXX: It seems like there is an issue in PascalCase parser,
+                  ;; let's do it dirty and manually give camelCase when the
+                  ;; first character is the lowercase letter.
                   (if-let* ((char (substring sentence 0 1))
                             ((string= char (downcase char))))
                       (assq "camelCase" change-case-parser-alist)
