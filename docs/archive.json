@@ -137,10 +137,10 @@
   {
     "name": "company-elisp-keywords",
     "summary": "Company completion for `finder-known-keywords'",
-    "version": "20221104.1512",
+    "version": "20221117.1104",
     "url": "https://github.com/jcs-elpa/company-elisp-keywords",
     "source": "github",
-    "commit": "57ccea908f071693519919b838a18c65f58540d5",
+    "commit": "2a6b96beb116202b3e7fd3d455d83bda7eaf1520",
     "tree": "https://github.com/jcs-elpa/company-elisp-keywords"
   },
   {
