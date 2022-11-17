@@ -48,15 +48,14 @@ jobs:
         git config user.name github-actions
         git config user.email github-actions@github.com
 
-    - name: Push updated packages
+    - name: Commit updated packages
       continue-on-error: true
       run: |
-        git pull
-        git add docs
+        git pull --rebase --autostash
+        git add .
         git commit -m "Update packages in section ${{ matrix.section }}"
-        git push
 
-    - name: Push generated badges - packages
+    - name: Push updated packages
       continue-on-error: true
       uses: jcs090218/github-push-action@master
       with:
