@@ -198,6 +198,15 @@
     "tree": "https://github.com/zerolfx/copilot.el"
   },
   {
+    "name": "cycle-case-style",
+    "summary": "Cycle through case style (PascalCase, camelCase, etc)",
+    "version": "20221117.1845",
+    "url": "https://github.com/jcs-elpa/cycle-case-style",
+    "source": "github",
+    "commit": "dc7eae6ee4f86131998765fcc050633bc1e52371",
+    "tree": "https://github.com/jcs-elpa/cycle-case-style"
+  },
+  {
     "name": "cycle-slash",
     "summary": "Cycle through slash, backslash, and double backslash",
     "version": "20221117.1154",
