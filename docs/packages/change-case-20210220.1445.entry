@@ -1,0 +1,13 @@
+(change-case .
+	     [(20210220 1445)
+	      ((emacs
+		(25 1))
+	       (dash
+		(2 16 0))
+	       (s
+		(1 12 0)))
+	      "Case conversion between camelCase, PascalCase, snake_case and more" single
+	      ((:commit . "daa82dea863c168e9088a20b6f3e2df1e2a2f40c")
+	       (:authors
+		("TakesxiSximada" . "8707279+TakesxiSximada@users.noreply.github.com"))
+	       (:maintainer "TakesxiSximada" . "8707279+TakesxiSximada@users.noreply.github.com"))])
