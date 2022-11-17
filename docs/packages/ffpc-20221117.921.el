@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/ffpc
-;; Package-Version: 20221116.1736
-;; Package-Commit: 984333f70b16f31abcb1be3421334765edd9e5a9
+;; Package-Version: 20221117.921
+;; Package-Commit: eae03d3045118d173a0f471451036d2dc1805918
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (dash "2.12.0") (f "0.20.0"))
 ;; Keywords: lisp
@@ -129,4 +129,5 @@ multiple files at a time.  We need a title to present which file to select."
      "No valid file found in either current directory or project, %s" filename)))
 
 (provide 'ffpc)
+
 ;;; ffpc.el ends here
