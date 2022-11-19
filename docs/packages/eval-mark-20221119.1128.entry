@@ -1,9 +1,9 @@
 (eval-mark .
-	   [(20221119 1119)
+	   [(20221119 1128)
 	    ((emacs
 	      (26 1)))
 	    "Evaluate then deactive mark" single
-	    ((:commit . "3e48a7bf510fa6798868bff49096d7f8ae4a2dac")
+	    ((:commit . "6749ce3326529dd503ee5a5170516c2aad84b55b")
 	     (:authors
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))
 	     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

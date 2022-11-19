@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/eval-mark
-;; Package-Version: 20221119.1119
-;; Package-Commit: 3e48a7bf510fa6798868bff49096d7f8ae4a2dac
+;; Package-Version: 20221119.1128
+;; Package-Commit: 6749ce3326529dd503ee5a5170516c2aad84b55b
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: lisp
@@ -52,19 +52,21 @@
   :type 'list
   :group 'eval-mark)
 
+(defun eval-mark--deactivate-mark (&rest _) "Deactive mark." (deactivate-mark))
+
 (defun eval-mark--enable ()
   "Enable function `eval-mark-mode'."
   (dolist (command eval-mark-commands-before)
-    (advice-add command :before #'deactivate-mark))
+    (advice-add command :before #'eval-mark--deactivate-mark))
   (dolist (command eval-mark-commands-after)
-    (advice-add command :after #'deactivate-mark)))
+    (advice-add command :after #'eval-mark--deactivate-mark)))
 
 (defun eval-mark--disable ()
   "Disable function `eval-mark-mode'."
   (dolist (command eval-mark-commands-before)
-    (advice-remove command #'deactivate-mark))
+    (advice-remove command #'eval-mark--deactivate-mark))
   (dolist (command eval-mark-commands-after)
-    (advice-remove command #'deactivate-mark)))
+    (advice-remove command #'eval-mark--deactivate-mark)))
 
 ;;;###autoload
 (define-minor-mode eval-mark-mode
