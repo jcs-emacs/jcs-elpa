@@ -299,10 +299,10 @@
   {
     "name": "eval-mark",
     "summary": "Evaluate then deactive mark",
-    "version": "20221119.1119",
+    "version": "20221119.1128",
     "url": "https://github.com/jcs-elpa/eval-mark",
     "source": "github",
-    "commit": "3e48a7bf510fa6798868bff49096d7f8ae4a2dac",
+    "commit": "6749ce3326529dd503ee5a5170516c2aad84b55b",
     "tree": "https://github.com/jcs-elpa/eval-mark"
   },
   {
