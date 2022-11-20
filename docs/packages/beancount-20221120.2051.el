@@ -5,8 +5,8 @@
 ;; Copyright (C) 2019 Daniele Nicolodi <daniele@grinta.net>
 
 ;; Version: 0
-;; Package-Version: 20220815.759
-;; Package-Commit: e8a5bce28c796320fa0c83f169d518aba330fd3d
+;; Package-Version: 20221120.2051
+;; Package-Commit: 73b2afcff6f4a0e3eef822b2e38344d8dc7ea021
 ;; Author: Martin Blais <blais@furius.ca>
 ;; Author: Stefan Monnier <monnier@iro.umontreal.ca>
 ;; Author: Daniele Nicolodi <daniele@grinta.net>
@@ -895,10 +895,16 @@ Only useful if you have not installed Beancount properly in your PATH.")
                     (file-relative-name buffer-file-name)
                     (number-to-string (line-number-at-pos)))))
 
+;; There is no length limit for links but it seems reasonable to
+;; limit the search for the link to the 128 characters before and
+;; after the point. This number is chosen arbitrarily.
+(defun beancount--bounds-of-account-at-point ()
+  (when (thing-at-point-looking-at beancount-account-regexp 128)
+    (cons (match-beginning 0) (match-end 0))))
+
+(put 'beancount-account 'bounds-of-thing-at-point #'beancount--bounds-of-account-at-point)
+
 (defun beancount--bounds-of-link-at-point ()
-  ;; There is no length limit for links but it seems reasonable to
-  ;; limit the search for the link to the 128 characters before and
-  ;; after the point. This number is chosen arbitrarily.
   (when (thing-at-point-looking-at (concat "\\^[" beancount-tag-chars "]+") 128)
     (cons (match-beginning 0) (match-end 0))))
 
@@ -957,7 +963,7 @@ Only useful if you have not installed Beancount properly in your PATH.")
   (call-process beancount-price-program nil t nil
                 (file-relative-name buffer-file-name)))
 
-;;; Transaction highligh
+;;; Transaction highlight.
 
 (defvar beancount-highlight-overlay (list))
 (make-variable-buffer-local 'beancount-highlight-overlay)
@@ -1113,6 +1119,7 @@ Essentially a much simplified version of `next-line'."
   (while (and (not (eobp))
               (get-char-property (1- (point)) 'invisible))
     (beginning-of-line 2)))
+
 
 ;;; Fava
 
