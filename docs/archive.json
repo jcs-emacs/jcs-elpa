@@ -810,6 +810,15 @@
     "tree": "https://github.com/Artawower/turbo-log"
   },
   {
+    "name": "undo-hl",
+    "summary": "Highlight undo/redo",
+    "version": "20220523.557",
+    "url": "https://github.com/casouri/undo-hl",
+    "source": "github",
+    "commit": "89fdcc62e3d938854433bc14d95e1c8e505eee20",
+    "tree": "https://github.com/casouri/undo-hl"
+  },
+  {
     "name": "undo-tree-vf",
     "summary": "visualizer follow mode for undo-tree",
     "version": "20221003.1228",
