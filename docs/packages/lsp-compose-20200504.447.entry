@@ -1,0 +1,10 @@
+(lsp-compose .
+	     [(20200504 447)
+	      ((emacs
+		(26)))
+	      "lsp-mode client for compose server" single
+	      ((:commit . "eeeab18496dc53dc01b6547515ee6a8e91c312b8")
+	       (:authors
+		("Abhinav Tushar" . "abhinav@lepisma.xyz"))
+	       (:maintainer "Abhinav Tushar" . "abhinav@lepisma.xyz")
+	       (:url . "https://github.com/lepisma/compose-language-server.el"))])
