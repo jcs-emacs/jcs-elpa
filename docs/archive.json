@@ -513,6 +513,15 @@
     "tree": "https://github.com/elp-revive/kaomoji.el"
   },
   {
+    "name": "lsp-compose",
+    "summary": "lsp-mode client for compose server",
+    "version": "20200504.447",
+    "url": "https://github.com/lepisma/compose-language-server.el",
+    "source": "github",
+    "commit": "eeeab18496dc53dc01b6547515ee6a8e91c312b8",
+    "tree": "https://github.com/lepisma/compose-language-server.el"
+  },
+  {
     "name": "maple-line",
     "summary": "maple line configuration.",
     "version": "20200519.1557",
