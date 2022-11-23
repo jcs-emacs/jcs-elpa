@@ -1,0 +1,1 @@
+(lsp-compose :repo "lepisma/compose-language-server" :fetcher github)
