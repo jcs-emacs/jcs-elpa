@@ -1,0 +1,1 @@
+(zoom-to-point :repo "rmloveland/zoom-to-point" :fetcher github)
