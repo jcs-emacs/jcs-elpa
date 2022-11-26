@@ -898,5 +898,14 @@
     "source": "github",
     "commit": "46b4df83e92c585295d659d049560dbf190fe501",
     "tree": "https://github.com/devonsparks/wat-mode"
+  },
+  {
+    "name": "zoom-to-point",
+    "summary": "Zoom in or out on the line at point.",
+    "version": "20131216.1307",
+    "url": "https://github.com/rmloveland/zoom-to-point",
+    "source": "github",
+    "commit": "38b11fe8f110eae4c8c7e1a0b40e05f9e58c7f36",
+    "tree": "https://github.com/rmloveland/zoom-to-point"
   }
 ]
