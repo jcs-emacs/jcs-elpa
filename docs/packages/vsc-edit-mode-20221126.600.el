@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vsc-edit-mode
-;; Package-Version: 20221116.1602
-;; Package-Commit: 43a9ba565e94c0e604c52e26db6bda8794af2d1b
+;; Package-Version: 20221126.600
+;; Package-Commit: be8e8ce4dcf9faa28833a39a8880750656502a86
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (indent-control "0.1.0") (company "0.8.12") (yasnippet "0.8.0") (msgu "0.1.0") (mwim "0.4"))
 ;; Keywords: convenience editing vs
@@ -125,7 +125,7 @@
   (vsc-edit--current-char-equal-p " "))
 
 (defun vsc-edit-prog-mode-p ()
-  "Return non-nil if current buffer is programmer mode."
+  "Return non-nil if current buffer is programming mode."
   (or (derived-mode-p 'prog-mode)
       (memq major-mode vsc-edit-prog-modes)))
 
