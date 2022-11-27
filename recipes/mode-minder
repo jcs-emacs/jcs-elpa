@@ -1,0 +1,1 @@
+(mode-minder :repo "jdtsmith/mode-minder" :fetcher github)
