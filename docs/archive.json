@@ -576,6 +576,15 @@
     "tree": "https://github.com/creatorrr/emacs-mint-mode"
   },
   {
+    "name": "mode-minder",
+    "summary": "List all major and minor modes",
+    "version": "20221029.1309",
+    "url": "https://github.com/jdtsmith/mode-minder",
+    "source": "github",
+    "commit": "0e976e1f0f5cf4e134da8335bcb0731aa0bbbcad",
+    "tree": "https://github.com/jdtsmith/mode-minder"
+  },
+  {
     "name": "msgu",
     "summary": "Utility functions help output the messages",
     "version": "20221023.1024",
