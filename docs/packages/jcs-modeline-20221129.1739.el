@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-modeline
-;; Package-Version: 20221117.1033
-;; Package-Commit: 617a1d4fa1ecd9af42bbd4d962460abdb0822132
+;; Package-Version: 20221129.1739
+;; Package-Commit: b9e8ab40dda69a8fc5c7e0bfe9524471b50635ad
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (moody "0.7.1") (minions "0.3.7") (elenv "0.1.0"))
 ;; Keywords: faces mode-line
@@ -46,6 +46,9 @@
 ;;
 ;; (@* "Externals" )
 ;;
+
+(declare-function string-pixel-width "subr-x.el")   ; TODO: remove this after 29.1
+(declare-function shr-string-pixel-width "shr.el")  ; TODO: remove this after 29.1
 
 (defvar flycheck-current-errors)
 (defvar flycheck-last-status-change)
@@ -104,6 +107,21 @@
 ;; (@* "Util" )
 ;;
 
+;; TODO: Use function `string-pixel-width' after 29.1
+(defun jcs-modeline--string-pixel-width (str)
+  "Return the width of STR in pixels."
+  (if (fboundp #'string-pixel-width)
+      (string-pixel-width str)
+    (require 'shr)
+    (shr-string-pixel-width str)))
+
+(defun jcs-modeline--str-len (str)
+  "Calculate STR in pixel width."
+  (let ((width (window-font-width))
+        (len (jcs-modeline--string-pixel-width str)))
+    (+ (/ len width)
+       (if (zerop (% len width)) 0 1))))  ; add one if exceeed
+
 (defun jcs-modeline--light-color-p (hex-code)
   "Return non-nil if HEX-CODE is in light tone."
   (when elenv-graphic-p
@@ -131,8 +149,8 @@
 
 (defun jcs-modeline-render (left right)
   "Render mode line with LEFT and RIGHT alignment."
-  (let* ((len-left (length (format-mode-line left)))
-         (len-right (length (format-mode-line right)))
+  (let* ((len-left (jcs-modeline--str-len (format-mode-line left)))
+         (len-right (jcs-modeline--str-len (format-mode-line right)))
          (available-width (- (window-width) (+ len-left len-right)))
          (available-width (+ available-width (jcs-modeline--adjust-pad))))
     (append left
