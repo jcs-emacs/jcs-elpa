@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/company-paths
-;; Package-Version: 20221129.1455
-;; Package-Commit: df66e9c1657110cdcded82fa8fa7dfd0f85f0b56
+;; Package-Version: 20221129.1521
+;; Package-Commit: 8d3592f92f3f979130f75c2dc2c2edab1f2c32e1
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "28.1") (company "0.8.12"))
 ;; Keywords: convenience
@@ -61,6 +61,11 @@
   :type 'string
   :group 'company-paths)
 
+(defcustom company-paths-continue-completing nil
+  "Non-nil to continue completion after every completion."
+  :type 'boolean
+  :group 'company-paths)
+
 ;;
 ;; (@* "Core" )
 ;;
@@ -111,9 +116,9 @@
     (forward-char (length arg)))
   ;; Respect variable `company-files-chop-trailing-slash'
   (funcall #'company-files--post-completion arg)
-  (when (company-files--trailing-slash-p arg)
-    ;; TODO: ..
-    ))
+  (when (and company-paths-continue-completing
+             (not company-files-chop-trailing-slash))
+    (run-with-idle-timer 0 nil #'company-manual-begin)))
 
 ;;;###autoload
 (defun company-paths (command &optional arg &rest ignored)
