@@ -180,6 +180,15 @@
     "tree": "https://github.com/emacs-vs/company-meta-net"
   },
   {
+    "name": "company-paths",
+    "summary": "A company backend for paths",
+    "version": "20221129.1220",
+    "url": "https://github.com/emacs-vs/company-paths",
+    "source": "github",
+    "commit": "69ad2a66708bd6d366cf7df910c083de376c09c9",
+    "tree": "https://github.com/emacs-vs/company-paths"
+  },
+  {
     "name": "company-powershell",
     "summary": "Emacs autocompletion backend for powershell",
     "version": "20220711.652",
