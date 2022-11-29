@@ -5,10 +5,10 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-modeline
-;; Package-Version: 20221129.1739
-;; Package-Commit: b9e8ab40dda69a8fc5c7e0bfe9524471b50635ad
+;; Package-Version: 20221129.1849
+;; Package-Commit: 726f08f4dc6f07b2938752aff5af7337862c182b
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "27.1") (moody "0.7.1") (minions "0.3.7") (elenv "0.1.0"))
+;; Package-Requires: ((emacs "28.1") (moody "0.7.1") (minions "0.3.7") (elenv "0.1.0"))
 ;; Keywords: faces mode-line
 
 ;; This file is not part of GNU Emacs.
@@ -43,6 +43,37 @@
   :group 'faces
   :link '(url-link :tag "Github" "https://github.com/jcs-emacs/jcs-modeline"))
 
+(defcustom jcs-modeline-left
+  `("%e "
+    mode-line-front-space
+    mode-line-buffer-identification " "
+    (:eval (moody-tab (concat " " (format-mode-line
+                                   (if minions-mode
+                                       minions-mode-line-modes
+                                     mode-line-modes)))))
+    " " (:eval (jcs-modeline--vc-project)))
+  "List of item to render on the left."
+  :type 'list
+  :group 'jcs-modeline)
+
+(defcustom jcs-modeline-right
+  `((:eval
+     (when (and (bound-and-true-p flycheck-mode)
+                (or flycheck-current-errors
+                    (eq 'running flycheck-last-status-change)))
+       (cl-loop for state in '((error   . "#FB4933")
+                               (warning . "#FABD2F")
+                               (info    . "#83A598"))
+                as lighter = (jcs-modeline--flycheck-lighter (car state))
+                when lighter
+                concat (propertize lighter 'face `(:foreground ,(cdr state))))))
+    (:eval (jcs-modeline--vc-info)) " "
+    (:eval (moody-tab " %l : %c " 0 'up)) " %p "
+    mode-line-end-spaces)
+  "List of item to render on the right."
+  :type 'list
+  :group 'jcs-modeline)
+
 ;;
 ;; (@* "Externals" )
 ;;
@@ -59,39 +90,25 @@
 ;; (@* "Entry" )
 ;;
 
+(defvar jcs-modeline--render-left nil)
+(defvar jcs-modeline--render-right nil)
+
 (defvar jcs-modeline--default-mode-line nil
   "Default modeline value to revert back.")
 
 (defun jcs-modeline--enable ()
   "Enable function `jcs-modeline-mode'."
+  (add-hook 'window-size-change-functions #'jcs-modeline--window-resize)
+  (jcs-modeline--window-resize)  ; call it manually once
   (setq jcs-modeline--default-mode-line mode-line-format)
   (setq-default mode-line-format
-                '((:eval
-                   (jcs-modeline-render
-                    (quote
-                     ("%e "
-                      mode-line-front-space
-                      mode-line-buffer-identification " "
-                      (:eval (moody-tab (concat " " (format-mode-line mode-line-modes))))
-                      " " (:eval (jcs-modeline--vc-project))))
-                    (quote
-                     ((:eval
-                       (when (and (bound-and-true-p flycheck-mode)
-                                  (or flycheck-current-errors
-                                      (eq 'running flycheck-last-status-change)))
-                         (cl-loop for state in '((error   . "#FB4933")
-                                                 (warning . "#FABD2F")
-                                                 (info    . "#83A598"))
-                                  as lighter = (jcs-modeline--flycheck-lighter (car state))
-                                  when lighter
-                                  concat (propertize lighter 'face `(:foreground ,(cdr state))))))
-                      (:eval (jcs-modeline--vc-info)) " "
-                      (:eval (moody-tab " %l : %c " 0 'up)) " %p "
-                      mode-line-end-spaces))))))
+                '((:eval (jcs-modeline-render jcs-modeline--render-left
+                                              jcs-modeline--render-right))))
   (minions-mode 1))
 
 (defun jcs-modeline--disable ()
   "Disable function `jcs-modeline-mode'."
+  (remove-hook 'window-size-change-functions #'jcs-modeline--window-resize)
   (setq-default mode-line-format jcs-modeline--default-mode-line))
 
 ;;;###autoload
@@ -137,6 +154,29 @@
 ;; (@* "Core" )
 ;;
 
+(defun jcs-modeline--window-resize (&rest _)
+  "Window resize hook."
+  (let ((count 0) (index 0) (current-width 0)
+        ;; Let's iterate it from outer to inner, so we must flip the right list.
+        (right-list (reverse jcs-modeline-right)))
+    (setq jcs-modeline--render-left nil
+          jcs-modeline--render-right nil)  ; reset
+    (while (< count (length (append jcs-modeline-left jcs-modeline-right)))
+      (let* ((odd (= (% count 2) 0))
+             (item (nth index (if odd jcs-modeline-left right-list)))
+             (format (format-mode-line item))
+             (width (jcs-modeline--str-len format))
+             (new-width (+ current-width width)))
+        (when (<= new-width (window-width))
+          (setq current-width new-width)
+          (push item (if odd jcs-modeline--render-left
+                       jcs-modeline--render-right))))
+      (setq count (1+ count)
+            index (/ count 2))))
+  (setq jcs-modeline--render-left (reverse jcs-modeline--render-left)
+        ;; Since we iterate it from the edge, we don't need to reverse the right
+        jcs-modeline--render-right jcs-modeline--render-right))
+
 (defun jcs-modeline--adjust-pad ()
   "Adjust padding for external packages."
   (let ((delta 0))
@@ -162,7 +202,7 @@
 ;;
 
 (defun jcs-modeline--vc-info ()
-  "Return vc-mode information."
+  "Return `vc-mode' information."
   (format-mode-line '(vc-mode vc-mode)))
 
 (defun jcs-modeline--project-root ()
