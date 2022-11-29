@@ -182,10 +182,10 @@
   {
     "name": "company-paths",
     "summary": "A company backend for paths",
-    "version": "20221129.1455",
+    "version": "20221129.1521",
     "url": "https://github.com/emacs-vs/company-paths",
     "source": "github",
-    "commit": "df66e9c1657110cdcded82fa8fa7dfd0f85f0b56",
+    "commit": "8d3592f92f3f979130f75c2dc2c2edab1f2c32e1",
     "tree": "https://github.com/emacs-vs/company-paths"
   },
   {
