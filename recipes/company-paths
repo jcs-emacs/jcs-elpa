@@ -1,0 +1,1 @@
+(company-paths :repo "emacs-vs/company-paths" :fetcher github)
