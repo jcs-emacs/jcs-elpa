@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/company-paths
-;; Package-Version: 20221129.1521
-;; Package-Commit: 8d3592f92f3f979130f75c2dc2c2edab1f2c32e1
+;; Package-Version: 20221201.641
+;; Package-Commit: 7fa36b17ef294fbbbbad9a74118a81514fb70749
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "28.1") (company "0.8.12"))
 ;; Keywords: convenience
@@ -76,7 +76,8 @@
          (file (file-name-nondirectory prefix))
          (key (list file
                     (expand-file-name dir)
-                    (nth 5 (file-attributes dir))))
+                    (nth 5 (file-attributes dir))
+                    dir))  ; for post-completion
          (completion-ignore-case read-file-name-completion-ignore-case))
     (unless (company-file--keys-match-p key (car company-files--completion-cache))
       (let* ((candidates (mapcar (if company-paths-use-full-path
@@ -112,7 +113,7 @@
   ;; Insert prefix
   (let ((inhibit-redisplay t))
     (forward-char (- 0 (length arg)))
-    (insert (nth 1 (car company-files--completion-cache)))
+    (insert (nth 3 (car company-files--completion-cache)))
     (forward-char (length arg)))
   ;; Respect variable `company-files-chop-trailing-slash'
   (funcall #'company-files--post-completion arg)
