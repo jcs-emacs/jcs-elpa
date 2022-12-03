@@ -857,10 +857,10 @@
   {
     "name": "vc-refresh",
     "summary": "Refresh vc-state in certain events for better UX",
-    "version": "20221203.1604",
+    "version": "20221203.1607",
     "url": "https://github.com/jcs-elpa/vc-refresh",
     "source": "github",
-    "commit": "7543786e7406f106ee00bedcc120947b7952b862",
+    "commit": "42efd81f682b803b5a46228e0b119388fa31db60",
     "tree": "https://github.com/jcs-elpa/vc-refresh"
   },
   {
