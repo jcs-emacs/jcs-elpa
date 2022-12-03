@@ -857,11 +857,11 @@
   {
     "name": "vc-refresh",
     "summary": "Refresh vc-state in certain events for better UX",
-    "version": "20221203.1554",
-    "url": "https://github.com/jcs-elpa/vc-refresh-mode",
+    "version": "20221203.1604",
+    "url": "https://github.com/jcs-elpa/vc-refresh",
     "source": "github",
-    "commit": "fc449b70cb94024eca948203efe51d78a4687f24",
-    "tree": "https://github.com/jcs-elpa/vc-refresh-mode"
+    "commit": "7543786e7406f106ee00bedcc120947b7952b862",
+    "tree": "https://github.com/jcs-elpa/vc-refresh"
   },
   {
     "name": "vertico-flx",
