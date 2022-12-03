@@ -1,9 +1,9 @@
 (vc-refresh .
-	    [(20221203 1604)
+	    [(20221203 1607)
 	     ((emacs
 	       (26 1)))
 	     "Refresh vc-state in certain events for better UX" single
-	     ((:commit . "7543786e7406f106ee00bedcc120947b7952b862")
+	     ((:commit . "42efd81f682b803b5a46228e0b119388fa31db60")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
 	      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

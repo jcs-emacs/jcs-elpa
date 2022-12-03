@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/vc-refresh
-;; Package-Version: 20221203.1604
-;; Package-Commit: 7543786e7406f106ee00bedcc120947b7952b862
+;; Package-Version: 20221203.1607
+;; Package-Commit: 42efd81f682b803b5a46228e0b119388fa31db60
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: vc
@@ -71,7 +71,6 @@
   :require 'vc-refresh
   :group 'eval-mark
   (if vc-refresh-mode (vc-refresh--enable) (vc-refresh--disable)))
-
 
 (provide 'vc-refresh)
 ;;; vc-refresh.el ends here
