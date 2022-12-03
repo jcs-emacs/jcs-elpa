@@ -1,12 +1,12 @@
-;;; vc-refresh-mode.el --- Refresh vc-state in certain events for better UX  -*- lexical-binding: t; -*-
+;;; vc-refresh.el --- Refresh vc-state in certain events for better UX  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2022  Shen, Jen-Chieh
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
-;; URL: https://github.com/jcs-elpa/vc-refresh-mode
-;; Package-Version: 20221203.1554
-;; Package-Commit: fc449b70cb94024eca948203efe51d78a4687f24
+;; URL: https://github.com/jcs-elpa/vc-refresh
+;; Package-Version: 20221203.1604
+;; Package-Commit: 7543786e7406f106ee00bedcc120947b7952b862
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: vc
@@ -36,37 +36,42 @@
 (require 'vc-hooks)
 
 (defgroup vc-refresh nil
-  "Refresh vc-state in certain events for better UX."
+  "Refresh `vc-state' in certain events for better UX."
   :prefix "vc-refresh-"
   :group 'vc
-  :link '(url-link :tag "Repository" "https://github.com/jcs-elpa/vc-refresh-mode"))
+  :link '(url-link :tag "Repository" "https://github.com/jcs-elpa/vc-refresh"))
 
 (defcustom vc-refresh-commands
-  '( magit-checkout)
+  '( magit-checkout
+     magit-branch-and-checkout
+     magit-branch-or-checkout
+     magit-branch-checkout)
   "List of commands/functions to handle."
   :type 'list
   :group 'vc-refresh)
 
+(defun vc-refresh--callback (&rest _)
+  "Callback to refresh `vc-state'."
+  (vc-refresh-state))
+
 (defun vc-refresh--enable ()
   "Enable function `vc-refresh-mode'."
   (dolist (command vc-refresh-commands)
-    (advice-add command :after #'vc-refresh-state)))
+    (advice-add command :after #'vc-refresh--callback)))
 
 (defun vc-refresh--disable ()
   "Disable function `vc-refresh-mode'."
   (dolist (command vc-refresh-commands)
-    (advice-remove command #'vc-refresh-state)))
+    (advice-remove command #'vc-refresh--callback)))
 
 ;;;###autoload
 (define-minor-mode vc-refresh-mode
   "Minor mode `vc-refresh-mode'."
   :global t
-  :require 'vc-refresh-mode
+  :require 'vc-refresh
   :group 'eval-mark
   (if vc-refresh-mode (vc-refresh--enable) (vc-refresh--disable)))
 
 
-(provide 'vc-refresh-mode)
-;;; vc-refresh-mode.el ends here
-
+(provide 'vc-refresh)
 ;;; vc-refresh.el ends here
