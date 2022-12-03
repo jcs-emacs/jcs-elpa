@@ -1,1 +1,0 @@
-(vc-refresh-mode :repo "jcs-elpa/vc-refresh-mode" :fetcher github)

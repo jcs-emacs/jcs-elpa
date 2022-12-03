@@ -1,0 +1,1 @@
+(vc-refresh :repo "jcs-elpa/vc-refresh" :fetcher github)
