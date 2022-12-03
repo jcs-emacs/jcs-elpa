@@ -855,6 +855,15 @@
     "tree": "https://github.com/jcs-elpa/undo-tree-vf"
   },
   {
+    "name": "vc-refresh",
+    "summary": "Refresh vc-state in certain events for better UX",
+    "version": "20221203.1554",
+    "url": "https://github.com/jcs-elpa/vc-refresh-mode",
+    "source": "github",
+    "commit": "fc449b70cb94024eca948203efe51d78a4687f24",
+    "tree": "https://github.com/jcs-elpa/vc-refresh-mode"
+  },
+  {
     "name": "vertico-flx",
     "summary": "Flx integration for vertico",
     "version": "20220704.700",
