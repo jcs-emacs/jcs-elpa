@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vsc-edit-mode
-;; Package-Version: 20221126.600
-;; Package-Commit: be8e8ce4dcf9faa28833a39a8880750656502a86
+;; Package-Version: 20221204.1744
+;; Package-Commit: 561ed3a9d9462262da37a0f7fd5759fce58d9820
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (indent-control "0.1.0") (company "0.8.12") (yasnippet "0.8.0") (msgu "0.1.0") (mwim "0.4"))
 ;; Keywords: convenience editing vs
@@ -51,6 +51,11 @@
   '(actionscript-mode haxe-mode nxml-mode yaml-mode)
   "List of extra `prog-mode'."
   :type 'list
+  :group 'vsc-edit)
+
+(defcustom vsc-edit-insert-tab-on-tab nil
+  "Insert a tab when tab key instead of the local command."
+  :type 'boolean
   :group 'vsc-edit)
 
 ;;
@@ -311,9 +316,8 @@
               end (+ end delta)))
       (forward-line 1))))
 
-;;;###autoload
-(defun vsc-edit-tab ()
-  "Global TAB key."
+(defun vsc-edit-smart-tab ()
+  "`prog-mode' tab."
   (interactive)
   (if (use-region-p)
       (vsc-edit--lines-in-region
@@ -330,8 +334,15 @@
           (vsc-edit--insert-spaces-by-indent-level))))))
 
 ;;;###autoload
-(defun vsc-edit-shift-tab ()
-  "Global Shift+TAB key."
+(defun vsc-edit-tab ()
+  "Global TAB key."
+  (interactive)
+  (if (or (vsc-edit-prog-mode-p) vsc-edit-insert-tab-on-tab)
+      (vsc-edit-smart-tab)
+    (funcall-interactively (local-key-binding (kbd "TAB")))))
+
+(defun vsc-edit-smart-shift-tab ()
+  "`prog-mode' shift tab."
   (interactive)
   (if (use-region-p)
       (vsc-edit--lines-in-region
@@ -347,6 +358,14 @@
               (indent-for-tab-command)
               (when (= pt (point)) (vsc-edit--backward-delete-spaces-by-indent-level)))
           (vsc-edit--backward-delete-spaces-by-indent-level))))))
+
+;;;###autoload
+(defun vsc-edit-shift-tab ()
+  "Global Shift+TAB key."
+  (interactive)
+  (if (vsc-edit-prog-mode-p)
+      (vsc-edit-smart-shift-tab)
+    (funcall-interactively (local-key-binding [S-tab]))))
 
 ;;
 ;; (@* "BOL and EOL" )
