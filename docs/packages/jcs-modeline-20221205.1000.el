@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-modeline
-;; Package-Version: 20221129.1849
-;; Package-Commit: 726f08f4dc6f07b2938752aff5af7337862c182b
+;; Package-Version: 20221205.1000
+;; Package-Commit: 10ca349c414abe6c9f602faabafc4ba4dbd19bde
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "28.1") (moody "0.7.1") (minions "0.3.7") (elenv "0.1.0"))
 ;; Keywords: faces mode-line
@@ -57,16 +57,8 @@
   :group 'jcs-modeline)
 
 (defcustom jcs-modeline-right
-  `((:eval
-     (when (and (bound-and-true-p flycheck-mode)
-                (or flycheck-current-errors
-                    (eq 'running flycheck-last-status-change)))
-       (cl-loop for state in '((error   . "#FB4933")
-                               (warning . "#FABD2F")
-                               (info    . "#83A598"))
-                as lighter = (jcs-modeline--flycheck-lighter (car state))
-                when lighter
-                concat (propertize lighter 'face `(:foreground ,(cdr state))))))
+  `((:eval (jcs-modeline--render-flycheck))
+    (:eval (jcs-modeline--render-nov))
     (:eval (jcs-modeline--vc-info)) " "
     (:eval (moody-tab " %l : %c " 0 'up)) " %p "
     mode-line-end-spaces)
@@ -201,6 +193,9 @@
 ;; (@* "Plugins" )
 ;;
 
+;;
+;;; Flycheck
+
 (defun jcs-modeline--vc-info ()
   "Return `vc-mode' information."
   (format-mode-line '(vc-mode vc-mode)))
@@ -221,6 +216,26 @@
          (err (or (cdr (assq state counts)) "?"))
          (running (eq 'running flycheck-last-status-change)))
     (if (or errorp running) (format "•%s" err))))
+
+(defun jcs-modeline--render-flycheck ()
+  "Render for flycheck."
+  (when (and (bound-and-true-p flycheck-mode)
+             (or flycheck-current-errors
+                 (eq 'running flycheck-last-status-change)))
+    (cl-loop for state in '((error   . "#FB4933")
+                            (warning . "#FABD2F")
+                            (info    . "#83A598"))
+             as lighter = (jcs-modeline--flycheck-lighter (car state))
+             when lighter
+             concat (propertize lighter 'face `(:foreground ,(cdr state))))))
+
+;;
+;;; Nov
+
+(defun jcs-modeline--render-nov ()
+  "Render for nov."
+  (when (eq major-mode 'nov-mode)
+    (format "[%s/%s]" (1+ nov-documents-index) (length nov-documents))))
 
 ;;
 ;; (@* "Themes" )

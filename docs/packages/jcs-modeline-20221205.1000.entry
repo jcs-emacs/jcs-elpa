@@ -1,5 +1,5 @@
 (jcs-modeline .
-	      [(20221129 1849)
+	      [(20221205 1000)
 	       ((emacs
 		 (28 1))
 		(moody
@@ -9,7 +9,7 @@
 		(elenv
 		 (0 1 0)))
 	       "A modeline for jcs-emacs" single
-	       ((:commit . "726f08f4dc6f07b2938752aff5af7337862c182b")
+	       ((:commit . "10ca349c414abe6c9f602faabafc4ba4dbd19bde")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
