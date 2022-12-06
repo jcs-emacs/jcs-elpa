@@ -5,10 +5,10 @@
 ;; Author: Alex Griffin <a@ajgrf.com>
 ;; Maintainer: Alex Griffin <a@ajgrf.com>
 ;; Version: 0.1.0
-;; Package-Version: 20220520.500
-;; Package-Commit: 83baed07a105c135190d49d7ec77f95e8f38fa54
+;; Package-Version: 20221206.600
+;; Package-Commit: 3cf623e1a4331e259ef92e49154ed0551f300436
 ;; Keywords: convenience
-;; Homepage: https://github.com/ajgrf/on.el
+;; Homepage: https://gitlab.com/ajgrf/on.el
 ;; Package-Requires: ((emacs "27.1"))
 ;;
 ;; This file is not part of GNU Emacs.
