@@ -623,11 +623,11 @@
   {
     "name": "on",
     "summary": "Hooks for faster startup",
-    "version": "20220520.500",
-    "url": "https://github.com/ajgrf/on.el",
+    "version": "20221206.600",
+    "url": "https://gitlab.com/ajgrf/on.el",
     "source": "github",
-    "commit": "83baed07a105c135190d49d7ec77f95e8f38fa54",
-    "tree": "https://github.com/ajgrf/on.el"
+    "commit": "3cf623e1a4331e259ef92e49154ed0551f300436",
+    "tree": "https://gitlab.com/ajgrf/on.el"
   },
   {
     "name": "org-bars",
