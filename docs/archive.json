@@ -227,19 +227,19 @@
   {
     "name": "eask-api",
     "summary": "Eask API",
-    "version": "20221207.1617",
+    "version": "20221209.1004",
     "url": "https://github.com/emacs-eask/eask-api",
     "source": "github",
-    "commit": "0fd54f09b04debc1bf21b8e513ab12596b67fbce",
+    "commit": "09f15ec94163f03cff322545f34cf4fe44c02524",
     "tree": "https://github.com/emacs-eask/eask-api"
   },
   {
     "name": "eask-mode",
     "summary": "major mode for editing Eask files",
-    "version": "20220913.857",
+    "version": "20221209.957",
     "url": "https://github.com/emacs-eask/eask-mode",
     "source": "github",
-    "commit": "51d3a0c577840c87fc0697238dab322f57a88e76",
+    "commit": "d42b94ae81081e6763ef794ef3745bb1b01167d7",
     "tree": "https://github.com/emacs-eask/eask-mode"
   },
   {
