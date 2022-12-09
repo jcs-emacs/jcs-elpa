@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-eask/eask-mode
-;; Package-Version: 20220913.857
-;; Package-Commit: 51d3a0c577840c87fc0697238dab322f57a88e76
+;; Package-Version: 20221209.957
+;; Package-Commit: d42b94ae81081e6763ef794ef3745bb1b01167d7
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "24.3") (eask-api "0.1.0"))
 ;; Keywords: lisp eask
@@ -49,11 +49,7 @@
 
 (defconst eask-mode-font-lock-keywords
   `((,(regexp-opt
-       '("package" "website-url" "keywords"
-         "package-file" "files"
-         "depends-on" "development"
-         "source" "source-priority"
-         "exec-paths" "load-paths")
+       eask-file-keywords
        'symbols)
      . font-lock-keyword-face)
     (,(rx symbol-start
@@ -75,9 +71,9 @@
   (setq-local indent-line-function #'lisp-indent-line))
 
 ;;;###autoload
-(add-to-list 'auto-mode-alist '("/Eask\\'" . eask-mode))
+(add-to-list 'auto-mode-alist '("/Easkfile[.0-9]*\\'" . eask-mode))
 ;;;###autoload
-(add-to-list 'auto-mode-alist '("/Easkfile\\'" . eask-mode))
+(add-to-list 'auto-mode-alist '("/Eask[.0-9]*\\'" . eask-mode))
 
 (provide 'eask-mode)
 ;;; eask-mode.el ends here

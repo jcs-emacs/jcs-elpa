@@ -1,11 +1,11 @@
 (eask-mode .
-	   [(20220913 857)
+	   [(20221209 957)
 	    ((emacs
 	      (24 3))
 	     (eask-api
 	      (0 1 0)))
 	    "major mode for editing Eask files" single
-	    ((:commit . "51d3a0c577840c87fc0697238dab322f57a88e76")
+	    ((:commit . "d42b94ae81081e6763ef794ef3745bb1b01167d7")
 	     (:authors
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))
 	     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
