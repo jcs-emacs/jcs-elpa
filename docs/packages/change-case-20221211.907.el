@@ -6,8 +6,8 @@
 ;; Maintainer: TakesxiSximada <8707279+TakesxiSximada@users.noreply.github.com>
 ;; Repository: https://gist.github.com/TakesxiSximada/e8a10244aac6308de1323d1f6685658b
 ;; Version: 9
-;; Package-Commit: daa82dea863c168e9088a20b6f3e2df1e2a2f40c
-;; Package-Version: 20210220.1445
+;; Package-Commit: 8117113a15be15667b6421257fa4cf233dc81bd2
+;; Package-Version: 20221211.907
 ;; Package-X-Original-Version: 20210220.0000
 ;; Package-Requires: ((emacs "25.1") (dash "2.16.0") (s "1.12.0"))
 ;; Date: 2021-02-20
@@ -160,10 +160,10 @@
   :group 'change-case)
 
 (defun change-case-select-ui (prompt choices default)
-  (ido-completing-read prompt
-		       choices
-		       nil nil nil nil
-		       default))
+  (completing-read prompt
+		   choices
+		   nil nil nil nil
+		   default))
 
 (defun change-case-select-parser ()
   (cdr (assoc (change-case-select-ui change-case-parser-prompt
