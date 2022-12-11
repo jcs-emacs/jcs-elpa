@@ -74,10 +74,10 @@
   {
     "name": "change-case",
     "summary": "Case conversion between camelCase, PascalCase, snake_case and more",
-    "version": "20210220.1445",
+    "version": "20221211.907",
     "url": "https://github.com/TakesxiSximada/change-case.el",
     "source": "github",
-    "commit": "daa82dea863c168e9088a20b6f3e2df1e2a2f40c",
+    "commit": "8117113a15be15667b6421257fa4cf233dc81bd2",
     "tree": "https://github.com/TakesxiSximada/change-case.el"
   },
   {
