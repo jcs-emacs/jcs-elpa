@@ -1,0 +1,1 @@
+(flymake-vale :repo "tpeacock19/flymake-vale" :fetcher github)
