@@ -396,6 +396,15 @@
     "tree": "https://github.com/emacs-eask/flymake-eask"
   },
   {
+    "name": "flymake-vale",
+    "summary": "flymake integration for vale",
+    "version": "20221116.1718",
+    "url": "https://github.com/tpeacock19/new",
+    "source": "github",
+    "commit": "914f30177dec0310d1ecab1fb798f2b70a018f24",
+    "tree": "https://github.com/tpeacock19/new"
+  },
+  {
     "name": "fof",
     "summary": "Default configuration for `ff-find-other-file'",
     "version": "20221008.650",
