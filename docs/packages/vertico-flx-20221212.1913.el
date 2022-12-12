@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/vertico-flx
-;; Package-Version: 20220704.700
-;; Package-Commit: 0b3b2fce5c92f1f7728fa13acb8545d05d0e78d9
+;; Package-Version: 20221212.1913
+;; Package-Commit: 64ffb55002dd18fe637691810fe70516c755e961
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (vertico "0.22") (flx "0.5") (flx-style "0.1.1") (ht "2.0") (f "0.20.0") (mbs "0.1.0"))
 ;; Keywords: convenience vertico flx
@@ -95,25 +95,13 @@ If optional argument FLIP is non-nil, reverse query and pattern order."
         (setq candidates (append candidates cands)))))
   candidates)
 
-(defun vertico-flx--sort-file-directory (input all)
-  "Sort directory on top."
-  (if (string-empty-p input)
-      (sort (sort all #'string-lessp)
-            (lambda (var1 var2)
-              (and (string-suffix-p "/" var1)
-                   (not (string-suffix-p "/" var2)))))
-    #'vertico-sort-length-alpha))
-
 (defun vertico-flx--sort-function (all)
   "Sort candidates ALL."
   (setq vertico-flx--sorting nil)
   (let ((input (minibuffer-contents)) base)
     (cond
      ((mbs-M-x-p) (setq base #'vertico-sort-history-length-alpha))
-     ((mbs-finding-file-p)
-      (setq input (if (and (string-suffix-p "/" input) (vertico-flx--directory-p input)) ""
-                    (f-filename input))
-            base (vertico-flx--sort-file-directory input all))))
+     )
     ;; Final output
     (if (string-empty-p input)  ; Empty, return raw
         (if (null base) all
@@ -151,7 +139,7 @@ If optional argument FLIP is non-nil, reverse query and pattern order."
 
 ;;;###autoload
 (define-minor-mode vertico-flx-mode
-  "Minor mode 'vertico-flx-mode'."
+  "Minor mode `vertico-flx-mode'."
   :global t
   :require 'vertico-flx-mode
   :group 'vertico-flx
