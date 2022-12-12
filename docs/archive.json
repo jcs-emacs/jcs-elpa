@@ -531,6 +531,15 @@
     "tree": "https://github.com/elp-revive/kaomoji.el"
   },
   {
+    "name": "lambda-line",
+    "summary": "A custom status line",
+    "version": "20221124.126",
+    "url": "https://github.com/Lambda-Emacs/lambda-line",
+    "source": "github",
+    "commit": "22186321a7442f1bd3b121f739007bd809cb38f8",
+    "tree": "https://github.com/Lambda-Emacs/lambda-line"
+  },
+  {
     "name": "lsp-compose",
     "summary": "lsp-mode client for compose server",
     "version": "20200504.447",
