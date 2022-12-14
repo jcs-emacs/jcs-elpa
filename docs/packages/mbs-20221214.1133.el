@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/mbs
-;; Package-Version: 20221018.1343
-;; Package-Commit: b3f5c467a4a5882dcb7feb06448f1383127686e9
+;; Package-Version: 20221214.1133
+;; Package-Commit: d21039a6e201de644e83259a615b4fe9afd05cd0
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: convenience minibuffer stats
@@ -50,8 +50,8 @@
 (defun mbs-finding-file-p ()
   "Return non-nil if current minibuffer finding file."
   (mbs--with-minibuffer-env
-    (or (string-prefix-p "Find " prompt)
-        (string-prefix-p "Select " prompt))))
+    (and (not (mbs-M-x-p))
+         (ignore-errors (expand-file-name contents)))))
 
 ;;;###autoload
 (defun mbs-renaming-p ()
