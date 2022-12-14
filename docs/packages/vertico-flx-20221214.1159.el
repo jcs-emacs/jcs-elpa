@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/vertico-flx
-;; Package-Version: 20221212.1913
-;; Package-Commit: 64ffb55002dd18fe637691810fe70516c755e961
+;; Package-Version: 20221214.1159
+;; Package-Commit: d1a9bb574e11e23dace7067d4e1a090cd2c36809
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (vertico "0.22") (flx "0.5") (flx-style "0.1.1") (ht "2.0") (f "0.20.0") (mbs "0.1.0"))
 ;; Keywords: convenience vertico flx
@@ -53,12 +53,16 @@
 (defvar vertico-flx--sorting nil
   "Return non-nil if currently sorting.")
 
-(defvar vertico-flx--old-sort-function nil
-  "Record the old `vertico-sort-function'.")
-
 ;;
 ;; (@* "Util" )
 ;;
+
+(defmacro vertico-flx--with-minibuffer-env (&rest body)
+  "Execute BODY with minibuffer variables."
+  (declare (indent 0) (debug t))
+  `(let ((prompt (minibuffer-prompt))
+         (contents (minibuffer-contents)))
+     ,@body))
 
 (defun vertico-flx--directory-p (path)
   "Return non-nil if PATH is a directory path."
@@ -95,21 +99,41 @@ If optional argument FLIP is non-nil, reverse query and pattern order."
         (setq candidates (append candidates cands)))))
   candidates)
 
-(defun vertico-flx--sort-function (all)
+;;
+;; (@* "Multiform" )
+;;
+
+;;;###autoload
+(defun vertico-flx-sort-default (all)
   "Sort candidates ALL."
-  (setq vertico-flx--sorting nil)
-  (let ((input (minibuffer-contents)) base)
-    (cond
-     ((mbs-M-x-p) (setq base #'vertico-sort-history-length-alpha))
-     )
-    ;; Final output
-    (if (string-empty-p input)  ; Empty, return raw
-        (if (null base) all
-          (cond ((functionp base) (funcall base all))
-                ((listp base) base)))
-      (setq vertico-flx--sorting t)
-      ;; Return fuzzy order
-      (vertico-flx--sort-candidates-by-function all input #'flx-score))))
+  (vertico-flx--with-minibuffer-env
+    (setq vertico-flx--sorting nil)
+    (let ((base #'vertico-sort-history-length-alpha))
+      ;; Final output
+      (if (string-empty-p contents)  ; Empty, return raw
+          (if (null base) all
+            (cond ((functionp base) (funcall base all))
+                  ((listp base) base)))
+        (setq vertico-flx--sorting t)
+        ;; Return fuzzy order
+        (vertico-flx--sort-candidates-by-function all contents #'flx-score)))))
+
+;;;###autoload
+(defun vertico-flx-sort-files (all)
+  "Sort candidates ALL for files."
+  (vertico-flx--with-minibuffer-env
+    (setq vertico-flx--sorting nil)
+    (let ((input (if (and (string-suffix-p "/" contents)
+                          (vertico-flx--directory-p contents))
+                     ""
+                   (f-filename contents))))
+      (if (string-empty-p input)
+          (sort (sort all #'string-lessp)
+                (lambda (var1 var2)
+                  (and (string-suffix-p "/" var1)
+                       (not (string-suffix-p "/" var2)))))
+        (setq vertico-flx--sorting t)
+        (vertico-flx--sort-candidates-by-function all input #'flx-score)))))
 
 ;;
 ;; (@* "Entry" )
@@ -126,14 +150,11 @@ If optional argument FLIP is non-nil, reverse query and pattern order."
 
 (defun vertico-flx--enable ()
   "Enable `vertico-flx-mode'."
-  (setq vertico-flx--old-sort-function vertico-sort-function)  ; record
-  (setq vertico-sort-function #'vertico-flx--sort-function)    ; applied
   (add-hook 'minibuffer-setup-hook #'vertico-flx--minibuffer-setup)
   (add-hook 'minibuffer-exit-hook #'vertico-flx--minibuffer-exit))
 
 (defun vertico-flx--disable ()
   "Disable `vertico-flx-mode'."
-  (setq vertico-sort-function vertico-flx--old-sort-function)  ; revert
   (remove-hook 'minibuffer-setup-hook #'vertico-flx--minibuffer-setup)
   (remove-hook 'minibuffer-exit-hook #'vertico-flx--minibuffer-exit))
 
