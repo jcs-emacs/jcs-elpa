@@ -11,10 +11,10 @@
   {
     "name": "auto-scroll-bar",
     "summary": "Automatically show/hide scroll-bars as needed",
-    "version": "20220704.731",
+    "version": "20221214.1059",
     "url": "https://github.com/jcs-elpa/auto-scroll-bar",
     "source": "github",
-    "commit": "57c68e7fa931e8043e1629bf4c71fee3df49decc",
+    "commit": "afda338ccd67456142361be610a6bdd7e2360143",
     "tree": "https://github.com/jcs-elpa/auto-scroll-bar"
   },
   {
