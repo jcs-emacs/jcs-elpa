@@ -1,0 +1,11 @@
+(ace-link-dashboard .
+		    [(20221206 2203)
+		     ((emacs
+		       (26 1))
+		      (avy
+		       (0 5 0)))
+		     "Ace link for dashboard" single
+		     ((:commit . "459d1877269d8c0ac117e6a1915a40c716e88eab")
+		      (:maintainer "Ricardo Arredondo" . "ricardo.richo@gmail.com")
+		      (:keywords "tools")
+		      (:url . "https://github.com/emacs-dashboard/ace-link-dashboard"))])
