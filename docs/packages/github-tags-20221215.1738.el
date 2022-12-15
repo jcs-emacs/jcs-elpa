@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/github-tags
-;; Package-Version: 20220704.651
-;; Package-Commit: f20be7e8d276b5962c7bb3c6d366b8ff9762bb1a
+;; Package-Version: 20221215.1738
+;; Package-Commit: 1c96ab259c334c10e8ef69b70b8e4e6df3322a66
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "24.3"))
 ;; Keywords: vc github tags
@@ -45,13 +45,17 @@
 (defconst github-tags-api "https://api.github.com/repos/%s/tags"
   "API url to GitHub tags.")
 
+;;
+;; (@* "Externals" )
+;;
+
 (defvar url-http-end-of-headers)
 
-(defvar github-tags-names nil)
-(defvar github-tags-zipball-urls nil)
-(defvar github-tags-tarball-urls nil)
-(defvar github-tags-commits nil)
-(defvar github-tags-node-ids nil)
+(declare-function msgu-silent "ext:msgu-silent.el")
+
+;;
+;; (@* "Core" )
+;;
 
 (defun github-tags--url-to-json (url)
   "Get data by URL and convert it to JSON."
@@ -61,15 +65,15 @@
     (prog1 (let ((json-array-type 'list)) (json-read))
       (kill-buffer))))
 
+;;;###autoload
 (defun github-tags (path)
   "Retrive tags data for PATH from GitHub API."
-  (setq github-tags-names nil
-        github-tags-zipball-urls nil
-        github-tags-tarball-urls nil
-        github-tags-commits nil
-        github-tags-node-ids nil)
-  (let* ((url (format github-tags-api path))
-         (data (ignore-errors (github-tags--url-to-json url)))
+  (let* ((names) (zipball-urls) (tarball-urls) (commits) (node-ids)
+         (url (format github-tags-api path))
+         (data (ignore-errors
+                 (if (featurep 'msgu)
+                     (msgu-silent (github-tags--url-to-json url))
+                   (github-tags--url-to-json url))))
          (msg-err (cdr (assoc 'message data))))
     (when msg-err (user-error "[ERROR] %s, %s" msg-err url))
     (dolist (tag data)
@@ -78,17 +82,20 @@
             (tarball (cdr (assoc 'tarball_url tag)))
             (commit (cdr (assoc 'commit tag)))
             (nodeId (cdr (assoc 'node_id tag))))
-        (push name github-tags-names)
-        (push zipball github-tags-zipball-urls)
-        (push tarball github-tags-tarball-urls)
-        (push commit github-tags-commits)
-        (push nodeId github-tags-node-ids)))
-    (setq github-tags-names (reverse github-tags-names)
-          github-tags-zipball-urls (reverse github-tags-zipball-urls)
-          github-tags-tarball-urls (reverse github-tags-tarball-urls)
-          github-tags-commits (reverse github-tags-commits)
-          github-tags-node-ids (reverse github-tags-node-ids))
-    data))
+        (push name names)
+        (push zipball zipball-urls)
+        (push tarball tarball-urls)
+        (push commit commits)
+        (push nodeId node-ids)))
+    (setq names (reverse names)
+          zipball-urls (reverse zipball-urls)
+          tarball-urls (reverse tarball-urls)
+          commits (reverse commits)
+          node-ids (reverse node-ids))
+    (cons data `( :names ,names :zipball-urls ,zipball-urls
+                  :tarball-urls ,tarball-urls
+                  :commits ,commits
+                  :node-ids ,node-ids))))
 
 (provide 'github-tags)
 ;;; github-tags.el ends here

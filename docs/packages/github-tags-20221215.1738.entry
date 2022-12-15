@@ -1,9 +1,9 @@
 (github-tags .
-	     [(20220704 651)
+	     [(20221215 1738)
 	      ((emacs
 		(24 3)))
 	      "Retrieve tags information through GitHub API" single
-	      ((:commit . "f20be7e8d276b5962c7bb3c6d366b8ff9762bb1a")
+	      ((:commit . "1c96ab259c334c10e8ef69b70b8e4e6df3322a66")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
