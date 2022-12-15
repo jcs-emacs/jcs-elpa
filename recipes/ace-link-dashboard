@@ -1,0 +1,1 @@
+(ace-link-dashboard :repo "emacs-dashboard/ace-link-dashboard" :fetcher github)
