@@ -1,5 +1,14 @@
 [
   {
+    "name": "ace-link-dashboard",
+    "summary": "Ace link for dashboard",
+    "version": "20221206.2203",
+    "url": "https://github.com/emacs-dashboard/ace-link-dashboard",
+    "source": "github",
+    "commit": "459d1877269d8c0ac117e6a1915a40c716e88eab",
+    "tree": "https://github.com/emacs-dashboard/ace-link-dashboard"
+  },
+  {
     "name": "asoc",
     "summary": "alist functions and macros",
     "version": "20170917.1031",
