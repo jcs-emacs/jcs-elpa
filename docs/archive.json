@@ -461,10 +461,10 @@
   {
     "name": "github-tags",
     "summary": "Retrieve tags information through GitHub API",
-    "version": "20220704.651",
+    "version": "20221215.1738",
     "url": "https://github.com/jcs-elpa/github-tags",
     "source": "github",
-    "commit": "f20be7e8d276b5962c7bb3c6d366b8ff9762bb1a",
+    "commit": "1c96ab259c334c10e8ef69b70b8e4e6df3322a66",
     "tree": "https://github.com/jcs-elpa/github-tags"
   },
   {
