@@ -1,0 +1,1 @@
+(hurl-mode :repo "azzamsa/emacs-hurl" :fetcher github)
