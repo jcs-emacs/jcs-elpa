@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-modeline
-;; Package-Version: 20221205.1000
-;; Package-Commit: 10ca349c414abe6c9f602faabafc4ba4dbd19bde
+;; Package-Version: 20221216.747
+;; Package-Commit: c46a95f1a09e8b209b4f2f80af5a882904cb94c9
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "28.1") (moody "0.7.1") (minions "0.3.7") (elenv "0.1.0"))
 ;; Keywords: faces mode-line
@@ -60,6 +60,7 @@
   `((:eval (jcs-modeline--render-flycheck))
     (:eval (jcs-modeline--render-nov))
     (:eval (jcs-modeline--vc-info)) " "
+    (:eval (jcs-modeline--render-text-scale))
     (:eval (moody-tab " %l : %c " 0 'up)) " %p "
     mode-line-end-spaces)
   "List of item to render on the right."
@@ -126,7 +127,7 @@
 
 (defun jcs-modeline--str-len (str)
   "Calculate STR in pixel width."
-  (let ((width (window-font-width))
+  (let ((width (frame-char-width))
         (len (jcs-modeline--string-pixel-width str)))
     (+ (/ len width)
        (if (zerop (% len width)) 0 1))))  ; add one if exceeed
@@ -194,6 +195,18 @@
 ;;
 
 ;;
+;;; Text Scale
+
+(defun jcs-modeline--render-text-scale ()
+  "Render text-scale amount."
+  (when (and (boundp 'text-scale-mode-amount) (/= text-scale-mode-amount 0))
+    (format
+     (if (> text-scale-mode-amount 0)
+         "(%+d)"
+       "(%-d)")
+     text-scale-mode-amount)))
+
+;;
 ;;; Flycheck
 
 (defun jcs-modeline--vc-info ()
@@ -231,6 +244,9 @@
 
 ;;
 ;;; Nov
+
+(defvar nov-documents)
+(defvar nov-documents-index)
 
 (defun jcs-modeline--render-nov ()
   "Render for nov."
