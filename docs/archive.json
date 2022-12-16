@@ -524,10 +524,10 @@
   {
     "name": "jcs-modeline",
     "summary": "A modeline for jcs-emacs",
-    "version": "20221205.1000",
+    "version": "20221216.747",
     "url": "https://github.com/jcs-emacs/jcs-modeline",
     "source": "github",
-    "commit": "10ca349c414abe6c9f602faabafc4ba4dbd19bde",
+    "commit": "c46a95f1a09e8b209b4f2f80af5a882904cb94c9",
     "tree": "https://github.com/jcs-emacs/jcs-modeline"
   },
   {
@@ -758,10 +758,10 @@
   {
     "name": "sideline",
     "summary": "Show information on the side",
-    "version": "20220922.508",
+    "version": "20221216.749",
     "url": "https://github.com/emacs-sideline/sideline",
     "source": "github",
-    "commit": "0bfdb6274cda0c19424c78804086ed93df96b4bb",
+    "commit": "8a981bc41f0169d2b6553988bd091d4eaf5bd134",
     "tree": "https://github.com/emacs-sideline/sideline"
   },
   {
