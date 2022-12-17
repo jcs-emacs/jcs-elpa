@@ -22,6 +22,7 @@
          (total (ceiling (/ (float (length recipes)) (float per-section))))
          (count 0))
     (message "BUILD SECTION: %s" elpa-section)
+    (ignore-errors (make-directory github-elpa-working-dir t))
     (dolist (recipe recipes)
       (cl-incf count)
       (when (recipe-in-section-p count total)
