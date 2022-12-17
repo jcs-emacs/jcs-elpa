@@ -5,8 +5,8 @@
 ;; Author: Troy Pracy <troyp7@gmail.com>
 ;; Maintainer: Troy Pracy <troyp7@gmail.com>
 ;; Keywords: alist data-types
-;; Package-Version: 20170917.1031
-;; Package-Commit: 2ca9b9776bfc56cd7e336357d36627080b73e744
+;; Package-Version: 20170917.1208
+;; Package-Commit: 4a3309a9f250656da6f4a9d34feedf4f5666b17a
 ;; Version: 0.6.1
 ;; URL: https://github.com/troyp/asoc.el
 
