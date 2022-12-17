@@ -4,8 +4,8 @@
 
 ;; Author: Abhinav Tushar <abhinav@lepisma.xyz>
 ;; Version: 0.0.1
-;; Package-Version: 20200504.447
-;; Package-Commit: eeeab18496dc53dc01b6547515ee6a8e91c312b8
+;; Package-Version: 20200515.1833
+;; Package-Commit: 44df194778503cd2e29e907af4c6989c7ea27d1c
 ;; Package-Requires: ((emacs "26"))
 ;; URL: https://github.com/lepisma/compose-language-server.el
 

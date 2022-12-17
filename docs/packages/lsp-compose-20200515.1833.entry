@@ -1,9 +1,9 @@
 (lsp-compose .
-	     [(20200504 447)
+	     [(20200515 1833)
 	      ((emacs
 		(26)))
 	      "lsp-mode client for compose server" single
-	      ((:commit . "eeeab18496dc53dc01b6547515ee6a8e91c312b8")
+	      ((:commit . "44df194778503cd2e29e907af4c6989c7ea27d1c")
 	       (:authors
 		("Abhinav Tushar" . "abhinav@lepisma.xyz"))
 	       (:maintainer "Abhinav Tushar" . "abhinav@lepisma.xyz")
