@@ -11,10 +11,10 @@
   {
     "name": "asoc",
     "summary": "alist functions and macros",
-    "version": "20170917.1031",
+    "version": "20170917.1208",
     "url": "https://github.com/troyp/asoc.el",
     "source": "github",
-    "commit": "2ca9b9776bfc56cd7e336357d36627080b73e744",
+    "commit": "4a3309a9f250656da6f4a9d34feedf4f5666b17a",
     "tree": "https://github.com/troyp/asoc.el"
   },
   {
@@ -236,10 +236,10 @@
   {
     "name": "eask-api",
     "summary": "Eask API",
-    "version": "20221210.1110",
+    "version": "20221217.414",
     "url": "https://github.com/emacs-eask/eask-api",
     "source": "github",
-    "commit": "0405d0a7b340622cc637b5d1919a29427330f63e",
+    "commit": "39257bc44a8bb03700390b4ba086ed44384303fb",
     "tree": "https://github.com/emacs-eask/eask-api"
   },
   {
@@ -389,19 +389,19 @@
   {
     "name": "flycheck-eask",
     "summary": "Eask support in Flycheck",
-    "version": "20220704.622",
+    "version": "20220908.1238",
     "url": "https://github.com/emacs-eask/flycheck-eask",
     "source": "github",
-    "commit": "0afa03dc2edd284b6c51e885b4a5ad2a2c8c98ce",
+    "commit": "ca1de9d55c99c91971857f0c37abfb3da90dd012",
     "tree": "https://github.com/emacs-eask/flycheck-eask"
   },
   {
     "name": "flymake-eask",
     "summary": "Eask support in Flymake",
-    "version": "20220908.1232",
+    "version": "20220908.1239",
     "url": "https://github.com/emacs-eask/flymake-eask",
     "source": "github",
-    "commit": "e20fbf6c1b721a302761052ad628b58c51aedb57",
+    "commit": "5e1a3efa93e823da95ac4c1e79ab3812c112e6aa",
     "tree": "https://github.com/emacs-eask/flymake-eask"
   },
   {
@@ -470,10 +470,10 @@
   {
     "name": "helafy",
     "summary": "Minify/Uglify/Prettify contents",
-    "version": "20221103.1415",
+    "version": "20221103.1418",
     "url": "https://github.com/jcs-elpa/helafy",
     "source": "github",
-    "commit": "1132b03e1402d3a6960cffdd3706a1c3c12840b1",
+    "commit": "a6658f8e223014066f23bc5ed6c654cbf7f1bf05",
     "tree": "https://github.com/jcs-elpa/helafy"
   },
   {
@@ -560,10 +560,10 @@
   {
     "name": "lsp-compose",
     "summary": "lsp-mode client for compose server",
-    "version": "20200504.447",
+    "version": "20200515.1833",
     "url": "https://github.com/lepisma/compose-language-server.el",
     "source": "github",
-    "commit": "eeeab18496dc53dc01b6547515ee6a8e91c312b8",
+    "commit": "44df194778503cd2e29e907af4c6989c7ea27d1c",
     "tree": "https://github.com/lepisma/compose-language-server.el"
   },
   {
@@ -617,7 +617,7 @@
     "version": "20221031.411",
     "url": "https://github.com/creatorrr/emacs-mint-mode",
     "source": "github",
-    "commit": "df81e04668de74740e252ddb0f34569b351b92b4",
+    "commit": "7bb0f9946f5833eada199e880fdc4efa6df09e0b",
     "tree": "https://github.com/creatorrr/emacs-mint-mode"
   },
   {
@@ -776,10 +776,10 @@
   {
     "name": "sideline-color",
     "summary": "Show color information with sideline",
-    "version": "20220820.754",
+    "version": "20220820.758",
     "url": "https://github.com/emacs-sideline/sideline-color",
     "source": "github",
-    "commit": "d59012f7a7e642ca9f5de6ac31fe01baff3512da",
+    "commit": "fc1a447cc6e02d39026d0ec8d669d1542d1792bb",
     "tree": "https://github.com/emacs-sideline/sideline-color"
   },
   {
