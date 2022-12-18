@@ -1,9 +1,9 @@
 (eask-api .
-	  [(20221217 414)
+	  [(20221218 1710)
 	   ((emacs
 	     (26 1)))
 	   "Eask API" tar
-	   ((:commit . "39257bc44a8bb03700390b4ba086ed44384303fb")
+	   ((:commit . "a8b9454552e746f155583c0bab3948196f64d2eb")
 	    (:authors
 	     ("Jen-Chieh" . "jcs090218@gmail.com"))
 	    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
