@@ -153,6 +153,15 @@
     "tree": "https://github.com/elp-revive/company-dockerfile"
   },
   {
+    "name": "company-eask",
+    "summary": "Company backend for Eask-file",
+    "version": "20221220.858",
+    "url": "https://github.com/emacs-eask/company-eask",
+    "source": "github",
+    "commit": "9f929524e9fccbc10008cbdf582b7ff7566ae4be",
+    "tree": "https://github.com/emacs-eask/company-eask"
+  },
+  {
     "name": "company-elisp-keywords",
     "summary": "Company completion for `finder-known-keywords'",
     "version": "20221117.1104",
@@ -236,10 +245,10 @@
   {
     "name": "eask-api",
     "summary": "Eask API",
-    "version": "20221218.1710",
+    "version": "20221220.815",
     "url": "https://github.com/emacs-eask/eask-api",
     "source": "github",
-    "commit": "a8b9454552e746f155583c0bab3948196f64d2eb",
+    "commit": "a23a6341b94185e2627662e94793a41d7ec9bd76",
     "tree": "https://github.com/emacs-eask/eask-api"
   },
   {
