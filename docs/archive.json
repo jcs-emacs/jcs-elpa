@@ -279,6 +279,15 @@
     "tree": "https://github.com/emacs-languagetool/eglot-ltex"
   },
   {
+    "name": "eldoc-eask",
+    "summary": "Eldoc support for Eask-file",
+    "version": "20221220.1242",
+    "url": "https://github.com/jcs090218/eldoc-eask",
+    "source": "github",
+    "commit": "95b37c158687d1450a652bb506ab7c415df1b572",
+    "tree": "https://github.com/jcs090218/eldoc-eask"
+  },
+  {
     "name": "eldoc-meta-net",
     "summary": "Eldoc support for meta-net",
     "version": "20220704.631",
