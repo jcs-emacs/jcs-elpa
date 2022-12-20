@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/eldoc-meta-net
-;; Package-Version: 20220704.631
-;; Package-Commit: b9ed131ddf3f8c2181f26768c871bee80ae40938
+;; Package-Version: 20221220.1254
+;; Package-Commit: 37adccdbe47281c788fdaa4c879874e7dfb38b87
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (meta-net "1.1.0") (ht "2.3") (csharp-mode "1.0.2"))
 ;; Keywords: convenience eldoc c# dotnet sdk
@@ -371,7 +371,8 @@ We use this to eliminate not possible candidates."
   "Turn on `eldoc-meta-net'."
   (interactive)
   (add-hook 'csharp-mode-hook #'eldoc-meta-net--turn-on)
-  (add-hook 'csharp-tree-sitter-mode #'eldoc-meta-net--turn-on))
+  (add-hook 'csharp-tree-sitter-mode #'eldoc-meta-net--turn-on)
+  (eldoc-meta-net--turn-on))
 
 ;;;###autoload
 (defun eldoc-meta-net-disable ()

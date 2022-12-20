@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs090218/eldoc-eask
-;; Package-Version: 20221220.1242
-;; Package-Commit: 95b37c158687d1450a652bb506ab7c415df1b572
+;; Package-Version: 20221220.1255
+;; Package-Commit: 068e58ea54d5f0fee1dfdfde36a57f09522f7cbd
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (eask-api "0.1.0"))
 ;; Keywords: convenience
@@ -89,7 +89,8 @@ Mainly copy it from `elisp-eldoc-documentation-function' function."
 (defun eldoc-eask-enable ()
   "Turn on `eldoc-eask'."
   (interactive)
-  (add-hook 'eask-mode-hook #'eldoc-eask--turn-on))
+  (add-hook 'eask-mode-hook #'eldoc-eask--turn-on)
+  (eldoc-eask--turn-on))
 
 ;;;###autoload
 (defun eldoc-eask-disable ()
