@@ -281,19 +281,19 @@
   {
     "name": "eldoc-eask",
     "summary": "Eldoc support for Eask-file",
-    "version": "20221220.1242",
+    "version": "20221220.1255",
     "url": "https://github.com/jcs090218/eldoc-eask",
     "source": "github",
-    "commit": "95b37c158687d1450a652bb506ab7c415df1b572",
+    "commit": "068e58ea54d5f0fee1dfdfde36a57f09522f7cbd",
     "tree": "https://github.com/jcs090218/eldoc-eask"
   },
   {
     "name": "eldoc-meta-net",
     "summary": "Eldoc support for meta-net",
-    "version": "20220704.631",
+    "version": "20221220.1254",
     "url": "https://github.com/emacs-vs/eldoc-meta-net",
     "source": "github",
-    "commit": "b9ed131ddf3f8c2181f26768c871bee80ae40938",
+    "commit": "37adccdbe47281c788fdaa4c879874e7dfb38b87",
     "tree": "https://github.com/emacs-vs/eldoc-meta-net"
   },
   {
