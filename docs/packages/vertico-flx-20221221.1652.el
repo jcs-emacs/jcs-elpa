@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/vertico-flx
-;; Package-Version: 20221221.925
-;; Package-Commit: 8aafc615fe53057ad0197b6320e34a8cc97a9687
+;; Package-Version: 20221221.1652
+;; Package-Commit: 3220d3bd358a720ba92086a89c2e86075d46c7db
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (vertico "0.22") (flx "0.5") (flx-style "0.1.1") (ht "2.0") (f "0.20.0") (mbs "0.1.0"))
 ;; Keywords: convenience vertico flx
@@ -139,15 +139,20 @@ If optional argument FLIP is non-nil, reverse query and pattern order."
 ;; (@* "Entry" )
 ;;
 
+(defvar vertico-flx--minibuffer-setup-p nil
+  "Flag to make sure `minibuffer-setup' is executed once.")
+
 (defun vertico-flx--minibuffer-setup (&rest _)
   "Hook for minibuffer setup."
-  (when (equal (minibuffer-depth) 1)
+  (unless vertico-flx--minibuffer-setup-p
     (setq vertico-flx--old-completion-style completion-styles
-          completion-styles '(flx))))
+          completion-styles '(flx)
+          vertico-flx--minibuffer-setup-p t)))
 
 (defun vertico-flx--minibuffer-exit (&rest _)
   "Hook for minibuffer exit."
-  (setq completion-styles vertico-flx--old-completion-style))
+  (setq completion-styles vertico-flx--old-completion-style
+        vertico-flx--minibuffer-setup-p nil))
 
 (defun vertico-flx--enable ()
   "Enable `vertico-flx-mode'."

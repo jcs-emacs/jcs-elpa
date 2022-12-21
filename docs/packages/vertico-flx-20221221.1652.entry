@@ -1,5 +1,5 @@
 (vertico-flx .
-	     [(20221221 925)
+	     [(20221221 1652)
 	      ((emacs
 		(27 1))
 	       (vertico
@@ -15,7 +15,7 @@
 	       (mbs
 		(0 1 0)))
 	      "Flx integration for vertico" single
-	      ((:commit . "8aafc615fe53057ad0197b6320e34a8cc97a9687")
+	      ((:commit . "3220d3bd358a720ba92086a89c2e86075d46c7db")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
