@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/mbs
-;; Package-Version: 20221214.1133
-;; Package-Commit: d21039a6e201de644e83259a615b4fe9afd05cd0
+;; Package-Version: 20221221.1907
+;; Package-Commit: d7a0a8b52eb2d4e8bb53bd853535f588120fe2cb
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: convenience minibuffer stats
@@ -51,6 +51,7 @@
   "Return non-nil if current minibuffer finding file."
   (mbs--with-minibuffer-env
     (and (not (mbs-M-x-p))
+         (not (string-empty-p contents))
          (ignore-errors (expand-file-name contents)))))
 
 ;;;###autoload
