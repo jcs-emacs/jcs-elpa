@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-modeline
-;; Package-Version: 20221216.747
-;; Package-Commit: c46a95f1a09e8b209b4f2f80af5a882904cb94c9
+;; Package-Version: 20221221.1531
+;; Package-Commit: b645ecf9452e9bc87d5fc0649b38581b2708ff83
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "28.1") (moody "0.7.1") (minions "0.3.7") (elenv "0.1.0"))
 ;; Keywords: faces mode-line
@@ -46,7 +46,7 @@
 (defcustom jcs-modeline-left
   `("%e "
     mode-line-front-space
-    mode-line-buffer-identification " "
+    (:eval (jcs-modeline--buffer-identification)) " "
     (:eval (moody-tab (concat " " (format-mode-line
                                    (if minions-mode
                                        minions-mode-line-modes
@@ -193,6 +193,13 @@
 ;;
 ;; (@* "Plugins" )
 ;;
+
+;;
+;;; Buffe Identification
+
+(defun jcs-modeline--buffer-identification ()
+  "Render buffer identification."
+  (string-trim (format-mode-line mode-line-buffer-identification)))
 
 ;;
 ;;; Text Scale
