@@ -596,10 +596,10 @@
   {
     "name": "mbs",
     "summary": "Minibuffer Stats",
-    "version": "20221214.1133",
+    "version": "20221221.1907",
     "url": "https://github.com/jcs-elpa/mbs",
     "source": "github",
-    "commit": "d21039a6e201de644e83259a615b4fe9afd05cd0",
+    "commit": "d7a0a8b52eb2d4e8bb53bd853535f588120fe2cb",
     "tree": "https://github.com/jcs-elpa/mbs"
   },
   {
