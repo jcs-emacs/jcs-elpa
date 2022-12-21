@@ -10,3 +10,6 @@
 
 # Cask repository
 cask-repository/
+
+# log
+.log
