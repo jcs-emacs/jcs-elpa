@@ -26,8 +26,8 @@ $(document).ready(function(){
     state.text('Current List of ' + archive.length + ' Packages');
     table.DataTable({
       "data": archive,
-      "bLengthChange": false,
-      "pageLength": '50',
+      "lengthChange": false,
+      "lengthMenu": [50],
       "processing": true,
       "autoWidth": false,
       "destroy": true,
