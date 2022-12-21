@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/vertico-flx
-;; Package-Version: 20221221.1652
-;; Package-Commit: 3220d3bd358a720ba92086a89c2e86075d46c7db
+;; Package-Version: 20221221.1952
+;; Package-Commit: 593aeb135f53e55d778fabf5482680c848bbcbe7
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (vertico "0.22") (flx "0.5") (flx-style "0.1.1") (ht "2.0") (f "0.20.0") (mbs "0.1.0"))
 ;; Keywords: convenience vertico flx
@@ -156,8 +156,8 @@ If optional argument FLIP is non-nil, reverse query and pattern order."
 
 (defun vertico-flx--enable ()
   "Enable `vertico-flx-mode'."
-  (add-hook 'minibuffer-setup-hook #'vertico-flx--minibuffer-setup)
-  (add-hook 'minibuffer-exit-hook #'vertico-flx--minibuffer-exit))
+  (add-hook 'minibuffer-setup-hook #'vertico-flx--minibuffer-setup 100)
+  (add-hook 'minibuffer-exit-hook #'vertico-flx--minibuffer-exit 100))
 
 (defun vertico-flx--disable ()
   "Disable `vertico-flx-mode'."
