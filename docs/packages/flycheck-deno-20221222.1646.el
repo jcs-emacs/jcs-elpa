@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/flycheck-deno
-;; Package-Version: 20221222.1559
-;; Package-Commit: c055a61b04f78342d22ef15a830a5a80d5fe8054
+;; Package-Version: 20221222.1646
+;; Package-Commit: ea7a5330535bdb25edb1c147f4d6d426abb1e097
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (flycheck "0.14"))
 ;; Keywords: lisp deno
@@ -43,6 +43,9 @@
   :group 'flycheck
   :link '(url-link :tag "Repository" "https://github.com/jcs-elpa/flycheck-deno"))
 
+(flycheck-def-args-var flycheck-deno-lint-args (deno-lint)
+  :package-version '(flycheck-deno . "0.1.0"))
+
 (defun flycheck-deno-parse-lint (output checker buffer)
   "Parse deno-lint errors from JSON OUTPUT.
 
@@ -74,7 +77,9 @@ the BUFFER that was checked respectively."
   "Checker for deno source files.
 
 See `https://deno.land/manual@v1.29.1/tools/linter'."
-  :command ("deno" "lint" "--json" source)
+  :command ("deno" "lint" "--json"
+            (eval flycheck-deno-lint-args)
+            source)
   :error-parser flycheck-deno-parse-lint
   :modes ( js-mode js2-mode js3-mode js-ts-mode
            typescript-mode typescript-ts-mode))
