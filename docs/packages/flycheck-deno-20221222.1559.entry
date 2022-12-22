@@ -1,0 +1,13 @@
+(flycheck-deno .
+	       [(20221222 1559)
+		((emacs
+		  (26 1))
+		 (flycheck
+		  (0 14)))
+		"Flycheck for deno-lint" single
+		((:commit . "c055a61b04f78342d22ef15a830a5a80d5fe8054")
+		 (:authors
+		  ("Jen-Chieh" . "jcs090218@gmail.com"))
+		 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		 (:keywords "lisp" "deno")
+		 (:url . "https://github.com/jcs-elpa/flycheck-deno"))])
