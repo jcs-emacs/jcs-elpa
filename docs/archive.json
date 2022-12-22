@@ -407,10 +407,10 @@
   {
     "name": "flycheck-deno",
     "summary": "Flycheck for deno-lint",
-    "version": "20221222.1559",
+    "version": "20221222.1646",
     "url": "https://github.com/jcs-elpa/flycheck-deno",
     "source": "github",
-    "commit": "c055a61b04f78342d22ef15a830a5a80d5fe8054",
+    "commit": "ea7a5330535bdb25edb1c147f4d6d426abb1e097",
     "tree": "https://github.com/jcs-elpa/flycheck-deno"
   },
   {
