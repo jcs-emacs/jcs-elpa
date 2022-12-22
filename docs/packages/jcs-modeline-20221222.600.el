@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-modeline
-;; Package-Version: 20221221.1531
-;; Package-Commit: b645ecf9452e9bc87d5fc0649b38581b2708ff83
+;; Package-Version: 20221222.600
+;; Package-Commit: 8ac5b613540d0f8eac6568beb7a4f13586ac8641
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "28.1") (moody "0.7.1") (minions "0.3.7") (elenv "0.1.0"))
 ;; Keywords: faces mode-line
@@ -46,12 +46,9 @@
 (defcustom jcs-modeline-left
   `("%e "
     mode-line-front-space
-    (:eval (jcs-modeline--buffer-identification)) " "
-    (:eval (moody-tab (concat " " (format-mode-line
-                                   (if minions-mode
-                                       minions-mode-line-modes
-                                     mode-line-modes)))))
-    " " (:eval (jcs-modeline--vc-project)))
+    (:eval (jcs-modeline--render-buffer-identification))
+    (:eval (jcs-modeline--render-modes))
+    (:eval (jcs-modeline--render-vc-project)))
   "List of item to render on the left."
   :type 'list
   :group 'jcs-modeline)
@@ -59,9 +56,9 @@
 (defcustom jcs-modeline-right
   `((:eval (jcs-modeline--render-flycheck))
     (:eval (jcs-modeline--render-nov))
-    (:eval (jcs-modeline--vc-info)) " "
+    (:eval (jcs-modeline--render-vc-info))
     (:eval (jcs-modeline--render-text-scale))
-    (:eval (moody-tab " %l : %c " 0 'up)) " %p "
+    (:eval (moody-tab " %l : %c " 0 'up)) " %p"
     mode-line-end-spaces)
   "List of item to render on the right."
   :type 'list
@@ -143,6 +140,10 @@
   "Return non-nil if current theme is light theme."
   (ignore-errors (jcs-modeline--light-color-p (face-background 'default))))
 
+(defun jcs-modeline-format (format &optional face window buffer)
+  "Wrapper for function `format-mode-line'."
+  (string-trim (format-mode-line format face window buffer)))
+
 ;;
 ;; (@* "Core" )
 ;;
@@ -197,9 +198,36 @@
 ;;
 ;;; Buffe Identification
 
-(defun jcs-modeline--buffer-identification ()
+(defun jcs-modeline--render-buffer-identification ()
   "Render buffer identification."
-  (string-trim (format-mode-line mode-line-buffer-identification)))
+  (concat (jcs-modeline-format mode-line-buffer-identification) " "))
+
+;;
+;;; Modes
+
+(defun jcs-modeline--render-modes ()
+  "Render line modes."
+  (let ((line-modes (jcs-modeline-format (if minions-mode
+                                             minions-mode-line-modes
+                                           mode-line-modes))))
+    (moody-tab line-modes)))
+
+;;
+;;; Project
+
+(defun jcs-modeline--render-vc-info ()
+  "Return `vc-mode' information."
+  (when-let ((info (jcs-modeline-format '(vc-mode vc-mode))))
+    (unless (string-empty-p info) (concat info " "))))
+
+(defun jcs-modeline--project-root ()
+  "Return project directory path."
+  (when-let ((current (project-current))) (project-root current)))
+
+(defun jcs-modeline--render-vc-project ()
+  "Return the project name."
+  (when-let ((project (jcs-modeline--project-root)))
+    (concat " "(file-name-nondirectory (directory-file-name project)))))
 
 ;;
 ;;; Text Scale
@@ -209,25 +237,12 @@
   (when (and (boundp 'text-scale-mode-amount) (/= text-scale-mode-amount 0))
     (format
      (if (> text-scale-mode-amount 0)
-         "(%+d)"
-       "(%-d)")
+         "(%+d) "
+       "(%-d) ")
      text-scale-mode-amount)))
 
 ;;
 ;;; Flycheck
-
-(defun jcs-modeline--vc-info ()
-  "Return `vc-mode' information."
-  (format-mode-line '(vc-mode vc-mode)))
-
-(defun jcs-modeline--project-root ()
-  "Return project directory path."
-  (when-let ((current (project-current))) (project-root current)))
-
-(defun jcs-modeline--vc-project ()
-  "Return the project name."
-  (when-let ((project (jcs-modeline--project-root)))
-    (file-name-nondirectory (directory-file-name project))))
 
 (defun jcs-modeline--flycheck-lighter (state)
   "Return flycheck information for the given error type STATE."
