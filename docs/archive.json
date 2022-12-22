@@ -405,6 +405,15 @@
     "tree": "https://github.com/jcs-elpa/flx-style"
   },
   {
+    "name": "flycheck-deno",
+    "summary": "Flycheck for deno-lint",
+    "version": "20221222.1559",
+    "url": "https://github.com/jcs-elpa/flycheck-deno",
+    "source": "github",
+    "commit": "c055a61b04f78342d22ef15a830a5a80d5fe8054",
+    "tree": "https://github.com/jcs-elpa/flycheck-deno"
+  },
+  {
     "name": "flycheck-eask",
     "summary": "Eask support in Flycheck",
     "version": "20220908.1238",
