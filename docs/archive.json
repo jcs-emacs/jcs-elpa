@@ -245,10 +245,10 @@
   {
     "name": "eask-api",
     "summary": "Eask API",
-    "version": "20221222.900",
+    "version": "20221223.1306",
     "url": "https://github.com/emacs-eask/eask-api",
     "source": "github",
-    "commit": "1744d6c89d5c836b5567254ab93f279ba2a89e7f",
+    "commit": "380a95a39ceda7b6ada21a5f457d823ff236962b",
     "tree": "https://github.com/emacs-eask/eask-api"
   },
   {
@@ -416,10 +416,10 @@
   {
     "name": "flycheck-eask",
     "summary": "Eask support in Flycheck",
-    "version": "20220908.1238",
+    "version": "20221223.1250",
     "url": "https://github.com/emacs-eask/flycheck-eask",
     "source": "github",
-    "commit": "ca1de9d55c99c91971857f0c37abfb3da90dd012",
+    "commit": "7c2c308136e04f0856239f72fa37999ac9ff2143",
     "tree": "https://github.com/emacs-eask/flycheck-eask"
   },
   {
