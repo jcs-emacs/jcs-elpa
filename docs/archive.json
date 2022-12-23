@@ -425,11 +425,11 @@
   {
     "name": "flymake-eask",
     "summary": "Eask support in Flymake",
-    "version": "20220908.1239",
-    "url": "https://github.com/emacs-eask/flymake-eask",
+    "version": "20221223.1608",
+    "url": "https://github.com/flymake/flymake-eask",
     "source": "github",
-    "commit": "5e1a3efa93e823da95ac4c1e79ab3812c112e6aa",
-    "tree": "https://github.com/emacs-eask/flymake-eask"
+    "commit": "a6c87f4aab9530cc24a463c1a8dd63770e9482bd",
+    "tree": "https://github.com/flymake/flymake-eask"
   },
   {
     "name": "flymake-vale",
