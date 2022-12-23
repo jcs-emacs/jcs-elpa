@@ -4,8 +4,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-eask/flycheck-eask
-;; Package-Version: 20220908.1238
-;; Package-Commit: ca1de9d55c99c91971857f0c37abfb3da90dd012
+;; Package-Version: 20221223.1250
+;; Package-Commit: 7c2c308136e04f0856239f72fa37999ac9ff2143
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (flycheck "0.14"))
 ;; Keywords: lisp eask
@@ -40,18 +40,42 @@
   :group 'flycheck
   :link '(url-link :tag "Github" "https://github.com/emacs-eask/flycheck-eask"))
 
+(flycheck-def-args-var flycheck-eask-args (eask)
+  :package-version '(flycheck-eask . "0.1.0"))
+
+(defun flycheck-eask-parse-lint (output checker buffer)
+  "Parse Eask-file lint errors from JSON OUTPUT.
+
+CHECKER and BUFFER denoted the CHECKER that returned OUTPUT and
+the BUFFER that was checked respectively."
+  (let (errors)
+    (seq-map (lambda (message)
+               (dolist (data (cdr message))
+                 (let-alist data
+                   (push (flycheck-error-new-at
+                          .range.start.line
+                          (1+ .range.start.col)
+                          (pcase (car message)
+                            (`warnings 'warning)
+                            (`errors 'error)
+                            (_ 'warning))
+                          .message
+                          :id .code
+                          :checker checker
+                          :buffer buffer
+                          :filename .filename
+                          :end-line .range.end.line
+                          :end-column (1+ .range.end.col))
+                         errors))))
+             (car (flycheck-parse-json output)))
+    (nreverse errors)))
+
 (flycheck-define-checker eask
   "A linter for Eask-file."
-  :command ("eask" "check-eask")
-  :error-patterns
-  ((error line-start (file-name) ":" line ":" column " Error: "
-          (message (one-or-more not-newline)
-                   (zero-or-more "\n" (any " ") (one-or-more not-newline)))
-          line-end)
-   (warning line-start (file-name) ":" line ":" column " Warning: "
-            (message (one-or-more not-newline)
-                     (zero-or-more "\n" (any " ") (one-or-more not-newline)))
-            line-end))
+  :command ("eask" "check-eask" "--json"
+            (eval flycheck-eask-args)
+            source)
+  :error-parser flycheck-eask-parse-lint
   :modes (eask-mode))
 
 ;;;###autoload
