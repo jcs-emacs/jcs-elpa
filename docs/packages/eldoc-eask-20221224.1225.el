@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs090218/eldoc-eask
-;; Package-Version: 20221220.1255
-;; Package-Commit: 068e58ea54d5f0fee1dfdfde36a57f09522f7cbd
+;; Package-Version: 20221224.1225
+;; Package-Commit: c2f93599be5a777c3b4a7db9ce5a55e1d475ec0e
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (eask-api "0.1.0"))
 ;; Keywords: convenience
@@ -35,7 +35,7 @@
 
 (require 'eldoc)
 
-(require 'eask-api)
+(require 'eask-api-core)
 
 (defgroup eldoc-eask nil
   "Eldoc support for Eask-file."
@@ -53,7 +53,7 @@
 Mainly copy it from `elisp-eldoc-funcall' function"
   (when-let* ((sym-info (elisp--fnsym-in-current-sexp))
               (fn-sym (car sym-info))
-              ((member (format "%s" fn-sym) eask-file-keywords)))
+              ((member (eask-2str fn-sym) eask-file-keywords)))
     (setf (car sym-info) (intern (format "eask-f-%s" fn-sym)))
     (funcall callback (apply #'elisp-get-fnsym-args-string sym-info)
              :thing fn-sym

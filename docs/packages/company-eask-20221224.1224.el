@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-eask/company-eask
-;; Package-Version: 20221220.858
-;; Package-Commit: 9f929524e9fccbc10008cbdf582b7ff7566ae4be
+;; Package-Version: 20221224.1224
+;; Package-Commit: 1747d4fd44232532b37821a59cb0a0a830184ba0
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (company "0.8.0") (eask-api "0.1.0"))
 ;; Keywords: convenience
@@ -37,7 +37,7 @@
 
 (require 'company)
 (require 'company-elisp)
-(require 'eask-api)
+(require 'eask-api-core)
 
 (defgroup company-eask nil
   "Company completion for Eask-file."
