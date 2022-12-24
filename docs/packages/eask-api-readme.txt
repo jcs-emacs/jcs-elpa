@@ -1,4 +1,2 @@
 
-Eask API
-
-This file is generated from a template file, see templates/source.el file.
+Provide Eask API for your elisp environment.
