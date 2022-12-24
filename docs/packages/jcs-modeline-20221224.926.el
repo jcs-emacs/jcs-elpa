@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-modeline
-;; Package-Version: 20221223.1834
-;; Package-Commit: 1cc239977ecf5f9542eb4b2bc8bff11d3a86223c
+;; Package-Version: 20221224.926
+;; Package-Commit: b07ca99c1655e9e85ef20bb3936caceeaf82b72d
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "28.1") (moody "0.7.1") (minions "0.3.7") (elenv "0.1.0"))
 ;; Keywords: faces mode-line
@@ -308,15 +308,13 @@
   "Return flycheck information for the given error type STATE."
   (let* ((counts (flycheck-count-errors flycheck-current-errors))
          (errorp (flycheck-has-current-errors-p state))
-         (err (or (cdr (assq state counts)) "?"))
+         (err (or (cdr (assq state counts)) "0"))
          (running (eq 'running flycheck-last-status-change)))
-    (if (or errorp running) (format "•%s" err))))
+    (format "•%s" (if running "?" err))))
 
 (defun jcs-modeline--render-flycheck ()
   "Render for flycheck."
-  (when (and (bound-and-true-p flycheck-mode)
-             (or flycheck-current-errors
-                 (eq 'running flycheck-last-status-change)))
+  (when (bound-and-true-p flycheck-mode)
     (concat
      (cl-loop for state in '((error   . "#FB4933")
                              (warning . "#FABD2F")
