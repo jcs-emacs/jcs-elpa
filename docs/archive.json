@@ -245,10 +245,10 @@
   {
     "name": "eask-api",
     "summary": "Eask API",
-    "version": "20221223.1306",
+    "version": "20221224.928",
     "url": "https://github.com/emacs-eask/eask-api",
     "source": "github",
-    "commit": "380a95a39ceda7b6ada21a5f457d823ff236962b",
+    "commit": "58859b78c04a97c5b1f3e5b83ee547dbc4707849",
     "tree": "https://github.com/emacs-eask/eask-api"
   },
   {
@@ -551,10 +551,10 @@
   {
     "name": "jcs-modeline",
     "summary": "A modeline for jcs-emacs",
-    "version": "20221223.1834",
+    "version": "20221224.926",
     "url": "https://github.com/jcs-emacs/jcs-modeline",
     "source": "github",
-    "commit": "1cc239977ecf5f9542eb4b2bc8bff11d3a86223c",
+    "commit": "b07ca99c1655e9e85ef20bb3936caceeaf82b72d",
     "tree": "https://github.com/jcs-emacs/jcs-modeline"
   },
   {
