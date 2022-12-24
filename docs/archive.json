@@ -261,6 +261,15 @@
     "tree": "https://github.com/emacs-eask/eask-mode"
   },
   {
+    "name": "easky",
+    "summary": "Control Eask in Emacs",
+    "version": "20221224.1330",
+    "url": "https://github.com/emacs-eask/easky",
+    "source": "github",
+    "commit": "ba1b618b954b219fba3c0e93855cee234f836e05",
+    "tree": "https://github.com/emacs-eask/easky"
+  },
+  {
     "name": "eglot-grammarly",
     "summary": "Eglot Clients for Grammarly",
     "version": "20220705.543",
