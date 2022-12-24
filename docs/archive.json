@@ -155,10 +155,10 @@
   {
     "name": "company-eask",
     "summary": "Company backend for Eask-file",
-    "version": "20221220.858",
+    "version": "20221224.1224",
     "url": "https://github.com/emacs-eask/company-eask",
     "source": "github",
-    "commit": "9f929524e9fccbc10008cbdf582b7ff7566ae4be",
+    "commit": "1747d4fd44232532b37821a59cb0a0a830184ba0",
     "tree": "https://github.com/emacs-eask/company-eask"
   },
   {
@@ -254,10 +254,10 @@
   {
     "name": "eask-mode",
     "summary": "major mode for editing Eask files",
-    "version": "20221209.957",
+    "version": "20221224.1224",
     "url": "https://github.com/emacs-eask/eask-mode",
     "source": "github",
-    "commit": "d42b94ae81081e6763ef794ef3745bb1b01167d7",
+    "commit": "1271a381d04efadcba014c84fa84388b121f2283",
     "tree": "https://github.com/emacs-eask/eask-mode"
   },
   {
@@ -281,10 +281,10 @@
   {
     "name": "eldoc-eask",
     "summary": "Eldoc support for Eask-file",
-    "version": "20221220.1255",
+    "version": "20221224.1225",
     "url": "https://github.com/jcs090218/eldoc-eask",
     "source": "github",
-    "commit": "068e58ea54d5f0fee1dfdfde36a57f09522f7cbd",
+    "commit": "c2f93599be5a777c3b4a7db9ce5a55e1d475ec0e",
     "tree": "https://github.com/jcs090218/eldoc-eask"
   },
   {
