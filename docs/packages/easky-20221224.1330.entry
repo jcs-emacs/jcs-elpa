@@ -1,0 +1,11 @@
+(easky .
+       [(20221224 1330)
+	((emacs
+	  (26 1)))
+	"Control Eask in Emacs" tar
+	((:commit . "ba1b618b954b219fba3c0e93855cee234f836e05")
+	 (:authors
+	  ("Jen-Chieh" . "jcs090218@gmail.com"))
+	 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	 (:keywords "lisp" "easky")
+	 (:url . "https://github.com/emacs-eask/easky"))])
