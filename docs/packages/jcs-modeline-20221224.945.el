@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-modeline
-;; Package-Version: 20221224.926
-;; Package-Commit: b07ca99c1655e9e85ef20bb3936caceeaf82b72d
+;; Package-Version: 20221224.945
+;; Package-Commit: 4e8641b8b9f8f14bef814bc9510c229bc1228129
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "28.1") (moody "0.7.1") (minions "0.3.7") (elenv "0.1.0"))
 ;; Keywords: faces mode-line
@@ -307,7 +307,6 @@
 (defun jcs-modeline--flycheck-lighter (state)
   "Return flycheck information for the given error type STATE."
   (let* ((counts (flycheck-count-errors flycheck-current-errors))
-         (errorp (flycheck-has-current-errors-p state))
          (err (or (cdr (assq state counts)) "0"))
          (running (eq 'running flycheck-last-status-change)))
     (format "•%s" (if running "?" err))))
