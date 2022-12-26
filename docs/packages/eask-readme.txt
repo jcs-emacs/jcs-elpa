@@ -1,2 +1,2 @@
 
-Project management tool for Emacs.
+Provide Eask API for your elisp environment.
