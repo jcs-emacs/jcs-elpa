@@ -1,0 +1,11 @@
+(file-header .
+	     [(20220919 606)
+	      ((emacs
+		(28 1)))
+	      "Highly customizable self design file header" single
+	      ((:commit . "f0fc3de4d57a7547529e8ee7b196a8131ce3a45d")
+	       (:authors
+		("Jen-Chieh" . "jcs090218@gmail.com"))
+	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	       (:keywords "convenience" "file" "header")
+	       (:url . "https://github.com/jcs-elpa/file-header"))])

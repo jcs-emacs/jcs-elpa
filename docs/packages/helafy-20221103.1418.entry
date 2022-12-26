@@ -1,0 +1,11 @@
+(helafy .
+	[(20221103 1418)
+	 ((emacs
+	   (26 1)))
+	 "Minify/Uglify/Prettify contents" single
+	 ((:commit . "a6658f8e223014066f23bc5ed6c654cbf7f1bf05")
+	  (:authors
+	   ("Jen-Chieh" . "jcs090218@gmail.com"))
+	  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	  (:keywords "convenience")
+	  (:url . "https://github.com/jcs-elpa/helafy"))])

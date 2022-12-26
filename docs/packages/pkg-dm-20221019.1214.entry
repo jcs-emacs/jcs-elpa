@@ -1,0 +1,21 @@
+(pkg-dm .
+	[(20221019 1214)
+	 ((emacs
+	   (28 1))
+	  (elenv
+	   (0 1 0))
+	  (msgu
+	   (0 1 0))
+	  (prt
+	   (0 1 0))
+	  (recentf-excl
+	   (0 1 0))
+	  (s
+	   (1 12 0)))
+	 "Package dependencies management" tar
+	 ((:commit . "628457b60940d8512bd8cc71f83de82307754bbf")
+	  (:authors
+	   ("Jen-Chieh" . "jcs090218@gmail.com"))
+	  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	  (:keywords "maint")
+	  (:url . "https://github.com/jcs-elpa/pkg-dm"))])

@@ -1,0 +1,8 @@
+(zoom-to-point .
+	       [(20131216 1307)
+		nil "Zoom in or out on the line at point." single
+		((:commit . "38b11fe8f110eae4c8c7e1a0b40e05f9e58c7f36")
+		 (:authors
+		  ("Rich Loveland" . "r@rmloveland.com"))
+		 (:maintainer "Rich Loveland" . "r@rmloveland.com")
+		 (:keywords "convenience" "text size" "zoom"))])
