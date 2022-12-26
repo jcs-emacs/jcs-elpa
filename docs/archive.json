@@ -263,10 +263,10 @@
   {
     "name": "easky",
     "summary": "Control Eask in Emacs",
-    "version": "20221226.1701",
+    "version": "20221226.1735",
     "url": "https://github.com/emacs-eask/easky",
     "source": "github",
-    "commit": "a651f3f7f38d34717c3016023c9f591024486595",
+    "commit": "a0728f95311091655d2d4bcca3877ad0317cede1",
     "tree": "https://github.com/emacs-eask/easky"
   },
   {
@@ -893,10 +893,10 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20221217.731",
+    "version": "20221226.1737",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "0bae1476a47b707c6003becd87f4c0bf6cf509ba",
+    "commit": "7fdaf447cc7d6f4c731e19b65af4435bc5e37172",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
