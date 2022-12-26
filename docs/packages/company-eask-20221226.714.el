@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-eask/company-eask
-;; Package-Version: 20221226.707
-;; Package-Commit: 116888407ec19adad6dd0e431a52235d98782de1
+;; Package-Version: 20221226.714
+;; Package-Commit: e1900eebe9f66292208724d2f46ff0a0ad60186e
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (company "0.8.0") (eask-api "0.1.0"))
 ;; Keywords: convenience
@@ -56,7 +56,7 @@
     (replace-regexp-in-string (regexp-quote old) new s t t)))
 
 (defun company-eask--improve-doc (symbol)
-  "Display only the directive name, and replace alias description."
+  "Display only the directive name (SYMBOL), and replace alias description."
   (let* ((buf-str (with-current-buffer (help-buffer) (buffer-string)))
          (str (company-eask--s-replace "eask-f-" "" buf-str))
          (str (company-eask--s-replace
