@@ -5,10 +5,10 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs090218/eldoc-eask
-;; Package-Version: 20221226.503
-;; Package-Commit: 5968ddee93f77b3cc6d1044b7d8e14dcfdb90315
+;; Package-Version: 20221224.1225
+;; Package-Commit: c2f93599be5a777c3b4a7db9ce5a55e1d475ec0e
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "26.1") (eask "0.1.0"))
+;; Package-Requires: ((emacs "26.1") (eask-api "0.1.0"))
 ;; Keywords: convenience
 
 ;; This file is not part of GNU Emacs.
@@ -35,7 +35,7 @@
 
 (require 'eldoc)
 
-(require 'eask-core)
+(require 'eask-api-core)
 
 (defgroup eldoc-eask nil
   "Eldoc support for Eask-file."
