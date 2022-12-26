@@ -155,10 +155,10 @@
   {
     "name": "company-eask",
     "summary": "Company backend for Eask-file",
-    "version": "20221224.1224",
+    "version": "20221226.503",
     "url": "https://github.com/emacs-eask/company-eask",
     "source": "github",
-    "commit": "1747d4fd44232532b37821a59cb0a0a830184ba0",
+    "commit": "1ede53add8aa7795325d7bb1f35139bb6fb5f196",
     "tree": "https://github.com/emacs-eask/company-eask"
   },
   {
@@ -243,30 +243,30 @@
     "tree": "https://github.com/jcs-elpa/cycle-slash"
   },
   {
-    "name": "eask-api",
+    "name": "eask",
     "summary": "Provide Eask API for your elisp environment",
-    "version": "20221225.1511",
-    "url": "https://github.com/emacs-eask/eask-api",
+    "version": "20221226.458",
+    "url": "https://github.com/emacs-eask/eask",
     "source": "github",
-    "commit": "841cd1478128c1c6666279bbd8f13455f4a31506",
-    "tree": "https://github.com/emacs-eask/eask-api"
+    "commit": "aea53abce8e7a012d27758a222bee5684d274432",
+    "tree": "https://github.com/emacs-eask/eask"
   },
   {
     "name": "eask-mode",
     "summary": "major mode for editing Eask files",
-    "version": "20221224.1224",
+    "version": "20221226.504",
     "url": "https://github.com/emacs-eask/eask-mode",
     "source": "github",
-    "commit": "1271a381d04efadcba014c84fa84388b121f2283",
+    "commit": "1a19f08c8f11981bbd9fac74bae1ce2dba871f9c",
     "tree": "https://github.com/emacs-eask/eask-mode"
   },
   {
     "name": "easky",
     "summary": "Control Eask in Emacs",
-    "version": "20221225.1532",
+    "version": "20221226.506",
     "url": "https://github.com/emacs-eask/easky",
     "source": "github",
-    "commit": "faef4c3be8d4f333e845f3681958bf2e3065ba44",
+    "commit": "7ec49093db7cb621112f2195a710b76ba73c7b91",
     "tree": "https://github.com/emacs-eask/easky"
   },
   {
@@ -290,10 +290,10 @@
   {
     "name": "eldoc-eask",
     "summary": "Eldoc support for Eask-file",
-    "version": "20221224.1225",
+    "version": "20221226.503",
     "url": "https://github.com/jcs090218/eldoc-eask",
     "source": "github",
-    "commit": "c2f93599be5a777c3b4a7db9ce5a55e1d475ec0e",
+    "commit": "5968ddee93f77b3cc6d1044b7d8e14dcfdb90315",
     "tree": "https://github.com/jcs090218/eldoc-eask"
   },
   {
