@@ -1,2 +1,0 @@
-
-Emacs Music Playlist.

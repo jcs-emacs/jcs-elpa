@@ -1,2 +1,0 @@
-
-Keep messages buffer clean.

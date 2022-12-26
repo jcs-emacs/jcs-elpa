@@ -1,2 +1,0 @@
-
-Control Eask in Emacs.

@@ -1,8 +1,0 @@
-(lambda-line .
-	     [(20221124 126)
-	      ((emacs
-		(27 1)))
-	      "A custom status line" single
-	      ((:commit . "22186321a7442f1bd3b121f739007bd809cb38f8")
-	       (:keywords "mode-line" "faces")
-	       (:url . "https://github.com/Lambda-Emacs/lambda-line"))])

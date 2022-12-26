@@ -1,2 +1,0 @@
-
-maple line configuration.

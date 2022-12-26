@@ -1,2 +1,0 @@
-
-Flexible text folding.

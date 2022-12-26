@@ -1,2 +1,0 @@
-
-Flx integration for vertico.
