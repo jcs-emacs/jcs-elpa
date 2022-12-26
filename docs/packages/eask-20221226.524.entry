@@ -1,9 +1,9 @@
 (eask .
-      [(20221226 458)
+      [(20221226 524)
        ((emacs
 	 (26 1)))
        "Provide Eask API for your elisp environment" tar
-       ((:commit . "aea53abce8e7a012d27758a222bee5684d274432")
+       ((:commit . "7c0d8cdb08aa07daaba6e0e8f816d94a5687b966")
 	(:authors
 	 ("Jen-Chieh" . "jcs090218@gmail.com"))
 	(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
