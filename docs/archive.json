@@ -244,11 +244,11 @@
   },
   {
     "name": "eask-api",
-    "summary": "Provide Eask API for your elisp environment",
-    "version": "20221225.1511",
+    "summary": "Core Eask APIs",
+    "version": "20221226.555",
     "url": "https://github.com/emacs-eask/eask-api",
     "source": "github",
-    "commit": "841cd1478128c1c6666279bbd8f13455f4a31506",
+    "commit": "3c082f1e848fd5d065cd4d68e9c44b70aa8443eb",
     "tree": "https://github.com/emacs-eask/eask-api"
   },
   {
