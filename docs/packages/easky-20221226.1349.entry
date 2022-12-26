@@ -1,5 +1,5 @@
 (easky .
-       [(20221226 1118)
+       [(20221226 1349)
 	((emacs
 	  (26 1))
 	 (eask-api
@@ -9,7 +9,7 @@
 	 (lv
 	  (0 0)))
 	"Control Eask in Emacs" tar
-	((:commit . "6ca8b3f42d76515b6ad79a4b169732f09c7967e2")
+	((:commit . "f071a4a48bd7147afc6a19d69194596adf3ba3b0")
 	 (:authors
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))
 	 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
