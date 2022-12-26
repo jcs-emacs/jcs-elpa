@@ -27,7 +27,10 @@
  (cycle-case-style . [(20221117 1901) ((emacs (28 1)) (change-case (9))) "Cycle through case style (PascalCase, camelCase, etc)" single ((:commit . "f4a1d34ced3d4384ede85c998da9c8f1d074108d") (:authors ("Jen-Chieh" . "jcs090218@gmail.com")) (:maintainer "Jen-Chieh" . "jcs090218@gmail.com") (:keywords "convenience") (:url . "https://github.com/jcs-elpa/cycle-case-style"))])
  (cycle-slash . [(20221117 1154) ((emacs (28 1))) "Cycle through slash, backslash, and double backslash" single ((:commit . "839218d28c609ce1ff6ff2f84eb2edfd6f19e1f6") (:authors ("Jen-Chieh" . "jcs090218@gmail.com")) (:maintainer "Jen-Chieh" . "jcs090218@gmail.com") (:keywords "convenience") (:url . "https://github.com/jcs-elpa/cycle-slash"))])
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
  (eask . [(20221226 458) ((emacs (26 1))) "Provide Eask API for your elisp environment" tar ((:commit . "aea53abce8e7a012d27758a222bee5684d274432") (:authors ("Jen-Chieh" . "jcs090218@gmail.com")) (:maintainer "Jen-Chieh" . "jcs090218@gmail.com") (:keywords "lisp" "eask") (:url . "https://github.com/emacs-eask/eask"))])
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
  (eask-mode . [(20221224 1224) ((emacs (24 3)) (eask-api (0 1 0))) "major mode for editing Eask files" single ((:commit . "1271a381d04efadcba014c84fa84388b121f2283") (:authors ("Jen-Chieh" . "jcs090218@gmail.com")) (:maintainer "Jen-Chieh" . "jcs090218@gmail.com") (:keywords "lisp" "eask") (:url . "https://github.com/emacs-eask/eask-mode"))])
