@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-eask/company-eask
-;; Package-Version: 20221224.1224
-;; Package-Commit: 1747d4fd44232532b37821a59cb0a0a830184ba0
+;; Package-Version: 20221226.707
+;; Package-Commit: 116888407ec19adad6dd0e431a52235d98782de1
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (company "0.8.0") (eask-api "0.1.0"))
 ;; Keywords: convenience
@@ -50,7 +50,7 @@
 ;;
 
 (defun company-eask--s-replace (old new s)
-  "String replace."
+  "Replace OLD with NEW in S each time it occurs."
   (if (fboundp #'string-replace)
       (string-replace old new s)
     (replace-regexp-in-string (regexp-quote old) new s t t)))

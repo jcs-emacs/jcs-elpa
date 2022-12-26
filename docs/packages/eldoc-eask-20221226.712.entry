@@ -1,11 +1,11 @@
 (eldoc-eask .
-	    [(20221224 1225)
+	    [(20221226 712)
 	     ((emacs
 	       (26 1))
 	      (eask-api
 	       (0 1 0)))
 	     "Eldoc support for Eask-file" single
-	     ((:commit . "c2f93599be5a777c3b4a7db9ce5a55e1d475ec0e")
+	     ((:commit . "e4d0b3a1ac0abfe553c03202eeffdeb57a7fa17a")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
 	      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

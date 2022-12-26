@@ -1,5 +1,5 @@
 (company-eask .
-	      [(20221224 1224)
+	      [(20221226 707)
 	       ((emacs
 		 (26 1))
 		(company
@@ -7,7 +7,7 @@
 		(eask-api
 		 (0 1 0)))
 	       "Company backend for Eask-file" single
-	       ((:commit . "1747d4fd44232532b37821a59cb0a0a830184ba0")
+	       ((:commit . "116888407ec19adad6dd0e431a52235d98782de1")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
