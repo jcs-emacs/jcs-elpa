@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-modeline
-;; Package-Version: 20221224.945
-;; Package-Commit: 4e8641b8b9f8f14bef814bc9510c229bc1228129
+;; Package-Version: 20221227.623
+;; Package-Commit: ccaeb6bb75a551bfe37f833ce32f762eea9622ef
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "28.1") (moody "0.7.1") (minions "0.3.7") (elenv "0.1.0"))
 ;; Keywords: faces mode-line
@@ -65,6 +65,14 @@
     (:eval (moody-tab " %l : %c " 0 'up)) " %p"
     mode-line-end-spaces)
   "List of item to render on the right."
+  :type 'list
+  :group 'jcs-modeline)
+
+(defcustom jcs-modeline-checker-colors '((error   . "#FB4933")
+                                         (warning . "#FABD2F")
+                                         (info    . "#83A598")
+                                         (note    . "#83A598"))
+  "Alist of colors for checkers."
   :type 'list
   :group 'jcs-modeline)
 
@@ -268,6 +276,19 @@
 ;;
 ;;; Flymake
 
+(defun jcs-modeline--flymake-lighter (diags-by-type state running)
+  "Return flycheck lighter by given STATE.
+
+If argument RUNNING is non-nil, we turn lighter into question mark."
+  (let* ((c-state (cl-case state
+                    (error   :error)
+                    (warning :warning)
+                    (note    :note)))
+         (counts (length (gethash c-state diags-by-type)))
+         (color (cdr (assoc state jcs-modeline-checker-colors)))
+         (lighter (format "%s" (if running "?" counts))))
+    (propertize lighter 'face `(:foreground ,color))))
+
 (defun jcs-modeline--render-flymake ()
   "Render for flymake."
   (when (bound-and-true-p flymake-mode)
@@ -286,41 +307,44 @@
                        (flymake--state-diags state)))
                flymake--state)
       (concat
-       (cond
-        (some-waiting (propertize "⏳" 'face `(:foreground "#FABD2F")))
-        ((null known) (propertize "⚠" 'face `(:foreground "#FABD2F")))
-        (all-disabled (propertize "⚠" 'face `(:foreground "#FB4933")))
-        (t
-         (apply #'concat
-                (mapcar (lambda (args)
-                          (apply (lambda (num str face)
-                                   (propertize (format str num) 'face face))
-                                 args))
-                        `((,(length (gethash :error diags-by-type)) "•%d " error)
-                          (,(length (gethash :warning diags-by-type)) "•%d " warning)
-                          (,(length (gethash :note diags-by-type)) "•%d" success))))))
+       (let* ((states '(error warning note))
+              (last (car (last states)))
+              result)
+         (dolist (state states)
+           (when-let ((lighter (jcs-modeline--flymake-lighter
+                                diags-by-type state
+                                (or some-waiting (null known) all-disabled))))
+             (setq result (concat result lighter
+                                  (unless (equal state last) "/")))))
+         result)
        " "))))
 
 ;;
 ;;; Flycheck
 
-(defun jcs-modeline--flycheck-lighter (state)
-  "Return flycheck information for the given error type STATE."
+(defun jcs-modeline--flycheck-lighter (state running)
+  "Return flycheck lighter by given STATE.
+
+If argument RUNNING is non-nil, we turn lighter into question mark."
   (let* ((counts (flycheck-count-errors flycheck-current-errors))
          (err (or (cdr (assq state counts)) "0"))
-         (running (eq 'running flycheck-last-status-change)))
-    (format "•%s" (if running "?" err))))
+         (color (cdr (assoc state jcs-modeline-checker-colors)))
+         (lighter (format "%s" (if running "?" err))))
+    (propertize lighter 'face `(:foreground ,color))))
 
 (defun jcs-modeline--render-flycheck ()
   "Render for flycheck."
   (when (bound-and-true-p flycheck-mode)
     (concat
-     (cl-loop for state in '((error   . "#FB4933")
-                             (warning . "#FABD2F")
-                             (info    . "#83A598"))
-              as lighter = (jcs-modeline--flycheck-lighter (car state))
-              when lighter
-              concat (propertize lighter 'face `(:foreground ,(cdr state))))
+     (let* ((states '(error warning info))
+            (last (car (last states)))
+            (running (eq 'running flycheck-last-status-change))
+            result)
+       (dolist (state states)
+         (when-let ((lighter (jcs-modeline--flycheck-lighter state running)))
+           (setq result (concat result lighter
+                                (unless (equal state last) "/")))))
+       result)
      " ")))
 
 ;;
