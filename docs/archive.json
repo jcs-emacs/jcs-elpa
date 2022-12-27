@@ -263,10 +263,10 @@
   {
     "name": "easky",
     "summary": "Control Eask in Emacs",
-    "version": "20221227.516",
+    "version": "20221227.656",
     "url": "https://github.com/emacs-eask/easky",
     "source": "github",
-    "commit": "7e3eff437bdc78e61a5fa9b0ceb5a4b5f7c2d374",
+    "commit": "bbc6012f85704903bb5b398a898f2c89f4cf3860",
     "tree": "https://github.com/emacs-eask/easky"
   },
   {
@@ -560,10 +560,10 @@
   {
     "name": "jcs-modeline",
     "summary": "A modeline for jcs-emacs",
-    "version": "20221224.945",
+    "version": "20221227.623",
     "url": "https://github.com/jcs-emacs/jcs-modeline",
     "source": "github",
-    "commit": "4e8641b8b9f8f14bef814bc9510c229bc1228129",
+    "commit": "ccaeb6bb75a551bfe37f833ce32f762eea9622ef",
     "tree": "https://github.com/jcs-emacs/jcs-modeline"
   },
   {
