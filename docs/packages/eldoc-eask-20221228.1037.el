@@ -4,9 +4,9 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
-;; URL: https://github.com/jcs090218/eldoc-eask
-;; Package-Version: 20221228.1017
-;; Package-Commit: 6b5231f67ae932f8080d5e46faae8aadc4f6fa08
+;; URL: https://github.com/emacs-eask/eldoc-eask
+;; Package-Version: 20221228.1037
+;; Package-Commit: e9019b5187d1c459aa0bc095bc1eac86e7557060
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (eask-api "0.1.0"))
 ;; Keywords: convenience

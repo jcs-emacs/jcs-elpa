@@ -1,13 +1,13 @@
 (eldoc-eask .
-	    [(20221228 1017)
+	    [(20221228 1037)
 	     ((emacs
 	       (26 1))
 	      (eask-api
 	       (0 1 0)))
 	     "Eldoc support for Eask-file" single
-	     ((:commit . "6b5231f67ae932f8080d5e46faae8aadc4f6fa08")
+	     ((:commit . "e9019b5187d1c459aa0bc095bc1eac86e7557060")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
 	      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	      (:keywords "convenience")
-	      (:url . "https://github.com/jcs090218/eldoc-eask"))])
+	      (:url . "https://github.com/emacs-eask/eldoc-eask"))])
