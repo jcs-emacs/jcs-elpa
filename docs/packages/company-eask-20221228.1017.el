@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-eask/company-eask
-;; Package-Version: 20221226.714
-;; Package-Commit: e1900eebe9f66292208724d2f46ff0a0ad60186e
+;; Package-Version: 20221228.1017
+;; Package-Commit: 6863b55eb1239fd94abfe76ba46b3c57180fed0d
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (company "0.8.0") (eask-api "0.1.0"))
 ;; Keywords: convenience
@@ -49,17 +49,11 @@
 ;; (@* "Core" )
 ;;
 
-(defun company-eask--s-replace (old new s)
-  "Replace OLD with NEW in S each time it occurs."
-  (if (fboundp #'string-replace)
-      (string-replace old new s)
-    (replace-regexp-in-string (regexp-quote old) new s t t)))
-
 (defun company-eask--improve-doc (symbol)
   "Display only the directive name (SYMBOL), and replace alias description."
   (let* ((buf-str (with-current-buffer (help-buffer) (buffer-string)))
-         (str (company-eask--s-replace "eask-f-" "" buf-str))
-         (str (company-eask--s-replace
+         (str (eask-s-replace "eask-f-" "" buf-str))
+         (str (eask-s-replace
                " is a Lisp closure "
                (format " is an alias for ‘%s’ "
                        (propertize (eask-2str symbol) 'face

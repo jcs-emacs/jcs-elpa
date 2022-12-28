@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs090218/eldoc-eask
-;; Package-Version: 20221226.712
-;; Package-Commit: e4d0b3a1ac0abfe553c03202eeffdeb57a7fa17a
+;; Package-Version: 20221228.1017
+;; Package-Commit: 6b5231f67ae932f8080d5e46faae8aadc4f6fa08
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (eask-api "0.1.0"))
 ;; Keywords: convenience
@@ -42,16 +42,6 @@
   :prefix "eldoc-eask-"
   :group 'tool
   :link '(url-link :tag "Repository" "https://github.com/emacs-eask/eldoc-eask"))
-
-;;
-;; (@* "Util" )
-;;
-
-(defun eldoc-eask--s-replace (old new s)
-  "Replace OLD with NEW in S each time it occurs."
-  (if (fboundp #'string-replace)
-      (string-replace old new s)
-    (replace-regexp-in-string (regexp-quote old) new s t t)))
 
 ;;
 ;; (@* "Core" )
@@ -91,7 +81,7 @@ Mainly copy it from `elisp-eldoc-documentation-function' function."
                      (when doc
                        (setq str
                              (format "%s: %s"
-                                     (eldoc-eask--s-replace
+                                     (eask-s-replace
                                       "eask-f-" ""
                                       (propertize (prin1-to-string
                                                    (plist-get plist :thing))
