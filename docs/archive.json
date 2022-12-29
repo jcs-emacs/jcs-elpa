@@ -965,10 +965,10 @@
   {
     "name": "vs-revbuf",
     "summary": "Revert buffers like Visual Studio",
-    "version": "20220918.847",
+    "version": "20221229.1228",
     "url": "https://github.com/emacs-vs/vs-revbuf",
     "source": "github",
-    "commit": "1858cd77bd61e5219c9b439b4550c48a7d5dc547",
+    "commit": "5572daea403bd62d8b2bccaffd7e9dca43d1de77",
     "tree": "https://github.com/emacs-vs/vs-revbuf"
   },
   {
