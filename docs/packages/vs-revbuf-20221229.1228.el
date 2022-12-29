@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-revbuf
-;; Package-Version: 20220918.847
-;; Package-Commit: 1858cd77bd61e5219c9b439b4550c48a7d5dc547
+;; Package-Version: 20221229.1228
+;; Package-Commit: 5572daea403bd62d8b2bccaffd7e9dca43d1de77
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1") (fextern "0.1.0"))
 ;; Keywords: convenience revert vs
@@ -178,7 +178,8 @@ Optional argument INDEX is used to loop through BUFS."
                            (if modified vs-revbuf--msg-edit-extern-and-unsaved
                              vs-revbuf--msg-edit-extern)))
            (answer (if (and vs-revbuf-ask-unsaved-changes-only (not modified)) "Yes"
-                     (completing-read prompt '("Yes" "Yes to All" "No" "No to All")))))
+                     (completing-read prompt '("Yes" "Yes to All" "No" "No to All")
+                                      nil t nil nil "Yes"))))
       (cl-incf index)
       (pcase answer
         ("Yes"
