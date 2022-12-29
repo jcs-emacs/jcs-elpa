@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/auto-scroll-bar
-;; Package-Version: 20221229.1115
-;; Package-Commit: 9041d8df9cb555659606fd27e0e21f13af26c61e
+;; Package-Version: 20221229.1323
+;; Package-Commit: 50151a9681d0f0e1200489222bb572bafecb86d3
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: convenience scrollbar
@@ -168,8 +168,8 @@ Optional argument FRAME is used to select frame's minibuffer."
   (auto-scroll-bar--with-no-redisplay
     (when (windowp window) (auto-scroll-bar--show-hide window))))
 
-(defun auto-scroll-bar--after-change (&rest _)
-  "After change hook."
+(defun auto-scroll-bar--post-command (&rest _)
+  "Hook for post-command."
   (when-let ((current (selected-window)))
     (if (equal (minibuffer-window) current) (auto-scroll-bar--hide-minibuffer)
       (auto-scroll-bar--scroll current))))
@@ -179,7 +179,7 @@ Optional argument FRAME is used to select frame's minibuffer."
   (cond ((display-graphic-p)
          (add-hook 'window-size-change-functions #'auto-scroll-bar--size-change)
          (add-hook 'window-scroll-functions #'auto-scroll-bar--scroll)
-         (add-hook 'after-change-functions #'auto-scroll-bar--after-change)
+         (add-hook 'post-command-hook #'auto-scroll-bar--post-command)
          (toggle-scroll-bar 1)
          (when auto-scroll-bar-horizontal (toggle-horizontal-scroll-bar 1))
          (auto-scroll-bar--size-change))  ; execute once
@@ -189,7 +189,7 @@ Optional argument FRAME is used to select frame's minibuffer."
   "Disable function `auto-scroll-bar-mode'."
   (remove-hook 'window-size-change-functions #'auto-scroll-bar--size-change)
   (remove-hook 'window-scroll-functions #'auto-scroll-bar--scroll)
-  (remove-hook 'after-change-functions #'auto-scroll-bar--after-change)
+  (remove-hook 'post-command-hook #'auto-scroll-bar--post-command)
   (toggle-scroll-bar -1)
   (toggle-horizontal-scroll-bar -1))
 
