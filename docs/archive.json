@@ -612,6 +612,15 @@
     "tree": "https://github.com/honmaple/emacs-maple-line"
   },
   {
+    "name": "marquee-header",
+    "summary": "Code interface for displaying marquee in header",
+    "version": "20221230.1008",
+    "url": "https://github.com/jcs-elpa/marquee-header",
+    "source": "github",
+    "commit": "1fee5bbec486d0755954f5cafda67f342dc7daa1",
+    "tree": "https://github.com/jcs-elpa/marquee-header"
+  },
+  {
     "name": "mbs",
     "summary": "Minibuffer Stats",
     "version": "20221221.1907",
