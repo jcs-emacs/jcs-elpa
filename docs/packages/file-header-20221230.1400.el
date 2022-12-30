@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/file-header
-;; Package-Version: 20221230.1151
-;; Package-Commit: 127d3003dd051e2dc65be6ce318bc75c3256b37e
+;; Package-Version: 20221230.1400
+;; Package-Commit: d196933670c5d0bdaade09afa699ad7843140155
 ;; Version: 0.1.2
 ;; Package-Requires: ((emacs "28.1"))
 ;; Keywords: convenience file header
@@ -54,8 +54,8 @@
   :type 'string
   :group 'file-header)
 
-(defcustom file-header-annotation-percentage 2.5
-  "Percentage to display completin-read annotation."
+(defcustom file-header-annotation-ratio 2.5
+  "Ratio align from the right to display `completin-read' annotation."
   :type 'float
   :group 'file-header)
 
@@ -95,7 +95,7 @@ Argument OPTIONS ia an alist use to calculate the frame offset."
   (max (file-header--seq-str-max (if (consp (car options))
                                      (mapcar #'cdr options)
                                    options))
-       (/ (frame-width) file-header-annotation-percentage)))
+       (/ (frame-width) file-header-annotation-ratio)))
 
 ;;
 ;; (@* "Core" )
