@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/file-header
-;; Package-Version: 20221230.1047
-;; Package-Commit: 4df7aaccb0d112d6f7ffeee88aaa3204a80c7cd7
+;; Package-Version: 20221230.1151
+;; Package-Commit: 127d3003dd051e2dc65be6ce318bc75c3256b37e
 ;; Version: 0.1.2
 ;; Package-Requires: ((emacs "28.1"))
 ;; Keywords: convenience file header
@@ -128,20 +128,22 @@ The rest of the arguments BODY are use to fill insertion's condition."
   (or name (error "Cannot define '%s' as a function" name))
   `(defun ,name ()
      (interactive)
-     (let* ((is-alist (consp (nth 0 ,options)))
+     (let* ((prev-buffer (current-buffer))
+            (is-alist (consp (nth 0 ,options)))
             (offset (file-header--completing-frame-offset ,options))
             (source
              (completing-read
               ,prompt
               (lambda (string predicate action)
-                (if (eq action 'metadata)
-                    `(metadata
-                      (display-sort-function . ,#'identity)
-                      (annotation-function
-                       . ,(lambda (cand)
-                            (concat (propertize " " 'display `((space :align-to (- right ,offset))))
-                                    (cdr (assoc cand ,options))))))
-                  (complete-with-action action ,options string predicate)))
+                (with-current-buffer prev-buffer
+                  (if (eq action 'metadata)
+                      `(metadata
+                        (display-sort-function . ,#'identity)
+                        (annotation-function
+                         . ,(lambda (cand)
+                              (concat (propertize " " 'display `((space :align-to (- right ,offset))))
+                                      (cdr (assoc cand ,options))))))
+                    (complete-with-action action ,options string predicate))))
               nil t))
             (index (cl-position source (if is-alist (mapcar #'car ,options)
                                          ,options)
