@@ -263,10 +263,10 @@
   {
     "name": "easky",
     "summary": "Control Eask in Emacs",
-    "version": "20221230.857",
+    "version": "20221230.1015",
     "url": "https://github.com/emacs-eask/easky",
     "source": "github",
-    "commit": "f093c23fbe3b171335908d57a56912654d86e52c",
+    "commit": "c951965f6913799c32ee2289f6dcd921263e2e01",
     "tree": "https://github.com/emacs-eask/easky"
   },
   {
@@ -389,10 +389,10 @@
   {
     "name": "file-header",
     "summary": "Highly customizable self design file header",
-    "version": "20220919.606",
+    "version": "20221230.1047",
     "url": "https://github.com/jcs-elpa/file-header",
     "source": "github",
-    "commit": "f0fc3de4d57a7547529e8ee7b196a8131ce3a45d",
+    "commit": "4df7aaccb0d112d6f7ffeee88aaa3204a80c7cd7",
     "tree": "https://github.com/jcs-elpa/file-header"
   },
   {
