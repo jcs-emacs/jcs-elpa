@@ -389,10 +389,10 @@
   {
     "name": "file-header",
     "summary": "Highly customizable self design file header",
-    "version": "20221230.1047",
+    "version": "20221230.1151",
     "url": "https://github.com/jcs-elpa/file-header",
     "source": "github",
-    "commit": "4df7aaccb0d112d6f7ffeee88aaa3204a80c7cd7",
+    "commit": "127d3003dd051e2dc65be6ce318bc75c3256b37e",
     "tree": "https://github.com/jcs-elpa/file-header"
   },
   {
