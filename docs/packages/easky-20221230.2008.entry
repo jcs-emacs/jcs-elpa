@@ -1,5 +1,5 @@
 (easky .
-       [(20221230 1818)
+       [(20221230 2008)
 	((emacs
 	  (27 1))
 	 (eask-mode
@@ -13,7 +13,7 @@
 	 (marquee-header
 	  (0 1 0)))
 	"Control Eask in Emacs" tar
-	((:commit . "7bbfd38063e67fe8f17d3045e91591a81b5eb289")
+	((:commit . "2c904452a8ea1c1587ab42a2d9ca71b1ce7eece8")
 	 (:authors
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))
 	 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
