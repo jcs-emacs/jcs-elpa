@@ -1,12 +1,12 @@
 ;;; elenv.el --- Emacs Lisp environment  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2022  Shen, Jen-Chieh
+;; Copyright (C) 2022-2023  Shen, Jen-Chieh
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/elenv
-;; Package-Version: 20221017.1403
-;; Package-Commit: ecdb206e396f527e66682b4e0654d42b4f1db650
+;; Package-Version: 20221231.1709
+;; Package-Commit: 8618e679bd1521e43d0f04d0f06d680eb159eaf9
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26."))
 ;; Keywords: maint

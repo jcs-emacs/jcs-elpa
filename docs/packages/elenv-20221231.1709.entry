@@ -1,9 +1,9 @@
 (elenv .
-       [(20221017 1403)
+       [(20221231 1709)
 	((emacs
 	  (26)))
 	"Emacs Lisp environment" single
-	((:commit . "ecdb206e396f527e66682b4e0654d42b4f1db650")
+	((:commit . "8618e679bd1521e43d0f04d0f06d680eb159eaf9")
 	 (:authors
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))
 	 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

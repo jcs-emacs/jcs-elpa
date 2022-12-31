@@ -1,12 +1,12 @@
 ;;; file-header.el --- Highly customizable self design file header  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2018-2022  Shen, Jen-Chieh
+;; Copyright (C) 2018-2023  Shen, Jen-Chieh
 ;; Created date 2018-12-24 16:49:42
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/file-header
-;; Package-Version: 20221230.1400
-;; Package-Commit: d196933670c5d0bdaade09afa699ad7843140155
+;; Package-Version: 20221231.1710
+;; Package-Commit: 916396acbe383a9d882fb9ffeacfc86e9c1984b2
 ;; Version: 0.1.2
 ;; Package-Requires: ((emacs "28.1"))
 ;; Keywords: convenience file header

@@ -1,12 +1,12 @@
 ;;; execrun.el --- Run through `compilation-mode'  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2022  Shen, Jen-Chieh
+;; Copyright (C) 2022-2023  Shen, Jen-Chieh
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/execrun
-;; Package-Version: 20221008.417
-;; Package-Commit: 2e23602fd2b3fc6181da25f4e3582865ed1c271e
+;; Package-Version: 20221231.1709
+;; Package-Commit: 7806bd55474e9d21b8a74f05d40eabfece5cb218
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (ffpc "0.1.0") (f "0.20.0"))
 ;; Keywords: tools
