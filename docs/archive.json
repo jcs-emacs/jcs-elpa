@@ -317,19 +317,19 @@
   {
     "name": "elenv",
     "summary": "Emacs Lisp environment",
-    "version": "20221017.1403",
+    "version": "20221231.1709",
     "url": "https://github.com/jcs-elpa/elenv",
     "source": "github",
-    "commit": "ecdb206e396f527e66682b4e0654d42b4f1db650",
+    "commit": "8618e679bd1521e43d0f04d0f06d680eb159eaf9",
     "tree": "https://github.com/jcs-elpa/elenv"
   },
   {
     "name": "emp",
     "summary": "Emacs Music Playlist",
-    "version": "20221019.1143",
+    "version": "20221231.1709",
     "url": "https://github.com/jcs-elpa/emp",
     "source": "github",
-    "commit": "8b8a5e5a0f30143e7d338c17c11853859edba289",
+    "commit": "66c2c64d2594563227cb8ce71b6edba60414ad2d",
     "tree": "https://github.com/jcs-elpa/emp"
   },
   {
@@ -353,10 +353,10 @@
   {
     "name": "execrun",
     "summary": "Run through `compilation-mode'",
-    "version": "20221008.417",
+    "version": "20221231.1709",
     "url": "https://github.com/jcs-elpa/execrun",
     "source": "github",
-    "commit": "2e23602fd2b3fc6181da25f4e3582865ed1c271e",
+    "commit": "7806bd55474e9d21b8a74f05d40eabfece5cb218",
     "tree": "https://github.com/jcs-elpa/execrun"
   },
   {
@@ -389,19 +389,19 @@
   {
     "name": "file-header",
     "summary": "Highly customizable self design file header",
-    "version": "20221230.1400",
+    "version": "20221231.1710",
     "url": "https://github.com/jcs-elpa/file-header",
     "source": "github",
-    "commit": "d196933670c5d0bdaade09afa699ad7843140155",
+    "commit": "916396acbe383a9d882fb9ffeacfc86e9c1984b2",
     "tree": "https://github.com/jcs-elpa/file-header"
   },
   {
     "name": "flx-rs",
     "summary": "flx in Rust using dynamic module",
-    "version": "20220630.631",
+    "version": "20221231.1711",
     "url": "https://github.com/jcs-elpa/flx-rs",
     "source": "github",
-    "commit": "08156fe15c28a5fd9ef1975ba3a11de26226c90e",
+    "commit": "dd6103249e35b1cfc5382cb6100804ab1020138d",
     "tree": "https://github.com/jcs-elpa/flx-rs"
   },
   {
