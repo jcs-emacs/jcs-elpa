@@ -1,9 +1,9 @@
 (send-to-osx-grammarly .
-		       [(20220704 626)
+		       [(20221231 1655)
 			((emacs
 			  (24 3)))
 			"A simple plugin to sent text to Grammarly" tar
-			((:commit . "c11512e73b5948dfb84289ae303919cb03f1de33")
+			((:commit . "d47ea3f46a62a7155a312be73cf0b4c1ecd9be82")
 			 (:authors
 			  ("Marcin Magnus" . "m.magnus@zoho.com"))
 			 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
