@@ -272,19 +272,19 @@
   {
     "name": "eglot-grammarly",
     "summary": "Eglot Clients for Grammarly",
-    "version": "20220705.543",
+    "version": "20221231.1654",
     "url": "https://github.com/emacs-grammarly/eglot-grammarly",
     "source": "github",
-    "commit": "5eba6f26b1ebdd2e578543573479295f307ffc3b",
+    "commit": "bf2bc0c7d6b113ec48d80bb808e9c3427e7935f1",
     "tree": "https://github.com/emacs-grammarly/eglot-grammarly"
   },
   {
     "name": "eglot-ltex",
     "summary": "Eglot Clients for LTEX",
-    "version": "20220704.636",
+    "version": "20221231.1657",
     "url": "https://github.com/emacs-languagetool/eglot-ltex",
     "source": "github",
-    "commit": "c533a793e1f65c197269c8425405579a7112eddb",
+    "commit": "5f3bc55d472cd3e61606fccf66f176dac5bd8f82",
     "tree": "https://github.com/emacs-languagetool/eglot-ltex"
   },
   {
@@ -794,10 +794,10 @@
   {
     "name": "send-to-osx-grammarly",
     "summary": "A simple plugin to sent text to Grammarly",
-    "version": "20220704.626",
+    "version": "20221231.1655",
     "url": "https://github.com/emacs-grammarly/send-to-osx-grammarly",
     "source": "github",
-    "commit": "c11512e73b5948dfb84289ae303919cb03f1de33",
+    "commit": "d47ea3f46a62a7155a312be73cf0b4c1ecd9be82",
     "tree": "https://github.com/emacs-grammarly/send-to-osx-grammarly"
   },
   {
