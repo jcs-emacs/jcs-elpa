@@ -1,12 +1,12 @@
 ;;; eglot-ltex.el --- Eglot Clients for LTEX  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2021  Shen, Jen-Chieh
+;; Copyright (C) 2021-2023  Shen, Jen-Chieh
 ;; Created date 2021-04-03 00:40:51
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-languagetool/eglot-ltex
-;; Package-Version: 20220704.636
-;; Package-Commit: c533a793e1f65c197269c8425405579a7112eddb
+;; Package-Version: 20221231.1657
+;; Package-Commit: 5f3bc55d472cd3e61606fccf66f176dac5bd8f82
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "24.3") (eglot "1.4") (f "0.20.0"))
 ;; Keywords: convenience eglot languagetool checker

@@ -1,12 +1,12 @@
 ;;; eglot-grammarly.el --- Eglot Clients for Grammarly  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2021-2022  Shen, Jen-Chieh
+;; Copyright (C) 2021-2023  Shen, Jen-Chieh
 ;; Created date 2021-03-04 11:34:54
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-grammarly/eglot-grammarly
-;; Package-Version: 20220705.543
-;; Package-Commit: 5eba6f26b1ebdd2e578543573479295f307ffc3b
+;; Package-Version: 20221231.1654
+;; Package-Commit: bf2bc0c7d6b113ec48d80bb808e9c3427e7935f1
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "24.3") (eglot "1.4"))
 ;; Keywords: convenience eglot grammarly checker
