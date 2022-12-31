@@ -245,10 +245,10 @@
   {
     "name": "eask-api",
     "summary": "Core Eask APIs",
-    "version": "20221230.2005",
+    "version": "20221231.822",
     "url": "https://github.com/emacs-eask/eask-api",
     "source": "github",
-    "commit": "ecae0e818be7b6c44d1117655154e63b0388e5e0",
+    "commit": "94e0c075464afccd466e147236b1a256a27a104e",
     "tree": "https://github.com/emacs-eask/eask-api"
   },
   {
@@ -263,10 +263,10 @@
   {
     "name": "easky",
     "summary": "Control Eask in Emacs",
-    "version": "20221231.514",
+    "version": "20221231.807",
     "url": "https://github.com/emacs-eask/easky",
     "source": "github",
-    "commit": "687b31a6c7469c8318e7e6814d74858abe0c53b9",
+    "commit": "f2d28ebec9ceb35fa5baa83e710c4cdc4413d5fb",
     "tree": "https://github.com/emacs-eask/easky"
   },
   {
