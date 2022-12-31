@@ -1,12 +1,12 @@
 ;;; company-eask.el --- Company backend for Eask-file  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2022  Shen, Jen-Chieh
+;; Copyright (C) 2022-2023  Shen, Jen-Chieh
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-eask/company-eask
-;; Package-Version: 20221228.1017
-;; Package-Commit: 6863b55eb1239fd94abfe76ba46b3c57180fed0d
+;; Package-Version: 20221231.1639
+;; Package-Commit: 1628d1984c77e4f7ff5bda0abb9934f634ef65d5
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (company "0.8.0") (eask-api "0.1.0"))
 ;; Keywords: convenience

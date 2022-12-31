@@ -1,12 +1,12 @@
 ;;; eldoc-eask.el --- Eldoc support for Eask-file  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2022  Shen, Jen-Chieh
+;; Copyright (C) 2022-2023  Shen, Jen-Chieh
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-eask/eldoc-eask
-;; Package-Version: 20221228.1037
-;; Package-Commit: e9019b5187d1c459aa0bc095bc1eac86e7557060
+;; Package-Version: 20221231.1640
+;; Package-Commit: 3d40ca766218eff6ad04eb882e45702850ddaf3a
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (eask-api "0.1.0"))
 ;; Keywords: convenience

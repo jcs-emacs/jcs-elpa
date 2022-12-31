@@ -1,11 +1,11 @@
 ;;; flycheck-eask.el --- Eask support in Flycheck  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2022  Shen, Jen-Chieh
+;; Copyright (C) 2022-2023  Shen, Jen-Chieh
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-eask/flycheck-eask
-;; Package-Version: 20221223.1250
-;; Package-Commit: 7c2c308136e04f0856239f72fa37999ac9ff2143
+;; Package-Version: 20221231.1640
+;; Package-Commit: a73bf0b3f610cce4d664b486e9e189820a14e18e
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (flycheck "0.14"))
 ;; Keywords: lisp eask

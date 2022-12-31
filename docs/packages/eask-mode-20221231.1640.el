@@ -1,12 +1,12 @@
 ;;; eask-mode.el --- major mode for editing Eask files  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2022  Shen, Jen-Chieh
+;; Copyright (C) 2022-2023  Shen, Jen-Chieh
 ;; Created date 2022-03-14 03:38:51
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-eask/eask-mode
-;; Package-Version: 20221224.1224
-;; Package-Commit: 1271a381d04efadcba014c84fa84388b121f2283
+;; Package-Version: 20221231.1640
+;; Package-Commit: f02dfcd245d61db726979bddbae5e8562b52b029
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "24.3") (eask-api "0.1.0"))
 ;; Keywords: lisp eask
