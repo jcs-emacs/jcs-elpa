@@ -1,12 +1,12 @@
 ;;; sideline-blame.el --- Show blame messages with sideline  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2022  Shen, Jen-Chieh
+;; Copyright (C) 2022-2023  Shen, Jen-Chieh
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline-blame
-;; Package-Version: 20220629.801
-;; Package-Commit: 6e9fb45caea9031554e6e2110e39e219a407779e
+;; Package-Version: 20221231.1636
+;; Package-Commit: 1a1d80a71bdabe77fe2a33cd681b7188f193acfc
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (sideline "0.1.0") (vc-msg "1.1.1"))
 ;; Keywords: convenience blame

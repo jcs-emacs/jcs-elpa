@@ -1,12 +1,12 @@
 ;;; sideline.el --- Show information on the side  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2022  Shen, Jen-Chieh
+;; Copyright (C) 2022-2023  Shen, Jen-Chieh
 ;; Created date 2022-06-13 22:08:26
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline
-;; Package-Version: 20221216.749
-;; Package-Commit: 8a981bc41f0169d2b6553988bd091d4eaf5bd134
+;; Package-Version: 20221231.1635
+;; Package-Commit: 5dc19c5463f164ac05710307ec829a57bc9db859
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: convenience

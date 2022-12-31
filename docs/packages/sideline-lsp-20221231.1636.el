@@ -1,12 +1,12 @@
 ;;; sideline-lsp.el --- Show lsp information with sideline  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2022  Shen, Jen-Chieh
+;; Copyright (C) 2022-2023  Shen, Jen-Chieh
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline-lsp
-;; Package-Version: 20220629.757
-;; Package-Commit: 8833cc33383ef3cc1b003be239cd5092b565ac34
+;; Package-Version: 20221231.1636
+;; Package-Commit: 38ba700db1769de216989fb9217795934147d160
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (sideline "0.1.0") (lsp-mode "6.0") (dash "2.18.0") (ht "2.4") (s "1.12.0"))
 ;; Keywords: convenience lsp

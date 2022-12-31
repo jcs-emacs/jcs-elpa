@@ -1,12 +1,12 @@
 ;;; sideline-color.el --- Show color information with sideline  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2022  Shen, Jen-Chieh
+;; Copyright (C) 2022-2023  Shen, Jen-Chieh
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline-color
-;; Package-Version: 20220820.758
-;; Package-Commit: fc1a447cc6e02d39026d0ec8d669d1542d1792bb
+;; Package-Version: 20221231.1636
+;; Package-Commit: 7bf64587c378778c0fd1a5d58c6afded92d93030
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (sideline "0.1.0"))
 ;; Keywords: convenience color

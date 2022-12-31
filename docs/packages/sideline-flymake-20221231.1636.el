@@ -1,12 +1,12 @@
 ;;; sideline-flymake.el --- Show flymake errors with sideline  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2022  Shen, Jen-Chieh
+;; Copyright (C) 2022-2023  Shen, Jen-Chieh
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline-flymake
-;; Package-Version: 20221120.743
-;; Package-Commit: 6ab3557fadfe832bd9ea3e4818012d3ea5c4759b
+;; Package-Version: 20221231.1636
+;; Package-Commit: bd76c9cc2c90e81582c6e0ed133ce5520d6e460d
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1") (sideline "0.1.0"))
 ;; Keywords: convenience flymake

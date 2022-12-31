@@ -1,12 +1,12 @@
 ;;; sideline-flycheck.el --- Show flycheck errors with sideline  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2022  Shen, Jen-Chieh
+;; Copyright (C) 2022-2023  Shen, Jen-Chieh
 ;; Created date 2022-06-14 17:10:48
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline-flycheck
-;; Package-Version: 20220629.752
-;; Package-Commit: a1fd5368acbc8cd15e00d23a0bf6f19d24f5c061
+;; Package-Version: 20221231.1636
+;; Package-Commit: 5248264aa73bf5ef4a3c8e113933abea2e7f9660
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (sideline "0.1.1") (flycheck "0.14") (ht "2.4"))
 ;; Keywords: convenience flycheck

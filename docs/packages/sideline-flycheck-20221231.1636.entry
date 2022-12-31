@@ -1,5 +1,5 @@
 (sideline-flycheck .
-		   [(20220629 752)
+		   [(20221231 1636)
 		    ((emacs
 		      (27 1))
 		     (sideline
@@ -9,7 +9,7 @@
 		     (ht
 		      (2 4)))
 		    "Show flycheck errors with sideline" single
-		    ((:commit . "a1fd5368acbc8cd15e00d23a0bf6f19d24f5c061")
+		    ((:commit . "5248264aa73bf5ef4a3c8e113933abea2e7f9660")
 		     (:authors
 		      ("Jen-Chieh" . "jcs090218@gmail.com"))
 		     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
