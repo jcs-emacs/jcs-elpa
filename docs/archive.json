@@ -155,10 +155,10 @@
   {
     "name": "company-eask",
     "summary": "Company backend for Eask-file",
-    "version": "20221228.1017",
+    "version": "20221231.1639",
     "url": "https://github.com/emacs-eask/company-eask",
     "source": "github",
-    "commit": "6863b55eb1239fd94abfe76ba46b3c57180fed0d",
+    "commit": "1628d1984c77e4f7ff5bda0abb9934f634ef65d5",
     "tree": "https://github.com/emacs-eask/company-eask"
   },
   {
@@ -245,28 +245,28 @@
   {
     "name": "eask-api",
     "summary": "Core Eask APIs",
-    "version": "20221231.943",
+    "version": "20221231.1640",
     "url": "https://github.com/emacs-eask/eask-api",
     "source": "github",
-    "commit": "a932316fb97112352d5497fc1e8cb2360293c992",
+    "commit": "831576680c30a21389bdf0e9ce17a149e49c6db9",
     "tree": "https://github.com/emacs-eask/eask-api"
   },
   {
     "name": "eask-mode",
     "summary": "major mode for editing Eask files",
-    "version": "20221224.1224",
+    "version": "20221231.1640",
     "url": "https://github.com/emacs-eask/eask-mode",
     "source": "github",
-    "commit": "1271a381d04efadcba014c84fa84388b121f2283",
+    "commit": "f02dfcd245d61db726979bddbae5e8562b52b029",
     "tree": "https://github.com/emacs-eask/eask-mode"
   },
   {
     "name": "easky",
     "summary": "Control Eask in Emacs",
-    "version": "20221231.1216",
+    "version": "20221231.1640",
     "url": "https://github.com/emacs-eask/easky",
     "source": "github",
-    "commit": "24de3c5164e5a621fcea258645f03a21a0ba60de",
+    "commit": "6784facde44000d6417cb7260779ee58fa5d1024",
     "tree": "https://github.com/emacs-eask/easky"
   },
   {
@@ -290,10 +290,10 @@
   {
     "name": "eldoc-eask",
     "summary": "Eldoc support for Eask-file",
-    "version": "20221228.1037",
+    "version": "20221231.1640",
     "url": "https://github.com/emacs-eask/eldoc-eask",
     "source": "github",
-    "commit": "e9019b5187d1c459aa0bc095bc1eac86e7557060",
+    "commit": "3d40ca766218eff6ad04eb882e45702850ddaf3a",
     "tree": "https://github.com/emacs-eask/eldoc-eask"
   },
   {
@@ -425,10 +425,10 @@
   {
     "name": "flycheck-eask",
     "summary": "Eask support in Flycheck",
-    "version": "20221223.1250",
+    "version": "20221231.1640",
     "url": "https://github.com/emacs-eask/flycheck-eask",
     "source": "github",
-    "commit": "7c2c308136e04f0856239f72fa37999ac9ff2143",
+    "commit": "a73bf0b3f610cce4d664b486e9e189820a14e18e",
     "tree": "https://github.com/emacs-eask/flycheck-eask"
   },
   {
