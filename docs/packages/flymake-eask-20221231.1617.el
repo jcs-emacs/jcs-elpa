@@ -1,12 +1,12 @@
 ;;; flymake-eask.el --- Eask support in Flymake  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2022  Shen, Jen-Chieh
+;; Copyright (C) 2022-2023  Shen, Jen-Chieh
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/flymake/flymake-eask
-;; Package-Version: 20221223.1608
-;; Package-Commit: a6c87f4aab9530cc24a463c1a8dd63770e9482bd
+;; Package-Version: 20221231.1617
+;; Package-Commit: 3ffd1d77c57354116118c4ab5e87b98e1368d7f3
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (flymake-easy "0.1"))
 ;; Keywords: lisp eask
