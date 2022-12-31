@@ -110,10 +110,10 @@
   {
     "name": "company-box",
     "summary": "Company front-end with icons",
-    "version": "20221230.1610",
+    "version": "20221231.1631",
     "url": "https://github.com/elp-revive/company-box",
     "source": "github",
-    "commit": "f5802a3db5cba081656c52e7c4852fe02b90628d",
+    "commit": "a023aca985f19dad4dd2dc0050676491a984eaac",
     "tree": "https://github.com/elp-revive/company-box"
   },
   {
@@ -722,10 +722,10 @@
   {
     "name": "origami",
     "summary": "Flexible text folding",
-    "version": "20220214.1511",
+    "version": "20221231.1631",
     "url": "https://github.com/elp-revive/origami.el",
     "source": "github",
-    "commit": "4bdc830ad9fb796947e874de9e857bdbb2365fc0",
+    "commit": "56a38428bace23e141c0cd0a2648d1b074ca9473",
     "tree": "https://github.com/elp-revive/origami.el"
   },
   {
@@ -803,55 +803,55 @@
   {
     "name": "sideline",
     "summary": "Show information on the side",
-    "version": "20221216.749",
+    "version": "20221231.1635",
     "url": "https://github.com/emacs-sideline/sideline",
     "source": "github",
-    "commit": "8a981bc41f0169d2b6553988bd091d4eaf5bd134",
+    "commit": "5dc19c5463f164ac05710307ec829a57bc9db859",
     "tree": "https://github.com/emacs-sideline/sideline"
   },
   {
     "name": "sideline-blame",
     "summary": "Show blame messages with sideline",
-    "version": "20220629.801",
+    "version": "20221231.1636",
     "url": "https://github.com/emacs-sideline/sideline-blame",
     "source": "github",
-    "commit": "6e9fb45caea9031554e6e2110e39e219a407779e",
+    "commit": "1a1d80a71bdabe77fe2a33cd681b7188f193acfc",
     "tree": "https://github.com/emacs-sideline/sideline-blame"
   },
   {
     "name": "sideline-color",
     "summary": "Show color information with sideline",
-    "version": "20220820.758",
+    "version": "20221231.1636",
     "url": "https://github.com/emacs-sideline/sideline-color",
     "source": "github",
-    "commit": "fc1a447cc6e02d39026d0ec8d669d1542d1792bb",
+    "commit": "7bf64587c378778c0fd1a5d58c6afded92d93030",
     "tree": "https://github.com/emacs-sideline/sideline-color"
   },
   {
     "name": "sideline-flycheck",
     "summary": "Show flycheck errors with sideline",
-    "version": "20220629.752",
+    "version": "20221231.1636",
     "url": "https://github.com/emacs-sideline/sideline-flycheck",
     "source": "github",
-    "commit": "a1fd5368acbc8cd15e00d23a0bf6f19d24f5c061",
+    "commit": "5248264aa73bf5ef4a3c8e113933abea2e7f9660",
     "tree": "https://github.com/emacs-sideline/sideline-flycheck"
   },
   {
     "name": "sideline-flymake",
     "summary": "Show flymake errors with sideline",
-    "version": "20221120.743",
+    "version": "20221231.1636",
     "url": "https://github.com/emacs-sideline/sideline-flymake",
     "source": "github",
-    "commit": "6ab3557fadfe832bd9ea3e4818012d3ea5c4759b",
+    "commit": "bd76c9cc2c90e81582c6e0ed133ce5520d6e460d",
     "tree": "https://github.com/emacs-sideline/sideline-flymake"
   },
   {
     "name": "sideline-lsp",
     "summary": "Show lsp information with sideline",
-    "version": "20220629.757",
+    "version": "20221231.1636",
     "url": "https://github.com/emacs-sideline/sideline-lsp",
     "source": "github",
-    "commit": "8833cc33383ef3cc1b003be239cd5092b565ac34",
+    "commit": "38ba700db1769de216989fb9217795934147d160",
     "tree": "https://github.com/emacs-sideline/sideline-lsp"
   },
   {
@@ -902,10 +902,10 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20221226.1737",
+    "version": "20221231.1626",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "7fdaf447cc7d6f4c731e19b65af4435bc5e37172",
+    "commit": "9776e2fa2c5ca004000ba18825c41601a6747307",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
