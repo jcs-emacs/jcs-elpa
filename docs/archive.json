@@ -893,10 +893,10 @@
   {
     "name": "ts-docstr",
     "summary": "A document string minor mode using tree-sitter",
-    "version": "20221101.1637",
+    "version": "20221231.1705",
     "url": "https://github.com/emacs-vs/ts-docstr",
     "source": "github",
-    "commit": "e3d5b1b26f2df1144e11330175a573ecc12fcd26",
+    "commit": "c906c510216ef598dd60d9cb4611eee1dfb70c05",
     "tree": "https://github.com/emacs-vs/ts-docstr"
   },
   {
