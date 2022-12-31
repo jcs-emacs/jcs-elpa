@@ -1,12 +1,12 @@
 ;;; jcs-modeline.el --- A modeline for jcs-emacs  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2022  Shen, Jen-Chieh
+;; Copyright (C) 2022-2023  Shen, Jen-Chieh
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-modeline
-;; Package-Version: 20221227.623
-;; Package-Commit: ccaeb6bb75a551bfe37f833ce32f762eea9622ef
+;; Package-Version: 20221231.1611
+;; Package-Commit: c6bb2f28ef32e9fa4349128d0c2ef1df31688509
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "28.1") (moody "0.7.1") (minions "0.3.7") (elenv "0.1.0"))
 ;; Keywords: faces mode-line
