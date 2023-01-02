@@ -218,10 +218,10 @@
   {
     "name": "copilot",
     "summary": "An unofficial Copilot plugin for Emacs",
-    "version": "20221222.133",
+    "version": "20230102.1632",
     "url": "https://github.com/zerolfx/copilot.el",
     "source": "github",
-    "commit": "43726d3447120062156878108879f207a9778fc8",
+    "commit": "34c294a3cf623ccde2d8970d03de08025b0845cb",
     "tree": "https://github.com/zerolfx/copilot.el"
   },
   {
@@ -263,10 +263,10 @@
   {
     "name": "easky",
     "summary": "Control Eask in Emacs",
-    "version": "20230102.1604",
+    "version": "20230102.1641",
     "url": "https://github.com/emacs-eask/easky",
     "source": "github",
-    "commit": "09160e0ddaa0bf9b84b0b2332e6cecf65dd0272e",
+    "commit": "cfd5dce0fb8d9203cc089ac545536aea6525a450",
     "tree": "https://github.com/emacs-eask/easky"
   },
   {
