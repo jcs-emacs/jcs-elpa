@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/auto-scroll-bar
-;; Package-Version: 20230103.1752
-;; Package-Commit: 92ac40bc4a65a34299813d0bb4face741416679b
+;; Package-Version: 20230103.2027
+;; Package-Commit: aea10fca21f5dce37247cfef598842fe91b546fe
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: convenience scrollbar
@@ -130,21 +130,20 @@
   (and
    horizontal-scroll-bar
    truncate-lines
-   (or (not (zerop (window-hscroll)))
-       (save-excursion
-         (move-to-window-line 0)
-         (let* ((win-w (auto-scroll-bar--window-width))
-                (win-h (auto-scroll-bar--window-height))
-                (count 0) (target win-h) break)
-           (while (and (not (eobp)) (< count target) (not break))
-             (let* ((line-str (buffer-substring-no-properties
-                               (line-beginning-position) (line-end-position)))
-                    (line-len (auto-scroll-bar--str-len line-str)))
-               (if (< win-w line-len)
-                   (setq break t)
-                 (forward-line 1)
-                 (cl-incf count))))
-           break)))))
+   (save-excursion
+     (move-to-window-line 0)
+     (let* ((win-w (auto-scroll-bar--window-width))
+            (win-h (auto-scroll-bar--window-height))
+            (count 0) (target win-h) break)
+       (while (and (not (eobp)) (< count target) (not break))
+         (let* ((line-str (buffer-substring-no-properties
+                           (line-beginning-position) (line-end-position)))
+                (line-len (auto-scroll-bar--str-len line-str)))
+           (if (< win-w line-len)
+               (setq break t)
+             (forward-line 1)
+             (cl-incf count))))
+       break))))
 
 (defun auto-scroll-bar--disabled-p ()
   "Return non-nil if scroll-bars should be ignored."
