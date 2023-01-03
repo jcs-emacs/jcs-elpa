@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/auto-scroll-bar
-;; Package-Version: 20230103.1700
-;; Package-Commit: e9d2ea3a72031b19f36c5b3c633b34b20373d071
+;; Package-Version: 20230103.1752
+;; Package-Commit: 92ac40bc4a65a34299813d0bb4face741416679b
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: convenience scrollbar
@@ -196,9 +196,9 @@ Optional argument FRAME is used to select frame's minibuffer."
 
 (defun auto-scroll-bar--post-command (&rest _)
   "Hook for post-command."
-  (when-let ((current (selected-window)))
-    (if (equal (minibuffer-window) current) (auto-scroll-bar--hide-minibuffer)
-      (auto-scroll-bar--scroll current))))
+  (dolist (window (get-buffer-window-list))
+    (if (equal (minibuffer-window) window) (auto-scroll-bar--hide-minibuffer)
+      (auto-scroll-bar--scroll window))))
 
 (defun auto-scroll-bar--enable ()
   "Enable function `auto-scroll-bar-mode'."
