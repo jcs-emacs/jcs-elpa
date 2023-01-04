@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/auto-scroll-bar
-;; Package-Version: 20221229.1323
-;; Package-Commit: 50151a9681d0f0e1200489222bb572bafecb86d3
+;; Package-Version: 20230103.2027
+;; Package-Commit: aea10fca21f5dce37247cfef598842fe91b546fe
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: convenience scrollbar
@@ -65,8 +65,30 @@
   :group 'auto-scroll-bar)
 
 ;;
+;; (@* "Externals" )
+;;
+
+(declare-function string-pixel-width "subr-x.el")   ; TODO: remove this after 29.1
+(declare-function shr-string-pixel-width "shr.el")  ; TODO: remove this after 29.1
+
+;;
 ;; (@* "Util" )
 ;;
+
+;; TODO: Use function `string-pixel-width' after 29.1
+(defun auto-scroll-bar--string-pixel-width (str)
+  "Return the width of STR in pixels."
+  (if (fboundp #'string-pixel-width)
+      (string-pixel-width str)
+    (require 'shr)
+    (shr-string-pixel-width str)))
+
+(defun auto-scroll-bar--str-len (str)
+  "Calculate STR in pixel width."
+  (let ((width (frame-char-width))
+        (len (auto-scroll-bar--string-pixel-width str)))
+    (+ (/ len width)
+       (if (zerop (% len width)) 0 1))))  ; add one if exceeed
 
 (defmacro auto-scroll-bar--with-no-redisplay (&rest body)
   "Execute BODY without any redisplay execution."
@@ -114,10 +136,13 @@
             (win-h (auto-scroll-bar--window-height))
             (count 0) (target win-h) break)
        (while (and (not (eobp)) (< count target) (not break))
-         (if (< win-w (- (line-end-position) (line-beginning-position)))
-             (setq break t)
-           (forward-line 1)
-           (cl-incf count)))
+         (let* ((line-str (buffer-substring-no-properties
+                           (line-beginning-position) (line-end-position)))
+                (line-len (auto-scroll-bar--str-len line-str)))
+           (if (< win-w line-len)
+               (setq break t)
+             (forward-line 1)
+             (cl-incf count))))
        break))))
 
 (defun auto-scroll-bar--disabled-p ()
@@ -170,9 +195,9 @@ Optional argument FRAME is used to select frame's minibuffer."
 
 (defun auto-scroll-bar--post-command (&rest _)
   "Hook for post-command."
-  (when-let ((current (selected-window)))
-    (if (equal (minibuffer-window) current) (auto-scroll-bar--hide-minibuffer)
-      (auto-scroll-bar--scroll current))))
+  (dolist (window (get-buffer-window-list))
+    (if (equal (minibuffer-window) window) (auto-scroll-bar--hide-minibuffer)
+      (auto-scroll-bar--scroll window))))
 
 (defun auto-scroll-bar--enable ()
   "Enable function `auto-scroll-bar-mode'."
