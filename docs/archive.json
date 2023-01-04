@@ -594,6 +594,15 @@
     "tree": "https://github.com/Lambda-Emacs/lambda-line"
   },
   {
+    "name": "line-reminder",
+    "summary": "Line annotation for changed and saved lines",
+    "version": "20230104.1211",
+    "url": "https://github.com/emacs-vs/line-reminder",
+    "source": "github",
+    "commit": "41a22589ebc3843f6736669a4517014800f09e16",
+    "tree": "https://github.com/emacs-vs/line-reminder"
+  },
+  {
     "name": "lsp-compose",
     "summary": "lsp-mode client for compose server",
     "version": "20200515.1833",
