@@ -1,0 +1,14 @@
+(copilot .
+	 [(20230105 156)
+	  ((emacs
+	    (27 2))
+	   (s
+	    (1 12 0))
+	   (dash
+	    (2 19 1))
+	   (editorconfig
+	    (0 8 2))
+	   (jsonrpc
+	    (1 0 14)))
+	  "An unofficial Copilot plugin for Emacs" tar
+	  ((:commit . "c66a083d2a8fa33556d61be8e30e4b25409c3c1d"))])
