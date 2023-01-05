@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vsc-edit-mode
-;; Package-Version: 20221204.1744
-;; Package-Commit: 561ed3a9d9462262da37a0f7fd5759fce58d9820
+;; Package-Version: 20230105.1735
+;; Package-Commit: 835342339a5866b51bc4c7043ed83c82052c1070
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (indent-control "0.1.0") (company "0.8.12") (yasnippet "0.8.0") (msgu "0.1.0") (mwim "0.4"))
 ;; Keywords: convenience editing vs
@@ -276,6 +276,16 @@
   "Delete region by default value."
   (when (use-region-p) (delete-region (region-beginning) (region-end))))
 
+(defcustom vsc-edit-yank-ignore-modes
+  '( makefile-mode
+     makefile-automake-mode makefile-gmake-mode makefile-bsdmake-mode
+     makefile-makepp-mode makefile-imake-mode
+     python-mode
+     yaml-mode)
+  "List of major-modes ignore indent after `yank' command."
+  :type 'list
+  :group 'vsc-edit)
+
 ;;;###autoload
 (defun vsc-edit-yank ()
   "Yank and then indent region."
@@ -284,7 +294,8 @@
     (vsc-edit-delete-region)
     (let ((reg-beg (point)))
       (call-interactively #'yank)
-      (when (vsc-edit-prog-mode-p)
+      (when (and (vsc-edit-prog-mode-p)
+                 (not (memq major-mode vsc-edit-yank-ignore-modes)))
         (ignore-errors (indent-region reg-beg (point)))))))
 
 ;;
