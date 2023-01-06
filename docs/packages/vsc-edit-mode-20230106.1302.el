@@ -1,12 +1,12 @@
 ;;; vsc-edit-mode.el --- Implement editing experience like VSCode  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2022  Shen, Jen-Chieh
+;; Copyright (C) 2022-2023  Shen, Jen-Chieh
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vsc-edit-mode
-;; Package-Version: 20230105.1735
-;; Package-Commit: 835342339a5866b51bc4c7043ed83c82052c1070
+;; Package-Version: 20230106.1302
+;; Package-Commit: 0b922bbf9bcda7e55745f4c5f6d3dc92edb830ce
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (indent-control "0.1.0") (company "0.8.12") (yasnippet "0.8.0") (msgu "0.1.0") (mwim "0.4"))
 ;; Keywords: convenience editing vs
@@ -96,6 +96,10 @@
 ;;
 ;; (@* "Util" )
 ;;
+
+(defun vsc-edit-delete-region ()
+  "Delete region by default value."
+  (when (use-region-p) (delete-region (region-beginning) (region-end))))
 
 (defun vsc-edit--in-comment-or-string-p ()
   "Return non-nil if inside comment or string."
@@ -272,9 +276,12 @@
 ;; (@* "Yank" )
 ;;
 
-(defun vsc-edit-delete-region ()
-  "Delete region by default value."
-  (when (use-region-p) (delete-region (region-beginning) (region-end))))
+(defun vsc-edit-yank-indent ()
+  "Yank and indent."
+  (interactive)
+  (let ((reg-beg (point)))
+    (call-interactively #'yank)
+    (ignore-errors (indent-region reg-beg (point)))))
 
 (defcustom vsc-edit-yank-ignore-modes
   '( makefile-mode
@@ -292,11 +299,10 @@
   (interactive)
   (msgu-silent
     (vsc-edit-delete-region)
-    (let ((reg-beg (point)))
-      (call-interactively #'yank)
-      (when (and (vsc-edit-prog-mode-p)
-                 (not (memq major-mode vsc-edit-yank-ignore-modes)))
-        (ignore-errors (indent-region reg-beg (point)))))))
+    (if (or (not (vsc-edit-prog-mode-p))
+            (memq major-mode vsc-edit-yank-ignore-modes))
+        (call-interactively #'yank)
+      (call-interactively #'vsc-edit-yank-indent))))
 
 ;;
 ;; (@* "Backspace" )
