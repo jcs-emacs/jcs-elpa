@@ -558,6 +558,15 @@
     "tree": "https://github.com/jcs-elpa/jayces-mode"
   },
   {
+    "name": "jcs-echobar",
+    "summary": "An echo-bar for jcs-emacs",
+    "version": "20230106.1502",
+    "url": "https://github.com/jcs-emacs/jcs-echobar",
+    "source": "github",
+    "commit": "867e78d397fa6a7830f3376eb32537b130950ff5",
+    "tree": "https://github.com/jcs-emacs/jcs-echobar"
+  },
+  {
     "name": "jcs-modeline",
     "summary": "A modeline for jcs-emacs",
     "version": "20221231.1611",
