@@ -560,11 +560,20 @@
   {
     "name": "jcs-echobar",
     "summary": "An echo-bar for jcs-emacs",
-    "version": "20230106.1505",
+    "version": "20230106.1638",
     "url": "https://github.com/jcs-emacs/jcs-echobar",
     "source": "github",
-    "commit": "ca2204ce67e0bd84c97308a69bc979a11d6263eb",
+    "commit": "5c6e7105c877c3bad678a8aa37440638b7ca8908",
     "tree": "https://github.com/jcs-emacs/jcs-echobar"
+  },
+  {
+    "name": "jcs-frametitle",
+    "summary": "A frame title for jcs-emacs",
+    "version": "20230106.1639",
+    "url": "https://github.com/jcs-emacs/jcs-frametitle",
+    "source": "github",
+    "commit": "2cfa91126819e40aee8ff2c207a0f5f91cef51d0",
+    "tree": "https://github.com/jcs-emacs/jcs-frametitle"
   },
   {
     "name": "jcs-modeline",
