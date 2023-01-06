@@ -1,5 +1,5 @@
 (jcs-echobar .
-	     [(20230106 1502)
+	     [(20230106 1504)
 	      ((emacs
 		(26 1))
 	       (echo-bar
@@ -9,7 +9,7 @@
 	       (show-eol
 		(0 1 0)))
 	      "An echo-bar for jcs-emacs" single
-	      ((:commit . "867e78d397fa6a7830f3376eb32537b130950ff5")
+	      ((:commit . "d32205f32d23ddb0b66a9ef6e93d26bd36f6ad00")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

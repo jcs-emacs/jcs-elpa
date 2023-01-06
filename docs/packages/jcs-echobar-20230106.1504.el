@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-echobar
-;; Package-Version: 20230106.1502
-;; Package-Commit: 867e78d397fa6a7830f3376eb32537b130950ff5
+;; Package-Version: 20230106.1504
+;; Package-Commit: d32205f32d23ddb0b66a9ef6e93d26bd36f6ad00
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (echo-bar "1.0.0") (indent-control "0.1.0") (show-eol "0.1.0"))
 ;; Keywords: faces echo-bar
@@ -50,7 +50,7 @@
     (:eval (jcs-echobar--render-time)))
   "List of item to render in echo-bar."
   :type 'list
-  :group 'jcs-modeline)
+  :group 'jcs-echobar)
 
 (defvar jcs-echobar--render nil)
 
