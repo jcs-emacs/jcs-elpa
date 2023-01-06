@@ -1,9 +1,9 @@
 (jcs-frametitle .
-		[(20230106 1639)
+		[(20230106 1653)
 		 ((emacs
 		   (26 1)))
 		 "A frame title for jcs-emacs" single
-		 ((:commit . "2cfa91126819e40aee8ff2c207a0f5f91cef51d0")
+		 ((:commit . "cc4a6d287e9dc1cb141eda6375010b5aae00ba85")
 		  (:authors
 		   ("Jen-Chieh" . "jcs090218@gmail.com"))
 		  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

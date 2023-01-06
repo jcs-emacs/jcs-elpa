@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-frametitle
-;; Package-Version: 20230106.1639
-;; Package-Commit: 2cfa91126819e40aee8ff2c207a0f5f91cef51d0
+;; Package-Version: 20230106.1653
+;; Package-Commit: cc4a6d287e9dc1cb141eda6375010b5aae00ba85
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: faces frame-title
@@ -32,7 +32,6 @@
 ;;
 
 ;;; Code:
-
 
 (defgroup jcs-frametitle nil
   "An frame title for jcs-emacs."
@@ -135,11 +134,11 @@
 
 (defun jcs-frametitle--render-username-host ()
   "Render username and host."
-  (format "%s@%s: " user-real-login-name system-name))
+  (format "%s@%s: " user-real-login-name (system-name)))
 
 (defun jcs-frametitle--render-buffer-name ()
   "Render buffer name."
-  (concat  (if (buffer-modified-p) "*" "")
+  (concat  (if (and buffer-file-name (buffer-modified-p)) "*" "")
            (if buffer-file-name "%f" "%b")))
 
 (provide 'jcs-frametitle)
