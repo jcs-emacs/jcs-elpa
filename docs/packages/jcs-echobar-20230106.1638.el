@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-echobar
-;; Package-Version: 20230106.1505
-;; Package-Commit: ca2204ce67e0bd84c97308a69bc979a11d6263eb
+;; Package-Version: 20230106.1638
+;; Package-Commit: 5c6e7105c877c3bad678a8aa37440638b7ca8908
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (echo-bar "1.0.0") (indent-control "0.1.0") (show-eol "0.1.0"))
 ;; Keywords: faces echo-bar
@@ -132,7 +132,7 @@
   (setq jcs-echobar--render (reverse jcs-echobar--render)))
 
 (defun jcs-echobar-render (&rest _)
-  "Render for echo-bar."
+  "Render the echo-bar."
   (mapconcat #'format-mode-line jcs-echobar--render ""))
 
 ;;
