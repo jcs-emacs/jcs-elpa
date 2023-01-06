@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-echobar
-;; Package-Version: 20230106.1504
-;; Package-Commit: d32205f32d23ddb0b66a9ef6e93d26bd36f6ad00
+;; Package-Version: 20230106.1505
+;; Package-Commit: ca2204ce67e0bd84c97308a69bc979a11d6263eb
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (echo-bar "1.0.0") (indent-control "0.1.0") (show-eol "0.1.0"))
 ;; Keywords: faces echo-bar
@@ -53,6 +53,13 @@
   :group 'jcs-echobar)
 
 (defvar jcs-echobar--render nil)
+
+;;
+;; (@* "Externals" )
+;;
+
+(declare-function string-pixel-width "subr-x.el")   ; TODO: remove this after 29.1
+(declare-function shr-string-pixel-width "shr.el")  ; TODO: remove this after 29.1
 
 ;;
 ;; (@* "Entry" )
