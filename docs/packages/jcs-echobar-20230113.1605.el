@@ -5,10 +5,10 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-echobar
-;; Package-Version: 20230106.1638
-;; Package-Commit: 5c6e7105c877c3bad678a8aa37440638b7ca8908
+;; Package-Version: 20230113.1605
+;; Package-Commit: b4e5cac855d040e5724ac5e1ad1b18e1c770235a
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "26.1") (echo-bar "1.0.0") (indent-control "0.1.0") (show-eol "0.1.0"))
+;; Package-Requires: ((emacs "26.1") (echo-bar "1.0.0") (indent-control "0.1.0") (show-eol "0.1.0") (keycast "1.2.0"))
 ;; Keywords: faces echo-bar
 
 ;; This file is not part of GNU Emacs.
@@ -36,6 +36,7 @@
 (require 'echo-bar)
 (require 'indent-control)
 (require 'show-eol)
+(require 'keycast)
 
 (defgroup jcs-echobar nil
   "An echo-bar for jcs-emacs."
@@ -44,7 +45,8 @@
   :link '(url-link :tag "Github" "https://github.com/jcs-emacs/jcs-echobar"))
 
 (defcustom jcs-echobar-render
-  `((:eval (jcs-echobar--render-spaces-tabs-size))
+  `((:eval (jcs-echobar--render-keycast))
+    (:eval (jcs-echobar--render-spaces-tabs-size))
     (:eval (jcs-echobar--render-coding-system))
     (:eval (jcs-echobar--render-eol))
     (:eval (jcs-echobar--render-time)))
@@ -52,7 +54,10 @@
   :type 'list
   :group 'jcs-echobar)
 
-(defvar jcs-echobar--render nil)
+(defcustom jcs-echobar-keycast-format "%K%C%R   "
+  "The keycast format spec."
+  :type 'string
+  :group 'jcs-echobar)
 
 ;;
 ;; (@* "Externals" )
@@ -70,6 +75,10 @@
 
 (defun jcs-echobar--enable ()
   "Enable function `jcs-echobar-mode'."
+  (progn  ; keycast
+    (add-hook 'post-command-hook #'keycast--update t)
+    (add-hook 'minibuffer-exit-hook #'keycast--minibuffer-exit t)
+    (advice-add 'keycast--update :after #'jcs-echobar--keycast-update))
   (add-hook 'window-size-change-functions #'jcs-echobar--window-resize)
   (jcs-echobar--window-resize)  ; call it manually once
   (setq jcs-echobar--default-function echo-bar-function)
@@ -78,6 +87,10 @@
 
 (defun jcs-echobar--disable ()
   "Disable function `jcs-echobar-mode'."
+  (progn  ; keycast
+    (remove-hook 'post-command-hook #'keycast--update)
+    (remove-hook 'minibuffer-exit-hook #'keycast--minibuffer-exit)
+    (advice-remove 'keycast--update #'jcs-echobar--keycast-update))
   (remove-hook 'window-size-change-functions #'jcs-echobar--window-resize)
   (setq echo-bar-function jcs-echobar--default-function)
   (echo-bar-mode -1))
@@ -118,6 +131,8 @@
 ;; (@* "Core" )
 ;;
 
+(defvar jcs-echobar--render nil)
+
 (defun jcs-echobar--window-resize (&rest _)
   "Window resize hook."
   (setq jcs-echobar--render nil)  ; reset
@@ -134,6 +149,11 @@
 (defun jcs-echobar-render (&rest _)
   "Render the echo-bar."
   (mapconcat #'format-mode-line jcs-echobar--render ""))
+
+(defun jcs-echobar--keycast-update (&rest _)
+  "Exection after `keycast-update' function."
+  (when (bound-and-true-p jcs-echobar-mode)
+    (echo-bar-update)))
 
 ;;
 ;; (@* "Plugins" )
@@ -156,6 +176,11 @@
 (defun jcs-echobar--render-time ()
   "Render time."
   (format-time-string "%b %d, %Y %H:%M:%S"))
+
+(defun jcs-echobar--render-keycast ()
+  "Render `keycast'."
+  (when (featurep 'keycast)
+    (keycast--format jcs-echobar-keycast-format)))
 
 (provide 'jcs-echobar)
 ;;; jcs-echobar.el ends here
