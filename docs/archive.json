@@ -740,10 +740,10 @@
   {
     "name": "openai",
     "summary": "Elisp library for the OpenAI API",
-    "version": "20230116.832",
+    "version": "20230116.911",
     "url": "https://github.com/jcs090218/openai",
     "source": "github",
-    "commit": "9a3e6046f08834119fafa21fabc6463c45a5cf54",
+    "commit": "4b571d6c020f3d77d803dbca00f001e6def00294",
     "tree": "https://github.com/jcs090218/openai"
   },
   {
