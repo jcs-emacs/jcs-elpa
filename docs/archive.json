@@ -738,6 +738,15 @@
     "tree": "https://gitlab.com/ajgrf/on.el"
   },
   {
+    "name": "openai",
+    "summary": "Elisp library for the OpenAI API",
+    "version": "20230116.549",
+    "url": "https://github.com/jcs090218/openai",
+    "source": "github",
+    "commit": "ff90635eecc627c8d8f01a78751b3424eb369bca",
+    "tree": "https://github.com/jcs090218/openai"
+  },
+  {
     "name": "org-bars",
     "summary": "Add bars to virtual indentation",
     "version": "20211105.1700",
