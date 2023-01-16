@@ -1,0 +1,1 @@
+(openai :repo "jcs090218/openai" :fetcher github)
