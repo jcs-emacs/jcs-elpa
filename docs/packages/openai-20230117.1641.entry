@@ -1,5 +1,5 @@
 (openai .
-	[(20230117 1622)
+	[(20230117 1641)
 	 ((emacs
 	   (26 1))
 	  (request
@@ -7,7 +7,7 @@
 	  (tblui
 	   (0 1 0)))
 	 "Elisp library for the OpenAI API" tar
-	 ((:commit . "a7db61f33cc8dc5d4632ac3703b0b744a1b53717")
+	 ((:commit . "56425a390d5066da64437b4d30b213a65e94d74c")
 	  (:authors
 	   ("Jen-Chieh" . "jcs090218@gmail.com"))
 	  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
