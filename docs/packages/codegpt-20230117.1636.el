@@ -5,11 +5,11 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-openai/codegpt
-;; Package-Version: 20230117.1627
-;; Package-Commit: 9e57208984a8463b80d1a7617940a368d6b71570
+;; Package-Version: 20230117.1636
+;; Package-Commit: d67372d5d99b680ae67c7fe8a9f2f4cce5e87cce
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "26.1"))
-;; Keywords: convenience
+;; Package-Requires: ((emacs "26.1") (openai "0.1.0"))
+;; Keywords: convenience codegpt
 
 ;; This file is not part of GNU Emacs.
 
