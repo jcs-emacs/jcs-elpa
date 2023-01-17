@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-openai/codegpt
-;; Package-Version: 20230117.1650
-;; Package-Commit: 9712f528f21e0285e55e865bc6bc2bbbcceb70ba
+;; Package-Version: 20230117.1708
+;; Package-Commit: c30cf72692445a384fe6637f2340159b9cbcdb5f
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (openai "0.1.0"))
 ;; Keywords: convenience codegpt
@@ -135,7 +135,7 @@ This command is interactive region only, the START and END are boundaries of
 that region in buffer."
   (interactive "r")
   (let*
-      ((offset (openai--completing-frame-offset openai-completion-code-action-alist))
+      ((offset (openai--completing-frame-offset codegpt-action-alist))
        (action
         (completing-read
          "Select completion action: "
@@ -146,8 +146,8 @@ that region in buffer."
                  (annotation-function
                   . ,(lambda (cand)
                        (concat (propertize " " 'display `((space :align-to (- right ,offset))))
-                               (cdr (assoc cand openai-completion-code-action-alist))))))
-             (complete-with-action action openai-completion-code-action-alist string predicate)))
+                               (cdr (assoc cand codegpt-action-alist))))))
+             (complete-with-action action codegpt-action-alist string predicate)))
          nil t)))
     (funcall
      (pcase action
