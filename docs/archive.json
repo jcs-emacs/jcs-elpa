@@ -776,10 +776,10 @@
   {
     "name": "package-build",
     "summary": "Tools for assembling a package archive",
-    "version": "20221216.2351",
+    "version": "20230117.1841",
     "url": "https://github.com/melpa/package-build",
     "source": "github",
-    "commit": "b800e47a9f7139bc0b26a1ad4a01d4ae52b089f0",
+    "commit": "3c2a94d942d2ca27ad07271be3053f75035e5a15",
     "tree": "https://github.com/melpa/package-build"
   },
   {
