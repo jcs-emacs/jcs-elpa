@@ -92,10 +92,10 @@
   {
     "name": "codegpt",
     "summary": "Use GPT-3 tp help you write code",
-    "version": "20230117.1636",
+    "version": "20230117.1642",
     "url": "https://github.com/emacs-openai/codegpt",
     "source": "github",
-    "commit": "d67372d5d99b680ae67c7fe8a9f2f4cce5e87cce",
+    "commit": "7b21368a8947f3e44091699462b99b3d35208c88",
     "tree": "https://github.com/emacs-openai/codegpt"
   },
   {
@@ -749,10 +749,10 @@
   {
     "name": "openai",
     "summary": "Elisp library for the OpenAI API",
-    "version": "20230117.1622",
+    "version": "20230117.1641",
     "url": "https://github.com/emacs-openai/openai",
     "source": "github",
-    "commit": "a7db61f33cc8dc5d4632ac3703b0b744a1b53717",
+    "commit": "56425a390d5066da64437b4d30b213a65e94d74c",
     "tree": "https://github.com/emacs-openai/openai"
   },
   {
