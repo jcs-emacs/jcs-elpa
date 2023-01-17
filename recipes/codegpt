@@ -1,0 +1,1 @@
+(codegpt :repo "emacs-openai/codegpt" :fetcher github)
