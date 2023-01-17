@@ -1,9 +1,9 @@
 (package-build .
-	       [(20221216 2351)
+	       [(20230117 1841)
 		((emacs
-		  (25 1)))
+		  (26 1)))
 		"Tools for assembling a package archive" tar
-		((:commit . "b800e47a9f7139bc0b26a1ad4a01d4ae52b089f0")
+		((:commit . "3c2a94d942d2ca27ad07271be3053f75035e5a15")
 		 (:authors
 		  ("Donald Ephraim Curtis" . "dcurtis@milkbox.net")
 		  ("Steve Purcell" . "steve@sanityinc.com")
