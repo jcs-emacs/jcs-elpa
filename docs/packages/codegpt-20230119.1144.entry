@@ -1,11 +1,11 @@
 (codegpt .
-	 [(20230117 1708)
+	 [(20230119 1144)
 	  ((emacs
 	    (26 1))
 	   (openai
 	    (0 1 0)))
 	  "Use GPT-3 tp help you write code" single
-	  ((:commit . "c30cf72692445a384fe6637f2340159b9cbcdb5f")
+	  ((:commit . "abbaa8edad5a8dab610b290310140f3d909c8628")
 	   (:authors
 	    ("Jen-Chieh" . "jcs090218@gmail.com"))
 	   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
