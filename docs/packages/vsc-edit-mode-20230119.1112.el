@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vsc-edit-mode
-;; Package-Version: 20230106.1302
-;; Package-Commit: 0b922bbf9bcda7e55745f4c5f6d3dc92edb830ce
+;; Package-Version: 20230119.1112
+;; Package-Commit: e106b4ea1a7ae59e89545f0aa70352acb2a86a45
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (indent-control "0.1.0") (company "0.8.12") (yasnippet "0.8.0") (msgu "0.1.0") (mwim "0.4"))
 ;; Keywords: convenience editing vs
@@ -65,8 +65,9 @@
 (defvar vsc-edit-mode-map
   (let ((map (make-sparse-keymap)))
     (define-key map (kbd "<backspace>") #'vsc-edit-backspace)
-    (define-key map (kbd "S-<backspace>") #'vsc-edit-backspace)
+    (define-key map (kbd "S-<backspace>") #'vsc-edit-real-backspace)
     (define-key map (kbd "<delete>") #'vsc-edit-delete)
+    (define-key map (kbd "S-<delete>") #'vsc-edit-real-delete)
     (define-key map (kbd "SPC") #'vsc-edit-space)
     (define-key map (kbd "S-SPC") #'vsc-edit-real-space)
     (define-key map (kbd "C-v") #'vsc-edit-yank)
