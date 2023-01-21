@@ -5,8 +5,8 @@
 ;; Copyright (C) 2019 Daniele Nicolodi <daniele@grinta.net>
 
 ;; Version: 0
-;; Package-Version: 20221120.2134
-;; Package-Commit: 687775da63784d153a3c1cfee9801090c6b51842
+;; Package-Version: 20230121.2238
+;; Package-Commit: bde2d6c499ce630e4cc4beb79c0dffef2217e7b8
 ;; Author: Martin Blais <blais@furius.ca>
 ;; Author: Stefan Monnier <monnier@iro.umontreal.ca>
 ;; Author: Daniele Nicolodi <daniele@grinta.net>
@@ -426,6 +426,20 @@ With an argument move to the next non cleared transaction."
         (goto-char (match-beginning 0))
         (setq done t)))
     (if (not done) (goto-char (point-max)))))
+
+(defun beancount-goto-previous-transaction (&optional arg)
+  "Move to the previous transaction.
+With an argument move to the previous non cleared transaction."
+  (interactive "P")
+  (beancount-goto-transaction-begin)
+  (let ((done nil))
+    (while (and (not done)
+                (re-search-backward beancount-transaction-regexp nil t))
+      (if (and arg (string-equal (match-string 2) "*"))
+          (goto-char (match-beginning 0))
+        (goto-char (match-beginning 0))
+        (setq done t)))
+    (if (not done) (goto-char (point-min)))))
 
 (defun beancount-find-transaction-extents (p)
   (save-excursion
