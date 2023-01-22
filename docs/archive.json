@@ -297,6 +297,15 @@
     "tree": "https://github.com/emacs-languagetool/eglot-ltex"
   },
   {
+    "name": "ejira",
+    "summary": "org-mode interface to JIRA",
+    "version": "20220622.33",
+    "url": "https://github.com/nyyManni/ejira",
+    "source": "github",
+    "commit": "49cb61239b19bf13775528231d7d49656ec7a8bb",
+    "tree": "https://github.com/nyyManni/ejira"
+  },
+  {
     "name": "eldoc-eask",
     "summary": "Eldoc support for Eask-file",
     "version": "20221231.1640",
