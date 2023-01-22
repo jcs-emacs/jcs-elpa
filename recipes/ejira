@@ -1,0 +1,1 @@
+(ejira :repo "nyyManni/ejira" :fetcher github)
