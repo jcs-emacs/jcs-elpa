@@ -1,0 +1,25 @@
+(ejira .
+       [(20220622 33)
+	((emacs
+	  (25 1))
+	 (org
+	  (8 3))
+	 (s
+	  (1 0))
+	 (f
+	  (1 0))
+	 (ox-jira
+	  (1 0))
+	 (dash
+	  (2 19 1))
+	 (jiralib2
+	  (1 0))
+	 (language-detection
+	  (1 0)))
+	"org-mode interface to JIRA" tar
+	((:commit . "49cb61239b19bf13775528231d7d49656ec7a8bb")
+	 (:authors
+	  ("Henrik Nyman" . "h@nyymanni.com"))
+	 (:maintainer "Henrik Nyman" . "h@nyymanni.com")
+	 (:keywords "calendar" "data" "org" "jira")
+	 (:url . "https://github.com/nyyManni/ejira"))])
