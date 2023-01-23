@@ -5,8 +5,8 @@
 ;; Copyright (C) 2019 Daniele Nicolodi <daniele@grinta.net>
 
 ;; Version: 0
-;; Package-Version: 20230121.2238
-;; Package-Commit: bde2d6c499ce630e4cc4beb79c0dffef2217e7b8
+;; Package-Version: 20230123.1012
+;; Package-Commit: 2f743e62696d9828eccc9016ad14dab39814f08a
 ;; Author: Martin Blais <blais@furius.ca>
 ;; Author: Stefan Monnier <monnier@iro.umontreal.ca>
 ;; Author: Daniele Nicolodi <daniele@grinta.net>
@@ -346,7 +346,7 @@ from the open directive for the relevant account."
     st))
 
 ;;;###autoload
-(define-derived-mode beancount-mode fundamental-mode "Beancount"
+(define-derived-mode beancount-mode prog-mode "Beancount"
   "A mode for Beancount files.
 
 \\{beancount-mode-map}"
