@@ -272,10 +272,10 @@
   {
     "name": "easky",
     "summary": "Control Eask in Emacs",
-    "version": "20230123.858",
+    "version": "20230123.909",
     "url": "https://github.com/emacs-eask/easky",
     "source": "github",
-    "commit": "5192475a9e9de447aa152891937e70f3e331b696",
+    "commit": "2f26d51ddc0053bc74090a4470a856ed1c84bdec",
     "tree": "https://github.com/emacs-eask/easky"
   },
   {
