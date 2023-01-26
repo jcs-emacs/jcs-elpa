@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-modeline
-;; Package-Version: 20230113.1450
-;; Package-Commit: 9f08c46babb6da292cf8a95891079a22ce01b190
+;; Package-Version: 20230126.1215
+;; Package-Commit: 1f0840dfeb7d459d8fc9109579fa1cadb9579f6e
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "28.1") (moody "0.7.1") (minions "0.3.7") (elenv "0.1.0"))
 ;; Keywords: faces mode-line
@@ -51,7 +51,8 @@
     mode-line-front-space
     (:eval (jcs-modeline--render-buffer-identification))
     (:eval (jcs-modeline--render-modes))
-    (:eval (jcs-modeline--render-vc-project)))
+    (:eval (jcs-modeline--render-vc-project))
+    (:eval (jcs-modeline--render-undo-tree-buffer-name)))
   "List of item to render on the left."
   :type 'list
   :group 'jcs-modeline)
@@ -83,6 +84,9 @@
 
 (declare-function string-pixel-width "subr-x.el")   ; TODO: remove this after 29.1
 (declare-function shr-string-pixel-width "shr.el")  ; TODO: remove this after 29.1
+
+(defvar undo-tree-visualizer-buffer-name)
+(defvar undo-tree-visualizer-parent-buffer)
 
 (defvar flymake--state)
 (declare-function flymake-running-backends "ext:flymake.el")
@@ -272,10 +276,16 @@
   "Return project directory path."
   (when-let ((current (project-current))) (project-root current)))
 
+(defcustom jcs-modeline-show-project-name-virutal-buffer nil
+  "If non-nil, display project-name in virutal buffer."
+  :type 'boolean
+  :group 'jcs-modeline)
+
 (defun jcs-modeline--render-vc-project ()
   "Return the project name."
-  (when-let ((project (jcs-modeline--project-root)))
-    (concat " "(file-name-nondirectory (directory-file-name project)))))
+  (when (or (buffer-file-name) jcs-modeline-show-project-name-virutal-buffer)
+    (when-let ((project (jcs-modeline--project-root)))
+      (concat " " (file-name-nondirectory (directory-file-name project))))))
 
 ;;
 ;;; Text Scale
@@ -288,6 +298,15 @@
          "(%+d) "
        "(%-d) ")
      text-scale-mode-amount)))
+
+;;
+;;; Undo
+
+(defun jcs-modeline--render-undo-tree-buffer-name ()
+  "Render text-scale amount."
+  (when (featurep 'undo-tree)
+    (cond ((equal (buffer-name) undo-tree-visualizer-buffer-name)
+           (format " %s" undo-tree-visualizer-parent-buffer)))))
 
 ;;
 ;;; Flymake
