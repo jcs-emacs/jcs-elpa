@@ -612,6 +612,15 @@
     "tree": "https://github.com/elp-revive/jenkinsfile-mode"
   },
   {
+    "name": "jet",
+    "summary": "Emacs integration for jet Clojure tool",
+    "version": "20230125.1944",
+    "url": "https://github.com/ericdallo/jet.el",
+    "source": "github",
+    "commit": "e6f422cd0c48c43deec7701995b0f7082ea8b9a6",
+    "tree": "https://github.com/ericdallo/jet.el"
+  },
+  {
     "name": "kaomoji",
     "summary": "Input kaomoji superb easily",
     "version": "20220727.1634",
