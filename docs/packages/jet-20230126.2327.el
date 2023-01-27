@@ -6,8 +6,8 @@
 ;; Maintainer: Eric Dallo <ercdll1337@gmail.com>
 ;; Created: january 24, 2023
 ;; Version: 0.1.0
-;; Package-Version: 20230125.1944
-;; Package-Commit: e6f422cd0c48c43deec7701995b0f7082ea8b9a6
+;; Package-Version: 20230126.2327
+;; Package-Commit: 014f209d44a9066b7e428b99784aa08e7f8f0e62
 ;; Keywords: tools
 ;; Homepage: https://github.com/ericdallo/jet.el
 ;; Package-Requires: ((emacs "27.1") (transient "0.3.7"))
@@ -21,6 +21,7 @@
 ;;; Code:
 
 (require 'transient)
+(require 'subr-x)
 
 (defcustom jet-command "jet"
   "The jet command name to run."
