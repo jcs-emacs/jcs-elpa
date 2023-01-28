@@ -1,11 +1,11 @@
 (jet .
-     [(20230128 1441)
+     [(20230128 1826)
       ((emacs
 	(27 1))
        (transient
 	(0 3 7)))
       "Emacs integration for jet Clojure tool" single
-      ((:commit . "e156beb7cfded964906a964e9956c4226fc9b494")
+      ((:commit . "952eb1f5c176a6fa05696de1a01d2bf77544dad8")
        (:authors
 	("Eric Dallo" . "ercdll1337@gmail.com"))
        (:maintainer "Eric Dallo" . "ercdll1337@gmail.com")

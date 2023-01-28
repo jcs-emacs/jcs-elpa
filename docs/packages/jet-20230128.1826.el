@@ -6,8 +6,8 @@
 ;; Maintainer: Eric Dallo <ercdll1337@gmail.com>
 ;; Created: january 24, 2023
 ;; Version: 0.1.0
-;; Package-Version: 20230128.1441
-;; Package-Commit: e156beb7cfded964906a964e9956c4226fc9b494
+;; Package-Version: 20230128.1826
+;; Package-Commit: 952eb1f5c176a6fa05696de1a01d2bf77544dad8
 ;; Keywords: tools
 ;; Homepage: https://github.com/ericdallo/jet.el
 ;; Package-Requires: ((emacs "27.1") (transient "0.3.7"))
@@ -58,7 +58,10 @@
   (jet--assert-jet-on-path)
   (with-output-to-string
     (with-current-buffer standard-output
-      (shell-command (string-join (append (list command) args) " ") t jet-error-buffer-name))))
+      (shell-command
+       (string-join (append (list command) (seq-map #'shell-quote-argument args)) " ")
+       t
+       jet-error-buffer-name))))
 
 (defun jet--thing-at-point ()
   "Return the active region or the thing at point."
