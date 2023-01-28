@@ -6,8 +6,8 @@
 ;; Maintainer: Eric Dallo <ercdll1337@gmail.com>
 ;; Created: january 24, 2023
 ;; Version: 0.1.0
-;; Package-Version: 20230126.2327
-;; Package-Commit: 014f209d44a9066b7e428b99784aa08e7f8f0e62
+;; Package-Version: 20230128.1441
+;; Package-Commit: e156beb7cfded964906a964e9956c4226fc9b494
 ;; Keywords: tools
 ;; Homepage: https://github.com/ericdallo/jet.el
 ;; Package-Requires: ((emacs "27.1") (transient "0.3.7"))
@@ -21,7 +21,7 @@
 ;;; Code:
 
 (require 'transient)
-(require 'subr-x)
+(eval-when-compile (require 'subr-x))
 
 (defcustom jet-command "jet"
   "The jet command name to run."
@@ -34,7 +34,7 @@
   :type '(repeat string))
 
 (defcustom jet-menu-max-length-to-echo 70
-  "The max length to show echo region in jet-menu."
+  "The max length to show echo region in 'jet-menu'."
   :group 'jet
   :type 'number)
 
@@ -42,6 +42,11 @@
 
 (defvar jet-output-buffer-name "*jet output*")
 (defvar jet-error-buffer-name "*jet error*")
+
+(defvar jet-major-mode-alist '(("edn" . 'clojure-mode)
+                               ("json" . 'json-mode)
+                               ("yaml" . 'yaml-mode)
+                               ("transit" . 'ignore)))
 
 (defun jet--assert-jet-on-path ()
   "Asserts if jet is on path."
@@ -63,36 +68,28 @@
      (thing-at-point 'sexp t))))
 
 (defun jet--major-mode-fn-for (to)
-  "Retunrn the major mode function for TO."
-  (or (cond ((string= "edn" to) (and (functionp 'clojure-mode) #'clojure-mode))
-            ((string= "json" to) (and (functionp 'json-mode) #'json-mode))
-            ((string= "yaml" to) (and (functionp 'yaml-mode) #'yaml-mode))
-            ((string= "transit" to) nil)
-            (t (and (functionp 'clojure-mode) #'clojure-mode)))
-      (lambda ())))
+  "Return the major mode function for TO."
+  (alist-get to jet-major-mode-alist 'clojure-mode nil #'string=))
 
 (defun jet-menu--suffixes->args (suffixes)
   "Transform SUFFIXES in a single string."
   (string-join
-   (thread-last
-     suffixes
-     (seq-filter (lambda (obj)
-                   (cl-typep obj 'transient-option)))
-     (seq-map (lambda (obj)
-                (when-let (arg (oref obj value))
-                  (concat (oref obj argument) (oref obj value))))))
+   (delq nil (seq-map (lambda (obj)
+                        (when-let (((cl-typep obj 'transient-option))
+                                   (arg (oref obj value)))
+                          (concat (oref obj argument) arg)))
+                      suffixes))
    " "))
 
 (defun jet-menu--transient-suffix-by-name (name suffixes)
   "Return transient-sufix by NAME checking SUFFIXES."
-  (thread-last
-    suffixes
-    (seq-find (lambda (obj)
-                (and (cl-typep obj 'transient-option)
-                     (equal name (oref obj argument)))))))
+  (seq-find (lambda (obj)
+              (and (cl-typep obj 'transient-option)
+                   (equal name (oref obj argument))))
+            suffixes))
 
 (defun jet-menu--command ()
-  "Return the command description for the jet-menu transient."
+  "Return the command description for the 'jet-menu' transient."
   (let* ((command jet-command)
          (args (jet-menu--suffixes->args transient--suffixes))
          (thing (oref transient--prefix scope))
@@ -110,7 +107,7 @@
          args))
 
 (defun jet-menu--interactive-args ()
-  "Interactive args for jet-menu--run functions."
+  "Interactive args for 'jet-menu--run' functions."
   (list (or (and transient-current-prefix (oref transient-current-prefix scope))
             (jet--thing-at-point))
         (or (transient-args transient-current-command)
@@ -195,6 +192,7 @@
 
 ;; Public API
 
+;;;###autoload
 (defun jet-print (thing &optional args)
   "Run jet for THING at cursor and ARGS printing to messages buffer."
   (interactive (jet-menu--interactive-args))
@@ -202,6 +200,7 @@
     (message (jet--fontlock-string-with-mode (string-trim (jet-menu--run thing args))
                                              (jet--major-mode-fn-for to)))))
 
+;;;###autoload
 (defun jet-paste-cursor (thing &optional args)
   "Run jet for THING at cursor and ARGS pasting to current buffer."
   (interactive (jet-menu--interactive-args))
@@ -210,6 +209,7 @@
         (replace-region-contents (region-beginning) (region-end) (lambda () result))
       (insert result))))
 
+;;;###autoload
 (defun jet-paste-buffer (thing &optional args)
   "Run jet for THING at cursor and ARGS pasting to current buffer."
   (interactive (jet-menu--interactive-args))
@@ -226,6 +226,7 @@
         (delay-mode-hooks (funcall (jet--major-mode-fn-for to))))
       (display-buffer (current-buffer)))))
 
+;;;###autoload
 (defun jet-to-clipboard (thing &optional args)
   "Run jet for THING at cursor and ARGS copying to clipboard."
   (interactive (jet-menu--interactive-args))
@@ -234,6 +235,7 @@
     (clipboard-kill-region (point-min) (point-max)))
   (message "Copied jet result to clipboard"))
 
+;;;###autoload
 (defun jet-debug (thing &optional args)
   "Print the jet command for THING at cursor and ARGS."
   (interactive (jet-menu--interactive-args))
