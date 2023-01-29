@@ -6,8 +6,8 @@
 ;; Maintainer: Eric Dallo <ercdll1337@gmail.com>
 ;; Created: january 24, 2023
 ;; Version: 0.1.0
-;; Package-Version: 20230128.1826
-;; Package-Commit: 952eb1f5c176a6fa05696de1a01d2bf77544dad8
+;; Package-Version: 20230129.1911
+;; Package-Commit: 9c69b90e1e8d93e3c08a0ee161878b0ed1bf599f
 ;; Keywords: tools
 ;; Homepage: https://github.com/ericdallo/jet.el
 ;; Package-Requires: ((emacs "27.1") (transient "0.3.7"))
@@ -34,7 +34,7 @@
   :type '(repeat string))
 
 (defcustom jet-menu-max-length-to-echo 70
-  "The max length to show echo region in 'jet-menu'."
+  "The max length to show echo region in `jet-menu'."
   :group 'jet
   :type 'number)
 
@@ -92,7 +92,7 @@
             suffixes))
 
 (defun jet-menu--command ()
-  "Return the command description for the 'jet-menu' transient."
+  "Return the command description for the `jet-menu' transient."
   (let* ((command jet-command)
          (args (jet-menu--suffixes->args transient--suffixes))
          (thing (oref transient--prefix scope))
@@ -110,7 +110,7 @@
          args))
 
 (defun jet-menu--interactive-args ()
-  "Interactive args for 'jet-menu--run' functions."
+  "Interactive args for `jet-menu--run' functions."
   (list (or (and transient-current-prefix (oref transient-current-prefix scope))
             (jet--thing-at-point))
         (or (transient-args transient-current-command)
