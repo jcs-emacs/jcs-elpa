@@ -614,10 +614,10 @@
   {
     "name": "jet",
     "summary": "Emacs integration for jet Clojure tool",
-    "version": "20230128.1826",
+    "version": "20230129.1911",
     "url": "https://github.com/ericdallo/jet.el",
     "source": "github",
-    "commit": "952eb1f5c176a6fa05696de1a01d2bf77544dad8",
+    "commit": "9c69b90e1e8d93e3c08a0ee161878b0ed1bf599f",
     "tree": "https://github.com/ericdallo/jet.el"
   },
   {
