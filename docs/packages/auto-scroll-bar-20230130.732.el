@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/auto-scroll-bar
-;; Package-Version: 20230103.2027
-;; Package-Commit: aea10fca21f5dce37247cfef598842fe91b546fe
+;; Package-Version: 20230130.732
+;; Package-Commit: 3ddec689d2c6c45dffdb04b7b735154b6a0d4a50
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: convenience scrollbar
@@ -130,20 +130,26 @@
   (and
    horizontal-scroll-bar
    truncate-lines
-   (save-excursion
-     (move-to-window-line 0)
-     (let* ((win-w (auto-scroll-bar--window-width))
-            (win-h (auto-scroll-bar--window-height))
-            (count 0) (target win-h) break)
-       (while (and (not (eobp)) (< count target) (not break))
-         (let* ((line-str (buffer-substring-no-properties
-                           (line-beginning-position) (line-end-position)))
-                (line-len (auto-scroll-bar--str-len line-str)))
-           (if (< win-w line-len)
-               (setq break t)
-             (forward-line 1)
-             (cl-incf count))))
-       break))))
+   (or
+    ;; (1) When window not align to the left!
+    (let ((w-hscroll (max (- (window-hscroll) hscroll-step) 0)))
+      (and (not (zerop w-hscroll))
+           (<= w-hscroll (current-column))))
+    ;; (2) When at least one line exceeds the current window width
+    (save-excursion
+      (move-to-window-line 0)
+      (let* ((win-w (auto-scroll-bar--window-width))
+             (win-h (auto-scroll-bar--window-height))
+             (count 0) (target win-h) break)
+        (while (and (not (eobp)) (< count target) (not break))
+          (let* ((line-str (buffer-substring-no-properties
+                            (line-beginning-position) (line-end-position)))
+                 (line-len (auto-scroll-bar--str-len line-str)))
+            (if (< win-w line-len)
+                (setq break t)
+              (forward-line 1)
+              (cl-incf count))))
+        break)))))
 
 (defun auto-scroll-bar--disabled-p ()
   "Return non-nil if scroll-bars should be ignored."
