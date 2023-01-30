@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-openai/codegpt
-;; Package-Version: 20230119.1144
-;; Package-Commit: abbaa8edad5a8dab610b290310140f3d909c8628
+;; Package-Version: 20230130.752
+;; Package-Commit: cd27dd47ed1f128918dcad7d05b1144554b617a2
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (openai "0.1.0"))
 ;; Keywords: convenience codegpt
@@ -54,6 +54,7 @@
 
 (defmacro codegpt--ask-in-buffer (instruction &rest body)
   "Insert INSTRUCTION then execute BODY form."
+  (declare (indent 1))
   `(progn
      (openai--pop-to-buffer codegpt-buffer-name)  ; create it
      (openai--with-buffer codegpt-buffer-name
@@ -68,23 +69,22 @@ The partial code is defined in with the region, and the START nad END are
 boundaries of that region in buffer."
   (let ((text (string-trim (buffer-substring start end)))
         (original-window (selected-window)))
-    (codegpt--ask-in-buffer
-     instruction
-     (insert text "\n\n")
-     (openai-completion
-      (buffer-string)
-      (lambda (data)
-        (openai--with-buffer codegpt-buffer-name
-          (openai--pop-to-buffer codegpt-buffer-name)
-          (let* ((choices (openai-completion--data-choices data))
-                 (result (openai-completion--get-choice choices))
-                 (original-point (point)))
-            (insert (string-trim result) "\n")
-            (fill-region original-point (point))))
-        (unless codegpt-focus-p
-          (select-window original-window))))
-     (unless codegpt-focus-p
-       (select-window original-window)))))
+    (codegpt--ask-in-buffer instruction
+      (insert text "\n\n")
+      (openai-completion
+       (buffer-string)
+       (lambda (data)
+         (openai--with-buffer codegpt-buffer-name
+           (openai--pop-to-buffer codegpt-buffer-name)
+           (let* ((choices (openai-completion--data-choices data))
+                  (result (openai-completion--get-choice choices))
+                  (original-point (point)))
+             (insert (string-trim result) "\n")
+             (fill-region original-point (point))))
+         (unless codegpt-focus-p
+           (select-window original-window))))
+      (unless codegpt-focus-p
+        (select-window original-window)))))
 
 ;;;###autoload
 (defun codegpt-doc (start end)
