@@ -3,8 +3,8 @@
 ;; Author: Colin McLear
 ;; Maintainer: Colin McLear
 ;; Version: 0.2.0
-;; Package-Version: 20230131.1537
-;; Package-Commit: ad3e54767073bac478719577cc6c841ba1e59f41
+;; Package-Version: 20230131.1746
+;; Package-Commit: 8e7ac42da76573a049b3443f36ab4261a4af83d3
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/Lambda-Emacs/lambda-line
 ;; Keywords: mode-line faces
@@ -805,7 +805,12 @@ STATUS, NAME, PRIMARY, and SECONDARY are always displayed. TERTIARY is displayed
 
          (prefix (cond ((eq lambda-line-prefix nil) "")
                        (t
-                        (cond ((window-dedicated-p) (if (display-graphic-p) " ––" " --"))
+                        (cond ((derived-mode-p 'term-mode) " >_")
+                              ((derived-mode-p 'vterm-mode) " >_")
+                              ((derived-mode-p 'eshell-mode) " λ:")
+                              ((derived-mode-p 'Info-mode) " ℹ")
+                              ((derived-mode-p 'help-mode) " ")
+                              ((derived-mode-p 'helpful-mode) " ")
                               ((eq status 'read-only)
                                (if (display-graphic-p) lambda-line-gui-ro-symbol
                                  lambda-line-tty-ro-symbol))
@@ -813,13 +818,7 @@ STATUS, NAME, PRIMARY, and SECONDARY are always displayed. TERTIARY is displayed
                                                          lambda-line-tty-rw-symbol))
                               ((eq status 'modified)   (if (display-graphic-p) lambda-line-gui-mod-symbol
                                                          lambda-line-tty-mod-symbol))
-                              ;; special modes
-                              ((derived-mode-p 'term-mode) " >_")
-                              ((derived-mode-p 'vterm-mode) " >_")
-                              ((derived-mode-p 'eshell-mode) " λ:")
-                              ((derived-mode-p 'Info-mode) " ℹ")
-                              ((derived-mode-p 'help-mode) " ")
-                              ((derived-mode-p 'helpful-mode) " ")
+                              ((window-dedicated-p) (if (display-graphic-p) " ––" " --"))
                               ;; otherwise just use rw symbol
                               (t (if (display-graphic-p) lambda-line-gui-rw-symbol
                                    lambda-line-tty-rw-symbol))))))
@@ -1092,7 +1091,9 @@ STATUS, NAME, PRIMARY, and SECONDARY are always displayed. TERTIARY is displayed
 (defun lambda-line-eshell-mode ()
   (lambda-line-compose " >_ "
                        "Eshell"
-                       ""
+                       (concat lambda-line-display-group-start
+                               (buffer-name)
+                               lambda-line-display-group-end)
                        ""
                        (concat (lambda-line-shorten-directory default-directory 32)
                                (lambda-line-time))))
@@ -1440,8 +1441,8 @@ STATUS, NAME, PRIMARY, and SECONDARY are always displayed. TERTIARY is displayed
   "Encapsulates the call to the variable mu4e-/~server-props
 depending on the version of mu4e."
   (if (version< mu4e-mu-version "1.6.0")
-      mu4e~server-props
-    mu4e--server-props))
+      mu4e--server-props
+    mu4e~server-props))
 
 (defun lambda-line-mu4e-activate ()
   (with-eval-after-load 'mu4e
@@ -1501,8 +1502,8 @@ depending on the version of mu4e."
 ;; ---------------------------------------------------------------------
 (defun lambda-line-mu4e-quote (str)
   (if (version< "1.6.5" mu4e-mu-version)
-      (mu4e~quote-for-modeline str)
-    (mu4e-quote-for-modeline str)))
+      (mu4e-quote-for-modeline str)
+    (mu4e~quote-for-modeline str)))
 
 (defun lambda-line-mu4e-headers-mode-p ()
   (derived-mode-p 'mu4e-headers-mode))
