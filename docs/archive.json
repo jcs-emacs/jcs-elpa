@@ -459,6 +459,15 @@
     "tree": "https://github.com/flymake/flymake-eask"
   },
   {
+    "name": "flymake-elsa",
+    "summary": "Flymake integration for Elsa",
+    "version": "20230131.1211",
+    "url": "https://github.com/flymake/flymake-elsa",
+    "source": "github",
+    "commit": "f4f05ab17c57486dcb715ee6f42db2d95a1737d8",
+    "tree": "https://github.com/flymake/flymake-elsa"
+  },
+  {
     "name": "flymake-vale",
     "summary": "flymake integration for vale",
     "version": "20221116.1718",
