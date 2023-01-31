@@ -3,8 +3,8 @@
 ;; Author: Colin McLear
 ;; Maintainer: Colin McLear
 ;; Version: 0.2.0
-;; Package-Version: 20221124.126
-;; Package-Commit: 22186321a7442f1bd3b121f739007bd809cb38f8
+;; Package-Version: 20230131.1537
+;; Package-Commit: ad3e54767073bac478719577cc6c841ba1e59f41
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/Lambda-Emacs/lambda-line
 ;; Keywords: mode-line faces
@@ -224,10 +224,6 @@ Time info is only shown `display-time-mode' is non-nil"
                             :on-deactivate lambda-line-prog-deactivate)
     (mu4e-dashboard-mode    :mode-p lambda-line-mu4e-dashboard-mode-p
                             :format lambda-line-mu4e-dashboard-mode)
-    (fundamental-mode       :mode-p lambda-line-fundamental-mode-p
-                            :format lambda-line-fundamental-mode)
-    (text-mode              :mode-p lambda-line-text-mode-p
-                            :format lambda-line-text-mode)
     (messages-mode          :mode-p lambda-line-messages-mode-p
                             :format lambda-line-messages-mode)
     (message-mode           :mode-p lambda-line-message-mode-p
@@ -290,6 +286,10 @@ Time info is only shown `display-time-mode' is non-nil"
                             :on-deactivate lambda-line-org-clock-deactivate)
     (pdf-view-mode          :mode-p lambda-line-pdf-view-mode-p
                             :format lambda-line-pdf-view-mode)
+    (fundamental-mode       :mode-p lambda-line-fundamental-mode-p
+                            :format lambda-line-fundamental-mode)
+    (text-mode              :mode-p lambda-line-text-mode-p
+                            :format lambda-line-text-mode)
 
     ;; hooks only go last
     (ein-notebook-mode      :on-activate lambda-line-ein-notebook-activate
@@ -1321,6 +1321,7 @@ STATUS, NAME, PRIMARY, and SECONDARY are always displayed. TERTIARY is displayed
                                  (when branch
                                    branch)
                                  lambda-line-display-group-end)
+			 ""
                          (concat
                           ;; Narrowed buffer
                           (when (buffer-narrowed-p)
