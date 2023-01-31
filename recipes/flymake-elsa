@@ -1,0 +1,1 @@
+(flymake-elsa :repo "flymake/flymake-elsa" :fetcher github)
