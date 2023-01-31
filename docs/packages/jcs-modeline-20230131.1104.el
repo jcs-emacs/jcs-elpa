@@ -5,9 +5,9 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-modeline
-;; Package-Version: 20230126.1215
-;; Package-Commit: 1f0840dfeb7d459d8fc9109579fa1cadb9579f6e
-;; Version: 0.1.0
+;; Package-Version: 20230131.1104
+;; Package-Commit: 83d6a8894752597ba515f929511ca2b0c106aaa3
+;; Version: 0.1.1
 ;; Package-Requires: ((emacs "28.1") (moody "0.7.1") (minions "0.3.7") (elenv "0.1.0"))
 ;; Keywords: faces mode-line
 
@@ -142,6 +142,10 @@
 ;; (@* "Util" )
 ;;
 
+(defun jcs-modeline-2str (obj)
+  "Convert OBJ to string."
+  (format "%s" obj))
+
 ;; TODO: Use function `string-pixel-width' after 29.1
 (defun jcs-modeline--string-pixel-width (str)
   "Return the width of STR in pixels."
@@ -260,9 +264,17 @@
 ;;
 ;;; Line and Columns
 
+(defcustom jcs-modeline-show-point nil
+  "If non-nil, also shows point information."
+  :type 'boolean
+  :group 'jcs-modeline)
+
 (defun jcs-modeline--render-line-columns ()
   "Render current line number and column."
-  (moody-tab "%l : %c" 0 'up))
+  (moody-tab (if jcs-modeline-show-point
+                 (concat "%l %c" (format " (%s)" (point)))
+               "%l : %c")
+             0 'up))
 
 ;;
 ;;; Project
