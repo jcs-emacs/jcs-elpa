@@ -3,8 +3,8 @@
 ;; Author: Colin McLear
 ;; Maintainer: Colin McLear
 ;; Version: 0.2.0
-;; Package-Version: 20230131.1746
-;; Package-Commit: 8e7ac42da76573a049b3443f36ab4261a4af83d3
+;; Package-Version: 20230202.546
+;; Package-Commit: d2349553b704af9d441604a121877f39fff1e10f
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://github.com/Lambda-Emacs/lambda-line
 ;; Keywords: mode-line faces
@@ -1429,7 +1429,6 @@ STATUS, NAME, PRIMARY, and SECONDARY are always displayed. TERTIARY is displayed
 
 (defun lambda-line-mu4e-context ()
   "Return the current mu4e context as a non propertized string."
-
   (if (> (length (mu4e-context-label)) 0)
       (concat
        lambda-line-display-group-start
@@ -1441,8 +1440,8 @@ STATUS, NAME, PRIMARY, and SECONDARY are always displayed. TERTIARY is displayed
   "Encapsulates the call to the variable mu4e-/~server-props
 depending on the version of mu4e."
   (if (version< mu4e-mu-version "1.6.0")
-      mu4e--server-props
-    mu4e~server-props))
+      mu4e~server-props
+    mu4e--server-props))
 
 (defun lambda-line-mu4e-activate ()
   (with-eval-after-load 'mu4e
@@ -1460,18 +1459,17 @@ depending on the version of mu4e."
                        (format "%d messages"
                                (plist-get (lambda-line-mu4e-server-props) :doccount))
                        ""
-                       nil
+                       ""
                        (lambda-line-time)))
 
 ;; ---------------------------------------------------------------------
 (defun lambda-line-mu4e-loading-mode-p ()
   (derived-mode-p 'mu4e-loading-mode))
 
-
 (defun lambda-line-mu4e-loading-mode ()
   (lambda-line-compose (lambda-line-status)
                        (format-time-string "%A %d %B %Y, %H:%M ")
-                       nil
+                       ""
                        "Loading..."
                        (lambda-line-mu4e-context)))
 
@@ -1483,7 +1481,7 @@ depending on the version of mu4e."
   (lambda-line-compose (lambda-line-status)
                        (format-time-string "%A %d %B %Y, %H:%M ")
                        ""
-                       nil
+                       ""
                        (lambda-line-mu4e-context)))
 
 ;; ---------------------------------------------------------------------
@@ -1501,25 +1499,27 @@ depending on the version of mu4e."
 
 ;; ---------------------------------------------------------------------
 (defun lambda-line-mu4e-quote (str)
-  (if (version< "1.6.5" mu4e-mu-version)
-      (mu4e-quote-for-modeline str)
-    (mu4e~quote-for-modeline str)))
+  (if (version< mu4e-mu-version "1.8.0")
+      (mu4e~quote-for-modeline str)
+    (mu4e-quote-for-modeline str)))
 
 (defun lambda-line-mu4e-headers-mode-p ()
   (derived-mode-p 'mu4e-headers-mode))
 
 (defun lambda-line-mu4e-headers-mode ()
   (let ((mu4e-modeline-max-width 80))
-    (lambda-line-compose (lambda-line-status)
-                         "Search:"
-                         (or (lambda-line-mu4e-quote
-                              (lambda-line-mu4e-last-query)) "")
-                         ""
-                         (concat
-                          (format "[%s] "
-                                  (lambda-line-mu4e-quote
-                                   (mu4e-context-name (mu4e-context-current))))
-                          (lambda-line-time)))))
+    (lambda-line-compose
+     (lambda-line-status)
+     "Search:"
+     (or (lambda-line-mu4e-quote
+          (lambda-line-mu4e-last-query)) "")
+     ""
+     (concat
+      (format "[%s] "
+              (lambda-line-mu4e-quote
+               (mu4e-context-name (mu4e-context-current))))
+      (or (lambda-line-time) "")))))
+
 ;; ---------------------------------------------------------------------
 (defun lambda-line-mu4e-view-mode-p ()
   (derived-mode-p 'mu4e-view-mode))
@@ -1534,7 +1534,7 @@ depending on the version of mu4e."
                          (concat lambda-line-display-group-start
                                  (lambda-line-truncate (or subject "") 50 "…")
                                  lambda-line-display-group-end)
-                         nil
+                         ""
                          (concat (or (format-time-string mu4e-headers-date-format date) "") " "))))
 
 (defun lambda-line-mu4e-activate ()
@@ -1551,7 +1551,7 @@ depending on the version of mu4e."
     (lambda-line-compose (if (ein:notebook-modified-p) "MD" "RW")
                          buffer-name
                          ""
-                         nil
+                         ""
                          (concat
                           (ein:header-line)
                           (lambda-line-time)))))
