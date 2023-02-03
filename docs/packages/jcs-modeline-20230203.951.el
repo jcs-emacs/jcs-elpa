@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-modeline
-;; Package-Version: 20230131.1104
-;; Package-Commit: 83d6a8894752597ba515f929511ca2b0c106aaa3
+;; Package-Version: 20230203.951
+;; Package-Commit: 347803a82b8635320ac73961c874f1756f2ab18b
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "28.1") (moody "0.7.1") (minions "0.3.7") (elenv "0.1.0"))
 ;; Keywords: faces mode-line
@@ -52,7 +52,8 @@
     (:eval (jcs-modeline--render-buffer-identification))
     (:eval (jcs-modeline--render-modes))
     (:eval (jcs-modeline--render-vc-project))
-    (:eval (jcs-modeline--render-undo-tree-buffer-name)))
+    (:eval (jcs-modeline--render-undo-tree-buffer-name))
+    (:eval (jcs-modeline--render-undo-tree-status)))
   "List of item to render on the left."
   :type 'list
   :group 'jcs-modeline)
@@ -85,8 +86,18 @@
 (declare-function string-pixel-width "subr-x.el")   ; TODO: remove this after 29.1
 (declare-function shr-string-pixel-width "shr.el")  ; TODO: remove this after 29.1
 
+(defvar buffer-undo-tree)
 (defvar undo-tree-visualizer-buffer-name)
 (defvar undo-tree-visualizer-parent-buffer)
+(declare-function undo-tree-current "ext:undo-tree.el")
+(declare-function undo-tree-root "ext:undo-tree.el")
+(declare-function undo-tree-node-next "ext:undo-tree.el")
+(declare-function undo-tree-node-previous "ext:undo-tree.el")
+(declare-function undo-tree-node-branch "ext:undo-tree.el")
+(declare-function undo-tree-count "ext:undo-tree.el")
+(declare-function undo-tree-size "ext:undo-tree.el")
+(declare-function undo-tree-node-timestamp "ext:undo-tree.el")
+(declare-function undo-tree-timestamp-to-string "ext:undo-tree.el")
 
 (defvar flymake--state)
 (declare-function flymake-running-backends "ext:flymake.el")
@@ -319,6 +330,34 @@
   (when (featurep 'undo-tree)
     (cond ((equal (buffer-name) undo-tree-visualizer-buffer-name)
            (format " %s" undo-tree-visualizer-parent-buffer)))))
+
+(defun jcs-modeline--undo-tree-branch-height (root)
+  "Return the total height of the current branch."
+  (let ((count 0))
+    (while (setq root (nth (undo-tree-node-branch root)
+                           (undo-tree-node-next root)))
+      (cl-incf count))
+    count))
+
+(defun jcs-modeline--undo-tree-height (node)
+  "Return NODE's current height."
+  (let ((count 0))
+    (while (setq node (undo-tree-node-previous node))
+      (cl-incf count))
+    count))
+
+(defun jcs-modeline--render-undo-tree-status ()
+  "Render text-scale amount."
+  (when (and buffer-undo-tree
+             (equal (buffer-name) undo-tree-visualizer-buffer-name))
+    (let* ((root (undo-tree-root buffer-undo-tree))
+           (node (undo-tree-current buffer-undo-tree))
+           (timestamp (undo-tree-node-timestamp node)))
+      (format " %s/%s/%s (%s) %s" (jcs-modeline--undo-tree-height node)
+              (jcs-modeline--undo-tree-branch-height root)
+              (undo-tree-count buffer-undo-tree)
+              (undo-tree-size buffer-undo-tree)
+              (string-trim (undo-tree-timestamp-to-string timestamp))))))
 
 ;;
 ;;; Flymake
