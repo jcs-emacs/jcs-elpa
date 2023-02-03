@@ -605,10 +605,10 @@
   {
     "name": "jcs-modeline",
     "summary": "A modeline for jcs-emacs",
-    "version": "20230203.951",
+    "version": "20230203.1005",
     "url": "https://github.com/jcs-emacs/jcs-modeline",
     "source": "github",
-    "commit": "347803a82b8635320ac73961c874f1756f2ab18b",
+    "commit": "9ccf3ef002527f3cf8a2036a944d83c27fe400b7",
     "tree": "https://github.com/jcs-emacs/jcs-modeline"
   },
   {
