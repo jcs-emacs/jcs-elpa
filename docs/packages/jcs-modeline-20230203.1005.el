@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-modeline
-;; Package-Version: 20230203.951
-;; Package-Commit: 347803a82b8635320ac73961c874f1756f2ab18b
+;; Package-Version: 20230203.1005
+;; Package-Commit: 9ccf3ef002527f3cf8a2036a944d83c27fe400b7
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "28.1") (moody "0.7.1") (minions "0.3.7") (elenv "0.1.0"))
 ;; Keywords: faces mode-line
@@ -348,7 +348,7 @@
 
 (defun jcs-modeline--render-undo-tree-status ()
   "Render text-scale amount."
-  (when (and buffer-undo-tree
+  (when (and (featurep 'undo-tree) buffer-undo-tree
              (equal (buffer-name) undo-tree-visualizer-buffer-name))
     (let* ((root (undo-tree-root buffer-undo-tree))
            (node (undo-tree-current buffer-undo-tree))
