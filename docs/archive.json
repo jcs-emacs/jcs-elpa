@@ -38,10 +38,10 @@
   {
     "name": "beancount",
     "summary": "A major mode to edit Beancount input files.",
-    "version": "20230123.1012",
+    "version": "20230204.2036",
     "url": "https://github.com/beancount/beancount-mode",
     "source": "github",
-    "commit": "2f743e62696d9828eccc9016ad14dab39814f08a",
+    "commit": "519bfd868f206ed2fc538a57cdb631c4fec3c93e",
     "tree": "https://github.com/beancount/beancount-mode"
   },
   {
