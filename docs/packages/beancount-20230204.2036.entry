@@ -1,7 +1,7 @@
 (beancount .
-	   [(20230123 1012)
+	   [(20230204 2036)
 	    nil "A major mode to edit Beancount input files." single
-	    ((:commit . "2f743e62696d9828eccc9016ad14dab39814f08a")
+	    ((:commit . "519bfd868f206ed2fc538a57cdb631c4fec3c93e")
 	     (:authors
 	      ("Martin Blais" . "blais@furius.ca"))
 	     (:maintainer "Martin Blais" . "blais@furius.ca"))])

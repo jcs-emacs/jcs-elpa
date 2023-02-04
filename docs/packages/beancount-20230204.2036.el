@@ -5,8 +5,8 @@
 ;; Copyright (C) 2019 Daniele Nicolodi <daniele@grinta.net>
 
 ;; Version: 0
-;; Package-Version: 20230123.1012
-;; Package-Commit: 2f743e62696d9828eccc9016ad14dab39814f08a
+;; Package-Version: 20230204.2036
+;; Package-Commit: 519bfd868f206ed2fc538a57cdb631c4fec3c93e
 ;; Author: Martin Blais <blais@furius.ca>
 ;; Author: Stefan Monnier <monnier@iro.umontreal.ca>
 ;; Author: Daniele Nicolodi <daniele@grinta.net>
