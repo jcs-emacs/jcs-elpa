@@ -252,7 +252,7 @@
     "tree": "https://github.com/jcs-elpa/cycle-slash"
   },
   {
-    "name": "eask-api",
+    "name": "eask",
     "summary": "Core Eask APIs",
     "version": "20230205.2138",
     "url": "https://github.com/emacs-eask/eask-api",
