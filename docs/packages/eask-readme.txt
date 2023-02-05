@@ -1,2 +1,2 @@
 
-Provide Eask API for your elisp environment.
+Entry file to preempt the name `eask'
