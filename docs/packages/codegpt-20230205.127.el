@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-openai/codegpt
-;; Package-Version: 20230130.752
-;; Package-Commit: cd27dd47ed1f128918dcad7d05b1144554b617a2
+;; Package-Version: 20230205.127
+;; Package-Commit: 850eea164efaf7e6b3341feb254f4f8fa49dacd1
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (openai "0.1.0"))
 ;; Keywords: convenience codegpt
@@ -48,6 +48,24 @@
 
 (defconst codegpt-buffer-name "*CodeGPT*"
   "Buffer name to do completion task.")
+
+(defcustom codegpt-action-alist
+  `(("custom"  . "Write your own instruction")
+    ("doc"     . "Automatically write documentation for your code")
+    ("fix"     . "Find problems with it")
+    ("explain" . "Explain the selected code")
+    ("improve" . "Improve, refactor or optimize it"))
+  "Alist of code completion actions and its' description."
+  :type 'list
+  :group 'codegpt)
+
+(defconst codegpt--actions-functions
+  '(("custom"  . codegpt-custom)
+    ("doc"     . codegpt-doc)
+    ("fix"     . codegpt-fix)
+    ("explain" . codegpt-explain)
+    ("improve" . codegpt-improve))
+  "Alist of code completion actions and its functions.")
 
 ;;
 ;;; Application
@@ -141,17 +159,16 @@ that region in buffer."
    (read-string "Instruction: ")
    start end))
 
-(defconst codegpt-action-alist
-  `(("custom"  . "Write your own instruction")
-    ("doc"     . "Automatically write documentation for your code")
-    ("fix"     . "Find problems with it")
-    ("explain" . "Explain the selected code")
-    ("improve" . "Improve, refactor or optimize it"))
-  "Alist of code completion actions and its' description.")
+(defun codegept--execute-predefined-template (start end question)
+  "Ask predefined QUESTION for provided region.
+the START and END are boundaries of that region in buffer."
+  (codegpt--internal
+   question
+   start end))
 
 ;;;###autoload
 (defun codegpt (start end)
-  "Do completon with OpenAI to your code.
+  "Do completion with OpenAI to your code.
 
 This command is interactive region only, the START and END are boundaries of
 that region in buffer."
@@ -170,15 +187,14 @@ that region in buffer."
                        (concat (propertize " " 'display `((space :align-to (- right ,offset))))
                                (cdr (assoc cand codegpt-action-alist))))))
              (complete-with-action action codegpt-action-alist string predicate)))
-         nil t)))
-    (funcall
-     (pcase action
-       ("custom"  #'codegpt-custom)
-       ("doc"     #'codegpt-doc)
-       ("fix"     #'codegpt-fix)
-       ("explain" #'codegpt-explain)
-       ("improve" #'codegpt-improve))
-     start end)))
+         nil t))
+       (action-fn (cdr-safe (assoc action codegpt--actions-functions))))
+    (if action-fn
+        (funcall action-fn start end)
+      (codegept--execute-predefined-template
+       start
+       end
+       (cdr (assoc action codegpt-action-alist))))))
 
 (provide 'codegpt)
 ;;; codegpt.el ends here
