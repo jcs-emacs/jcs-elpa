@@ -5,10 +5,10 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-eask/eask-mode
-;; Package-Version: 20221231.1640
-;; Package-Commit: f02dfcd245d61db726979bddbae5e8562b52b029
+;; Package-Version: 20230207.2323
+;; Package-Commit: 10b5b6d4747ddc67ef1c2b820bf23613e3bde48c
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "24.3") (eask-api "0.1.0"))
+;; Package-Requires: ((emacs "24.3") (eask "0.1.0"))
 ;; Keywords: lisp eask
 
 ;; This file is NOT part of GNU Emacs.
@@ -33,7 +33,7 @@
 
 ;;; Code:
 
-(require 'eask-api-core)
+(require 'eask-core)
 
 (defvar eask-mode-syntax-table
   (let ((table (make-syntax-table)))
