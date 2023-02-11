@@ -803,10 +803,10 @@
   {
     "name": "package-build",
     "summary": "Tools for assembling a package archive",
-    "version": "20230206.1931",
+    "version": "20230211.1921",
     "url": "https://github.com/melpa/package-build",
     "source": "github",
-    "commit": "10e8518f14e343e63251b4385206037ab6e1bf87",
+    "commit": "676cd5082f6d267666fe77027ac8d63bf5b35ce8",
     "tree": "https://github.com/melpa/package-build"
   },
   {
