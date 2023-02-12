@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-openai/codegpt
-;; Package-Version: 20230205.147
-;; Package-Commit: f06adfcf9f81e66ac5a45d11cf2eb8a027ab6c8e
+;; Package-Version: 20230212.2118
+;; Package-Commit: 55e5b54198d53994dd89c7aeef96225be510de9f
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (openai "0.1.0"))
 ;; Keywords: convenience codegpt
@@ -33,6 +33,7 @@
 
 ;;; Code:
 
+(require 'openai)
 (require 'openai-completion)
 
 (defgroup codegpt nil
@@ -86,8 +87,8 @@ boundaries of that region in buffer."
        (lambda (data)
          (openai--with-buffer codegpt-buffer-name
            (openai--pop-to-buffer codegpt-buffer-name)
-           (let* ((choices (openai-completion--data-choices data))
-                  (result (openai-completion--get-choice choices))
+           (let* ((choices (openai--data-choices data))
+                  (result (openai--get-choice choices))
                   (original-point (point)))
              (insert (string-trim result) "\n")
              (fill-region original-point (point))))
