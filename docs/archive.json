@@ -434,20 +434,20 @@
   {
     "name": "flycheck-deno",
     "summary": "Flycheck for deno-lint",
-    "version": "20221222.1646",
-    "url": "https://github.com/jcs-elpa/flycheck-deno",
+    "version": "20230212.1754",
+    "url": "https://github.com/flycheck/flycheck-deno",
     "source": "github",
-    "commit": "ea7a5330535bdb25edb1c147f4d6d426abb1e097",
-    "tree": "https://github.com/jcs-elpa/flycheck-deno"
+    "commit": "e7cd15a6a05be73d1f83a16d2efa6b49a105a9cd",
+    "tree": "https://github.com/flycheck/flycheck-deno"
   },
   {
     "name": "flycheck-eask",
     "summary": "Eask support in Flycheck",
-    "version": "20221231.1640",
-    "url": "https://github.com/emacs-eask/flycheck-eask",
+    "version": "20230212.1748",
+    "url": "https://github.com/flycheck/flycheck-eask",
     "source": "github",
-    "commit": "a73bf0b3f610cce4d664b486e9e189820a14e18e",
-    "tree": "https://github.com/emacs-eask/flycheck-eask"
+    "commit": "93cf80d60a8d7080f380e16443e0882ac4656ff1",
+    "tree": "https://github.com/flycheck/flycheck-eask"
   },
   {
     "name": "flymake-eask",
