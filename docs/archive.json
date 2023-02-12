@@ -92,10 +92,10 @@
   {
     "name": "codegpt",
     "summary": "Use GPT-3 tp help you write code",
-    "version": "20230205.147",
+    "version": "20230212.2118",
     "url": "https://github.com/emacs-openai/codegpt",
     "source": "github",
-    "commit": "f06adfcf9f81e66ac5a45d11cf2eb8a027ab6c8e",
+    "commit": "55e5b54198d53994dd89c7aeef96225be510de9f",
     "tree": "https://github.com/emacs-openai/codegpt"
   },
   {
