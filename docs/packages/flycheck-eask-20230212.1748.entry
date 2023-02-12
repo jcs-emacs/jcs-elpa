@@ -1,13 +1,13 @@
 (flycheck-eask .
-	       [(20221231 1640)
+	       [(20230212 1748)
 		((emacs
 		  (26 1))
 		 (flycheck
 		  (0 14)))
 		"Eask support in Flycheck" single
-		((:commit . "a73bf0b3f610cce4d664b486e9e189820a14e18e")
+		((:commit . "93cf80d60a8d7080f380e16443e0882ac4656ff1")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 		 (:keywords "lisp" "eask")
-		 (:url . "https://github.com/emacs-eask/flycheck-eask"))])
+		 (:url . "https://github.com/flycheck/flycheck-eask"))])
