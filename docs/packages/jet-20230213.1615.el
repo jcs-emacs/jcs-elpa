@@ -5,9 +5,9 @@
 ;; Author: Eric Dallo <ercdll1337@gmail.com>
 ;; Maintainer: Eric Dallo <ercdll1337@gmail.com>
 ;; Created: january 24, 2023
-;; Version: 0.1.0
-;; Package-Version: 20230130.39
-;; Package-Commit: 156c9be37804c14a3560175549ccbb77443dd741
+;; Version: 1.0.0
+;; Package-Version: 20230213.1615
+;; Package-Commit: 90fcdec479d2b1755a1410ae65d53d421f7683c9
 ;; Keywords: tools
 ;; Homepage: https://github.com/ericdallo/jet.el
 ;; Package-Requires: ((emacs "27.1") (transient "0.3.7"))
@@ -46,7 +46,7 @@
   :group 'jet
   :type 'number)
 
-(defvar jet-version-string "0.1.0")
+(defvar jet-version-string "1.0.0")
 
 (defvar jet-output-buffer-name "*jet output*")
 (defvar jet-error-buffer-name "*jet error*")
@@ -76,7 +76,8 @@
   (string-trim
    (if (use-region-p)
        (buffer-substring-no-properties (region-beginning) (region-end))
-     (thing-at-point 'sexp t))))
+     (or (thing-at-point 'sexp t)
+         (thing-at-point 'defun t)))))
 
 (defun jet--major-mode-fn-for (to)
   "Return the major mode function for TO."
