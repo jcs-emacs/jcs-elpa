@@ -1,0 +1,1 @@
+(visual-basic-mode :repo "emacsmirror/visual-basic-mode" :fetcher github)
