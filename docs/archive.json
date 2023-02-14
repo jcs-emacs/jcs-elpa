@@ -1017,6 +1017,15 @@
     "tree": "http://www.emacswiki.org/emacs/VbsReplMode"
   },
   {
+    "name": "vbscript-mode",
+    "summary": "No description available.",
+    "version": "20160720.820",
+    "url": "http://www.emacswiki.org/emacs/VbsReplMode",
+    "source": "github",
+    "commit": "483dd5a2c8c4675ddb3c32fdd93146c6d248285d",
+    "tree": "http://www.emacswiki.org/emacs/VbsReplMode"
+  },
+  {
     "name": "vc-refresh",
     "summary": "Refresh vc-state in certain events for better UX",
     "version": "20221203.1607",
