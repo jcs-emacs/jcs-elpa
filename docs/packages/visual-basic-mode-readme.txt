@@ -9,12 +9,12 @@ Installation instructions
  the following to your init file:
 
  (autoload 'visual-basic-mode "visual-basic-mode" "Visual Basic mode." t)
- (push '("\\.\\(?:frm\\|\\(?:ba\\|cl\\|vb\\)s\\)\\'" . visual-basic-mode)
-        auto-mode-alist)
+ (setq auto-mode-alist (append '(("\\.\\(frm\\|bas\\|cls\\)$" .
+                                 visual-basic-mode)) auto-mode-alist))
 
- If you are doing Rhino scripts, add instead:
- (push '("\\.\\(?:frm\\|\\(?:ba\\|cl\\|vb\\)s\\|rvb\\)\\'" . visual-basic-mode)
-        auto-mode-alist)
+ If you are doing Rhino scripts, add:
+ (setq auto-mode-alist (append '(("\\.\\(frm\\|bas\\|cls\\|rvb\\)$" .
+                                 visual-basic-mode)) auto-mode-alist))
 
  If you had visual-basic-mode already installed, you may need to call
  visual-basic-upgrade-keyword-abbrev-table the first time that
