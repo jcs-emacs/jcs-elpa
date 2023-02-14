@@ -1,4 +1,4 @@
 (visual-basic-mode
  :repo "nverno/vbs-mode"
  :fetcher github
- :files (:defaults "visual-basic-mode.el"))
+ :files (:exclude "vbs-repl.el" "vbscript-mode.el"))
