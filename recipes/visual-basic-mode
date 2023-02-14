@@ -1,1 +1,4 @@
-(visual-basic-mode :repo "emacsmirror/visual-basic-mode" :fetcher github)
+(visual-basic-mode
+ :repo "nverno/vbs-mode"
+ :fetcher github
+ :files (:defaults "visual-basic-mode.el"))
