@@ -1,0 +1,1 @@
+(vbs-repl :repo "emacsmirror/vbs-repl" :fetcher github)
