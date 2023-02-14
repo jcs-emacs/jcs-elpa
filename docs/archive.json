@@ -1009,11 +1009,11 @@
   },
   {
     "name": "vbs-repl",
-    "summary": "Support for VBScript programming in Emacs",
-    "version": "20090830.1040",
+    "summary": "Run visual basic repl as inferior process",
+    "version": "20160720.820",
     "url": "http://www.emacswiki.org/emacs/VbsReplMode",
     "source": "github",
-    "commit": "c81c2044b4fc650ae0292918f7a1b2e0dc81295f",
+    "commit": "483dd5a2c8c4675ddb3c32fdd93146c6d248285d",
     "tree": "http://www.emacswiki.org/emacs/VbsReplMode"
   },
   {
@@ -1037,10 +1037,10 @@
   {
     "name": "visual-basic-mode",
     "summary": "A mode for editing Visual Basic programs.",
-    "version": "20180302.1119",
+    "version": "20160720.820",
     "url": "http://www.emacswiki.org/cgi-bin/wiki/visual-basic-mode.el",
     "source": "github",
-    "commit": "79689e97d9dc0f90388c4111c5409d544a173631",
+    "commit": "483dd5a2c8c4675ddb3c32fdd93146c6d248285d",
     "tree": "http://www.emacswiki.org/cgi-bin/wiki/visual-basic-mode.el"
   },
   {
