@@ -1,0 +1,9 @@
+(vbs-repl .
+	  [(20090830 1040)
+	   nil "Support for VBScript programming in Emacs" single
+	   ((:commit . "c81c2044b4fc650ae0292918f7a1b2e0dc81295f")
+	    (:authors
+	     ("Charles Sebold" . "cseboldatgmail.com"))
+	    (:maintainer "Charles Sebold" . "cseboldatgmail.com")
+	    (:keywords "vbscript" "repl" "programming" "mode")
+	    (:url . "http://www.emacswiki.org/emacs/VbsReplMode"))])
