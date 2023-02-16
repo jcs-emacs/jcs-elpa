@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline
-;; Package-Version: 20221231.1635
-;; Package-Commit: 5dc19c5463f164ac05710307ec829a57bc9db859
+;; Package-Version: 20230216.843
+;; Package-Commit: 0441f2c308eb9316f01d721a949ba73b6df8c4c7
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: convenience
@@ -249,46 +249,9 @@
   "Convert COLUMN to point."
   (save-excursion (move-to-column column) (point)))
 
-(defun sideline--line-number-display-width ()
-  "Safe way to get value from function `line-number-display-width'."
-  (if (bound-and-true-p display-line-numbers-mode)
-      (+ (or (ignore-errors (line-number-display-width)) 0) 2)
-    0))
-
-(defun sideline--margin-width ()
-  "General calculation of margin width."
-  (+ (if fringes-outside-margins right-margin-width 0)
-     (or (and (boundp 'fringe-mode)
-              (consp fringe-mode)
-              (or (equal (car fringe-mode) 0)
-                  (equal (cdr fringe-mode) 0))
-              1)
-         (and (boundp 'fringe-mode) (equal fringe-mode 0) 1)
-         0)
-     (let ((win-fringes (window-fringes)))
-       (if (or (equal (car win-fringes) 0)
-               (equal (cadr win-fringes) 0))
-           2
-         0))
-     (if (< emacs-major-version 27)
-         ;; This was necessary with emacs < 27, recent versions take
-         ;; into account the display-line width with :align-to
-         (sideline--line-number-display-width)
-       0)
-     (if (or (bound-and-true-p whitespace-mode)
-             (bound-and-true-p global-whitespace-mode))
-         1
-       0)))
-
 (defun sideline--window-width ()
   "Correct window width for sideline."
-  (- (window-max-chars-per-line)
-     (sideline--margin-width)
-     (or (and (>= emacs-major-version 27)
-              ;; We still need this number when calculating available space
-              ;; even with emacs >= 27
-              (sideline--line-number-display-width))
-         0)))
+  (window-max-chars-per-line))
 
 (defun sideline--align (&rest lengths)
   "Align sideline string by LENGTHS from the right of the window."
@@ -306,14 +269,14 @@ calculate to the right side."
       (let ((column-start (window-hscroll))
             (pos-first (save-excursion (back-to-indentation) (current-column)))
             (pos-end (save-excursion (end-of-line) (current-column))))
-        (cond ((< str-len (- pos-first column-start))
+        (cond ((<= str-len (- pos-first column-start))
                (cons column-start pos-first))
               ((= pos-first pos-end)
                (cons column-start (sideline--window-width)))))
     (let* ((column-start (window-hscroll))
            (column-end (+ column-start (sideline--window-width)))
            (pos-end (save-excursion (end-of-line) (current-column))))
-      (when (< str-len (- column-end pos-end))
+      (when (<= str-len (- column-end pos-end))
         (cons column-end pos-end)))))
 
 (defun sideline--find-line (str-len on-left &optional direction exceeded)
@@ -439,10 +402,9 @@ FACE, NAME, ON-LEFT, and ORDER for details."
                          ((<= (current-column) (window-hscroll))
                           (- 0 (current-column)))
                          (t (- 0 (window-hscroll)))))))
-       (margin (sideline--margin-width))
        (str (concat
              (unless on-left
-               (propertize " " 'display `((space :align-to (- right ,(sideline--align (1- len-title) margin offset)))
+               (propertize " " 'display `((space :align-to (- right ,(sideline--align (1- len-title) offset)))
                                           (space :width 0))
                            `cursor t))
              title)))
