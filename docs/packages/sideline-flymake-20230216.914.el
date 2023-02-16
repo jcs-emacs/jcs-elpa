@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline-flymake
-;; Package-Version: 20221231.1636
-;; Package-Commit: bd76c9cc2c90e81582c6e0ed133ce5520d6e460d
+;; Package-Version: 20230216.914
+;; Package-Commit: e92fa5ca861ff5a54273aecde319974fe4aa9dda
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1") (sideline "0.1.0"))
 ;; Keywords: convenience flymake
@@ -59,6 +59,11 @@
                  (const point))
   :group 'sideline-flymake)
 
+(defcustom sideline-flymake-show-backend-name nil
+  "If non-nil, show checker name at the back."
+  :type 'boolean
+  :group 'sideline-flymake)
+
 ;;;###autoload
 (defun sideline-flymake (command)
   "Backend for sideline.
@@ -82,12 +87,15 @@ Argument COMMAND is required in sideline backend."
       (dolist (err errors)
         (let* ((text (flymake-diagnostic-text err))
                (type (flymake-diagnostic-type err))
+               (backend (flymake-diagnostic-backend err))
                (face (cl-case type
                        (`eglot-error 'error)
                        (`eglot-warning 'warning)
                        (:error 'error)
                        (:warning 'warning)
                        (t 'success))))
+          (when sideline-flymake-show-backend-name
+            (setq text (format "%s (%s)" text backend)))
           (add-face-text-property 0 (length text) face nil text)
           (funcall callback (list text)))))))
 
