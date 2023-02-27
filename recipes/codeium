@@ -1,0 +1,1 @@
+(codeium :repo "Exafunction/codeium.el" :fetcher github)
