@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-modeline
-;; Package-Version: 20230203.1005
-;; Package-Commit: 9ccf3ef002527f3cf8a2036a944d83c27fe400b7
+;; Package-Version: 20230227.2342
+;; Package-Commit: b3c6e26bd3ff420c59f1b01a1ac787fefce1d781
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "28.1") (moody "0.7.1") (minions "0.3.7") (elenv "0.1.0"))
 ;; Keywords: faces mode-line
@@ -475,9 +475,9 @@ BC : border color."
   (interactive)
   (if (jcs-modeline--light-theme-p)
       (jcs-modeline--set-theme
-       '("#1C1C1C" "#E5E5E5") '("#000000" "#D7D7D7") "#161616")
+       '("#1C1C1C" "#E5E5E5") '("#000000" "#D7D7D7") "#989898")
     (jcs-modeline--set-theme
-     '("#D2D2D2" "#4D4D4D") '("#CCCCCC" "#333333") "#D2D2D2")))
+     '("#D2D2D2" "#4D4D4D") '("#CCCCCC" "#333333") "#7E7E7E")))
 
 (defun jcs-modeline-dark-green ()
   "Dark green mode line."
