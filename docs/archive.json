@@ -974,19 +974,19 @@
   {
     "name": "ts-docstr",
     "summary": "A document string minor mode using tree-sitter",
-    "version": "20230228.119",
+    "version": "20230301.1031",
     "url": "https://github.com/emacs-vs/ts-docstr",
     "source": "github",
-    "commit": "978ec1f7cdcaf60e4b70f42d8274d35ad464e1ca",
+    "commit": "7d2afb0432526e71bffcf1fc18be37ba65918ab0",
     "tree": "https://github.com/emacs-vs/ts-docstr"
   },
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20230221.2059",
+    "version": "20230301.410",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "9d9e0c5cf7b5397e06571bb6bf497598dc8796a8",
+    "commit": "ad1d9b24127fe0105642790a1cacc779d70ec7a0",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
