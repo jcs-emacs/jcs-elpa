@@ -909,6 +909,15 @@
     "tree": "https://github.com/emacs-sideline/sideline-color"
   },
   {
+    "name": "sideline-eldoc",
+    "summary": "sideline backend for eldoc.",
+    "version": "20230302.817",
+    "url": "https://github.com/ginqi7/sideline-eldoc",
+    "source": "github",
+    "commit": "0278dc1f1176dcbb50b755ffa430950dab64b133",
+    "tree": "https://github.com/ginqi7/sideline-eldoc"
+  },
+  {
     "name": "sideline-flycheck",
     "summary": "Show flycheck errors with sideline",
     "version": "20230216.859",
