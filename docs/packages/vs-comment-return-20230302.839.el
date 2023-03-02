@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-comment-return
-;; Package-Version: 20230302.740
-;; Package-Commit: 84e166f7422f080f82d452f319a43724084e3b0f
+;; Package-Version: 20230302.839
+;; Package-Commit: f7659345bbeb6473b0c9e0dfa967a1435bcbd52f
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "28.1"))
 ;; Keywords: convenience
@@ -69,6 +69,10 @@
 ;; (@* "Util" )
 ;;
 
+(defun vs-comment-return--before-char-string ()
+  "Get the before character as the 'string'."
+  (if (char-before) (string (char-before)) ""))
+
 (defun vs-comment-return--current-point-face (in-face &optional pos)
   "Check if current POS's face the same face as IN-FACE."
   (let ((faces (jcs-get-current-point-face pos)))
@@ -80,11 +84,7 @@
 
 (defun vs-comment-return--inside-comment-p ()
   "Return non-nil if it's inside comment."
-  (or (nth 4 (syntax-ppss))
-      (vs-comment-return--current-point-face '(font-lock-comment-face
-                                               tree-sitter-hl-face:comment
-                                               tree-sitter-hl-face:doc
-                                               hl-todo))))
+  (nth 4 (syntax-ppss)))
 
 (defun vs-comment-return--current-line-empty-p ()
   "Current line empty, but accept spaces/tabs in there.  (not absolute)."
@@ -106,7 +106,7 @@
     (while (and (vs-comment-return--inside-comment-p)
                 (not (bolp)))
       (backward-char 1))
-    (point)))
+    (1- (point))))
 
 (defun vs-comment-return--get-comment-prefix ()
   "Return comment prefix string."
@@ -115,6 +115,8 @@
     (comment-search-backward (line-beginning-position) t)
     ;; Double check if comment exists
     (unless (= (point) (line-beginning-position))
+      (unless (string= (vs-comment-return--before-char-string) " ")
+        (search-forward " " (line-end-position) t))
       (buffer-substring (vs-comment-return--backward-until-not-comment) (point)))))
 
 (defun vs-comment-return--next-line-comment-p ()
@@ -149,6 +151,7 @@
       (let* ((prefix (vs-comment-return--get-comment-prefix))
              (empty-comment (vs-comment-return--empty-comment-p prefix))
              (next-ln-comment (vs-comment-return--next-line-comment-p)))
+        (message "%s %s %s" prefix empty-comment next-ln-comment)
         (apply func args)  ; make return
         (when (and
                (not (member (string-trim prefix) vs-comment-return-exclude-comments))
