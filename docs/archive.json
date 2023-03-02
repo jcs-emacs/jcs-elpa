@@ -1062,6 +1062,15 @@
     "tree": "http://www.emacswiki.org/cgi-bin/wiki/visual-basic-mode.el"
   },
   {
+    "name": "vs-comment-return",
+    "summary": "Comment return like Visual Studio",
+    "version": "20230302.740",
+    "url": "https://github.com/emacs-vs/vs-comment-return",
+    "source": "github",
+    "commit": "84e166f7422f080f82d452f319a43724084e3b0f",
+    "tree": "https://github.com/emacs-vs/vs-comment-return"
+  },
+  {
     "name": "vs-edit-mode",
     "summary": "Minor mode accomplish editing experience in Visual Studio",
     "version": "20221019.2104",
