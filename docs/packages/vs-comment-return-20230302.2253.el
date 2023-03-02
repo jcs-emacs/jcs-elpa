@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-comment-return
-;; Package-Version: 20230302.2122
-;; Package-Commit: 81cd1fbd5d95047cb5f0d354269c9defb0fb414a
+;; Package-Version: 20230302.2253
+;; Package-Commit: bd5e7e89ac22907ec587a9cb02e1b8877f0b54d3
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "28.1"))
 ;; Keywords: convenience
@@ -40,9 +40,14 @@
   :link '(url-link :tag "Repository" "https://github.com/emacs-vs/vs-comment-return"))
 
 (defcustom vs-comment-return-exclude-comments
-  '("//")
+  '()
   "Exclude these comment prefixes."
   :type 'list
+  :group 'vs-comment-return)
+
+(defcustom vs-comment-return-keep-suffix nil
+  "Do not expand suffix comment symbol."
+  :type 'boolean
   :group 'vs-comment-return)
 
 ;;
@@ -82,9 +87,43 @@
              (cl-position in-face faces :test 'string=)))
           (t (string= in-face faces)))))
 
-(defun vs-comment-return--inside-comment-p ()
+(defun vs-comment-return--comment-p ()
   "Return non-nil if it's inside comment."
   (nth 4 (syntax-ppss)))
+
+(defun vs-comment-return--goto-start-comment ()
+  "Go to the start of the comment."
+  (while (vs-comment-return--comment-p)
+    (re-search-backward comment-start-skip nil t)))
+
+(defun vs-comment-return--goto-end-comment ()
+  "Go to the end of the comment."
+  (when (vs-comment-return--comment-p)
+    (forward-char 1)
+    (vs-comment-return--goto-end-comment)))
+
+(defun vs-comment-return--comment-start-point ()
+  "Return comment start point."
+  (save-excursion (vs-comment-return--goto-start-comment) (point)))
+
+(defun vs-comment-return--comment-end-point ()
+  "Return comment end point."
+  (save-excursion (vs-comment-return--goto-end-comment) (point)))
+
+(defun vs-comment-return--multiline-comment-p ()
+  "Return non-nil, if current point inside multi-line comment block."
+  (let* ((start (vs-comment-return--comment-start-point))
+         (end (vs-comment-return--comment-end-point))
+         (old-major-mode major-mode)
+         (start-point (1+ (- (point) start)))
+         (content (buffer-substring start end)))
+    (with-temp-buffer
+      (insert content)
+      (goto-char start-point)
+      (insert "\n")
+      (delay-mode-hooks (funcall old-major-mode))
+      (ignore-errors (font-lock-ensure))
+      (vs-comment-return--comment-p))))
 
 (defun vs-comment-return--current-line-empty-p ()
   "Current line empty, but accept spaces/tabs in there.  (not absolute)."
@@ -103,7 +142,7 @@
 (defun vs-comment-return--backward-until-not-comment ()
   "Move backward to the point when it's not comment."
   (save-excursion
-    (while (and (vs-comment-return--inside-comment-p)
+    (while (and (vs-comment-return--comment-p)
                 (not (bolp)))
       (backward-char 1))
     (1- (point))))
@@ -116,7 +155,8 @@
     ;; Double check if comment exists
     (unless (= (point) (line-beginning-position))
       (unless (string= (vs-comment-return--before-char-string) " ")
-        (search-forward " " (line-end-position) t))
+        (unless (re-search-forward "[ \t]" (line-end-position) t)
+          (goto-char (line-end-position))))
       (buffer-substring (vs-comment-return--backward-until-not-comment) (point)))))
 
 (defun vs-comment-return--next-line-comment-p ()
@@ -124,7 +164,7 @@
   (save-excursion
     (forward-line 1)
     (end-of-line)
-    (vs-comment-return--inside-comment-p)))
+    (vs-comment-return--comment-p)))
 
 (defun vs-comment-return--empty-comment-p (prefix)
   "Return non-nil if current line comment is empty (PREFIX only)."
@@ -147,17 +187,44 @@
 
 (defun vs-comment-return--do-return (func args)
   "Do VS like comment return."
-  (if (vs-comment-return--inside-comment-p)
-      (let* ((prefix (vs-comment-return--get-comment-prefix))
-             (empty-comment (vs-comment-return--empty-comment-p prefix))
-             (next-ln-comment (vs-comment-return--next-line-comment-p)))
-        (apply func args)  ; make return
-        (when (and
-               (not (member (string-trim prefix) vs-comment-return-exclude-comments))
-               (vs-comment-return--current-line-empty-p)
-               (or next-ln-comment (not empty-comment)))
-          (vs-comment-return--comment-line prefix)))
-    (apply func args)))  ; make return
+  (cond
+   ((not (vs-comment-return--comment-p))
+    (apply func args))
+   ;; Multi-line comment
+   ((vs-comment-return--multiline-comment-p)
+    (apply func args)
+    (vs-comment-return--c-like-return))
+   ;; Single line comment
+   (t
+    (let* ((prefix (vs-comment-return--get-comment-prefix))
+           (empty-comment (vs-comment-return--empty-comment-p prefix))
+           (next-ln-comment (vs-comment-return--next-line-comment-p)))
+      (apply func args)  ; make return
+      (when (and
+             (not (member (string-trim prefix) vs-comment-return-exclude-comments))
+             (vs-comment-return--current-line-empty-p)
+             (or next-ln-comment (not empty-comment)))
+        (vs-comment-return--comment-line prefix))))))
+
+;;
+;; (@* "C-like" )
+;;
+
+(defun vs-comment-return--c-like-multiline-comment-p ()
+  "Return non-nil if we are in c-like multiline comment."
+  (save-excursion
+    (when (comment-search-backward (point-min) t)
+      (string-prefix-p "/*" (vs-comment-return--get-comment-prefix)))))
+
+(defun vs-comment-return--c-like-return ()
+  "Do C-like comment return for /**/."
+  (when (vs-comment-return--c-like-multiline-comment-p)
+    (vs-comment-return--comment-line "* ")
+    (when (and (not vs-comment-return-keep-suffix)
+               (save-excursion (search-forward "*/" (line-end-position) t)))
+      (save-excursion
+        (insert "\n")
+        (indent-for-tab-command)))))
 
 (provide 'vs-comment-return)
 ;;; vs-comment-return.el ends here
