@@ -983,10 +983,10 @@
   {
     "name": "ts-docstr",
     "summary": "A document string minor mode using tree-sitter",
-    "version": "20230301.1031",
+    "version": "20230302.2206",
     "url": "https://github.com/emacs-vs/ts-docstr",
     "source": "github",
-    "commit": "7d2afb0432526e71bffcf1fc18be37ba65918ab0",
+    "commit": "368051c1ec557c3035d6507f0d0a00673882223e",
     "tree": "https://github.com/emacs-vs/ts-docstr"
   },
   {
@@ -1073,10 +1073,10 @@
   {
     "name": "vs-comment-return",
     "summary": "Comment return like Visual Studio",
-    "version": "20230302.2122",
+    "version": "20230302.2253",
     "url": "https://github.com/emacs-vs/vs-comment-return",
     "source": "github",
-    "commit": "81cd1fbd5d95047cb5f0d354269c9defb0fb414a",
+    "commit": "bd5e7e89ac22907ec587a9cb02e1b8877f0b54d3",
     "tree": "https://github.com/emacs-vs/vs-comment-return"
   },
   {
