@@ -1,0 +1,1 @@
+(vs-comment-return :repo "emacs-vs/vs-comment-return" :fetcher github)
