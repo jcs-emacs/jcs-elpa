@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-comment-return
-;; Package-Version: 20230302.839
-;; Package-Commit: f7659345bbeb6473b0c9e0dfa967a1435bcbd52f
+;; Package-Version: 20230302.2122
+;; Package-Commit: 81cd1fbd5d95047cb5f0d354269c9defb0fb414a
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "28.1"))
 ;; Keywords: convenience
@@ -151,7 +151,6 @@
       (let* ((prefix (vs-comment-return--get-comment-prefix))
              (empty-comment (vs-comment-return--empty-comment-p prefix))
              (next-ln-comment (vs-comment-return--next-line-comment-p)))
-        (message "%s %s %s" prefix empty-comment next-ln-comment)
         (apply func args)  ; make return
         (when (and
                (not (member (string-trim prefix) vs-comment-return-exclude-comments))
