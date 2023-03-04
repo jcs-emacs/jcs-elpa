@@ -108,6 +108,15 @@
     "tree": "https://github.com/Exafunction/codeium.el"
   },
   {
+    "name": "codemetrics",
+    "summary": "Plugin shows complexity information",
+    "version": "20230304.240",
+    "url": "https://github.com/jcs-elpa/codemetrics",
+    "source": "github",
+    "commit": "a146e38e28608e11bda4721fd36e1682d22c089f",
+    "tree": "https://github.com/jcs-elpa/codemetrics"
+  },
+  {
     "name": "commander",
     "summary": "Emacs command line parser",
     "version": "20140120.1852",
