@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-comment-return
-;; Package-Version: 20230303.27
-;; Package-Commit: e72d87ce55989f8b91c0c6da0d7c1b455b72439e
+;; Package-Version: 20230304.120
+;; Package-Commit: e58ff812d65ed5634e847bfed26e6c3548a1107a
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "28.1"))
 ;; Keywords: convenience
@@ -89,8 +89,9 @@
 
 (defun vs-comment-return--goto-end-comment ()
   "Go to the end of the comment."
-  (when (vs-comment-return--comment-p)
-    (forward-char 1)
+  (when (and (vs-comment-return--comment-p)
+             (not (eobp)))
+    (ignore-errors (forward-char 1))
     (vs-comment-return--goto-end-comment)))
 
 (defun vs-comment-return--comment-start-point ()
@@ -165,7 +166,7 @@
       (insert prefix)
       (goto-char (point-min))
       (vs-comment-return--re-search-forward-end trimmed (line-end-position))
-      (forward-char 1)
+      (ignore-errors (forward-char 1))
       (delete-region (point-min) (point))
       (string-empty-p (string-trim (buffer-string))))))
 
@@ -181,10 +182,11 @@ We use PREFIX for navigation; we search it, then check what is infront."
 
 (defun vs-comment-return--next-line-comment-p ()
   "Return non-nil when next line is a comment."
-  (save-excursion
-    (forward-line 1)
-    (end-of-line)
-    (vs-comment-return--comment-p)))
+  (unless (eobp)
+    (save-excursion
+      (forward-line 1)
+      (end-of-line)
+      (vs-comment-return--comment-p))))
 
 (defun vs-comment-return--empty-comment-p (prefix)
   "Return non-nil if current line comment is empty (PREFIX only)."
