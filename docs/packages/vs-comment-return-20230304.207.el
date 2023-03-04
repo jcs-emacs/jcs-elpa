@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-comment-return
-;; Package-Version: 20230304.120
-;; Package-Commit: e58ff812d65ed5634e847bfed26e6c3548a1107a
+;; Package-Version: 20230304.207
+;; Package-Commit: 84b89728ed8d4ffc8e44dc342ee2b4c55db761e6
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "28.1"))
 ;; Keywords: convenience
@@ -123,10 +123,6 @@
     (while (re-search-forward regexp bound t)
       (backward-char repeat))))  ; Always move backward to search repeatedly!
 
-(defun vs-comment-return--current-line-empty-p ()
-  "Current line empty, but accept spaces/tabs in there.  (not absolute)."
-  (save-excursion (beginning-of-line) (looking-at "[[:space:]\t]*$")))
-
 (defun vs-comment-return--infront-first-char-at-line-p (&optional pt)
   "Return non-nil if there is nothing infront of the right from the PT."
   (save-excursion
@@ -227,7 +223,6 @@ We use PREFIX for navigation; we search it, then check what is infront."
           (and doc-only-column
                (vs-comment-return--comment-doc-p prefix)
                (not (member (string-trim prefix) vs-comment-return-exclude-comments))
-               (vs-comment-return--current-line-empty-p)
                (or next-ln-comment (not empty-comment)))
         (vs-comment-return--comment-line prefix doc-only-column))))))
 
