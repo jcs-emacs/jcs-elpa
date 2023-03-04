@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-comment-return
-;; Package-Version: 20230304.207
-;; Package-Commit: 84b89728ed8d4ffc8e44dc342ee2b4c55db761e6
+;; Package-Version: 20230304.1008
+;; Package-Commit: e521b28c46f95185a1302d61cc21de8d85229309
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "28.1"))
 ;; Keywords: convenience
@@ -217,13 +217,17 @@ We use PREFIX for navigation; we search it, then check what is infront."
     (let* ((prefix (vs-comment-return--get-comment-prefix))
            (doc-only-column (vs-comment-return--doc-only-line-column prefix))
            (empty-comment (vs-comment-return--empty-comment-p prefix))
-           (next-ln-comment (vs-comment-return--next-line-comment-p)))
+           (next-ln-comment (vs-comment-return--next-line-comment-p))
+           (current-ln (line-number-at-pos nil t)))
       (apply func args)  ; make return
       (when
           (and doc-only-column
                (vs-comment-return--comment-doc-p prefix)
                (not (member (string-trim prefix) vs-comment-return-exclude-comments))
-               (or next-ln-comment (not empty-comment)))
+               (or next-ln-comment (not empty-comment))
+               ;; XXX: we place line number check at last, so we can save
+               ;; unnecessary perofmrance
+               (not (= current-ln (line-number-at-pos nil t))))
         (vs-comment-return--comment-line prefix doc-only-column))))))
 
 ;;

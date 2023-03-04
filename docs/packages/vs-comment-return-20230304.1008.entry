@@ -1,9 +1,9 @@
 (vs-comment-return .
-		   [(20230304 207)
+		   [(20230304 1008)
 		    ((emacs
 		      (28 1)))
 		    "Comment return like Visual Studio" single
-		    ((:commit . "84b89728ed8d4ffc8e44dc342ee2b4c55db761e6")
+		    ((:commit . "e521b28c46f95185a1302d61cc21de8d85229309")
 		     (:authors
 		      ("Jen-Chieh" . "jcs090218@gmail.com"))
 		     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
