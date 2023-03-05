@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/line-reminder
-;; Package-Version: 20230104.1211
-;; Package-Commit: 41a22589ebc3843f6736669a4517014800f09e16
+;; Package-Version: 20230305.2230
+;; Package-Commit: ea916b5c040cbc7e39b46c1137b4d0bf5c19a241
 ;; Version: 0.5.1
 ;; Package-Requires: ((emacs "25.1") (indicators "0.0.4") (fringe-helper "1.0.1") (ov "1.0.6") (ht "2.0"))
 ;; Keywords: convenience annotation
@@ -531,8 +531,8 @@ and END."
               (- line-reminder--before-max-pt len)))
 
       (setq line-reminder--cache-max-line
-            (or (line-reminder--line-number-at-pos line-reminder--before-max-pt)
-                (line-reminder--line-number-at-pos (point-max))))
+            (line-reminder--line-number-at-pos (min line-reminder--before-max-pt
+                                                    (point-max))))
 
       (if adding-p
           (setq end-linum (line-reminder--line-number-at-pos end)
@@ -553,8 +553,8 @@ and END."
       ;; NOTE: Deletion..
       (unless adding-p
         (line-reminder--remove-lines begin-linum end-linum comm-or-uncomm-p)
-        (line-reminder--add-change-line begin-linum)
-        (line-reminder--shift-all-lines starting-line delta-lines))
+        (line-reminder--shift-all-lines starting-line delta-lines)
+        (line-reminder--add-change-line begin-linum))
 
       ;; NOTE: Addition..
       (when adding-p
