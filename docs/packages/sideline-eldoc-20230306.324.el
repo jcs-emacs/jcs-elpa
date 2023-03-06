@@ -1,6 +1,6 @@
 ;;; sideline-eldoc.el --- sideline backend for eldoc.  -*- lexical-binding: t; -*-
-;; Package-Version: 20230302.817
-;; Package-Commit: 0278dc1f1176dcbb50b755ffa430950dab64b133
+;; Package-Version: 20230306.324
+;; Package-Commit: 71d9434f85fe04ce2a74afe70e874706133cc92b
 
 ;; Copyright (C) 2023  Qiqi Jin
 
@@ -60,16 +60,27 @@
 
 (defvar sideline-eldoc--message "")
 
+(defgroup sideline-eldoc nil
+  "Sideline backend for eldoc."
+  :prefix "sideline-eldoc-"
+  :link '(url-link :tag "Repository" "https://github.com/ginqi7/sideline-eldoc")
+  )
+
 (defcustom sideline-eldoc-documentation-max-line 5
-  "Sideline eldoc show the max line of documentation.")
+  "Sideline eldoc show the max line of documentation."
+  :group 'sideline-eldoc)
 
 (defcustom sideline-eldoc-documentation t
-  "If Sideline eldoc show the function documentation.")
+  "If Sideline eldoc show the function documentation."
+  :type 'boolean
+  :group 'sideline-eldoc)
 
 (defcustom sideline-eldoc-hide-minibuffer t
-  "If hide eldoc message in minibuffer.")
+  "If hide eldoc message in minibuffer."
+  :type 'boolean
+  :group 'sideline-eldoc)
 
-(defun sideline-eldoc-backend (command)
+(defun sideline-eldoc (command)
   "Sideline backend for eldoc.
 COMMAND is input parameter."
   (cl-case command
@@ -96,9 +107,9 @@ COMMAND is input parameter."
 
 (defun sideline-eldoc--order ()
   "Get sideline eldoc order."
-  (if (member 'sideline-eldoc-backend sideline-backends-right)
+  (if (member 'sideline-eldoc sideline-backends-right)
       sideline-order-right
-    (when (member 'sideline-eldoc-backend sideline-backends-left)
+    (when (member 'sideline-eldoc sideline-backends-left)
       sideline-order-left)))
 
 

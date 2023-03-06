@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-comment-return
-;; Package-Version: 20230304.1008
-;; Package-Commit: e521b28c46f95185a1302d61cc21de8d85229309
+;; Package-Version: 20230306.358
+;; Package-Commit: 829a2273fdcf0114650833f556614726305c4785
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "28.1"))
 ;; Keywords: convenience
@@ -39,8 +39,8 @@
   :group 'convenience
   :link '(url-link :tag "Repository" "https://github.com/emacs-vs/vs-comment-return"))
 
-(defcustom vs-comment-return-exclude-comments
-  '()
+(defcustom vs-comment-return-inhibit-prefix
+  '("//" "--" "#")
   "Exclude these comment prefixes."
   :type 'list
   :group 'vs-comment-return)
@@ -77,6 +77,11 @@
 (defun vs-comment-return--before-char-string ()
   "Get the before character as the `string'."
   (if (char-before) (string (char-before)) ""))
+
+(defun vs-comment-return--string-match-mut-p (str1 str2)
+  "Mutual way to check STR1 and STR2 with function `string-match-p'."
+  (and (stringp str1) (stringp str2)
+       (or (string-match-p str1 str2) (string-match-p str2 str1))))
 
 (defun vs-comment-return--comment-p ()
   "Return non-nil if it's inside comment."
@@ -176,13 +181,13 @@ We use PREFIX for navigation; we search it, then check what is infront."
     (when (vs-comment-return--infront-first-char-at-line-p)
       (current-column))))
 
-(defun vs-comment-return--next-line-comment-p ()
+(defun vs-comment-return--next-line-comment-prefix ()
   "Return non-nil when next line is a comment."
   (unless (eobp)
     (save-excursion
       (forward-line 1)
       (end-of-line)
-      (vs-comment-return--comment-p))))
+      (vs-comment-return--get-comment-prefix))))
 
 (defun vs-comment-return--empty-comment-p (prefix)
   "Return non-nil if current line comment is empty (PREFIX only)."
@@ -217,17 +222,17 @@ We use PREFIX for navigation; we search it, then check what is infront."
     (let* ((prefix (vs-comment-return--get-comment-prefix))
            (doc-only-column (vs-comment-return--doc-only-line-column prefix))
            (empty-comment (vs-comment-return--empty-comment-p prefix))
-           (next-ln-comment (vs-comment-return--next-line-comment-p))
+           (prefix-next-ln (vs-comment-return--next-line-comment-prefix))
            (current-ln (line-number-at-pos nil t)))
       (apply func args)  ; make return
-      (when
-          (and doc-only-column
-               (vs-comment-return--comment-doc-p prefix)
-               (not (member (string-trim prefix) vs-comment-return-exclude-comments))
-               (or next-ln-comment (not empty-comment))
-               ;; XXX: we place line number check at last, so we can save
-               ;; unnecessary perofmrance
-               (not (= current-ln (line-number-at-pos nil t))))
+      (when (or (vs-comment-return--string-match-mut-p prefix-next-ln prefix)
+                (and doc-only-column
+                     (vs-comment-return--comment-doc-p prefix)
+                     (not empty-comment)
+                     (not (member (string-trim prefix) vs-comment-return-inhibit-prefix))
+                     ;; XXX: we place line number check at last, so we can save
+                     ;; unnecessary perofmrance
+                     (not (= current-ln (line-number-at-pos nil t)))))
         (vs-comment-return--comment-line prefix doc-only-column))))))
 
 ;;
