@@ -920,10 +920,10 @@
   {
     "name": "sideline-eldoc",
     "summary": "sideline backend for eldoc.",
-    "version": "20230302.817",
+    "version": "20230306.324",
     "url": "https://github.com/ginqi7/sideline-eldoc",
     "source": "github",
-    "commit": "0278dc1f1176dcbb50b755ffa430950dab64b133",
+    "commit": "71d9434f85fe04ce2a74afe70e874706133cc92b",
     "tree": "https://github.com/ginqi7/sideline-eldoc"
   },
   {
@@ -1082,10 +1082,10 @@
   {
     "name": "vs-comment-return",
     "summary": "Comment return like Visual Studio",
-    "version": "20230304.1008",
+    "version": "20230306.358",
     "url": "https://github.com/emacs-vs/vs-comment-return",
     "source": "github",
-    "commit": "e521b28c46f95185a1302d61cc21de8d85229309",
+    "commit": "829a2273fdcf0114650833f556614726305c4785",
     "tree": "https://github.com/emacs-vs/vs-comment-return"
   },
   {
