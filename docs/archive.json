@@ -245,10 +245,10 @@
   {
     "name": "copilot",
     "summary": "An unofficial Copilot plugin for Emacs",
-    "version": "20230305.1530",
+    "version": "20230306.116",
     "url": "https://github.com/zerolfx/copilot.el",
     "source": "github",
-    "commit": "7bbfe2051408aabc3aac9709aa73b7f43ef13a3a",
+    "commit": "bc91709ff2402b4e4c370b262af67ea199c297f3",
     "tree": "https://github.com/zerolfx/copilot.el"
   },
   {
@@ -272,10 +272,10 @@
   {
     "name": "eask",
     "summary": "Core Eask APIs, for Eask CLI development",
-    "version": "20230305.949",
+    "version": "20230306.105",
     "url": "https://github.com/emacs-eask/eask-api",
     "source": "github",
-    "commit": "f1bd3a8e290f59f22a9343f1570f4058c6c31583",
+    "commit": "8f4c17d3de8d925a3f438e6c8dcd75135d27cb54",
     "tree": "https://github.com/emacs-eask/eask-api"
   },
   {
