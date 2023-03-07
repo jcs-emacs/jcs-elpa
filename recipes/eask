@@ -1,1 +1,1 @@
-(eask :repo "emacs-eask/eask-api" :fetcher github)
+(eask :repo "emacs-eask/eask" :fetcher github)
