@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/elenv
-;; Package-Version: 20221231.1709
-;; Package-Commit: 8618e679bd1521e43d0f04d0f06d680eb159eaf9
+;; Package-Version: 20230309.2223
+;; Package-Commit: 42571a6e4860b9ea27136e60019487d173ed7fb9
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26."))
 ;; Keywords: maint
@@ -108,6 +108,36 @@
 ;;;###autoload
 (defconst elenv-graphic-p (display-graphic-p)
   "Return t if graphic mode.")
+
+;;
+;; (@* "Environment" )
+;;
+
+;;;###autoload
+(defmacro elenv-with-env (variable &rest body)
+  "Evaluate BODY when VARIABLE is valid."
+  (declare (indent 1))
+  `(when-let ((value (getenv ,variable))) ,@body))
+
+;;
+;; (@* "Executable" )
+;;
+
+;;;###autoload
+(defmacro elenv-with-exec (command remote &rest body)
+  "Evaluate BODY when COMMAND is found.
+
+For argument REMOTE, see function `executable-find' description."
+  (declare (indent 2))
+  (let ((var (intern (format "elenv-exec-%s" command))))
+    `(when-let
+         ((value (if (boundp ',var)
+                     (symbol-value ',var)
+                   (defvar ,var (executable-find ,command ,remote)
+                     (format "Variable generate it with `elenv' finding executable `%s'."
+                             ,command))
+                   (symbol-value ',var))))
+       ,@body)))
 
 (provide 'elenv)
 ;;; elenv.el ends here
