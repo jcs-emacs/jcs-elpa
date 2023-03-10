@@ -666,6 +666,15 @@
     "tree": "https://github.com/Lambda-Emacs/lambda-line"
   },
   {
+    "name": "license-templates",
+    "summary": "Create LICENSE using GitHub API",
+    "version": "20230310.2012",
+    "url": "https://github.com/jcs-elpa/license-templates",
+    "source": "github",
+    "commit": "01bfa385079f5c1931e87b4cd33f8964535e10e8",
+    "tree": "https://github.com/jcs-elpa/license-templates"
+  },
+  {
     "name": "line-reminder",
     "summary": "Line annotation for changed and saved lines",
     "version": "20230305.2230",
