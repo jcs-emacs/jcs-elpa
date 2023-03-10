@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/license-templates
-;; Package-Version: 20230310.2238
-;; Package-Commit: 827995370992a84b0fd5c6dd03c91d6a545825d0
+;; Package-Version: 20230310.2258
+;; Package-Commit: 72d8f49be18c5b43b951860d08698f953db2c27b
 ;; Version: 0.1.3
 ;; Package-Requires: ((emacs "24.3") (request "0.3.0"))
 ;; Keywords: convenience license api template
@@ -55,11 +55,8 @@
 (defvar license-templates--keys nil
   "List of kesy of available templates.")
 
-(defvar license-templates--info-list nil
+(defvar license-templates--data nil
   "List of license data information.")
-
-(defvar license-templates--request-count 0
-  "Count the completed request.")
 
 (defvar license-templates--requested 0
   "The requested request.")
@@ -81,13 +78,11 @@
     (cl-function
      (lambda (&key data &allow-other-keys)
        (let-alist data
-         (cl-incf license-templates--request-count)
-         (push (license-templates--form-data key name url .body) license-templates--info-list))))))
+         (push (license-templates--form-data key name url .body) license-templates--data))))))
 
 (defun license-templates--get-info ()
   "Get all necessary information."
-  (setq license-templates--info-list nil
-        license-templates--request-count 0
+  (setq license-templates--data nil
         license-templates--requested 0)
   (request "https://api.github.com/licenses"
     :type "GET"
@@ -103,13 +98,13 @@
 
 (defun license-templates-request-completed-p ()
   "Return non-nil if request is completed."
-  (= license-templates--requested license-templates--request-count))
+  (= license-templates--requested (length license-templates--data)))
 
 (defun license-templates--safe-get-info ()
   "Get the license information without refreshing cache."
   (cond ((not (license-templates-request-completed-p))
          (user-error "Reuqest is not complete yet, please wait a while"))
-        (t (unless license-templates--info-list
+        (t (unless license-templates--data
              (license-templates--get-info)
              (license-templates--wait-requests)))))
 
@@ -124,7 +119,7 @@
   "Return list of keys of available license."
   (license-templates--safe-get-info)
   (unless license-templates--keys
-    (dolist (data license-templates--info-list)
+    (dolist (data license-templates--data)
       (push (plist-get data :key) license-templates--keys))
     (setq license-templates--keys (sort license-templates--keys #'string-lessp)))
   license-templates--keys)
@@ -133,7 +128,7 @@
   "Return license template by NAME."
   (license-templates--safe-get-info)
   (let ((content ""))
-    (dolist (data license-templates--info-list)
+    (dolist (data license-templates--data)
       (when (equal (plist-get data :key) name)
         (setq content (plist-get data :content))))
     content))
