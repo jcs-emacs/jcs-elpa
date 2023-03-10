@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/license-templates
-;; Package-Version: 20230310.2031
-;; Package-Commit: 1ddfaca61fbc6c5b553cfe84f3ccb5a34ab68840
+;; Package-Version: 20230310.2034
+;; Package-Commit: 041b0597618d0dfd5b689cc73d83f696f9b0e07a
 ;; Version: 0.1.3
 ;; Package-Requires: ((emacs "24.3") (request "0.3.0"))
 ;; Keywords: convenience license api template
@@ -76,8 +76,6 @@
   "Add data KEY, NAME, and URL, with content."
   (request url
     :type "GET"
-    :headers `(("Content-Type"  . "application/json")
-               ("Authorization" . ,(concat "Bearer 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")))
     :parser 'json-read
     :success
     (cl-function
@@ -93,8 +91,6 @@
         license-templates--requested 0)
   (request "https://api.github.com/licenses"
     :type "GET"
-    :headers `(("Content-Type"  . "application/json")
-               ("Authorization" . ,(concat "Bearer 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")))
     :parser 'json-read
     :success
     (cl-function
