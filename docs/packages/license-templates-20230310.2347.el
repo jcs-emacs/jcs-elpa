@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/license-templates
-;; Package-Version: 20230310.2339
-;; Package-Commit: 9d7112e8e50a8b04b984777ebcdb9580f8cdfaae
+;; Package-Version: 20230310.2347
+;; Package-Commit: 40c2ad20b48a3d507e933cfd4af37576bc2c8c90
 ;; Version: 0.1.3
 ;; Package-Requires: ((emacs "24.3") (request "0.3.0"))
 ;; Keywords: convenience license api template
@@ -71,10 +71,11 @@
 
 (defun license-templates--sort-data ()
   "Sort data once."
-  (sort license-templates--data
-        (lambda (data1 data2)
-          (string-lessp (license-templates-2str (plist-get data1 :key))
-                        (license-templates-2str (plist-get data2 :key))))))
+  (setq license-templates--data
+        (sort license-templates--data
+              (lambda (data1 data2)
+                (string-lessp (license-templates-2str (plist-get data1 :key))
+                              (license-templates-2str (plist-get data2 :key)))))))
 
 ;;; Core
 
