@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/license-templates
-;; Package-Version: 20230310.2316
-;; Package-Commit: da7820211083a0337a1d4e1bcf955f55c0db174b
+;; Package-Version: 20230310.2328
+;; Package-Commit: 79465b99b70aae5990b0d16ccd67a9d7e89d7df3
 ;; Version: 0.1.3
 ;; Package-Requires: ((emacs "24.3") (request "0.3.0"))
 ;; Keywords: convenience license api template
@@ -118,6 +118,7 @@
   "Get the license information without refreshing cache."
   (cond ((and (not (zerop license-templates--requested))
               (not (license-templates-request-completed-p)))
+         (message "? %s %s" license-templates--requested (length license-templates--data))
          (user-error "Reuqest is not complete yet, please wait a while"))
         (t (unless license-templates--data
              (license-templates--get-info)
