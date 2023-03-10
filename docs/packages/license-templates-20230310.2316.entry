@@ -1,11 +1,11 @@
 (license-templates .
-		   [(20230310 2302)
+		   [(20230310 2316)
 		    ((emacs
 		      (24 3))
 		     (request
 		      (0 3 0)))
 		    "Create LICENSE using GitHub API" single
-		    ((:commit . "86fb278ca6a0039efd874f1a5399e95456d68223")
+		    ((:commit . "da7820211083a0337a1d4e1bcf955f55c0db174b")
 		     (:authors
 		      ("Jen-Chieh" . "jcs090218@gmail.com"))
 		     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
