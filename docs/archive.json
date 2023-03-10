@@ -1089,6 +1089,15 @@
     "tree": "https://github.com/emacs-vs/vs-comment-return"
   },
   {
+    "name": "vs-dark-theme",
+    "summary": "Visual Studio IDE dark theme",
+    "version": "20221231.1702",
+    "url": "https://github.com/emacs-vs/vs-dark-theme",
+    "source": "github",
+    "commit": "636f4db45aa4dac1cda09b54757fdc3584ce6697",
+    "tree": "https://github.com/emacs-vs/vs-dark-theme"
+  },
+  {
     "name": "vs-edit-mode",
     "summary": "Minor mode accomplish editing experience in Visual Studio",
     "version": "20221019.2104",
@@ -1105,6 +1114,15 @@
     "source": "github",
     "commit": "d1e4e5cc3180e3137289c188961752c5598b3643",
     "tree": "https://github.com/jcs-elpa/vs-electric-spacing"
+  },
+  {
+    "name": "vs-light-theme",
+    "summary": "Visual Studio IDE light theme",
+    "version": "20221231.1702",
+    "url": "https://github.com/emacs-vs/vs-light-theme",
+    "source": "github",
+    "commit": "988b649dcb9074719c7fd0ad3f289cf2995d7635",
+    "tree": "https://github.com/emacs-vs/vs-light-theme"
   },
   {
     "name": "vs-revbuf",
