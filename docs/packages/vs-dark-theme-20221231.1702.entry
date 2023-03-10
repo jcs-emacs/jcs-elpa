@@ -1,0 +1,7 @@
+(vs-dark-theme .
+	       [(20221231 1702)
+		((emacs
+		  (24 1)))
+		"Visual Studio IDE dark theme" single
+		((:commit . "636f4db45aa4dac1cda09b54757fdc3584ce6697")
+		 (:url . "https://github.com/emacs-vs/vs-dark-theme"))])
