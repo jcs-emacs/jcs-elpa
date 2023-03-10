@@ -668,10 +668,10 @@
   {
     "name": "license-templates",
     "summary": "Create LICENSE using GitHub API",
-    "version": "20230310.2034",
+    "version": "20230310.2115",
     "url": "https://github.com/jcs-elpa/license-templates",
     "source": "github",
-    "commit": "041b0597618d0dfd5b689cc73d83f696f9b0e07a",
+    "commit": "592c2bdbfe26b6bed67ecf6cb88633e7683e6ccf",
     "tree": "https://github.com/jcs-elpa/license-templates"
   },
   {
