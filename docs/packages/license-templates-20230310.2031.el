@@ -1,12 +1,12 @@
 ;;; license-templates.el --- Create LICENSE using GitHub API  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2020  Shen, Jen-Chieh
+;; Copyright (C) 2020-2023  Shen, Jen-Chieh
 ;; Created date 2020-07-24 11:11:15
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/license-templates
-;; Package-Version: 20230310.2012
-;; Package-Commit: 01bfa385079f5c1931e87b4cd33f8964535e10e8
+;; Package-Version: 20230310.2031
+;; Package-Commit: 1ddfaca61fbc6c5b553cfe84f3ccb5a34ab68840
 ;; Version: 0.1.3
 ;; Package-Requires: ((emacs "24.3") (request "0.3.0"))
 ;; Keywords: convenience license api template
@@ -76,6 +76,8 @@
   "Add data KEY, NAME, and URL, with content."
   (request url
     :type "GET"
+    :headers `(("Content-Type"  . "application/json")
+               ("Authorization" . ,(concat "Bearer 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")))
     :parser 'json-read
     :success
     (cl-function
@@ -91,6 +93,8 @@
         license-templates--requested 0)
   (request "https://api.github.com/licenses"
     :type "GET"
+    :headers `(("Content-Type"  . "application/json")
+               ("Authorization" . ,(concat "Bearer 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")))
     :parser 'json-read
     :success
     (cl-function
@@ -115,7 +119,7 @@
   (unless license-templates--keys
     (dolist (data license-templates--info-list)
       (push (plist-get data :key) license-templates--keys))
-    (setq license-templates--keys (reverse license-templates--keys)))
+    (setq license-templates--keys (sort license-templates--keys #'string-lessp)))
   license-templates--keys)
 
 (defun license-templates--get-content-by-name (name)
