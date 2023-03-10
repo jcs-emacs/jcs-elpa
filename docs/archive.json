@@ -110,10 +110,10 @@
   {
     "name": "codemetrics",
     "summary": "Plugin shows complexity information",
-    "version": "20230310.514",
+    "version": "20230310.608",
     "url": "https://github.com/jcs-elpa/codemetrics",
     "source": "github",
-    "commit": "3cb695ce778ff5d7c85f1414f2f10be429ca9b3e",
+    "commit": "8fe1b3de797a6048a40ecc1aef8aa37d5b8359fb",
     "tree": "https://github.com/jcs-elpa/codemetrics"
   },
   {
