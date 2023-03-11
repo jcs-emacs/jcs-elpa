@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/license-templates
-;; Package-Version: 20230310.2352
-;; Package-Commit: 59fbbe492013adf84171928665b27f1e6b72beeb
+;; Package-Version: 20230311.11
+;; Package-Commit: 09f1b017c93067c2970a0a63b69026bfc172d2b7
 ;; Version: 0.1.3
 ;; Package-Requires: ((emacs "24.3") (request "0.3.0"))
 ;; Keywords: convenience license api template
@@ -48,9 +48,6 @@
   "Filename when creating new license file."
   :type 'string
   :group 'license-templates)
-
-(defvar license-templates-api-key ""
-  "API key to get rid of the limit")
 
 (defvar license-templates--keys nil
   "List of kesy of available templates.")
