@@ -5,10 +5,10 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/buffer-menu-filter
-;; Package-Version: 20221009.1712
-;; Package-Commit: 315d3f956c44f904fb2ec96c100887419449ebe0
+;; Package-Version: 20230312.1004
+;; Package-Commit: 97e2ff777f14184787630e2a657a0e2b94dd76b7
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "26.1") (buffer-menu-project "0.1.0") (flx "0.6.1") (ht "2.0"))
+;; Package-Requires: ((emacs "26.1") (buffer-menu-project "0.1.0") (flx "0.6.1") (ht "2.0") (msgu "0.1.0"))
 ;; Keywords: convenience buffer menu filter
 
 ;; This file is NOT part of GNU Emacs.
@@ -37,6 +37,7 @@
 (require 'subr-x)
 
 (require 'buffer-menu-project)
+(require 'msgu)
 (require 'flx)
 (require 'ht)
 
@@ -112,12 +113,14 @@ From scale 0 to 100.")
 (defun buffer-menu-filter-mode--enable ()
   "Enable function `buffer-menu-filter-mode'."
   (add-hook 'Buffer-menu-mode-hook #'buffer-menu-filter--major-mode-hook)
-  (advice-add 'list-buffers-noselect :after #'buffer-menu-filter--list-buffers-noselect))
+  (advice-add 'list-buffers-noselect :after #'buffer-menu-filter--list-buffers-noselect)
+  (advice-add 'buffer-menu--display-help :override #'buffer-menu-filter--display-help))
 
 (defun buffer-menu-filter-mode--disable ()
   "Disable function `buffer-menu-filter-mode'."
   (remove-hook 'Buffer-menu-mode-hook #'buffer-menu-filter--major-mode-hook)
-  (advice-remove 'list-buffers-noselect #'buffer-menu-filter--list-buffers-noselect))
+  (advice-remove 'list-buffers-noselect #'buffer-menu-filter--list-buffers-noselect)
+  (advice-remove 'buffer-menu--display-help #'buffer-menu-filter--display-help))
 
 ;;;###autoload
 (define-minor-mode buffer-menu-filter-mode
@@ -158,6 +161,15 @@ If BUFFER isn't showing; then execute ERROR operations instead."
         (with-selected-window win
           (when success (funcall success))))
     (when error (funcall error))))
+
+;;
+;; (@* "Help" )
+;;
+
+(defun buffer-menu-filter--display-help ()
+  "Override function `buffer-menu--display-help'."
+  (msgu-inhibit-log
+    (message "<INFO> Type something to start the filter")))
 
 ;;
 ;; (@* "Search / Filter" )
