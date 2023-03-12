@@ -290,10 +290,10 @@
   {
     "name": "easky",
     "summary": "Control Eask in Emacs",
-    "version": "20230216.853",
+    "version": "20230312.2214",
     "url": "https://github.com/emacs-eask/easky",
     "source": "github",
-    "commit": "ff45f340a0a6ea015911f2b6101bf90990695c10",
+    "commit": "82a5e695b117d51cb64ee5f681ceb34f0d776102",
     "tree": "https://github.com/emacs-eask/easky"
   },
   {
@@ -1091,10 +1091,10 @@
   {
     "name": "vs-comment-return",
     "summary": "Comment return like Visual Studio",
-    "version": "20230312.1157",
+    "version": "20230312.2236",
     "url": "https://github.com/emacs-vs/vs-comment-return",
     "source": "github",
-    "commit": "84d19be04f3ea03e62c05809fa39fa6aeb8176f0",
+    "commit": "a93d6dbdd0775e6eb17a78ce769239df0fa8fd88",
     "tree": "https://github.com/emacs-vs/vs-comment-return"
   },
   {
