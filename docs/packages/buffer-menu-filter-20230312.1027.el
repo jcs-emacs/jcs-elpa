@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/buffer-menu-filter
-;; Package-Version: 20230312.1004
-;; Package-Commit: 97e2ff777f14184787630e2a657a0e2b94dd76b7
+;; Package-Version: 20230312.1027
+;; Package-Commit: 9d18fd26b5bb3919ffbd5f7f92812b9153bb5c30
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (buffer-menu-project "0.1.0") (flx "0.6.1") (ht "2.0") (msgu "0.1.0"))
 ;; Keywords: convenience buffer menu filter
@@ -124,7 +124,7 @@ From scale 0 to 100.")
 
 ;;;###autoload
 (define-minor-mode buffer-menu-filter-mode
-  "Minor mode 'buffer-menu-filter-mode'."
+  "Minor mode `buffer-menu-filter-mode'."
   :global t
   :require 'buffer-menu-filter-mode
   :group 'buffer-menu-filter
