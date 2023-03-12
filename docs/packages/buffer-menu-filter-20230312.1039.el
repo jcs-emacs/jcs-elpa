@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/buffer-menu-filter
-;; Package-Version: 20230312.1027
-;; Package-Commit: 9d18fd26b5bb3919ffbd5f7f92812b9153bb5c30
+;; Package-Version: 20230312.1039
+;; Package-Commit: 6bd4bb623cd604a4decb97ad512c59661aa14ec3
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (buffer-menu-project "0.1.0") (flx "0.6.1") (ht "2.0") (msgu "0.1.0"))
 ;; Keywords: convenience buffer menu filter
@@ -169,7 +169,7 @@ If BUFFER isn't showing; then execute ERROR operations instead."
 (defun buffer-menu-filter--display-help ()
   "Override function `buffer-menu--display-help'."
   (msgu-inhibit-log
-    (message "<INFO> Type something to start the filter")))
+    (message "[INFO] Type something to start the filter")))
 
 ;;
 ;; (@* "Search / Filter" )
