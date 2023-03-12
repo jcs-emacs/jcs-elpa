@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-comment-return
-;; Package-Version: 20230312.1018
-;; Package-Commit: 39469b4d0899b1a7f44afa50fd70b015fe0ce4bc
+;; Package-Version: 20230312.1157
+;; Package-Commit: 84d19be04f3ea03e62c05809fa39fa6aeb8176f0
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "28.1"))
 ;; Keywords: convenience
@@ -132,6 +132,12 @@
   "Current line empty, but accept spaces/tabs in there.  (not absolute)."
   (save-excursion (beginning-of-line) (looking-at "[[:space:]\t]*$")))
 
+(defun vs-comment-return--infront-first-char-at-line-p (&optional pt)
+  "Return non-nil if there is nothing infront of the right from the PT."
+  (save-excursion
+    (when pt (goto-char pt))
+    (null (re-search-backward "[^ \t]" (line-beginning-position) t))))
+
 ;;
 ;; (@* "Core" )
 ;;
@@ -170,13 +176,15 @@
         (delete-region (point-min) (point))
         (string-empty-p (string-trim (buffer-string)))))))
 
-(defun vs-comment-return--comment-column (prefix)
-  "Return column for indenting comment.
+(defun vs-comment-return--doc-only-line-column (prefix)
+  "Return nil there is code interaction within the same line; else we return
+the column of the line.
 
 We use PREFIX for navigation; we search it, then check what is infront."
   (save-excursion
     (search-backward prefix (line-beginning-position) t)
-    (current-column)))
+    (when (vs-comment-return--infront-first-char-at-line-p)
+      (current-column))))
 
 (defun vs-comment-return--next-line-comment-prefix ()
   "Return non-nil when next line is a comment."
@@ -221,10 +229,11 @@ We use PREFIX for navigation; we search it, then check what is infront."
            (empty-comment   (vs-comment-return--empty-comment-p prefix))
            (prefix-next-ln  (vs-comment-return--next-line-comment-prefix))
            (next-doc-line   (vs-comment-return--comment-doc-p prefix-next-ln))
-           (column          (vs-comment-return--comment-column prefix)))
+           (column          (vs-comment-return--doc-only-line-column prefix)))
       (apply func args)  ; make return
       (when
           (and (vs-comment-return--line-empty-p)  ; must on newline
+               column
                (or (and
                     ;; Check if the command style matches.
                     (vs-comment-return--string-match-mut-p prefix-next-ln prefix)
