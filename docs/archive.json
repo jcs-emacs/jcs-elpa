@@ -56,10 +56,10 @@
   {
     "name": "buffer-menu-filter",
     "summary": "Filter buffer-menu items using fake header",
-    "version": "20230312.1027",
+    "version": "20230312.1039",
     "url": "https://github.com/jcs-elpa/buffer-menu-filter",
     "source": "github",
-    "commit": "9d18fd26b5bb3919ffbd5f7f92812b9153bb5c30",
+    "commit": "6bd4bb623cd604a4decb97ad512c59661aa14ec3",
     "tree": "https://github.com/jcs-elpa/buffer-menu-filter"
   },
   {
