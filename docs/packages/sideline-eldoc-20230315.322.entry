@@ -1,7 +1,7 @@
 (sideline-eldoc .
-		[(20230306 324)
+		[(20230315 322)
 		 nil "sideline backend for eldoc." single
-		 ((:commit . "71d9434f85fe04ce2a74afe70e874706133cc92b")
+		 ((:commit . "1e709f18bbc76b4a422d7c23288f4478d2ff0960")
 		  (:authors
 		   ("Qiqi Jin" . "ginqi7@gmail.com"))
 		  (:maintainer "Qiqi Jin" . "ginqi7@gmail.com"))])

@@ -1,6 +1,6 @@
 ;;; sideline-eldoc.el --- sideline backend for eldoc.  -*- lexical-binding: t; -*-
-;; Package-Version: 20230306.324
-;; Package-Commit: 71d9434f85fe04ce2a74afe70e874706133cc92b
+;; Package-Version: 20230315.322
+;; Package-Commit: 1e709f18bbc76b4a422d7c23288f4478d2ff0960
 
 ;; Copyright (C) 2023  Qiqi Jin
 
@@ -144,7 +144,10 @@ COMMAND is input parameter."
 
 (defun sideline-eldoc--extract-message (str &rest args)
   "Extract eldoc message format STR with ARGS."
-  (setq sideline-eldoc--message (apply #'format str args)))
+  (if str
+      (setq sideline-eldoc--message (apply #'format str args))
+    nil)
+  )
 
 (if sideline-eldoc-hide-minibuffer
     (setq eldoc-message-function #'sideline-eldoc--extract-message)
