@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-comment-return
-;; Package-Version: 20230312.2236
-;; Package-Commit: a93d6dbdd0775e6eb17a78ce769239df0fa8fd88
+;; Package-Version: 20230315.1835
+;; Package-Commit: adf2738eba47b29fefe1db2882167ea8b7b00fa6
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "28.1"))
 ;; Keywords: convenience
@@ -47,6 +47,11 @@
 
 (defcustom vs-comment-return-keep-suffix nil
   "Do not expand suffix comment symbol."
+  :type 'boolean
+  :group 'vs-comment-return)
+
+(defcustom vs-comment-return-cancel-after nil
+  "If non-nil, remove the prefix after returning twice."
   :type 'boolean
   :group 'vs-comment-return)
 
@@ -139,6 +144,38 @@
     (null (re-search-backward "[^ \t]" (line-beginning-position) t))))
 
 ;;
+;; (@* "Cancelling" )
+;;
+
+(defvar-local vs-comment-return--return-last-p nil
+  "Store weather we hit return twice in a row.")
+
+(defun vs-comment-return--pre-command ()
+  "Execution before command's execution."
+  (add-hook 'post-self-insert-hook #'vs-comment-return--post-self-insert nil t)
+  (add-hook 'post-command-hook #'vs-comment-return--post-command nil t)
+  ;; De-register ourselves!
+  (remove-hook 'pre-command-hook #'vs-comment-return--pre-command t))
+
+(defun vs-comment-return--post-command ()
+  "Execution after command's execution."
+  ;; De-register ourselves!
+  (remove-hook 'post-command-hook #'vs-comment-return--post-command t)
+  ;; Cancel action!
+  (remove-hook 'post-self-insert-hook #'vs-comment-return--post-self-insert t))
+
+(defun vs-comment-return--post-self-insert ()
+  "Execution after self insertion."
+  (when (and vs-comment-return-cancel-after
+             (eq last-command-event ?\n)
+             (vs-comment-return--line-empty-p))
+    (forward-line -1)
+    (delete-region (1- (line-beginning-position)) (line-end-position))
+    (forward-line 1))
+  ;; De-register ourselves!
+  (remove-hook 'post-self-insert-hook #'vs-comment-return--post-self-insert t))
+
+;;
 ;; (@* "Core" )
 ;;
 
@@ -183,7 +220,7 @@ the column of the line.
 We use PREFIX for navigation; we search it, then check what is infront."
   (when prefix
     (save-excursion
-      (search-backward prefix (line-beginning-position) t)
+      (search-backward (string-trim prefix) (line-beginning-position) t)
       (when (vs-comment-return--infront-first-char-at-line-p)
         (current-column)))))
 
@@ -244,7 +281,12 @@ We use PREFIX for navigation; we search it, then check what is infront."
                    (and doc-line             ; if previous doc line
                         (not empty-comment)  ; if previous comment line is not empty
                         (not (member (string-trim prefix) vs-comment-return-inhibit-prefix)))))
-        (vs-comment-return--comment-line prefix column))))))
+        (vs-comment-return--comment-line prefix column)
+        (when (and vs-comment-return-cancel-after
+                   (not prefix-next-ln))  ; only happens when next line is not comment
+          (add-hook 'pre-command-hook #'vs-comment-return--pre-command nil t)
+          (remove-hook 'post-command-hook #'vs-comment-return--post-command t)
+          (remove-hook 'post-self-insert-hook #'vs-comment-return--post-self-insert t)))))))
 
 ;;
 ;; (@* "C-like" )
