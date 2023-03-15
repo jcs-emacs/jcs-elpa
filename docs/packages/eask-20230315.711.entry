@@ -1,9 +1,9 @@
 (eask .
-      [(20230315 235)
+      [(20230315 711)
        ((emacs
 	 (26 1)))
        "Core Eask APIs, for Eask CLI development" tar
-       ((:commit . "a77b2bd9823a811d775537c01f92d75e4e2c56f2")
+       ((:commit . "98c901b0dd66e5c3f56ac3c2013afcd31167ec49")
 	(:authors
 	 ("Jen-Chieh" . "jcs090218@gmail.com"))
 	(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
