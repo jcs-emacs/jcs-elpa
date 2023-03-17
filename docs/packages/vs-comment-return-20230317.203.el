@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-comment-return
-;; Package-Version: 20230316.941
-;; Package-Commit: 7fd293cb54d4cd5a086b28ceea0964c214e1582a
+;; Package-Version: 20230317.203
+;; Package-Commit: c7092675a3ec067b517d144be015bd4c9d77cd6b
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "28.1"))
 ;; Keywords: convenience
@@ -332,7 +332,9 @@ We use PREFIX for navigation; we search it, then check what is infront."
 (defun vs-comment-return--c-like-return ()
   "Do C-like comment return for /**/."
   (when (vs-comment-return--c-like-multiline-comment-p)
+    (delete-region (line-beginning-position) (point))
     (vs-comment-return--comment-line "* ")
+    (indent-for-tab-command)
     (when (and (not vs-comment-return-keep-suffix)
                (save-excursion (search-forward "*/" (line-end-position) t)))
       (save-excursion
