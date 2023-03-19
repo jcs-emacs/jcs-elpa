@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-openai/chatgpt
-;; Package-Version: 20230319.1017
-;; Package-Commit: 00315664acd46e801aa24a92f4345b9221d1fc77
+;; Package-Version: 20230319.1050
+;; Package-Commit: 65fc83a3659355f792c14697c469188cdd735fb3
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (openai "0.1.0") (ht "2.0"))
 ;; Keywords: comm openai
@@ -93,12 +93,11 @@
     target))
 
 ;;;###autoload
-(define-derived-mode chatgpt-mode comint-mode "ChatGPT"
+(define-derived-mode chatgpt-mode fundamental-mode "ChatGPT"
   "Major mode for `chatgpt-mode'.
 
 \\<chatgpt-mode-map>"
-  (setq comint-prompt-regexp cassandra-prompt-regexp
-        comint-prompt-read-only t))
+  )
 
 ;;;###autoload
 (defun chatgpt-new ()
