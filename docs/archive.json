@@ -90,6 +90,15 @@
     "tree": "https://github.com/TakesxiSximada/change-case.el"
   },
   {
+    "name": "chatgpt",
+    "summary": "Use ChatGPT inside Emacs",
+    "version": "20230319.1017",
+    "url": "https://github.com/emacs-openai/chatgpt",
+    "source": "github",
+    "commit": "00315664acd46e801aa24a92f4345b9221d1fc77",
+    "tree": "https://github.com/emacs-openai/chatgpt"
+  },
+  {
     "name": "codegpt",
     "summary": "Use GPT-3 tp help you write code",
     "version": "20230317.651",
