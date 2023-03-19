@@ -92,10 +92,10 @@
   {
     "name": "chatgpt",
     "summary": "Use ChatGPT inside Emacs",
-    "version": "20230319.1050",
+    "version": "20230319.1120",
     "url": "https://github.com/emacs-openai/chatgpt",
     "source": "github",
-    "commit": "65fc83a3659355f792c14697c469188cdd735fb3",
+    "commit": "f550c825c12c83b506cbfa611c0f99236338dd2f",
     "tree": "https://github.com/emacs-openai/chatgpt"
   },
   {
@@ -839,10 +839,10 @@
   {
     "name": "package-build",
     "summary": "Tools for assembling a package archive",
-    "version": "20230221.1303",
+    "version": "20230319.1115",
     "url": "https://github.com/melpa/package-build",
     "source": "github",
-    "commit": "9199271d78dc0f4f85047d6daef0e9721a6e63cd",
+    "commit": "974406211f9c9d6549f80ca33f6ba8797cb2b11f",
     "tree": "https://github.com/melpa/package-build"
   },
   {
