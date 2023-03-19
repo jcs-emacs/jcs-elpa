@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-openai/chatgpt
-;; Package-Version: 20230319.1050
-;; Package-Commit: 65fc83a3659355f792c14697c469188cdd735fb3
+;; Package-Version: 20230319.1120
+;; Package-Commit: f550c825c12c83b506cbfa611c0f99236338dd2f
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (openai "0.1.0") (ht "2.0"))
 ;; Keywords: comm openai
@@ -33,7 +33,7 @@
 
 ;;; Code:
 
-(require 'comint)
+(require 'cl-lib)
 
 (require 'openai)
 (require 'ht)
@@ -44,19 +44,46 @@
   :group 'comm
   :link '(url-link :tag "Repository" "https://github.com/emacs-openai/chatgpt"))
 
+(defcustom chatgpt-max-tokens 4000
+  "The maximum number of tokens to generate in the completion."
+  :type 'integer
+  :group 'chatgpt)
+
+(defcustom chatgpt-temperature 1.0
+  "What sampling temperature to use."
+  :type 'number
+  :group 'chatgpt)
+
 (defconst chatgpt-buffer-name-format "*ChatGPT: <%s>*"
-  "Name of the buffer to use for the `chatgpt' comint instance.")
+  "Name of the buffer to use for the `chatgpt' instance.")
 
 (defvar chatgpt-instances (ht-create)
   "List of instances, each pair is consist of (index . buffer).")
+
+(defvar-local chatgpt-instance nil
+  "Instance data for each buffer.")
+
+(defvar-local chatgpt-chat-history nil
+  "The chat history use to send request.")
+
+(defvar-local chatgpt-requesting-p nil
+  "Non-nil when requesting; waiting for the response.")
 
 ;;
 ;;; Util
 
 (defun chatgpt--pop-to-buffer (buffer-or-name)
-  ""
+  "Wrapper to function `pop-to-buffer'.
+
+Display buffer from BUFFER-OR-NAME."
   (pop-to-buffer buffer-or-name `((display-buffer-in-direction)
                                   (dedicated . t))))
+
+(defun chatgpt--get-user ()
+  "Return the current user."
+  (if (string-empty-p openai-user)
+      "user"  ; this is free?
+    openai-user))
 
 ;;
 ;;; Core
@@ -92,12 +119,43 @@
       (setq target (ht-size chatgpt-instances)))  ; Create a new one!
     target))
 
+(defun chatgpt--display-message (instance message)
+  ""
+  (with-current-buffer (get-buffer (cdr instance))
+    (let ((inhibit-read-only t))
+
+      )))
+
+(defun chatgpt-type-response ()
+  ""
+  (interactive)
+  (let ((response (read-string "Type response: "))
+        (instance chatgpt-instance))
+    (setq chatgpt-requesting-p t)
+    (openai-chat response
+                 (lambda (data)
+                   (let ((message ; TODO: ..
+                          ))
+                     (chatgpt--display-response instance message)))
+                 :max-tokens chatgpt-max-tokens
+                 :temperature chatgpt-temperature
+                 :user (chatgpt--get-user))))
+
+;;
+;;; Entry
+
+(defvar chatgpt-mode-map
+  (let ((map (make-sparse-keymap)))
+    (define-key map (kbd "RET") #'chatgpt-type-response)
+    map)
+  "Keymap for `chatgpt-mode'.")
+
 ;;;###autoload
 (define-derived-mode chatgpt-mode fundamental-mode "ChatGPT"
   "Major mode for `chatgpt-mode'.
 
 \\<chatgpt-mode-map>"
-  )
+  (setq-local buffer-read-only t))
 
 ;;;###autoload
 (defun chatgpt-new ()
@@ -109,6 +167,7 @@
       (user-error "Internal Error: creating instance that already exists"))
     (ht-set chatgpt-instances new-index (get-buffer-create new-buffer-name))
     (with-current-buffer new-buffer-name
+      (setq chatgpt-instance (cons new-index (current-buffer)))
       (chatgpt-mode 1))
     (chatgpt--pop-to-buffer new-buffer-name)))
 
