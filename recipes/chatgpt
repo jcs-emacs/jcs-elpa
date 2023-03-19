@@ -1,0 +1,1 @@
+(chatgpt :repo "emacs-openai/chatgpt" :fetcher github)
