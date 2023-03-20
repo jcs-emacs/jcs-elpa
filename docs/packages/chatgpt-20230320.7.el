@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-openai/chatgpt
-;; Package-Version: 20230319.2124
-;; Package-Commit: e06f122e1a958240485c7a0b0e345028560f843c
+;; Package-Version: 20230320.7
+;; Package-Commit: d34aa0fe32083ae6f898bf21001a14442a94d8b8
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (openai "0.1.0") (lv "0.0") (ht "2.0"))
 ;; Keywords: comm openai
@@ -82,6 +82,11 @@
 (defvar-local chatgpt--display-pointer 0
   "Display pointer.")
 
+(defface chatgpt-user
+  '((t :inherit font-lock-builtin-face))
+  "Face used for user."
+  :group 'chatgpt)
+
 ;;
 ;;; Util
 
@@ -92,7 +97,7 @@ Display buffer from BUFFER-OR-NAME."
   (pop-to-buffer buffer-or-name `((display-buffer-in-direction)
                                   (dedicated . t))))
 
-(defun chatgpt--get-user ()
+(defun chatgpt-user ()
   "Return the current user."
   (if (string-empty-p openai-user)
       "user"  ; this is free?
@@ -195,13 +200,40 @@ The data is consist of ROLE and CONTENT."
 ;;
 ;;; Display
 
+(defun chatgpt--render-markdown (content)
+  "Render CONTENT in markdown."
+  (if (featurep 'markdown-mode)
+      (with-temp-buffer
+        (insert content)
+        (delay-mode-hooks (markdown-mode))
+        (ignore-errors (font-lock-ensure))
+        (buffer-string))
+    content))
+
+(defun chatgpt--fill-region (start end)
+  "Like function `fill-region' (START to END), improve readability."
+  (save-restriction
+    (narrow-to-region start end)
+    (goto-char (point-min))
+    (while (not (eobp))
+      (end-of-line)
+      (when (< fill-column (current-column))
+        (fill-region (line-beginning-position) (line-end-position)))
+      (forward-line 1))))
+
 (defun chatgpt--display-messages ()
   "Display all messages to latest response."
   (while (< chatgpt--display-pointer (length chatgpt-chat-history))
     (let ((message (elt chatgpt-chat-history chatgpt--display-pointer)))
       (let-alist message
-        (insert .role ": " .content)
-        (insert "\n\n")))
+        (goto-char (point-max))
+        (let* ((start (point))
+               (role (format "<%s>:" .role))
+               (content (chatgpt--render-markdown .content)))
+          (add-face-text-property 0 (length role) 'chatgpt-user nil role)
+          (insert role " " content)
+          (insert "\n\n")
+          (chatgpt--fill-region start (point)))))
     (cl-incf chatgpt--display-pointer)))
 
 (defun chatgpt-type-response ()
@@ -212,8 +244,10 @@ The data is consist of ROLE and CONTENT."
     (message "[BUSY] Waiting for OpanAI to response..."))
    (t
     (let ((response (read-string "Type response: "))
-          (user (chatgpt--get-user))
+          (user (chatgpt-user))
           (instance chatgpt-instance))
+      (when (string-empty-p response)
+        (user-error "[INFO] Invalid response or instruction: %s" response))
       (chatgpt--add-message user response)  ; add user's response
       (chatgpt-with-instance instance
         (chatgpt--display-messages))        ; display it
@@ -250,19 +284,23 @@ The data is consist of ROLE and CONTENT."
 (defun chatgpt-info ()
   "Show session information."
   (interactive)
-  (lv-message
-   (concat
-    (format "model: %s" chatgpt-model) "\n"
-    (format "prompt_tokens: %s | completion_tokens: %s | total_tokens: %s"
-            (ht-get chatgpt-data 'prompt_tokens 0)
-            (ht-get chatgpt-data 'completion_tokens 0)
-            (ht-get chatgpt-data 'total_tokens 0))
-    "\n"
-    (format "max_tokens: %s" chatgpt-max-tokens) "\n"
-    (format "temperature: %s" chatgpt-temperature) "\n"
-    (format "user: %s" (chatgpt--get-user))))
-  ;; Register event to cancel lv window!
-  (add-hook 'pre-command-hook #'chatgpt--pre-command-once))
+  (when (eq major-mode 'chatgpt-mode)
+    (lv-message
+     (concat
+      (format "session: %s" (cdr chatgpt-instance)) "\n"
+      (format "history size: %s" (length chatgpt-chat-history))
+      "\n\n"
+      (format "prompt_tokens: %s | completion_tokens: %s | total_tokens: %s"
+              (ht-get chatgpt-data 'prompt_tokens 0)
+              (ht-get chatgpt-data 'completion_tokens 0)
+              (ht-get chatgpt-data 'total_tokens 0))
+      "\n\n"
+      (format "model: %s" chatgpt-model) "\n"
+      (format "max_tokens: %s" chatgpt-max-tokens) "\n"
+      (format "temperature: %s" chatgpt-temperature) "\n"
+      (format "user: %s" (chatgpt-user))))
+    ;; Register event to cancel lv window!
+    (add-hook 'pre-command-hook #'chatgpt--pre-command-once)))
 
 ;;
 ;;; Entry
@@ -278,7 +316,8 @@ The data is consist of ROLE and CONTENT."
   "Major mode for `chatgpt-mode'.
 
 \\<chatgpt-mode-map>"
-  (setq-local buffer-read-only t))
+  (setq-local buffer-read-only t)
+  (font-lock-mode -1))
 
 (defun chatgpt-register-instance (index buffer-or-name)
   "Register BUFFER-OR-NAME with INDEX as an instance.
