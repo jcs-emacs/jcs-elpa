@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-openai/chatgpt
-;; Package-Version: 20230320.937
-;; Package-Commit: 797ce600d68a0c68969cb7a91b83da78b9d16947
+;; Package-Version: 20230320.1000
+;; Package-Commit: 7810f86c66d5679203107d30c20b7c34088af829
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (openai "0.1.0") (lv "0.0") (ht "2.0") (markdown-mode "2.1"))
 ;; Keywords: comm openai
@@ -356,7 +356,7 @@ The data is consist of ROLE and CONTENT."
 
 (defun chatgpt-input-header-line ()
   "The display for input header line."
-  (format "Session: %s" (cdr chatgpt-input-instance)))
+  (format " Session: %s" (cdr chatgpt-input-instance)))
 
 (defvar chatgpt-input-mode-map
   (let ((map (make-sparse-keymap)))
@@ -425,9 +425,10 @@ The data is consist of ROLE and CONTENT."
 
 (defun chatgpt-header-line ()
   "The display for header line."
-  ;; TODO: ..
-  ""
-  )
+  (format " Session: %s, History: %s, User: %s (M-x chatgpt-info)"
+          (cdr chatgpt-instance)
+          (length chatgpt-chat-history)
+          (chatgpt-user)))
 
 (defvar chatgpt-mode-map
   (let ((map (make-sparse-keymap)))
