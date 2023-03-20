@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-openai/chatgpt
-;; Package-Version: 20230320.7
-;; Package-Commit: d34aa0fe32083ae6f898bf21001a14442a94d8b8
+;; Package-Version: 20230320.726
+;; Package-Commit: c4de23aa0136aebd95851ab6d65f38ceeca65836
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (openai "0.1.0") (lv "0.0") (ht "2.0"))
 ;; Keywords: comm openai
@@ -61,6 +61,12 @@
   :type 'number
   :group 'chatgpt)
 
+(defcustom chatgpt-input-method 'window
+  "The method receive input."
+  :type '(choice (const :tag "Read from minibuffer" minibuffer)
+                 (const :tag "Read inside new window" window))
+  :group 'chatgpt)
+
 (defconst chatgpt-buffer-name-format "*ChatGPT: <%s>*"
   "Name of the buffer to use for the `chatgpt' instance.")
 
@@ -89,6 +95,12 @@
 
 ;;
 ;;; Util
+
+(defun chatgpt--kill-buffer (buffer-or-name)
+  "Like function `kill-buffer' but in the safe way."
+  (when-let ((buffer (get-buffer chatgpt-input-buffer-name)))
+    (when (buffer-live-p buffer)
+      (kill-buffer buffer))))
 
 (defun chatgpt--pop-to-buffer (buffer-or-name)
   "Wrapper to function `pop-to-buffer'.
@@ -236,6 +248,28 @@ The data is consist of ROLE and CONTENT."
           (chatgpt--fill-region start (point)))))
     (cl-incf chatgpt--display-pointer)))
 
+(defun chatgpt-send-response (response)
+  "Send RESPONSE to ChatGPT."
+  (let ((user (chatgpt-user))
+        (instance chatgpt-instance))
+    (when (string-empty-p response)
+      (user-error "[INFO] Invalid response or instruction: %s" response))
+    (chatgpt--add-message user response)  ; add user's response
+    (chatgpt-with-instance instance
+      (chatgpt--display-messages))        ; display it
+    (setq chatgpt-requesting-p t)
+    (openai-chat chatgpt-chat-history
+                 (lambda (data)
+                   (chatgpt-with-instance instance
+                     (setq chatgpt-requesting-p nil)
+                     (chatgpt--add-tokens data)
+                     (chatgpt--add-response-messages data)
+                     (chatgpt--display-messages)))
+                 :model chatgpt-model
+                 :max-tokens chatgpt-max-tokens
+                 :temperature chatgpt-temperature
+                 :user user)))
+
 (defun chatgpt-type-response ()
   "Type response to OpenAI."
   (interactive)
@@ -243,26 +277,79 @@ The data is consist of ROLE and CONTENT."
    (chatgpt-requesting-p
     (message "[BUSY] Waiting for OpanAI to response..."))
    (t
-    (let ((response (read-string "Type response: "))
-          (user (chatgpt-user))
-          (instance chatgpt-instance))
-      (when (string-empty-p response)
-        (user-error "[INFO] Invalid response or instruction: %s" response))
-      (chatgpt--add-message user response)  ; add user's response
-      (chatgpt-with-instance instance
-        (chatgpt--display-messages))        ; display it
-      (setq chatgpt-requesting-p t)
-      (openai-chat chatgpt-chat-history
-                   (lambda (data)
-                     (chatgpt-with-instance instance
-                       (setq chatgpt-requesting-p nil)
-                       (chatgpt--add-tokens data)
-                       (chatgpt--add-response-messages data)
-                       (chatgpt--display-messages)))
-                   :model chatgpt-model
-                   :max-tokens chatgpt-max-tokens
-                   :temperature chatgpt-temperature
-                   :user user)))))
+    (cl-case chatgpt-input-method
+      (`minibuffer
+       (chatgpt-send-response (read-string "Type response: ")))
+      (`window
+       (chatgpt--start-input chatgpt-instance))
+      (t
+       (user-error "Invalid input method: %s" chatgpt-input-method))))))
+
+;;
+;;; Input
+
+(defconst chatgpt-input-buffer-name "*ChatGPT-Input*"
+  "Buffer name to receive input.")
+
+(defvar chatgpt-input-instance nil
+  "The current instance; there is only one instance at a time.")
+
+(defun chatgpt--start-input (instance)
+  "Start input from INSTANCE."
+  (chatgpt--kill-buffer chatgpt-input-buffer-name)  ; singleton
+  (let ((dir (if (window-parameter nil 'window-side)
+                 'bottom 'down))
+        (buffer (get-buffer-create chatgpt-input-buffer-name)))
+    (with-current-buffer buffer
+      (chatgpt-input-mode)
+      (setq chatgpt-input-instance instance)
+      (erase-buffer)
+      (insert "Type response here...")
+      (mark-whole-buffer))  ; waiting for deletion
+    (pop-to-buffer buffer `((display-buffer-in-direction)
+                            (direction . ,dir)
+                            (dedicated . t)
+                            (window-height . fit-window-to-buffer)))))
+
+(defun chatgpt-input-send ()
+  "Send the input."
+  (interactive)
+  (cond
+   ((not (eq major-mode #'chatgpt-input-mode)) )  ; does nothing
+   (chatgpt-requesting-p
+    (message "[BUSY] Waiting for OpanAI to response..."))
+   (t
+    (if (use-region-p)
+        (delete-region (region-beginning) (region-end))
+      (let ((response (buffer-string)))
+        (chatgpt-with-instance chatgpt-input-instance
+          (chatgpt-send-response response))
+        (erase-buffer))))))
+
+(defun chatgpt-input--post-command ()
+  "Execution after input."
+  (let ((max-lines (line-number-at-pos (point-max))))
+    (fit-window-to-buffer)
+    (enlarge-window (- max-lines (window-text-height)))))
+
+(defun chatgpt-input-header-line ()
+  "The display for input header line."
+  (format "Session: %s" (cdr chatgpt-input-instance)))
+
+(defvar chatgpt-input-mode-map
+  (let ((map (make-sparse-keymap)))
+    (define-key map (kbd "S-<return>") #'newline)
+    (define-key map (kbd "RET") #'chatgpt-input-send)
+    map)
+  "Keymap for `chatgpt-mode'.")
+
+;;;###autoload
+(define-derived-mode chatgpt-input-mode fundamental-mode "ChatGPT Input"
+  "Major mode for `chatgpt-input-mode'.
+
+\\<chatgpt-input-mode-map>"
+  (setq-local header-line-format `((:eval (chatgpt-input-header-line))))
+  (add-hook 'post-command-hook #'chatgpt-input--post-command nil t))
 
 ;;
 ;;; Info
@@ -284,7 +371,7 @@ The data is consist of ROLE and CONTENT."
 (defun chatgpt-info ()
   "Show session information."
   (interactive)
-  (when (eq major-mode 'chatgpt-mode)
+  (when (eq major-mode #'chatgpt-mode)
     (lv-message
      (concat
       (format "session: %s" (cdr chatgpt-instance)) "\n"
@@ -305,6 +392,10 @@ The data is consist of ROLE and CONTENT."
 ;;
 ;;; Entry
 
+(defun chatgpt-mode-kill-buffer ()
+  ""
+  )
+
 (defvar chatgpt-mode-map
   (let ((map (make-sparse-keymap)))
     (define-key map (kbd "RET") #'chatgpt-type-response)
@@ -317,7 +408,8 @@ The data is consist of ROLE and CONTENT."
 
 \\<chatgpt-mode-map>"
   (setq-local buffer-read-only t)
-  (font-lock-mode -1))
+  (font-lock-mode -1)
+  (add-hook 'kill-buffer-hook #'chatgpt-mode-kill-buffer nil t))
 
 (defun chatgpt-register-instance (index buffer-or-name)
   "Register BUFFER-OR-NAME with INDEX as an instance.
