@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-edit-mode
-;; Package-Version: 20221019.2104
-;; Package-Commit: 2e7748afcb4a56a4158c16caeca5b7871d174668
+;; Package-Version: 20230320.210
+;; Package-Commit: f82272f858c4fe1864963c8202d78f7aecfede36
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (mwim "0.4") (ts-fold "0.1.0"))
 ;; Keywords: convenience editing vs
@@ -85,6 +85,7 @@
 
 (defun vs-edit-turn-on-mode ()
   "Turn on the `vs-edit-mode'."
+  (advice-add 'newline :around #'vs-edit-newline)
   (vs-edit-mode 1))
 
 ;;;###autoload
@@ -113,6 +114,10 @@
 (defun vs-edit--delete-region ()
   "Delete region by default value."
   (when (use-region-p) (delete-region (region-beginning) (region-end))))
+
+(defun vs-edit--current-line-totally-empty-p ()
+  "Current line empty with no spaces/tabs in there.  (absolute)."
+  (and (bolp) (eolp)))
 
 (defun vs-edit--current-line-empty-p ()
   "Current line empty, but accept spaces/tabs in there.  (not absolute)."
@@ -147,6 +152,17 @@
 ;;
 ;; (@* "Core" )
 ;;
+
+(defun vs-edit-newline (func &rest args)
+  "New line advice (FUNC and ARGS)."
+  (if (not vs-edit-mode)
+      (apply func args)
+    (when (vs-edit--current-line-totally-empty-p) (indent-for-tab-command))
+    (let ((ln-cur (buffer-substring (line-beginning-position) (point))))
+      (apply func args)
+      (save-excursion
+        (forward-line -1)
+        (when (vs-edit--current-line-totally-empty-p) (insert ln-cur))))))
 
 (defun vs-edit-opening-curly-bracket-key ()
   "For programming langauge that need `{`."
