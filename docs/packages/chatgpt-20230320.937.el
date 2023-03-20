@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-openai/chatgpt
-;; Package-Version: 20230320.849
-;; Package-Commit: 9e51c48af94b81b64d5f5907705ca0c0e0fad711
+;; Package-Version: 20230320.937
+;; Package-Commit: 797ce600d68a0c68969cb7a91b83da78b9d16947
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (openai "0.1.0") (lv "0.0") (ht "2.0") (markdown-mode "2.1"))
 ;; Keywords: comm openai
@@ -254,8 +254,13 @@ The data is consist of ROLE and CONTENT."
       (let-alist message
         (goto-char (point-max))
         (let* ((start (point))
+               (is-user (string= (chatgpt-user) .role))
                (role (format "<%s>:" .role))
-               (content (chatgpt--render-markdown .content)))
+               ;; XXX: If messages from user, don't try to render to markdown!
+               ;; else, messages from OpenAI will most likely going to be
+               ;; markdown so we render it!
+               (content (if is-user .content
+                          (chatgpt--render-markdown .content))))
           (add-face-text-property 0 (length role) 'chatgpt-user nil role)
           (insert role " " content)
           (insert "\n\n")
@@ -331,7 +336,6 @@ The data is consist of ROLE and CONTENT."
 (defun chatgpt-input-send ()
   "Send the input."
   (interactive)
-  (user-error "fuk")
   (cond
    ((not (eq major-mode #'chatgpt-input-mode)) )  ; does nothing
    (chatgpt-requesting-p
@@ -411,8 +415,18 @@ The data is consist of ROLE and CONTENT."
 ;;; Entry
 
 (defun chatgpt-mode--kill-buffer-hook ()
-  ""
+  "Kill buffer hook."
+  (let ((instance chatgpt-instances))
+    (when (get-buffer chatgpt-input-buffer-name)
+      (with-current-buffer chatgpt-input-buffer-name
+        ;; kill input if it's the right session
+        (when (equal instance chatgpt-instances)
+          (kill-this-buffer))))))
+
+(defun chatgpt-header-line ()
+  "The display for header line."
   ;; TODO: ..
+  ""
   )
 
 (defvar chatgpt-mode-map
@@ -428,7 +442,8 @@ The data is consist of ROLE and CONTENT."
 \\<chatgpt-mode-map>"
   (setq-local buffer-read-only t)
   (font-lock-mode -1)
-  (add-hook 'kill-buffer-hook #'chatgpt-mode--kill-buffer-hook nil t))
+  (add-hook 'kill-buffer-hook #'chatgpt-mode--kill-buffer-hook nil t)
+  (setq-local header-line-format `((:eval (chatgpt-header-line)))))
 
 (defun chatgpt-register-instance (index buffer-or-name)
   "Register BUFFER-OR-NAME with INDEX as an instance.
