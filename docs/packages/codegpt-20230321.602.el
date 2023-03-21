@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-openai/codegpt
-;; Package-Version: 20230321.545
-;; Package-Commit: 16b27def307480131bda0fc433d9a2ca653ff973
+;; Package-Version: 20230321.602
+;; Package-Commit: 97f415bd2b78b8125faeb6e2839d7ca21e801e64
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (openai "0.1.0") (spinner "1.7.4"))
 ;; Keywords: convenience codegpt
@@ -105,7 +105,7 @@
 
 (defun codegpt-header-line ()
   "Header line for CodeGPT."
-  (format " %s[Tunnel] %s, [Model] %s"
+  (format " %s[Tunnel] %s  [Model] %s"
           (if codegpt-requesting-p
               (let* ((spinner (if (symbolp codegpt-spinner-type)
                                   (cdr (assoc codegpt-spinner-type spinner-types))
@@ -146,10 +146,10 @@
   `(progn
      (openai--pop-to-buffer codegpt-buffer-name)  ; create it
      (openai--with-buffer codegpt-buffer-name
-                          (codegpt-mode)
-                          (erase-buffer)
-                          (insert ,instruction "\n\n")
-                          ,@body)))
+       (codegpt-mode)
+       (erase-buffer)
+       (insert ,instruction "\n\n")
+       ,@body)))
 
 (defun codegpt--fill-region (start end)
   "Like function `fill-region' (START to END), improve readability."
@@ -171,43 +171,43 @@ boundaries of that region in buffer."
   (let ((text (string-trim (buffer-substring start end)))
         (original-window (selected-window)))
     (codegpt--ask-in-buffer instruction
-                            (insert text "\n\n")
-                            (funcall
-                             (cl-case codegpt-tunnel
-                               (`completion #'openai-completion)
-                               (`chat       #'openai-chat))
-                             (cl-case codegpt-tunnel
-                               (`completion (buffer-string))
-                               (`chat       `[(("role"    . "user")
-                                               ("content" . ,(buffer-string)))]))
-                             (lambda (data)
-                               (setq codegpt-requesting-p nil)
-                               (codegpt-mode--cancel-timer)
-                               (openai--with-buffer codegpt-buffer-name
-                                                    (openai--pop-to-buffer codegpt-buffer-name)
-                                                    (let ((original-point (point)))
-                                                      (cl-case codegpt-tunnel
-                                                        (`completion
-                                                         (let* ((choices (openai--data-choices data))
-                                                                (result (openai--get-choice choices)))
-                                                           (insert (string-trim result) "\n")))
-                                                        (`chat
-                                                         (let ((choices (let-alist data .choices))
-                                                               (result))
-                                                           (mapc (lambda (choice)
-                                                                   (let-alist choice
-                                                                     (let-alist .message
-                                                                       (setq result (string-trim .content)))))
-                                                                 choices)
-                                                           (insert (string-trim result) "\n"))))
-                                                      (codegpt--fill-region original-point (point))))
-                               (unless codegpt-focus-p
-                                 (select-window original-window)))
-                             :model codegpt-model
-                             :max-tokens codegpt-max-tokens
-                             :temperature codegpt-temperature)
-                            (unless codegpt-focus-p
-                              (select-window original-window)))))
+      (insert text "\n\n")
+      (funcall
+       (cl-case codegpt-tunnel
+         (`completion #'openai-completion)
+         (`chat       #'openai-chat))
+       (cl-case codegpt-tunnel
+         (`completion (buffer-string))
+         (`chat       `[(("role"    . "user")
+                         ("content" . ,(buffer-string)))]))
+       (lambda (data)
+         (setq codegpt-requesting-p nil)
+         (codegpt-mode--cancel-timer)
+         (openai--with-buffer codegpt-buffer-name
+           (openai--pop-to-buffer codegpt-buffer-name)
+           (let ((original-point (point)))
+             (cl-case codegpt-tunnel
+               (`completion
+                (let* ((choices (openai--data-choices data))
+                       (result (openai--get-choice choices)))
+                  (insert (string-trim result) "\n")))
+               (`chat
+                (let ((choices (let-alist data .choices))
+                      (result))
+                  (mapc (lambda (choice)
+                          (let-alist choice
+                            (let-alist .message
+                              (setq result (string-trim .content)))))
+                        choices)
+                  (insert (string-trim result) "\n"))))
+             (codegpt--fill-region original-point (point))))
+         (unless codegpt-focus-p
+           (select-window original-window)))
+       :model codegpt-model
+       :max-tokens codegpt-max-tokens
+       :temperature codegpt-temperature)
+      (unless codegpt-focus-p
+        (select-window original-window)))))
 
 ;;;###autoload
 (defun codegpt-doc (start end)
