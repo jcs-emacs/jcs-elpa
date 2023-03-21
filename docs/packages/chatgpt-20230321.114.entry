@@ -1,5 +1,5 @@
 (chatgpt .
-	 [(20230320 1000)
+	 [(20230321 114)
 	  ((emacs
 	    (26 1))
 	   (openai
@@ -11,7 +11,7 @@
 	   (markdown-mode
 	    (2 1)))
 	  "Use ChatGPT inside Emacs" single
-	  ((:commit . "7810f86c66d5679203107d30c20b7c34088af829")
+	  ((:commit . "70e4201068fd8ee88d6878045427b110b311d462")
 	   (:authors
 	    ("Jen-Chieh" . "jcs090218@gmail.com"))
 	   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
