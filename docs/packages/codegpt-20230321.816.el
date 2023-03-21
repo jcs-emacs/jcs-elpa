@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-openai/codegpt
-;; Package-Version: 20230321.602
-;; Package-Commit: 97f415bd2b78b8125faeb6e2839d7ca21e801e64
+;; Package-Version: 20230321.816
+;; Package-Commit: 4e76ec0e78dc926fd2d9f59e110000fdcfd6b597
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (openai "0.1.0") (spinner "1.7.4"))
 ;; Keywords: convenience codegpt
@@ -75,7 +75,7 @@
   :type 'string
   :group 'codegpt)
 
-(defcustom codegpt-max-tokens 4000
+(defcustom codegpt-max-tokens 2000
   "The maximum number of tokens to generate in the completion."
   :type 'integer
   :group 'codegpt)

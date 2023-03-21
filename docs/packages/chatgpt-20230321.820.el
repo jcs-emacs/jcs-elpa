@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-openai/chatgpt
-;; Package-Version: 20230321.752
-;; Package-Commit: 650dfe856ae6e04e3ff1818ad4f8babe2a8acd2f
+;; Package-Version: 20230321.820
+;; Package-Commit: 16d0c917c7c0228ed913da72dfd364ca1769cfc7
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (openai "0.1.0") (lv "0.0") (ht "2.0") (markdown-mode "2.1") (spinner "1.7.4"))
 ;; Keywords: comm openai
@@ -35,6 +35,7 @@
 
 (require 'cl-lib)
 (require 'let-alist)
+(require 'subr-x)
 
 (require 'openai)
 (require 'lv)
@@ -53,7 +54,7 @@
   :type 'string
   :group 'chatgpt)
 
-(defcustom chatgpt-max-tokens 4000
+(defcustom chatgpt-max-tokens 2000
   "The maximum number of tokens to generate in the completion."
   :type 'integer
   :group 'chatgpt)
@@ -135,6 +136,7 @@
 ;;
 ;;; Externals
 
+(declare-function string-pixel-width "ext:subr-x.el")
 (declare-function shr-string-pixel-width "ext:shr.el")
 
 ;;
@@ -260,16 +262,18 @@ Display buffer from BUFFER-OR-NAME."
 (defun chatgpt-restart ()
   "Restart session."
   (interactive)
-  (let* ((instance chatgpt-instances)
-         (index    (car instance))
-         (old-name))
-    ;; If buffer is alive, kill it!
-    (chatgpt-with-instance instance
-      (setq old-name (buffer-name))
-      (kill-this-buffer))
-    ;; `old-name' will remain `nil' if buffer is not killed or invalid!
-    (when old-name
-      (chatgpt-register-instance index old-name))))
+  (when (eq major-mode #'chatgpt-mode)
+    (let* ((instance chatgpt-instance)
+           (index    (car instance))
+           (old-name))
+      ;; If buffer is alive, kill it!
+      (chatgpt-with-instance instance
+        (setq old-name (buffer-name))
+        (kill-this-buffer))
+      ;; `old-name' will remain `nil' if buffer is not killed or invalid!
+      (when old-name
+        (chatgpt-register-instance index old-name)
+        (switch-to-buffer old-name)))))
 
 ;;
 ;;; Core
