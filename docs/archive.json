@@ -362,10 +362,10 @@
   {
     "name": "elenv",
     "summary": "Emacs Lisp environment",
-    "version": "20230309.2223",
+    "version": "20230322.543",
     "url": "https://github.com/jcs-elpa/elenv",
     "source": "github",
-    "commit": "42571a6e4860b9ea27136e60019487d173ed7fb9",
+    "commit": "27173a2e2f6b8a7c3fdc817b2fcbe625174e3ac9",
     "tree": "https://github.com/jcs-elpa/elenv"
   },
   {
