@@ -1,6 +1,6 @@
 ;;; codeium.el --- codeium client for emacs         -*- lexical-binding: t; -*-
-;; Package-Version: 20230222.1844
-;; Package-Commit: 28913fe8cdf5bb3c7471e5f39a6a162116427581
+;; Package-Version: 20230322.12
+;; Package-Commit: 70bfc3612ba1b992bf451afc5143c53f12930afb
 
 ;; MIT License
 
@@ -41,7 +41,7 @@
 
 ;;; Code:
 
-(defvar codeium-latest-local-server-version "1.1.38")
+(defvar codeium-latest-local-server-version "1.1.60")
 
 ;; (require 'url-parse)
 (autoload 'url-parse-make-urlobj "url-parse")
@@ -365,7 +365,7 @@ If you set `codeium-port', it will be used instead and no process will be create
 		(setf (codeium-state-manager-directory state) (make-temp-file "codeium_" t)))
 	`(,(codeium-get-config 'codeium-command-executable nil nil)
 		 "--api_server_host" "server.codeium.com"
-		 "--api_server_port" "443" 
+		 "--api_server_port" "443"
 		 "--manager_dir" ,(codeium-state-manager-directory state)))
 
 (defvar codeium-state (codeium-state-make :name "default"))
@@ -406,11 +406,11 @@ If you set `codeium-port', it will be used instead and no process will be create
 				(apply #'codeium-nested-alist-set-multi (alist-get top cur-alist) val rest)
 				val))
 		cur-alist))
-(defun codeium-nested-alist-get (body field) 
+(defun codeium-nested-alist-get (body field)
 	(let ((fullpath (alist-get field codeium-fullpath-alist)))
 		(unless fullpath (error "field %s is set to path %s which is not valid" field fullpath))
 		(apply #'codeium-nested-alist-get-multi body fullpath)))
-(defun codeium--nested-alist-set (body field val) 
+(defun codeium--nested-alist-set (body field val)
 	(let ((fullpath (alist-get field codeium-fullpath-alist)))
 		(unless fullpath (error "field %s is set to path %s which is not valid" field fullpath))
 		(apply #'codeium-nested-alist-set-multi body val fullpath)))
@@ -854,7 +854,7 @@ If `codeium-api-enabled' returns nil, does nothing.
 			(codeium-create-process state)
 			(codeium-background-process-schedule state))
 		((not (codeium-get-config 'codeium-port nil state))
-			(unless (codeium-get-config 'codeium-directory nil state) 
+			(unless (codeium-get-config 'codeium-directory nil state)
 				(error "no manager directory defined"))
 			(let ((files
 					  (directory-files (codeium-get-config 'codeium-directory nil state)
@@ -932,7 +932,7 @@ if user input is encountered, schedule a `CancelRequest' and return nil
 this uses `sit-for', which means that timers can be ran while this function
 waits, but these function called by timers must exit before this function
 returns. Prefer using `codeium-request' directly instead.
-" 
+"
 	(when (not (input-pending-p))
 		(let*
 			(
@@ -1149,7 +1149,7 @@ returns. Prefer using `codeium-request' directly instead.
 					(list rmin rmax table :exit-function
 						(lambda (string status)
 							(when-let ((num (and (eq status 'finished) (cl-position string table :test 'string=))))
-								(codeium-request 'AcceptCompletion state 
+								(codeium-request 'AcceptCompletion state
 									`((codeium/completion_id . ,(nth num completionids)))
 									#'ignore))))))))
 	;; (error
@@ -1244,4 +1244,3 @@ so only run this when no other codeium or other code is using that"
 
 (provide 'codeium)
 ;;; codeium.el ends here
-

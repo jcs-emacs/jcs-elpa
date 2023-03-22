@@ -1,4 +1,0 @@
-(codeium .
-	 [(20230222 1844)
-	  nil "codeium client for emacs" single
-	  ((:commit . "28913fe8cdf5bb3c7471e5f39a6a162116427581"))])
