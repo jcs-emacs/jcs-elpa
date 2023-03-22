@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-openai/chatgpt
-;; Package-Version: 20230321.1849
-;; Package-Commit: 3162f88efb1d1fea733a647e5cabe15a5d309793
+;; Package-Version: 20230322.557
+;; Package-Commit: cb7fc1928a28307ed6d4ccf16c9937f2d675ef36
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (openai "0.1.0") (lv "0.0") (ht "2.0") (markdown-mode "2.1") (spinner "1.7.4"))
 ;; Keywords: comm openai
@@ -91,6 +91,16 @@
   :type 'integer
   :group 'chatgpt)
 
+(defcustom chatgpt-animate-text t
+  "Display text gradually instead of output it all at once."
+  :type 'boolean
+  :group 'chatgpt)
+
+(defcustom chatgpt-animate-fps 5
+  "Frame per seconds to display text animation."
+  :type 'integer
+  :group 'chatgpt)
+
 (defconst chatgpt-buffer-name-format "*ChatGPT: <%s>*"
   "Name of the buffer to use for the `chatgpt' instance.")
 
@@ -116,7 +126,16 @@
   "Store other information other than messages.")
 
 (defvar-local chatgpt--display-pointer 0
-  "Display pointer.")
+  "Display pointer for each message to display.")
+
+(defvar-local chatgpt--text-pointer 1
+  "Text pointer for text animation.")
+
+(defvar-local chatgpt-text-timer nil
+  "Text timer for text animation.")
+
+(defvar-local chatgpt-animating-p nil
+  "Non-nil when animating text scroll.")
 
 (defface chatgpt-user
   '((t :inherit font-lock-builtin-face))
@@ -182,6 +201,11 @@
     (when (buffer-live-p buffer)
       (kill-buffer buffer))))
 
+(defun chatgpt--cancel-timer (timer)
+  "Cancel TIMER."
+  (when (timerp timer)
+    (cancel-timer timer)))
+
 (defun chatgpt--pop-to-buffer (buffer-or-name)
   "Wrapper to function `pop-to-buffer'.
 
@@ -198,14 +222,14 @@ Display buffer from BUFFER-OR-NAME."
 ;;
 ;;; Spinner
 
-(defun chatgpt-mode--cancel-timer ()
+(defun chatgpt--cancel-spinner-timer ()
   "Cancel spinner timer."
-  (when (timerp chatgpt-spinner-timer)
-    (cancel-timer chatgpt-spinner-timer)))
+  (chatgpt--cancel-timer chatgpt-spinner-timer)
+  (setq chatgpt-spinner-timer nil))
 
 (defun chatgpt--start-spinner ()
   "Start spinner."
-  (chatgpt-mode--cancel-timer)
+  (chatgpt--cancel-spinner-timer)
   (setq chatgpt-spinner-counter 0
         chatgpt-spinner-timer (run-with-timer (/ spinner-frames-per-second 60.0)
                                               (/ spinner-frames-per-second 60.0)
@@ -309,13 +333,18 @@ Display buffer from BUFFER-OR-NAME."
       ;; First we get the current tokens,
       (let ((prompt-tokens     (ht-get chatgpt-data 'prompt_tokens 0))
             (completion-tokens (ht-get chatgpt-data 'completion_tokens 0))
-            (total-tokens      (ht-get chatgpt-data 'total_tokens 0)))
+            (total-tokens      (ht-get chatgpt-data 'total_tokens 0))
+            (tokens-history    (ht-get chatgpt-data 'tokens_history nil)))
         ;; Then we add it up!
         (ht-set chatgpt-data 'prompt_tokens     (+ prompt-tokens     .prompt_tokens))
         (ht-set chatgpt-data 'completion_tokens (+ completion-tokens .completion_tokens))
         (ht-set chatgpt-data 'total_tokens      (+ total-tokens      .total_tokens))
+        (ht-set chatgpt-data 'tokens_history
+                (append tokens-history
+                        `((,.prompt_tokens ,.completion_tokens ,.total_tokens))))
         ;; Render it!
-        (chatgpt--create-tokens-overlay .prompt_tokens .completion_tokens .total_tokens)))))
+        (unless chatgpt-animate-text
+          (chatgpt--create-tokens-overlay .prompt_tokens .completion_tokens .total_tokens))))))
 
 (defun chatgpt--add-message (role content)
   "Add a message to history.
@@ -359,10 +388,74 @@ The data is consist of ROLE and CONTENT."
         (fill-region (line-beginning-position) (line-end-position)))
       (forward-line 1))))
 
-(defun chatgpt--display-messages ()
-  "Display all messages to latest response."
-  (when (zerop chatgpt--display-pointer)  ; clear up the tip message
-    (erase-buffer))
+(defun chatgpt--cancel-text-timer ()
+  "Cancel text timer."
+  (chatgpt--cancel-timer chatgpt-text-timer)
+  (setq chatgpt-text-timer nil
+        chatgpt-animating-p nil))
+
+(defun chatgpt--start-text-timer ()
+  "Start text timer."
+  (chatgpt--cancel-text-timer)
+  (setq chatgpt-text-timer (run-with-timer (/ chatgpt-animate-fps 60.0)
+                                           nil
+                                           #'chatgpt--do-text-animatioin
+                                           chatgpt-instance)
+        chatgpt-animating-p t))
+
+(defun chatgpt--do-text-animatioin (instance)
+  "The main loop for text animation for the INSTANCE."
+  (chatgpt-with-instance instance
+    (chatgpt--cancel-text-timer)
+    (let ((message (elt chatgpt-chat-history chatgpt--display-pointer)))
+      (let-alist message
+        (goto-char (point-max))
+        (let* ((is-user (string= (chatgpt-user) .role))
+               (role (format "<%s>:" .role))
+               ;; XXX: If messages from user, don't try to render to markdown!
+               ;; else, messages from OpenAI will most likely going to be
+               ;; markdown so we render it!
+               (content (if is-user .content
+                          (chatgpt--render-markdown .content)))
+               (full-content)  ; with `role'!
+               (chunk)
+               (text-pointer chatgpt--text-pointer)
+               (done))
+          (add-face-text-property 0 (length role) 'chatgpt-user nil role)
+          (setq full-content (concat role " " content "\n\n"))
+          (with-temp-buffer  ; Get the chunk!
+            ;; --- Standard output ---
+            (insert role " " content)
+            (insert "\n\n")
+            (chatgpt--fill-region (point-min) (point-max))
+            ;; ---
+            (goto-char text-pointer)
+            (unless (eobp)
+              (forward-word 1)
+              (setq chunk (buffer-substring text-pointer (point))
+                    text-pointer (point)
+                    done (eobp))))  ; update from temp buffer
+          (setq chatgpt--text-pointer text-pointer)  ; update for local buffer
+          (insert chunk)
+          ;; Ready for next message!
+          (when done
+            (let* ((tokens-history (ht-get chatgpt-data 'tokens_history))
+                   ;; XXX: Divided by 2 since the data is in pair!
+                   (index (/ chatgpt--display-pointer 2))
+                   (history (nth index tokens-history))
+                   (prompt-tokens     (nth 0 history))
+                   (completion-tokens (nth 1 history))
+                   (total-tokens      (nth 2 history)))
+              (chatgpt--create-tokens-overlay prompt-tokens
+                                              completion-tokens
+                                              total-tokens))
+            (cl-incf chatgpt--display-pointer)
+            (setq chatgpt--text-pointer 1)))))
+    (when (< chatgpt--display-pointer (length chatgpt-chat-history))
+      (chatgpt--start-text-timer))))
+
+(defun chatgpt--display-messages-at-once ()
+  "If variable `chatgpt-animate-text' is nil, we display messages all at once."
   (while (< chatgpt--display-pointer (length chatgpt-chat-history))
     (let ((message (elt chatgpt-chat-history chatgpt--display-pointer)))
       (let-alist message
@@ -381,6 +474,15 @@ The data is consist of ROLE and CONTENT."
           (chatgpt--fill-region start (point)))))
     (cl-incf chatgpt--display-pointer)))
 
+(defun chatgpt--display-messages ()
+  "Display all messages to latest response."
+  (when (zerop chatgpt--display-pointer)  ; clear up the tip message
+    (erase-buffer))
+  (if chatgpt-animate-text
+      (unless (timerp chatgpt-text-timer)  ; when is already running, don't interfere it
+        (chatgpt--start-text-timer))
+    (chatgpt--display-messages-at-once)))
+
 (defun chatgpt-send-response (response)
   "Send RESPONSE to ChatGPT."
   (let ((user (chatgpt-user))
@@ -389,14 +491,15 @@ The data is consist of ROLE and CONTENT."
       (user-error "[INFO] Invalid response or instruction: %s" response))
     (chatgpt--add-message user response)  ; add user's response
     (chatgpt-with-instance instance
-      (chatgpt--display-messages))        ; display it
+      (let (chatgpt-animate-text)
+        (chatgpt--display-messages)))        ; display it
     (setq chatgpt-requesting-p t)
     (chatgpt--start-spinner)
     (openai-chat chatgpt-chat-history
                  (lambda (data)
                    (chatgpt-with-instance instance
                      (setq chatgpt-requesting-p nil)
-                     (chatgpt-mode--cancel-timer)
+                     (chatgpt--cancel-spinner-timer)
                      (unless openai-error
                        (chatgpt--add-response-messages data)
                        (chatgpt--display-messages)
@@ -412,6 +515,8 @@ The data is consist of ROLE and CONTENT."
   (cond
    (chatgpt-requesting-p
     (message "[BUSY] Waiting for OpanAI to response..."))
+   (chatgpt-animating-p
+    (message "[BUSY] Waiting for animation to finish..."))
    (t
     (cl-case chatgpt-input-method
       (`minibuffer
@@ -540,7 +645,8 @@ The data is consist of ROLE and CONTENT."
 (defun chatgpt-mode--kill-buffer-hook ()
   "Kill buffer hook."
   (ht-clear chatgpt-data)
-  (chatgpt-mode--cancel-timer)
+  (chatgpt--cancel-spinner-timer)
+  (chatgpt--cancel-text-timer)
   (let ((instance chatgpt-instances))
     (when (get-buffer chatgpt-input-buffer-name)
       (with-current-buffer chatgpt-input-buffer-name
