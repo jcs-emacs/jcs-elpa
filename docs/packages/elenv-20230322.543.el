@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/elenv
-;; Package-Version: 20230309.2223
-;; Package-Commit: 42571a6e4860b9ea27136e60019487d173ed7fb9
+;; Package-Version: 20230322.543
+;; Package-Commit: 27173a2e2f6b8a7c3fdc817b2fcbe625174e3ac9
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26."))
 ;; Keywords: maint
@@ -114,30 +114,66 @@
 ;;
 
 ;;;###autoload
-(defmacro elenv-with-env (variable &rest body)
+(defmacro elenv-if-env (variable then &rest else)
+  "Evaluate THEN if VARIABLE is valid, we execute ELSE if not valid."
+  (declare (indent 1))
+  `(if-let ((value (getenv ,variable))) ,then ,@else))
+
+;;;###autoload
+(defmacro elenv-when-env (variable &rest body)
   "Evaluate BODY when VARIABLE is valid."
   (declare (indent 1))
   `(when-let ((value (getenv ,variable))) ,@body))
+
+;;;###autoload
+(defmacro elenv-unless-env (variable &rest body)
+  "Evaluate BODY when VARIABLE is valid."
+  (declare (indent 1))
+  `(unless (getenv ,variable) ,@body))
 
 ;;
 ;; (@* "Executable" )
 ;;
 
+(defmacro elenv--exec-find (command remote)
+  "Find executable COMMAND.
+
+For argument REMOTE, see function `executable-find' description."
+  (let ((var (intern (format "elenv-exec-%s" command))))
+    `(if (boundp ',var)
+         (symbol-value ',var)
+       (defvar ,var (executable-find ,command ,remote)
+         (format "Variable generate it with `elenv' finding executable `%s'."
+                 ,command))
+       (symbol-value ',var))))
+
 ;;;###autoload
-(defmacro elenv-with-exec (command remote &rest body)
+(defmacro elenv-if-exec (command remote then &rest else)
+  "Evaluate BODY if COMMAND is found.
+
+For argument REMOTE, see function `executable-find' description."
+  (declare (indent 3))
+  `(if-let ((value (elenv--exec-find ,command ,remote)))
+       ,then
+     ,@else))
+
+;;;###autoload
+(defmacro elenv-when-exec (command remote &rest body)
   "Evaluate BODY when COMMAND is found.
 
 For argument REMOTE, see function `executable-find' description."
   (declare (indent 2))
-  (let ((var (intern (format "elenv-exec-%s" command))))
-    `(when-let
-         ((value (if (boundp ',var)
-                     (symbol-value ',var)
-                   (defvar ,var (executable-find ,command ,remote)
-                     (format "Variable generate it with `elenv' finding executable `%s'."
-                             ,command))
-                   (symbol-value ',var))))
-       ,@body)))
+  `(when-let ((value (elenv--exec-find ,command ,remote)))
+     ,@body))
+
+;;;###autoload
+(defmacro elenv-unless-exec (command remote &rest body)
+  "Evaluate BODY unless COMMAND is found.
+
+For argument REMOTE, see function `executable-find' description."
+  (declare (indent 2))
+  `(unless (elenv--exec-find ,command ,remote)
+     ,@body))
 
 (provide 'elenv)
 ;;; elenv.el ends here
