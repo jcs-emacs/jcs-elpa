@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-openai/chatgpt
-;; Package-Version: 20230322.557
-;; Package-Commit: cb7fc1928a28307ed6d4ccf16c9937f2d675ef36
+;; Package-Version: 20230322.605
+;; Package-Commit: 8775a9385967dc38e142c276c2bcc0c206aaca8c
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (openai "0.1.0") (lv "0.0") (ht "2.0") (markdown-mode "2.1") (spinner "1.7.4"))
 ;; Keywords: comm openai
@@ -241,7 +241,7 @@ Display buffer from BUFFER-OR-NAME."
 ;;; Instances
 
 (defmacro chatgpt-with-instance (instance &rest body)
-  "Execute BODY within instance."
+  "Execute BODY within INSTANCE."
   (declare (indent 1))
   `(when-let* ((buffer (and ,instance
                             (get-buffer (cdr ,instance))))
@@ -309,7 +309,10 @@ Display buffer from BUFFER-OR-NAME."
       1)))
 
 (defun chatgpt--create-tokens-overlay (prompt-tokens completion-tokens total-tokens)
-  "Display tokens information."
+  "Display tokens information.
+
+Arguments PROMPT-TOKENS, COMPLETION-TOKENS, and TOTAL-TOKENS are the tokens
+information we want to display."
   (when chatgpt-display-tokens-info
     (let* ((ov (make-overlay (1- (point)) (1- (point)) nil t t))
            (content (format "prompt %s, completion %s, total: %s"
@@ -417,12 +420,10 @@ The data is consist of ROLE and CONTENT."
                ;; markdown so we render it!
                (content (if is-user .content
                           (chatgpt--render-markdown .content)))
-               (full-content)  ; with `role'!
                (chunk)
                (text-pointer chatgpt--text-pointer)
                (done))
           (add-face-text-property 0 (length role) 'chatgpt-user nil role)
-          (setq full-content (concat role " " content "\n\n"))
           (with-temp-buffer  ; Get the chunk!
             ;; --- Standard output ---
             (insert role " " content)
