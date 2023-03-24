@@ -92,19 +92,19 @@
   {
     "name": "chatgpt",
     "summary": "Use ChatGPT inside Emacs",
-    "version": "20230322.605",
+    "version": "20230324.125",
     "url": "https://github.com/emacs-openai/chatgpt",
     "source": "github",
-    "commit": "8775a9385967dc38e142c276c2bcc0c206aaca8c",
+    "commit": "d5e773de2b31a1227d8e1a8946c99e8691bcf375",
     "tree": "https://github.com/emacs-openai/chatgpt"
   },
   {
     "name": "codegpt",
     "summary": "Use GPT-3 tp help you write code",
-    "version": "20230323.529",
+    "version": "20230324.125",
     "url": "https://github.com/emacs-openai/codegpt",
     "source": "github",
-    "commit": "89526340ba836a3c2d3d4a47e24506528013b164",
+    "commit": "7ad39a808d3d07f982e7cd45866d86cac0557631",
     "tree": "https://github.com/emacs-openai/codegpt"
   },
   {
