@@ -254,10 +254,10 @@
   {
     "name": "copilot",
     "summary": "An unofficial Copilot plugin for Emacs",
-    "version": "20230306.116",
+    "version": "20230324.1539",
     "url": "https://github.com/zerolfx/copilot.el",
     "source": "github",
-    "commit": "bc91709ff2402b4e4c370b262af67ea199c297f3",
+    "commit": "d4519e178217309833b98eb0f2bfbddc4edb4c2e",
     "tree": "https://github.com/zerolfx/copilot.el"
   },
   {
