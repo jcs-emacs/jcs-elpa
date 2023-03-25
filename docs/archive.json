@@ -524,10 +524,10 @@
   {
     "name": "fuz-bin",
     "summary": "Fast and precise fuzzy scoring/matching utils",
-    "version": "20220616.1915",
+    "version": "20230325.115",
     "url": "https://github.com/jcs-elpa/fuz-bin",
     "source": "github",
-    "commit": "505fece23f54785cc1bb918df8026db64a5dcc13",
+    "commit": "dcaee61d4d64e81f17859c5ed36412042f2c832e",
     "tree": "https://github.com/jcs-elpa/fuz-bin"
   },
   {
