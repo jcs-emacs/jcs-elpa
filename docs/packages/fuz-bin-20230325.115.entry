@@ -1,9 +1,9 @@
 (fuz-bin .
-	 [(20220616 1915)
+	 [(20230325 115)
 	  ((emacs
 	    (26 1)))
 	  "Fast and precise fuzzy scoring/matching utils" tar
-	  ((:commit . "505fece23f54785cc1bb918df8026db64a5dcc13")
+	  ((:commit . "dcaee61d4d64e81f17859c5ed36412042f2c832e")
 	   (:authors
 	    ("Zhu Zihao" . "all_but_last@163.com")
 	    ("Jen-Chieh" . "jcs090218@gmail.com"))
