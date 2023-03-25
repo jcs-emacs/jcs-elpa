@@ -99,6 +99,15 @@
     "tree": "https://github.com/emacs-openai/chatgpt"
   },
   {
+    "name": "chatgpt-shell",
+    "summary": "Interaction mode for ChatGPT",
+    "version": "20230325.1833",
+    "url": "https://github.com/xenodium/chatgpt-shell",
+    "source": "github",
+    "commit": "f05b16cba119a2ff769ee0663e67d07ad30658de",
+    "tree": "https://github.com/xenodium/chatgpt-shell"
+  },
+  {
     "name": "codegpt",
     "summary": "Use GPT-3 tp help you write code",
     "version": "20230324.125",
