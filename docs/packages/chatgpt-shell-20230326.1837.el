@@ -4,8 +4,8 @@
 
 ;; Author: Alvaro Ramirez
 ;; URL: https://github.com/xenodium/chatgpt-shell
-;; Package-Version: 20230326.1514
-;; Package-Commit: 87e5ce9184447a59684a1c66e7ba6627b73fa4ab
+;; Package-Version: 20230326.1837
+;; Package-Commit: 12ee95dc3661c045f7a036389a5bf638e13762ea
 ;; Version: 0.3
 ;; Package-Requires: ((emacs "27.1")
 ;;                    (markdown-mode "2.5"))
@@ -51,6 +51,7 @@
 
 (defcustom chatgpt-shell-language-mapping '(("elisp" . "emacs-lisp")
                                             ("objective-c" . "objc")
+                                            ("objectivec" . "objc")
                                             ("cpp" . "c++"))
   "Maps external language names to Emacs names.
 
@@ -124,12 +125,6 @@ ChatGPT."
 
 (defvar chatgpt-shell--show-invisible-markers nil)
 
-(defvar-local chatgpt-shell--busy nil)
-
-(defvar-local chatgpt-shell--config nil)
-
-(defvaralias 'inferior-chatgpt-mode-map 'chatgpt-shell-map)
-
 (cl-defstruct
     chatgpt-shell-config
   prompt
@@ -137,6 +132,28 @@ ChatGPT."
   process-name
   curl-command-maker
   response-extrator)
+
+(defvar chatgpt-shell--chatgpt-config
+  (make-chatgpt-shell-config
+   :buffer (get-buffer-create "*chatgpt*")
+   :process-name "chatgpt"
+   :prompt "ChatGPT> "
+   :curl-command-maker #'chatgpt-shell--make-chatgpt-request-command-list
+   :response-extrator #'chatgpt-shell--extract-chatgpt-response))
+
+(defvar chatgpt-shell--dall-e-config
+  (make-chatgpt-shell-config
+   :buffer (get-buffer-create "*dalle*")
+   :process-name "dalle"
+   :prompt "DALL-E> "
+   :curl-command-maker #'chatgpt-shell--make-dall-e-request-command-list
+   :response-extrator #'chatgpt-shell--extract-dall-e-response))
+
+(defvar-local chatgpt-shell--busy nil)
+
+(defvar-local chatgpt-shell--config nil)
+
+(defvaralias 'inferior-chatgpt-mode-map 'chatgpt-shell-map)
 
 (defconst chatgpt-shell-font-lock-keywords
   `(;; Markdown triple backticks source blocks
@@ -174,6 +191,7 @@ ChatGPT."
   "Keymap for ChatGPT mode.")
 
 (defalias 'chatgpt-shell-clear-buffer 'comint-clear-buffer)
+(defalias 'chatgpt-shell-explain-code 'chatgpt-shell-describe-code)
 
 ;;;###autoload
 (defun chatgpt-shell ()
@@ -187,13 +205,7 @@ ChatGPT."
         (unless (zerop (buffer-size))
           (setq old-point (point)))
         (inferior-chatgpt-mode)
-        (chatgpt-shell--initialize
-         (make-chatgpt-shell-config
-          :buffer (get-buffer-create "*chatgpt*")
-          :process-name "chatgpt"
-          :prompt "ChatGPT> "
-          :curl-command-maker #'chatgpt-shell--make-chatgpt-request-command-list
-          :response-extrator #'chatgpt-shell--extract-chatgpt-response))))
+        (chatgpt-shell--initialize chatgpt-shell--chatgpt-config)))
     (pop-to-buffer-same-window buf-name)
     (when old-point
       (push-mark old-point))))
@@ -211,12 +223,7 @@ ChatGPT."
           (setq old-point (point)))
         (inferior-chatgpt-mode)
         (chatgpt-shell--initialize
-         (make-chatgpt-shell-config
-          :buffer (get-buffer-create "*dalle*")
-          :process-name "dalle"
-          :prompt "DALL-E> "
-          :curl-command-maker #'chatgpt-shell--make-dall-e-request-command-list
-          :response-extrator #'chatgpt-shell--extract-dall-e-response))))
+         chatgpt-shell--dall-e-config)))
     (pop-to-buffer-same-window buf-name)
     (when old-point
       (push-mark old-point))))
@@ -227,10 +234,12 @@ Uses the interface provided by `comint-mode'"
   nil)
 
 (defun chatgpt-shell--initialize (config)
+  "Initialize shell using CONFIG."
   (setq-local chatgpt-shell--config config)
   (visual-line-mode +1)
-  (setq comint-prompt-regexp (concat "^" (regexp-quote
-                                          (chatgpt-shell-config-prompt chatgpt-shell--config))))
+  (setq comint-prompt-regexp
+        (concat "^" (regexp-quote
+                     (chatgpt-shell-config-prompt chatgpt-shell--config))))
   (setq-local paragraph-separate "\\'")
   (setq-local paragraph-start comint-prompt-regexp)
   (setq comint-input-sender 'chatgpt-shell--input-sender)
@@ -275,28 +284,47 @@ Uses the interface provided by `comint-mode'"
                                    "-mode")))
         (string (buffer-substring-no-properties start end))
         (buf (chatgpt-shell-config-buffer chatgpt-shell--config))
-        (pos (point-min))
-        (props))
-    (remove-text-properties start end '(face nil))
+        (pos 0)
+        (props)
+        (overlay)
+        (propertized-text))
+    ;; FIXME: Find a more reliable way of highlighting syntax.
+    ;; (remove-text-properties start end '(face nil))
     (if (fboundp lang-mode)
-        (with-current-buffer
-            (get-buffer-create
-             (format " *chatgpt-shell-fontification:%s*" lang-mode))
-          (let ((inhibit-modification-hooks nil))
-            (erase-buffer)
-            ;; Additional space ensures property change.
-            (insert string " ")
-            (funcall lang-mode)
-            (font-lock-ensure))
-          (while (< pos (1- (point-max)))
-            (setq props (text-properties-at pos))
-            (with-current-buffer buf
-              (set-text-properties (+ start (1- pos))
-                                   (+ start (1+ (1- pos)))
-                                   props))
-            (setq pos (1+ pos))))
+        (progn
+          (setq propertized-text
+                (with-current-buffer
+                    (get-buffer-create
+                     (format " *chatgpt-shell-fontification:%s*" lang-mode))
+                  (let ((inhibit-modification-hooks nil))
+                    (erase-buffer)
+                    ;; Additional space ensures property change.
+                    (insert string " ")
+                    (funcall lang-mode)
+                    (font-lock-ensure))
+                  (buffer-string)))
+          (while (< pos (length propertized-text))
+            (setq props (text-properties-at pos propertized-text))
+            (setq overlay (make-overlay (+ start pos)
+                                        (+ start (1+ pos))
+                                        buf))
+            ;; (set-text-properties (+ start pos)
+            ;;                      (+ start (1+ pos))
+            ;;                      props)
+            (overlay-put overlay 'face (plist-get props 'face))
+            (setq pos (1+ pos)))
+          ;; (overlay-put (make-overlay start end buf)
+          )
       (set-text-properties start end
-                           '(face 'markdown-pre-face)))))
+                               '(face 'markdown-pre-face)))))
+
+(defun chatgpt-shell-chatgpt-prompt ()
+  "Make a ChatGPT request from the minibuffer."
+  (interactive)
+  (chatgpt-shell-send-to-buffer
+   (read-string (chatgpt-shell-config-prompt
+                 chatgpt-shell--chatgpt-config)))
+  (chatgpt-shell--send-input))
 
 (defun chatgpt-shell-return ()
   "RET binding."
@@ -459,7 +487,13 @@ CALLBACK or ERROR-CALLBACK accordingly."
                (if (= (process-exit-status process) 0)
                    (funcall callback
                             (funcall response-extractor output))
-                 (funcall error-callback output))))
+                 (funcall error-callback output))
+               ;; Only message if not active buffer.
+               (unless (eq (chatgpt-shell-config-buffer chatgpt-shell--config)
+                           (window-buffer (selected-window)))
+                 (message "%s responded"
+                          (buffer-name
+                           (chatgpt-shell-config-buffer chatgpt-shell--config))))))
            (kill-buffer output-buffer)))))))
 
 (defun chatgpt-shell--increment-request-id ()
