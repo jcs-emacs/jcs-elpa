@@ -101,10 +101,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "Interaction mode for ChatGPT",
-    "version": "20230325.1833",
+    "version": "20230326.1328",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "f05b16cba119a2ff769ee0663e67d07ad30658de",
+    "commit": "e6c2a4f506fbc447d86a9cd8aa4830d93424358e",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
