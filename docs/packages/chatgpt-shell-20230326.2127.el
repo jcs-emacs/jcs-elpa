@@ -4,8 +4,8 @@
 
 ;; Author: Alvaro Ramirez
 ;; URL: https://github.com/xenodium/chatgpt-shell
-;; Package-Version: 20230326.1918
-;; Package-Commit: 16eed3100c2ed653b7901d3899ead6a69e039ba6
+;; Package-Version: 20230326.2127
+;; Package-Commit: 88d76171a2833dabc996660e8fc45c5125be34c1
 ;; Version: 0.3
 ;; Package-Requires: ((emacs "27.1")
 ;;                    (markdown-mode "2.5"))
@@ -720,7 +720,13 @@ if `json' is available."
            (remove-text-properties start end '(face nil))
            (add-text-properties
             start end
-            `(display ,(create-image path nil nil :width 400))))))
+            `(display ,(create-image path nil nil :width 400)))
+           (put-text-property start end
+                              'keymap (let ((map (make-sparse-keymap)))
+                                        (define-key map (kbd "RET")
+                                          (lambda () (interactive)
+                                            (find-file path)))
+                                        map)))))
      (lambda (error)
        (when-let* ((loc (chatgpt-shell--find-string-in-buffer
                          buffer
