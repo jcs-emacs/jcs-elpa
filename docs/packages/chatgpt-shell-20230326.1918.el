@@ -4,8 +4,8 @@
 
 ;; Author: Alvaro Ramirez
 ;; URL: https://github.com/xenodium/chatgpt-shell
-;; Package-Version: 20230326.1837
-;; Package-Commit: 12ee95dc3661c045f7a036389a5bf638e13762ea
+;; Package-Version: 20230326.1918
+;; Package-Commit: 16eed3100c2ed653b7901d3899ead6a69e039ba6
 ;; Version: 0.3
 ;; Package-Requires: ((emacs "27.1")
 ;;                    (markdown-mode "2.5"))
@@ -337,6 +337,26 @@ Uses the interface provided by `comint-mode'"
   (chatgpt-shell-send-to-buffer
    (concat "What does the following code do?\n\n"
            (buffer-substring (region-beginning) (region-end))))
+  (chatgpt-shell--send-input))
+
+(defun chatgpt-shell-eshell-whats-wrong-with-last-command ()
+  "Ask ChatGPT what's wrong with the last eshell command."
+  (interactive)
+  (chatgpt-shell-send-to-buffer
+   (concat "What's wrong with this command?\n\n"
+           (buffer-substring-no-properties eshell-last-input-start eshell-last-input-end)
+           "\n\n"
+           (buffer-substring-no-properties (eshell-beginning-of-output) (eshell-end-of-output))))
+  (chatgpt-shell--send-input))
+
+(defun chatgpt-shell-eshell-summarize-last-command-output ()
+  "Ask ChatGPT to summarize the last command output."
+  (interactive)
+  (chatgpt-shell-send-to-buffer
+   (concat "Summarize the output of the following command: \n\n"
+           (buffer-substring-no-properties eshell-last-input-start eshell-last-input-end)
+           "\n\n"
+           (buffer-substring-no-properties (eshell-beginning-of-output) (eshell-end-of-output))))
   (chatgpt-shell--send-input))
 
 (defun chatgpt-shell-send-region ()
