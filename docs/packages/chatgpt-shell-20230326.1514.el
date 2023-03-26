@@ -4,8 +4,8 @@
 
 ;; Author: Alvaro Ramirez
 ;; URL: https://github.com/xenodium/chatgpt-shell
-;; Package-Version: 20230326.1328
-;; Package-Commit: e6c2a4f506fbc447d86a9cd8aa4830d93424358e
+;; Package-Version: 20230326.1514
+;; Package-Commit: 87e5ce9184447a59684a1c66e7ba6627b73fa4ab
 ;; Version: 0.3
 ;; Package-Requires: ((emacs "27.1")
 ;;                    (markdown-mode "2.5"))
@@ -274,7 +274,7 @@ Uses the interface provided by `comint-mode'"
                                     (downcase (string-trim lang)))
                                    "-mode")))
         (string (buffer-substring-no-properties start end))
-        (buf (current-buffer))
+        (buf (chatgpt-shell-config-buffer chatgpt-shell--config))
         (pos (point-min))
         (props))
     (remove-text-properties start end '(face nil))
@@ -290,7 +290,7 @@ Uses the interface provided by `comint-mode'"
             (font-lock-ensure))
           (while (< pos (1- (point-max)))
             (setq props (text-properties-at pos))
-            (with-current-buffer (chatgpt-shell-config-buffer chatgpt-shell--config)
+            (with-current-buffer buf
               (set-text-properties (+ start (1- pos))
                                    (+ start (1+ (1- pos)))
                                    props))
