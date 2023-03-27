@@ -101,10 +101,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "Interaction mode for ChatGPT",
-    "version": "20230326.2127",
+    "version": "20230327.854",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "88d76171a2833dabc996660e8fc45c5125be34c1",
+    "commit": "830c6d4259d89e9ff9478b9825c291ae482b5f39",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -308,10 +308,10 @@
   {
     "name": "easky",
     "summary": "Control Eask in Emacs",
-    "version": "20230319.1042",
+    "version": "20230327.858",
     "url": "https://github.com/emacs-eask/easky",
     "source": "github",
-    "commit": "257aa7587b80bf113e4c344f5719eb54aea2a1ef",
+    "commit": "79d020603593cad02eaecf9068cd802dc403ff13",
     "tree": "https://github.com/emacs-eask/easky"
   },
   {
