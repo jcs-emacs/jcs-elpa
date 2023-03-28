@@ -4,8 +4,8 @@
 
 ;; Author: Alvaro Ramirez https://xenodium.com
 ;; URL: https://github.com/xenodium/chatgpt-shell
-;; Package-Version: 20230327.2005
-;; Package-Commit: 60e3b05220acff858a5b6fc43b8fa49dd886548a
+;; Package-Version: 20230328.1538
+;; Package-Commit: 54b066bc4407834dca670dd8306f7a607d8b1638
 ;; Version: 0.3
 ;; Package-Requires: ((emacs "27.1")
 ;;                    (markdown-mode "2.5"))
@@ -618,7 +618,8 @@ Used by `chatgpt-shell--send-input's call."
 
 (defun chatgpt-shell--curl-version-supported ()
   "Return t if curl version is 7.67 or newer, nil otherwise."
-  (let ((curl-version-string (shell-command-to-string "curl --version 2>/dev/null")))
+  (let* ((curl-error-redirect (if (eq system-type (or 'windows-nt 'ms-dos)) "2> NUL" "2>/dev/null"))
+         (curl-version-string (shell-command-to-string (concat "curl --version " curl-error-redirect))))
     (when (string-match "\\([0-9]+\\.[0-9]+\\.[0-9]+\\)" curl-version-string)
       (let ((version (match-string 1 curl-version-string)))
         (version<= "7.67" version)))))
