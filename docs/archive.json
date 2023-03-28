@@ -288,6 +288,15 @@
     "tree": "https://github.com/jcs-elpa/cycle-slash"
   },
   {
+    "name": "dall-e",
+    "summary": "Use DALL-E inside Emacs",
+    "version": "20230328.1011",
+    "url": "https://github.com/jcs090218/dall-e",
+    "source": "github",
+    "commit": "3429d6ed435d1171fccff94cfd3133dd09147ca9",
+    "tree": "https://github.com/jcs090218/dall-e"
+  },
+  {
     "name": "eask",
     "summary": "Core Eask APIs, for Eask CLI development",
     "version": "20230327.2340",
