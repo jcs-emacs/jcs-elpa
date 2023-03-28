@@ -4,11 +4,11 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
-;; URL: https://github.com/jcs090218/dall-e
-;; Package-Version: 20230328.1011
-;; Package-Commit: 3429d6ed435d1171fccff94cfd3133dd09147ca9
-;; Version: 0.0.1
-;; Package-Requires: ((emacs "27.1") (openai "0.1.0"))
+;; URL: https://github.com/emacs-openai/dall-e
+;; Package-Version: 20230328.2135
+;; Package-Commit: fee552631f7b6d4bdcae8e928f7c3554aa39fa6f
+;; Version: 0.1.0
+;; Package-Requires: ((emacs "27.1") (openai "0.1.0") (spinner "1.7.4"))
 ;; Keywords: comm dall-e
 
 ;; This file is not part of GNU Emacs.
@@ -33,13 +33,30 @@
 
 ;;; Code:
 
+(require 'cl-lib)
+(require 'let-alist)
+(require 'subr-x)
+
 (require 'openai-image)
+(require 'spinner)
 
 (defgroup dall-e nil
   "Use DALL-E inside Emacs."
   :prefix "dall-e-"
   :group 'comm
   :link '(url-link :tag "Repository" "https://github.com/emacs-openai/dall-e"))
+
+(defcustom dall-e-n 1
+  "The number of images to generate.  Must be between 1 and 10."
+  :type 'integer
+  :group 'dall-e)
+
+(defcustom dall-e-size "1024x1024"
+  "The size of the generated images.
+
+Must be one of `256x256', `512x512', or `1024x1024'."
+  :type 'string
+  :group 'dall-e)
 
 (provide 'dall-e)
 ;;; dall-e.el ends here
