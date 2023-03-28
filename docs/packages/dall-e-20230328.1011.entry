@@ -1,0 +1,13 @@
+(dall-e .
+	[(20230328 1011)
+	 ((emacs
+	   (27 1))
+	  (openai
+	   (0 1 0)))
+	 "Use DALL-E inside Emacs" single
+	 ((:commit . "3429d6ed435d1171fccff94cfd3133dd09147ca9")
+	  (:authors
+	   ("Jen-Chieh" . "jcs090218@gmail.com"))
+	  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	  (:keywords "comm" "dall-e")
+	  (:url . "https://github.com/jcs090218/dall-e"))])
