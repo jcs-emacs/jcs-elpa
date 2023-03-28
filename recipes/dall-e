@@ -1,0 +1,1 @@
+(dall-e :repo "emacs-openai/dall-e" :fetcher github)
