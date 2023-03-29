@@ -290,10 +290,10 @@
   {
     "name": "dall-e",
     "summary": "Use DALL-E inside Emacs",
-    "version": "20230328.2302",
+    "version": "20230328.2327",
     "url": "https://github.com/emacs-openai/dall-e",
     "source": "github",
-    "commit": "b534d2fed2ec2c2e33dfd0914419e2e74d96fd0c",
+    "commit": "3432d9dd8558b3efc5daf00081a74fb1759eea9b",
     "tree": "https://github.com/emacs-openai/dall-e"
   },
   {
