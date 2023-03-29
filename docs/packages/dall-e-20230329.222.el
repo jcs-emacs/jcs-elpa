@@ -5,10 +5,10 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-openai/dall-e
-;; Package-Version: 20230329.113
-;; Package-Commit: 3d2681982e442af8a3aa43fca329a2618e72bc58
+;; Package-Version: 20230329.222
+;; Package-Commit: 945fabf0babb2d69dcb244e5ca1d9b65f7495f30
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "27.1") (openai "0.1.0") (lv "0.0") (ht "2.0") (spinner "1.7.4") (reveal-in-folder "0.1.2"))
+;; Package-Requires: ((emacs "27.1") (openai "0.1.0") (lv "0.0") (ht "2.0") (spinner "1.7.4") (reveal-in-folder "0.1.2") (async "1.9.3"))
 ;; Keywords: comm dall-e
 
 ;; This file is not part of GNU Emacs.
@@ -44,6 +44,7 @@
 (require 'ht)
 (require 'spinner)
 (require 'reveal-in-folder)
+(require 'async)
 
 (defgroup dall-e nil
   "Use DALL-E inside Emacs."
@@ -93,6 +94,9 @@ Must be one of `256x256', `512x512', or `1024x1024'."
 (defvar-local dall-e-requesting-p nil
   "Non-nil when requesting; waiting for the response.")
 
+(defvar-local dall-e-downloading-p nil
+  "Non-nil when downloading images.")
+
 (defvar-local dall-e-spinner-counter 0
   "Spinner counter.")
 
@@ -104,6 +108,9 @@ Must be one of `256x256', `512x512', or `1024x1024'."
 
 (defvar-local dall-e-images nil
   "List of images for current session.")
+
+(defvar-local dall-e-processes (ht-create)
+  "List of process to download images.")
 
 (defface dall-e-user
   '((t :inherit font-lock-builtin-face))
@@ -123,12 +130,21 @@ Must be one of `256x256', `512x512', or `1024x1024'."
   (when (timerp timer)
     (cancel-timer timer)))
 
+(defun dall-e--kill-process (process)
+  "Kill PROCESS."
+  (ignore-errors (kill-process process))
+  (ignore-errors (kill-buffer (process-buffer process))))
+
 (defun dall-e--pop-to-buffer (buffer-or-name)
   "Wrapper to function `pop-to-buffer'.
 
 Display buffer from BUFFER-OR-NAME."
   (pop-to-buffer buffer-or-name `((display-buffer-in-direction)
                                   (dedicated . t))))
+
+(defun dall-e-busy-p ()
+  "Return non-nil if session is busy."
+  (or dall-e-requesting-p dall-e-downloading-p))
 
 (defun dall-e-user ()
   "Return the current user."
@@ -143,14 +159,14 @@ Display buffer from BUFFER-OR-NAME."
 ;;
 ;;; Spinner
 
-(defun dall-e--cancel-spinner-timer ()
+(defun dall-e--cancel-spinner ()
   "Cancel spinner timer."
   (dall-e--cancel-timer dall-e-spinner-timer)
   (setq dall-e-spinner-timer nil))
 
 (defun dall-e--start-spinner ()
   "Start spinner."
-  (dall-e--cancel-spinner-timer)
+  (dall-e--cancel-spinner)
   (setq dall-e-spinner-counter 0
         dall-e-spinner-timer (run-with-timer (/ spinner-frames-per-second 60.0)
                                              (/ spinner-frames-per-second 60.0)
@@ -246,6 +262,23 @@ Display buffer from BUFFER-OR-NAME."
                                                   :width dall-e-display-width)))
     (insert " ")))
 
+(defun dall-e--download-image (instance data)
+  "Start process to download image."
+  (let ((filename (car data))
+        (url      (cdr data)))
+    (async-start
+     (lambda (&rest _)
+       (url-copy-file url filename))
+     (lambda (&rest _)
+       (dall-e-with-instance instance
+         (dall-e--kill-process (ht-get dall-e-processes filename))
+         (ht-remove dall-e-processes filename)
+         (dall-e--display-image data)
+         (when (zerop (length (ht-keys dall-e-processes)))
+           (dall-e--cancel-spinner)
+           (setq dall-e-downloading-p nil)
+           (insert "\n\n")))))))
+
 (defun dall-e-send-response (prompt)
   "Send PROMPT to DALL-E."
   (let ((user (dall-e-user))
@@ -272,22 +305,25 @@ Display buffer from BUFFER-OR-NAME."
                   (lambda (data)
                     (dall-e-with-instance instance
                       (setq dall-e-requesting-p nil)
-                      (dall-e--cancel-spinner-timer)
+                      (dall-e--cancel-spinner)
                       (unless openai-error
                         (ignore-errors (make-directory cache-dir t))
                         (clear-image-cache)
                         (let-alist data
-                          (mapc (lambda (images-data)
-                                  (let-alist images-data
-                                    (let* ((url .url)
-                                           (name (format "%s.png" (length dall-e-images)))
-                                           (filename (expand-file-name name cache-dir))
-                                           (data (cons filename url)))
-                                      (url-copy-file url filename)
-                                      (push data dall-e-images)
-                                      (dall-e--display-image data))))
-                                .data))
-                        (insert "\n\n"))))
+                          (mapc
+                           (lambda (images-data)
+                             (let-alist images-data
+                               (let* ((url .url)
+                                      (name (format "%s.png" (length dall-e-images)))
+                                      (filename (expand-file-name name cache-dir))
+                                      (data (cons filename url))
+                                      (process (dall-e--download-image instance data)))
+                                 (unless (timerp dall-e-spinner-timer)
+                                   (dall-e--start-spinner))
+                                 (setq dall-e-downloading-p t)
+                                 (push data dall-e-images)
+                                 (ht-set dall-e-processes filename process))))
+                           .data)))))
                   :n dall-e-n
                   :size dall-e-size
                   :user user)))
@@ -298,6 +334,8 @@ Display buffer from BUFFER-OR-NAME."
   (cond
    (dall-e-requesting-p
     (message "[BUSY] Waiting for OpanAI to response..."))
+   (dall-e-downloading-p
+    (message "[BUSY] Waiting for download to complete..."))
    (t
     (dall-e-send-response (read-string "Type the detailed description: ")))))
 
@@ -351,13 +389,17 @@ Display buffer from BUFFER-OR-NAME."
 
 (defun dall-e-mode--kill-buffer-hook ()
   "Kill buffer hook."
-  (dall-e--cancel-spinner-timer)
+  (ht-map (lambda (_ process)
+            (dall-e--kill-process process))
+          dall-e-processes)
+  (ht-clear dall-e-processes)
+  (dall-e--cancel-spinner)
   (dall-e-clear-cahce))
 
 (defun dall-e-header-line ()
   "The display for header line."
   (format " %s[Session] %s  [Images] %s  [User] %s"
-          (if dall-e-requesting-p
+          (if (dall-e-busy-p)
               (let* ((spinner (if (symbolp dall-e-spinner-type)
                                   (cdr (assoc dall-e-spinner-type spinner-types))
                                 dall-e-spinner-type))
@@ -395,6 +437,7 @@ Display buffer from BUFFER-OR-NAME."
 \\<dall-e-mode-map>"
   (setq-local buffer-read-only t)
   (font-lock-mode -1)
+  (dall-e-clear-cahce)
   (add-hook 'kill-buffer-hook #'dall-e-mode--kill-buffer-hook nil t)
   (setq-local header-line-format `((:eval (dall-e-header-line))))
   (dall-e-mode-insert-tip))

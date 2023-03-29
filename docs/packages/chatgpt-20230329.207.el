@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-openai/chatgpt
-;; Package-Version: 20230324.125
-;; Package-Commit: d5e773de2b31a1227d8e1a8946c99e8691bcf375
+;; Package-Version: 20230329.207
+;; Package-Commit: 4d50d8d08df6c464001aa99e7ae480984671b198
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (openai "0.1.0") (lv "0.0") (ht "2.0") (markdown-mode "2.1") (spinner "1.7.4"))
 ;; Keywords: comm openai
@@ -213,6 +213,10 @@ Display buffer from BUFFER-OR-NAME."
   (pop-to-buffer buffer-or-name `((display-buffer-in-direction)
                                   (dedicated . t))))
 
+(defun chatgpt-busy-p ()
+  "Return non-nil if session is busy."
+  (or chatgpt-requesting-p chatgpt-animating-p))
+
 (defun chatgpt-user ()
   "Return the current user."
   (if (string-empty-p openai-user)
@@ -222,14 +226,14 @@ Display buffer from BUFFER-OR-NAME."
 ;;
 ;;; Spinner
 
-(defun chatgpt--cancel-spinner-timer ()
+(defun chatgpt--cancel-spinner ()
   "Cancel spinner timer."
   (chatgpt--cancel-timer chatgpt-spinner-timer)
   (setq chatgpt-spinner-timer nil))
 
 (defun chatgpt--start-spinner ()
   "Start spinner."
-  (chatgpt--cancel-spinner-timer)
+  (chatgpt--cancel-spinner)
   (setq chatgpt-spinner-counter 0
         chatgpt-spinner-timer (run-with-timer (/ spinner-frames-per-second 60.0)
                                               (/ spinner-frames-per-second 60.0)
@@ -452,8 +456,9 @@ The data is consist of ROLE and CONTENT."
                                               total-tokens))
             (cl-incf chatgpt--display-pointer)
             (setq chatgpt--text-pointer 1)))))
-    (when (< chatgpt--display-pointer (length chatgpt-chat-history))
-      (chatgpt--start-text-timer))))
+    (if (< chatgpt--display-pointer (length chatgpt-chat-history))
+        (chatgpt--start-text-timer)
+      (chatgpt--cancel-spinner))))
 
 (defun chatgpt--display-messages-at-once ()
   "If variable `chatgpt-animate-text' is nil, we display messages all at once."
@@ -481,6 +486,7 @@ The data is consist of ROLE and CONTENT."
     (erase-buffer))
   (if chatgpt-animate-text
       (unless (timerp chatgpt-text-timer)  ; when is already running, don't interfere it
+        (chatgpt--start-spinner)
         (chatgpt--start-text-timer))
     (chatgpt--display-messages-at-once)))
 
@@ -500,7 +506,7 @@ The data is consist of ROLE and CONTENT."
                  (lambda (data)
                    (chatgpt-with-instance instance
                      (setq chatgpt-requesting-p nil)
-                     (chatgpt--cancel-spinner-timer)
+                     (chatgpt--cancel-spinner)
                      (unless openai-error
                        (chatgpt--add-response-messages data)
                        (chatgpt--display-messages)
@@ -646,7 +652,7 @@ The data is consist of ROLE and CONTENT."
 (defun chatgpt-mode--kill-buffer-hook ()
   "Kill buffer hook."
   (ht-clear chatgpt-data)
-  (chatgpt--cancel-spinner-timer)
+  (chatgpt--cancel-spinner)
   (chatgpt--cancel-text-timer)
   (let ((instance chatgpt-instances))
     (when (get-buffer chatgpt-input-buffer-name)
@@ -658,7 +664,7 @@ The data is consist of ROLE and CONTENT."
 (defun chatgpt-header-line ()
   "The display for header line."
   (format " %s[Session] %s  [History] %s  [User] %s"
-          (if chatgpt-requesting-p
+          (if (chatgpt-busy-p)
               (let* ((spinner (if (symbolp chatgpt-spinner-type)
                                   (cdr (assoc chatgpt-spinner-type spinner-types))
                                 chatgpt-spinner-type))
