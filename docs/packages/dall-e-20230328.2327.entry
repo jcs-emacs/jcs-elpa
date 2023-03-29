@@ -1,5 +1,5 @@
 (dall-e .
-	[(20230328 2302)
+	[(20230328 2327)
 	 ((emacs
 	   (27 1))
 	  (openai
@@ -9,9 +9,11 @@
 	  (ht
 	   (2 0))
 	  (spinner
-	   (1 7 4)))
+	   (1 7 4))
+	  (reveal-in-folder
+	   (0 1 2)))
 	 "Use DALL-E inside Emacs" single
-	 ((:commit . "b534d2fed2ec2c2e33dfd0914419e2e74d96fd0c")
+	 ((:commit . "3432d9dd8558b3efc5daf00081a74fb1759eea9b")
 	  (:authors
 	   ("Jen-Chieh" . "jcs090218@gmail.com"))
 	  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

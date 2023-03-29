@@ -5,10 +5,10 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-openai/dall-e
-;; Package-Version: 20230328.2302
-;; Package-Commit: b534d2fed2ec2c2e33dfd0914419e2e74d96fd0c
+;; Package-Version: 20230328.2327
+;; Package-Commit: 3432d9dd8558b3efc5daf00081a74fb1759eea9b
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "27.1") (openai "0.1.0") (lv "0.0") (ht "2.0") (spinner "1.7.4"))
+;; Package-Requires: ((emacs "27.1") (openai "0.1.0") (lv "0.0") (ht "2.0") (spinner "1.7.4") (reveal-in-folder "0.1.2"))
 ;; Keywords: comm dall-e
 
 ;; This file is not part of GNU Emacs.
@@ -42,6 +42,7 @@
 (require 'lv)
 (require 'ht)
 (require 'spinner)
+(require 'reveal-in-folder)
 
 (defgroup dall-e nil
   "Use DALL-E inside Emacs."
@@ -94,6 +95,9 @@ Must be one of `256x256', `512x512', or `1024x1024'."
 
 (defvar-local dall-e-tip-inserted-p nil
   "Use to erase tip after first input.")
+
+(defvar-local dall-e-images nil
+  "List of images for current session.")
 
 (defface dall-e-user
   '((t :inherit font-lock-builtin-face))
@@ -256,8 +260,10 @@ Display buffer from BUFFER-OR-NAME."
                           (mapc (lambda (images-data)
                                   (let-alist images-data
                                     (let* ((url .url)
-                                           (name (file-name-nondirectory url)))
-                                      (url-copy-file name cache-dir))))
+                                           (name (file-name-nondirectory url))
+                                           (abs (expand-file-name name cache-dir)))
+                                      (url-copy-file name cache-dir)
+                                      (push (cons abs url) dall-e-images))))
                                 .data))
                         )))
                   :n dall-e-n
@@ -297,6 +303,7 @@ Display buffer from BUFFER-OR-NAME."
     (lv-message
      (concat
       (format "session: %s" (cdr dall-e-instance)) "\n"
+      (format "images: %s" (length dall-e-images))
       "\n\n"
       (format "n: %s" dall-e-n) "\n"
       (format "size: %s" dall-e-size) "\n"
@@ -306,6 +313,13 @@ Display buffer from BUFFER-OR-NAME."
 
 ;;
 ;;; Entry
+
+(defun dall-e-reveal-cache-directory ()
+  "Reveal cache directory in folder."
+  (interactive)
+  (when (eq major-mode #'dall-e-mode)
+    (ignore-errors (make-directory (dall-e-cache-dir) t))
+    (reveal-in-folder--signal-shell (dall-e-cache-dir))))
 
 (defun dall-e-clear-cahce ()
   "Clear cache for current session."
@@ -320,7 +334,7 @@ Display buffer from BUFFER-OR-NAME."
 
 (defun dall-e-header-line ()
   "The display for header line."
-  (format " %s[Session] %s  [History] %s  [User] %s"
+  (format " %s[Session] %s  [Images] %s  [User] %s"
           (if dall-e-requesting-p
               (let* ((spinner (if (symbolp dall-e-spinner-type)
                                   (cdr (assoc dall-e-spinner-type spinner-types))
@@ -331,8 +345,7 @@ Display buffer from BUFFER-OR-NAME."
                 (format "%s " (elt spinner dall-e-spinner-counter)))
             "")
           (cdr dall-e-instance)
-          ;; TODO: ...
-          1
+          (length dall-e-images)
           (dall-e-user)))
 
 (defvar dall-e-mode-map
