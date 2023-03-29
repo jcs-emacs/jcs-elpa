@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-openai/dall-e
-;; Package-Version: 20230329.222
-;; Package-Commit: 945fabf0babb2d69dcb244e5ca1d9b65f7495f30
+;; Package-Version: 20230329.232
+;; Package-Commit: 169f210c1c60fce8517b966aa9c552e87578bfea
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (openai "0.1.0") (lv "0.0") (ht "2.0") (spinner "1.7.4") (reveal-in-folder "0.1.2") (async "1.9.3"))
 ;; Keywords: comm dall-e
@@ -57,7 +57,7 @@
   :type 'integer
   :group 'dall-e)
 
-(defcustom dall-e-size "1024x1024"
+(defcustom dall-e-size "256x256"
   "The size of the generated images.
 
 Must be one of `256x256', `512x512', or `1024x1024'."
@@ -437,7 +437,6 @@ Display buffer from BUFFER-OR-NAME."
 \\<dall-e-mode-map>"
   (setq-local buffer-read-only t)
   (font-lock-mode -1)
-  (dall-e-clear-cahce)
   (add-hook 'kill-buffer-hook #'dall-e-mode--kill-buffer-hook nil t)
   (setq-local header-line-format `((:eval (dall-e-header-line))))
   (dall-e-mode-insert-tip))
@@ -449,7 +448,8 @@ Caution, this will overwrite the existing instance!"
   (ht-set dall-e-instances index (get-buffer-create buffer-or-name))
   (with-current-buffer buffer-or-name
     (dall-e-mode)
-    (setq dall-e-instance (cons index (current-buffer)))))
+    (setq dall-e-instance (cons index (current-buffer)))
+    (dall-e-clear-cahce)))
 
 ;;;###autoload
 (defun dall-e-new ()
