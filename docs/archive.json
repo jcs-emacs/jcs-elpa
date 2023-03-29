@@ -92,10 +92,10 @@
   {
     "name": "chatgpt",
     "summary": "Use ChatGPT inside Emacs",
-    "version": "20230324.125",
+    "version": "20230329.207",
     "url": "https://github.com/emacs-openai/chatgpt",
     "source": "github",
-    "commit": "d5e773de2b31a1227d8e1a8946c99e8691bcf375",
+    "commit": "4d50d8d08df6c464001aa99e7ae480984671b198",
     "tree": "https://github.com/emacs-openai/chatgpt"
   },
   {
@@ -290,10 +290,10 @@
   {
     "name": "dall-e",
     "summary": "Use DALL-E inside Emacs",
-    "version": "20230329.113",
+    "version": "20230329.222",
     "url": "https://github.com/emacs-openai/dall-e",
     "source": "github",
-    "commit": "3d2681982e442af8a3aa43fca329a2618e72bc58",
+    "commit": "945fabf0babb2d69dcb244e5ca1d9b65f7495f30",
     "tree": "https://github.com/emacs-openai/dall-e"
   },
   {
@@ -317,10 +317,10 @@
   {
     "name": "easky",
     "summary": "Control Eask in Emacs",
-    "version": "20230327.2259",
+    "version": "20230329.220",
     "url": "https://github.com/emacs-eask/easky",
     "source": "github",
-    "commit": "044361acd64065463adfb88544f1c381bebedae6",
+    "commit": "8b9744fb2de996b0d92bc619e64f920091d4335f",
     "tree": "https://github.com/emacs-eask/easky"
   },
   {
