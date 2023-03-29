@@ -4,8 +4,8 @@
 
 ;; Author: Alvaro Ramirez https://xenodium.com
 ;; URL: https://github.com/xenodium/chatgpt-shell
-;; Package-Version: 20230328.1538
-;; Package-Commit: 54b066bc4407834dca670dd8306f7a607d8b1638
+;; Package-Version: 20230329.2103
+;; Package-Commit: df35c9658132043eb748a857e20be44cf30f395f
 ;; Version: 0.3
 ;; Package-Requires: ((emacs "27.1")
 ;;                    (markdown-mode "2.5"))
@@ -392,8 +392,10 @@ Uses the interface provided by `comint-mode'"
 (defun chatgpt-shell-send-region ()
   "Send region to ChatGPT."
   (interactive)
+  (unless (region-active-p)
+    (user-error "No region active"))
   (chatgpt-shell-send-to-buffer
-   (buffer-substring (region-beginning) (region-end)) nil t))
+   (concat "\n\n" (buffer-substring (region-beginning) (region-end))) nil t))
 
 (defun chatgpt-shell-send-to-buffer (text &optional submit save-excursion)
   "Send TEXT to *chatgpt* buffer.
