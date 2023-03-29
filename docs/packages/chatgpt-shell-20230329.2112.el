@@ -4,8 +4,8 @@
 
 ;; Author: Alvaro Ramirez https://xenodium.com
 ;; URL: https://github.com/xenodium/chatgpt-shell
-;; Package-Version: 20230329.2103
-;; Package-Commit: df35c9658132043eb748a857e20be44cf30f395f
+;; Package-Version: 20230329.2112
+;; Package-Commit: 44a380af946ac4a6623cef5e6f0153a33450430a
 ;; Version: 0.3
 ;; Package-Requires: ((emacs "27.1")
 ;;                    (markdown-mode "2.5"))
@@ -53,6 +53,11 @@
 
 (defcustom chatgpt-shell-request-maker #'chatgpt-shell--async-curl-request
   "OpenAI key as a string or a function that loads and returns it."
+  :type 'function
+  :group 'chatgpt-shell)
+
+(defcustom chatgpt-shell-request-timeout 60
+  "How long to wait for a request to time out."
   :type 'function
   :group 'chatgpt-shell)
 
@@ -607,7 +612,8 @@ Used by `chatgpt-shell--send-input's call."
 (defun chatgpt-shell--make-curl-request-command-list (key url request-data)
   "Build ChatGPT curl command list using KEY URL and REQUEST-DATA."
   (list "curl" url
-        "--fail" "--no-progress-meter" "-m" "30"
+        "--fail" "--no-progress-meter"
+        "-m" (number-to-string chatgpt-shell-request-timeout)
         "-H" "Content-Type: application/json"
         "-H" (format "Authorization: Bearer %s" key)
         "-d" (chatgpt-shell--json-encode request-data)))
