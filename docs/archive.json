@@ -92,10 +92,10 @@
   {
     "name": "chatgpt",
     "summary": "Use ChatGPT inside Emacs",
-    "version": "20230329.207",
+    "version": "20230329.2014",
     "url": "https://github.com/emacs-openai/chatgpt",
     "source": "github",
-    "commit": "4d50d8d08df6c464001aa99e7ae480984671b198",
+    "commit": "13e6fbb8ee6ebd5863ee741822709767c87b92b2",
     "tree": "https://github.com/emacs-openai/chatgpt"
   },
   {
@@ -110,10 +110,10 @@
   {
     "name": "codegpt",
     "summary": "Use GPT-3 tp help you write code",
-    "version": "20230324.125",
+    "version": "20230329.2022",
     "url": "https://github.com/emacs-openai/codegpt",
     "source": "github",
-    "commit": "7ad39a808d3d07f982e7cd45866d86cac0557631",
+    "commit": "d5de204b6438eafeaa667d3007699f84ac87f5f9",
     "tree": "https://github.com/emacs-openai/codegpt"
   },
   {
@@ -290,10 +290,10 @@
   {
     "name": "dall-e",
     "summary": "Use DALL-E inside Emacs",
-    "version": "20230329.232",
+    "version": "20230329.2030",
     "url": "https://github.com/emacs-openai/dall-e",
     "source": "github",
-    "commit": "169f210c1c60fce8517b966aa9c552e87578bfea",
+    "commit": "7c62003923aea61dfb4bdc627da6daf7c363b965",
     "tree": "https://github.com/emacs-openai/dall-e"
   },
   {
