@@ -4,9 +4,9 @@
 
 ;; Author: Alvaro Ramirez https://xenodium.com
 ;; URL: https://github.com/xenodium/chatgpt-shell
-;; Package-Version: 20230329.2112
-;; Package-Commit: 44a380af946ac4a6623cef5e6f0153a33450430a
-;; Version: 0.3
+;; Package-Version: 20230330.748
+;; Package-Commit: c7754b83939ed9c68a5faf8875e496fa879c529b
+;; Version: 0.5
 ;; Package-Requires: ((emacs "27.1")
 ;;                    (markdown-mode "2.5"))
 
@@ -40,6 +40,7 @@
 (require 'map)
 (require 'markdown-mode)
 (require 'seq)
+(require 'shell)
 
 (eval-when-compile
   (require 'cl-lib)
@@ -354,12 +355,21 @@ Uses the interface provided by `comint-mode'"
                                '(face 'markdown-pre-face)))))
 
 (defun chatgpt-shell-chatgpt-prompt ()
-  "Make a ChatGPT request from the minibuffer."
+  "Make a ChatGPT request from the minibuffer.
+
+If region is active, append to prompt."
   (interactive)
-  (chatgpt-shell-send-to-buffer
-   (read-string (chatgpt-shell-config-prompt
-                 chatgpt-shell--chatgpt-config)))
-  (chatgpt-shell--send-input))
+  (let ((prompt (read-string (concat
+                              (if (region-active-p)
+                                  "[appending region] "
+                                "")
+                              (chatgpt-shell-config-prompt
+                               chatgpt-shell--chatgpt-config)))))
+    (when (region-active-p)
+      (setq prompt (concat prompt "\n\n"
+                           (buffer-substring (region-beginning) (region-end)))))
+    (chatgpt-shell-send-to-buffer prompt)
+    (chatgpt-shell--send-input)))
 
 (defun chatgpt-shell-return ()
   "RET binding."
@@ -619,7 +629,7 @@ Used by `chatgpt-shell--send-input's call."
         "-d" (chatgpt-shell--json-encode request-data)))
 
 (defun chatgpt-shell--json-encode (obj)
-  "Serialize OBJ to json. Use fallback if `json-serialize' isn't available."
+  "Serialize OBJ to json.  Use fallback if `json-serialize' isn't available."
   (if (fboundp 'json-serialize)
       (json-serialize obj)
     (json-encode obj)))
@@ -705,9 +715,60 @@ Used by `chatgpt-shell--send-input's call."
                   (when (not (string-empty-p response))
                     (push (list (cons 'role "system")
                                 (cons 'content response)) result)))))
-            (split-string (substring-no-properties (buffer-string))
+            (split-string (buffer-string)
                           chatgpt-shell--prompt-internal)))
     (nreverse result)))
+
+(defun chatgpt-shell--extract-current-command-and-response ()
+  "Extract the current command and response in buffer."
+  (save-excursion
+    (save-restriction
+      (shell-narrow-to-prompt)
+      (let ((items (chatgpt-shell--extract-commands-and-responses)))
+        (cl-assert (or (seq-empty-p items)
+                       (eq (length items) 1)
+                       (eq (length items) 2)))
+        items))))
+
+(defun chatgpt-shell-view-current ()
+  "View current entry in a separate buffer."
+  (interactive)
+  (let* ((items (chatgpt-shell--extract-current-command-and-response))
+         (command (map-elt (seq-find (lambda (item)
+                                       (and (string-equal
+                                             (map-elt item 'role)
+                                             "user")
+                                            (not (string-empty-p
+                                                  (string-trim (map-elt item 'content))))))
+                                     items)
+                           'content))
+         (response (map-elt (seq-find (lambda (item)
+                                        (and (string-equal
+                                              (map-elt item 'role)
+                                              "system")
+                                             (not (string-empty-p
+                                                   (string-trim (map-elt item 'content))))))
+                                      items)
+                            'content))
+         (buf (generate-new-buffer (if command
+                                       (concat
+                                        (chatgpt-shell-config-prompt chatgpt-shell--config)
+                                        ;; Only the first line of prompt.
+                                        (seq-first (split-string command "\n")))
+                                     (concat (chatgpt-shell-config-prompt chatgpt-shell--config)
+                                             "(no prompt)")))))
+    (when (seq-empty-p items)
+      (user-error "Nothing to export"))
+    (with-current-buffer buf
+      (save-excursion
+        (insert (propertize (or command "") 'face font-lock-comment-face))
+        (when (and command response)
+          (insert "\n\n"))
+        (insert (or response "")))
+      (view-mode +1)
+      (setq view-exit-action 'kill-buffer))
+    (switch-to-buffer buf)
+    buf))
 
 (defun chatgpt-shell--write-output-to-log-buffer (output)
   "Write curl process OUTPUT to log buffer.
