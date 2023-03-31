@@ -4,8 +4,8 @@
 
 ;; Author: Alvaro Ramirez https://xenodium.com
 ;; URL: https://github.com/xenodium/chatgpt-shell
-;; Package-Version: 20230331.5
-;; Package-Commit: d6959de78fb13cea9b591c2af35067c07e821c20
+;; Package-Version: 20230331.734
+;; Package-Commit: 1efab94291a82ba64f244eca369e9b83aea08d18
 ;; Version: 0.6.1
 ;; Package-Requires: ((emacs "27.1")
 ;;                    (markdown-mode "2.5"))
@@ -65,6 +65,15 @@
 (defcustom chatgpt-shell-display-function #'pop-to-buffer-same-window
   "Function to display new shell.  Can be set to `display-buffer' or similar."
   :type 'function
+  :group 'chatgpt-shell)
+
+(defcustom chatgpt-shell-default-prompts '("Write a unit test for the following code:"
+                                           "Refactor the following code so that "
+                                           "Summarize the output of the following command:"
+                                           "What's wrong with this command?"
+                                           "Explain what the following code does:")
+  "List of default prompts to choose from."
+  :type '(repeat string)
   :group 'chatgpt-shell)
 
 (defcustom chatgpt-shell-language-mapping '(("elisp" . "emacs-lisp")
@@ -193,7 +202,10 @@ ChatGPT."
 (defvar-local chatgpt-shell--file nil)
 
 (defconst chatgpt-shell-font-lock-keywords
-  `(;; Markdown triple backticks source blocks
+  `(;; Markdown single backticks
+    ("`\\([^`\n]+\\)`"
+     (1 'markdown-inline-code-face))
+    ;; Markdown triple backticks source blocks
     ("\\(^\\(```\\)\\([^`\n]*\\)\n\\)\\(\\(?:.\\|\n\\)*?\\)\\(^\\(```\\)$\\)"
      ;; (2) ``` (3) language (4) body (6) ```
      (0 (progn
@@ -215,10 +227,7 @@ ChatGPT."
                              (match-end 3))
            ;; body
            (match-beginning 4) (match-end 4))
-          nil)))
-    ;; Markdown single backticks
-    ("`\\([^`\n]+\\)`"
-     (1 'markdown-inline-code-face))))
+          nil)))))
 
 (defvar chatgpt-shell-map
   (let ((map (nconc (make-sparse-keymap) comint-mode-map)))
@@ -366,12 +375,13 @@ Uses the interface provided by `comint-mode'"
 
 If region is active, append to prompt."
   (interactive)
-  (let ((prompt (read-string (concat
+  (let ((prompt (completing-read (concat
                               (if (region-active-p)
                                   "[appending region] "
                                 "")
                               (chatgpt-shell-config-prompt
-                               chatgpt-shell--chatgpt-config)))))
+                               chatgpt-shell--chatgpt-config))
+                              chatgpt-shell-default-prompts)))
     (when (region-active-p)
       (setq prompt (concat prompt "\n\n"
                            (buffer-substring (region-beginning) (region-end)))))
