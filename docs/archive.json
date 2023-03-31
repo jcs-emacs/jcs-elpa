@@ -101,10 +101,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "Interaction mode for ChatGPT",
-    "version": "20230331.825",
+    "version": "20230331.944",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "9b4719790692db6f5ce35f4842c7d54bfb806a4d",
+    "commit": "b12610774453692f73ef945f53a461b76d7cad7e",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -1037,10 +1037,10 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20230323.749",
+    "version": "20230331.952",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "eeff646b21961a1470de2cb38560faa9c8d37378",
+    "commit": "7a46b695a1fd4336d16c4627bc916446b1f4969a",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
