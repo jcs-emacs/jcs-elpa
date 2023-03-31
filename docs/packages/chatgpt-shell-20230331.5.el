@@ -4,8 +4,8 @@
 
 ;; Author: Alvaro Ramirez https://xenodium.com
 ;; URL: https://github.com/xenodium/chatgpt-shell
-;; Package-Version: 20230330.2033
-;; Package-Commit: 0403d967308180414c121a24fa837a4cd3d1c5a3
+;; Package-Version: 20230331.5
+;; Package-Commit: d6959de78fb13cea9b591c2af35067c07e821c20
 ;; Version: 0.6.1
 ;; Package-Requires: ((emacs "27.1")
 ;;                    (markdown-mode "2.5"))
@@ -108,7 +108,7 @@ See
 https://platform.openai.com/docs/api-reference/completions\
 /create#completions/create-temperature
 for details."
-  :type '(choice integer
+  :type '(choice 'float
                  (const nil))
   :group 'chatgpt-shell)
 
