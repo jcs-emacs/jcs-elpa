@@ -4,8 +4,8 @@
 
 ;; Author: Alvaro Ramirez https://xenodium.com
 ;; URL: https://github.com/xenodium/chatgpt-shell
-;; Package-Version: 20230331.944
-;; Package-Commit: b12610774453692f73ef945f53a461b76d7cad7e
+;; Package-Version: 20230331.1612
+;; Package-Commit: 5a86209ae1a01a541399e4f621d0507bd77ce20e
 ;; Version: 0.6.3
 ;; Package-Requires: ((emacs "27.1")
 ;;                    (markdown-mode "2.5"))
@@ -132,8 +132,8 @@ See
 https://platform.openai.com/docs/api-reference/completions\
 /create#completions/create-temperature
 for details."
-  :type '(choice 'float
-                 (const nil))
+  :type '(choice (float :tag "Float")
+                 (const :tag "Nil" nil))
   :group 'chatgpt-shell)
 
 (defcustom chatgpt-shell-transmitted-context-length nil
@@ -155,8 +155,8 @@ context.
 
 A Value >1 will send that amount of prompt-completion pairs to
 ChatGPT."
-  :type '(choice integer
-                 (const nil))
+  :type '(choice (integer :tag "Integer value")
+                 (const :tag "Not set" nil))
   :group 'chatgpt-shell)
 
 (defvar chatgpt-shell--log-buffer-name "*chatgpt-shell-log*")
