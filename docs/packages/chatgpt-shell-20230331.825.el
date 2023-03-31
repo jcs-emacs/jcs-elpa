@@ -4,9 +4,9 @@
 
 ;; Author: Alvaro Ramirez https://xenodium.com
 ;; URL: https://github.com/xenodium/chatgpt-shell
-;; Package-Version: 20230331.734
-;; Package-Commit: 1efab94291a82ba64f244eca369e9b83aea08d18
-;; Version: 0.6.1
+;; Package-Version: 20230331.825
+;; Package-Commit: 9b4719790692db6f5ce35f4842c7d54bfb806a4d
+;; Version: 0.6.2
 ;; Package-Requires: ((emacs "27.1")
 ;;                    (markdown-mode "2.5"))
 
@@ -67,14 +67,29 @@
   :type 'function
   :group 'chatgpt-shell)
 
-(defcustom chatgpt-shell-default-prompts '("Write a unit test for the following code:"
-                                           "Refactor the following code so that "
-                                           "Summarize the output of the following command:"
-                                           "What's wrong with this command?"
-                                           "Explain what the following code does:")
+(defcustom chatgpt-shell-read-string-function (lambda (prompt history)
+                                                (read-string prompt nil history))
+  "Function to read strings from user.
+
+To use `completing-read', it can be done with something like:
+
+\(setq `chatgpt-shell-read-string-function'
+      (lambda (prompt history)
+        (completing-read prompt (symbol-value history) nil nil nil history)))"
+  :type 'function
+  :group 'chatgpt-shell)
+
+(defcustom chatgpt-shell-chatgpt-default-prompts
+  '("Write a unit test for the following code:"
+    "Refactor the following code so that "
+    "Summarize the output of the following command:"
+    "What's wrong with this command?"
+    "Explain what the following code does:")
   "List of default prompts to choose from."
   :type '(repeat string)
   :group 'chatgpt-shell)
+
+(defvar chatgpt-shell--chatgpt-prompt-history)
 
 (defcustom chatgpt-shell-language-mapping '(("elisp" . "emacs-lisp")
                                             ("objective-c" . "objc")
@@ -375,13 +390,17 @@ Uses the interface provided by `comint-mode'"
 
 If region is active, append to prompt."
   (interactive)
-  (let ((prompt (completing-read (concat
-                              (if (region-active-p)
-                                  "[appending region] "
-                                "")
-                              (chatgpt-shell-config-prompt
-                               chatgpt-shell--chatgpt-config))
-                              chatgpt-shell-default-prompts)))
+  (unless chatgpt-shell--chatgpt-prompt-history
+    (setq chatgpt-shell--chatgpt-prompt-history
+          chatgpt-shell-chatgpt-default-prompts))
+  (let ((prompt (funcall chatgpt-shell-read-string-function
+                         (concat
+                          (if (region-active-p)
+                              "[appending region] "
+                            "")
+                          (chatgpt-shell-config-prompt
+                           chatgpt-shell--chatgpt-config))
+                         'chatgpt-shell--chatgpt-prompt-history)))
     (when (region-active-p)
       (setq prompt (concat prompt "\n\n"
                            (buffer-substring (region-beginning) (region-end)))))
