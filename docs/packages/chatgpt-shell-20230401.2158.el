@@ -4,8 +4,8 @@
 
 ;; Author: Alvaro Ramirez https://xenodium.com
 ;; URL: https://github.com/xenodium/chatgpt-shell
-;; Package-Version: 20230401.2054
-;; Package-Commit: 0937ff03a8808eb33bd3ab2ff8baedaff8306e74
+;; Package-Version: 20230401.2158
+;; Package-Commit: 227dbedf8d74a01c724a82dcb86ccb78d87933d9
 ;; Version: 0.7.1
 ;; Package-Requires: ((emacs "27.1")
 ;;                    (markdown-mode "2.5"))
@@ -488,7 +488,7 @@ Very much EXPERIMENTAL."
                   (setq commands-and-responses (cdr commands-and-responses))
                   (when response
                     (unless (string-equal (map-elt response 'role)
-                                          "system")
+                                          "assistant")
                       (setq failed t)
                       (user-error "Invalid transcript"))
                     (funcall callback (map-elt response 'content))
@@ -775,7 +775,6 @@ Used by `chatgpt-shell--send-input's call."
 
 (defun chatgpt-shell--send-input ()
   "Send text after the prompt."
-  (interactive)
   (let (chatgpt-shell--input)
     (comint-send-input)
     (chatgpt-shell--eval-input chatgpt-shell--input)))
@@ -906,7 +905,7 @@ Used by `chatgpt-shell--send-input's call."
                   (push (list (cons 'role "user")
                               (cons 'content prompt)) result))
                 (when (not (string-empty-p response))
-                  (push (list (cons 'role "system")
+                  (push (list (cons 'role "assistant")
                               (cons 'content response)) result)))))
           (split-string text prompt-regexp))
     (nreverse result)))
@@ -941,7 +940,7 @@ Used by `chatgpt-shell--send-input's call."
          (response (map-elt (seq-find (lambda (item)
                                         (and (string-equal
                                               (map-elt item 'role)
-                                              "system")
+                                              "assistant")
                                              (not (string-empty-p
                                                    (string-trim (map-elt item 'content))))))
                                       items)
@@ -954,10 +953,10 @@ Used by `chatgpt-shell--send-input's call."
                                      (concat (chatgpt-shell-config-prompt chatgpt-shell--config)
                                              "(no prompt)")))))
     (when (seq-empty-p items)
-      (user-error "Nothing to export"))
+      (user-error "Nothing to view"))
     (with-current-buffer buf
       (save-excursion
-        (insert (propertize (or command "") 'face font-lock-comment-face))
+        (insert (propertize (or command "") 'face font-lock-doc-face))
         (when (and command response)
           (insert "\n\n"))
         (insert (or response "")))
