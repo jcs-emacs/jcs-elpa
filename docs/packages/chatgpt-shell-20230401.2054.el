@@ -4,9 +4,9 @@
 
 ;; Author: Alvaro Ramirez https://xenodium.com
 ;; URL: https://github.com/xenodium/chatgpt-shell
-;; Package-Version: 20230331.1612
-;; Package-Commit: 5a86209ae1a01a541399e4f621d0507bd77ce20e
-;; Version: 0.6.3
+;; Package-Version: 20230401.2054
+;; Package-Commit: 0937ff03a8808eb33bd3ab2ff8baedaff8306e74
+;; Version: 0.7.1
 ;; Package-Requires: ((emacs "27.1")
 ;;                    (markdown-mode "2.5"))
 
@@ -50,11 +50,6 @@
   "OpenAI key as a string or a function that loads and returns it."
   :type '(choice (function :tag "Function")
                  (string :tag "String"))
-  :group 'chatgpt-shell)
-
-(defcustom chatgpt-shell-request-maker #'chatgpt-shell--async-curl-request
-  "OpenAI key as a string or a function that loads and returns it."
-  :type 'function
   :group 'chatgpt-shell)
 
 (defcustom chatgpt-shell-request-timeout 60
@@ -173,8 +168,10 @@ ChatGPT."
   buffer-name
   process-name
   url
+  invalid-input
+  request-maker
   request-data-maker
-  response-extrator)
+  response-extractor)
 
 (defvar chatgpt-shell--chatgpt-config
   (make-chatgpt-shell-config
@@ -182,6 +179,25 @@ ChatGPT."
    :process-name "chatgpt"
    :prompt "ChatGPT> "
    :url "https://api.openai.com/v1/chat/completions"
+   :invalid-input
+   (lambda (input)
+     (unless chatgpt-shell-openai-key
+       "Variable `chatgpt-shell-openai-key' needs to be set to your key.
+
+Try M-x set-variable chatgpt-shell-openai-key
+
+or
+
+(setq chatgpt-shell-openai-key \"my-key\")"))
+   :request-maker
+   (lambda (url request-data response-extractor callback error-callback)
+     (chatgpt-shell--async-shell-command
+      (chatgpt-shell--make-curl-request-command-list
+       chatgpt-shell-openai-key
+       url request-data)
+      response-extractor
+      callback
+      error-callback))
    :request-data-maker
    (lambda (commands-and-responses)
      (let ((request-data `((model . ,chatgpt-shell-chatgpt-model-version)
@@ -189,7 +205,7 @@ ChatGPT."
        (when chatgpt-shell-model-temperature
          (push `(temperature . ,chatgpt-shell-model-temperature) request-data))
        request-data))
-   :response-extrator #'chatgpt-shell--extract-chatgpt-response))
+   :response-extractor #'chatgpt-shell--extract-chatgpt-response))
 
 (defvar chatgpt-shell--dall-e-config
   (make-chatgpt-shell-config
@@ -197,6 +213,25 @@ ChatGPT."
    :process-name "dalle"
    :prompt "DALL-E> "
    :url "https://api.openai.com/v1/images/generations"
+   :invalid-input
+   (lambda (input)
+     (unless chatgpt-shell-openai-key
+       "Variable `chatgpt-shell-openai-key' needs to be set to your key.
+
+Try M-x set-variable chatgpt-shell-openai-key
+
+or
+
+(setq chatgpt-shell-openai-key \"my-key\")"))
+   :request-maker
+   (lambda (url request-data response-extractor callback error-callback)
+     (chatgpt-shell--async-shell-command
+      (chatgpt-shell--make-curl-request-command-list
+       chatgpt-shell-openai-key
+       url request-data)
+      response-extractor
+      callback
+      error-callback))
    :request-data-maker
    (lambda (commands-and-responses)
      (let ((request-data `((model . ,chatgpt-shell-dall-e-model-version)
@@ -206,7 +241,7 @@ ChatGPT."
        (when chatgpt-shell-model-temperature
          (push `(temperature . ,chatgpt-shell-model-temperature) request-data))
        request-data))
-   :response-extrator #'chatgpt-shell--extract-dall-e-response))
+   :response-extractor #'chatgpt-shell--extract-dall-e-response))
 
 (defvar-local chatgpt-shell--busy nil)
 
@@ -248,6 +283,7 @@ ChatGPT."
   (let ((map (nconc (make-sparse-keymap) comint-mode-map)))
     (define-key map "\C-m" 'chatgpt-shell-return)
     (define-key map "\C-c\C-c" 'chatgpt-shell-interrupt)
+    (define-key map "\C-x\C-s" 'chatgpt-shell-save-session-transcript)
     map)
   "Keymap for ChatGPT mode.")
 
@@ -385,6 +421,104 @@ Uses the interface provided by `comint-mode'"
       (set-text-properties start end
                                '(face 'markdown-pre-face)))))
 
+(defun chatgpt-shell-save-session-transcript ()
+  "Save shell transcript to file.
+
+Very much EXPERIMENTAL."
+  (interactive)
+  (unless (eq major-mode 'inferior-chatgpt-mode)
+    (user-error "Not in a shell"))
+  (if chatgpt-shell--file
+      (let ((content (buffer-string))
+            (path chatgpt-shell--file))
+        (with-temp-buffer
+          (insert content)
+          (write-file path nil)))
+    (when-let ((path (read-file-name "Write file: "
+                                     nil nil nil "transcript.txt"))
+               (content (buffer-string)))
+      (with-temp-buffer
+        (insert content)
+        (write-file path t))
+      (setq chatgpt-shell--file path))))
+
+(defun chatgpt-shell--list-to-pairs (items)
+  "Return a list of pairs from the input ITEMS."
+  (let ((pairs '()))
+    (while items
+      (push (cons (car items) (cadr items)) pairs)
+      (setq items (cddr items)))
+    (reverse pairs)))
+
+(defun chatgpt-shell-restore-session-from-transcript ()
+  "Restore session from transcript.
+
+Very much EXPERIMENTAL."
+  (interactive)
+  (unless (eq major-mode 'inferior-chatgpt-mode)
+    (user-error "Not in a shell"))
+  (let* ((path (read-file-name "Restore from: " nil nil t))
+         (prompt (chatgpt-shell-config-prompt chatgpt-shell--config))
+         (commands-and-responses (with-temp-buffer
+                                   (insert-file-contents path)
+                                   (chatgpt-shell--extract-commands-and-responses
+                                    (buffer-string)
+                                    prompt)))
+         (response-extractor (chatgpt-shell-config-response-extractor
+                              chatgpt-shell--config))
+         (request-maker (chatgpt-shell-config-request-maker
+                         chatgpt-shell--config))
+         (invalid-input (chatgpt-shell-config-invalid-input
+                         chatgpt-shell--config))
+         (command)
+         (response)
+         (failed))
+    ;; Momentarily overrides request handling to replay all commands
+    ;; read from file so comint treats all commands/responses like
+    ;; any other command.
+    (unwind-protect
+        (progn
+          (setf (chatgpt-shell-config-response-extractor chatgpt-shell--config)
+                (lambda (json)
+                  json))
+          (setf (chatgpt-shell-config-invalid-input chatgpt-shell--config) nil)
+          (setf (chatgpt-shell-config-request-maker chatgpt-shell--config)
+                (lambda (url request-data response-extractor callback error-callback)
+                  (setq response (car commands-and-responses))
+                  (setq commands-and-responses (cdr commands-and-responses))
+                  (when response
+                    (unless (string-equal (map-elt response 'role)
+                                          "system")
+                      (setq failed t)
+                      (user-error "Invalid transcript"))
+                    (funcall callback (map-elt response 'content))
+                    (setq command (car commands-and-responses))
+                    (setq commands-and-responses (cdr commands-and-responses))
+                    (when command
+                      (insert (map-elt command 'content))
+                      (chatgpt-shell--send-input)))))
+          (goto-char (point-max))
+          (comint-clear-buffer)
+          (setq command (car commands-and-responses))
+          (setq commands-and-responses (cdr commands-and-responses))
+          (when command
+            (unless (string-equal (map-elt command 'role)
+                                  "user")
+              (setq failed t)
+              (user-error "Invalid transcript"))
+            (insert (map-elt command 'content))
+            (chatgpt-shell--send-input)))
+      (if failed
+          (setq chatgpt-shell--file nil)
+        (setq chatgpt-shell--file path))
+      (setq chatgpt-shell--busy nil)
+      (setf (chatgpt-shell-config-response-extractor chatgpt-shell--config)
+            response-extractor)
+      (setf (chatgpt-shell-config-invalid-input chatgpt-shell--config)
+            invalid-input)
+      (setf (chatgpt-shell-config-request-maker chatgpt-shell--config)
+            request-maker))))
+
 (defun chatgpt-shell-chatgpt-prompt ()
   "Make a ChatGPT request from the minibuffer.
 
@@ -410,6 +544,8 @@ If region is active, append to prompt."
 (defun chatgpt-shell-return ()
   "RET binding."
   (interactive)
+  (unless (eq major-mode 'inferior-chatgpt-mode)
+    (user-error "Not in a shell"))
   (chatgpt-shell--send-input))
 
 (defun chatgpt-shell-describe-code ()
@@ -468,6 +604,8 @@ Set SAVE-EXCURSION to prevent point from moving."
 (defun chatgpt-shell-interrupt ()
   "Interrupt current request."
   (interactive)
+  (unless (eq major-mode 'inferior-chatgpt-mode)
+    (user-error "Not in a shell"))
   (with-current-buffer (chatgpt-shell--buffer chatgpt-shell--config)
     ;; Increment id, so in-flight request is ignored.
     (chatgpt-shell--increment-request-id)
@@ -493,15 +631,13 @@ Set SAVE-EXCURSION to prevent point from moving."
      ((not (chatgpt-shell--curl-version-supported))
       (chatgpt-shell--write-reply "You need curl version 7.67 or newer.")
       (setq chatgpt-shell--busy nil))
-     ((not chatgpt-shell-openai-key)
+     ((and (chatgpt-shell-config-invalid-input
+            chatgpt-shell--config)
+           (funcall (chatgpt-shell-config-invalid-input
+                     chatgpt-shell--config) input-string))
       (chatgpt-shell--write-reply
-       "Variable `chatgpt-shell-openai-key' needs to be set to your key.
-
-Try M-x set-variable chatgpt-shell-openai-key
-
-or
-
-(setq chatgpt-shell-openai-key \"my-key\")" t)
+       (funcall (chatgpt-shell-config-invalid-input
+                 chatgpt-shell--config) input-string))
       (setq chatgpt-shell--busy nil))
      ((string-empty-p (string-trim input-string))
       (comint-output-filter (chatgpt-shell--process)
@@ -513,26 +649,18 @@ or
       (comint-output-filter (chatgpt-shell--process)
                             (propertize "<gpt-end-of-prompt>"
                                         'invisible (not chatgpt-shell--show-invisible-markers)))
-      (when-let ((key (cond ((stringp chatgpt-shell-openai-key)
-                             chatgpt-shell-openai-key)
-                            ((functionp chatgpt-shell-openai-key)
-                             (condition-case err
-                                 (funcall chatgpt-shell-openai-key)
-                               (error
-                                (chatgpt-shell--write-reply (error-message-string err) t)
-                                (comint-output-filter (chatgpt-shell--process)
-                                                      (propertize "\n<gpt-ignored-response>"
-                                                                  'invisible (not chatgpt-shell--show-invisible-markers)))
-                                (setq chatgpt-shell--busy nil)
-                                nil))))))
-        (funcall chatgpt-shell-request-maker
-                 key (chatgpt-shell-config-url chatgpt-shell--config)
+      (funcall (chatgpt-shell-config-request-maker chatgpt-shell--config)
+                 (chatgpt-shell-config-url chatgpt-shell--config)
                  (funcall (chatgpt-shell-config-request-data-maker chatgpt-shell--config)
                           (vconcat
-                           (last (chatgpt-shell--extract-commands-and-responses)
+                           (last (chatgpt-shell--extract-commands-and-responses
+                                  (with-current-buffer
+                                      (chatgpt-shell-config-buffer-name chatgpt-shell--config)
+                                    (buffer-string))
+                                  (chatgpt-shell-config-prompt chatgpt-shell--config))
                                  (chatgpt-shell--unpaired-length
                                   chatgpt-shell-transmitted-context-length))))
-                 (chatgpt-shell-config-response-extrator chatgpt-shell--config)
+                 (chatgpt-shell-config-response-extractor chatgpt-shell--config)
                  (lambda (response)
                    (if response
                        (chatgpt-shell--write-reply response)
@@ -540,7 +668,7 @@ or
                    (setq chatgpt-shell--busy nil))
                  (lambda (error)
                    (chatgpt-shell--write-reply error t)
-                   (setq chatgpt-shell--busy nil))))))))
+                   (setq chatgpt-shell--busy nil)))))))
 
 (defun chatgpt-shell-openai-key ()
   "Get the ChatGPT key."
@@ -562,15 +690,6 @@ If no LENGTH set, use 2048."
   (if length
       (1+ (* 2 length))
     2048))
-
-(defun chatgpt-shell--async-curl-request (key url request-data response-extractor callback error-callback)
-  "Make request via `curl' using KEY URL REQUEST-DATA RESPONSE-EXTRACTOR CALLBACK and ERROR-CALLBACK."
-  (chatgpt-shell--async-shell-command
-   (chatgpt-shell--make-curl-request-command-list
-    key url request-data)
-   response-extractor
-   callback
-   error-callback))
 
 (defun chatgpt-shell--async-shell-command (command response-extractor callback error-callback)
   "Run shell COMMAND asynchronously.
@@ -689,7 +808,14 @@ Used by `chatgpt-shell--send-input's call."
         "--no-progress-meter"
         "-m" (number-to-string chatgpt-shell-request-timeout)
         "-H" "Content-Type: application/json"
-        "-H" (format "Authorization: Bearer %s" key)
+        "-H" (format "Authorization: Bearer %s"
+                     (cond ((stringp key)
+                            key)
+                           ((functionp key)
+                            (condition-case err
+                                (funcall key)
+                              (error
+                               "KEY-NOT-FOUND")))))
         "-d" (chatgpt-shell--json-encode request-data)))
 
 (defun chatgpt-shell--json-encode (obj)
@@ -763,28 +889,26 @@ Used by `chatgpt-shell--send-input's call."
                                     (funcall error-callback output))
                                   (kill-buffer output-buffer)))))))))
 
-(defun chatgpt-shell--extract-commands-and-responses ()
-  "Extract all command and responses in buffer."
+(defun chatgpt-shell--extract-commands-and-responses (text prompt-regexp)
+  "Extract all command and responses in TEXT with PROMPT-REGEXP."
   (let ((result))
-    (with-current-buffer (chatgpt-shell--buffer chatgpt-shell--config)
-      (mapc (lambda (item)
-              (let* ((values (split-string item "<gpt-end-of-prompt>"))
-                     (lines (split-string item "\n"))
-                     (prompt (string-trim (nth 0 values)))
-                     (response (string-trim (progn
-                                              (if (> (length values) 1)
-                                                  (nth 1 values)
-                                                (string-join
-                                                 (cdr lines) "\n"))))))
-                (unless (string-match "<gpt-ignored-response>" response)
-                  (when (not (string-empty-p prompt))
-                    (push (list (cons 'role "user")
-                                (cons 'content prompt)) result))
-                  (when (not (string-empty-p response))
-                    (push (list (cons 'role "system")
-                                (cons 'content response)) result)))))
-            (split-string (buffer-string)
-                          chatgpt-shell--prompt-internal)))
+    (mapc (lambda (item)
+            (let* ((values (split-string item "<gpt-end-of-prompt>"))
+                   (lines (split-string item "\n"))
+                   (prompt (string-trim (nth 0 values)))
+                   (response (string-trim (progn
+                                            (if (> (length values) 1)
+                                                (nth 1 values)
+                                              (string-join
+                                               (cdr lines) "\n"))))))
+              (unless (string-match "<gpt-ignored-response>" response)
+                (when (not (string-empty-p prompt))
+                  (push (list (cons 'role "user")
+                              (cons 'content prompt)) result))
+                (when (not (string-empty-p response))
+                  (push (list (cons 'role "system")
+                              (cons 'content response)) result)))))
+          (split-string text prompt-regexp))
     (nreverse result)))
 
 (defun chatgpt-shell--extract-current-command-and-response ()
@@ -792,7 +916,9 @@ Used by `chatgpt-shell--send-input's call."
   (save-excursion
     (save-restriction
       (shell-narrow-to-prompt)
-      (let ((items (chatgpt-shell--extract-commands-and-responses)))
+      (let ((items (chatgpt-shell--extract-commands-and-responses
+                    (buffer-string)
+                    (chatgpt-shell-config-prompt chatgpt-shell--config))))
         (cl-assert (or (seq-empty-p items)
                        (eq (length items) 1)
                        (eq (length items) 2)))
@@ -801,6 +927,8 @@ Used by `chatgpt-shell--send-input's call."
 (defun chatgpt-shell-view-current ()
   "View current entry in a separate buffer."
   (interactive)
+  (unless (eq major-mode 'inferior-chatgpt-mode)
+    (user-error "Not in a shell"))
   (let* ((items (chatgpt-shell--extract-current-command-and-response))
          (command (map-elt (seq-find (lambda (item)
                                        (and (string-equal
