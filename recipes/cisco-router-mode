@@ -1,0 +1,1 @@
+(cisco-router-mode :repo "emacsmirror/cisco-router-mode" :fetcher github)
