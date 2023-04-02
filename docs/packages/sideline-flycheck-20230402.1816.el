@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline-flycheck
-;; Package-Version: 20230216.859
-;; Package-Commit: 1f2f82d4383718a8dd2aff40cffafce4a8d0aca1
+;; Package-Version: 20230402.1816
+;; Package-Commit: 3d74a008835eff71899b9455cd00f989378fe70e
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (sideline "0.1.1") (flycheck "0.14") (ht "2.4"))
 ;; Keywords: convenience flycheck
@@ -59,8 +59,13 @@
   :group 'sideline-flycheck)
 
 (defcustom sideline-flycheck-show-checker-name nil
-  "If non-nil, show checker name at the back."
+  "If non-nil, show the checker's name at the back."
   :type 'boolean
+  :group 'sideline-flycheck)
+
+(defcustom sideline-flycheck-max-lines 1
+  "Maximum number of lines to show."
+  :type 'integer
   :group 'sideline-flycheck)
 
 (defvar-local sideline-flycheck--old-display-function nil
@@ -92,6 +97,9 @@ Argument COMMAND is required in sideline backend."
         (let* ((level (flycheck-error-level err))
                (face (if (eq level 'info) 'success level))
                (msg (flycheck-error-message err))
+               (lines (split-string msg "\n"))
+               (lines (butlast lines (- (length lines) sideline-flycheck-max-lines)))
+               (msg (mapconcat #'identity lines "\n"))
                (checker (flycheck-error-checker err)))
           (when sideline-flycheck-show-checker-name
             (setq msg (format "%s (%s)" msg checker)))
