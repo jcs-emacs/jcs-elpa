@@ -4,8 +4,8 @@
 
 ;; Author: Alvaro Ramirez https://xenodium.com
 ;; URL: https://github.com/xenodium/chatgpt-shell
-;; Package-Version: 20230402.1328
-;; Package-Commit: 7f2c0779a87a0289679fde2534b339326e80cb04
+;; Package-Version: 20230402.1525
+;; Package-Commit: adc3323c827402dd7169812f03989f96ce381b00
 ;; Version: 0.8.1
 ;; Package-Requires: ((emacs "27.1")
 ;;                    (markdown-mode "2.5"))
@@ -738,6 +738,50 @@ Set SAVE-EXCURSION to prevent point from moving."
                    (chatgpt-shell--write-reply error t)
                    (setq chatgpt-shell--busy nil)
                    (chatgpt-shell--announce-response buffer))))))))
+
+(defun chatgpt-shell-post-chatgpt-messages (messages callback error-callback)
+  "Make a single ChatGPT request with MESSAGES, CALLBACK, and ERROR-CALLBACK.
+
+For example:
+
+\(chatgpt-shell-post-chatgpt-messages
+ `(((role . \"user\")
+    (content . \"hello\")))
+ (lambda (response)
+   (message \"%s\" response))
+ (lambda (error)
+   (message \"%s\" error)))"
+  (with-temp-buffer
+    (setq-local chatgpt-shell--config
+                chatgpt-shell--chatgpt-config)
+    (chatgpt-shell--async-shell-command
+     (chatgpt-shell--make-curl-request-command-list
+      chatgpt-shell-openai-key
+      (chatgpt-shell-config-url chatgpt-shell--config)
+      (let ((request-data `((model . ,chatgpt-shell-chatgpt-model-version)
+                            (messages . ,(vconcat
+                                          messages)))))
+        (when chatgpt-shell-model-temperature
+          (push `(temperature . ,chatgpt-shell-model-temperature) request-data))
+        request-data))
+     (chatgpt-shell-config-response-extractor chatgpt-shell--config)
+     callback
+     error-callback)))
+
+(defun chatgpt-shell-post-chatgpt-prompt (prompt callback error-callback)
+  "Make a single ChatGPT request with PROMPT, CALLBACK, and ERROR-CALLBACK.
+
+For example:
+
+\(chatgpt-shell-request-oneof-prompt
+ \"hello\"
+ (lambda (response)
+   (message \"%s\" response))
+ (lambda (error)
+   (message \"%s\" error)))"
+  (chatgpt-shell-post-chatgpt-messages `(((role . "user")
+                                          (content . ,prompt)))
+                                       callback error-callback))
 
 (defun chatgpt-shell--announce-response (buffer)
   "Announce response if BUFFER is not active."

@@ -1,9 +1,9 @@
 (chatgpt-shell .
-	       [(20230402 1328)
+	       [(20230402 1525)
 		((emacs
 		  (27 1))
 		 (markdown-mode
 		  (2 5)))
 		"Interaction mode for ChatGPT" single
-		((:commit . "7f2c0779a87a0289679fde2534b339326e80cb04")
+		((:commit . "adc3323c827402dd7169812f03989f96ce381b00")
 		 (:url . "https://github.com/xenodium/chatgpt-shell"))])
