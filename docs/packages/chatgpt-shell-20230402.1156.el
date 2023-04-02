@@ -4,9 +4,9 @@
 
 ;; Author: Alvaro Ramirez https://xenodium.com
 ;; URL: https://github.com/xenodium/chatgpt-shell
-;; Package-Version: 20230401.2158
-;; Package-Commit: 227dbedf8d74a01c724a82dcb86ccb78d87933d9
-;; Version: 0.7.1
+;; Package-Version: 20230402.1156
+;; Package-Commit: 6d4810db1861500810557f31f71ff0c01e014f72
+;; Version: 0.8.1
 ;; Package-Requires: ((emacs "27.1")
 ;;                    (markdown-mode "2.5"))
 
@@ -71,6 +71,13 @@ To use `completing-read', it can be done with something like:
 \(setq `chatgpt-shell-read-string-function'
       (lambda (prompt history)
         (completing-read prompt (symbol-value history) nil nil nil history)))"
+  :type 'function
+  :group 'chatgpt-shell)
+
+(defcustom chatgpt-shell-response-post-process-function nil
+  "Function to automatically execute after last command output.
+
+This is useful if you'd like to automatically handle or suggest things."
   :type 'function
   :group 'chatgpt-shell)
 
@@ -171,7 +178,8 @@ ChatGPT."
   invalid-input
   request-maker
   request-data-maker
-  response-extractor)
+  response-extractor
+  response-post-processor)
 
 (defvar chatgpt-shell--chatgpt-config
   (make-chatgpt-shell-config
@@ -205,7 +213,11 @@ or
        (when chatgpt-shell-model-temperature
          (push `(temperature . ,chatgpt-shell-model-temperature) request-data))
        request-data))
-   :response-extractor #'chatgpt-shell--extract-chatgpt-response))
+   :response-extractor #'chatgpt-shell--extract-chatgpt-response
+   :response-post-processor
+   (lambda (response)
+     (when chatgpt-shell-response-post-process-function
+       (funcall chatgpt-shell-response-post-process-function response)))))
 
 (defvar chatgpt-shell--dall-e-config
   (make-chatgpt-shell-config
@@ -601,6 +613,33 @@ Set SAVE-EXCURSION to prevent point from moving."
     (when submit
       (chatgpt-shell--send-input))))
 
+(defun chatgpt-shell-send-to-ielm-buffer (text &optional execute save-excursion)
+  "Send TEXT to *ielm* buffer.
+Set EXECUTE to automatically execute.
+Set SAVE-EXCURSION to prevent point from moving."
+  (ielm)
+  (switch-to-buffer (get-buffer-create "*ielm*"))
+  (with-current-buffer (get-buffer-create "*ielm*")
+    (goto-char (point-max))
+    (if save-excursion
+        (save-excursion
+          (insert text))
+      (insert text))
+    (when execute
+      (ielm-return))))
+
+(defun chatgpt-shell--markdown-source-blocks (text)
+  "Find Markdown code blocks with language labels in TEXT."
+  (let (blocks)
+    (while (string-match
+            (rx bol "```" (zero-or-more space) (group (one-or-more (or alpha "-")))
+                (group (*? anything))
+                "```") text)
+      (setq blocks (cons (cons (match-string 1 text)
+                               (match-string 2 text)) blocks))
+      (setq text (substring text (match-end 0))))
+    (reverse blocks)))
+
 (defun chatgpt-shell-interrupt ()
   "Interrupt current request."
   (interactive)
@@ -621,7 +660,8 @@ Set SAVE-EXCURSION to prevent point from moving."
 
 (defun chatgpt-shell--eval-input (input-string)
   "Evaluate the Lisp expression INPUT-STRING, and pretty-print the result."
-  (unless chatgpt-shell--busy
+  (let ((buffer (chatgpt-shell--buffer chatgpt-shell--config)))
+   (unless chatgpt-shell--busy
     (setq chatgpt-shell--busy t)
     (cond
      ((string-equal "clear" (string-trim input-string))
@@ -629,7 +669,7 @@ Set SAVE-EXCURSION to prevent point from moving."
       (comint-output-filter (chatgpt-shell--process) chatgpt-shell--prompt-internal)
       (setq chatgpt-shell--busy nil))
      ((not (chatgpt-shell--curl-version-supported))
-      (chatgpt-shell--write-reply "You need curl version 7.67 or newer.")
+      (chatgpt-shell--write-reply "You need curl version 7.76 or newer.")
       (setq chatgpt-shell--busy nil))
      ((and (chatgpt-shell-config-invalid-input
             chatgpt-shell--config)
@@ -654,8 +694,7 @@ Set SAVE-EXCURSION to prevent point from moving."
                  (funcall (chatgpt-shell-config-request-data-maker chatgpt-shell--config)
                           (vconcat
                            (last (chatgpt-shell--extract-commands-and-responses
-                                  (with-current-buffer
-                                      (chatgpt-shell-config-buffer-name chatgpt-shell--config)
+                                  (with-current-buffer buffer
                                     (buffer-string))
                                   (chatgpt-shell-config-prompt chatgpt-shell--config))
                                  (chatgpt-shell--unpaired-length
@@ -663,12 +702,25 @@ Set SAVE-EXCURSION to prevent point from moving."
                  (chatgpt-shell-config-response-extractor chatgpt-shell--config)
                  (lambda (response)
                    (if response
-                       (chatgpt-shell--write-reply response)
-                     (chatgpt-shell--write-reply "Error: that's all is known" t))
-                   (setq chatgpt-shell--busy nil))
+                       (progn
+                         (chatgpt-shell--write-reply response)
+                         (chatgpt-shell--announce-response buffer)
+                         (setq chatgpt-shell--busy nil)
+                         (when (chatgpt-shell-config-response-post-processor chatgpt-shell--config)
+                           (funcall (chatgpt-shell-config-response-post-processor chatgpt-shell--config)
+                                    response)))
+                     (chatgpt-shell--write-reply "Error: that's all is known" t)
+                     (setq chatgpt-shell--busy nil)
+                     (chatgpt-shell--announce-response buffer)))
                  (lambda (error)
                    (chatgpt-shell--write-reply error t)
-                   (setq chatgpt-shell--busy nil)))))))
+                   (setq chatgpt-shell--busy nil)
+                   (chatgpt-shell--announce-response buffer))))))))
+
+(defun chatgpt-shell--announce-response (buffer)
+  "Announce response if BUFFER is not active."
+  (unless (eq buffer (window-buffer (selected-window)))
+    (message "%s responded" (buffer-name buffer))))
 
 (defun chatgpt-shell-openai-key ()
   "Get the ChatGPT key."
@@ -726,13 +778,7 @@ CALLBACK or ERROR-CALLBACK accordingly."
                             (funcall response-extractor output))
                  (if-let ((error (chatgpt-shell--extract-chatgpt-response output)))
                      (funcall error-callback (concat "error: " error))
-                   (funcall error-callback output)))
-               ;; Only message if not active buffer.
-               (unless (eq (chatgpt-shell--buffer chatgpt-shell--config)
-                           (window-buffer (selected-window)))
-                 (message "%s responded"
-                          (buffer-name
-                           (chatgpt-shell--buffer chatgpt-shell--config))))))
+                   (funcall error-callback output)))))
            (kill-buffer output-buffer)))))))
 
 (defun chatgpt-shell--json-parse-string-filtering (json regexp)
@@ -824,12 +870,12 @@ Used by `chatgpt-shell--send-input's call."
     (json-encode obj)))
 
 (defun chatgpt-shell--curl-version-supported ()
-  "Return t if curl version is 7.67 or newer, nil otherwise."
+  "Return t if curl version is 7.76 or newer, nil otherwise."
   (let* ((curl-error-redirect (if (eq system-type (or 'windows-nt 'ms-dos)) "2> NUL" "2>/dev/null"))
          (curl-version-string (shell-command-to-string (concat "curl --version " curl-error-redirect))))
     (when (string-match "\\([0-9]+\\.[0-9]+\\.[0-9]+\\)" curl-version-string)
       (let ((version (match-string 1 curl-version-string)))
-        (version<= "7.67" version)))))
+        (version<= "7.76" version)))))
 
 (defun chatgpt-shell--json-parse-string (json)
   "Parse JSON and return the parsed data structure, nil otherwise."
@@ -972,7 +1018,6 @@ Used by `chatgpt-shell--send-input's call."
                                  output)))
   (let ((buffer (get-buffer chatgpt-shell--log-buffer-name)))
     (unless buffer
-      ;; Create buffer
       (setq buffer (get-buffer-create chatgpt-shell--log-buffer-name)))
     (with-current-buffer buffer
       (let ((beginning-of-input (goto-char (point-max))))
