@@ -4,8 +4,8 @@
 
 ;; Author: Alvaro Ramirez https://xenodium.com
 ;; URL: https://github.com/xenodium/chatgpt-shell
-;; Package-Version: 20230402.1525
-;; Package-Commit: adc3323c827402dd7169812f03989f96ce381b00
+;; Package-Version: 20230402.1650
+;; Package-Commit: 5e3c9c4edb01dc40bddf5117e59516286f31b547
 ;; Version: 0.8.1
 ;; Package-Requires: ((emacs "27.1")
 ;;                    (markdown-mode "2.5"))
@@ -739,8 +739,10 @@ Set SAVE-EXCURSION to prevent point from moving."
                    (setq chatgpt-shell--busy nil)
                    (chatgpt-shell--announce-response buffer))))))))
 
-(defun chatgpt-shell-post-chatgpt-messages (messages callback error-callback)
+(defun chatgpt-shell-post-chatgpt-messages (messages &optional callback error-callback)
   "Make a single ChatGPT request with MESSAGES, CALLBACK, and ERROR-CALLBACK.
+
+If CALLBACK or ERROR-CALLBACK are missing, execute synchronously.
 
 For example:
 
@@ -751,25 +753,49 @@ For example:
    (message \"%s\" response))
  (lambda (error)
    (message \"%s\" error)))"
-  (with-temp-buffer
-    (setq-local chatgpt-shell--config
-                chatgpt-shell--chatgpt-config)
-    (chatgpt-shell--async-shell-command
-     (chatgpt-shell--make-curl-request-command-list
-      chatgpt-shell-openai-key
-      (chatgpt-shell-config-url chatgpt-shell--config)
-      (let ((request-data `((model . ,chatgpt-shell-chatgpt-model-version)
-                            (messages . ,(vconcat
-                                          messages)))))
-        (when chatgpt-shell-model-temperature
-          (push `(temperature . ,chatgpt-shell-model-temperature) request-data))
-        request-data))
-     (chatgpt-shell-config-response-extractor chatgpt-shell--config)
-     callback
-     error-callback)))
+  (if (and callback error-callback)
+      (with-temp-buffer
+        (setq-local chatgpt-shell--config
+                    chatgpt-shell--chatgpt-config)
+        (chatgpt-shell--async-shell-command
+         (chatgpt-shell--make-curl-request-command-list
+          chatgpt-shell-openai-key
+          (chatgpt-shell-config-url chatgpt-shell--config)
+          (let ((request-data `((model . ,chatgpt-shell-chatgpt-model-version)
+                                (messages . ,(vconcat
+                                              messages)))))
+            (when chatgpt-shell-model-temperature
+              (push `(temperature . ,chatgpt-shell-model-temperature) request-data))
+            request-data))
+         (chatgpt-shell-config-response-extractor chatgpt-shell--config)
+         callback
+         error-callback))
+    (with-temp-buffer
+      (setq-local chatgpt-shell--config
+                  chatgpt-shell--chatgpt-config)
+      (let* ((buffer (current-buffer))
+             (command
+              (chatgpt-shell--make-curl-request-command-list
+               chatgpt-shell-openai-key
+               (chatgpt-shell-config-url chatgpt-shell--config)
+               (let ((request-data `((model . ,chatgpt-shell-chatgpt-model-version)
+                                     (messages . ,(vconcat
+                                                   messages)))))
+                 (when chatgpt-shell-model-temperature
+                   (push `(temperature . ,chatgpt-shell-model-temperature) request-data))
+                 request-data)))
+             (status (apply #'call-process (seq-first command) nil buffer nil (cdr command))))
+        (if (eq status 0)
+            (chatgpt-shell--extract-chatgpt-response
+             (buffer-substring-no-properties
+	      (point-min)
+	      (point-max)))
+          "Error: Something's wrong")))))
 
-(defun chatgpt-shell-post-chatgpt-prompt (prompt callback error-callback)
+(defun chatgpt-shell-post-chatgpt-prompt (prompt &optional callback error-callback)
   "Make a single ChatGPT request with PROMPT, CALLBACK, and ERROR-CALLBACK.
+
+If CALLBACK or ERROR-CALLBACK are missing, execute synchronously.
 
 For example:
 
