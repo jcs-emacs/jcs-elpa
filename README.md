@@ -43,7 +43,7 @@ Use priority if you don't want this archive overridden with other larger archive
 
 ```elisp
 (setq package-archive-priorities '(("melpa"    . 5)
-                                   ("jcs-elpa" . 0))
+                                   ("jcs-elpa" . 0)))
 ```
 
 ## Contribute
