@@ -101,10 +101,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "Interaction mode for ChatGPT",
-    "version": "20230406.800",
+    "version": "20230406.842",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "a6f0e1d98012a112ab2557a83197f1b1f34496ca",
+    "commit": "99641a4bbe8671757ea249ea5ba0f220ed24bcc9",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -839,10 +839,10 @@
   {
     "name": "openai",
     "summary": "Elisp library for the OpenAI API",
-    "version": "20230321.211",
+    "version": "20230406.836",
     "url": "https://github.com/emacs-openai/openai",
     "source": "github",
-    "commit": "8e22fca7fd244a82b9febc08b55788da72f1cbf2",
+    "commit": "8dbf58b7ccfe373d7877b98034d3b17d5f3b7a40",
     "tree": "https://github.com/emacs-openai/openai"
   },
   {
