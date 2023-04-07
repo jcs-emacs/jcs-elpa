@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline-blame
-;; Package-Version: 20221231.1636
-;; Package-Commit: 1a1d80a71bdabe77fe2a33cd681b7188f193acfc
+;; Package-Version: 20230406.2312
+;; Package-Commit: 4d3343795bc95662adb65c85bcbb41947862699f
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (sideline "0.1.0") (vc-msg "1.1.1"))
 ;; Keywords: convenience blame
@@ -76,8 +76,15 @@
   :type 'string
   :group 'sideline-blame)
 
-(defcustom sideline-blame-uncommitted-author-name "Unknown"
+(defcustom sideline-blame-uncommitted-author-name
+  (if (string-empty-p user-full-name) "You"
+    user-full-name)
   "Message for commits where you are author."
+  :type 'string
+  :group 'sideline-blame)
+
+(defcustom sideline-blame-uncommitted-time "Now "
+  "Message for uncommitted timestamp."
   :type 'string
   :group 'sideline-blame)
 
@@ -113,16 +120,21 @@ Argument COMMAND is required in sideline backend."
                          (funcall executer
                                   current-file
                                   (funcall vc-msg-get-line-num-function)
-                                  (funcall vc-msg-get-version-function))))
-       (id (plist-get commit-info :id)))
-    (let* ((uncommitted (zerop (string-to-number id)))
+                                  (funcall vc-msg-get-version-function)))))
+    (let* ((id (plist-get commit-info :id))
+           (uncommitted (or (null id)
+                            (null (string-match-p "[^0]" id))))
            (author (if uncommitted sideline-blame-uncommitted-author-name
                      (plist-get commit-info :author)))
-           (time (string-to-number (plist-get commit-info :author-time)))
+           (time (unless uncommitted
+                   (ignore-errors
+                     (string-to-number (plist-get commit-info :author-time)))))
            (summary (if uncommitted sideline-blame-uncommitted-message
                       (plist-get commit-info :summary))))
       (concat (format sideline-blame-author-format author)
-              (format-time-string sideline-blame-datetime-format time)
+              (if uncommitted
+                  sideline-blame-uncommitted-time
+                (format-time-string sideline-blame-datetime-format time))
               (format sideline-blame-commit-format summary)))))
 
 (defun sideline-blame--display (callback &rest _)
