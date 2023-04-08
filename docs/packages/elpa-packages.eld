@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 (((company-autoconf :url "https://github.com/elp-revive/company-autoconf.git" :maintainer ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
 =======
 (((balanced-windows :url "https://github.com/elp-revive/balanced-windows.git" :maintainer ("wouter bolsterlee" . "wouter@bolsterl.ee"))
@@ -80,6 +81,11 @@
   (electric-indent-sexp :url "https://github.com/emacs-vs/electric-indent-sexp.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
   (eldoc-meta-net :url "https://github.com/emacs-vs/eldoc-meta-net.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
   (eldoc-eask :url "https://github.com/emacs-eask/eldoc-eask.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+=======
+(((flx-rs :url "https://github.com/jcs-elpa/flx-rs.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (file-header :url "https://github.com/jcs-elpa/file-header.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (ffpc :url "https://github.com/jcs-elpa/ffpc.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+>>>>>>> Stashed changes
   (fuz-bin :url "https://github.com/jcs-elpa/fuz-bin.git" :maintainer ("Zhu Zihao" . "all_but_last@163.com"))
   (font-lock-ext :url "https://github.com/sensorflo/font-lock-ext.git" :maintainer ("Florian Kaufmann" . "sensorflo@gmail.com"))
   (fof :url "https://github.com/jcs-elpa/fof.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
@@ -89,10 +95,13 @@
   (flycheck-eask :url "https://github.com/flycheck/flycheck-eask.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
   (flycheck-deno :url "https://github.com/flycheck/flycheck-deno.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
   (flx-style :url "https://github.com/jcs-elpa/flx-style.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+<<<<<<< Updated upstream
   (kaomoji :url "https://github.com/elp-revive/kaomoji.el.git" :maintainer ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
   (jet :url "https://github.com/ericdallo/jet.el.git" :maintainer ("Eric Dallo" . "ercdll1337@gmail.com"))
   (jenkinsfile-mode :url "https://github.com/elp-revive/jenkinsfile-mode.git")
   (jcs-modeline :url "https://github.com/jcs-emacs/jcs-modeline.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+=======
+>>>>>>> Stashed changes
   (jcs-frametitle :url "https://github.com/jcs-emacs/jcs-frametitle.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
   (jcs-echobar :url "https://github.com/jcs-emacs/jcs-echobar.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
   (jayces-mode :url "https://github.com/jcs-elpa/jayces-mode.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
@@ -104,8 +113,11 @@
   (github-tags :url "https://github.com/jcs-elpa/github-tags.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
   (github-elpa :url "https://github.com/10sr/github-elpa.git" :maintainer ("10sr" . "8slashes+el@gmail.com"))
   (git :url "https://github.com/rejeep/git.el.git" :maintainer ("Johan Andersson" . "johan.rejeep@gmail.com"))
+<<<<<<< Updated upstream
   (package-build :url "https://github.com/melpa/package-build.git" :maintainer ("Donald Ephraim Curtis" . "dcurtis@milkbox.net"))
   (origami :url "https://github.com/elp-revive/origami.el.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+=======
+>>>>>>> Stashed changes
   (org-bars :url "https://github.com/tonyaldon/org-bars.git" :maintainer ("Tony Aldon" . "tony.aldon.adm@gmail.com"))
   (openai :url "https://github.com/emacs-openai/openai.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
   (on :url "https://github.com/ajgrf/on.el.git" :maintainer ("Alex Griffin" . "a@ajgrf.com"))
@@ -124,6 +136,7 @@
   (line-reminder :url "https://github.com/emacs-vs/line-reminder.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
   (license-templates :url "https://github.com/jcs-elpa/license-templates.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
   (lambda-line :url "https://github.com/Lambda-Emacs/lambda-line.git")
+<<<<<<< Updated upstream
   (prt :url "https://github.com/jcs-elpa/prt.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
   (preview-it :url "https://github.com/jcs-elpa/preview-it.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
   (pkg-dm :url "https://github.com/jcs-elpa/pkg-dm.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
@@ -140,6 +153,12 @@
   (repos-window :url "https://github.com/jcs-elpa/repos-window.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
   (recentf-excl :url "https://github.com/jcs-elpa/recentf-excl.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
   (quick-peek :url "https://github.com/emacs-vs/quick-peek.git" :maintainer ("Clément Pit-Claudel" . "clement.pitclaudel@live.com"))
+=======
+  (kaomoji :url "https://github.com/elp-revive/kaomoji.el.git" :maintainer ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
+  (jet :url "https://github.com/ericdallo/jet.el.git" :maintainer ("Eric Dallo" . "ercdll1337@gmail.com"))
+  (jenkinsfile-mode :url "https://github.com/elp-revive/jenkinsfile-mode.git")
+  (jcs-modeline :url "https://github.com/jcs-emacs/jcs-modeline.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+>>>>>>> Stashed changes
   (sublime-fuzzy :url "https://github.com/jcs-elpa/sublime-fuzzy.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
   (sound-async :url "https://github.com/jcs-elpa/sound-async.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
   (sln-mode :url "https://github.com/sensorflo/sln-mode.git" :maintainer ("Florian Kaufmann" . "sensorflo@gmail.com"))
@@ -148,6 +167,7 @@
   (sideline-flycheck :url "https://github.com/emacs-sideline/sideline-flycheck.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
   (sideline-eldoc :url "https://github.com/ginqi7/sideline-eldoc.git" :maintainer ("Qiqi Jin" . "ginqi7@gmail.com"))
   (sideline-color :url "https://github.com/emacs-sideline/sideline-color.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+<<<<<<< Updated upstream
   (vertico-flx :url "https://github.com/jcs-elpa/vertico-flx.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
 <<<<<<< Updated upstream
   (visual-basic-mode :url "https://github.com/nverno/vbs-mode.git" :maintainer ("Fred White" . "fwhite@alum.mit.edu"))
@@ -162,6 +182,20 @@
   (wat-mode :url "https://github.com/devonsparks/wat-mode.git" :maintainer ("Devon Sparks" . "devon.sparks@gmail.com"))
   (zoom-to-point :url "https://github.com/rmloveland/zoom-to-point.git" :maintainer ("Rich Loveland" . "r@rmloveland.com")))
 =======
+=======
+  (sideline-blame :url "https://github.com/emacs-sideline/sideline-blame.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (sideline :url "https://github.com/emacs-sideline/sideline.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (send-to-osx-grammarly :url "https://github.com/emacs-grammarly/send-to-osx-grammarly.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (repos-window :url "https://github.com/jcs-elpa/repos-window.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (recentf-excl :url "https://github.com/jcs-elpa/recentf-excl.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (quick-peek :url "https://github.com/emacs-vs/quick-peek.git" :maintainer ("Clément Pit-Claudel" . "clement.pitclaudel@live.com"))
+  (prt :url "https://github.com/jcs-elpa/prt.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (preview-it :url "https://github.com/jcs-elpa/preview-it.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (pkg-dm :url "https://github.com/jcs-elpa/pkg-dm.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (package-build :url "https://github.com/melpa/package-build.git" :maintainer ("Donald Ephraim Curtis" . "dcurtis@milkbox.net"))
+  (origami :url "https://github.com/elp-revive/origami.el.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (vertico-flx :url "https://github.com/jcs-elpa/vertico-flx.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+>>>>>>> Stashed changes
   (vc-refresh :url "https://github.com/jcs-elpa/vc-refresh.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
   (vbscript-mode :url "https://github.com/nverno/vbs-mode.git" :maintainer ("Charles Sebold" . "cseboldatgmail.com"))
   (vbs-repl :url "https://github.com/nverno/vbs-mode.git" :maintainer ("Charles Sebold" . "cseboldatgmail.com"))
@@ -182,6 +216,7 @@
   (vs-dark-theme :url "https://github.com/emacs-vs/vs-dark-theme.git")
   (vs-comment-return :url "https://github.com/emacs-vs/vs-comment-return.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
   (visual-basic-mode :url "https://github.com/nverno/vbs-mode.git" :maintainer ("Fred White" . "fwhite@alum.mit.edu"))
+<<<<<<< Updated upstream
   (ffpc :url "https://github.com/jcs-elpa/ffpc.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
   (file-header :url "https://github.com/jcs-elpa/file-header.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
   (flx-rs :url "https://github.com/jcs-elpa/flx-rs.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
@@ -232,5 +267,57 @@
   (pkg-dm :url "https://github.com/jcs-elpa/pkg-dm.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
   (preview-it :url "https://github.com/jcs-elpa/preview-it.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
   (prt :url "https://github.com/jcs-elpa/prt.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com")))
+>>>>>>> Stashed changes
+=======
+  (ace-link-dashboard :url "https://github.com/emacs-dashboard/ace-link-dashboard.git" :maintainer ("Ricardo Arredondo" . "ricardo.richo@gmail.com"))
+  (asoc :url "https://github.com/troyp/asoc.el.git" :maintainer ("Troy Pracy" . "troyp7@gmail.com"))
+  (auto-scroll-bar :url "https://github.com/jcs-elpa/auto-scroll-bar.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (balanced-windows :url "https://github.com/elp-revive/balanced-windows.git" :maintainer ("wouter bolsterlee" . "wouter@bolsterl.ee"))
+  (beancount :url "https://github.com/beancount/beancount-mode.git" :maintainer ("Martin Blais" . "blais@furius.ca"))
+  (block-travel :url "https://github.com/jcs-elpa/block-travel.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (buffer-menu-filter :url "https://github.com/jcs-elpa/buffer-menu-filter.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (buffer-menu-project :url "https://github.com/jcs-elpa/buffer-menu-project.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (buffer-move :url "https://github.com/elp-revive/buffer-move.git" :maintainer ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
+  (change-case :url "https://github.com/TakesxiSximada/change-case.el.git" :maintainer ("TakesxiSximada" . "8707279+TakesxiSximada@users.noreply.github.com"))
+  (chatgpt :url "https://github.com/emacs-openai/chatgpt.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (chatgpt-shell :url "https://github.com/xenodium/chatgpt-shell.git")
+  (cisco-router-mode :url "https://github.com/emacsmirror/cisco-router-mode.git")
+  (codegpt :url "https://github.com/emacs-openai/codegpt.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (codeium :url "https://github.com/Exafunction/codeium.el.git")
+  (codemetrics :url "https://github.com/jcs-elpa/codemetrics.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (commander :url "https://github.com/rejeep/commander.el.git" :maintainer ("Johan Andersson" . "johan.rejeep@gmail.com"))
+  (company-autoconf :url "https://github.com/elp-revive/company-autoconf.git" :maintainer ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
+  (company-box :url "https://github.com/elp-revive/company-box.git" :maintainer ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
+  (company-c-headers :url "https://github.com/elp-revive/company-c-headers.git" :maintainer ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
+  (company-cmd :url "https://github.com/elp-revive/company-cmd.git" :maintainer ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
+  (company-coffee :url "https://github.com/elp-revive/company-coffee.git" :maintainer ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
+  (company-dockerfile :url "https://github.com/elp-revive/company-dockerfile.git" :maintainer ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
+  (company-eask :url "https://github.com/emacs-eask/company-eask.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (company-elisp-keywords :url "https://github.com/jcs-elpa/company-elisp-keywords.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (company-kaomoji :url "https://github.com/jcs-elpa/company-kaomoji.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (company-makefile :url "https://github.com/elp-revive/company-makefile.git" :maintainer ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
+  (company-meta-net :url "https://github.com/emacs-vs/company-meta-net.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (company-paths :url "https://github.com/emacs-vs/company-paths.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (company-powershell :url "https://github.com/elp-revive/company-powershell.git" :maintainer ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
+  (copilot :url "https://github.com/zerolfx/copilot.el.git")
+  (cycle-case-style :url "https://github.com/jcs-elpa/cycle-case-style.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (cycle-slash :url "https://github.com/jcs-elpa/cycle-slash.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (dall-e :url "https://github.com/emacs-openai/dall-e.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (eask :url "https://github.com/emacs-eask/eask.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (eask-mode :url "https://github.com/emacs-eask/eask-mode.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (easky :url "https://github.com/emacs-eask/easky.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (eglot-grammarly :url "https://github.com/emacs-grammarly/eglot-grammarly.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (eglot-ltex :url "https://github.com/emacs-languagetool/eglot-ltex.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (ejira :url "https://github.com/nyyManni/ejira.git" :maintainer ("Henrik Nyman" . "h@nyymanni.com"))
+  (eldoc-eask :url "https://github.com/emacs-eask/eldoc-eask.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (eldoc-meta-net :url "https://github.com/emacs-vs/eldoc-meta-net.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (electric-indent-sexp :url "https://github.com/emacs-vs/electric-indent-sexp.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (elenv :url "https://github.com/jcs-elpa/elenv.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (emp :url "https://github.com/jcs-elpa/emp.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (eping :url "https://github.com/elp-revive/eping.git" :maintainer ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
+  (eval-mark :url "https://github.com/jcs-elpa/eval-mark.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (execrun :url "https://github.com/jcs-elpa/execrun.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (fextern :url "https://github.com/emacs-vs/fextern.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com"))
+  (ff-guard :url "https://github.com/jcs-elpa/ff-guard.git" :maintainer ("Jen-Chieh" . "jcs090218@gmail.com")))
 >>>>>>> Stashed changes
  :version 1 :default-vc 'Git)
