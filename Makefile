@@ -14,7 +14,8 @@ test-install:
 
 generate_eld:
 	@echo "Generating elpa-packages.eld file..."
-	@$(EASK) load "./scripts/generate-eld.el"
+	@$(EASK) install-deps
+	@$(EASK) load "./scripts/generate-eld.el" --allow-error
 
 generate_archive_json:
 	@echo "Generating archive.json file..."

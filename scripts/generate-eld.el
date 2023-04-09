@@ -4,6 +4,8 @@
 
 (load-file "./scripts/_prepare.el")
 
+(require 'package-build)
+
 (with-package-build-env
   (make-directory package-build-archive-dir t)
   (package-build-cleanup))
