@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-sideline/sideline
-;; Package-Version: 20230409.1044
-;; Package-Commit: e0712460fc06b1c7aede04e8f3967fe6f3bb6512
+;; Package-Version: 20230409.1125
+;; Package-Commit: dfbdd19c34a3487dd11276db572ca7a0c2f148ce
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: convenience
@@ -413,7 +413,9 @@ FACE, NAME, ON-LEFT, and ORDER for details."
        (title
         (progn
           (unless (get-text-property 0 'face candidate)  ; If no face, we apply one
-            (let ((start (sideline--display-starting on-left backend-str)))
+            (let ((start (if sideline-display-backend-name
+                             (sideline--display-starting on-left backend-str)
+                           0)))
               (add-face-text-property start (+ start len-cand) face nil text)))
           (when action  ; apply action listener
             (let ((keymap (sideline--create-keymap action candidate)))
