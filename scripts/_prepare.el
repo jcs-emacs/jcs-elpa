@@ -41,9 +41,10 @@
 (defmacro with-package-build-env (&rest body)
   "Set up package build environment then execute the BODY form."
   (declare (indent 0))
-  `(let ((package-build-working-dir (expand-file-name github-elpa-working-dir))
-         (package-build-archive-dir (expand-file-name github-elpa-archive-dir))
-         (package-build-recipes-dir (expand-file-name github-elpa-recipes-dir)))
+  `(let* ((package-build-working-dir (expand-file-name github-elpa-working-dir))
+          (package-build-archive-dir (expand-file-name github-elpa-archive-dir))
+          (package-build-recipes-dir (expand-file-name github-elpa-recipes-dir))
+          (eld (expand-file-name "elpa-packages.eld" package-build-archive-dir)))
      (ignore-errors (make-directory package-build-working-dir t))
      ,@body))
 

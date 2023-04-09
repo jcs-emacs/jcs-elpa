@@ -32,7 +32,9 @@
                                                 package-build-tar-executable)))
           ;; Currently no way to detect build failure...
           (ignore-errors (package-build-archive recipe)))))
-    (package-build-cleanup)))
+    (package-build-cleanup)
+    ;; Delete elpa-packages.eld file, let workflow ELD handle this!
+    (delete-file eld)))
 
 ;; Local Variables:
 ;; coding: utf-8

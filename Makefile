@@ -12,6 +12,10 @@ test-install:
 	@echo "Building packages..."
 	./test/install/run.sh
 
+generate_eld:
+	@echo "Generating elpa-packages.eld file..."
+	@$(EASK) load "./scripts/generate-eld.el"
+
 generate_archive_json:
 	@echo "Generating archive.json file..."
 	@$(EASK) load "./scripts/generate-archive-json.el"
