@@ -7,6 +7,8 @@
 (require 'json)
 (require 'subr-x)
 
+(require 'package-build)
+
 (defconst archive-contents-string
   (with-temp-buffer
     (or (ignore-errors (insert-file-contents "../docs/packages/archive-contents"))

@@ -33,7 +33,7 @@ jobs:
         git config user.name github-actions
         git config user.email github-actions@github.com
 
-    - name: Push generated archive.json
+    - name: Push generated elpa-packages.eld
       continue-on-error: true
       run: |
         git add .
