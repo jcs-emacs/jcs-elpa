@@ -729,6 +729,15 @@
     "tree": "https://github.com/lepisma/compose-language-server.el"
   },
   {
+    "name": "lsp-grammarly-un",
+    "summary": "LSP Clients for Grammarly (Unofficial)",
+    "version": "20230409.535",
+    "url": "https://github.com/emacs-grammarly/lsp-grammarly-un",
+    "source": "github",
+    "commit": "cf9142c57b9a1514f58bb5e17b2627bb928736d4",
+    "tree": "https://github.com/emacs-grammarly/lsp-grammarly-un"
+  },
+  {
     "name": "maple-line",
     "summary": "maple line configuration.",
     "version": "20200519.1557",
