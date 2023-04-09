@@ -33,9 +33,17 @@ jobs:
         git config user.name github-actions
         git config user.email github-actions@github.com
 
-    - name: Push generated archive.json
+    - name: Commit generated archive.json
       continue-on-error: true
       run: |
+        git pull --rebase --autostash
         git add .
         git commit -m "Update archive.json"
-        git push
+
+    - name: Push updated data
+      continue-on-error: true
+      uses: jcs090218/github-push-action@master
+      with:
+        branch: master
+        rebase: true
+        retry: 3
