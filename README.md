@@ -16,7 +16,6 @@
 [![Build](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/build.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/build.yml)
 [![ELD](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/eld.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/eld.yml)
 [![Archive](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/archive.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/archive.yml)
-[![pages-build-deployment](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/pages/pages-build-deployment)
 [![Install](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/install.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/install.yml)
 
 [![System](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/system.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/system.yml)
