@@ -33,8 +33,13 @@
           ;; Currently no way to detect build failure...
           (ignore-errors (package-build-archive recipe)))))
     (package-build-cleanup)
-    ;; Delete elpa-packages.eld file, let workflow ELD handle this!
-    (delete-file eld)))
+    ;; Only delete it when it's not cleaned, meaning some packages are built
+    ;; for upgrade!
+    (when-let* ((status (shell-command-to-string "git status"))
+                (status (string-trim status))
+                ((not (string-suffix-p "working tree clean" status))))
+      ;; Delete elpa-packages.eld file, let workflow ELD handle this!
+      (delete-file eld))))
 
 ;; Local Variables:
 ;; coding: utf-8
