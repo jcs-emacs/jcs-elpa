@@ -38,6 +38,9 @@
     (when-let* ((status (shell-command-to-string "git status"))
                 (status (string-trim status))
                 ((not (string-suffix-p "working tree clean" status))))
+      (message "--------------------")
+      (message "%s" status)
+      (message "--------------------")
       ;; Delete elpa-packages.eld file, let workflow ELD handle this!
       (delete-file eld))))
 
