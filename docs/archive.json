@@ -306,6 +306,15 @@
     "tree": "https://github.com/emacs-openai/dall-e"
   },
   {
+    "name": "doxygen-asterisk",
+    "summary": "Minor mode that helps you insert pair /* and */",
+    "version": "20230412.1006",
+    "url": "https://github.com/emacs-vs/doxygen-asterisk",
+    "source": "github",
+    "commit": "963550328fe5531dbbb73dab4e549da3854fede1",
+    "tree": "https://github.com/emacs-vs/doxygen-asterisk"
+  },
+  {
     "name": "eask",
     "summary": "Core Eask APIs, for Eask CLI development",
     "version": "20230401.358",
