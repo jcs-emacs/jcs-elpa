@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/doxygen-asterisk
-;; Package-Version: 20230412.1006
-;; Package-Commit: 963550328fe5531dbbb73dab4e549da3854fede1
+;; Package-Version: 20230412.1009
+;; Package-Commit: afb325e35962c1224617fbfe5f77770a2ad30b77
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: convenience
@@ -93,8 +93,9 @@ and GREEDY."
   (memq major-mode doxygen-asterisk-modes))
 
 (defun doxygen-asterisk--key (fnc &rest args)
-  "Asterisk key for Doxygen like document string.  This fulfill condition,
-/* with */ into a pair."
+  "Asterisk key for Doxygen like document string.
+
+This fulfill condition, /* with */ into a pair."
   (apply fnc args)
   (when (and doxygen-asterisk-mode (doxygen-asterisk--like-p))
     (save-excursion
