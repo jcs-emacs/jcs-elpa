@@ -621,6 +621,15 @@
     "tree": "https://github.com/azzamsa/emacs-hurl"
   },
   {
+    "name": "jai-mode",
+    "summary": "No description available.",
+    "version": "20230207.2242",
+    "url": "https://github.com/krig/jai-mode",
+    "source": "github",
+    "commit": "2b2f4d1de88d9796cd9f723d408057ad907d8017",
+    "tree": "https://github.com/krig/jai-mode"
+  },
+  {
     "name": "javap-mode",
     "summary": "Javap major mode",
     "version": "20220523.1728",
