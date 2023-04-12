@@ -1,0 +1,1 @@
+(doxygen-asterisk :repo "emacs-vs/doxygen-asterisk" :fetcher github)
