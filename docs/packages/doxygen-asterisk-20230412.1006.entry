@@ -1,0 +1,11 @@
+(doxygen-asterisk .
+		  [(20230412 1006)
+		   ((emacs
+		     (26 1)))
+		   "Minor mode that helps you insert pair /* and */" single
+		   ((:commit . "963550328fe5531dbbb73dab4e549da3854fede1")
+		    (:authors
+		     ("Jen-Chieh" . "jcs090218@gmail.com"))
+		    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		    (:keywords "convenience")
+		    (:url . "https://github.com/emacs-vs/doxygen-asterisk"))])
