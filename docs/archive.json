@@ -306,6 +306,15 @@
     "tree": "https://github.com/emacs-openai/dall-e"
   },
   {
+    "name": "deepl",
+    "summary": "Elisp library for the DeepL API",
+    "version": "20230413.1900",
+    "url": "https://github.com/emacs-openai/deepl",
+    "source": "github",
+    "commit": "436a0d479e31949945686b0fa328603df5ee5063",
+    "tree": "https://github.com/emacs-openai/deepl"
+  },
+  {
     "name": "doxygen-asterisk",
     "summary": "Minor mode that helps you insert pair /* and */",
     "version": "20230412.1009",
