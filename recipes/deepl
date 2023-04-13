@@ -1,0 +1,1 @@
+(deepl :repo "emacs-openai/deepl" :fetcher github)
