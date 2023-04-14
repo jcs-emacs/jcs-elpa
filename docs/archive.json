@@ -18,15 +18,6 @@
     "tree": "https://github.com/troyp/asoc.el"
   },
   {
-    "name": "auth-source-keytar",
-    "summary": "Integrate auth-source with keytar",
-    "version": "20221231.1654",
-    "url": "https://github.com/emacs-grammarly/auth-source-keytar",
-    "source": "github",
-    "commit": "8fcd935ee131174a1ed7f132614257411ed441bc",
-    "tree": "https://github.com/emacs-grammarly/auth-source-keytar"
-  },
-  {
     "name": "auto-scroll-bar",
     "summary": "Automatically show/hide scroll-bars as needed",
     "version": "20230130.732",
@@ -279,15 +270,6 @@
     "tree": "https://github.com/elp-revive/company-powershell"
   },
   {
-    "name": "company-quickhelp-terminal",
-    "summary": "Terminal support for `company-quickhelp'",
-    "version": "20220704.647",
-    "url": "https://github.com/jcs-elpa/company-quickhelp-terminal",
-    "source": "github",
-    "commit": "08925e9dfe97482795dfe2f14542cfa2fd8895dd",
-    "tree": "https://github.com/jcs-elpa/company-quickhelp-terminal"
-  },
-  {
     "name": "copilot",
     "summary": "An unofficial Copilot plugin for Emacs",
     "version": "20230406.503",
@@ -322,15 +304,6 @@
     "source": "github",
     "commit": "7c62003923aea61dfb4bdc627da6daf7c363b965",
     "tree": "https://github.com/emacs-openai/dall-e"
-  },
-  {
-    "name": "dashboard-ls",
-    "summary": "Display files/directories in current directory on Dashboard",
-    "version": "20221231.1629",
-    "url": "https://github.com/emacs-dashboard/dashboard-ls",
-    "source": "github",
-    "commit": "b24e0bcb87e20ffcc71efb83a97f9516255fa8e4",
-    "tree": "https://github.com/emacs-dashboard/dashboard-ls"
   },
   {
     "name": "deepl",
@@ -385,15 +358,6 @@
     "source": "github",
     "commit": "bf2bc0c7d6b113ec48d80bb808e9c3427e7935f1",
     "tree": "https://github.com/emacs-grammarly/eglot-grammarly"
-  },
-  {
-    "name": "eglot-languagetool",
-    "summary": "Eglot Clients for LanguageTool",
-    "version": "20221231.1657",
-    "url": "https://github.com/emacs-languagetool/eglot-languagetool",
-    "source": "github",
-    "commit": "aa57c87073994b29ac862fe7f030701bf0f157ed",
-    "tree": "https://github.com/emacs-languagetool/eglot-languagetool"
   },
   {
     "name": "eglot-ltex",
@@ -558,24 +522,6 @@
     "tree": "https://github.com/flycheck/flycheck-eask"
   },
   {
-    "name": "flycheck-grammarly",
-    "summary": "Grammarly support for Flycheck",
-    "version": "20221231.1654",
-    "url": "https://github.com/emacs-grammarly/flycheck-grammarly",
-    "source": "github",
-    "commit": "d4a788acc3875a1ffdd7460ab3377a887413c582",
-    "tree": "https://github.com/emacs-grammarly/flycheck-grammarly"
-  },
-  {
-    "name": "flycheck-languagetool",
-    "summary": "Flycheck support for LanguageTool",
-    "version": "20230329.1246",
-    "url": "https://github.com/emacs-languagetool/flycheck-languagetool",
-    "source": "github",
-    "commit": "04195838e21da84ec46d2940c2b3ee82d8beda70",
-    "tree": "https://github.com/emacs-languagetool/flycheck-languagetool"
-  },
-  {
     "name": "flymake-eask",
     "summary": "Eask support in Flymake",
     "version": "20221231.1617",
@@ -592,24 +538,6 @@
     "source": "github",
     "commit": "f4f05ab17c57486dcb715ee6f42db2d95a1737d8",
     "tree": "https://github.com/flymake/flymake-elsa"
-  },
-  {
-    "name": "flymake-grammarly",
-    "summary": "Flymake support for Grammarly",
-    "version": "20221231.1655",
-    "url": "https://github.com/emacs-grammarly/flymake-grammarly",
-    "source": "github",
-    "commit": "078edd6e083067f2ad3b3beaa0098c16cebe3994",
-    "tree": "https://github.com/emacs-grammarly/flymake-grammarly"
-  },
-  {
-    "name": "flymake-languagetool",
-    "summary": "Flymake support for LanguageTool",
-    "version": "20230122.1609",
-    "url": "https://github.com/emacs-languagetool/flymake-languagetool",
-    "source": "github",
-    "commit": "ad8c724147d5a3a9f6ee59e0c7581e68fba4a2f8",
-    "tree": "https://github.com/emacs-languagetool/flymake-languagetool"
   },
   {
     "name": "flymake-vale",
@@ -675,15 +603,6 @@
     "tree": "https://github.com/jcs-elpa/github-tags"
   },
   {
-    "name": "grammarly",
-    "summary": "Grammarly API interface",
-    "version": "20221231.1655",
-    "url": "https://github.com/emacs-grammarly/grammarly",
-    "source": "github",
-    "commit": "0d9fbee337cb8dd316e5dcf0bff91e44c115dd0d",
-    "tree": "https://github.com/emacs-grammarly/grammarly"
-  },
-  {
     "name": "helafy",
     "summary": "Minify/Uglify/Prettify contents",
     "version": "20221103.1418",
@@ -691,33 +610,6 @@
     "source": "github",
     "commit": "a6658f8e223014066f23bc5ed6c654cbf7f1bf05",
     "tree": "https://github.com/jcs-elpa/helafy"
-  },
-  {
-    "name": "helm-file-preview",
-    "summary": "Preview the current helm file selection",
-    "version": "20220720.531",
-    "url": "https://github.com/jcs-elpa/helm-file-preview",
-    "source": "github",
-    "commit": "bebd4e9c42543c9003984442701db2c384c21f3e",
-    "tree": "https://github.com/jcs-elpa/helm-file-preview"
-  },
-  {
-    "name": "helm-fuzzy",
-    "summary": "Fuzzy matching for helm source",
-    "version": "20220704.651",
-    "url": "https://github.com/jcs-elpa/helm-fuzzy",
-    "source": "github",
-    "commit": "f04b0023534e41c1399b74de393e6915a5f95ba5",
-    "tree": "https://github.com/jcs-elpa/helm-fuzzy"
-  },
-  {
-    "name": "helm-searcher",
-    "summary": "Helm interface to use searcher",
-    "version": "20221231.1632",
-    "url": "https://github.com/emacs-helm/helm-searcher",
-    "source": "github",
-    "commit": "225480fa89d73eb53478576610f48d035b77cda9",
-    "tree": "https://github.com/emacs-helm/helm-searcher"
   },
   {
     "name": "hl-preproc",
@@ -745,33 +637,6 @@
     "source": "github",
     "commit": "aa87da4a6f5dc6a612a576d34a81000835b819e0",
     "tree": "https://github.com/azzamsa/emacs-hurl"
-  },
-  {
-    "name": "ivy-describe-modes",
-    "summary": "Ivy interface to `describe-mode`",
-    "version": "20200704.935",
-    "url": "https://github.com/jcs-elpa/ivy-describe-modes",
-    "source": "github",
-    "commit": "d14986029763858bd72f1fcdc6e7cb70781be6c5",
-    "tree": "https://github.com/jcs-elpa/ivy-describe-modes"
-  },
-  {
-    "name": "ivy-file-preview",
-    "summary": "Preview the current ivy file selection",
-    "version": "20220704.653",
-    "url": "https://github.com/jcs-elpa/ivy-file-preview",
-    "source": "github",
-    "commit": "716415a12db2c0166c6fb229e41623587b212719",
-    "tree": "https://github.com/jcs-elpa/ivy-file-preview"
-  },
-  {
-    "name": "ivy-searcher",
-    "summary": "Ivy interface to use searcher",
-    "version": "20220704.653",
-    "url": "https://github.com/jcs-elpa/ivy-searcher",
-    "source": "github",
-    "commit": "5ed00a1e273cdb33ce356f373427b65fb131021a",
-    "tree": "https://github.com/jcs-elpa/ivy-searcher"
   },
   {
     "name": "jai-mode",
@@ -855,15 +720,6 @@
     "tree": "https://github.com/elp-revive/kaomoji.el"
   },
   {
-    "name": "keytar",
-    "summary": "Emacs Lisp interface for node-keytar",
-    "version": "20221231.1655",
-    "url": "https://github.com/emacs-grammarly/keytar",
-    "source": "github",
-    "commit": "51c8f2f1f207cc67af4e67731ee056860e107811",
-    "tree": "https://github.com/emacs-grammarly/keytar"
-  },
-  {
     "name": "lambda-line",
     "summary": "A custom status line",
     "version": "20230202.546",
@@ -900,15 +756,6 @@
     "tree": "https://github.com/lepisma/compose-language-server.el"
   },
   {
-    "name": "lsp-grammarly",
-    "summary": "LSP Clients for Grammarly",
-    "version": "20221231.1655",
-    "url": "https://github.com/emacs-grammarly/lsp-grammarly",
-    "source": "github",
-    "commit": "6d111728f9d062d723bb88bd462b6eafe5cafe3f",
-    "tree": "https://github.com/emacs-grammarly/lsp-grammarly"
-  },
-  {
     "name": "lsp-grammarly-un",
     "summary": "LSP Clients for Grammarly (Unofficial)",
     "version": "20230409.535",
@@ -916,24 +763,6 @@
     "source": "github",
     "commit": "cf9142c57b9a1514f58bb5e17b2627bb928736d4",
     "tree": "https://github.com/emacs-grammarly/lsp-grammarly-un"
-  },
-  {
-    "name": "lsp-languagetool",
-    "summary": "LSP Client for LanguageTool",
-    "version": "20221231.1658",
-    "url": "https://github.com/emacs-languagetool/lsp-languagetool",
-    "source": "github",
-    "commit": "cf688643a01a685fbcfef121f82119cc1ed57c79",
-    "tree": "https://github.com/emacs-languagetool/lsp-languagetool"
-  },
-  {
-    "name": "lsp-ltex",
-    "summary": "LSP Clients for LTEX",
-    "version": "20221231.1658",
-    "url": "https://github.com/emacs-languagetool/lsp-ltex",
-    "source": "github",
-    "commit": "d1a599c8ec3748c2b81899d5831b6e7158255479",
-    "tree": "https://github.com/emacs-languagetool/lsp-ltex"
   },
   {
     "name": "maple-line",
