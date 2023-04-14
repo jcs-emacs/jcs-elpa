@@ -1,0 +1,15 @@
+(txl .
+     [(20220321 1908)
+      ((request
+	(0 3 2))
+       (guess-language
+	(0 0 1))
+       (emacs
+	(24 4)))
+      "Provides machine translation via DeepL's REST API" single
+      ((:commit . "25f693062439694e205cdda5dd938249179e70f0")
+       (:authors
+	("Titus von der Malsburg" . "malsburg@posteo.de"))
+       (:maintainer "Titus von der Malsburg" . "malsburg@posteo.de")
+       (:keywords "wp")
+       (:url . "https://github.com/tmalsburg/txl.el"))])
