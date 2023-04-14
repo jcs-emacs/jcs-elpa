@@ -1,0 +1,13 @@
+(noflet .
+	[(20230414 518)
+	 ((emacs
+	   (26 1))
+	  (dash
+	   (2 18)))
+	 "locally override functions" single
+	 ((:commit . "8acba40b16d97e3b7c1d051f1266d4c699c3cb6d")
+	  (:authors
+	   ("Nic Ferrier" . "nferrier@ferrier.me.uk"))
+	  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	  (:keywords "lisp")
+	  (:url . "https://github.com/elp-revive/noflet"))])
