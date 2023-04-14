@@ -1,0 +1,12 @@
+(ivy-describe-modes .
+		    [(20200704 935)
+		     ((emacs
+		       (24 4))
+		      (ivy
+		       (0 13 0)))
+		     "Ivy interface to `describe-mode`" single
+		     ((:commit . "d14986029763858bd72f1fcdc6e7cb70781be6c5")
+		      (:authors
+		       ("Jen-Chieh" . "jcs090218@gmail.com"))
+		      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		      (:url . "https://github.com/jcs-elpa/ivy-describe-modes"))])
