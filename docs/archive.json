@@ -1098,6 +1098,15 @@
     "tree": "https://github.com/Artawower/turbo-log"
   },
   {
+    "name": "txl",
+    "summary": "Provides machine translation via DeepL's REST API",
+    "version": "20220321.1908",
+    "url": "https://github.com/tmalsburg/txl.el",
+    "source": "github",
+    "commit": "25f693062439694e205cdda5dd938249179e70f0",
+    "tree": "https://github.com/tmalsburg/txl.el"
+  },
+  {
     "name": "undo-hl",
     "summary": "Highlight undo/redo",
     "version": "20220523.557",
