@@ -1,0 +1,1 @@
+(eglot-languagetool :repo "emacs-languagetool/eglot-languagetool" :fetcher github)
