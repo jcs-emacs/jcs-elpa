@@ -279,6 +279,15 @@
     "tree": "https://github.com/elp-revive/company-powershell"
   },
   {
+    "name": "company-quickhelp-terminal",
+    "summary": "Terminal support for `company-quickhelp'",
+    "version": "20220704.647",
+    "url": "https://github.com/jcs-elpa/company-quickhelp-terminal",
+    "source": "github",
+    "commit": "08925e9dfe97482795dfe2f14542cfa2fd8895dd",
+    "tree": "https://github.com/jcs-elpa/company-quickhelp-terminal"
+  },
+  {
     "name": "copilot",
     "summary": "An unofficial Copilot plugin for Emacs",
     "version": "20230406.503",
@@ -313,6 +322,15 @@
     "source": "github",
     "commit": "7c62003923aea61dfb4bdc627da6daf7c363b965",
     "tree": "https://github.com/emacs-openai/dall-e"
+  },
+  {
+    "name": "dashboard-ls",
+    "summary": "Display files/directories in current directory on Dashboard",
+    "version": "20221231.1629",
+    "url": "https://github.com/emacs-dashboard/dashboard-ls",
+    "source": "github",
+    "commit": "b24e0bcb87e20ffcc71efb83a97f9516255fa8e4",
+    "tree": "https://github.com/emacs-dashboard/dashboard-ls"
   },
   {
     "name": "deepl",
@@ -675,6 +693,24 @@
     "tree": "https://github.com/jcs-elpa/helafy"
   },
   {
+    "name": "helm-file-preview",
+    "summary": "Preview the current helm file selection",
+    "version": "20220720.531",
+    "url": "https://github.com/jcs-elpa/helm-file-preview",
+    "source": "github",
+    "commit": "bebd4e9c42543c9003984442701db2c384c21f3e",
+    "tree": "https://github.com/jcs-elpa/helm-file-preview"
+  },
+  {
+    "name": "helm-fuzzy",
+    "summary": "Fuzzy matching for helm source",
+    "version": "20220704.651",
+    "url": "https://github.com/jcs-elpa/helm-fuzzy",
+    "source": "github",
+    "commit": "f04b0023534e41c1399b74de393e6915a5f95ba5",
+    "tree": "https://github.com/jcs-elpa/helm-fuzzy"
+  },
+  {
     "name": "helm-searcher",
     "summary": "Helm interface to use searcher",
     "version": "20221231.1632",
@@ -709,6 +745,33 @@
     "source": "github",
     "commit": "aa87da4a6f5dc6a612a576d34a81000835b819e0",
     "tree": "https://github.com/azzamsa/emacs-hurl"
+  },
+  {
+    "name": "ivy-describe-modes",
+    "summary": "Ivy interface to `describe-mode`",
+    "version": "20200704.935",
+    "url": "https://github.com/jcs-elpa/ivy-describe-modes",
+    "source": "github",
+    "commit": "d14986029763858bd72f1fcdc6e7cb70781be6c5",
+    "tree": "https://github.com/jcs-elpa/ivy-describe-modes"
+  },
+  {
+    "name": "ivy-file-preview",
+    "summary": "Preview the current ivy file selection",
+    "version": "20220704.653",
+    "url": "https://github.com/jcs-elpa/ivy-file-preview",
+    "source": "github",
+    "commit": "716415a12db2c0166c6fb229e41623587b212719",
+    "tree": "https://github.com/jcs-elpa/ivy-file-preview"
+  },
+  {
+    "name": "ivy-searcher",
+    "summary": "Ivy interface to use searcher",
+    "version": "20220704.653",
+    "url": "https://github.com/jcs-elpa/ivy-searcher",
+    "source": "github",
+    "commit": "5ed00a1e273cdb33ce356f373427b65fb131021a",
+    "tree": "https://github.com/jcs-elpa/ivy-searcher"
   },
   {
     "name": "jai-mode",
