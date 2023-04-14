@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/doxygen-asterisk
-;; Package-Version: 20230412.1009
-;; Package-Commit: afb325e35962c1224617fbfe5f77770a2ad30b77
+;; Package-Version: 20230414.433
+;; Package-Commit: e3cd32ab2fceb7ebaddc0f80925e4dca5cf1af35
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: convenience
@@ -83,7 +83,8 @@ and GREEDY."
      actionscript-mode typescript-mode
      go-mode scala-mode
      rust-mode rustic-mode
-     css-mode ssass-mode scss-mode)
+     css-mode ssass-mode scss-mode
+     shader-mode)
   "List of `major-mode' that can be use Doxygen style."
   :type 'list
   :group 'doxygen-asterisk)
