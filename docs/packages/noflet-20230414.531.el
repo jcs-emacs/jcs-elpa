@@ -5,8 +5,8 @@
 ;; Author: Nic Ferrier <nferrier@ferrier.me.uk>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Keywords: lisp
-;; Package-Version: 20230414.518
-;; Package-Commit: 8acba40b16d97e3b7c1d051f1266d4c699c3cb6d
+;; Package-Version: 20230414.531
+;; Package-Commit: b2645dace4646977369c81e840324c0d4df746fa
 ;; Version: 0.0.15
 ;; Package-Requires: ((emacs "26.1") (dash "2.18"))
 ;; Url: https://github.com/elp-revive/noflet
@@ -32,10 +32,11 @@
 
 ;;; Code:
 
-(eval-when-compile (require 'cl))
+(require 'dash)
+
 (if (version< emacs-version "24.4.1")
     (load-library "cl-indent")
-    (require 'cl-indent))
+  (require 'cl-indent))
 
 (defun noflet|base ()
   "A base function."
@@ -49,7 +50,7 @@ Used by `noflet' to expand it's contents.
 Example:
 
  (noflet|expand
-  '((find-file-noselect (file-name)
+  `((find-file-noselect (file-name)
            (if t
                (this-fn \"/tmp/mytest\")
                (this-fn file-name)))
@@ -57,58 +58,58 @@ Example:
      (if t
          (concat \"/tmp/\" file-name)
          (funcall this-fn file-name thing))))
-  '(progn (expand-file-name \"/home/nferrier/thing\")))
+  `(progn (expand-file-name \"/home/nferrier/thing\")))
 
 It should not be necessary ever to call this.  Hence the exotic
 name."
   (let*
       ((fsets
         (cl-loop
-           for i in bindings
-           collect
-             (cl-destructuring-bind (name args &rest body) i
-               (let ((saved-func-namev (make-symbol "saved-func-name")))
-                 (let ((saved-func-namev
-                        (intern (format "saved-func-%s"
-                                        (symbol-name name)))))
-                   `(fset (quote ,name)
-                          (cl-function
-                           (lambda ,args
-                             (let ((this-fn ,saved-func-namev))
-                               ,@body)))))))))
+         for i in bindings
+         collect
+         (cl-destructuring-bind (name args &rest body) i
+           (let ((saved-func-namev (make-symbol "saved-func-name")))
+             (let ((saved-func-namev
+                    (intern (format "saved-func-%s"
+                                    (symbol-name name)))))
+               `(fset (quote ,name)
+                      (cl-function
+                       (lambda ,args
+                         (let ((this-fn ,saved-func-namev))
+                           ,@body)))))))))
        (fresets
         (cl-loop
-             for i in bindings
-             collect
-             (cl-destructuring-bind (name args &rest body) i
-               (let ((saved-func-namev (make-symbol "saved-func-name")))
-                 (let ((saved-func-namev
-                        (intern (format "saved-func-%s"
-                                        (symbol-name name)))))
-                   `(if
-                        (eq (symbol-function (quote noflet|base))
-                            ,saved-func-namev)
-                        (fmakunbound (quote ,name))
-                        (fset (quote ,name) ,saved-func-namev)))))))
+         for i in bindings
+         collect
+         (cl-destructuring-bind (name args &rest body) i
+           (let ((saved-func-namev (make-symbol "saved-func-name")))
+             (let ((saved-func-namev
+                    (intern (format "saved-func-%s"
+                                    (symbol-name name)))))
+               `(if
+                    (eq (symbol-function (quote noflet|base))
+                        ,saved-func-namev)
+                    (fmakunbound (quote ,name))
+                  (fset (quote ,name) ,saved-func-namev)))))))
        (lets
         (cl-loop
-           for i in bindings
-           collect
-             (cl-destructuring-bind (name args &rest body) i
-               (let ((saved-func-namev (make-symbol "saved-func-name")))
-                 (let ((saved-func-namev
-                        (intern (format "saved-func-%s"
-                                        (symbol-name name)))))
-                   `(,saved-func-namev
-                     (condition-case err
-                         (symbol-function (quote ,name))
-                       (void-function
-                        (symbol-function (quote noflet|base)))))))))))
+         for i in bindings
+         collect
+         (cl-destructuring-bind (name args &rest body) i
+           (let ((saved-func-namev (make-symbol "saved-func-name")))
+             (let ((saved-func-namev
+                    (intern (format "saved-func-%s"
+                                    (symbol-name name)))))
+               `(,saved-func-namev
+                 (condition-case err
+                     (symbol-function (quote ,name))
+                   (void-function
+                    (symbol-function (quote noflet|base)))))))))))
     `(let ,lets
        (unwind-protect
-            (progn
-              (progn ,@fsets)
-              ,@forms)
+           (progn
+             (progn ,@fsets)
+             ,@forms)
          (progn ,@fresets)))))
 
 (defun noflet-indent-func (pos &rest state)
@@ -161,21 +162,22 @@ maintainers refuse to add the correct indentation spec to
            (indent noflet-indent-func))
   `(cl-flet ,bindings ,@body))
 
-(defmacro* letn (tag bindings &rest body)
+(cl-defmacro letn (tag bindings &rest body)
+  "Not documented."
   (declare (debug (sexp sexp &rest form))
            (indent 2))
   `(cl-labels ((,tag ,(-map 'car bindings) ,@body))
      (,tag ,@(-map 'cadr bindings))))
 
 (defun ntake-all (f source)
+  "Not documented."
   (letn take-all ((result nil)
-                    (src source))
-        (if src
-            (let ((l (-take-while f src)))
-              (take-all (cons l result)
-                        (nthcdr (+ 1 (length l)) src)))
-            result)))
-
+                  (src source))
+    (if src
+        (let ((l (-take-while f src)))
+          (take-all (cons l result)
+                    (nthcdr (+ 1 (length l)) src)))
+      result)))
 
 (provide 'noflet)
 ;;; noflet.el ends here
