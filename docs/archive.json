@@ -857,10 +857,10 @@
   {
     "name": "noflet",
     "summary": "locally override functions",
-    "version": "20230414.518",
+    "version": "20230414.531",
     "url": "https://github.com/elp-revive/noflet",
     "source": "github",
-    "commit": "8acba40b16d97e3b7c1d051f1266d4c699c3cb6d",
+    "commit": "b2645dace4646977369c81e840324c0d4df746fa",
     "tree": "https://github.com/elp-revive/noflet"
   },
   {
