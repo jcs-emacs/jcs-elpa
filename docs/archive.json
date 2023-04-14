@@ -18,6 +18,15 @@
     "tree": "https://github.com/troyp/asoc.el"
   },
   {
+    "name": "auth-source-keytar",
+    "summary": "Integrate auth-source with keytar",
+    "version": "20221231.1654",
+    "url": "https://github.com/emacs-grammarly/auth-source-keytar",
+    "source": "github",
+    "commit": "8fcd935ee131174a1ed7f132614257411ed441bc",
+    "tree": "https://github.com/emacs-grammarly/auth-source-keytar"
+  },
+  {
     "name": "auto-scroll-bar",
     "summary": "Automatically show/hide scroll-bars as needed",
     "version": "20230130.732",
@@ -358,6 +367,15 @@
     "source": "github",
     "commit": "bf2bc0c7d6b113ec48d80bb808e9c3427e7935f1",
     "tree": "https://github.com/emacs-grammarly/eglot-grammarly"
+  },
+  {
+    "name": "eglot-languagetool",
+    "summary": "Eglot Clients for LanguageTool",
+    "version": "20221231.1657",
+    "url": "https://github.com/emacs-languagetool/eglot-languagetool",
+    "source": "github",
+    "commit": "aa57c87073994b29ac862fe7f030701bf0f157ed",
+    "tree": "https://github.com/emacs-languagetool/eglot-languagetool"
   },
   {
     "name": "eglot-ltex",
