@@ -693,6 +693,15 @@
     "tree": "https://github.com/jcs-emacs/jcs-modeline"
   },
   {
+    "name": "jcs-poptip",
+    "summary": "Generic popup tip",
+    "version": "20230415.414",
+    "url": "https://github.com/jcs-emacs/jcs-poptip",
+    "source": "github",
+    "commit": "173f9289eb7e80d431e37ad1f844c9e143cd587b",
+    "tree": "https://github.com/jcs-emacs/jcs-poptip"
+  },
+  {
     "name": "jenkinsfile-mode",
     "summary": "Major mode for editing Jenkins declarative pipeline syntax",
     "version": "20220414.1203",
