@@ -695,10 +695,10 @@
   {
     "name": "jcs-poptip",
     "summary": "Generic popup tip",
-    "version": "20230415.414",
+    "version": "20230415.429",
     "url": "https://github.com/jcs-emacs/jcs-poptip",
     "source": "github",
-    "commit": "173f9289eb7e80d431e37ad1f844c9e143cd587b",
+    "commit": "658e54f461a3d5e373ef7d5a5b3fecfd1dcf6635",
     "tree": "https://github.com/jcs-emacs/jcs-poptip"
   },
   {
@@ -1190,10 +1190,10 @@
   {
     "name": "vs-dark-theme",
     "summary": "Visual Studio IDE dark theme",
-    "version": "20230310.914",
+    "version": "20230415.435",
     "url": "https://github.com/emacs-vs/vs-dark-theme",
     "source": "github",
-    "commit": "1bbf3d580856610a5fe600da9c28ed17e8b4691d",
+    "commit": "8906a2a593888eafc61c5c202260edaddd3e6c75",
     "tree": "https://github.com/emacs-vs/vs-dark-theme"
   },
   {
@@ -1217,10 +1217,10 @@
   {
     "name": "vs-light-theme",
     "summary": "Visual Studio IDE light theme",
-    "version": "20230310.913",
+    "version": "20230415.434",
     "url": "https://github.com/emacs-vs/vs-light-theme",
     "source": "github",
-    "commit": "5accd5c1e4581005a0859cf7d85b0191b6b7a30b",
+    "commit": "dc633afc975b1cfaa1b7435f7425f5548ff1c35a",
     "tree": "https://github.com/emacs-vs/vs-light-theme"
   },
   {
