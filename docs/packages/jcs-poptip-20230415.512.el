@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-poptip
-;; Package-Version: 20230415.429
-;; Package-Commit: 658e54f461a3d5e373ef7d5a5b3fecfd1dcf6635
+;; Package-Version: 20230415.512
+;; Package-Commit: 4352098ace9b51c68b6aa3cfe75119b551bf4dd1
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (company-dict "1.2.8") (lsp-ui "8.0.1") (preview-it "1.1.0") (define-it "0.2.5") (msgu "0.1.0" ) (elenv "0.1.0" ))
 ;; Keywords: help
@@ -126,8 +126,10 @@ forever delay.  HEIGHT of the tooltip that will display."
 
 (defun jcs-poptip--company-dict ()
   "Describe symbol at point."
-  (let* ((thing (jcs-poptip-2str (symbol-at-point)))
-         (desc (company-dict--quickhelp-string thing)))
+  (let* ((thing (jcs-poptip-2str (symbol-at-point)))  ; this has no use
+         (dicts (company-dict--relevant-dicts))
+         (mem (member thing dicts))                   ; it stores in text property
+         (desc (company-dict--quickhelp-string (car mem))))
     (jcs-poptip-create desc :point (point))))
 
 ;;;###autoload
