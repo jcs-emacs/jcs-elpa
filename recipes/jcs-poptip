@@ -1,0 +1,1 @@
+(jcs-poptip :repo "jcs-emacs/jcs-poptip" :fetcher github)
