@@ -5,10 +5,10 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-poptip
-;; Package-Version: 20230415.512
-;; Package-Commit: 4352098ace9b51c68b6aa3cfe75119b551bf4dd1
+;; Package-Version: 20230416.2151
+;; Package-Commit: f1683c23f0a607df7f0aa2ef801be43a086dba3e
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "26.1") (company-dict "1.2.8") (lsp-ui "8.0.1") (preview-it "1.1.0") (define-it "0.2.5") (msgu "0.1.0" ) (elenv "0.1.0" ))
+;; Package-Requires: ((emacs "26.1") (company "0.8.12") (lsp-ui "8.0.1") (preview-it "1.1.0") (define-it "0.2.5") (msgu "0.1.0" ) (elenv "0.1.0" ))
 ;; Keywords: help
 
 ;; This file is not part of GNU Emacs.
@@ -36,7 +36,7 @@
 (require 'elenv)
 (require 'msgu)
 
-(require 'company-dict)
+(require 'company)
 (require 'lsp-mode)
 (require 'lsp-ui)
 (require 'preview-it)
@@ -119,17 +119,46 @@ forever delay.  HEIGHT of the tooltip that will display."
 
 (defun jcs-poptip--describe-it ()
   "Describe symbol at point."
-  (let ((desc (jcs-poptip--describe-symbol-string)))
-    (if (or (string-empty-p desc) (string= (string-trim desc) "[back]"))
+  (when-let (((derived-mode-p 'lisp-data-mode))
+             (desc (jcs-poptip--describe-symbol-string)))
+    (if (or (string-empty-p desc)
+            (string= (string-trim desc) "[back]"))
         (error "[ERROR] No description at point")
       (jcs-poptip-create desc :point (point)))))
 
-(defun jcs-poptip--company-dict ()
-  "Describe symbol at point."
-  (let* ((thing (jcs-poptip-2str (symbol-at-point)))  ; this has no use
-         (dicts (company-dict--relevant-dicts))
-         (mem (member thing dicts))                   ; it stores in text property
-         (desc (company-dict--quickhelp-string (car mem))))
+(defvar company-fuzzy-mode)
+(defvar company-fuzzy--backends)
+(defvar company-backends)
+
+(defun jcs-poptip--company-backends ()
+  "Return a list of company backends."
+  (if (bound-and-true-p company-fuzzy-mode)
+      company-fuzzy--backends
+    company-backends))
+
+(defun jcs-poptip--company-doc-buffer (backend thing)
+  "Return command `doc-buffer' from BACKEND and THING."
+  (when-let ((buf (ignore-errors (funcall backend 'doc-buffer thing))))
+    (with-current-buffer buf
+      (let ((trimmed (string-trim (buffer-string))))
+        (if (or (string-empty-p trimmed)
+                (string= trimmed "nil"))
+            nil
+          (buffer-string))))))
+
+(defun jcs-poptip--company-doc ()
+  "Return company documentation."
+  (let ((thing (jcs-poptip-2str (symbol-at-point)))
+        (desc))
+    (msgu-silent
+      (cl-some (lambda (backend)
+
+                 (setq desc
+                       (or (jcs-poptip--company-doc-buffer backend thing)
+                           (ignore-errors (funcall backend 'quickhelp-string thing))
+                           (ignore-errors (funcall backend 'meta thing))))
+                 desc)
+               (jcs-poptip--company-backends)))
     (jcs-poptip-create desc :point (point))))
 
 ;;;###autoload
@@ -141,7 +170,7 @@ forever delay.  HEIGHT of the tooltip that will display."
       (or (ignore-errors (call-interactively #'lsp-ui-doc-glance))
           (ignore-errors (call-interactively #'lsp-ui-doc-show)))
     (cond ((ignore-errors (jcs-poptip--describe-it)))
-          ((ignore-errors (jcs-poptip--company-dict)))
+          ((ignore-errors (jcs-poptip--company-doc)))
           ((ignore-errors (preview-it)))
           (t (define-it-at-point)))
     ;; In case we are using region, cancel the select region.
