@@ -236,10 +236,10 @@
   {
     "name": "company-fuzzy",
     "summary": "Fuzzy matching for `company-mode'",
-    "version": "20230416.2024",
+    "version": "20230416.2100",
     "url": "https://github.com/jcs-elpa/company-fuzzy",
     "source": "github",
-    "commit": "864fe282cdab0d1e04887c7a7266f1e922d7f4c9",
+    "commit": "443cdbac27aed718153599baa13424e7dff6020f",
     "tree": "https://github.com/jcs-elpa/company-fuzzy"
   },
   {
