@@ -1,5 +1,5 @@
 (eglot-ltex .
-	    [(20221231 1657)
+	    [(20230416 1832)
 	     ((emacs
 	       (24 3))
 	      (eglot
@@ -7,7 +7,7 @@
 	      (f
 	       (0 20 0)))
 	     "Eglot Clients for LTEX" single
-	     ((:commit . "5f3bc55d472cd3e61606fccf66f176dac5bd8f82")
+	     ((:commit . "d447161aee1ae5ef7bab8b2d8a352f40e8555de7")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
 	      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")

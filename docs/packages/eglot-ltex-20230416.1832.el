@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-languagetool/eglot-ltex
-;; Package-Version: 20221231.1657
-;; Package-Commit: 5f3bc55d472cd3e61606fccf66f176dac5bd8f82
+;; Package-Version: 20230416.1832
+;; Package-Commit: d447161aee1ae5ef7bab8b2d8a352f40e8555de7
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "24.3") (eglot "1.4") (f "0.20.0"))
 ;; Keywords: convenience eglot languagetool checker
@@ -44,7 +44,11 @@ https://github.com/valentjn/ltex-ls"
   :group 'eglot
   :link '(url-link :tag "Github" "https://github.com/emacs-languagetool/eglot-ltex"))
 
-(defcustom eglot-languagetool-active-modes '(text-mode latex-mode org-mode markdown-mode)
+(defcustom eglot-languagetool-active-modes
+  '( text-mode
+     bibtex-mode context-mode latex-mode
+     markdown-mode org-mode
+     rst-mode)
   "List of major mode that work with LanguageTool."
   :type 'list
   :group 'eglot-grammarly)
