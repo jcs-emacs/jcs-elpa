@@ -713,10 +713,10 @@
   {
     "name": "jcs-poptip",
     "summary": "Generic popup tip",
-    "version": "20230416.2151",
+    "version": "20230416.2323",
     "url": "https://github.com/jcs-emacs/jcs-poptip",
     "source": "github",
-    "commit": "f1683c23f0a607df7f0aa2ef801be43a086dba3e",
+    "commit": "a993173aaf98377ef6ae47da3062146526b67ef1",
     "tree": "https://github.com/jcs-emacs/jcs-poptip"
   },
   {
