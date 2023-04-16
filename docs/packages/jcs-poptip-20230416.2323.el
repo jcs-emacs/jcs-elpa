@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-poptip
-;; Package-Version: 20230416.2151
-;; Package-Commit: f1683c23f0a607df7f0aa2ef801be43a086dba3e
+;; Package-Version: 20230416.2323
+;; Package-Commit: a993173aaf98377ef6ae47da3062146526b67ef1
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (company "0.8.12") (lsp-ui "8.0.1") (preview-it "1.1.0") (define-it "0.2.5") (msgu "0.1.0" ) (elenv "0.1.0" ))
 ;; Keywords: help
@@ -152,14 +152,14 @@ forever delay.  HEIGHT of the tooltip that will display."
         (desc))
     (msgu-silent
       (cl-some (lambda (backend)
-
+                 (funcall backend 'candidates thing)  ; refresh
                  (setq desc
                        (or (jcs-poptip--company-doc-buffer backend thing)
                            (ignore-errors (funcall backend 'quickhelp-string thing))
                            (ignore-errors (funcall backend 'meta thing))))
                  desc)
                (jcs-poptip--company-backends)))
-    (jcs-poptip-create desc :point (point))))
+    (jcs-poptip-create (string-trim desc) :point (point))))
 
 ;;;###autoload
 (defun jcs-poptip ()
