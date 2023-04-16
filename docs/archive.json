@@ -45,6 +45,15 @@
     "tree": "https://github.com/beancount/beancount-mode"
   },
   {
+    "name": "bitwarden",
+    "summary": "Bitwarden command wrapper",
+    "version": "20230329.104",
+    "url": "https://github.com/seanfarley/emacs-bitwarden",
+    "source": "github",
+    "commit": "55160e239671722cecdb73f9bca022ed7e23b0d4",
+    "tree": "https://github.com/seanfarley/emacs-bitwarden"
+  },
+  {
     "name": "block-travel",
     "summary": "Move to previous/next blank line",
     "version": "20221015.1757",
