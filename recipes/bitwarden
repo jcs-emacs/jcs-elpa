@@ -1,0 +1,1 @@
+(bitwarden :repo "seanfarley/emacs-bitwarden" :fetcher github)
