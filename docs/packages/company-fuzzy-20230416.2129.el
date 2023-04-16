@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/company-fuzzy
-;; Package-Version: 20230416.2100
-;; Package-Commit: 443cdbac27aed718153599baa13424e7dff6020f
+;; Package-Version: 20230416.2129
+;; Package-Commit: 049ba8ff49a86f3657522801d8d142dda1626b19
 ;; Version: 1.4.0
 ;; Package-Requires: ((emacs "26.1") (company "0.8.12") (s "1.12.0") (ht "2.0"))
 ;; Keywords: matching auto-complete complete fuzzy
@@ -768,7 +768,7 @@ If N is 0, ELM is inserted before the first element.
 
 The resulting list is returned.  As the list contents is mutated
 in-place, the old list reference does not remain valid."
-  (let* ((padded-list (cons nil list))
+  (let* ((padded-list (cons nil (copy-sequence list)))
          (c (nthcdr n padded-list)))
     (setcdr c (cons elm (cdr c)))
     (cdr padded-list)))
