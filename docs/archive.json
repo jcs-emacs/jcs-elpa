@@ -902,10 +902,10 @@
   {
     "name": "openai",
     "summary": "Elisp library for the OpenAI API",
-    "version": "20230411.1807",
+    "version": "20230417.405",
     "url": "https://github.com/emacs-openai/openai",
     "source": "github",
-    "commit": "2a279b20493cf18776e4a5883e80ac20d3838cf8",
+    "commit": "6a1d270fcdf89226f22122df930afe17f85d3209",
     "tree": "https://github.com/emacs-openai/openai"
   },
   {
