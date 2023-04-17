@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-poptip
-;; Package-Version: 20230416.2332
-;; Package-Commit: 9ebdcf72a0911797bb9f24f841c65903ae5775e4
+;; Package-Version: 20230417.9
+;; Package-Commit: 27934e875787af4266f653f648ab312d570ac7d4
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (company "0.8.12") (lsp-ui "8.0.1") (preview-it "1.1.0") (define-it "0.2.5") (msgu "0.1.0" ) (elenv "0.1.0" ))
 ;; Keywords: help
@@ -161,6 +161,14 @@ forever delay.  HEIGHT of the tooltip that will display."
                (jcs-poptip--company-backends)))
     (jcs-poptip-create (string-trim desc) :point (point))))
 
+(defun jcs-poptip--company-dict ()
+  "Describe symbol at point."
+  (let* ((thing (jcs-poptip-2str (symbol-at-point)))  ; this has no use
+         (dicts (company-dict--relevant-dicts))
+         (mem (member thing dicts))                   ; it stores in text property
+         (desc (company-dict--quickhelp-string (car mem))))
+    (jcs-poptip-create desc :point (point))))
+
 ;;;###autoload
 (defun jcs-poptip ()
   "Show current symbol info."
@@ -170,7 +178,8 @@ forever delay.  HEIGHT of the tooltip that will display."
       (or (ignore-errors (call-interactively #'lsp-ui-doc-glance))
           (ignore-errors (call-interactively #'lsp-ui-doc-show)))
     (cond ((ignore-errors (jcs-poptip--describe-it)))
-          ((ignore-errors (jcs-poptip--company-doc)))
+          ((or (ignore-errors (jcs-poptip--company-dict))
+               (ignore-errors (jcs-poptip--company-doc))))
           ((ignore-errors (preview-it)))
           (t (define-it-at-point)))
     ;; In case we are using region, cancel the select region.

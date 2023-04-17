@@ -1,5 +1,5 @@
 (jcs-poptip .
-	    [(20230416 2332)
+	    [(20230417 9)
 	     ((emacs
 	       (26 1))
 	      (company
@@ -15,7 +15,7 @@
 	      (elenv
 	       (0 1 0)))
 	     "Generic popup tip" single
-	     ((:commit . "9ebdcf72a0911797bb9f24f841c65903ae5775e4")
+	     ((:commit . "27934e875787af4266f653f648ab312d570ac7d4")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
 	      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
