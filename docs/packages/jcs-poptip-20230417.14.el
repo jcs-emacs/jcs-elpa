@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-poptip
-;; Package-Version: 20230417.9
-;; Package-Commit: 27934e875787af4266f653f648ab312d570ac7d4
+;; Package-Version: 20230417.14
+;; Package-Commit: e35fa7134e6eb4e6b51bdc0cc210c0fb400a1d1f
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (company "0.8.12") (lsp-ui "8.0.1") (preview-it "1.1.0") (define-it "0.2.5") (msgu "0.1.0" ) (elenv "0.1.0" ))
 ;; Keywords: help
@@ -63,6 +63,16 @@
 
 (defconst jcs-poptip--buffer-name "*jcs-poptip*"
   "Buffer name for posframe tooltip.")
+
+;;
+;;; Externals
+
+(defvar company-fuzzy-mode)
+(defvar company-fuzzy--backends)
+(defvar company-backends)
+
+(declare-function company-dict--relevant-dicts "ext:company-dic.el")
+(declare-function company-dict--quickhelp-string "ext:company-dic.el")
 
 ;;
 ;;; Util
@@ -126,10 +136,6 @@ forever delay.  HEIGHT of the tooltip that will display."
         (error "[ERROR] No description at point")
       (jcs-poptip-create desc :point (point)))))
 
-(defvar company-fuzzy-mode)
-(defvar company-fuzzy--backends)
-(defvar company-backends)
-
 (defun jcs-poptip--company-backends ()
   "Return a list of company backends."
   (if (bound-and-true-p company-fuzzy-mode)
@@ -163,11 +169,12 @@ forever delay.  HEIGHT of the tooltip that will display."
 
 (defun jcs-poptip--company-dict ()
   "Describe symbol at point."
-  (let* ((thing (jcs-poptip-2str (symbol-at-point)))  ; this has no use
-         (dicts (company-dict--relevant-dicts))
-         (mem (member thing dicts))                   ; it stores in text property
-         (desc (company-dict--quickhelp-string (car mem))))
-    (jcs-poptip-create desc :point (point))))
+  (when (featurep 'company-dict)
+    (let* ((thing (jcs-poptip-2str (symbol-at-point)))  ; this has no use
+           (dicts (company-dict--relevant-dicts))
+           (mem (member thing dicts))                   ; it stores in text property
+           (desc (company-dict--quickhelp-string (car mem))))
+      (jcs-poptip-create desc :point (point)))))
 
 ;;;###autoload
 (defun jcs-poptip ()
