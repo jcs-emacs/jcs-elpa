@@ -6,8 +6,8 @@
 ;; Maintainer: Ricardo Arredondo <ricardo.richo@gmail.com>
 ;;             Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-dashboard/ace-link-dashboard
-;; Package-Version: 20221206.2203
-;; Package-Commit: 459d1877269d8c0ac117e6a1915a40c716e88eab
+;; Package-Version: 20230418.2139
+;; Package-Commit: 079e5329d3492ad9aa295fdb9f4e5386825f651f
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (avy "0.5.0"))
 ;; Keywords: tools
@@ -38,6 +38,8 @@
 
 (require 'avy)
 
+(declare-function dashboard-remove-item-under "dashboard" nil)
+
 ;;;###autoload
 (defun ace-link-dashboard ()
   "Open a visible link in a `dashboard-mode' buffer."
@@ -66,19 +68,28 @@
   "Call remove action on item at POINT."
   (dashboard-remove-item-under))
 
-(defun ace-link-dashboard--collect ()
-  "Collect all widgets in the current `dashboard-mode' buffer."
+(defun ace-link-dashboard--collect (&optional in-section)
+  "Collect all widgets in the current `dashboard-mode' buffer.
+When IN-SECTION is non-nil, only collect widgets within a known section
+of `dashboard-mode' buffer."
   (save-excursion
     (let ((previous-point (window-start))
           (candidates nil)
-          (next-widget-point (lambda ()
-                               (progn (widget-move 1)
-                                      (point)))))
+          (next-widget-point (lambda () (widget-move 1) (point))))
       (goto-char (window-start))
       (while (< previous-point (funcall next-widget-point))
         (setq previous-point (point))
-        (push (cons (widget-at previous-point) previous-point) candidates))
+        (push (cons (widget-at previous-point)
+                    (ace-link-dashboard--widget-avy-point previous-point))
+                candidates))
       (nreverse candidates))))
+
+(defun ace-link-dashboard--widget-avy-point (point)
+  "Return a POINT where avy could display its overlay.
+When point is over an icon avy overlay could not be seen."
+  (if (eq 'unicode (char-charset (char-after point)))
+      (+ 2 point)
+    point))
 
 (provide 'ace-link-dashboard)
 ;;; ace-link-dashboard.el ends here
