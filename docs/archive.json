@@ -767,10 +767,10 @@
   {
     "name": "line-reminder",
     "summary": "Line annotation for changed and saved lines",
-    "version": "20230413.2349",
+    "version": "20230420.142",
     "url": "https://github.com/emacs-vs/line-reminder",
     "source": "github",
-    "commit": "1043cdca41dadd93c6a644f8e18318cbda9d2908",
+    "commit": "583bff387b361e1fe442f57e9ad1f6f8e87dedf4",
     "tree": "https://github.com/emacs-vs/line-reminder"
   },
   {
@@ -1217,10 +1217,10 @@
   {
     "name": "vs-edit-mode",
     "summary": "Minor mode accomplish editing experience in Visual Studio",
-    "version": "20230420.131",
+    "version": "20230420.132",
     "url": "https://github.com/emacs-vs/vs-edit-mode",
     "source": "github",
-    "commit": "ce7b5a35c152cf306006ab80cd85c3aa39a240e2",
+    "commit": "7891dd1d39dea7c0059f158497930be1fc0da1c6",
     "tree": "https://github.com/emacs-vs/vs-edit-mode"
   },
   {
