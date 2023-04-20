@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-edit-mode
-;; Package-Version: 20230414.513
-;; Package-Commit: 1887c4a86a5a2cb87a8fb0aebeb065b52e0c7186
+;; Package-Version: 20230420.131
+;; Package-Commit: ce7b5a35c152cf306006ab80cd85c3aa39a240e2
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (mwim "0.4") (ts-fold "0.1.0") (noflet "0.0.15"))
 ;; Keywords: convenience editing vs
@@ -169,7 +169,10 @@
       (apply func args)
       (save-excursion
         (forward-line -1)
-        (when (vs-edit--current-line-totally-empty-p) (insert ln-cur))))))
+        (when (vs-edit--current-line-totally-empty-p) (insert ln-cur))))
+    (when (string= "}" (string-trim (thing-at-point 'line)))
+      (let (vs-edit-mode)
+        (save-excursion (newline-and-indent))))))
 
 (defun vs-edit-newline-and-indent (func &rest args)
   "Advice for function `newline-and-indent' (FUNC and ARGS)."
