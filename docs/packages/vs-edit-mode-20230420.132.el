@@ -5,8 +5,8 @@
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-vs/vs-edit-mode
-;; Package-Version: 20230420.131
-;; Package-Commit: ce7b5a35c152cf306006ab80cd85c3aa39a240e2
+;; Package-Version: 20230420.132
+;; Package-Commit: 7891dd1d39dea7c0059f158497930be1fc0da1c6
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (mwim "0.4") (ts-fold "0.1.0") (noflet "0.0.15"))
 ;; Keywords: convenience editing vs
@@ -164,12 +164,15 @@
   "Advice for function `newline' (FUNC and ARGS)."
   (if (not vs-edit-mode)
       (apply func args)
+    ;; XXX: Make sure indent on the empty line.
     (when (vs-edit--current-line-totally-empty-p) (indent-for-tab-command))
+    ;; XXX: Maintain same indentation for the previous line.
     (let ((ln-cur (buffer-substring (line-beginning-position) (point))))
       (apply func args)
       (save-excursion
         (forward-line -1)
         (when (vs-edit--current-line-totally-empty-p) (insert ln-cur))))
+    ;; XXX: Make sure brackets on newline!
     (when (string= "}" (string-trim (thing-at-point 'line)))
       (let (vs-edit-mode)
         (save-excursion (newline-and-indent))))))
