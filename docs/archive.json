@@ -1280,10 +1280,10 @@
   {
     "name": "yank-indent",
     "summary": "Automatically indent yanked text",
-    "version": "20230418.125",
+    "version": "20230423.1057",
     "url": "https://github.com/jimeh/yank-indent",
     "source": "github",
-    "commit": "32031c6ad79a503c9d7bcfa46ce81db845369d0a",
+    "commit": "7619fc6d910a93697eb74236344632c161d0dcd5",
     "tree": "https://github.com/jimeh/yank-indent"
   },
   {
