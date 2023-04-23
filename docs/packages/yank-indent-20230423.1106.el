@@ -2,8 +2,8 @@
 
 ;; Author: Jim Myhrberg <contact@jimeh.me>
 ;; URL: https://github.com/jimeh/yank-indent
-;; Package-Version: 20230423.1057
-;; Package-Commit: 7619fc6d910a93697eb74236344632c161d0dcd5
+;; Package-Version: 20230423.1106
+;; Package-Commit: e3fdaa7f673a8b8d43c2ac16f8a3cdfe8b3ab6c1
 ;; Keywords: convenience, yank, indent
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "25.1"))
