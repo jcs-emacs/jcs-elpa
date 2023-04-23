@@ -1278,6 +1278,15 @@
     "tree": "https://github.com/devonsparks/wat-mode"
   },
   {
+    "name": "yank-indent",
+    "summary": "Automatically indent yanked text",
+    "version": "20230418.125",
+    "url": "https://github.com/jimeh/yank-indent",
+    "source": "github",
+    "commit": "32031c6ad79a503c9d7bcfa46ce81db845369d0a",
+    "tree": "https://github.com/jimeh/yank-indent"
+  },
+  {
     "name": "zoom-to-point",
     "summary": "Zoom in or out on the line at point.",
     "version": "20131216.1307",
