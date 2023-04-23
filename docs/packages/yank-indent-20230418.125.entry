@@ -1,0 +1,11 @@
+(yank-indent .
+	     [(20230418 125)
+	      ((emacs
+		(25 1)))
+	      "Automatically indent yanked text" single
+	      ((:commit . "32031c6ad79a503c9d7bcfa46ce81db845369d0a")
+	       (:authors
+		("Jim Myhrberg" . "contact@jimeh.me"))
+	       (:maintainer "Jim Myhrberg" . "contact@jimeh.me")
+	       (:keywords "convenience" "yank" "indent")
+	       (:url . "https://github.com/jimeh/yank-indent"))])
