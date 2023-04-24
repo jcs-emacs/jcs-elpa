@@ -1,0 +1,11 @@
+(jai-mode .
+	  [(20230424 1229)
+	   ((emacs
+	     (26 1)))
+	   "Major mdoe for JAI" single
+	   ((:commit . "7963240b6b4e02dba6b0623db47ed55145a65b16")
+	    (:authors
+	     ("Kristoffer Grönlund" . "k@ziran.se"))
+	    (:maintainer "Kristoffer Grönlund" . "k@ziran.se")
+	    (:keywords "languages")
+	    (:url . "https://github.com/krig/jai-mode"))])
