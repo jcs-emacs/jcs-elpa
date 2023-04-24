@@ -1,9 +1,9 @@
 (chatgpt-shell .
-	       [(20230422 2043)
+	       [(20230423 1118)
 		((emacs
 		  (27 1))
 		 (shell-maker
 		  (0 17 1)))
 		"Interaction mode for ChatGPT" tar
-		((:commit . "95b0d7b14a1ed59884b7799d35d3f675adb4afca")
+		((:commit . "b774d19a57ddf533de01771d29810e97e07d0921")
 		 (:url . "https://github.com/xenodium/chatgpt-shell"))])
