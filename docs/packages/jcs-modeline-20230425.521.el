@@ -5,10 +5,10 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-modeline
-;; Package-Version: 20230227.2342
-;; Package-Commit: b3c6e26bd3ff420c59f1b01a1ac787fefce1d781
+;; Package-Version: 20230425.521
+;; Package-Commit: 61abe30cc3a6653f62b793a1013be4cac9f9fdb3
 ;; Version: 0.1.1
-;; Package-Requires: ((emacs "28.1") (moody "0.7.1") (minions "0.3.7") (elenv "0.1.0"))
+;; Package-Requires: ((emacs "28.1") (moody "0.7.1") (minions "0.3.7") (elenv "0.1.0") (nerd-icons "0.0.1"))
 ;; Keywords: faces mode-line
 
 ;; This file is not part of GNU Emacs.
@@ -36,9 +36,10 @@
 (require 'cl-lib)
 (require 'subr-x)
 
+(require 'elenv)
 (require 'moody)
 (require 'minions)
-(require 'elenv)
+(require 'nerd-icons)
 
 (defgroup jcs-modeline nil
   "A modeline for jcs-emacs."
@@ -265,12 +266,23 @@
 ;;
 ;;; Modes
 
+(defcustom jcs-modeline-show-mode-icons nil
+  "Non-nil to display mode icons."
+  :type 'boolean
+  :group 'jcs-modeline)
+
 (defun jcs-modeline--render-modes ()
   "Render line modes."
   (let ((line-modes (jcs-modeline-format (if minions-mode
                                              minions-mode-line-modes
-                                           mode-line-modes))))
-    (moody-tab line-modes)))
+                                           mode-line-modes)))
+        (icon (and jcs-modeline-show-mode-icons
+                   (let ((icon (nerd-icons-icon-for-mode major-mode)))
+                     (concat (if (or (null icon) (symbolp icon))
+                                 (nerd-icons-faicon "nf-fa-file_o")
+                               icon)
+                             " ")))))
+    (moody-tab (concat icon line-modes))))
 
 ;;
 ;;; Line and Columns
