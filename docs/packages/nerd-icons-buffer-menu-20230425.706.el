@@ -5,10 +5,10 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/nerd-icons-buffer-menu
-;; Package-Version: 20230425.636
-;; Package-Commit: 96c82f3b8c89500c6aca0893529cb399e951158a
+;; Package-Version: 20230425.706
+;; Package-Commit: 2264ee4a566a6bee21276dce4163529a4aaad377
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "26.1") (nerd-icons "0.0.1") (noflet "0.0.15"))
+;; Package-Requires: ((emacs "26.1") (nerd-icons "0.0.1") (noflet "0.0.15") (msgu "0.1.0"))
 ;; Keywords: frames
 
 ;; This file is not part of GNU Emacs.
@@ -33,6 +33,7 @@
 
 ;;; Code:
 
+(require 'msgu)
 (require 'nerd-icons)
 (require 'noflet)
 
@@ -47,7 +48,8 @@
 
 (defun nerd-icons-buffer-menu--enable ()
   "Enable `nerd-icons-buffer-menu-mode'."
-  (advice-add 'list-buffers--refresh :around #'nerd-icons-buffer-menu--refresh))
+  (advice-add 'list-buffers--refresh :around #'nerd-icons-buffer-menu--refresh)
+  (msgu-silent (load-library "buff-menu.el")))  ; need to reload
 
 (defun nerd-icons-buffer-menu--disable ()
   "Disable `nerd-icons-buffer-menu-mode'."
