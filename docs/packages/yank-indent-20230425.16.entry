@@ -1,9 +1,9 @@
 (yank-indent .
-	     [(20230425 9)
+	     [(20230425 16)
 	      ((emacs
 		(25 1)))
 	      "Automatically indent yanked text" single
-	      ((:commit . "15c69ef8d7340db2ed36ecfc144b2042eb10c2aa")
+	      ((:commit . "a834f366c39615d4a9d3a31fef795f569033ef3d")
 	       (:authors
 		("Jim Myhrberg" . "contact@jimeh.me"))
 	       (:maintainer "Jim Myhrberg" . "contact@jimeh.me")

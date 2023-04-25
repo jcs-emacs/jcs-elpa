@@ -2,12 +2,12 @@
 
 ;; Author: Jim Myhrberg <contact@jimeh.me>
 ;; URL: https://github.com/jimeh/yank-indent
-;; Package-Version: 20230425.9
-;; Package-Commit: 15c69ef8d7340db2ed36ecfc144b2042eb10c2aa
+;; Package-Version: 20230425.16
+;; Package-Commit: a834f366c39615d4a9d3a31fef795f569033ef3d
 ;; Keywords: convenience, yank, indent
 ;; Package-Requires: ((emacs "25.1"))
 ;; x-release-please-start-version
-;; Version: 0.1.0
+;; Version: 0.2.0
 ;; x-release-please-end
 
 ;; This file is not part of GNU Emacs.
