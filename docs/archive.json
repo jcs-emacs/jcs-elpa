@@ -882,6 +882,15 @@
     "tree": "https://github.com/jcs-elpa/multi-shell"
   },
   {
+    "name": "nerd-icons-buffer-menu",
+    "summary": "Display nerd icons in `buffer-menu'",
+    "version": "20230425.629",
+    "url": "https://github.com/jcs-elpa/nerd-icons-buffer-menu",
+    "source": "github",
+    "commit": "a3c7cd890405e82ec8d01c81fc7fdc5057260a53",
+    "tree": "https://github.com/jcs-elpa/nerd-icons-buffer-menu"
+  },
+  {
     "name": "noflet",
     "summary": "locally override functions",
     "version": "20230414.531",
