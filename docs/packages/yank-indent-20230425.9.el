@@ -2,11 +2,13 @@
 
 ;; Author: Jim Myhrberg <contact@jimeh.me>
 ;; URL: https://github.com/jimeh/yank-indent
-;; Package-Version: 20230423.1106
-;; Package-Commit: e3fdaa7f673a8b8d43c2ac16f8a3cdfe8b3ab6c1
+;; Package-Version: 20230425.9
+;; Package-Commit: 15c69ef8d7340db2ed36ecfc144b2042eb10c2aa
 ;; Keywords: convenience, yank, indent
-;; Version: 0.1.0
 ;; Package-Requires: ((emacs "25.1"))
+;; x-release-please-start-version
+;; Version: 0.1.0
+;; x-release-please-end
 
 ;; This file is not part of GNU Emacs.
 
@@ -56,8 +58,13 @@ will not occur. This helps prevent performance issues when
 working with large blocks of text."
   :type 'number)
 
-(defcustom yank-indent-derived-modes '(prog-mode tex-mode)
-  "Derived major modes where `yank-indent-mode' should be enabled.
+(define-obsolete-variable-alias
+  'yank-indent-derived-modes
+  'yank-indent-global-derived-modes
+  "yank-indent 0.2.0")
+
+(defcustom yank-indent-global-derived-modes '(prog-mode tex-mode)
+  "Derived major modes where `global-yank-indent-mode' enables `yank-indent-mode'.
 
 When `global-yank-indent-mode' is enabled, it activates
 `yank-indent-mode' in buffers with major modes derived from those
@@ -67,49 +74,91 @@ mode, such as `prog-mode' for programming modes or `text-mode'
 for text editing modes."
   :type '(repeat symbol))
 
-(defcustom yank-indent-exact-modes '()
-  "Major modes where `yank-indent-mode' should be enabled.
+(define-obsolete-variable-alias
+  'yank-indent-exact-modes
+  'yank-indent-global-exact-modes
+  "yank-indent 0.2.0")
+
+(defcustom yank-indent-global-exact-modes '()
+  "Major modes where `global-yank-indent-mode' enables `yank-indent-mode'.
 
 When `global-yank-indent-mode' is enabled, it activates
 `yank-indent-mode' in buffers with major modes listed in this
-variable. Unlike `yank-indent-derived-modes', `yank-indent-mode'
-will not be activated in modes derived from those listed here.
-Use this variable to list specific modes where you want
-`yank-indent-mode' to be enabled without affecting their derived
-modes."
+variable. Unlike `yank-indent-global-derived-modes',
+`yank-indent-mode' will not be activated in modes derived from
+those listed here. Use this variable to list specific modes where
+you want `yank-indent-mode' to be enabled without affecting their
+derived modes."
   :type '(repeat symbol))
 
-(defcustom yank-indent-excluded-modes '(cmake-ts-mode
-                                        coffee-mode
-                                        conf-mode
-                                        haml-mode
-                                        makefile-automake-mode
-                                        makefile-bsdmake-mode
-                                        makefile-gmake-mode
-                                        makefile-imake-mode
-                                        makefile-makepp-mode
-                                        makefile-mode
-                                        python-mode
-                                        python-ts-mode
-                                        slim-mode
-                                        yaml-mode
-                                        yaml-ts-mode)
-  "Major modes where `yank-indent-mode' should not be enabled.
+(define-obsolete-variable-alias
+  'yank-indent-excluded-modes
+  'yank-indent-global-excluded-modes
+  "yank-indent 0.2.0")
+
+(defcustom yank-indent-global-excluded-modes '(cmake-ts-mode
+                                               coffee-mode
+                                               conf-mode
+                                               haml-mode
+                                               makefile-automake-mode
+                                               makefile-bsdmake-mode
+                                               makefile-gmake-mode
+                                               makefile-imake-mode
+                                               makefile-makepp-mode
+                                               makefile-mode
+                                               python-mode
+                                               python-ts-mode
+                                               slim-mode
+                                               yaml-mode
+                                               yaml-ts-mode)
+  "Major modes where `global-yank-indent-mode' does not enable `yank-indent-mode'.
 
 `global-yank-indent-mode' will not activate `yank-indent-mode' in
 buffers with major modes listed in this variable or their derived
 modes. This list takes precedence over
-`yank-indent-derived-modes' and `yank-indent-exact-modes'. Use
-this variable to exclude specific modes and their derived modes
-from having `yank-indent-mode' enabled."
+`yank-indent-global-derived-modes' and
+`yank-indent-global-exact-modes'. Use this variable to exclude
+specific modes and their derived modes from having
+`yank-indent-mode' enabled."
   :type '(repeat symbol))
 
 (defun yank-indent--should-enable-p ()
   "Return non-nil if current mode should be indented."
   (and (not (minibufferp))
-       (not (member major-mode yank-indent-excluded-modes))
-       (or (member major-mode yank-indent-exact-modes)
-           (apply #'derived-mode-p yank-indent-derived-modes))))
+       (not (member major-mode yank-indent-global-excluded-modes))
+       (or (member major-mode yank-indent-global-exact-modes)
+           (apply #'derived-mode-p yank-indent-global-derived-modes))))
+
+(defvar yank-indent--initial-setup nil)
+
+(defun yank-indent--is-setup-p ()
+  "Return non-nil if required advice is setup."
+  (and (advice-member-p #'yank-indent--after-yank-advice #'yank)
+       (advice-member-p #'yank-indent--after-yank-advice #'yank-pop)))
+
+;;;###autoload
+(defun yank-indent-setup ()
+  "Setup advice on `yank' and `yank-pop' as required by `yank-indent-mode'.
+
+First time `yank-indent-mode' is enabled it will automatically
+call `yank-indent-setup' if needed.
+
+Setup can be undone with `yank-indent-teardown', but enabling
+`yank-indent-mode' again after that will not run setup again."
+  (interactive)
+  (advice-add #'yank :after #'yank-indent--after-yank-advice)
+  (advice-add #'yank-pop :after #'yank-indent--after-yank-advice)
+  (setq yank-indent--initial-setup t))
+
+;;;###autoload
+(defun yank-indent-teardown ()
+  "Undo `yank-indent-setup' by removing advice from `yank' and `yank-pop'.
+
+If this is used, `yank-indent-setup' must be explicitly called
+before `yank-indent-mode' will work again."
+  (interactive)
+  (advice-remove #'yank #'yank-indent--after-yank-advice)
+  (advice-remove #'yank-pop #'yank-indent--after-yank-advice))
 
 ;;;###autoload
 (define-minor-mode yank-indent-mode
@@ -119,17 +168,23 @@ When enabled, this mode indents the yanked region according to
 the current mode's indentation rules, provided that the region
 size is less than or equal to `yank-indent-threshold' and no
 prefix argument is given during yanking."
-  :lighter " YI")
-
-(defun yank-indent--enable ()
-  "Enable `yank-indent-mode' if the current buffer meets the criteria."
-  (when (yank-indent--should-enable-p)
-    (yank-indent-mode 1)))
+  :lighter " YI"
+  :group 'yank-indent
+  (if yank-indent-mode
+      ;; Auto-run advice setup if needed first time mode is enabled. Display
+      ;; warning if advice setup has been undone.
+      (when (not (yank-indent--is-setup-p))
+        (if yank-indent--initial-setup
+            (message (concat "Warning: yank-indent-mode not available, "
+                             "run `M-x yank-indent-setup' to setup."))
+          (yank-indent-setup)))))
 
 ;;;###autoload
 (define-globalized-minor-mode global-yank-indent-mode
   yank-indent-mode
-  yank-indent--enable)
+  (lambda ()
+    (when (yank-indent--should-enable-p)
+      (yank-indent-mode 1))))
 
 (defun yank-indent--after-yank-advice (&optional _)
   "Conditionally indent the region (yanked text) after yanking.
@@ -151,9 +206,6 @@ functions."
             (mark-even-if-inactive transient-mark-mode))
         (if (<= (- end beg) yank-indent-threshold)
             (indent-region beg end)))))
-
-(advice-add #'yank :after #'yank-indent--after-yank-advice)
-(advice-add #'yank-pop :after #'yank-indent--after-yank-advice)
 
 (provide 'yank-indent)
 ;;; yank-indent.el ends here
