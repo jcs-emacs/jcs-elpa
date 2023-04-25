@@ -884,10 +884,10 @@
   {
     "name": "nerd-icons-buffer-menu",
     "summary": "Display nerd icons in `buffer-menu'",
-    "version": "20230425.629",
+    "version": "20230425.636",
     "url": "https://github.com/jcs-elpa/nerd-icons-buffer-menu",
     "source": "github",
-    "commit": "a3c7cd890405e82ec8d01c81fc7fdc5057260a53",
+    "commit": "96c82f3b8c89500c6aca0893529cb399e951158a",
     "tree": "https://github.com/jcs-elpa/nerd-icons-buffer-menu"
   },
   {
