@@ -704,10 +704,10 @@
   {
     "name": "jcs-modeline",
     "summary": "A modeline for jcs-emacs",
-    "version": "20230227.2342",
+    "version": "20230425.521",
     "url": "https://github.com/jcs-emacs/jcs-modeline",
     "source": "github",
-    "commit": "b3c6e26bd3ff420c59f1b01a1ac787fefce1d781",
+    "commit": "61abe30cc3a6653f62b793a1013be4cac9f9fdb3",
     "tree": "https://github.com/jcs-emacs/jcs-modeline"
   },
   {
@@ -1096,6 +1096,15 @@
     "source": "github",
     "commit": "81a9deb64384ad1d930e4e6f70be184f05728966",
     "tree": "https://github.com/jcs-elpa/toggle-profiler"
+  },
+  {
+    "name": "treemacs-nerd-icons",
+    "summary": "Emacs Nerd Font Icons theme for treemacs",
+    "version": "20230424.1854",
+    "url": "https://github.com/rainstormstudio/treemacs-nerd-icons",
+    "source": "github",
+    "commit": "c6f4a74ea4f414528fc43a6fe95f7f17687faeb4",
+    "tree": "https://github.com/rainstormstudio/treemacs-nerd-icons"
   },
   {
     "name": "ts-docstr",
