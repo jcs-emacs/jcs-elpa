@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/nerd-icons-buffer-menu
-;; Package-Version: 20230425.706
-;; Package-Commit: 2264ee4a566a6bee21276dce4163529a4aaad377
+;; Package-Version: 20230426.22
+;; Package-Commit: 5bde5a319bc9b992eea90e57bf41b78bb848d0bb
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (nerd-icons "0.0.1") (noflet "0.0.15") (msgu "0.1.0"))
 ;; Keywords: frames
@@ -79,11 +79,14 @@
             (if (equal format mode-name)
                 (let* ((major-mode (and buffer
                                         (with-current-buffer buffer major-mode)))
-                       (icon (let ((icon (nerd-icons-icon-for-mode major-mode)))
-                               (concat (if (or (null icon) (symbolp icon))
-                                           (nerd-icons-faicon "nf-fa-file_o")
-                                         icon)
-                                       " "))))
+                       (icon (let* ((icon (nerd-icons-icon-for-mode major-mode))
+                                    (icon (if (or (null icon) (symbolp icon))
+                                              (nerd-icons-faicon "nf-fa-file_o")
+                                            icon)))
+                               (if (and icon
+                                        (char-displayable-p (string-to-char icon)))
+                                   (concat icon " ")
+                                 ""))))
                   (concat icon original-value))
               original-value))))
         (apply func args)))))

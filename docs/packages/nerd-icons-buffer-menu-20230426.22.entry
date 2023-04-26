@@ -1,5 +1,5 @@
 (nerd-icons-buffer-menu .
-			[(20230425 706)
+			[(20230426 22)
 			 ((emacs
 			   (26 1))
 			  (nerd-icons
@@ -9,7 +9,7 @@
 			  (msgu
 			   (0 1 0)))
 			 "Display nerd icons in `buffer-menu'" single
-			 ((:commit . "2264ee4a566a6bee21276dce4163529a4aaad377")
+			 ((:commit . "5bde5a319bc9b992eea90e57bf41b78bb848d0bb")
 			  (:authors
 			   ("Jen-Chieh" . "jcs090218@gmail.com"))
 			  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
