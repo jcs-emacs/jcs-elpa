@@ -6,6 +6,8 @@
 		    ((:commit . "c7092675a3ec067b517d144be015bd4c9d77cd6b")
 		     (:authors
 		      ("Jen-Chieh" . "jcs090218@gmail.com"))
+		     (:maintainers
+		      ("Jen-Chieh" . "jcs090218@gmail.com"))
 		     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 		     (:keywords "convenience")
 		     (:url . "https://github.com/emacs-vs/vs-comment-return"))])

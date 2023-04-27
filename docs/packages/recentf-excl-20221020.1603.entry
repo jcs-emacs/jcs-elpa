@@ -6,6 +6,8 @@
 	       ((:commit . "2b29ac3225dfb3b03f01816be6bb657eed7f019b")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
+		(:maintainers
+		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 		(:keywords "convenience" "excl" "exclude" "recentf")
 		(:url . "https://github.com/jcs-elpa/recentf-excl"))])

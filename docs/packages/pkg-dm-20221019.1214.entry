@@ -16,6 +16,8 @@
 	 ((:commit . "628457b60940d8512bd8cc71f83de82307754bbf")
 	  (:authors
 	   ("Jen-Chieh" . "jcs090218@gmail.com"))
+	  (:maintainers
+	   ("Jen-Chieh" . "jcs090218@gmail.com"))
 	  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	  (:keywords "maint")
 	  (:url . "https://github.com/jcs-elpa/pkg-dm"))])

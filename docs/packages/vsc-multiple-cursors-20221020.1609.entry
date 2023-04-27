@@ -8,6 +8,8 @@
 		       ((:commit . "2aafc8c47e7862fe6394a9a195df54f77be90f76")
 			(:authors
 			 ("Jen-Chieh" . "jcs090218@gmail.com"))
+			(:maintainers
+			 ("Jen-Chieh" . "jcs090218@gmail.com"))
 			(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 			(:keywords "convenience" "vscode" "vsc" "multiple-cursors")
 			(:url . "https://github.com/emacs-vs/vsc-multiple-cursors"))])

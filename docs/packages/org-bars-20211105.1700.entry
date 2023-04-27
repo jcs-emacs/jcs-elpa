@@ -10,6 +10,8 @@
 	   ((:commit . "94c37f63fcfec9cdde6b99457b4dac5275589d95")
 	    (:authors
 	     ("Tony Aldon" . "tony.aldon.adm@gmail.com"))
+	    (:maintainers
+	     ("Tony Aldon" . "tony.aldon.adm@gmail.com"))
 	    (:maintainer "Tony Aldon" . "tony.aldon.adm@gmail.com")
 	    (:keywords "outlines")
 	    (:url . "https://github.com/tonyaldon/org-bars"))])

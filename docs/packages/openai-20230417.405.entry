@@ -10,6 +10,8 @@
 	 ((:commit . "6a1d270fcdf89226f22122df930afe17f85d3209")
 	  (:authors
 	   ("Jen-Chieh" . "jcs090218@gmail.com"))
+	  (:maintainers
+	   ("Jen-Chieh" . "jcs090218@gmail.com"))
 	  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	  (:keywords "comm" "openai")
 	  (:url . "https://github.com/emacs-openai/openai"))])

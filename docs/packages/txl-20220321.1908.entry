@@ -10,6 +10,8 @@
       ((:commit . "25f693062439694e205cdda5dd938249179e70f0")
        (:authors
 	("Titus von der Malsburg" . "malsburg@posteo.de"))
+       (:maintainers
+	("Titus von der Malsburg" . "malsburg@posteo.de"))
        (:maintainer "Titus von der Malsburg" . "malsburg@posteo.de")
        (:keywords "wp")
        (:url . "https://github.com/tmalsburg/txl.el"))])

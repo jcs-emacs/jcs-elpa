@@ -12,6 +12,8 @@
 	       ((:commit . "7891dd1d39dea7c0059f158497930be1fc0da1c6")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
+		(:maintainers
+		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 		(:keywords "convenience" "editing" "vs")
 		(:url . "https://github.com/emacs-vs/vs-edit-mode"))])

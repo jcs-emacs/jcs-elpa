@@ -6,6 +6,8 @@
 	      ((:commit . "a834f366c39615d4a9d3a31fef795f569033ef3d")
 	       (:authors
 		("Jim Myhrberg" . "contact@jimeh.me"))
+	       (:maintainers
+		("Jim Myhrberg" . "contact@jimeh.me"))
 	       (:maintainer "Jim Myhrberg" . "contact@jimeh.me")
 	       (:keywords "convenience" "yank" "indent")
 	       (:url . "https://github.com/jimeh/yank-indent"))])

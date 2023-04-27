@@ -16,6 +16,8 @@
 	    ((:commit . "0ef6050709f0045335081686753d9f71703b37e0")
 	     (:authors
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))
+	     (:maintainers
+	      ("Jen-Chieh" . "jcs090218@gmail.com"))
 	     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	     (:keywords "convenience")
 	     (:url . "https://github.com/emacs-vs/ts-docstr"))])

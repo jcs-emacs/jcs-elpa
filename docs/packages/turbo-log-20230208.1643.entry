@@ -10,5 +10,7 @@
 	    ((:commit . "ac7f4cc3bd0157a28ab823dee156c3b2ee61c83a")
 	     (:authors
 	      ("Artur Yaroshenko" . "artawower@protonmail.com"))
+	     (:maintainers
+	      ("Artur Yaroshenko" . "artawower@protonmail.com"))
 	     (:maintainer "Artur Yaroshenko" . "artawower@protonmail.com")
 	     (:url . "https://github.com/Artawower/turbo-log"))])

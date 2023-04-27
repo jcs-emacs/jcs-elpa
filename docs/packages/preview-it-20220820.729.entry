@@ -12,6 +12,8 @@
 	     ((:commit . "4cc722722d4b040f0af2780086817f87085b5cf8")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
+	      (:maintainers
+	       ("Jen-Chieh" . "jcs090218@gmail.com"))
 	      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	      (:keywords "convenience" "preview" "image" "path" "file")
 	      (:url . "https://github.com/jcs-elpa/preview-it"))])

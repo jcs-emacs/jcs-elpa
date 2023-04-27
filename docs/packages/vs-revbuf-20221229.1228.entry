@@ -8,6 +8,8 @@
 	    ((:commit . "5572daea403bd62d8b2bccaffd7e9dca43d1de77")
 	     (:authors
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))
+	     (:maintainers
+	      ("Jen-Chieh" . "jcs090218@gmail.com"))
 	     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	     (:keywords "convenience" "revert" "vs")
 	     (:url . "https://github.com/emacs-vs/vs-revbuf"))])

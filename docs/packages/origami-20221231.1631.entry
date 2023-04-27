@@ -12,6 +12,8 @@
 	  ((:commit . "56a38428bace23e141c0cd0a2648d1b074ca9473")
 	   (:authors
 	    ("Greg Sexton" . "gregsexton@gmail.com"))
+	   (:maintainers
+	    ("Jen-Chieh" . "jcs090218@gmail.com"))
 	   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	   (:keywords "folding")
 	   (:url . "https://github.com/elp-revive/origami.el"))])

@@ -8,6 +8,8 @@
 	      ((:commit . "324c07ad4624d6b31ba0a077c71ee2a56d0c392d")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
+	       (:maintainers
+		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	       (:keywords "multimedia")
 	       (:url . "https://github.com/jcs-elpa/sound-async"))])
