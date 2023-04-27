@@ -6,6 +6,8 @@
 		 ((:commit . "3223b40ffc468e078bb427b8ef415bd376a230d3")
 		  (:authors
 		   ("Jen-Chieh" . "jcs090218@gmail.com"))
+		  (:maintainers
+		   ("Jen-Chieh" . "jcs090218@gmail.com"))
 		  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 		  (:keywords "faces" "frame-title")
 		  (:url . "https://github.com/jcs-emacs/jcs-frametitle"))])

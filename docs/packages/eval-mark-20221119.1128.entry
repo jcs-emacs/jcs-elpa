@@ -6,6 +6,8 @@
 	    ((:commit . "6749ce3326529dd503ee5a5170516c2aad84b55b")
 	     (:authors
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))
+	     (:maintainers
+	      ("Jen-Chieh" . "jcs090218@gmail.com"))
 	     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	     (:keywords "lisp")
 	     (:url . "https://github.com/jcs-elpa/eval-mark"))])

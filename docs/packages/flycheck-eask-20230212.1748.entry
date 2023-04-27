@@ -8,6 +8,8 @@
 		((:commit . "93cf80d60a8d7080f380e16443e0882ac4656ff1")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
+		 (:maintainers
+		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 		 (:keywords "lisp" "eask")
 		 (:url . "https://github.com/flycheck/flycheck-eask"))])

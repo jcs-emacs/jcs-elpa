@@ -14,6 +14,8 @@
 	       ((:commit . "3b52849e58e7783093a3998fece4db80d920d738")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
+		(:maintainers
+		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 		(:keywords "faces" "mode-line")
 		(:url . "https://github.com/jcs-emacs/jcs-modeline"))])

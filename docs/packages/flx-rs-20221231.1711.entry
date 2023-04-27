@@ -6,6 +6,8 @@
 	 ((:commit . "dd6103249e35b1cfc5382cb6100804ab1020138d")
 	  (:authors
 	   ("Jen-Chieh" . "jcs090218@gmail.com"))
+	  (:maintainers
+	   ("Jen-Chieh" . "jcs090218@gmail.com"))
 	  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	  (:keywords "matching" "fuzzy")
 	  (:url . "https://github.com/jcs-elpa/flx-rs"))])

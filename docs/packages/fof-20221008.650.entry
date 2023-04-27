@@ -8,6 +8,8 @@
       ((:commit . "e1d5587209620dabfcf7af28ec3d86c71bf60862")
        (:authors
 	("Jen-Chieh" . "jcs090218@gmail.com"))
+       (:maintainers
+	("Jen-Chieh" . "jcs090218@gmail.com"))
        (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
        (:keywords "tools")
        (:url . "https://github.com/jcs-elpa/fof"))])

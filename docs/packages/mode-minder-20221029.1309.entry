@@ -6,6 +6,8 @@
 	      ((:commit . "0e976e1f0f5cf4e134da8335bcb0731aa0bbbcad")
 	       (:authors
 		("J.D. Smith" . "jdtsmith@gmail.com"))
+	       (:maintainers
+		("J.D. Smith" . "jdtsmith@gmail.com"))
 	       (:maintainer "J.D. Smith" . "jdtsmith@gmail.com")
 	       (:keywords "modes")
 	       (:url . "https://github.com/jdtsmith/mode-minder"))])

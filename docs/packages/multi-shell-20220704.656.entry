@@ -6,6 +6,8 @@
 	      ((:commit . "726f72da0d0f3878c7cdeac831d7ea29f8595b20")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
+	       (:maintainers
+		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	       (:keywords "convenience" "multiple" "shell" "terminal")
 	       (:url . "https://github.com/jcs-elpa/multi-shell"))])

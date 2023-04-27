@@ -14,6 +14,8 @@
 	      ((:commit . "b4e5cac855d040e5724ac5e1ad1b18e1c770235a")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
+	       (:maintainers
+		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	       (:keywords "faces" "echo-bar")
 	       (:url . "https://github.com/jcs-emacs/jcs-echobar"))])

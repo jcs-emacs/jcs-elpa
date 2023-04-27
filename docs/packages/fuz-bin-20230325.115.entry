@@ -7,6 +7,9 @@
 	   (:authors
 	    ("Zhu Zihao" . "all_but_last@163.com")
 	    ("Jen-Chieh" . "jcs090218@gmail.com"))
+	   (:maintainers
+	    ("Zhu Zihao" . "all_but_last@163.com")
+	    ("Jen-Chieh" . "jcs090218@gmail.com"))
 	   (:maintainer "Zhu Zihao" . "all_but_last@163.com")
 	   (:keywords "lisp")
 	   (:url . "https://github.com/jcs-elpa/fuz-bin"))])

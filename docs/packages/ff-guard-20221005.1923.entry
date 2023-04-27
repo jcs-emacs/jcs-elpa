@@ -10,6 +10,8 @@
 	   ((:commit . "4c6079c1d3fe80d8f116654c646648bc420a9bad")
 	    (:authors
 	     ("Jen-Chieh" . "jcs090218@gmail.com"))
+	    (:maintainers
+	     ("Jen-Chieh" . "jcs090218@gmail.com"))
 	    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	    (:keywords "convenience")
 	    (:url . "https://github.com/jcs-elpa/ff-guard"))])

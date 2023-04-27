@@ -6,5 +6,7 @@
 	      ((:commit . "44df194778503cd2e29e907af4c6989c7ea27d1c")
 	       (:authors
 		("Abhinav Tushar" . "abhinav@lepisma.xyz"))
+	       (:maintainers
+		("Abhinav Tushar" . "abhinav@lepisma.xyz"))
 	       (:maintainer "Abhinav Tushar" . "abhinav@lepisma.xyz")
 	       (:url . "https://github.com/lepisma/compose-language-server.el"))])
