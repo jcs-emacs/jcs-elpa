@@ -6,6 +6,8 @@
        ((:commit . "b3c9791466d8abfefa4105b7621e5ee0e1204641")
 	(:authors
 	 ("Jen-Chieh" . "jcs090218@gmail.com"))
+	(:maintainers
+	 ("Jen-Chieh" . "jcs090218@gmail.com"))
 	(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	(:keywords "lisp" "eask" "api")
 	(:url . "https://github.com/emacs-eask/eask"))])

@@ -6,6 +6,8 @@
 		   ((:commit . "e3cd32ab2fceb7ebaddc0f80925e4dca5cf1af35")
 		    (:authors
 		     ("Jen-Chieh" . "jcs090218@gmail.com"))
+		    (:maintainers
+		     ("Jen-Chieh" . "jcs090218@gmail.com"))
 		    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 		    (:keywords "convenience")
 		    (:url . "https://github.com/emacs-vs/doxygen-asterisk"))])

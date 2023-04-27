@@ -12,6 +12,8 @@
 		 ((:commit . "37adccdbe47281c788fdaa4c879874e7dfb38b87")
 		  (:authors
 		   ("Jen-Chieh" . "jcs090218@gmail.com"))
+		  (:maintainers
+		   ("Jen-Chieh" . "jcs090218@gmail.com"))
 		  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 		  (:keywords "convenience" "eldoc" "c#" "dotnet" "sdk")
 		  (:url . "https://github.com/emacs-vs/eldoc-meta-net"))])

@@ -10,6 +10,8 @@
 	      ((:commit . "a6853b2f125bb6d4b6cfaf89ee96eaf6a91c37e0")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
+	       (:maintainers
+		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	       (:keywords "convenience" "complexity")
 	       (:url . "https://github.com/jcs-elpa/codemetrics"))])

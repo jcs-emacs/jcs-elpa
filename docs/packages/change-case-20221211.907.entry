@@ -10,4 +10,6 @@
 	      ((:commit . "8117113a15be15667b6421257fa4cf233dc81bd2")
 	       (:authors
 		("TakesxiSximada" . "8707279+TakesxiSximada@users.noreply.github.com"))
+	       (:maintainers
+		("TakesxiSximada" . "8707279+TakesxiSximada@users.noreply.github.com"))
 	       (:maintainer "TakesxiSximada" . "8707279+TakesxiSximada@users.noreply.github.com"))])

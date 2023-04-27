@@ -10,6 +10,8 @@
 	       ((:commit . "28734d33327c76b6e5d11875fd8229e73d46562c")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
+		(:maintainers
+		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 		(:keywords "convenience")
 		(:url . "https://github.com/emacs-eask/company-eask"))])

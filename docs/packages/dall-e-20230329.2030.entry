@@ -18,6 +18,8 @@
 	 ((:commit . "7c62003923aea61dfb4bdc627da6daf7c363b965")
 	  (:authors
 	   ("Jen-Chieh" . "jcs090218@gmail.com"))
+	  (:maintainers
+	   ("Jen-Chieh" . "jcs090218@gmail.com"))
 	  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	  (:keywords "comm" "dall-e")
 	  (:url . "https://github.com/emacs-openai/dall-e"))])

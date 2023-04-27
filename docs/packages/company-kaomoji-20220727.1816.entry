@@ -12,6 +12,8 @@
 		  ((:commit . "0c4b26fb19de00ac3fcbb63673d4a0faa9c9b9f0")
 		   (:authors
 		    ("Jen-Chieh" . "jcs090218@gmail.com"))
+		   (:maintainers
+		    ("Jen-Chieh" . "jcs090218@gmail.com"))
 		   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 		   (:keywords "matching" "kaomoji")
 		   (:url . "https://github.com/jcs-elpa/company-kaomoji"))])

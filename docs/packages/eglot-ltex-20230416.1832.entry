@@ -10,6 +10,8 @@
 	     ((:commit . "d447161aee1ae5ef7bab8b2d8a352f40e8555de7")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
+	      (:maintainers
+	       ("Jen-Chieh" . "jcs090218@gmail.com"))
 	      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	      (:keywords "convenience" "eglot" "languagetool" "checker")
 	      (:url . "https://github.com/emacs-languagetool/eglot-ltex"))])

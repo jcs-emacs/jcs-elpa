@@ -8,6 +8,8 @@
 		 ((:commit . "cab6ebe0c1048881e565de98c3d159a05652db75")
 		  (:authors
 		   ("Noah Peart" . "noah.v.peart@gmail.com"))
+		  (:maintainers
+		   ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
 		  (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
 		  (:keywords "convenience")
 		  (:url . "https://github.com/elp-revive/company-coffee"))])

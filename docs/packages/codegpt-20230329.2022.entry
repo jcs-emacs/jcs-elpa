@@ -12,6 +12,8 @@
 	  ((:commit . "d5de204b6438eafeaa667d3007699f84ac87f5f9")
 	   (:authors
 	    ("Jen-Chieh" . "jcs090218@gmail.com"))
+	   (:maintainers
+	    ("Jen-Chieh" . "jcs090218@gmail.com"))
 	   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	   (:keywords "convenience" "codegpt")
 	   (:url . "https://github.com/emacs-openai/codegpt"))])

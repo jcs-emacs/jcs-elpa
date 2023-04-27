@@ -14,6 +14,8 @@
 		     ((:commit . "6bd4bb623cd604a4decb97ad512c59661aa14ec3")
 		      (:authors
 		       ("Jen-Chieh" . "jcs090218@gmail.com"))
+		      (:maintainers
+		       ("Jen-Chieh" . "jcs090218@gmail.com"))
 		      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 		      (:keywords "convenience" "buffer" "menu" "filter")
 		      (:url . "https://github.com/jcs-elpa/buffer-menu-filter"))])

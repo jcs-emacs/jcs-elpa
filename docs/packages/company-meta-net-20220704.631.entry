@@ -12,6 +12,8 @@
 		   ((:commit . "0abcd6148fdea09dc7c65dce4d71a1aa78554873")
 		    (:authors
 		     ("Jen-Chieh" . "jcs090218@gmail.com"))
+		    (:maintainers
+		     ("Jen-Chieh" . "jcs090218@gmail.com"))
 		    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 		    (:keywords "convenience" "csproj" "csharp" "company")
 		    (:url . "https://github.com/emacs-vs/company-meta-net"))])

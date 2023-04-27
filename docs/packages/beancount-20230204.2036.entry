@@ -4,4 +4,6 @@
 	    ((:commit . "519bfd868f206ed2fc538a57cdb631c4fec3c93e")
 	     (:authors
 	      ("Martin Blais" . "blais@furius.ca"))
+	     (:maintainers
+	      ("Martin Blais" . "blais@furius.ca"))
 	     (:maintainer "Martin Blais" . "blais@furius.ca"))])

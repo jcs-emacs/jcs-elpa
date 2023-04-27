@@ -8,6 +8,8 @@
 		((:commit . "64d48319077094ed74157f652eaa166fcd602302")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
+		 (:maintainers
+		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 		 (:keywords "convenience")
 		 (:url . "https://github.com/emacs-vs/company-paths"))])

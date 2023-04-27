@@ -6,6 +6,9 @@
 		       (0 5 0)))
 		     "Ace link for dashboard" single
 		     ((:commit . "079e5329d3492ad9aa295fdb9f4e5386825f651f")
+		      (:maintainers
+		       ("Ricardo Arredondo" . "ricardo.richo@gmail.com")
+		       ("Jen-Chieh" . "jcs090218@gmail.com"))
 		      (:maintainer "Ricardo Arredondo" . "ricardo.richo@gmail.com")
 		      (:keywords "tools")
 		      (:url . "https://github.com/emacs-dashboard/ace-link-dashboard"))])

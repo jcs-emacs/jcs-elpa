@@ -14,6 +14,8 @@
 	      ((:commit . "a023aca985f19dad4dd2dc0050676491a984eaac")
 	       (:authors
 		("Sebastien Chapuis" . "sebastien@chapu.is"))
+	       (:maintainers
+		("Jen-Chieh Shen" . "jcs090218@gmail.com"))
 	       (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
 	       (:keywords "company" "completion" "front-end" "convenience")
 	       (:url . "https://github.com/elp-revive/company-box"))])

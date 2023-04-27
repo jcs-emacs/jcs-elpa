@@ -6,6 +6,8 @@
 		   ((:commit . "fd360ca6416e56d8df92bbcb0f7aec37e201f2e7")
 		    (:authors
 		     ("wouter bolsterlee" . "wouter@bolsterl.ee"))
+		    (:maintainers
+		     ("wouter bolsterlee" . "wouter@bolsterl.ee"))
 		    (:maintainer "wouter bolsterlee" . "wouter@bolsterl.ee")
 		    (:keywords "convenience")
 		    (:url . "https://github.com/elp-revive/emacs-balanced-windows"))])

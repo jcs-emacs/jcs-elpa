@@ -10,6 +10,8 @@
 		     ((:commit . "0380259960aeac873c7bec1e9c5218da0a82c358")
 		      (:authors
 		       ("Noah Peart" . "noah.v.peart@gmail.com"))
+		      (:maintainers
+		       ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
 		      (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
 		      (:keywords "convenience")
 		      (:url . "https://github.com/elp-revive/company-powershell"))])

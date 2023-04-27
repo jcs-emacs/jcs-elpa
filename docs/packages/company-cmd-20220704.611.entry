@@ -8,6 +8,8 @@
 		(2 4)))
 	      "company backend for cmd/batch" single
 	      ((:commit . "cf393156e92fb2ac503dfa328e7e96b547fc2a97")
+	       (:maintainers
+		("Jen-Chieh Shen" . "jcs090218@gmail.com"))
 	       (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
 	       (:keywords "convenience")
 	       (:url . "https://github.com/elp-revive/company-cmd"))])

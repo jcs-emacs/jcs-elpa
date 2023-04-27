@@ -10,6 +10,8 @@
 		    ((:commit . "e9c25243b992fd8ad822312549b3844d45e7936a")
 		     (:authors
 		      ("Alastair Rankine" . "alastair@girtby.net"))
+		     (:maintainers
+		      ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
 		     (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
 		     (:keywords "convenience" "development" "company")
 		     (:url . "http://github.com/elp-revive/company-c-headers"))])
