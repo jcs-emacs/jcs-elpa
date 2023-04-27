@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-frametitle
-;; Package-Version: 20230426.102
-;; Package-Commit: a8c4ac2b00d6b58785a68978dba6f7c70b4c3b4c
+;; Package-Version: 20230427.57
+;; Package-Commit: 3223b40ffc468e078bb427b8ef415bd376a230d3
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: faces frame-title
@@ -136,9 +136,15 @@
   "Render username and host."
   (format "%s@%s: " user-real-login-name (system-name)))
 
+(defcustom jcs-frametitle-buffer-name-prefix "📌 "
+  "Prefix to display before the buffer name."
+  :type 'string
+  :group 'jcs-frametitle)
+
 (defun jcs-frametitle--render-buffer-name ()
   "Render buffer name."
-  (concat (if (and buffer-file-name (buffer-modified-p)) "*" "")
+  (concat jcs-frametitle-buffer-name-prefix
+          (if (and buffer-file-name (buffer-modified-p)) "*" "")
           (if buffer-file-name "%f" "%b")))
 
 (provide 'jcs-frametitle)
