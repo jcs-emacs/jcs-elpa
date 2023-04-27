@@ -695,10 +695,10 @@
   {
     "name": "jcs-frametitle",
     "summary": "A frame title for jcs-emacs",
-    "version": "20230426.102",
+    "version": "20230427.57",
     "url": "https://github.com/jcs-emacs/jcs-frametitle",
     "source": "github",
-    "commit": "a8c4ac2b00d6b58785a68978dba6f7c70b4c3b4c",
+    "commit": "3223b40ffc468e078bb427b8ef415bd376a230d3",
     "tree": "https://github.com/jcs-emacs/jcs-frametitle"
   },
   {
