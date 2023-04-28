@@ -110,10 +110,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "Interaction mode for ChatGPT",
-    "version": "20230428.1800",
+    "version": "20230428.1943",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "c048f9c41dca8c13149161926aced51fda6e7252",
+    "commit": "7661665d4e17c020e29fce513f85219255cf2046",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -938,10 +938,10 @@
   {
     "name": "package-build",
     "summary": "Tools for assembling a package archive",
-    "version": "20230427.2117",
+    "version": "20230428.1928",
     "url": "https://github.com/melpa/package-build",
     "source": "github",
-    "commit": "eacf6ba6139624b5718ec389a97ef167fc780b13",
+    "commit": "82677d41a8a7d601a11a39791d44f883df2ce2c5",
     "tree": "https://github.com/melpa/package-build"
   },
   {
