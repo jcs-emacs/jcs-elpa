@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-echobar
-;; Package-Version: 20230113.1605
-;; Package-Commit: b4e5cac855d040e5724ac5e1ad1b18e1c770235a
+;; Package-Version: 20230429.539
+;; Package-Commit: 28743d8d93485c3cdfabddb0a52317261c54f2b5
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (echo-bar "1.0.0") (indent-control "0.1.0") (show-eol "0.1.0") (keycast "1.2.0"))
 ;; Keywords: faces echo-bar
@@ -125,7 +125,7 @@
 
 (defun jcs-echobar--buffer-spaces-or-tabs ()
   "Check if buffer using spaces or tabs."
-  (if (= (how-many "^\t" (point-min) (point-max)) 0) "SPC" "TAB"))
+  (if indent-tabs-mode "TAB" "SPC"))
 
 ;;
 ;; (@* "Core" )
