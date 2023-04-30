@@ -1,0 +1,1 @@
+(qsharp-mode :repo "forked-from-1kasper/emacs-qsharp-mode" :fetcher github)
