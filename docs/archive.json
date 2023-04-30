@@ -792,6 +792,15 @@
     "tree": "https://github.com/emacs-grammarly/lsp-grammarly-un"
   },
   {
+    "name": "lsp-shader",
+    "summary": "LSP Clients for ShaderLab",
+    "version": "20230430.2344",
+    "url": "https://github.com/lsp-mode/lsp-shader",
+    "source": "github",
+    "commit": "89ba85bd51cce890cffe12d969c730dd4c9b4d22",
+    "tree": "https://github.com/lsp-mode/lsp-shader"
+  },
+  {
     "name": "maple-line",
     "summary": "maple line configuration.",
     "version": "20200519.1557",
