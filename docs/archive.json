@@ -982,11 +982,11 @@
   },
   {
     "name": "qsharp-mode",
-    "summary": "Programming mode for the Q# language.",
-    "version": "20190416.931",
+    "summary": "Programming mode for the Q# language",
+    "version": "20230501.455",
     "url": "https://github.com/forked-from-1kasper/emacs-qsharp-mode",
     "source": "github",
-    "commit": "1e52e85fa516a20a568420d60b43fb7b22f49efc",
+    "commit": "8dcb2d064ce0a12d436016a3c6dcb6b4a672917b",
     "tree": "https://github.com/forked-from-1kasper/emacs-qsharp-mode"
   },
   {
