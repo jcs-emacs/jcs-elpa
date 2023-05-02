@@ -794,11 +794,11 @@
   {
     "name": "lsp-shader",
     "summary": "LSP Clients for ShaderLab",
-    "version": "20230502.750",
-    "url": "https://github.com/lsp-mode/lsp-shader",
+    "version": "20230502.758",
+    "url": "https://github.com/shader-ls/lsp-shader",
     "source": "github",
-    "commit": "0cad32fa377fa004a07dd7458fbac712a2b69625",
-    "tree": "https://github.com/lsp-mode/lsp-shader"
+    "commit": "fe2f218ae72daa2a18dd890754a2989a0275dd33",
+    "tree": "https://github.com/shader-ls/lsp-shader"
   },
   {
     "name": "maple-line",
