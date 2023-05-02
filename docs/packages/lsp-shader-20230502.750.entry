@@ -1,11 +1,11 @@
 (lsp-shader .
-	    [(20230430 2344)
+	    [(20230502 750)
 	     ((emacs
 	       (27 1))
 	      (lsp-mode
 	       (6 1)))
 	     "LSP Clients for ShaderLab" single
-	     ((:commit . "89ba85bd51cce890cffe12d969c730dd4c9b4d22")
+	     ((:commit . "0cad32fa377fa004a07dd7458fbac712a2b69625")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
 	      (:maintainers
