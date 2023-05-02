@@ -5,8 +5,8 @@
 ;; Author: Siegmentation Fault <siegmentationfault@yandex.ru>
 ;; Maintainer: Siegmentation Fault <siegmentationfault@yandex.ru>
 ;; URL: https://github.com/forked-from-1kasper/emacs-qsharp-mode
-;; Package-Version: 20230501.455
-;; Package-Commit: 8dcb2d064ce0a12d436016a3c6dcb6b4a672917b
+;; Package-Version: 20230502.727
+;; Package-Commit: 402bf231c823776480323c00a3dba85f9467e0cf
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "24.1"))
 ;; Keywords: languages, q#, quantum
@@ -66,6 +66,7 @@
 		  '(("new \\(\\w+\\)\\b" . (1 font-lock-type-face)))
 		  '(("\\b\\w+ : \\(\\w+\\)\\b" . (1 font-lock-type-face)))))
 
+;;;###autoload
 (define-derived-mode qsharp-mode fundamental-mode "Q# mode"
   "major mode for editing Q# code"
   :syntax-table qsharp-mode-syntax-table
