@@ -324,6 +324,24 @@
     "tree": "https://github.com/emacs-openai/dall-e"
   },
   {
+    "name": "dashboard",
+    "summary": "A startup screen extracted from Spacemacs",
+    "version": "20230502.2213",
+    "url": "https://github.com/emacs-dashboard/emacs-dashboard",
+    "source": "github",
+    "commit": "7991d920dc7d906f2b2bef31126434c59e00fe49",
+    "tree": "https://github.com/emacs-dashboard/emacs-dashboard"
+  },
+  {
+    "name": "dashboard-ls",
+    "summary": "Display files/directories in current directory on Dashboard",
+    "version": "20221231.1629",
+    "url": "https://github.com/emacs-dashboard/dashboard-ls",
+    "source": "github",
+    "commit": "b24e0bcb87e20ffcc71efb83a97f9516255fa8e4",
+    "tree": "https://github.com/emacs-dashboard/dashboard-ls"
+  },
+  {
     "name": "deepl",
     "summary": "Elisp library for the DeepL API",
     "version": "20230413.1900",
