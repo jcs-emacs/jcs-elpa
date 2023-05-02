@@ -1,11 +1,11 @@
 (ace-link-dashboard .
-		    [(20230418 2139)
+		    [(20230501 2353)
 		     ((emacs
 		       (26 1))
 		      (avy
 		       (0 5 0)))
 		     "Ace link for dashboard" single
-		     ((:commit . "079e5329d3492ad9aa295fdb9f4e5386825f651f")
+		     ((:commit . "8ce7e2ba6290ee9aeab56056a61b5df1df501bf0")
 		      (:maintainers
 		       ("Ricardo Arredondo" . "ricardo.richo@gmail.com")
 		       ("Jen-Chieh" . "jcs090218@gmail.com"))

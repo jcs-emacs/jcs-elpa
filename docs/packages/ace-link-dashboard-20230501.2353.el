@@ -6,8 +6,8 @@
 ;; Maintainer: Ricardo Arredondo <ricardo.richo@gmail.com>
 ;;             Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-dashboard/ace-link-dashboard
-;; Package-Version: 20230418.2139
-;; Package-Commit: 079e5329d3492ad9aa295fdb9f4e5386825f651f
+;; Package-Version: 20230501.2353
+;; Package-Commit: 8ce7e2ba6290ee9aeab56056a61b5df1df501bf0
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (avy "0.5.0"))
 ;; Keywords: tools
@@ -34,9 +34,9 @@
 
 ;;; Code:
 
-(require 'wid-edit)
 
 (require 'avy)
+(require 'wid-edit)
 
 (declare-function dashboard-remove-item-under "dashboard" nil)
 
@@ -44,11 +44,11 @@
 (defun ace-link-dashboard ()
   "Open a visible link in a `dashboard-mode' buffer."
   (interactive)
-  (let ((pt (avy-with 'ace-link-dashboard
+  (let ((point (avy-with 'ace-link-dashboard
               (avy-process
                (mapcar #'cdr (ace-link-dashboard--collect))
                (avy--style-fn avy-style)))))
-    (ace-link-dashboard--action pt)))
+    (ace-link-dashboard--action point)))
 
 ;;;###autoload
 (defun ace-link-dashboard-remove ()
@@ -56,7 +56,7 @@
   (interactive)
   (let ((point (avy-with 'ace-link-dashboard-remove
                  (avy-process
-                  (mapcar #'cdr (ace-link-dashboard--collect))
+                  (mapcar #'cdr (ace-link-dashboard--remove-collect))
                   (avy--style-fn avy-style)))))
     (ace-link-dashboard--remove point)))
 
@@ -68,10 +68,8 @@
   "Call remove action on item at POINT."
   (dashboard-remove-item-under))
 
-(defun ace-link-dashboard--collect (&optional in-section)
-  "Collect all widgets in the current `dashboard-mode' buffer.
-When IN-SECTION is non-nil, only collect widgets within a known section
-of `dashboard-mode' buffer."
+(defun ace-link-dashboard--collect ()
+  "Collect all widgets in the current `dashboard-mode' buffer."
   (save-excursion
     (let ((previous-point (window-start))
           (candidates nil)
@@ -81,7 +79,7 @@ of `dashboard-mode' buffer."
         (setq previous-point (point))
         (push (cons (widget-at previous-point)
                     (ace-link-dashboard--widget-avy-point previous-point))
-                candidates))
+              candidates))
       (nreverse candidates))))
 
 (defun ace-link-dashboard--widget-avy-point (point)
@@ -90,6 +88,14 @@ When point is over an icon avy overlay could not be seen."
   (if (eq 'unicode (char-charset (char-after point)))
       (+ 2 point)
     point))
+
+(defun ace-link-dashboard--remove-collect ()
+  "Return widget candidates that can be remove.
+Remove candidates with `dashboard-navigator' property."
+  (cl-remove-if (lambda (widget-point)
+                  (memq 'dashboard-navigator
+                        (text-properties-at (cdr widget-point))))
+                (ace-link-dashboard--collect)))
 
 (provide 'ace-link-dashboard)
 ;;; ace-link-dashboard.el ends here
