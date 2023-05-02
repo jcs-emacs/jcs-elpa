@@ -110,10 +110,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "Interaction mode for ChatGPT",
-    "version": "20230501.1618",
+    "version": "20230502.731",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "5fd3d107f21f51340c4580ff12a792fb3cdee2d6",
+    "commit": "28ef2bf92dce047e0680a22c7e1d86b776f55425",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -794,10 +794,10 @@
   {
     "name": "lsp-shader",
     "summary": "LSP Clients for ShaderLab",
-    "version": "20230430.2344",
+    "version": "20230502.750",
     "url": "https://github.com/lsp-mode/lsp-shader",
     "source": "github",
-    "commit": "89ba85bd51cce890cffe12d969c730dd4c9b4d22",
+    "commit": "0cad32fa377fa004a07dd7458fbac712a2b69625",
     "tree": "https://github.com/lsp-mode/lsp-shader"
   },
   {
@@ -983,10 +983,10 @@
   {
     "name": "qsharp-mode",
     "summary": "Programming mode for the Q# language",
-    "version": "20230501.455",
+    "version": "20230502.727",
     "url": "https://github.com/forked-from-1kasper/emacs-qsharp-mode",
     "source": "github",
-    "commit": "8dcb2d064ce0a12d436016a3c6dcb6b4a672917b",
+    "commit": "402bf231c823776480323c00a3dba85f9467e0cf",
     "tree": "https://github.com/forked-from-1kasper/emacs-qsharp-mode"
   },
   {
