@@ -326,10 +326,10 @@
   {
     "name": "dashboard",
     "summary": "A startup screen extracted from Spacemacs",
-    "version": "20230502.2305",
+    "version": "20230503.901",
     "url": "https://github.com/emacs-dashboard/emacs-dashboard",
     "source": "github",
-    "commit": "b17f168f7f3e6e13aef39818571a18e640301db9",
+    "commit": "770945b2d62014ab949e7472860acb739393d15e",
     "tree": "https://github.com/emacs-dashboard/emacs-dashboard"
   },
   {
@@ -812,10 +812,10 @@
   {
     "name": "lsp-shader",
     "summary": "LSP Clients for ShaderLab",
-    "version": "20230502.758",
+    "version": "20230503.848",
     "url": "https://github.com/shader-ls/lsp-shader",
     "source": "github",
-    "commit": "fe2f218ae72daa2a18dd890754a2989a0275dd33",
+    "commit": "7e7b4ee29a7dd5bbbb4c94f3921e6766e8b10992",
     "tree": "https://github.com/shader-ls/lsp-shader"
   },
   {
