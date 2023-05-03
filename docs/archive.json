@@ -1206,6 +1206,15 @@
     "tree": "https://github.com/jcs-elpa/undo-tree-vf"
   },
   {
+    "name": "use-ttf",
+    "summary": "Keep font consistency across different OSs",
+    "version": "20230503.1015",
+    "url": "https://github.com/jcs-elpa/use-ttf",
+    "source": "github",
+    "commit": "a01d9aef26ffc45dbe8d57d7c061a3a80eb79a2b",
+    "tree": "https://github.com/jcs-elpa/use-ttf"
+  },
+  {
     "name": "vbs-repl",
     "summary": "Run visual basic repl as inferior process",
     "version": "20160720.820",
