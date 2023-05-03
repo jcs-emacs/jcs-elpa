@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/shader-ls/lsp-shader
-;; Package-Version: 20230502.758
-;; Package-Commit: fe2f218ae72daa2a18dd890754a2989a0275dd33
+;; Package-Version: 20230503.848
+;; Package-Commit: 7e7b4ee29a7dd5bbbb4c94f3921e6766e8b10992
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (lsp-mode "6.1"))
 ;; Keywords: convenience shader
