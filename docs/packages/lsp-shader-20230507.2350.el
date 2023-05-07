@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/shader-ls/lsp-shader
-;; Package-Version: 20230503.848
-;; Package-Commit: 7e7b4ee29a7dd5bbbb4c94f3921e6766e8b10992
+;; Package-Version: 20230507.2350
+;; Package-Commit: 77b14eba20a4be2243b05530a78bb14c3a1f2a9a
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (lsp-mode "6.1"))
 ;; Keywords: convenience shader
@@ -47,6 +47,12 @@ This is only for development use."
   :type 'string
   :group 'lsp-shader)
 
+(defcustom lsp-shader-active-modes
+  '(shader-mode hlsl-mode glsl-mode)
+  "List of major mode that work with shader-ls."
+  :type 'list
+  :group 'lsp-shader)
+
 (defcustom lsp-shader-completion-word t
   "Non-nil to enable word completion."
   :type 'string
@@ -82,8 +88,8 @@ Will update if UPDATE? is t"
                                         #'lsp-shader--cls-test-shader-ls-present)
   :priority -1
   :server-id 'shader-ls
-  :activation-fn (lsp-activate-on "shaderlab")
-  :major-modes '(shader-mode)
+  :major-modes lsp-shader-active-modes
+  :add-on? t
   :download-server-fn #'lsp-shader--cls-download-server))
 
 (provide 'lsp-shader)
