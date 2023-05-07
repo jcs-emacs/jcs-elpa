@@ -812,10 +812,10 @@
   {
     "name": "lsp-shader",
     "summary": "LSP Clients for ShaderLab",
-    "version": "20230503.848",
+    "version": "20230507.2350",
     "url": "https://github.com/shader-ls/lsp-shader",
     "source": "github",
-    "commit": "7e7b4ee29a7dd5bbbb4c94f3921e6766e8b10992",
+    "commit": "77b14eba20a4be2243b05530a78bb14c3a1f2a9a",
     "tree": "https://github.com/shader-ls/lsp-shader"
   },
   {
