@@ -1,5 +1,5 @@
 (treemacs-nerd-icons .
-		     [(20230424 1854)
+		     [(20230509 1659)
 		      ((emacs
 			(24 3))
 		       (nerd-icons
@@ -7,7 +7,7 @@
 		       (treemacs
 			(0 0)))
 		      "Emacs Nerd Font Icons theme for treemacs" single
-		      ((:commit . "c6f4a74ea4f414528fc43a6fe95f7f17687faeb4")
+		      ((:commit . "5b09f58e48658328d35e65538224a860fa777496")
 		       (:authors
 			("Hongyu Ding" . "rainstormstudio@yahoo.com"))
 		       (:maintainers
