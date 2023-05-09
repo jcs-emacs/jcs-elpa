@@ -110,10 +110,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "Interaction mode for ChatGPT",
-    "version": "20230508.2225",
+    "version": "20230509.806",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "296475c97763eb4b691b44878339a3db8c8d6d05",
+    "commit": "557316b6c02054c5148bca50e101d1b29a6ea4e8",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -326,10 +326,10 @@
   {
     "name": "dashboard",
     "summary": "A startup screen extracted from Spacemacs",
-    "version": "20230503.1851",
+    "version": "20230509.834",
     "url": "https://github.com/emacs-dashboard/emacs-dashboard",
     "source": "github",
-    "commit": "3fce60c285ed4d22a00d6f5b49335d038aa9cd41",
+    "commit": "ce0c33cc5af0188a3ea2215c67cd3fb0ae193fea",
     "tree": "https://github.com/emacs-dashboard/emacs-dashboard"
   },
   {
