@@ -1145,10 +1145,10 @@
   {
     "name": "treemacs-nerd-icons",
     "summary": "Emacs Nerd Font Icons theme for treemacs",
-    "version": "20230424.1854",
+    "version": "20230509.1659",
     "url": "https://github.com/rainstormstudio/treemacs-nerd-icons",
     "source": "github",
-    "commit": "c6f4a74ea4f414528fc43a6fe95f7f17687faeb4",
+    "commit": "5b09f58e48658328d35e65538224a860fa777496",
     "tree": "https://github.com/rainstormstudio/treemacs-nerd-icons"
   },
   {
