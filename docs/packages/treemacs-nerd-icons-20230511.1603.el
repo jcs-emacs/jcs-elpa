@@ -4,8 +4,8 @@
 
 ;; Author: Hongyu Ding <rainstormstudio@yahoo.com>
 ;; Keywords: lisp
-;; Package-Version: 20230509.1659
-;; Package-Commit: 5b09f58e48658328d35e65538224a860fa777496
+;; Package-Version: 20230511.1603
+;; Package-Commit: f18228eaf6ecd28eb5c5ede3550c94cd12aac856
 ;; Version: 0.0.1
 ;; Package-Requires: ((emacs "24.3") (nerd-icons "0.0.1") (treemacs "0.0"))
 ;; URL: https://github.com/rainstormstudio/treemacs-nerd-icons
@@ -62,7 +62,7 @@
                                     (tui-icon  (cdr icon-pair)))
                                (ht-set! gui-icons extension gui-icon)
                                (ht-set! tui-icons extension tui-icon))))
-                         
+
                          ;; directory and other icons
                          (treemacs-create-icon :icon (format "%s%s" (nerd-icons-octicon "nf-oct-repo"   :face 'treemacs-nerd-icons-root-face) treemacs-nerd-icons-tab)
                                                :extensions (root-closed root-open)
@@ -72,6 +72,24 @@
                                                :fallback 'same-as-icon)
                          (treemacs-create-icon :icon (format "%s%s%s%s" (nerd-icons-octicon "nf-oct-chevron_right"   :face 'treemacs-nerd-icons-file-face) treemacs-nerd-icons-tab (nerd-icons-octicon "nf-oct-file_directory"  :face 'treemacs-nerd-icons-file-face) treemacs-nerd-icons-tab)
                                                :extensions (dir-closed)
+                                               :fallback 'same-as-icon)
+                         (treemacs-create-icon :icon (format "%s%s%s%s" (nerd-icons-octicon "nf-oct-chevron_down"   :face 'treemacs-nerd-icons-file-face) treemacs-nerd-icons-tab (nerd-icons-octicon "nf-oct-file_directory"  :face 'treemacs-nerd-icons-file-face) treemacs-nerd-icons-tab)
+                                               :extensions (src-open)
+                                               :fallback 'same-as-icon)
+                         (treemacs-create-icon :icon (format "%s%s%s%s" (nerd-icons-octicon "nf-oct-chevron_right"   :face 'treemacs-nerd-icons-file-face) treemacs-nerd-icons-tab (nerd-icons-octicon "nf-oct-file_directory"  :face 'treemacs-nerd-icons-file-face) treemacs-nerd-icons-tab)
+                                               :extensions (src-closed)
+                                               :fallback 'same-as-icon)
+                         (treemacs-create-icon :icon (format "%s%s%s%s" (nerd-icons-octicon "nf-oct-chevron_down"   :face 'treemacs-nerd-icons-file-face) treemacs-nerd-icons-tab (nerd-icons-octicon "nf-oct-file_directory"  :face 'treemacs-nerd-icons-file-face) treemacs-nerd-icons-tab)
+                                               :extensions (build-open)
+                                               :fallback 'same-as-icon)
+                         (treemacs-create-icon :icon (format "%s%s%s%s" (nerd-icons-octicon "nf-oct-chevron_right"   :face 'treemacs-nerd-icons-file-face) treemacs-nerd-icons-tab (nerd-icons-octicon "nf-oct-file_directory"  :face 'treemacs-nerd-icons-file-face) treemacs-nerd-icons-tab)
+                                               :extensions (build-closed)
+                                               :fallback 'same-as-icon)
+                         (treemacs-create-icon :icon (format "%s%s%s%s" (nerd-icons-octicon "nf-oct-chevron_down"   :face 'treemacs-nerd-icons-file-face) treemacs-nerd-icons-tab (nerd-icons-octicon "nf-oct-file_directory"  :face 'treemacs-nerd-icons-file-face) treemacs-nerd-icons-tab)
+                                               :extensions (test-open)
+                                               :fallback 'same-as-icon)
+                         (treemacs-create-icon :icon (format "%s%s%s%s" (nerd-icons-octicon "nf-oct-chevron_right"   :face 'treemacs-nerd-icons-file-face) treemacs-nerd-icons-tab (nerd-icons-octicon "nf-oct-file_directory"  :face 'treemacs-nerd-icons-file-face) treemacs-nerd-icons-tab)
+                                               :extensions (test-closed)
                                                :fallback 'same-as-icon)
                          (treemacs-create-icon :icon (format "%s%s%s%s" (nerd-icons-octicon "nf-oct-chevron_down"   :face 'treemacs-nerd-icons-file-face) treemacs-nerd-icons-tab (nerd-icons-octicon "nf-oct-package"  :face 'treemacs-nerd-icons-file-face) treemacs-nerd-icons-tab)
                                                :extensions (tag-open)
