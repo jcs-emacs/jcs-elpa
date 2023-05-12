@@ -1,6 +1,6 @@
 ;;; sideline-eldoc.el --- sideline backend for eldoc.  -*- lexical-binding: t; -*-
-;; Package-Version: 20230315.322
-;; Package-Commit: 1e709f18bbc76b4a422d7c23288f4478d2ff0960
+;; Package-Version: 20230512.620
+;; Package-Commit: ffeecf0da1a007380fc2e6358ff90d3aad3db0db
 
 ;; Copyright (C) 2023  Qiqi Jin
 
@@ -89,9 +89,8 @@ COMMAND is input parameter."
 
 (defun sideline-eldoc--display (callback &rest _)
   "Execute CALLBACK to display with sideline."
-  (when eldoc-mode
-    (when-let ((msg sideline-eldoc--message)
-               )
+  (when (and eldoc-mode (eq major-mode #'emacs-lisp-mode))
+    (when-let ((msg sideline-eldoc--message))
       (funcall callback (sideline-eldoc--combine-all-infomations)))))
 
 (defun sideline-eldoc--combine-all-infomations ()
