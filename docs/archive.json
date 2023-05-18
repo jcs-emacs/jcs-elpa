@@ -676,11 +676,11 @@
   },
   {
     "name": "jai-mode",
-    "summary": "Major mdoe for JAI",
-    "version": "20230424.1229",
+    "summary": "Major mode for JAI",
+    "version": "20230518.2255",
     "url": "https://github.com/krig/jai-mode",
     "source": "github",
-    "commit": "7963240b6b4e02dba6b0623db47ed55145a65b16",
+    "commit": "2330b3748fad226941999f242c3b40731d7336ca",
     "tree": "https://github.com/krig/jai-mode"
   },
   {
