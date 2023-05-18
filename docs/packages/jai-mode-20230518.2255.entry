@@ -1,9 +1,9 @@
 (jai-mode .
-	  [(20230424 1229)
+	  [(20230518 2255)
 	   ((emacs
 	     (26 1)))
-	   "Major mdoe for JAI" single
-	   ((:commit . "7963240b6b4e02dba6b0623db47ed55145a65b16")
+	   "Major mode for JAI" single
+	   ((:commit . "2330b3748fad226941999f242c3b40731d7336ca")
 	    (:authors
 	     ("Kristoffer Grönlund" . "k@ziran.se"))
 	    (:maintainers

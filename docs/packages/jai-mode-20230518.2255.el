@@ -1,12 +1,12 @@
-;;; jai-mode.el --- Major mdoe for JAI  -*- lexical-binding: t; -*-
+;;; jai-mode.el --- Major mode for JAI  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2015-2023  Kristoffer Grönlund
 
 ;; Author: Kristoffer Grönlund <k@ziran.se>
 ;; Maintainer: Kristoffer Grönlund <k@ziran.se>
 ;; URL: https://github.com/krig/jai-mode
-;; Package-Version: 20230424.1229
-;; Package-Commit: 7963240b6b4e02dba6b0623db47ed55145a65b16
+;; Package-Version: 20230518.2255
+;; Package-Commit: 2330b3748fad226941999f242c3b40731d7336ca
 ;; Version: 0.0.1
 ;; Package-Requires: ((emacs "26.1"))
 ;; Keywords: languages
