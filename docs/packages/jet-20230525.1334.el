@@ -5,9 +5,9 @@
 ;; Author: Eric Dallo <ercdll1337@gmail.com>
 ;; Maintainer: Eric Dallo <ercdll1337@gmail.com>
 ;; Created: january 24, 2023
-;; Version: 1.1.0
-;; Package-Version: 20230502.1216
-;; Package-Commit: fd0544d641207e73e81f9989c155a18c1378a0cc
+;; Version: 1.1.1
+;; Package-Version: 20230525.1334
+;; Package-Commit: 7a3821c2f351a3770ae23e143f286e6c3a868d38
 ;; Keywords: tools
 ;; Homepage: https://github.com/ericdallo/jet.el
 ;; Package-Requires: ((emacs "27.1") (transient "0.3.7"))
@@ -46,7 +46,7 @@
   :group 'jet
   :type 'number)
 
-(defvar jet-version-string "1.1.0")
+(defvar jet-version-string "1.1.1")
 
 (defvar jet-output-buffer-name "*jet output*")
 (defvar jet-error-buffer-name "*jet error*")
@@ -114,9 +114,10 @@
 
 (defun jet-menu--run (thing args)
   "Run jet for THING at cursor and ARGS and return result."
-  (apply #'jet--run
-         (format "echo '%s' | %s" thing jet-command)
-         args))
+  (let ((quoted-thing (replace-regexp-in-string (regexp-quote "'") "'\\''" thing nil 'literal)))
+    (apply #'jet--run
+           (format "echo '%s' | %s" quoted-thing jet-command)
+           args)))
 
 (defun jet-menu--interactive-args ()
   "Interactive args for `jet-menu--run' functions."
