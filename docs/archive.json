@@ -1163,10 +1163,10 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20230527.552",
+    "version": "20230527.1830",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "27c6bc4819029a91174e1106184ba07ef3dec856",
+    "commit": "bc3e5dda46405839197536e06875d469ac992070",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
