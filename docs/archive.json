@@ -290,10 +290,10 @@
   {
     "name": "copilot",
     "summary": "An unofficial Copilot plugin for Emacs",
-    "version": "20230512.917",
+    "version": "20230527.507",
     "url": "https://github.com/zerolfx/copilot.el",
     "source": "github",
-    "commit": "15a698ebc1d6ffa10da7d6d7e9f972786d0ce526",
+    "commit": "5593db8d45292f25b2e10fdfb25bde5a1b0fc203",
     "tree": "https://github.com/zerolfx/copilot.el"
   },
   {
@@ -1163,10 +1163,10 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20230409.831",
+    "version": "20230527.552",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "5fd2a5afe2112ac23b58ee1b12730fcf16068df3",
+    "commit": "27c6bc4819029a91174e1106184ba07ef3dec856",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
