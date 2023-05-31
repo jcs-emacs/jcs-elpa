@@ -110,10 +110,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "ChatGPT shell + buffer insert commands",
-    "version": "20230530.755",
+    "version": "20230531.732",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "43b49f6da990ba3abec32a6e776d89dfea34a2b9",
+    "commit": "4e117234f07991a1f1d100be84fbf2f4689ae39d",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -236,10 +236,10 @@
   {
     "name": "company-fuzzy",
     "summary": "Fuzzy matching for `company-mode'",
-    "version": "20230501.656",
+    "version": "20230531.743",
     "url": "https://github.com/jcs-elpa/company-fuzzy",
     "source": "github",
-    "commit": "6f8941f97f050a844dc22d2b1e02f976b558a35c",
+    "commit": "85dd0a7852db70673d70387a834af01ed705c3f7",
     "tree": "https://github.com/jcs-elpa/company-fuzzy"
   },
   {
