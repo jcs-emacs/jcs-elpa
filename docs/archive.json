@@ -722,10 +722,10 @@
   {
     "name": "jcs-modeline",
     "summary": "A modeline for jcs-emacs",
-    "version": "20230426.21",
+    "version": "20230601.2153",
     "url": "https://github.com/jcs-emacs/jcs-modeline",
     "source": "github",
-    "commit": "3b52849e58e7783093a3998fece4db80d920d738",
+    "commit": "12cbebb882ff88969ae9273c49cd0ce46c0f6b2f",
     "tree": "https://github.com/jcs-emacs/jcs-modeline"
   },
   {
@@ -911,10 +911,10 @@
   {
     "name": "nerd-icons-buffer-menu",
     "summary": "Display nerd icons in `buffer-menu'",
-    "version": "20230426.22",
+    "version": "20230601.2156",
     "url": "https://github.com/jcs-elpa/nerd-icons-buffer-menu",
     "source": "github",
-    "commit": "5bde5a319bc9b992eea90e57bf41b78bb848d0bb",
+    "commit": "2733f1077a7b5dd1240e7b5beab512f79b5a52fe",
     "tree": "https://github.com/jcs-elpa/nerd-icons-buffer-menu"
   },
   {
@@ -965,10 +965,10 @@
   {
     "name": "package-build",
     "summary": "Tools for assembling a package archive",
-    "version": "20230530.1457",
+    "version": "20230601.2138",
     "url": "https://github.com/melpa/package-build",
     "source": "github",
-    "commit": "2f9fb0294e91e86a8973355425fee3091f5e94b3",
+    "commit": "6e48df3ac055ab98219165de0780c7822682c2f4",
     "tree": "https://github.com/melpa/package-build"
   },
   {
