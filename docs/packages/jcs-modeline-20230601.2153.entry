@@ -1,5 +1,5 @@
 (jcs-modeline .
-	      [(20230426 21)
+	      [(20230601 2153)
 	       ((emacs
 		 (28 1))
 		(moody
@@ -11,7 +11,7 @@
 		(nerd-icons
 		 (0 0 1)))
 	       "A modeline for jcs-emacs" single
-	       ((:commit . "3b52849e58e7783093a3998fece4db80d920d738")
+	       ((:commit . "12cbebb882ff88969ae9273c49cd0ce46c0f6b2f")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainers

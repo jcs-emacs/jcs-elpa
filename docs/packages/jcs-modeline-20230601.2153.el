@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-modeline
-;; Package-Version: 20230426.21
-;; Package-Commit: 3b52849e58e7783093a3998fece4db80d920d738
+;; Package-Version: 20230601.2153
+;; Package-Commit: 12cbebb882ff88969ae9273c49cd0ce46c0f6b2f
 ;; Version: 0.1.1
 ;; Package-Requires: ((emacs "28.1") (moody "0.7.1") (minions "0.3.7") (elenv "0.1.0") (nerd-icons "0.0.1"))
 ;; Keywords: faces mode-line
@@ -277,7 +277,7 @@
                                              minions-mode-line-modes
                                            mode-line-modes)))
         (icon (and jcs-modeline-show-mode-icons
-                   (let* ((icon (nerd-icons-icon-for-mode major-mode))
+                   (let* ((icon (nerd-icons-icon-for-buffer))
                           (icon (if (or (null icon) (symbolp icon))
                                     (nerd-icons-faicon "nf-fa-file_o")
                                   icon)))
