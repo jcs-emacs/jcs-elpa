@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/nerd-icons-buffer-menu
-;; Package-Version: 20230426.22
-;; Package-Commit: 5bde5a319bc9b992eea90e57bf41b78bb848d0bb
+;; Package-Version: 20230601.2156
+;; Package-Commit: 2733f1077a7b5dd1240e7b5beab512f79b5a52fe
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (nerd-icons "0.0.1") (noflet "0.0.15") (msgu "0.1.0"))
 ;; Keywords: frames
@@ -77,16 +77,14 @@
           (format &optional face window buffer &rest _)
           (let ((original-value (funcall original-function format face window buffer)))
             (if (equal format mode-name)
-                (let* ((major-mode (and buffer
-                                        (with-current-buffer buffer major-mode)))
-                       (icon (let* ((icon (nerd-icons-icon-for-mode major-mode))
-                                    (icon (if (or (null icon) (symbolp icon))
-                                              (nerd-icons-faicon "nf-fa-file_o")
-                                            icon)))
-                               (if (and icon
-                                        (char-displayable-p (string-to-char icon)))
-                                   (concat icon " ")
-                                 ""))))
+                (let ((icon (let* ((icon (nerd-icons-icon-for-buffer))
+                                   (icon (if (or (null icon) (symbolp icon))
+                                             (nerd-icons-faicon "nf-fa-file_o")
+                                           icon)))
+                              (if (and icon
+                                       (char-displayable-p (string-to-char icon)))
+                                  (concat icon " ")
+                                ""))))
                   (concat icon original-value))
               original-value))))
         (apply func args)))))
