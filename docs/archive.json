@@ -911,10 +911,10 @@
   {
     "name": "nerd-icons-buffer-menu",
     "summary": "Display nerd icons in `buffer-menu'",
-    "version": "20230601.2156",
+    "version": "20230601.2158",
     "url": "https://github.com/jcs-elpa/nerd-icons-buffer-menu",
     "source": "github",
-    "commit": "2733f1077a7b5dd1240e7b5beab512f79b5a52fe",
+    "commit": "36a6edcff0cf23e6e92d00938cef719a90ed32ad",
     "tree": "https://github.com/jcs-elpa/nerd-icons-buffer-menu"
   },
   {
@@ -965,10 +965,10 @@
   {
     "name": "package-build",
     "summary": "Tools for assembling a package archive",
-    "version": "20230601.2138",
+    "version": "20230602.816",
     "url": "https://github.com/melpa/package-build",
     "source": "github",
-    "commit": "6e48df3ac055ab98219165de0780c7822682c2f4",
+    "commit": "27f6e016c60839f35375fb4bcc5b05dbadb4383b",
     "tree": "https://github.com/melpa/package-build"
   },
   {
