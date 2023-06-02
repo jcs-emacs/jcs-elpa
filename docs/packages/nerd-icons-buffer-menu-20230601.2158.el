@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/nerd-icons-buffer-menu
-;; Package-Version: 20230601.2156
-;; Package-Commit: 2733f1077a7b5dd1240e7b5beab512f79b5a52fe
+;; Package-Version: 20230601.2158
+;; Package-Commit: 36a6edcff0cf23e6e92d00938cef719a90ed32ad
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "26.1") (nerd-icons "0.0.1") (noflet "0.0.15") (msgu "0.1.0"))
 ;; Keywords: frames
