@@ -11,4 +11,6 @@
 (source "melpa")
 (source "jcs-elpa")
 
+(depends-on "package-build"
+            :repo "jcs-emacs/package-build" :fetcher 'github)
 (depends-on "github-elpa")
