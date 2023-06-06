@@ -101,10 +101,10 @@
   {
     "name": "chatgpt",
     "summary": "Use ChatGPT inside Emacs",
-    "version": "20230329.2014",
+    "version": "20230606.637",
     "url": "https://github.com/emacs-openai/chatgpt",
     "source": "github",
-    "commit": "13e6fbb8ee6ebd5863ee741822709767c87b92b2",
+    "commit": "7a9895b06cce986567e4c1120b5664168cce18bf",
     "tree": "https://github.com/emacs-openai/chatgpt"
   },
   {
@@ -938,10 +938,10 @@
   {
     "name": "openai",
     "summary": "Elisp library for the OpenAI API",
-    "version": "20230417.405",
+    "version": "20230606.625",
     "url": "https://github.com/emacs-openai/openai",
     "source": "github",
-    "commit": "6a1d270fcdf89226f22122df930afe17f85d3209",
+    "commit": "0a679a4501a535201717a394a0c635c46e5329ab",
     "tree": "https://github.com/emacs-openai/openai"
   },
   {
