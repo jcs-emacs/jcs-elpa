@@ -5,8 +5,8 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/emacs-openai/chatgpt
-;; Package-Version: 20230329.2014
-;; Package-Commit: 13e6fbb8ee6ebd5863ee741822709767c87b92b2
+;; Package-Version: 20230606.637
+;; Package-Commit: 7a9895b06cce986567e4c1120b5664168cce18bf
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (openai "0.1.0") (lv "0.0") (ht "2.0") (markdown-mode "2.1") (spinner "1.7.4"))
 ;; Keywords: comm openai
@@ -61,6 +61,11 @@
 
 (defcustom chatgpt-temperature 1.0
   "What sampling temperature to use."
+  :type 'number
+  :group 'chatgpt)
+
+(defcustom chatgpt-top-p 1.0
+  "Nucleus sampling parameter."
   :type 'number
   :group 'chatgpt)
 
@@ -493,6 +498,7 @@ The data is consist of ROLE and CONTENT."
                  :model chatgpt-model
                  :max-tokens chatgpt-max-tokens
                  :temperature chatgpt-temperature
+                 :top-p chatgpt-top-p
                  :user user)))
 
 (defun chatgpt-type-response ()
@@ -621,6 +627,7 @@ The data is consist of ROLE and CONTENT."
       (format "model: %s" chatgpt-model) "\n"
       (format "max_tokens: %s" chatgpt-max-tokens) "\n"
       (format "temperature: %s" chatgpt-temperature) "\n"
+      (format "top-p: %s" chatgpt-top-p)
       (format "user: %s" (chatgpt-user))))
     ;; Register event to cancel lv window!
     (add-hook 'pre-command-hook #'chatgpt--pre-command-once)))
