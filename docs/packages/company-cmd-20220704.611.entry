@@ -6,7 +6,7 @@
 		(0 8 12))
 	       (ht
 		(2 4)))
-	      "company backend for cmd/batch" single
+	      "company backend for cmd/batch" tar
 	      ((:commit . "cf393156e92fb2ac503dfa328e7e96b547fc2a97")
 	       (:maintainers
 		("Jen-Chieh Shen" . "jcs090218@gmail.com"))

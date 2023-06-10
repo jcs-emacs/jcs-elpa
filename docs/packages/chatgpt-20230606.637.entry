@@ -12,7 +12,7 @@
 	    (2 1))
 	   (spinner
 	    (1 7 4)))
-	  "Use ChatGPT inside Emacs" single
+	  "Use ChatGPT inside Emacs" tar
 	  ((:commit . "7a9895b06cce986567e4c1120b5664168cce18bf")
 	   (:authors
 	    ("Jen-Chieh" . "jcs090218@gmail.com"))

@@ -6,7 +6,7 @@
 		      (0 8))
 		     (f
 		      (0 20 0)))
-		    "Company mode backend for C/C++ header files" single
+		    "Company mode backend for C/C++ header files" tar
 		    ((:commit . "e9c25243b992fd8ad822312549b3844d45e7936a")
 		     (:authors
 		      ("Alastair Rankine" . "alastair@girtby.net"))

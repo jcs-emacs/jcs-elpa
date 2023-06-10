@@ -8,7 +8,7 @@
 		   (2 3))
 		  (csharp-mode
 		   (1 0 2)))
-		 "Eldoc support for meta-net" single
+		 "Eldoc support for meta-net" tar
 		 ((:commit . "37adccdbe47281c788fdaa4c879874e7dfb38b87")
 		  (:authors
 		   ("Jen-Chieh" . "jcs090218@gmail.com"))

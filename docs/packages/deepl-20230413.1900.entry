@@ -4,7 +4,7 @@
 	  (26 1))
 	 (request
 	  (0 3 0)))
-	"Elisp library for the DeepL API" single
+	"Elisp library for the DeepL API" tar
 	((:commit . "436a0d479e31949945686b0fa328603df5ee5063")
 	 (:authors
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))

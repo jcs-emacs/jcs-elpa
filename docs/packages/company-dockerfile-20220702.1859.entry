@@ -6,7 +6,7 @@
 		       (0 8 12))
 		      (dockerfile-mode
 		       (1 0)))
-		     "Company mode backend for dockefile" single
+		     "Company mode backend for dockefile" tar
 		     ((:commit . "9272a09eb300401fdcc99adaf900520d273bbffb")
 		      (:maintainers
 		       ("Jen-Chieh Shen" . "jcs090218@gmail.com"))

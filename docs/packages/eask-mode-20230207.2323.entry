@@ -4,7 +4,7 @@
 	      (24 3))
 	     (eask
 	      (0 1 0)))
-	    "major mode for editing Eask files" single
+	    "major mode for editing Eask files" tar
 	    ((:commit . "10b5b6d4747ddc67ef1c2b820bf23613e3bde48c")
 	     (:authors
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))

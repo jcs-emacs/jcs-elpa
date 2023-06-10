@@ -10,7 +10,7 @@
 		       (2 0))
 		      (msgu
 		       (0 1 0)))
-		     "Filter buffer-menu items using fake header" single
+		     "Filter buffer-menu items using fake header" tar
 		     ((:commit . "6bd4bb623cd604a4decb97ad512c59661aa14ec3")
 		      (:authors
 		       ("Jen-Chieh" . "jcs090218@gmail.com"))

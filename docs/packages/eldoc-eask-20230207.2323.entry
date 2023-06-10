@@ -4,7 +4,7 @@
 	       (26 1))
 	      (eask
 	       (0 1 0)))
-	     "Eldoc support for Eask-file" single
+	     "Eldoc support for Eask-file" tar
 	     ((:commit . "a09ad6105e4bee596dca40232a823c08967a5055")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))

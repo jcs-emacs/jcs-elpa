@@ -4,7 +4,7 @@
 		   (26 1))
 		  (company
 		   (0 8 12)))
-		 "Emacs coffee completion" single
+		 "Emacs coffee completion" tar
 		 ((:commit . "cab6ebe0c1048881e565de98c3d159a05652db75")
 		  (:authors
 		   ("Noah Peart" . "noah.v.peart@gmail.com"))

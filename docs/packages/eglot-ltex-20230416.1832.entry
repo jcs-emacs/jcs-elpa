@@ -6,7 +6,7 @@
 	       (1 4))
 	      (f
 	       (0 20 0)))
-	     "Eglot Clients for LTEX" single
+	     "Eglot Clients for LTEX" tar
 	     ((:commit . "d447161aee1ae5ef7bab8b2d8a352f40e8555de7")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))

@@ -14,7 +14,7 @@
 	   (0 1 2))
 	  (async
 	   (1 9 3)))
-	 "Use DALL-E inside Emacs" single
+	 "Use DALL-E inside Emacs" tar
 	 ((:commit . "7c62003923aea61dfb4bdc627da6daf7c363b965")
 	  (:authors
 	   ("Jen-Chieh" . "jcs090218@gmail.com"))
