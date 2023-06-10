@@ -2,7 +2,7 @@
 	     [(20221029 1309)
 	      ((emacs
 		(27 1)))
-	      "List all major and minor modes" single
+	      "List all major and minor modes" tar
 	      ((:commit . "0e976e1f0f5cf4e134da8335bcb0731aa0bbbcad")
 	       (:authors
 		("J.D. Smith" . "jdtsmith@gmail.com"))

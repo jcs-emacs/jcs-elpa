@@ -6,7 +6,7 @@
 	    (0 1 0))
 	   (f
 	    (0 20 0)))
-	  "Run through `compilation-mode'" single
+	  "Run through `compilation-mode'" tar
 	  ((:commit . "7806bd55474e9d21b8a74f05d40eabfece5cb218")
 	   (:authors
 	    ("Jen-Chieh" . "jcs090218@gmail.com"))

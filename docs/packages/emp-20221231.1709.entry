@@ -10,7 +10,7 @@
 	(0 1 5))
        (msgu
 	(0 1 0)))
-      "Emacs Music Playlist" single
+      "Emacs Music Playlist" tar
       ((:commit . "66c2c64d2594563227cb8ce71b6edba60414ad2d")
        (:authors
 	("Jen-Chieh" . "jcs090218@gmail.com"))

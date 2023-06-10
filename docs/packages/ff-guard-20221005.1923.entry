@@ -6,7 +6,7 @@
 	     (0 20 0))
 	    (s
 	     (1 9 0)))
-	   "Create parent directory for non-existent file" single
+	   "Create parent directory for non-existent file" tar
 	   ((:commit . "4c6079c1d3fe80d8f116654c646648bc420a9bad")
 	    (:authors
 	     ("Jen-Chieh" . "jcs090218@gmail.com"))

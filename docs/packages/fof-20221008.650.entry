@@ -4,7 +4,7 @@
 	(28 1))
        (ffpc
 	(0 1 0)))
-      "Default configuration for `ff-find-other-file'" single
+      "Default configuration for `ff-find-other-file'" tar
       ((:commit . "e1d5587209620dabfcf7af28ec3d86c71bf60862")
        (:authors
 	("Jen-Chieh" . "jcs090218@gmail.com"))

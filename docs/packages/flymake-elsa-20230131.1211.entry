@@ -4,7 +4,7 @@
 		 (26 1))
 		(flymake-easy
 		 (0 1)))
-	       "Flymake integration for Elsa" single
+	       "Flymake integration for Elsa" tar
 	       ((:commit . "f4f05ab17c57486dcb715ee6f42db2d95a1737d8")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))

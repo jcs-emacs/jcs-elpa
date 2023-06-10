@@ -2,7 +2,7 @@
 	     [(20200515 1833)
 	      ((emacs
 		(26)))
-	      "lsp-mode client for compose server" single
+	      "lsp-mode client for compose server" tar
 	      ((:commit . "44df194778503cd2e29e907af4c6989c7ea27d1c")
 	       (:authors
 		("Abhinav Tushar" . "abhinav@lepisma.xyz"))

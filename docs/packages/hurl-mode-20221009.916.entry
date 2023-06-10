@@ -2,7 +2,7 @@
 	   [(20221009 916)
 	    ((emacs
 	      (24)))
-	    "Major mode for hurl" single
+	    "Major mode for hurl" tar
 	    ((:commit . "aa87da4a6f5dc6a612a576d34a81000835b819e0")
 	     (:authors
 	      ("Azzam S.A" . "vcs@azzamsa.com"))

@@ -4,7 +4,7 @@
 	      (24 3))
 	     (flx
 	      (0 5)))
-	    "Completion style for flx" single
+	    "Completion style for flx" tar
 	    ((:commit . "b0441bd84881698e0d0b7b1178d296799c47950b")
 	     (:authors
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))

@@ -2,7 +2,7 @@
 		[(20230427 57)
 		 ((emacs
 		   (26 1)))
-		 "A frame title for jcs-emacs" single
+		 "A frame title for jcs-emacs" tar
 		 ((:commit . "3223b40ffc468e078bb427b8ef415bd376a230d3")
 		  (:authors
 		   ("Jen-Chieh" . "jcs090218@gmail.com"))

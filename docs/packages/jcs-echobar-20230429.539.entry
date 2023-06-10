@@ -10,7 +10,7 @@
 		(0 1 0))
 	       (keycast
 		(1 2 0)))
-	      "An echo-bar for jcs-emacs" single
+	      "An echo-bar for jcs-emacs" tar
 	      ((:commit . "28743d8d93485c3cdfabddb0a52317261c54f2b5")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))

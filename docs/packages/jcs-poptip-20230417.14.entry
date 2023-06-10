@@ -14,7 +14,7 @@
 	       (0 1 0))
 	      (elenv
 	       (0 1 0)))
-	     "Generic popup tip" single
+	     "Generic popup tip" tar
 	     ((:commit . "e35fa7134e6eb4e6b51bdc0cc210c0fb400a1d1f")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))

@@ -2,7 +2,7 @@
 	     [(20221215 1738)
 	      ((emacs
 		(24 3)))
-	      "Retrieve tags information through GitHub API" single
+	      "Retrieve tags information through GitHub API" tar
 	      ((:commit . "1c96ab259c334c10e8ef69b70b8e4e6df3322a66")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
