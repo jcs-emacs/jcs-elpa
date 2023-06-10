@@ -2,7 +2,7 @@
 	     [(20230502 727)
 	      ((emacs
 		(24 1)))
-	      "Programming mode for the Q# language" single
+	      "Programming mode for the Q# language" tar
 	      ((:commit . "402bf231c823776480323c00a3dba85f9467e0cf")
 	       (:authors
 		("Siegmentation Fault" . "siegmentationfault@yandex.ru"))

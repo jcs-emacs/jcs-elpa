@@ -6,7 +6,7 @@
 	      (0 16 1))
 	     (s
 	      (1 12 0)))
-	    "The simple package for fast log selected region" single
+	    "The simple package for fast log selected region" tar
 	    ((:commit . "ac7f4cc3bd0157a28ab823dee156c3b2ee61c83a")
 	     (:authors
 	      ("Artur Yaroshenko" . "artawower@protonmail.com"))

@@ -1,6 +1,6 @@
 (visual-basic-mode .
 		   [(20160720 820)
-		    nil "A mode for editing Visual Basic programs." single
+		    nil "A mode for editing Visual Basic programs." tar
 		    ((:commit . "483dd5a2c8c4675ddb3c32fdd93146c6d248285d")
 		     (:authors
 		      ("Fred White" . "fwhite@alum.mit.edu"))

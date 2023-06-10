@@ -4,7 +4,7 @@
 	   (26 1))
 	  (dash
 	   (2 18)))
-	 "locally override functions" single
+	 "locally override functions" tar
 	 ((:commit . "b2645dace4646977369c81e840324c0d4df746fa")
 	  (:authors
 	   ("Nic Ferrier" . "nferrier@ferrier.me.uk"))

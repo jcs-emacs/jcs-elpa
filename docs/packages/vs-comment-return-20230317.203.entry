@@ -2,7 +2,7 @@
 		   [(20230317 203)
 		    ((emacs
 		      (28 1)))
-		    "Comment return like Visual Studio" single
+		    "Comment return like Visual Studio" tar
 		    ((:commit . "c7092675a3ec067b517d144be015bd4c9d77cd6b")
 		     (:authors
 		      ("Jen-Chieh" . "jcs090218@gmail.com"))

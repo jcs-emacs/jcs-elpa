@@ -6,7 +6,7 @@
 	(0 0 1))
        (emacs
 	(24 4)))
-      "Provides machine translation via DeepL's REST API" single
+      "Provides machine translation via DeepL's REST API" tar
       ((:commit . "25f693062439694e205cdda5dd938249179e70f0")
        (:authors
 	("Titus von der Malsburg" . "malsburg@posteo.de"))

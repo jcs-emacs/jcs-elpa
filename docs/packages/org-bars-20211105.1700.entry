@@ -6,7 +6,7 @@
 	     (2 17 0))
 	    (s
 	     (1 12 0)))
-	   "Add bars to virtual indentation" single
+	   "Add bars to virtual indentation" tar
 	   ((:commit . "94c37f63fcfec9cdde6b99457b4dac5275589d95")
 	    (:authors
 	     ("Tony Aldon" . "tony.aldon.adm@gmail.com"))

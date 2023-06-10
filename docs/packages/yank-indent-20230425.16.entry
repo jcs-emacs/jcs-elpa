@@ -2,7 +2,7 @@
 	     [(20230425 16)
 	      ((emacs
 		(25 1)))
-	      "Automatically indent yanked text" single
+	      "Automatically indent yanked text" tar
 	      ((:commit . "a834f366c39615d4a9d3a31fef795f569033ef3d")
 	       (:authors
 		("Jim Myhrberg" . "contact@jimeh.me"))

@@ -6,7 +6,7 @@
 		 (0 8 2))
 		(fill-page
 		 (0 3 7)))
-	       "visualizer follow mode for undo-tree" single
+	       "visualizer follow mode for undo-tree" tar
 	       ((:commit . "4585eb2642fd7391fd0ce753b22695b78b76e45b")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))

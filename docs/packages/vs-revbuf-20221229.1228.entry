@@ -4,7 +4,7 @@
 	      (27 1))
 	     (fextern
 	      (0 1 0)))
-	    "Revert buffers like Visual Studio" single
+	    "Revert buffers like Visual Studio" tar
 	    ((:commit . "5572daea403bd62d8b2bccaffd7e9dca43d1de77")
 	     (:authors
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))

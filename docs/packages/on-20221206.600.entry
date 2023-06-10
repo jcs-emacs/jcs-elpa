@@ -2,7 +2,7 @@
     [(20221206 600)
      ((emacs
        (27 1)))
-     "Hooks for faster startup" single
+     "Hooks for faster startup" tar
      ((:commit . "3cf623e1a4331e259ef92e49154ed0551f300436")
       (:authors
        ("Alex Griffin" . "a@ajgrf.com"))

@@ -1,6 +1,6 @@
 (vbscript-mode .
 	       [(20160720 820)
-		nil "No description available." single
+		nil "No description available." tar
 		((:commit . "483dd5a2c8c4675ddb3c32fdd93146c6d248285d")
 		 (:authors
 		  ("Charles Sebold" . "cseboldatgmail.com"))

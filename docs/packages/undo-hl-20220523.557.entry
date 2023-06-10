@@ -2,7 +2,7 @@
 	 [(20220523 557)
 	  ((emacs
 	    (26 0)))
-	  "Highlight undo/redo" single
+	  "Highlight undo/redo" tar
 	  ((:commit . "89fdcc62e3d938854433bc14d95e1c8e505eee20")
 	   (:authors
 	    ("Yuan Fu" . "casouri@gmail.com"))
