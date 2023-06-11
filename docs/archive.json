@@ -675,6 +675,15 @@
     "tree": "https://github.com/azzamsa/emacs-hurl"
   },
   {
+    "name": "ivy-describe-modes",
+    "summary": "Ivy interface to `describe-mode`",
+    "version": "20200704.935",
+    "url": "https://github.com/jcs-elpa/ivy-describe-modes",
+    "source": "github",
+    "commit": "d14986029763858bd72f1fcdc6e7cb70781be6c5",
+    "tree": "https://github.com/jcs-elpa/ivy-describe-modes"
+  },
+  {
     "name": "jai-mode",
     "summary": "Major mode for JAI",
     "version": "20230518.2255",
