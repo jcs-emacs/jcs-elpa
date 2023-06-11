@@ -974,10 +974,10 @@
   {
     "name": "package-build",
     "summary": "Tools for assembling a package archive",
-    "version": "20230610.2138",
+    "version": "20230611.1708",
     "url": "https://github.com/melpa/package-build",
     "source": "github",
-    "commit": "a14752cb5993e4931996a14f94179364645fc500",
+    "commit": "1c3f0b631e58f57d70d28807385904004b285853",
     "tree": "https://github.com/melpa/package-build"
   },
   {
