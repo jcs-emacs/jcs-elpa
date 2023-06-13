@@ -1,9 +1,9 @@
 (yank-indent .
-	     [(20230425 16)
+	     [(20230612 2347)
 	      ((emacs
 		(25 1)))
 	      "Automatically indent yanked text" tar
-	      ((:commit . "a834f366c39615d4a9d3a31fef795f569033ef3d")
+	      ((:commit . "15fd7271bd8b5ff085eacaf047c97530a5af236d")
 	       (:authors
 		("Jim Myhrberg" . "contact@jimeh.me"))
 	       (:maintainers
