@@ -1,11 +1,11 @@
 (ivy-describe-modes .
-		    [(20200704 935)
+		    [(20230623 731)
 		     ((emacs
 		       (24 4))
 		      (ivy
 		       (0 13 0)))
 		     "Ivy interface to `describe-mode`" tar
-		     ((:commit . "d14986029763858bd72f1fcdc6e7cb70781be6c5")
+		     ((:commit . "c6bfc09db13df6d466a1ddd228335349743f3370")
 		      (:authors
 		       ("Jen-Chieh" . "jcs090218@gmail.com"))
 		      (:maintainers
