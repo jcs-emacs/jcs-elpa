@@ -677,10 +677,10 @@
   {
     "name": "ivy-describe-modes",
     "summary": "Ivy interface to `describe-mode`",
-    "version": "20200704.935",
+    "version": "20230623.731",
     "url": "https://github.com/jcs-elpa/ivy-describe-modes",
     "source": "github",
-    "commit": "d14986029763858bd72f1fcdc6e7cb70781be6c5",
+    "commit": "c6bfc09db13df6d466a1ddd228335349743f3370",
     "tree": "https://github.com/jcs-elpa/ivy-describe-modes"
   },
   {
