@@ -1,0 +1,13 @@
+(elenv .
+       [(20230322 543)
+	((emacs
+	  (26)))
+	"Emacs Lisp environment" tar
+	((:commit . "27173a2e2f6b8a7c3fdc817b2fcbe625174e3ac9")
+	 (:authors
+	  ("Jen-Chieh" . "jcs090218@gmail.com"))
+	 (:maintainers
+	  ("Jen-Chieh" . "jcs090218@gmail.com"))
+	 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	 (:keywords "maint")
+	 (:url . "https://github.com/jcs-elpa/elenv"))])

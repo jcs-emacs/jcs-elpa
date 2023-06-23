@@ -1,0 +1,15 @@
+(flymake-eask .
+	      [(20221231 1617)
+	       ((emacs
+		 (26 1))
+		(flymake-easy
+		 (0 1)))
+	       "Eask support in Flymake" tar
+	       ((:commit . "3ffd1d77c57354116118c4ab5e87b98e1368d7f3")
+		(:authors
+		 ("Jen-Chieh" . "jcs090218@gmail.com"))
+		(:maintainers
+		 ("Jen-Chieh" . "jcs090218@gmail.com"))
+		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		(:keywords "lisp" "eask")
+		(:url . "https://github.com/flymake/flymake-eask"))])

@@ -1,0 +1,25 @@
+(jcs-poptip .
+	    [(20230417 14)
+	     ((emacs
+	       (26 1))
+	      (company
+	       (0 8 12))
+	      (lsp-ui
+	       (8 0 1))
+	      (preview-it
+	       (1 1 0))
+	      (define-it
+		(0 2 5))
+	      (msgu
+	       (0 1 0))
+	      (elenv
+	       (0 1 0)))
+	     "Generic popup tip" tar
+	     ((:commit . "e35fa7134e6eb4e6b51bdc0cc210c0fb400a1d1f")
+	      (:authors
+	       ("Jen-Chieh" . "jcs090218@gmail.com"))
+	      (:maintainers
+	       ("Jen-Chieh" . "jcs090218@gmail.com"))
+	      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	      (:keywords "help")
+	      (:url . "https://github.com/jcs-emacs/jcs-poptip"))])

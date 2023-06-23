@@ -1,0 +1,17 @@
+(company-eask .
+	      [(20230207 2323)
+	       ((emacs
+		 (26 1))
+		(company
+		 (0 8 0))
+		(eask
+		 (0 1 0)))
+	       "Company backend for Eask-file" tar
+	       ((:commit . "28734d33327c76b6e5d11875fd8229e73d46562c")
+		(:authors
+		 ("Jen-Chieh" . "jcs090218@gmail.com"))
+		(:maintainers
+		 ("Jen-Chieh" . "jcs090218@gmail.com"))
+		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		(:keywords "convenience")
+		(:url . "https://github.com/emacs-eask/company-eask"))])

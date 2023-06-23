@@ -1,0 +1,8 @@
+(bitwarden .
+	   [(20230329 104)
+	    ((emacs
+	      (25 1)))
+	    "Bitwarden command wrapper" tar
+	    ((:commit . "55160e239671722cecdb73f9bca022ed7e23b0d4")
+	     (:keywords "extensions" "processes" "bw" "bitwarden")
+	     (:url . "https://github.com/seanfarley/emacs-bitwarden"))])

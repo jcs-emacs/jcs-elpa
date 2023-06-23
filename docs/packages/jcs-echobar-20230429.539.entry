@@ -1,0 +1,21 @@
+(jcs-echobar .
+	     [(20230429 539)
+	      ((emacs
+		(26 1))
+	       (echo-bar
+		(1 0 0))
+	       (indent-control
+		(0 1 0))
+	       (show-eol
+		(0 1 0))
+	       (keycast
+		(1 2 0)))
+	      "An echo-bar for jcs-emacs" tar
+	      ((:commit . "28743d8d93485c3cdfabddb0a52317261c54f2b5")
+	       (:authors
+		("Jen-Chieh" . "jcs090218@gmail.com"))
+	       (:maintainers
+		("Jen-Chieh" . "jcs090218@gmail.com"))
+	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	       (:keywords "faces" "echo-bar")
+	       (:url . "https://github.com/jcs-emacs/jcs-echobar"))])

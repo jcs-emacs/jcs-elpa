@@ -1,0 +1,21 @@
+(emp .
+     [(20221231 1709)
+      ((emacs
+	(27 1))
+       (sound-async
+	(0 1 0))
+       (f
+	(0 20 0))
+       (buffer-wrap
+	(0 1 5))
+       (msgu
+	(0 1 0)))
+      "Emacs Music Playlist" tar
+      ((:commit . "66c2c64d2594563227cb8ce71b6edba60414ad2d")
+       (:authors
+	("Jen-Chieh" . "jcs090218@gmail.com"))
+       (:maintainers
+	("Jen-Chieh" . "jcs090218@gmail.com"))
+       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+       (:keywords "multimedia")
+       (:url . "https://github.com/jcs-elpa/emp"))])

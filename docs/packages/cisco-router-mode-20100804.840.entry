@@ -1,0 +1,4 @@
+(cisco-router-mode .
+		   [(20100804 840)
+		    nil "Major mode for editing Cisco router configuration files" tar
+		    ((:commit . "3878fc6d6a1dea48eb9174af567f93659b8542e8"))])

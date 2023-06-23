@@ -1,0 +1,13 @@
+(vc-refresh .
+	    [(20221203 1607)
+	     ((emacs
+	       (26 1)))
+	     "Refresh vc-state in certain events for better UX" tar
+	     ((:commit . "42efd81f682b803b5a46228e0b119388fa31db60")
+	      (:authors
+	       ("Jen-Chieh" . "jcs090218@gmail.com"))
+	      (:maintainers
+	       ("Jen-Chieh" . "jcs090218@gmail.com"))
+	      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	      (:keywords "vc")
+	      (:url . "https://github.com/jcs-elpa/vc-refresh"))])
