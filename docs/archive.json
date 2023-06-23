@@ -101,10 +101,10 @@
   {
     "name": "chatgpt",
     "summary": "Use ChatGPT inside Emacs",
-    "version": "20230606.637",
+    "version": "20230623.658",
     "url": "https://github.com/emacs-openai/chatgpt",
     "source": "github",
-    "commit": "7a9895b06cce986567e4c1120b5664168cce18bf",
+    "commit": "c75901ae8dcd90b2eacb4de4a1a55c4c082b68ef",
     "tree": "https://github.com/emacs-openai/chatgpt"
   },
   {
