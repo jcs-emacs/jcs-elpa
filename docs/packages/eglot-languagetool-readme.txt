@@ -1,2 +1,0 @@
-
-Eglot Clients for LanguageTool.

@@ -1,5 +1,0 @@
-(hlsl-mode .
-	   [(20160306 1437)
-	    nil "major mode for Open HLSL shader files" tar
-	    ((:commit . "c9c80ce43a274a78ffdaa662e23ef81408d25549")
-	     (:keywords "languages" "hlsl" "shader"))])

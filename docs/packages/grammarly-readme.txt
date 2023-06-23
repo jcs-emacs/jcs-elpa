@@ -1,2 +1,0 @@
-
-Grammarly API interface.

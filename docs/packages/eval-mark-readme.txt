@@ -1,2 +1,0 @@
-
-Evaluate then deactive mark

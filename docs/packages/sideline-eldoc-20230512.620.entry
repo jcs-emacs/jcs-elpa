@@ -1,9 +1,0 @@
-(sideline-eldoc .
-		[(20230512 620)
-		 nil "sideline backend for eldoc." tar
-		 ((:commit . "ffeecf0da1a007380fc2e6358ff90d3aad3db0db")
-		  (:authors
-		   ("Qiqi Jin" . "ginqi7@gmail.com"))
-		  (:maintainers
-		   ("Qiqi Jin" . "ginqi7@gmail.com"))
-		  (:maintainer "Qiqi Jin" . "ginqi7@gmail.com"))])

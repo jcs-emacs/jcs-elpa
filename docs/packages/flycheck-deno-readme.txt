@@ -1,2 +1,0 @@
-
-Flycheck for deno-lint.

@@ -1,2 +1,0 @@
-
-Major mdoe for JAI

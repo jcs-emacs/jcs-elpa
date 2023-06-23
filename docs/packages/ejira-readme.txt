@@ -1,3 +1,0 @@
-TODO:
-- Sprint handling
-- Attachments

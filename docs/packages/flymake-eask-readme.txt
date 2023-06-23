@@ -1,2 +1,0 @@
-
-Eask support in Flymake.

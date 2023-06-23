@@ -1,2 +1,0 @@
-
-LSP Clients for ShaderLab.

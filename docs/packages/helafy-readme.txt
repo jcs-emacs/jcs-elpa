@@ -1,2 +1,0 @@
-
-Minify/Uglify/Prettify contents

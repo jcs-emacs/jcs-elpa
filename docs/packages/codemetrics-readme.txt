@@ -1,2 +1,0 @@
-
-Plugin shows complexity information.
