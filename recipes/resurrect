@@ -1,0 +1,1 @@
+(resurrect :repo "fbkante/resurrect" :fetcher github)
