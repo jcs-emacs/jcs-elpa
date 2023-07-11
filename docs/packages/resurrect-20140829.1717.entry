@@ -1,0 +1,5 @@
+(resurrect .
+	   [(20140829 1717)
+	    nil "No description available." tar
+	    ((:commit . "e1bf23fec27989a7a7b9d5ffc827752aea094c29")
+	     (:keywords "convenience"))])
