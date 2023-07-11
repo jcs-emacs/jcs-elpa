@@ -1044,6 +1044,15 @@
     "tree": "https://github.com/jcs-elpa/repos-window"
   },
   {
+    "name": "resurrect",
+    "summary": "No description available.",
+    "version": "20140829.1717",
+    "url": "https://github.com/fbkante/resurrect",
+    "source": "github",
+    "commit": "e1bf23fec27989a7a7b9d5ffc827752aea094c29",
+    "tree": "https://github.com/fbkante/resurrect"
+  },
+  {
     "name": "send-to-osx-grammarly",
     "summary": "A simple plugin to sent text to Grammarly",
     "version": "20221231.1655",
