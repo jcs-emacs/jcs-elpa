@@ -1,0 +1,13 @@
+(lemmington .
+	    [(20230719 1007)
+	     ((emacs
+	       (27 1))
+	      (porthole
+	       (0 3 0)))
+	     "RPC Emacs server" tar
+	     ((:commit . "9fd66f82e9201efea6b17fb0f5394b850f21c95b")
+	      (:maintainers
+	       ("Fermin Munoz" . "fmfs@posteo.net"))
+	      (:maintainer "Fermin Munoz" . "fmfs@posteo.net")
+	      (:keywords "tools" "languages")
+	      (:url . "https://github.com/lem-project/lemmington.git"))])
