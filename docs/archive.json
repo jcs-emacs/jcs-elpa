@@ -783,6 +783,15 @@
     "tree": "https://github.com/Lambda-Emacs/lambda-line"
   },
   {
+    "name": "lemmington",
+    "summary": "RPC Emacs server",
+    "version": "20230719.1007",
+    "url": "https://github.com/lem-project/lemmington.git",
+    "source": "github",
+    "commit": "9fd66f82e9201efea6b17fb0f5394b850f21c95b",
+    "tree": "https://github.com/lem-project/lemmington.git"
+  },
+  {
     "name": "license-templates",
     "summary": "Create LICENSE using GitHub API",
     "version": "20230311.11",
