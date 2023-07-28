@@ -1,9 +1,9 @@
 (jai-mode .
-	  [(20230518 2255)
+	  [(20230728 1209)
 	   ((emacs
 	     (26 1)))
 	   "Major mode for JAI" tar
-	   ((:commit . "2330b3748fad226941999f242c3b40731d7336ca")
+	   ((:commit . "7babbd64f1a8c851e8a8c4a01259abccdec18460")
 	    (:authors
 	     ("Kristoffer Grönlund" . "k@ziran.se"))
 	    (:maintainers
