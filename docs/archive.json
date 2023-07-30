@@ -999,6 +999,15 @@
     "tree": "https://github.com/elp-revive/origami.el"
   },
   {
+    "name": "outli",
+    "summary": "Org-like code outliner",
+    "version": "20230703.1623",
+    "url": "https://github.com/jdtsmith/outli",
+    "source": "github",
+    "commit": "72deaf19c9f5a4577d360e99c8db2233a3006873",
+    "tree": "https://github.com/jdtsmith/outli"
+  },
+  {
     "name": "package-build",
     "summary": "Tools for assembling a package archive",
     "version": "20230717.2320",
