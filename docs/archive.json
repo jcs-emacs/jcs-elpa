@@ -981,6 +981,15 @@
     "tree": "https://github.com/tonyaldon/org-bars"
   },
   {
+    "name": "org-modern-indent",
+    "summary": "org-indent blocks like org-modern",
+    "version": "20230315.249",
+    "url": "https://github.com/jdtsmith/org-modern-indent",
+    "source": "github",
+    "commit": "c5a50f302dc1053d5b498e0ea2bc0ee233e8e1b8",
+    "tree": "https://github.com/jdtsmith/org-modern-indent"
+  },
+  {
     "name": "origami",
     "summary": "Flexible text folding",
     "version": "20221231.1631",
