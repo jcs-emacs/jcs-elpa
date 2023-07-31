@@ -9,7 +9,7 @@
 	      (preview-it
 	       (1 1 0))
 	      (define-it
-		(0 2 5))
+	       (0 2 5))
 	      (msgu
 	       (0 1 0))
 	      (elenv
