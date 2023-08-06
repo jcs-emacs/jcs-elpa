@@ -279,6 +279,15 @@
     "tree": "https://github.com/emacs-vs/company-meta-net"
   },
   {
+    "name": "company-mlton",
+    "summary": "company-mode backend for MLton/Standard ML",
+    "version": "20201207.1445",
+    "url": "https://github.com/MatthewFluet/company-mlton",
+    "source": "github",
+    "commit": "9b09d209b4767a2af24784fb5321390ed1d445bf",
+    "tree": "https://github.com/MatthewFluet/company-mlton"
+  },
+  {
     "name": "company-paths",
     "summary": "A company backend for paths",
     "version": "20221201.742",
