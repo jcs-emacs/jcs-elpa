@@ -1,0 +1,17 @@
+(company-mlton .
+	       [(20201207 1445)
+		((emacs
+		  (24 4))
+		 (company
+		  (0 9 4))
+		 (dash
+		  (2 13 0)))
+		"company-mode backend for MLton/Standard ML" tar
+		((:commit . "9b09d209b4767a2af24784fb5321390ed1d445bf")
+		 (:authors
+		  ("Matthew Fluet" . "Matthew.Fluet@gmail.com"))
+		 (:maintainers
+		  ("Matthew Fluet" . "Matthew.Fluet@gmail.com"))
+		 (:maintainer "Matthew Fluet" . "Matthew.Fluet@gmail.com")
+		 (:keywords "company-mode" "mlton" "standard-ml")
+		 (:url . "https://github.com/MatthewFluet/company-mlton"))])
