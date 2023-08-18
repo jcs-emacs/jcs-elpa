@@ -1,0 +1,4 @@
+(treesit-langs :repo "kiennq/treesit-langs"
+               :fetcher github
+               :files (:defaults
+                       "queries"))
