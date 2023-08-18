@@ -1,0 +1,12 @@
+(treesit-langs .
+	       [(20230818 1544)
+		((emacs
+		  (29 0 50)))
+		"TODO" tar
+		((:commit . "081c6b7c22d1f70b9ec6978e8a6d6ab763318e87")
+		 (:authors
+		  ("Yoav Marco" . "https://github.com/ymarco"))
+		 (:maintainers
+		  ("Yoav Marco" . "yoavm448@gmail.com"))
+		 (:maintainer "Yoav Marco" . "yoavm448@gmail.com")
+		 (:keywords "languages" "tools" "parsers" "tree-sitter"))])
