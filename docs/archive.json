@@ -146,10 +146,10 @@
   {
     "name": "codeium",
     "summary": "codeium client for emacs",
-    "version": "20230804.320",
+    "version": "20230818.1847",
     "url": "https://github.com/Exafunction/codeium.el",
     "source": "github",
-    "commit": "780d8a9173d59ae4f3216682ff38639d0ffae52b",
+    "commit": "1563993427fcd2f788176e474c4cac1458fd2080",
     "tree": "https://github.com/Exafunction/codeium.el"
   },
   {
@@ -1231,6 +1231,15 @@
     "source": "github",
     "commit": "8ddd94661ab9f3c9094dd4b5632bcdd57bdf871d",
     "tree": "https://github.com/rainstormstudio/treemacs-nerd-icons"
+  },
+  {
+    "name": "treesit-langs",
+    "summary": "TODO",
+    "version": "20230818.1544",
+    "url": "https://github.com/kiennq/treesit-langs",
+    "source": "github",
+    "commit": "081c6b7c22d1f70b9ec6978e8a6d6ab763318e87",
+    "tree": "https://github.com/kiennq/treesit-langs"
   },
   {
     "name": "ts-docstr",
