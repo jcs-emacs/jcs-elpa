@@ -866,11 +866,20 @@
   {
     "name": "lsp-shader",
     "summary": "LSP Clients for ShaderLab",
-    "version": "20230507.2350",
+    "version": "20230821.58",
     "url": "https://github.com/shader-ls/lsp-shader",
     "source": "github",
-    "commit": "77b14eba20a4be2243b05530a78bb14c3a1f2a9a",
+    "commit": "4fc1554985af8621793787caca83784b20c76e56",
     "tree": "https://github.com/shader-ls/lsp-shader"
+  },
+  {
+    "name": "lsp-uniteai",
+    "summary": "LSP Clients for UniteAI",
+    "version": "20230821.122",
+    "url": "https://github.com/emacs-openai/lsp-uniteai",
+    "source": "github",
+    "commit": "108ab69014f75dd21d88289f2c7d4571d3b8da14",
+    "tree": "https://github.com/emacs-openai/lsp-uniteai"
   },
   {
     "name": "maple-line",
