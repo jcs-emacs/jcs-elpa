@@ -1,0 +1,13 @@
+(eglot-uniteai .
+	       [(20230821 153)
+		((emacs
+		  (26 1)))
+		"Eglot Clients for UniteAI" tar
+		((:commit . "8d123047fcd35c810d150943082ca210c88df9f7")
+		 (:authors
+		  ("Jen-Chieh" . "jcs090218@gmail.com"))
+		 (:maintainers
+		  ("Jen-Chieh" . "jcs090218@gmail.com"))
+		 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		 (:keywords "convenience" "ai")
+		 (:url . "https://github.com/emacs-openai/eglot-uniteai"))])
