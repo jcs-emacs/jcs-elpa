@@ -1,0 +1,1 @@
+(eglot-uniteai :repo "emacs-openai/eglot-uniteai" :fetcher github)
