@@ -423,6 +423,15 @@
     "tree": "https://github.com/emacs-languagetool/eglot-ltex"
   },
   {
+    "name": "eglot-uniteai",
+    "summary": "Eglot Clients for UniteAI",
+    "version": "20230821.153",
+    "url": "https://github.com/emacs-openai/eglot-uniteai",
+    "source": "github",
+    "commit": "8d123047fcd35c810d150943082ca210c88df9f7",
+    "tree": "https://github.com/emacs-openai/eglot-uniteai"
+  },
+  {
     "name": "ejira",
     "summary": "org-mode interface to JIRA",
     "version": "20220622.33",
@@ -875,10 +884,10 @@
   {
     "name": "lsp-uniteai",
     "summary": "LSP Clients for UniteAI",
-    "version": "20230821.122",
+    "version": "20230821.153",
     "url": "https://github.com/emacs-openai/lsp-uniteai",
     "source": "github",
-    "commit": "108ab69014f75dd21d88289f2c7d4571d3b8da14",
+    "commit": "e5dc436926176f3b0433912919ddf76817827a0d",
     "tree": "https://github.com/emacs-openai/lsp-uniteai"
   },
   {
