@@ -1242,6 +1242,15 @@
     "tree": "https://github.com/jcs-elpa/toggle-profiler"
   },
   {
+    "name": "tree-sitter-langs",
+    "summary": "Grammar bundle for tree-sitter",
+    "version": "20230822.408",
+    "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
+    "source": "github",
+    "commit": "eb2cbff2467fbdfb6dc07e9d25db1090d394c76f",
+    "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
+  },
+  {
     "name": "treemacs-nerd-icons",
     "summary": "Emacs Nerd Font Icons theme for treemacs",
     "version": "20230517.1825",
