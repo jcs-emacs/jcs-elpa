@@ -380,10 +380,10 @@
   {
     "name": "eask",
     "summary": "Core Eask APIs, for Eask CLI development",
-    "version": "20230822.52",
+    "version": "20230822.230",
     "url": "https://github.com/emacs-eask/eask",
     "source": "github",
-    "commit": "dd1ef6730e95d2cbbef0a72450cf4ac7e549e044",
+    "commit": "b7b633014184219839a0c0c23784324ade459ebf",
     "tree": "https://github.com/emacs-eask/eask"
   },
   {
@@ -1253,10 +1253,10 @@
   {
     "name": "treesit-langs",
     "summary": "TODO",
-    "version": "20230818.1544",
+    "version": "20230822.48",
     "url": "https://github.com/kiennq/treesit-langs",
     "source": "github",
-    "commit": "081c6b7c22d1f70b9ec6978e8a6d6ab763318e87",
+    "commit": "d415b4b0793b25e4b2a182994cadedefe5eba70d",
     "tree": "https://github.com/kiennq/treesit-langs"
   },
   {
