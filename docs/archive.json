@@ -146,10 +146,10 @@
   {
     "name": "codeium",
     "summary": "codeium client for emacs",
-    "version": "20230821.2217",
+    "version": "20230822.47",
     "url": "https://github.com/Exafunction/codeium.el",
     "source": "github",
-    "commit": "95bac7b4a6780513a4470cfe813543541b0b9d83",
+    "commit": "c42bafc63d5f42d8e7aa68dc3afb7a4db6f31ba1",
     "tree": "https://github.com/Exafunction/codeium.el"
   },
   {
@@ -308,10 +308,10 @@
   {
     "name": "copilot",
     "summary": "An unofficial Copilot plugin for Emacs",
-    "version": "20230817.829",
+    "version": "20230822.123",
     "url": "https://github.com/zerolfx/copilot.el",
     "source": "github",
-    "commit": "5858091d8be354caaa28614a89e98cce9d234fa7",
+    "commit": "c942a5290f6e3b3ba831a924960abab50ceb0f6e",
     "tree": "https://github.com/zerolfx/copilot.el"
   },
   {
@@ -380,10 +380,10 @@
   {
     "name": "eask",
     "summary": "Core Eask APIs, for Eask CLI development",
-    "version": "20230820.2131",
+    "version": "20230822.52",
     "url": "https://github.com/emacs-eask/eask",
     "source": "github",
-    "commit": "f6ddd4200a64a5cae8b80c75586b14c8b1739e82",
+    "commit": "dd1ef6730e95d2cbbef0a72450cf4ac7e549e044",
     "tree": "https://github.com/emacs-eask/eask"
   },
   {
