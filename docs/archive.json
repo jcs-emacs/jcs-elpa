@@ -99,6 +99,15 @@
     "tree": "https://github.com/elp-revive/buffer-move/"
   },
   {
+    "name": "cask",
+    "summary": "Cask: Project management for package development",
+    "version": "20230623.2158",
+    "url": "http://github.com/cask/cask",
+    "source": "github",
+    "commit": "10899c8075d7d8e427ab837b7353036f65b37081",
+    "tree": "http://github.com/cask/cask"
+  },
+  {
     "name": "change-case",
     "summary": "Case conversion between camelCase, PascalCase, snake_case and more",
     "version": "20221211.907",
@@ -1060,6 +1069,15 @@
     "source": "github",
     "commit": "c399e2cf1f7de6e078efd68043db62740c771299",
     "tree": "https://github.com/melpa/package-build"
+  },
+  {
+    "name": "pallet",
+    "summary": "A package management tool for Emacs, using Cask.",
+    "version": "20150512.702",
+    "url": "https://github.com/rdallasgray/pallet",
+    "source": "github",
+    "commit": "0e1ae11e1ebfe644cbf832df62ac2dbf6ecd0501",
+    "tree": "https://github.com/rdallasgray/pallet"
   },
   {
     "name": "pkg-dm",
