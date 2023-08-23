@@ -1001,10 +1001,10 @@
   {
     "name": "on",
     "summary": "Hooks for faster startup",
-    "version": "20221206.600",
+    "version": "20230823.32",
     "url": "https://gitlab.com/ajgrf/on.el",
     "source": "github",
-    "commit": "3cf623e1a4331e259ef92e49154ed0551f300436",
+    "commit": "cce98e12a4c10b092463f264b4c27313187a2d8e",
     "tree": "https://gitlab.com/ajgrf/on.el"
   },
   {
