@@ -1001,11 +1001,11 @@
   {
     "name": "on",
     "summary": "Hooks for faster startup",
-    "version": "20230823.32",
-    "url": "https://gitlab.com/ajgrf/on.el",
+    "version": "20230823.39",
+    "url": "https://github.com/elp-revive/on.el",
     "source": "github",
-    "commit": "cce98e12a4c10b092463f264b4c27313187a2d8e",
-    "tree": "https://gitlab.com/ajgrf/on.el"
+    "commit": "26ff01594a1e326af468350e1a22dcd1b7da71ae",
+    "tree": "https://github.com/elp-revive/on.el"
   },
   {
     "name": "openai",
