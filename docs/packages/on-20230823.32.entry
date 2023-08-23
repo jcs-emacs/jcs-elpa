@@ -1,9 +1,9 @@
 (on .
-    [(20221206 600)
+    [(20230823 32)
      ((emacs
        (27 1)))
      "Hooks for faster startup" tar
-     ((:commit . "3cf623e1a4331e259ef92e49154ed0551f300436")
+     ((:commit . "cce98e12a4c10b092463f264b4c27313187a2d8e")
       (:authors
        ("Alex Griffin" . "a@ajgrf.com"))
       (:maintainers
