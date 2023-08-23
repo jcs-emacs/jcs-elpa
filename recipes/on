@@ -1,1 +1,1 @@
-(on :repo "ajgrf/on.el" :fetcher github)
+(on :repo "elp-revive/on.el" :fetcher github)
