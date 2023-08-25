@@ -1307,10 +1307,10 @@
   {
     "name": "turbo-log",
     "summary": "The simple package for fast log selected region",
-    "version": "20230208.1643",
+    "version": "20230825.1445",
     "url": "https://github.com/Artawower/turbo-log",
     "source": "github",
-    "commit": "ac7f4cc3bd0157a28ab823dee156c3b2ee61c83a",
+    "commit": "5eafe619e60dc6c43ce472e24d788f7424ca1286",
     "tree": "https://github.com/Artawower/turbo-log"
   },
   {
