@@ -315,6 +315,15 @@
     "tree": "https://github.com/elp-revive/company-powershell"
   },
   {
+    "name": "consult-todo",
+    "summary": "Search hl-todo keywords in consult",
+    "version": "20230827.1610",
+    "url": "https://github.com/liuyinz/consult-todo",
+    "source": "github",
+    "commit": "04f3b0f4ed1e2ea9a04a6f67bb3f399070206ccb",
+    "tree": "https://github.com/liuyinz/consult-todo"
+  },
+  {
     "name": "copilot",
     "summary": "An unofficial Copilot plugin for Emacs",
     "version": "20230822.123",
