@@ -443,10 +443,10 @@
   {
     "name": "eglot-uniteai",
     "summary": "Eglot Clients for UniteAI",
-    "version": "20230821.205",
+    "version": "20230827.2317",
     "url": "https://github.com/emacs-openai/eglot-uniteai",
     "source": "github",
-    "commit": "7da91fdbd5d5a6272d3a985731b85b11441c63bd",
+    "commit": "6d8cf0cd2f0b7a39cb0938524397b9126726b77e",
     "tree": "https://github.com/emacs-openai/eglot-uniteai"
   },
   {
@@ -902,10 +902,10 @@
   {
     "name": "lsp-uniteai",
     "summary": "LSP Clients for UniteAI",
-    "version": "20230821.205",
+    "version": "20230827.2352",
     "url": "https://github.com/emacs-openai/lsp-uniteai",
     "source": "github",
-    "commit": "a35ef67b93210e1b863ae1e4e43c85c909709050",
+    "commit": "5ed526078fd47e58a89fbe365745740d23b8d022",
     "tree": "https://github.com/emacs-openai/lsp-uniteai"
   },
   {
