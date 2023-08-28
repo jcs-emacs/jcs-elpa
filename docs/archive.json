@@ -326,10 +326,10 @@
   {
     "name": "copilot",
     "summary": "An unofficial Copilot plugin for Emacs",
-    "version": "20230822.123",
+    "version": "20230828.1358",
     "url": "https://github.com/zerolfx/copilot.el",
     "source": "github",
-    "commit": "c942a5290f6e3b3ba831a924960abab50ceb0f6e",
+    "commit": "82d52b0314b87b682e44fdfacc90116c8bece491",
     "tree": "https://github.com/zerolfx/copilot.el"
   },
   {
@@ -1271,10 +1271,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20230828.800",
+    "version": "20230828.1112",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "6bec5a97da83ca3bc3d4053f5ee85f91d8758e46",
+    "commit": "5fe32b5ed92e3e84fc99a917111133e537732847",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
