@@ -1,9 +1,9 @@
 (eglot-uniteai .
-	       [(20230821 205)
+	       [(20230827 2317)
 		((emacs
 		  (26 1)))
 		"Eglot Clients for UniteAI" tar
-		((:commit . "7da91fdbd5d5a6272d3a985731b85b11441c63bd")
+		((:commit . "6d8cf0cd2f0b7a39cb0938524397b9126726b77e")
 		 (:authors
 		  ("Josh Freckleton" . "freckletonj@gmail.com")
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
