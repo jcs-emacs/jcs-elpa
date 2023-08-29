@@ -1,9 +1,9 @@
 (treesit-langs .
-	       [(20230822 48)
+	       [(20230829 48)
 		((emacs
 		  (29 0 50)))
 		"TODO" tar
-		((:commit . "d415b4b0793b25e4b2a182994cadedefe5eba70d")
+		((:commit . "7314d492e063b9a764523ceec126d59a04b44d60")
 		 (:authors
 		  ("Yoav Marco" . "https://github.com/ymarco"))
 		 (:maintainers
