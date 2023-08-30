@@ -155,10 +155,10 @@
   {
     "name": "codeium",
     "summary": "codeium client for emacs",
-    "version": "20230829.319",
+    "version": "20230830.26",
     "url": "https://github.com/Exafunction/codeium.el",
     "source": "github",
-    "commit": "d006f322876c764eb35ba1aea3b6f0584a1fdf45",
+    "commit": "4b2f5cc35978b0c526b0456e42bde9c55e13d543",
     "tree": "https://github.com/Exafunction/codeium.el"
   },
   {
