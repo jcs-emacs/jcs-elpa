@@ -1307,10 +1307,10 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20230828.352",
+    "version": "20230831.1133",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "999f295bf4445a4d3699a335e5e254429d45808e",
+    "commit": "323e252cf5fc251a5f2ccb5660a38380d4ef6a27",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
@@ -1424,10 +1424,10 @@
   {
     "name": "vs-edit-mode",
     "summary": "Minor mode accomplish editing experience in Visual Studio",
-    "version": "20230420.132",
+    "version": "20230831.1132",
     "url": "https://github.com/emacs-vs/vs-edit-mode",
     "source": "github",
-    "commit": "7891dd1d39dea7c0059f158497930be1fc0da1c6",
+    "commit": "8796261b721cbbba5402131e2facaac0faa84212",
     "tree": "https://github.com/emacs-vs/vs-edit-mode"
   },
   {
