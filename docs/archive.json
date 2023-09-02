@@ -848,10 +848,10 @@
   {
     "name": "lemmington",
     "summary": "RPC Emacs server",
-    "version": "20230719.1007",
+    "version": "20230902.1617",
     "url": "https://github.com/lem-project/lemmington.git",
     "source": "github",
-    "commit": "9fd66f82e9201efea6b17fb0f5394b850f21c95b",
+    "commit": "e3fe31a903501f003109816abe0474bfa94fe917",
     "tree": "https://github.com/lem-project/lemmington.git"
   },
   {
