@@ -398,10 +398,10 @@
   {
     "name": "eask",
     "summary": "Core Eask APIs, for Eask CLI development",
-    "version": "20230827.1930",
+    "version": "20230902.2131",
     "url": "https://github.com/emacs-eask/eask",
     "source": "github",
-    "commit": "46dcd67a9bb3b534f78d5f2dcfd4dbb183b55594",
+    "commit": "805e99098fb477a84c5de2c4e03e556fa7be8709",
     "tree": "https://github.com/emacs-eask/eask"
   },
   {
@@ -1271,10 +1271,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20230901.1023",
+    "version": "20230902.2034",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "774da808ef7eac4825e5f322e81e709c6319df1e",
+    "commit": "8bda5618f842cb13078372f24a842502db15e18c",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
