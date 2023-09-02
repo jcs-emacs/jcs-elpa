@@ -1,11 +1,13 @@
 (lemmington .
-	    [(20230719 1007)
+	    [(20230902 1617)
 	     ((emacs
 	       (27 1))
 	      (porthole
-	       (0 3 0)))
+	       (0 3 0))
+	      (elisp-refs
+	       (1 6)))
 	     "RPC Emacs server" tar
-	     ((:commit . "9fd66f82e9201efea6b17fb0f5394b850f21c95b")
+	     ((:commit . "e3fe31a903501f003109816abe0474bfa94fe917")
 	      (:maintainers
 	       ("Fermin Munoz" . "fmfs@posteo.net"))
 	      (:maintainer "Fermin Munoz" . "fmfs@posteo.net")
