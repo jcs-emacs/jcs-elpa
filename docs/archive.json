@@ -317,10 +317,10 @@
   {
     "name": "consult-todo",
     "summary": "Search hl-todo keywords in consult",
-    "version": "20230827.1610",
+    "version": "20230903.1850",
     "url": "https://github.com/liuyinz/consult-todo",
     "source": "github",
-    "commit": "04f3b0f4ed1e2ea9a04a6f67bb3f399070206ccb",
+    "commit": "a5a9b1bb8c6e9542c98c43a35fae1f0b9607146f",
     "tree": "https://github.com/liuyinz/consult-todo"
   },
   {
@@ -398,10 +398,10 @@
   {
     "name": "eask",
     "summary": "Core Eask APIs, for Eask CLI development",
-    "version": "20230903.349",
+    "version": "20230903.1901",
     "url": "https://github.com/emacs-eask/eask",
     "source": "github",
-    "commit": "8195d67ed03c528a5e0cac0b0f8f321ce2dd978c",
+    "commit": "335492b54a7ab6d4b38758858f188467fbe57918",
     "tree": "https://github.com/emacs-eask/eask"
   },
   {
