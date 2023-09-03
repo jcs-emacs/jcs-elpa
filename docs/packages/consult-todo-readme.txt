@@ -1,1 +1,1 @@
-Provide the command `consult-todo' to search and jump between hl-todo keywords.
+Provide commands `consult-todo' to search, filter, jump to hl-todo keywords.
