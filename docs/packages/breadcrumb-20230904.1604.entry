@@ -1,7 +1,7 @@
 (breadcrumb .
-	    [(20230904 1340)
+	    [(20230904 1604)
 	     nil "project and imenu-based breadcrumb paths" tar
-	     ((:commit . "4dd49220fdcdc047d57e9eb98d455572fb77f53c")
+	     ((:commit . "e9358a641a63664a50130ada98e8aca7493316c3")
 	      (:authors
 	       ("João Távora" . "joaotavora@gmail.com"))
 	      (:maintainers
