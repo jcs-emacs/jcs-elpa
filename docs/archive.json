@@ -65,10 +65,10 @@
   {
     "name": "breadcrumb",
     "summary": "project and imenu-based breadcrumb paths",
-    "version": "20230904.2001",
+    "version": "20230904.2058",
     "url": "https://github.com/joaotavora/breadcrumb",
     "source": "github",
-    "commit": "1cb229b87e1a99e09f2ce2425fc42958cb9cbf8e",
+    "commit": "9205ef62c8f8c5b1410c7f8495d11825f41f593b",
     "tree": "https://github.com/joaotavora/breadcrumb"
   },
   {
@@ -1307,10 +1307,10 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20230904.933",
+    "version": "20230904.2132",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "e015c9a3ebdbde188d190f2a56bab7327f53df0e",
+    "commit": "d705c1205961d61409687426bf9326c08487f62e",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
