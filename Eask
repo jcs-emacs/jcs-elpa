@@ -7,8 +7,8 @@
 
 (script "test" "echo \"Error: no test specified\" && exit 1")
 
-(source "gnu")
-(source "melpa")
-(source "jcs-elpa")
+(source 'gnu)
+(source 'melpa)
+(source 'jcs-elpa)
 
 (depends-on "github-elpa")

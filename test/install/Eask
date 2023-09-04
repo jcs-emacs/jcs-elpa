@@ -5,7 +5,9 @@
 (website-url "https://github.com/jcs-emacs/jcs-elpa/test")
 (keywords "elpa" "test")
 
-(source "jcs-elpa")
+(source 'gnu)
+(source 'melpa)
+(source 'jcs-elpa)
 
 ;; List of packages from jcs-elpa
 (depends-on "asoc")
