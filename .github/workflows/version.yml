@@ -26,7 +26,7 @@ jobs:
       with:
         version: 'snapshot'
 
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Generate SVG badges (version)
       run: make generate_badges_version
@@ -35,7 +35,7 @@ jobs:
       run: mv ./badges/ ~/
 
     - name: Checkout badges repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         repository: ${{ env.REPO_BADGES }}
         persist-credentials: false
