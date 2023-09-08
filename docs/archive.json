@@ -731,10 +731,10 @@
   {
     "name": "indent-bars",
     "summary": "highlight indentation with bars",
-    "version": "20230815.136",
+    "version": "20230908.1906",
     "url": "https://github.com/jdtsmith/indent-bars",
     "source": "github",
-    "commit": "568ec43b0e0059dcf19d86208c95ee0a36ce53fe",
+    "commit": "37239a3acbc2f1e7806bdeca8e91cee9dfe78bd4",
     "tree": "https://github.com/jdtsmith/indent-bars"
   },
   {
@@ -1271,10 +1271,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20230908.1048",
+    "version": "20230908.1856",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "c1ccfbd53152707cd293721b94459e4af7bc5bb7",
+    "commit": "53ab87e91a09566fe6605cf9615f71476849417f",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
