@@ -1,1 +1,1 @@
-(jayces-mode :repo "jcs-elpa/jayces-mode" :fetcher github)
+(jayces-mode :repo "jayces-lang/jayces-mode" :fetcher github)
