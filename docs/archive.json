@@ -317,10 +317,10 @@
   {
     "name": "consult-todo",
     "summary": "Search hl-todo keywords in consult",
-    "version": "20230906.931",
+    "version": "20230909.852",
     "url": "https://github.com/liuyinz/consult-todo",
     "source": "github",
-    "commit": "850d38863a88534e0570f612bef60ab0b7f7b7af",
+    "commit": "2215024e5154b91449f46b1749732815ece686a8",
     "tree": "https://github.com/liuyinz/consult-todo"
   },
   {
