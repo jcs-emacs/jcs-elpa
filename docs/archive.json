@@ -317,10 +317,10 @@
   {
     "name": "consult-todo",
     "summary": "Search hl-todo keywords in consult",
-    "version": "20230909.852",
+    "version": "20230909.904",
     "url": "https://github.com/liuyinz/consult-todo",
     "source": "github",
-    "commit": "2215024e5154b91449f46b1749732815ece686a8",
+    "commit": "77aed9580fdd829b84fa020b5921a5461e83afd4",
     "tree": "https://github.com/liuyinz/consult-todo"
   },
   {
@@ -1271,10 +1271,10 @@
   {
     "name": "tree-sitter",
     "summary": "Incremental parsing system",
-    "version": "20220212.1632",
+    "version": "20230909.816",
     "url": "https://github.com/emacs-tree-sitter/elisp-tree-sitter",
     "source": "github",
-    "commit": "909717c685ff5a2327fa2ca8fb8a25216129361c",
+    "commit": "cbfdf130e89d3b4230b0b0848c3591d56c720a50",
     "tree": "https://github.com/emacs-tree-sitter/elisp-tree-sitter"
   },
   {
@@ -1334,10 +1334,10 @@
   {
     "name": "tsc",
     "summary": "Core Tree-sitter APIs",
-    "version": "20220212.1632",
+    "version": "20230909.816",
     "url": "https://github.com/emacs-tree-sitter/elisp-tree-sitter",
     "source": "github",
-    "commit": "909717c685ff5a2327fa2ca8fb8a25216129361c",
+    "commit": "88c41a0aa8cd8df4ee12e124c519e2425559e36f",
     "tree": "https://github.com/emacs-tree-sitter/elisp-tree-sitter"
   },
   {
