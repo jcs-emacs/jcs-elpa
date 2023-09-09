@@ -1269,6 +1269,24 @@
     "tree": "https://github.com/jcs-elpa/toggle-profiler"
   },
   {
+    "name": "tree-sitter",
+    "summary": "Incremental parsing system",
+    "version": "20220212.1632",
+    "url": "https://github.com/emacs-tree-sitter/elisp-tree-sitter",
+    "source": "github",
+    "commit": "909717c685ff5a2327fa2ca8fb8a25216129361c",
+    "tree": "https://github.com/emacs-tree-sitter/elisp-tree-sitter"
+  },
+  {
+    "name": "tree-sitter-indent",
+    "summary": "Provide indentation with a Tree-sitter backend",
+    "version": "20220411.1439",
+    "url": "https://codeberg.org/FelipeLema/tree-sitter-indent.el",
+    "source": "codeberg",
+    "commit": "4ef246db3e4ff99f672fe5e4b416c890f885c09e",
+    "tree": "https://codeberg.org/FelipeLema/tree-sitter-indent.el"
+  },
+  {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
     "version": "20230908.1856",
@@ -1312,6 +1330,15 @@
     "source": "github",
     "commit": "22ffb18db61a8defc3e091bbb9a774263298cd82",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
+  },
+  {
+    "name": "tsc",
+    "summary": "Core Tree-sitter APIs",
+    "version": "20220212.1632",
+    "url": "https://github.com/emacs-tree-sitter/elisp-tree-sitter",
+    "source": "github",
+    "commit": "909717c685ff5a2327fa2ca8fb8a25216129361c",
+    "tree": "https://github.com/emacs-tree-sitter/elisp-tree-sitter"
   },
   {
     "name": "turbo-log",
