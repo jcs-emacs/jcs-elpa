@@ -767,11 +767,11 @@
   {
     "name": "jayces-mode",
     "summary": "Major mode for editing JayCeS file",
-    "version": "20220704.653",
-    "url": "https://github.com/jcs-elpa/jayces-mode",
+    "version": "20230909.2113",
+    "url": "https://github.com/jayces-lang/jayces-mode",
     "source": "github",
-    "commit": "719b140ea1cf1a8b15046c85cca4b2b818750754",
-    "tree": "https://github.com/jcs-elpa/jayces-mode"
+    "commit": "ce666aaa76bb0b81ffe6aa9773b5129df170e56f",
+    "tree": "https://github.com/jayces-lang/jayces-mode"
   },
   {
     "name": "jcs-echobar",
