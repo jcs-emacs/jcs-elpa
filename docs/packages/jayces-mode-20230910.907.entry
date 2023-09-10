@@ -1,9 +1,9 @@
 (jayces-mode .
-	     [(20230909 2113)
+	     [(20230910 907)
 	      ((emacs
-		(24 3)))
+		(26 1)))
 	      "Major mode for editing JayCeS file" tar
-	      ((:commit . "ce666aaa76bb0b81ffe6aa9773b5129df170e56f")
+	      ((:commit . "aad4bd50917bbc144ac3086d6a8021f63acb7b9b")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainers
