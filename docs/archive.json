@@ -767,10 +767,10 @@
   {
     "name": "jayces-mode",
     "summary": "Major mode for editing JayCeS file",
-    "version": "20230909.2113",
+    "version": "20230910.907",
     "url": "https://github.com/jayces-lang/jayces-mode",
     "source": "github",
-    "commit": "ce666aaa76bb0b81ffe6aa9773b5129df170e56f",
+    "commit": "aad4bd50917bbc144ac3086d6a8021f63acb7b9b",
     "tree": "https://github.com/jayces-lang/jayces-mode"
   },
   {
