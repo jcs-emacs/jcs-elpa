@@ -731,10 +731,10 @@
   {
     "name": "indent-bars",
     "summary": "highlight indentation with bars",
-    "version": "20230911.111",
+    "version": "20230911.148",
     "url": "https://github.com/jdtsmith/indent-bars",
     "source": "github",
-    "commit": "d9459a784e0f41e543b4f79f1c17488b8f864975",
+    "commit": "327ace549381e57e5aa1bf47ca63cea9d09c79a3",
     "tree": "https://github.com/jdtsmith/indent-bars"
   },
   {
@@ -1307,10 +1307,10 @@
   {
     "name": "treesit-langs",
     "summary": "TODO",
-    "version": "20230910.1922",
+    "version": "20230911.203",
     "url": "https://github.com/kiennq/treesit-langs",
     "source": "github",
-    "commit": "28e63d932067cf2e508697e906b407c7422bc2da",
+    "commit": "9cdad1c86eae444a05c8d5383b891d12a95cecfa",
     "tree": "https://github.com/kiennq/treesit-langs"
   },
   {
