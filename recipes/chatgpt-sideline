@@ -1,0 +1,1 @@
+(chatgpt-sideline :repo "emacs-openai/chatgpt-sideline" :fetcher github)
