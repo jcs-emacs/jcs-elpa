@@ -135,6 +135,15 @@
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
+    "name": "chatgpt-sideline",
+    "summary": "Sideline support for chatgpt",
+    "version": "20230913.2311",
+    "url": "https://github.com/emacs-openai/chatgpt-sideline",
+    "source": "github",
+    "commit": "5ba068a39ab28e586e116b3184c0322f2dce8439",
+    "tree": "https://github.com/emacs-openai/chatgpt-sideline"
+  },
+  {
     "name": "cisco-router-mode",
     "summary": "Major mode for editing Cisco router configuration files",
     "version": "20100804.840",
