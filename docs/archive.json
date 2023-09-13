@@ -389,10 +389,10 @@
   {
     "name": "doxygen-asterisk",
     "summary": "Minor mode that helps you insert pair /* and */",
-    "version": "20230414.433",
+    "version": "20230913.247",
     "url": "https://github.com/emacs-vs/doxygen-asterisk",
     "source": "github",
-    "commit": "e3cd32ab2fceb7ebaddc0f80925e4dca5cf1af35",
+    "commit": "8521ce9d06002837575636cf1b80aa8079098b5e",
     "tree": "https://github.com/emacs-vs/doxygen-asterisk"
   },
   {
