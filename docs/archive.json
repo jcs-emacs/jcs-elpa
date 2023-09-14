@@ -1350,6 +1350,15 @@
     "tree": "https://github.com/emacs-tree-sitter/elisp-tree-sitter"
   },
   {
+    "name": "tspew",
+    "summary": "Clean and format \"template spew\" errors from gcc and Clang",
+    "version": "20230913.449",
+    "url": "https://github.com/jefftrull/tspew",
+    "source": "github",
+    "commit": "36389846c9941f71b6345c00529557599c714610",
+    "tree": "https://github.com/jefftrull/tspew"
+  },
+  {
     "name": "turbo-log",
     "summary": "The simple package for fast log selected region",
     "version": "20230825.1445",
