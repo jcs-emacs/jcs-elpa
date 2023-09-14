@@ -1,5 +1,5 @@
 (chatgpt .
-	 [(20230913 2319)
+	 [(20230914 24)
 	  ((emacs
 	    (27 1))
 	   (openai
@@ -13,7 +13,7 @@
 	   (spinner
 	    (1 7 4)))
 	  "Use ChatGPT inside Emacs" tar
-	  ((:commit . "34376e94e0e07a28ee60459de1d1b13113330b9e")
+	  ((:commit . "aa8b3eb9b3b0575c91702bfa74149274a194d31d")
 	   (:authors
 	    ("Jen-Chieh" . "jcs090218@gmail.com"))
 	   (:maintainers
