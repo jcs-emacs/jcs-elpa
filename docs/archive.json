@@ -119,10 +119,10 @@
   {
     "name": "chatgpt",
     "summary": "Use ChatGPT inside Emacs",
-    "version": "20230914.140",
+    "version": "20230914.220",
     "url": "https://github.com/emacs-openai/chatgpt",
     "source": "github",
-    "commit": "d33dc3157aed58949a61f48fc2d5018bc13065de",
+    "commit": "5014e4f0814b0256a36056e3b170fcd9cc643880",
     "tree": "https://github.com/emacs-openai/chatgpt"
   },
   {
@@ -137,10 +137,10 @@
   {
     "name": "chatgpt-sideline",
     "summary": "Sideline support for chatgpt",
-    "version": "20230914.24",
+    "version": "20230914.224",
     "url": "https://github.com/emacs-openai/chatgpt-sideline",
     "source": "github",
-    "commit": "2bb00cf419084531215a1e036c4811cdb5352713",
+    "commit": "1bbb39f2c7ca2455efd54b60d2017867b03f63f6",
     "tree": "https://github.com/emacs-openai/chatgpt-sideline"
   },
   {
