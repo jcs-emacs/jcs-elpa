@@ -1,7 +1,7 @@
 (tspew .
-       [(20230915 9)
+       [(20230915 114)
 	nil "Clean and format \"template spew\" errors from gcc and Clang" tar
-	((:commit . "0380c6d1f6fdd91306432b34cf262cf58c332a3c")
+	((:commit . "2fe76a9ff3f3a34ac7c1da010991614a6561a058")
 	 (:authors
 	  ("Jeff Trull" . "edaskel@att.net"))
 	 (:maintainers
