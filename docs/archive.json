@@ -540,6 +540,15 @@
     "tree": "https://github.com/jcs-elpa/execrun"
   },
   {
+    "name": "fasm-mode",
+    "summary": "Fasm major mode",
+    "version": "20150517.1227",
+    "url": "https://github.com/Fanael/fasm-mode",
+    "source": "github",
+    "commit": "cb4b9bf48c7f05530e140456eb1f4a54716470f9",
+    "tree": "https://github.com/Fanael/fasm-mode"
+  },
+  {
     "name": "fextern",
     "summary": "Record file external stats",
     "version": "20221004.1304",
