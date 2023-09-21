@@ -1514,10 +1514,10 @@
   {
     "name": "vsc-edit-mode",
     "summary": "Implement editing experience like VSCode",
-    "version": "20230119.1112",
+    "version": "20230921.531",
     "url": "https://github.com/emacs-vs/vsc-edit-mode",
     "source": "github",
-    "commit": "e106b4ea1a7ae59e89545f0aa70352acb2a86a45",
+    "commit": "96cfebf0f1035425c231068d886b468d8be4a33c",
     "tree": "https://github.com/emacs-vs/vsc-edit-mode"
   },
   {
