@@ -1,0 +1,1 @@
+(fasm-mode :fetcher github :repo "the-little-language-designer/fasm-mode")
