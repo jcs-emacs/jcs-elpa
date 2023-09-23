@@ -1361,10 +1361,10 @@
   {
     "name": "tspew",
     "summary": "Clean and format \"template spew\" errors from gcc and Clang",
-    "version": "20230920.2223",
+    "version": "20230923.112",
     "url": "https://github.com/jefftrull/tspew",
     "source": "github",
-    "commit": "f05906d1a0642ebd6442045d42250aaec32ac0a9",
+    "commit": "d26b39e79284884f67979ae7176be5f141eb4060",
     "tree": "https://github.com/jefftrull/tspew"
   },
   {
