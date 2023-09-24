@@ -450,6 +450,15 @@
     "tree": "https://github.com/emacs-languagetool/eglot-ltex"
   },
   {
+    "name": "eglot-shader",
+    "summary": "Eglot Clients for Shader",
+    "version": "20230924.231",
+    "url": "https://github.com/shader-ls/eglot-shader",
+    "source": "github",
+    "commit": "c352922cea1c358113031eb1b7668d24aab36088",
+    "tree": "https://github.com/shader-ls/eglot-shader"
+  },
+  {
     "name": "eglot-uniteai",
     "summary": "Eglot Clients for UniteAI",
     "version": "20230827.2317",
