@@ -1,0 +1,1 @@
+(eglot-shader :repo "shader-ls/eglot-shader" :fetcher github)
