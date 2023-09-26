@@ -1395,6 +1395,15 @@
     "tree": "https://github.com/tmalsburg/txl.el"
   },
   {
+    "name": "typst-mode",
+    "summary": "A major mode for working with Typst typesetting system",
+    "version": "20230925.39",
+    "url": "https://github.com/Ziqi-Yang/typst-mode.el",
+    "source": "github",
+    "commit": "5776fd4f3608350ff6a2b61b118d38165d342aa3",
+    "tree": "https://github.com/Ziqi-Yang/typst-mode.el"
+  },
+  {
     "name": "undo-hl",
     "summary": "Highlight undo/redo",
     "version": "20220523.557",
