@@ -1,0 +1,4 @@
+(typst-mode
+ :fetcher github
+ :repo "Ziqi-Yang/typst-mode.el")
+ 
