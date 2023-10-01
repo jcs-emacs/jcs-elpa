@@ -415,11 +415,11 @@
   },
   {
     "name": "eask-mode",
-    "summary": "major mode for editing Eask files",
-    "version": "20230207.2323",
+    "summary": "Major mode for editing Eask files",
+    "version": "20231001.1914",
     "url": "https://github.com/emacs-eask/eask-mode",
     "source": "github",
-    "commit": "10b5b6d4747ddc67ef1c2b820bf23613e3bde48c",
+    "commit": "2fb19f30812c5c0db2bcc7078fdd43958731bfef",
     "tree": "https://github.com/emacs-eask/eask-mode"
   },
   {
