@@ -1,5 +1,5 @@
 (company-eask .
-	      [(20230207 2323)
+	      [(20231002 11)
 	       ((emacs
 		 (26 1))
 		(company
@@ -7,7 +7,7 @@
 		(eask
 		 (0 1 0)))
 	       "Company backend for Eask-file" tar
-	       ((:commit . "28734d33327c76b6e5d11875fd8229e73d46562c")
+	       ((:commit . "3e9d8d366cee023a60dd1c3149b1f7c466b94bb8")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainers
