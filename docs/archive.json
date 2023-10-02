@@ -245,10 +245,10 @@
   {
     "name": "company-eask",
     "summary": "Company backend for Eask-file",
-    "version": "20230207.2323",
+    "version": "20231002.11",
     "url": "https://github.com/emacs-eask/company-eask",
     "source": "github",
-    "commit": "28734d33327c76b6e5d11875fd8229e73d46562c",
+    "commit": "3e9d8d366cee023a60dd1c3149b1f7c466b94bb8",
     "tree": "https://github.com/emacs-eask/company-eask"
   },
   {
