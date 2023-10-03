@@ -1125,6 +1125,15 @@
     "tree": "https://github.com/jcs-elpa/pkg-dm"
   },
   {
+    "name": "point-undo",
+    "summary": "undo/redo position",
+    "version": "20211208.842",
+    "url": "https://github.com/ncaq/point-undo",
+    "source": "github",
+    "commit": "971efe20e3ef5764587168c5510c4b65406aca02",
+    "tree": "https://github.com/ncaq/point-undo"
+  },
+  {
     "name": "preview-it",
     "summary": "Preview anything at point",
     "version": "20220820.729",
