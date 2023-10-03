@@ -1296,6 +1296,15 @@
     "tree": "https://github.com/sensorflo/sln-mode"
   },
   {
+    "name": "smartchr",
+    "summary": "emacs version of smartchr.vim",
+    "version": "20220606.1252",
+    "url": "https://github.com/imakado/emacs-smartchr",
+    "source": "github",
+    "commit": "b2410de732484030758f72b07e619cc594e6d287",
+    "tree": "https://github.com/imakado/emacs-smartchr"
+  },
+  {
     "name": "sound-async",
     "summary": "Play sound asynchronously",
     "version": "20221019.1127",
