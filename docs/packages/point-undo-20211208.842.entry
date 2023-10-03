@@ -1,0 +1,4 @@
+(point-undo .
+	    [(20211208 842)
+	     nil "undo/redo position" tar
+	     ((:commit . "971efe20e3ef5764587168c5510c4b65406aca02"))])
