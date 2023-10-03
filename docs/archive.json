@@ -164,10 +164,10 @@
   {
     "name": "codeium",
     "summary": "codeium client for emacs",
-    "version": "20230921.1858",
+    "version": "20231003.119",
     "url": "https://github.com/Exafunction/codeium.el",
     "source": "github",
-    "commit": "32a91611f9c5f9377ac5f097fbdea318b3add921",
+    "commit": "4f54c2f3a434aa160be8e36c1fcc3d95187e344f",
     "tree": "https://github.com/Exafunction/codeium.el"
   },
   {
@@ -335,10 +335,10 @@
   {
     "name": "copilot",
     "summary": "An unofficial Copilot plugin for Emacs",
-    "version": "20230913.657",
+    "version": "20231003.17",
     "url": "https://github.com/zerolfx/copilot.el",
     "source": "github",
-    "commit": "421703f5dd5218ec2a3aa23ddf09d5f13e5014c2",
+    "commit": "c5160f6bb323b7e86674993df3453cf68e9537f3",
     "tree": "https://github.com/zerolfx/copilot.el"
   },
   {
