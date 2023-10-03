@@ -774,6 +774,15 @@
     "tree": "https://github.com/jcs-elpa/ivy-describe-modes"
   },
   {
+    "name": "ivy-point-history",
+    "summary": "point-history with ivy interface",
+    "version": "20200726.1639",
+    "url": "https://github.com/SuzumiyaAoba/ivy-point-history",
+    "source": "github",
+    "commit": "5d450a91656503c98a548557a563ee99d65b46b3",
+    "tree": "https://github.com/SuzumiyaAoba/ivy-point-history"
+  },
+  {
     "name": "jai-mode",
     "summary": "Major mode for JAI",
     "version": "20230913.920",
@@ -1123,6 +1132,15 @@
     "source": "github",
     "commit": "628457b60940d8512bd8cc71f83de82307754bbf",
     "tree": "https://github.com/jcs-elpa/pkg-dm"
+  },
+  {
+    "name": "point-history",
+    "summary": "Show the history of points you visited before",
+    "version": "20200721.1117",
+    "url": "https://github.com/blue0513/point-history",
+    "source": "github",
+    "commit": "dd6d42cfbb25b3432786b263451f433a68eebabf",
+    "tree": "https://github.com/blue0513/point-history"
   },
   {
     "name": "point-undo",
