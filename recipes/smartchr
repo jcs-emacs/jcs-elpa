@@ -1,0 +1,1 @@
+(smartchr :fetcher github :repo "imakado/emacs-smartchr")
