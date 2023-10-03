@@ -14,7 +14,6 @@
 > ELPA for [jcs-emacs](https://github.com/jcs-emacs/jcs-emacs), using [github-elpa](https://github.com/10sr/github-elpa)
 
 [![Build](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/build.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/build.yml)
-[![ELD](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/eld.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/eld.yml)
 [![Archive](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/archive.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/archive.yml)
 [![Install](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/install.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/install.yml)
 
