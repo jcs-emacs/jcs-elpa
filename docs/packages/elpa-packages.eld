@@ -124,6 +124,7 @@
   (package-build :url "https://github.com/melpa/package-build.git")
   (pallet :url "https://github.com/rdallasgray/pallet.git")
   (pkg-dm :url "https://github.com/jcs-elpa/pkg-dm.git")
+  (point-history :url "https://github.com/blue0513/point-history.git")
   (point-undo :url "https://github.com/ncaq/point-undo.git")
   (preview-it :url "https://github.com/jcs-elpa/preview-it.git")
   (prt :url "https://github.com/jcs-elpa/prt.git")

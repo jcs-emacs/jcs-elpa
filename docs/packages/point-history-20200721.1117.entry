@@ -1,0 +1,7 @@
+(point-history .
+	       [(20200721 1117)
+		((popwin
+		  (1 0 0)))
+		"Show the history of points you visited before" tar
+		((:commit . "dd6d42cfbb25b3432786b263451f433a68eebabf")
+		 (:url . "https://github.com/blue0513/point-history"))])
