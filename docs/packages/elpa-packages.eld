@@ -142,6 +142,7 @@
   (sideline-flymake :url "https://github.com/emacs-sideline/sideline-flymake.git")
   (sideline-lsp :url "https://github.com/emacs-sideline/sideline-lsp.git")
   (sln-mode :url "https://github.com/sensorflo/sln-mode.git")
+  (smartchr :url "https://github.com/imakado/emacs-smartchr.git")
   (sound-async :url "https://github.com/jcs-elpa/sound-async.git")
   (sublime-fuzzy :url "https://github.com/jcs-elpa/sublime-fuzzy.git")
   (toggle-profiler :url "https://github.com/jcs-elpa/toggle-profiler.git")
