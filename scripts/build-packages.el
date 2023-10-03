@@ -33,19 +33,7 @@
                                                 package-build-tar-executable)))
           ;; Currently no way to detect build failure...
           (ignore-errors (package-build-archive recipe)))))
-    (package-build-cleanup)
-    ;; Make sure elpa-packages.eld remains the same!
-    (with-current-buffer (find-file eld)
-      (erase-buffer)
-      (insert eld-content)
-      (save-buffer))
-    ;; Only delete it when it's not cleaned, meaning some packages are built
-    ;; for upgrade!
-    (when-let* ((status (shell-command-to-string "git status"))
-                (status (string-trim status))
-                ((not (string-suffix-p "working tree clean" status))))
-      ;; Delete elpa-packages.eld file, let workflow ELD handle this!
-      (delete-file eld))))
+    (package-build-cleanup)))
 
 ;; Local Variables:
 ;; coding: utf-8
