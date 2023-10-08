@@ -245,10 +245,10 @@
   {
     "name": "company-eask",
     "summary": "Company backend for Eask-file",
-    "version": "20231002.11",
+    "version": "20231008.1908",
     "url": "https://github.com/emacs-eask/company-eask",
     "source": "github",
-    "commit": "3e9d8d366cee023a60dd1c3149b1f7c466b94bb8",
+    "commit": "27f0a46259427df6a29f352b9bf1079812c3f7bf",
     "tree": "https://github.com/emacs-eask/company-eask"
   },
   {
@@ -425,10 +425,10 @@
   {
     "name": "easky",
     "summary": "Control Eask in Emacs",
-    "version": "20230329.220",
+    "version": "20230906.611",
     "url": "https://github.com/emacs-eask/easky",
     "source": "github",
-    "commit": "8b9744fb2de996b0d92bc619e64f920091d4335f",
+    "commit": "ad528fd56ff4e25deec747dcfc815f4edf56ee68",
     "tree": "https://github.com/emacs-eask/easky"
   },
   {
@@ -479,10 +479,10 @@
   {
     "name": "eldoc-eask",
     "summary": "Eldoc support for Eask-file",
-    "version": "20230207.2323",
+    "version": "20230906.611",
     "url": "https://github.com/emacs-eask/eldoc-eask",
     "source": "github",
-    "commit": "a09ad6105e4bee596dca40232a823c08967a5055",
+    "commit": "c82dedc41772f6a84f02b2fe24bea7ba9512e246",
     "tree": "https://github.com/emacs-eask/eldoc-eask"
   },
   {
