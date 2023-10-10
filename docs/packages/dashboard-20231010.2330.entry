@@ -1,9 +1,9 @@
 (dashboard .
-	   [(20230914 941)
+	   [(20231010 2330)
 	    ((emacs
 	      (26 1)))
 	    "A startup screen extracted from Spacemacs" tar
-	    ((:commit . "87bb28397d7af6ed6601bdd26478a5fa4ee2b7db")
+	    ((:commit . "900375830951a6e492d2599d80e66075028e509b")
 	     (:authors
 	      ("Rakan Al-Hneiti" . "rakan.alhneiti@gmail.com"))
 	     (:maintainers
