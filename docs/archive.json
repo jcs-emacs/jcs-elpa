@@ -1244,10 +1244,10 @@
   {
     "name": "sideline-blame",
     "summary": "Show blame messages with sideline",
-    "version": "20230406.2312",
+    "version": "20231015.1917",
     "url": "https://github.com/emacs-sideline/sideline-blame",
     "source": "github",
-    "commit": "4d3343795bc95662adb65c85bcbb41947862699f",
+    "commit": "014ac17de30b4fcafa7b73d8c886cffa3807d8b1",
     "tree": "https://github.com/emacs-sideline/sideline-blame"
   },
   {
