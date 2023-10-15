@@ -1,0 +1,13 @@
+(indent-control .
+		[(20231015 616)
+		 ((emacs
+		   (26 1)))
+		 "Management for indentation level" tar
+		 ((:commit . "5d83d5fb581db8eaeb7f200ddc53c15a9b9a8b62")
+		  (:authors
+		   ("Jen-Chieh" . "jcs090218@gmail.com"))
+		  (:maintainers
+		   ("Jen-Chieh" . "jcs090218@gmail.com"))
+		  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		  (:keywords "convenience" "control" "indent" "tab" "generic" "level")
+		  (:url . "https://github.com/jcs-elpa/indent-control"))])
