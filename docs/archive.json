@@ -765,6 +765,15 @@
     "tree": "https://github.com/jdtsmith/indent-bars"
   },
   {
+    "name": "indent-control",
+    "summary": "Management for indentation level",
+    "version": "20231015.616",
+    "url": "https://github.com/jcs-elpa/indent-control",
+    "source": "github",
+    "commit": "5d83d5fb581db8eaeb7f200ddc53c15a9b9a8b62",
+    "tree": "https://github.com/jcs-elpa/indent-control"
+  },
+  {
     "name": "ivy-describe-modes",
     "summary": "Ivy interface to `describe-mode`",
     "version": "20230623.731",
