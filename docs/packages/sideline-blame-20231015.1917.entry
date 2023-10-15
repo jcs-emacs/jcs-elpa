@@ -1,5 +1,5 @@
 (sideline-blame .
-		[(20230406 2312)
+		[(20231015 1917)
 		 ((emacs
 		   (27 1))
 		  (sideline
@@ -7,7 +7,7 @@
 		  (vc-msg
 		   (1 1 1)))
 		 "Show blame messages with sideline" tar
-		 ((:commit . "4d3343795bc95662adb65c85bcbb41947862699f")
+		 ((:commit . "014ac17de30b4fcafa7b73d8c886cffa3807d8b1")
 		  (:authors
 		   ("Jen-Chieh" . "jcs090218@gmail.com"))
 		  (:maintainers
