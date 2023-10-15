@@ -1,5 +1,5 @@
 (consult-todo .
-	      [(20231003 2336)
+	      [(20231015 2219)
 	       ((emacs
 		 (27 1))
 		(consult
@@ -7,7 +7,7 @@
 		(hl-todo
 		 (3 1 2)))
 	       "Search hl-todo keywords in consult" tar
-	       ((:commit . "ff00363abcb4611563bc40b9192ac3197f75dc98")
+	       ((:commit . "63dc4b72f0bd98c44f73bd6a059566e95d324d20")
 		(:authors
 		 ("liuyinz" . "liuyinz@gmail.com"))
 		(:maintainers
