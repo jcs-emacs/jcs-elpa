@@ -641,10 +641,10 @@
   {
     "name": "flymake-eask",
     "summary": "Eask support in Flymake",
-    "version": "20221231.1617",
+    "version": "20231022.1740",
     "url": "https://github.com/flymake/flymake-eask",
     "source": "github",
-    "commit": "3ffd1d77c57354116118c4ab5e87b98e1368d7f3",
+    "commit": "82204f96fd4168a7641df81fd90cb6d8561914f3",
     "tree": "https://github.com/flymake/flymake-eask"
   },
   {
