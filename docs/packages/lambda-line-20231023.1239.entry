@@ -1,8 +1,8 @@
 (lambda-line .
-	     [(20230803 1249)
+	     [(20231023 1239)
 	      ((emacs
 		(27 1)))
 	      "A custom status line" tar
-	      ((:commit . "f908f55fdc4f64669dbb603be3614da3ea0ba8c2")
+	      ((:commit . "370ac7d2ab3ee6f41eb72b23d3536ae9aac09bf4")
 	       (:keywords "mode-line" "faces")
 	       (:url . "https://github.com/Lambda-Emacs/lambda-line"))])
