@@ -1,11 +1,11 @@
 (yasnippet-capf .
-		[(20231023 1010)
+		[(20231024 1604)
 		 ((emacs
 		   (25 1))
 		  (yasnippet
 		   (0 14 0)))
 		 "Yasnippet Completion At Point Function" tar
-		 ((:commit . "b8d586fa9fdfb2045a30c643d9ff15fea13fa5d8")
+		 ((:commit . "a0a6b1c2bb6decdad5cf9b74202f0042f494a6ab")
 		  (:authors
 		   ("Ellis Kenyő" . "me@elken.dev"))
 		  (:maintainers
