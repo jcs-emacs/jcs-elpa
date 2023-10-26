@@ -1,11 +1,11 @@
 (aws .
-     [(20231026 802)
+     [(20231026 833)
       ((emacs
 	(27 1))
        (lsp-mode
 	(6 1)))
       "AWS Toolkit" tar
-      ((:commit . "cf9ea8dc0989c2459431990104e48bb834447373")
+      ((:commit . "dfcc14752bad49e1bf295b0879bcc35bba693920")
        (:authors
 	("Jen-Chieh" . "jcs090218@gmail.com"))
        (:maintainers
