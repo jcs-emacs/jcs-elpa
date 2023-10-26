@@ -1,1 +1,1 @@
-(aws :repo "jcs090218/aws" :fetcher github)
+(aws :repo "jcs090218/aws-toolkit-emacs" :fetcher github)
