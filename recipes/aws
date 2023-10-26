@@ -1,0 +1,1 @@
+(aws :repo "jcs090218/aws" :fetcher github)
