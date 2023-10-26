@@ -27,6 +27,15 @@
     "tree": "https://github.com/jcs-elpa/auto-scroll-bar"
   },
   {
+    "name": "aws",
+    "summary": "AWS Toolkit",
+    "version": "20231026.741",
+    "url": "https://github.com/jcs090218/aws-toolkit-emacs",
+    "source": "github",
+    "commit": "da637eec8d1b10aba70df338865ca6d9e4898347",
+    "tree": "https://github.com/jcs090218/aws-toolkit-emacs"
+  },
+  {
     "name": "balanced-windows",
     "summary": "Keep windows balanced",
     "version": "20220919.824",
