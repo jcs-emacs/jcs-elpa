@@ -1,0 +1,13 @@
+(aws .
+     [(20231026 741)
+      ((emacs
+	(27 1)))
+      "AWS Toolkit" tar
+      ((:commit . "da637eec8d1b10aba70df338865ca6d9e4898347")
+       (:authors
+	("Jen-Chieh" . "jcs090218@gmail.com"))
+       (:maintainers
+	("Jen-Chieh" . "jcs090218@gmail.com"))
+       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+       (:keywords "aws" "convenience")
+       (:url . "https://github.com/jcs090218/aws-toolkit-emacs"))])

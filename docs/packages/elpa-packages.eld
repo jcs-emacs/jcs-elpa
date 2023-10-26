@@ -1,6 +1,7 @@
 (((ace-link-dashboard :url "https://github.com/emacs-dashboard/ace-link-dashboard.git")
   (asoc :url "https://github.com/troyp/asoc.el.git")
   (auto-scroll-bar :url "https://github.com/jcs-elpa/auto-scroll-bar.git")
+  (aws :url "https://github.com/jcs090218/aws-toolkit-emacs.git")
   (balanced-windows :url "https://github.com/elp-revive/balanced-windows.git")
   (beancount :url "https://github.com/beancount/beancount-mode.git")
   (bitwarden :url "https://github.com/seanfarley/emacs-bitwarden.git")
