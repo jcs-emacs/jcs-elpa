@@ -182,10 +182,10 @@
   {
     "name": "codeium",
     "summary": "codeium client for emacs",
-    "version": "20231020.57",
+    "version": "20231027.2232",
     "url": "https://github.com/Exafunction/codeium.el",
     "source": "github",
-    "commit": "6b49c2d523f8c160eaac1f01e9ae013e1493f771",
+    "commit": "ddc9927ea231ecc5a32f7c9905f92fdfb7912e75",
     "tree": "https://github.com/Exafunction/codeium.el"
   },
   {
@@ -929,10 +929,10 @@
   {
     "name": "line-reminder",
     "summary": "Line annotation for changed and saved lines",
-    "version": "20230420.142",
+    "version": "20231027.2209",
     "url": "https://github.com/emacs-vs/line-reminder",
     "source": "github",
-    "commit": "583bff387b361e1fe442f57e9ad1f6f8e87dedf4",
+    "commit": "8b63b6ad6733363b24a8f5472f71eab301044b43",
     "tree": "https://github.com/emacs-vs/line-reminder"
   },
   {
