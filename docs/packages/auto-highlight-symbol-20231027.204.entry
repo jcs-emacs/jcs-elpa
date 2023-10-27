@@ -1,11 +1,11 @@
 (auto-highlight-symbol .
-		       [(20221231 1631)
+		       [(20231027 204)
 			((emacs
 			  (26 1))
 			 (ht
 			  (2 3)))
 			"Automatic highlighting current symbol minor mode" tar
-			((:commit . "ece5e2c722efa5c9ea32a809b484afc222ebebe5")
+			((:commit . "2fc72734524efbdcede3024d1f29b4257f6265e9")
 			 (:authors
 			  ("Mitsuo Saito" . "arch320@NOSPAM.gmail.com"))
 			 (:maintainers
