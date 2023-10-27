@@ -20,10 +20,10 @@
   {
     "name": "auto-highlight-symbol",
     "summary": "Automatic highlighting current symbol minor mode",
-    "version": "20231027.204",
+    "version": "20231027.231",
     "url": "http://github.com/jcs-elpa/auto-highlight-symbol",
     "source": "github",
-    "commit": "2fc72734524efbdcede3024d1f29b4257f6265e9",
+    "commit": "23d0d3a4365328bbd67cbe5fb2b443693c896ea0",
     "tree": "http://github.com/jcs-elpa/auto-highlight-symbol"
   },
   {
