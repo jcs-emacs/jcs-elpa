@@ -1,5 +1,5 @@
 (line-reminder .
-	       [(20230420 142)
+	       [(20231027 2209)
 		((emacs
 		  (25 1))
 		 (indicators
@@ -11,7 +11,7 @@
 		 (ht
 		  (2 0)))
 		"Line annotation for changed and saved lines" tar
-		((:commit . "583bff387b361e1fe442f57e9ad1f6f8e87dedf4")
+		((:commit . "8b63b6ad6733363b24a8f5472f71eab301044b43")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainers
