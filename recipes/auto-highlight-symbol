@@ -1,0 +1,1 @@
+(auto-highlight-symbol :repo "elp-revive/auto-highlight-symbol" :fetcher github)
