@@ -38,10 +38,10 @@
   {
     "name": "aws",
     "summary": "AWS Toolkit",
-    "version": "20231026.833",
+    "version": "20231027.801",
     "url": "https://github.com/jcs090218/aws-toolkit-emacs",
     "source": "github",
-    "commit": "dfcc14752bad49e1bf295b0879bcc35bba693920",
+    "commit": "c52d0782312ac79b9ea74cf1234090e3d6992eab",
     "tree": "https://github.com/jcs090218/aws-toolkit-emacs"
   },
   {
