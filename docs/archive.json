@@ -38,10 +38,10 @@
   {
     "name": "aws",
     "summary": "AWS Toolkit",
-    "version": "20231027.801",
+    "version": "20231027.831",
     "url": "https://github.com/jcs090218/aws-toolkit-emacs",
     "source": "github",
-    "commit": "c52d0782312ac79b9ea74cf1234090e3d6992eab",
+    "commit": "ea785b71c8b20e5948d54e01d8ea4ce962505d7f",
     "tree": "https://github.com/jcs090218/aws-toolkit-emacs"
   },
   {
@@ -1415,10 +1415,10 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20231027.501",
+    "version": "20231027.843",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "1827d0aa9e475c8c68f892f4d2f52a390e7d575d",
+    "commit": "21bba126bed782a33327f4cdf230d7c91db060d6",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
