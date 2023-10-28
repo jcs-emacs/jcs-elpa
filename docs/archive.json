@@ -929,10 +929,10 @@
   {
     "name": "line-reminder",
     "summary": "Line annotation for changed and saved lines",
-    "version": "20231027.2338",
+    "version": "20231028.15",
     "url": "https://github.com/emacs-vs/line-reminder",
     "source": "github",
-    "commit": "71d35ec1ec5f16ed96d7cc0f6deaf5c74e136c4a",
+    "commit": "05b91c5e62e3adf8ff4cf2b19cca92f3a98e6349",
     "tree": "https://github.com/emacs-vs/line-reminder"
   },
   {
@@ -1415,10 +1415,10 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20231027.2330",
+    "version": "20231028.18",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "342eb5ee1f242ac03bc7e7bbe8d67be8711423ae",
+    "commit": "c4aaf00303765c08de32f80b9ebaec8aabebbfb0",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
