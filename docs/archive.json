@@ -929,10 +929,10 @@
   {
     "name": "line-reminder",
     "summary": "Line annotation for changed and saved lines",
-    "version": "20231028.15",
+    "version": "20231028.359",
     "url": "https://github.com/emacs-vs/line-reminder",
     "source": "github",
-    "commit": "05b91c5e62e3adf8ff4cf2b19cca92f3a98e6349",
+    "commit": "9e60c92b2495737d25407d79fb3a0e3d9909d5c9",
     "tree": "https://github.com/emacs-vs/line-reminder"
   },
   {
@@ -1550,10 +1550,10 @@
   {
     "name": "vs-dark-theme",
     "summary": "Visual Studio IDE dark theme",
-    "version": "20231020.542",
+    "version": "20231028.356",
     "url": "https://github.com/emacs-vs/vs-dark-theme",
     "source": "github",
-    "commit": "2ec99feff875e0e8a850cb423c798da0315f1bd1",
+    "commit": "1f6f0afecc4576cc1cee573f82efe465042507f3",
     "tree": "https://github.com/emacs-vs/vs-dark-theme"
   },
   {
@@ -1577,10 +1577,10 @@
   {
     "name": "vs-light-theme",
     "summary": "Visual Studio IDE light theme",
-    "version": "20231020.542",
+    "version": "20231028.356",
     "url": "https://github.com/emacs-vs/vs-light-theme",
     "source": "github",
-    "commit": "6d64f04575d9629ecf240f73fd8e051cae7f0127",
+    "commit": "174e1dffc26998d8bc074f1f78068a8e612d4be3",
     "tree": "https://github.com/emacs-vs/vs-light-theme"
   },
   {
