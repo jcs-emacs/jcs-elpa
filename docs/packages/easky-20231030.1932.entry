@@ -1,5 +1,5 @@
 (easky .
-       [(20230906 611)
+       [(20231030 1932)
 	((emacs
 	  (27 1))
 	 (eask-mode
@@ -12,8 +12,8 @@
 	  (0 0))
 	 (marquee-header
 	  (0 1 0)))
-	"Control Eask in Emacs" tar
-	((:commit . "ad528fd56ff4e25deec747dcfc815f4edf56ee68")
+	"Control Eask CLI in Emacs" tar
+	((:commit . "54ce72d716f36aadd78d416ced9274fcbc1ae684")
 	 (:authors
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))
 	 (:maintainers
