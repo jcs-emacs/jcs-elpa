@@ -83,10 +83,10 @@
   {
     "name": "breadcrumb",
     "summary": "project and imenu-based breadcrumb paths",
-    "version": "20230913.1806",
+    "version": "20231101.1001",
     "url": "https://github.com/joaotavora/breadcrumb",
     "source": "github",
-    "commit": "7444e391c86265bea76649b2bcfe40fe3a2ecbd0",
+    "commit": "ac8983e02891b001a1e6253ac7ae069db2496cbd",
     "tree": "https://github.com/joaotavora/breadcrumb"
   },
   {
