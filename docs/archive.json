@@ -794,10 +794,10 @@
   {
     "name": "isearch-project",
     "summary": "Incremental search through the whole project",
-    "version": "20230517.2157",
+    "version": "20231103.1007",
     "url": "https://github.com/jcs-elpa/isearch-project",
     "source": "github",
-    "commit": "b341ae06f5895d0666ad361f287036b1dfd7b3b7",
+    "commit": "167e34130687ef338efe3251daa2a141fa0f141d",
     "tree": "https://github.com/jcs-elpa/isearch-project"
   },
   {
