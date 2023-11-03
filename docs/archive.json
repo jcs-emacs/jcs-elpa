@@ -792,6 +792,15 @@
     "tree": "https://github.com/jcs-elpa/indent-control"
   },
   {
+    "name": "isearch-project",
+    "summary": "Incremental search through the whole project",
+    "version": "20230517.2157",
+    "url": "https://github.com/jcs-elpa/isearch-project",
+    "source": "github",
+    "commit": "b341ae06f5895d0666ad361f287036b1dfd7b3b7",
+    "tree": "https://github.com/jcs-elpa/isearch-project"
+  },
+  {
     "name": "ivy-describe-modes",
     "summary": "Ivy interface to `describe-mode`",
     "version": "20230623.731",
