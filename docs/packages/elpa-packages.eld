@@ -86,6 +86,7 @@
   (hurl-mode :url "https://github.com/azzamsa/emacs-hurl.git")
   (indent-bars :url "https://github.com/jdtsmith/indent-bars.git")
   (indent-control :url "https://github.com/jcs-elpa/indent-control.git")
+  (isearch-project :url "https://github.com/jcs-elpa/isearch-project.git")
   (ivy-describe-modes :url "https://github.com/jcs-legacy/ivy-describe-modes.git")
   (ivy-point-history :url "https://github.com/SuzumiyaAoba/ivy-point-history.git")
   (jai-mode :url "https://github.com/krig/jai-mode.git")
