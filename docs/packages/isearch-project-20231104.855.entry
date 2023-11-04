@@ -1,11 +1,11 @@
 (isearch-project .
-		 [(20231103 1007)
+		 [(20231104 855)
 		  ((emacs
 		    (27 1))
 		   (f
 		    (0 20 0)))
 		  "Incremental search through the whole project" tar
-		  ((:commit . "167e34130687ef338efe3251daa2a141fa0f141d")
+		  ((:commit . "b5d5d6ddbc5f636d9c1d2fb68a7950b1b3738074")
 		   (:authors
 		    ("Jen-Chieh" . "jcs090218@gmail.com"))
 		   (:maintainers
