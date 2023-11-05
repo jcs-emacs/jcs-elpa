@@ -1071,6 +1071,15 @@
     "tree": "https://github.com/jcs-elpa/multi-shell"
   },
   {
+    "name": "nerd-icons",
+    "summary": "Emacs Nerd Font Icons Library",
+    "version": "20231105.653",
+    "url": "https://github.com/rainstormstudio/nerd-icons.el",
+    "source": "github",
+    "commit": "a506b43dc241ee07c28ce815068277084afbf09c",
+    "tree": "https://github.com/rainstormstudio/nerd-icons.el"
+  },
+  {
     "name": "nerd-icons-buffer-menu",
     "summary": "Display nerd icons in `buffer-menu'",
     "version": "20230601.2158",
