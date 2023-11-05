@@ -1,2 +1,2 @@
 
-Control Eask in Emacs.
+Control the Eask command-line interface.
