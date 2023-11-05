@@ -117,6 +117,7 @@
   (mode-minder :url "https://github.com/jdtsmith/mode-minder.git")
   (msgu :url "https://github.com/jcs-elpa/msgu.git")
   (multi-shell :url "https://github.com/jcs-elpa/multi-shell.git")
+  (nerd-icons :url "https://github.com/rainstormstudio/nerd-icons.el.git")
   (nerd-icons-buffer-menu :url "https://github.com/jcs-elpa/nerd-icons-buffer-menu.git")
   (noflet :url "https://github.com/elp-revive/noflet.git")
   (on :url "https://github.com/elp-revive/on.el.git")
