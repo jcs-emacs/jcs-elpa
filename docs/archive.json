@@ -531,6 +531,15 @@
     "tree": "https://github.com/jcs-elpa/elenv"
   },
   {
+    "name": "ellsp",
+    "summary": "Elisp Language Server",
+    "version": "20231108.840",
+    "url": "https://github.com/jcs-elpa/ellsp",
+    "source": "github",
+    "commit": "151946065b4f78e6134dde43bfa09a565e6a8980",
+    "tree": "https://github.com/jcs-elpa/ellsp"
+  },
+  {
     "name": "emp",
     "summary": "Emacs Music Playlist",
     "version": "20221231.1709",
