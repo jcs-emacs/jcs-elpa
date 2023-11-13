@@ -198,6 +198,15 @@
     "tree": "https://github.com/jcs-elpa/codemetrics"
   },
   {
+    "name": "comint-fold",
+    "summary": "Fold comint-input",
+    "version": "20231111.1254",
+    "url": "https://github.com/jdtsmith/comint-fold",
+    "source": "github",
+    "commit": "f96ae9d9fa9dcf4a494650ed084a0ed84ee139d0",
+    "tree": "https://github.com/jdtsmith/comint-fold"
+  },
+  {
     "name": "commander",
     "summary": "Emacs command line parser",
     "version": "20140120.1852",
