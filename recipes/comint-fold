@@ -1,1 +1,1 @@
-(comint-fold :repo "comint-fold/comint-fold" :fetcher github)
+(comint-fold :repo "jdtsmith/comint-fold" :fetcher github)
