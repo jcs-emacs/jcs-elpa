@@ -137,10 +137,10 @@
   {
     "name": "chatgpt",
     "summary": "Use ChatGPT inside Emacs",
-    "version": "20230914.220",
+    "version": "20231112.2336",
     "url": "https://github.com/emacs-openai/chatgpt",
     "source": "github",
-    "commit": "5014e4f0814b0256a36056e3b170fcd9cc643880",
+    "commit": "3dba6613b1fdd3b72f2563dee7a978b48e9e6abd",
     "tree": "https://github.com/emacs-openai/chatgpt"
   },
   {
@@ -443,10 +443,10 @@
   {
     "name": "easky",
     "summary": "Control the Eask command-line interface",
-    "version": "20231105.1853",
+    "version": "20231112.2322",
     "url": "https://github.com/emacs-eask/easky",
     "source": "github",
-    "commit": "8bd5d6c8f0b536742e42b4970fc549757f71fbb5",
+    "commit": "87a7aae4182ee2eb16af1e58acc716d4adf1a897",
     "tree": "https://github.com/emacs-eask/easky"
   },
   {
