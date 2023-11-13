@@ -117,6 +117,15 @@
     "tree": "https://github.com/elp-revive/buffer-move/"
   },
   {
+    "name": "bump-version",
+    "summary": "Emacs package which helps bump version.",
+    "version": "20140510.1058",
+    "url": "https://github.com/atykhonov/emacs-bump-version",
+    "source": "github",
+    "commit": "be213c9fd843f6f76560333e275f73e20181d50b",
+    "tree": "https://github.com/atykhonov/emacs-bump-version"
+  },
+  {
     "name": "cask",
     "summary": "Cask: Project management for package development",
     "version": "20230623.2158",
