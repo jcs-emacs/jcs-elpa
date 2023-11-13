@@ -1,0 +1,1 @@
+(bump-version :repo "atykhonov/emacs-bump-version" :fetcher github)
