@@ -11,6 +11,7 @@
   (buffer-menu-filter :url "https://github.com/jcs-elpa/buffer-menu-filter.git")
   (buffer-menu-project :url "https://github.com/jcs-elpa/buffer-menu-project.git")
   (buffer-move :url "https://github.com/elp-revive/buffer-move.git")
+  (bump-version :url "https://github.com/atykhonov/emacs-bump-version.git")
   (cask :url "https://github.com/cask/cask.git")
   (change-case :url "https://github.com/TakesxiSximada/change-case.el.git")
   (chatgpt :url "https://github.com/emacs-openai/chatgpt.git")
