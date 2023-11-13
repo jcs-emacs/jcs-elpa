@@ -20,6 +20,7 @@
   (codegpt :url "https://github.com/emacs-openai/codegpt.git")
   (codeium :url "https://github.com/Exafunction/codeium.el.git")
   (codemetrics :url "https://github.com/jcs-elpa/codemetrics.git")
+  (comint-fold :url "https://github.com/jdtsmith/comint-fold.git")
   (commander :url "https://github.com/rejeep/commander.el.git")
   (company-autoconf :url "https://github.com/elp-revive/company-autoconf.git")
   (company-box :url "https://github.com/elp-revive/company-box.git")

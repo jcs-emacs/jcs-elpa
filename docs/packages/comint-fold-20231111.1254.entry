@@ -1,0 +1,10 @@
+(comint-fold .
+	     [(20231111 1254)
+	      ((emacs
+		(27 1))
+	       (compat
+		(29 1 4 3)))
+	      "Fold comint-input" tar
+	      ((:commit . "f96ae9d9fa9dcf4a494650ed084a0ed84ee139d0")
+	       (:keywords "convenience")
+	       (:url . "https://github.com/jdtsmith/comint-fold"))])
