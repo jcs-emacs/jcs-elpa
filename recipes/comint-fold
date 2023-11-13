@@ -1,0 +1,1 @@
+(comint-fold :repo "comint-fold/comint-fold" :fetcher github)
