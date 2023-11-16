@@ -59,6 +59,7 @@
   (eldoc-meta-net :url "https://github.com/emacs-vs/eldoc-meta-net.git")
   (electric-indent-sexp :url "https://github.com/emacs-vs/electric-indent-sexp.git")
   (elenv :url "https://github.com/jcs-elpa/elenv.git")
+  (ellsp :url "https://github.com/jcs-elpa/ellsp.git")
   (emp :url "https://github.com/jcs-elpa/emp.git")
   (eping :url "https://github.com/elp-revive/eping.git")
   (eval-mark :url "https://github.com/jcs-elpa/eval-mark.git")
