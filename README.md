@@ -13,14 +13,6 @@
 # jcs-elpa
 > ELPA for [jcs-emacs](https://github.com/jcs-emacs/jcs-emacs), using [github-elpa](https://github.com/10sr/github-elpa)
 
-[![Build](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/build.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/build.yml)
-[![Archive](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/archive.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/archive.yml)
-[![Install](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/install.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/install.yml)
-
-[![System](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/system.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/system.yml)
-[![Version](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/version.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/version.yml)
-[![Packages](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/packages.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/packages.yml)
-
 ## 🏆 Goals
 
 - Use built-in code over third-party library (`dash.el`, `s.el`, `f.el`, etc)
@@ -61,3 +53,12 @@ This work is licensed under the [CC BY-ND 4.0](https://creativecommons.org/licen
 
 [![](https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png)](https://creativecommons.org/licenses/by-nd/4.0/)
 [![License: CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+---
+
+[![Build](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/build.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/build.yml)
+[![Archive](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/archive.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/archive.yml)
+[![Install](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/install.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/install.yml)
+[![System](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/system.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/system.yml)
+[![Version](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/version.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/version.yml)
+[![Packages](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/packages.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/packages.yml)
