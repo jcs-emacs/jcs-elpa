@@ -1,5 +1,5 @@
 (ellsp .
-       [(20231120 1105)
+       [(20231120 1120)
 	((emacs
 	  (27 1))
 	 (lsp-mode
@@ -15,7 +15,7 @@
 	 (msgu
 	  (0 1 0)))
 	"Elisp Language Server" tar
-	((:commit . "305a5c4acb40b1026d2c6abd9f7088dea34597d0")
+	((:commit . "faacd471546a180f6859490b3f8107ce4dbbef67")
 	 (:authors
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))
 	 (:maintainers
