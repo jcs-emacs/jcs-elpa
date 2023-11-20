@@ -155,10 +155,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "ChatGPT shell + buffer insert commands",
-    "version": "20231113.356",
+    "version": "20231120.1153",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "50984ba1e833be89c41b9779e8dca5d04cb16a29",
+    "commit": "f02cefb7239b3c5b076650e52d7b328ef7f29ffc",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -551,10 +551,10 @@
   {
     "name": "ellsp",
     "summary": "Elisp Language Server",
-    "version": "20231120.1105",
+    "version": "20231120.1120",
     "url": "https://github.com/jcs-elpa/ellsp",
     "source": "github",
-    "commit": "305a5c4acb40b1026d2c6abd9f7088dea34597d0",
+    "commit": "faacd471546a180f6859490b3f8107ce4dbbef67",
     "tree": "https://github.com/jcs-elpa/ellsp"
   },
   {
