@@ -443,10 +443,10 @@
   {
     "name": "eask",
     "summary": "Core Eask APIs, for Eask CLI development",
-    "version": "20231118.208",
+    "version": "20231123.102",
     "url": "https://github.com/emacs-eask/eask",
     "source": "github",
-    "commit": "2c9ac65bb6c12e1f6f612feebaa1441ca7cd69cf",
+    "commit": "590488972a33ee96e146ee4b39bee44e8834eacd",
     "tree": "https://github.com/emacs-eask/eask"
   },
   {
@@ -1028,10 +1028,10 @@
   {
     "name": "mbs",
     "summary": "Minibuffer Stats",
-    "version": "20221221.1907",
+    "version": "20231123.115",
     "url": "https://github.com/jcs-elpa/mbs",
     "source": "github",
-    "commit": "d7a0a8b52eb2d4e8bb53bd853535f588120fe2cb",
+    "commit": "7b6c57fc4c8bb6de22d849444080ca5544427655",
     "tree": "https://github.com/jcs-elpa/mbs"
   },
   {
@@ -1568,10 +1568,10 @@
   {
     "name": "vertico-flx",
     "summary": "Flx integration for vertico",
-    "version": "20231021.647",
+    "version": "20231123.116",
     "url": "https://github.com/jcs-elpa/vertico-flx",
     "source": "github",
-    "commit": "f22fe1609e28b195c0674964a2c55fa63906e89b",
+    "commit": "4ed515ed9250dcedf7495ea587e0ca131dac4438",
     "tree": "https://github.com/jcs-elpa/vertico-flx"
   },
   {
