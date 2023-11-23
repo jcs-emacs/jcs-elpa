@@ -1,1 +1,4 @@
-(ellsp :repo "jcs-elpa/ellsp" :fetcher github)
+(ellsp
+ :repo "jcs090218/ellsp"
+ :fetcher github
+ :files (:defaults "bin"))
