@@ -1,0 +1,1 @@
+(ic :repo "jcs-elpa/ic" :fetcher github)
