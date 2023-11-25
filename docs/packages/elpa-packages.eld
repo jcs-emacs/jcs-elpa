@@ -87,6 +87,7 @@
   (hl-preproc :url "https://github.com/emacs-vs/hl-preproc.git")
   (hlsl-mode :url "https://github.com/darfink/hlsl-mode.git")
   (hurl-mode :url "https://github.com/azzamsa/emacs-hurl.git")
+  (ic :url "https://github.com/jcs-elpa/ic.git")
   (indent-bars :url "https://github.com/jdtsmith/indent-bars.git")
   (indent-control :url "https://github.com/jcs-elpa/indent-control.git")
   (isearch-project :url "https://github.com/jcs-elpa/isearch-project.git")
