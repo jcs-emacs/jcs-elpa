@@ -801,6 +801,15 @@
     "tree": "https://github.com/azzamsa/emacs-hurl"
   },
   {
+    "name": "ic",
+    "summary": "Pretty print to debug",
+    "version": "20231125.826",
+    "url": "https://github.com/jcs-elpa/ic",
+    "source": "github",
+    "commit": "9a062e1a85580a36dce3ac8562559fe434650196",
+    "tree": "https://github.com/jcs-elpa/ic"
+  },
+  {
     "name": "indent-bars",
     "summary": "highlight indentation with bars",
     "version": "20231013.1249",
