@@ -1,5 +1,5 @@
 (ic .
-    [(20231125 839)
+    [(20231126 737)
      ((emacs
        (26 1))
       (ppp
@@ -11,7 +11,7 @@
       (dash
        (2 14 1)))
      "Pretty print to debug" tar
-     ((:commit . "e86a1c9e2a3b3b6c4de8c08f71d7fd52625f5bf3")
+     ((:commit . "0415b1ae57a72e2f0354740576fd144094919072")
       (:authors
        ("Jen-Chieh" . "jcs090218@gmail.com"))
       (:maintainers
