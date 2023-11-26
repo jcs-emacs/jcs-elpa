@@ -1,11 +1,11 @@
 (breadcrumb .
-	    [(20231107 1132)
+	    [(20231126 2216)
 	     ((emacs
 	       (28 1))
 	      (project
 	       (0 9 8)))
 	     "project and imenu-based breadcrumb paths" tar
-	     ((:commit . "acd014f226e1f770e6f27c20c8d6eb99f557e970")
+	     ((:commit . "dcb6e2e82de2432d8eb75be74c8d6215fc97a2d3")
 	      (:authors
 	       ("João Távora" . "joaotavora@gmail.com"))
 	      (:maintainers
