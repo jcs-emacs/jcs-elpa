@@ -1,9 +1,9 @@
 (elenv .
-       [(20230322 543)
+       [(20231127 140)
 	((emacs
-	  (26)))
-	"Emacs Lisp environment" tar
-	((:commit . "27173a2e2f6b8a7c3fdc817b2fcbe625174e3ac9")
+	  (26 1)))
+	"Environment variable management" tar
+	((:commit . "b8c5e10679767a67dd2285c07a8587a72f684376")
 	 (:authors
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))
 	 (:maintainers
