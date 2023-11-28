@@ -100,6 +100,7 @@
   (jcs-frametitle :url "https://github.com/jcs-emacs/jcs-frametitle.git")
   (jcs-modeline :url "https://github.com/jcs-emacs/jcs-modeline.git")
   (jcs-poptip :url "https://github.com/jcs-emacs/jcs-poptip.git")
+  (jcs-template :url "https://github.com/jcs-emacs/jcs-template.git")
   (jenkinsfile-mode :url "https://github.com/elp-revive/jenkinsfile-mode.git")
   (jet :url "https://github.com/ericdallo/jet.el.git")
   (kaomoji :url "https://github.com/elp-revive/kaomoji.el.git")
