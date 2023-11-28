@@ -918,6 +918,15 @@
     "tree": "https://github.com/jcs-emacs/jcs-poptip"
   },
   {
+    "name": "jcs-template",
+    "summary": "Template module for jcs-emacs",
+    "version": "20231128.709",
+    "url": "https://github.com/jcs-emacs/jcs-template",
+    "source": "github",
+    "commit": "7fbb0ca904031fbf4cdc5638af18623c1a4d6f8d",
+    "tree": "https://github.com/jcs-emacs/jcs-template"
+  },
+  {
     "name": "jenkinsfile-mode",
     "summary": "Major mode for editing Jenkins declarative pipeline syntax",
     "version": "20220414.1203",
