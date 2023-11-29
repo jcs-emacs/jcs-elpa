@@ -155,10 +155,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "ChatGPT shell + buffer insert commands",
-    "version": "20231128.2124",
+    "version": "20231129.21",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "97b43d27906d8589c9c38363002c03735150839a",
+    "commit": "00796a2ceb71e3b9d73986399342f8a7ddfc9350",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -1118,10 +1118,10 @@
   {
     "name": "nerd-icons",
     "summary": "Emacs Nerd Font Icons Library",
-    "version": "20231128.913",
+    "version": "20231129.102",
     "url": "https://github.com/rainstormstudio/nerd-icons.el",
     "source": "github",
-    "commit": "aa0affc8918661b42cd09922ec2281451671b9ef",
+    "commit": "dd3094918fe69312d53bf927d20eaccbe941c6a8",
     "tree": "https://github.com/rainstormstudio/nerd-icons.el"
   },
   {
