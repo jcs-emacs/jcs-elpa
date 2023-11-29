@@ -1442,10 +1442,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20231129.743",
+    "version": "20231129.932",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "c71b285c65c3bf359d34b6763963e0c290ccbcb2",
+    "commit": "5eb24557f542d5fa18e7baaf07969cf7f297bfcd",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
@@ -1478,10 +1478,10 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20231105.639",
+    "version": "20231129.1043",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "75e72c658ad8d8aac3af554a6b51b3c5c22dd0aa",
+    "commit": "930c5cd6debbdfeb36901592888b78a156759cb8",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
@@ -1658,10 +1658,10 @@
   {
     "name": "vsc-edit-mode",
     "summary": "Implement editing experience like VSCode",
-    "version": "20230921.531",
+    "version": "20231129.1029",
     "url": "https://github.com/emacs-vs/vsc-edit-mode",
     "source": "github",
-    "commit": "96cfebf0f1035425c231068d886b468d8be4a33c",
+    "commit": "28428c07a08f2c814ebc1bb29ddafdc3d6f3e9a4",
     "tree": "https://github.com/emacs-vs/vsc-edit-mode"
   },
   {
