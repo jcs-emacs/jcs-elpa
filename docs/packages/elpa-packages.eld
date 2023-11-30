@@ -141,6 +141,7 @@
   (qsharp-mode :url "https://github.com/forked-from-1kasper/emacs-qsharp-mode.git")
   (quick-peek :url "https://github.com/emacs-vs/quick-peek.git")
   (recentf-excl :url "https://github.com/jcs-elpa/recentf-excl.git")
+  (region-occurrences-highlighter :url "https://github.com/alvarogonzalezsotillo/region-occurrences-highlighter.git")
   (repos-window :url "https://github.com/jcs-elpa/repos-window.git")
   (resurrect :url "https://github.com/fbkante/resurrect.git")
   (selection-highlight-mode :url "https://github.com/balloneij/selection-highlight-mode.git")
