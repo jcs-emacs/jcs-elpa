@@ -143,6 +143,7 @@
   (recentf-excl :url "https://github.com/jcs-elpa/recentf-excl.git")
   (repos-window :url "https://github.com/jcs-elpa/repos-window.git")
   (resurrect :url "https://github.com/fbkante/resurrect.git")
+  (selection-highlight-mode :url "https://github.com/balloneij/selection-highlight-mode.git")
   (send-to-osx-grammarly :url "https://github.com/emacs-grammarly/send-to-osx-grammarly.git")
   (sideline :url "https://github.com/emacs-sideline/sideline.git")
   (sideline-blame :url "https://github.com/emacs-sideline/sideline-blame.git")
