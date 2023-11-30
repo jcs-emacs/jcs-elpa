@@ -1,0 +1,1 @@
+(selection-highlight-mode :repo "balloneij/selection-highlight-mode" :fetcher github)
