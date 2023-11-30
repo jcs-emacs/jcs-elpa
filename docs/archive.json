@@ -1305,6 +1305,15 @@
     "tree": "https://github.com/fbkante/resurrect"
   },
   {
+    "name": "selection-highlight-mode",
+    "summary": "Auto highlights matches to the current active region",
+    "version": "20231116.1958",
+    "url": "https://github.com/balloneij/selection-highlight-mode",
+    "source": "github",
+    "commit": "a1960f9e098b9980b2f07791488305ac835047ff",
+    "tree": "https://github.com/balloneij/selection-highlight-mode"
+  },
+  {
     "name": "send-to-osx-grammarly",
     "summary": "A simple plugin to sent text to Grammarly",
     "version": "20221231.1655",
