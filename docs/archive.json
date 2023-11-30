@@ -1287,6 +1287,15 @@
     "tree": "https://github.com/jcs-elpa/recentf-excl"
   },
   {
+    "name": "region-occurrences-highlighter",
+    "summary": "Mark occurrences of current region (selection).",
+    "version": "20231122.1110",
+    "url": "https://github.com/alvarogonzalezsotillo/region-occurrences-highlighter",
+    "source": "github",
+    "commit": "f9ad995553be1e6dd70540d7ab1ca0be3077438e",
+    "tree": "https://github.com/alvarogonzalezsotillo/region-occurrences-highlighter"
+  },
+  {
     "name": "repos-window",
     "summary": "Reposition window if when needed",
     "version": "20221103.2135",
