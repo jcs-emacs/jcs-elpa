@@ -749,10 +749,10 @@
   {
     "name": "github-elpa",
     "summary": "Build and publish ELPA repositories with GitHub Pages",
-    "version": "20200129.417",
+    "version": "20231201.804",
     "url": "https://github.com/10sr/github-elpa",
     "source": "github",
-    "commit": "0e0fdbdd774b0866beccff6be7f302e5c8ee71da",
+    "commit": "c818883d9dc8d34eaee03691574e0408f18db28a",
     "tree": "https://github.com/10sr/github-elpa"
   },
   {
