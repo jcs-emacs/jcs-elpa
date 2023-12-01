@@ -1,5 +1,5 @@
 (github-elpa .
-	     [(20200129 417)
+	     [(20231201 804)
 	      ((package-build
 		(1 0))
 	       (commander
@@ -7,7 +7,7 @@
 	       (git
 		(0 1 1)))
 	      "Build and publish ELPA repositories with GitHub Pages" tar
-	      ((:commit . "0e0fdbdd774b0866beccff6be7f302e5c8ee71da")
+	      ((:commit . "c818883d9dc8d34eaee03691574e0408f18db28a")
 	       (:authors
 		("10sr" . "8slashes+el@gmail.com"))
 	       (:maintainers
