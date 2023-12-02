@@ -713,10 +713,10 @@
   {
     "name": "fof",
     "summary": "Default configuration for `ff-find-other-file'",
-    "version": "20221008.650",
+    "version": "20231202.1154",
     "url": "https://github.com/jcs-elpa/fof",
     "source": "github",
-    "commit": "e1d5587209620dabfcf7af28ec3d86c71bf60862",
+    "commit": "f1c8e7db2db02196ff74800269ce1c5cfb8d4aa2",
     "tree": "https://github.com/jcs-elpa/fof"
   },
   {
