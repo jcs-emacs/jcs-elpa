@@ -1,0 +1,1 @@
+(qss-mode :repo "jcs-elpa/qss-mode" :fetcher github)
