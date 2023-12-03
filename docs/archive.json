@@ -1271,11 +1271,11 @@
   {
     "name": "qss-mode",
     "summary": "Major mode for Qt Style Sheets",
-    "version": "20231203.1128",
-    "url": "https://github.com/jcs090218/qss-mode",
+    "version": "20231203.1131",
+    "url": "https://github.com/jcs-elpa/qss-mode",
     "source": "github",
-    "commit": "d063e4881753e388284361d29bacbc9316694dee",
-    "tree": "https://github.com/jcs090218/qss-mode"
+    "commit": "6874cae92996d8adc809a6fdf83ba86f1001c26a",
+    "tree": "https://github.com/jcs-elpa/qss-mode"
   },
   {
     "name": "quick-peek",
