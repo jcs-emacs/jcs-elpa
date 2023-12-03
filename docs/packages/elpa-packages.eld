@@ -139,6 +139,7 @@
   (preview-it :url "https://github.com/jcs-elpa/preview-it.git")
   (prt :url "https://github.com/jcs-elpa/prt.git")
   (qsharp-mode :url "https://github.com/forked-from-1kasper/emacs-qsharp-mode.git")
+  (qss-mode :url "https://github.com/jcs-elpa/qss-mode.git")
   (quick-peek :url "https://github.com/emacs-vs/quick-peek.git")
   (recentf-excl :url "https://github.com/jcs-elpa/recentf-excl.git")
   (region-occurrences-highlighter :url "https://github.com/alvarogonzalezsotillo/region-occurrences-highlighter.git")
