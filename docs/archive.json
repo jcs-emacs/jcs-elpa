@@ -1269,6 +1269,15 @@
     "tree": "https://github.com/forked-from-1kasper/emacs-qsharp-mode"
   },
   {
+    "name": "qss-mode",
+    "summary": "Major mode for Qt Style Sheets",
+    "version": "20231203.1128",
+    "url": "https://github.com/jcs090218/qss-mode",
+    "source": "github",
+    "commit": "d063e4881753e388284361d29bacbc9316694dee",
+    "tree": "https://github.com/jcs090218/qss-mode"
+  },
+  {
     "name": "quick-peek",
     "summary": "Inline quick-peek windows",
     "version": "20220223.1938",
