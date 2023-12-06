@@ -1,0 +1,10 @@
+(dape .
+      [(20231205 1834)
+       ((emacs
+	 (29 1)))
+       "Debug Adapter Protocol for Emacs" tar
+       ((:commit . "a8e56d3767e1b063f6c49a6081ca4e22afdfaaaf")
+	(:maintainers
+	 ("Daniel Pettersson" . "daniel@dpettersson.net"))
+	(:maintainer "Daniel Pettersson" . "daniel@dpettersson.net")
+	(:url . "https://github.com/svaante/dape"))])
