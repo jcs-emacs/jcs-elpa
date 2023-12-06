@@ -1000,12 +1000,12 @@
   },
   {
     "name": "llvm-mode",
-    "summary": "Major mode for the LLVM IR language",
-    "version": "20231103.1425",
-    "url": "https://github.com/nverno/llvm-mode",
+    "summary": "Major mode for the LLVM assembler language.",
+    "version": "20231109.1708",
+    "url": "https://github.com/llvm/llvm-project",
     "source": "github",
-    "commit": "f1a95e52762d21e5ee84d0b187b0e50158a0eba9",
-    "tree": "https://github.com/nverno/llvm-mode"
+    "commit": "6d1d7be1335c68aa93b3fe428791a3a4b99d63bc",
+    "tree": "https://github.com/llvm/llvm-project"
   },
   {
     "name": "lsp-compose",
