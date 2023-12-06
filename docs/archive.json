@@ -405,6 +405,15 @@
     "tree": "https://github.com/emacs-openai/dall-e"
   },
   {
+    "name": "dape",
+    "summary": "Debug Adapter Protocol for Emacs",
+    "version": "20231205.1834",
+    "url": "https://github.com/svaante/dape",
+    "source": "github",
+    "commit": "a8e56d3767e1b063f6c49a6081ca4e22afdfaaaf",
+    "tree": "https://github.com/svaante/dape"
+  },
+  {
     "name": "dashboard",
     "summary": "A startup screen extracted from Spacemacs",
     "version": "20231201.922",
@@ -461,10 +470,10 @@
   {
     "name": "easky",
     "summary": "Control the Eask command-line interface",
-    "version": "20231206.56",
+    "version": "20231206.817",
     "url": "https://github.com/emacs-eask/easky",
     "source": "github",
-    "commit": "4e40c120714f31d314cbd610081a48090fdae7e3",
+    "commit": "bf31249401235e3f5fd06615f2425f74418083e5",
     "tree": "https://github.com/emacs-eask/easky"
   },
   {
