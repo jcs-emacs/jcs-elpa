@@ -999,6 +999,15 @@
     "tree": "https://github.com/emacs-vs/line-reminder"
   },
   {
+    "name": "llvm-mode",
+    "summary": "Major mode for the LLVM IR language",
+    "version": "20231103.1425",
+    "url": "https://github.com/nverno/llvm-mode",
+    "source": "github",
+    "commit": "f1a95e52762d21e5ee84d0b187b0e50158a0eba9",
+    "tree": "https://github.com/nverno/llvm-mode"
+  },
+  {
     "name": "lsp-compose",
     "summary": "lsp-mode client for compose server",
     "version": "20200515.1833",
