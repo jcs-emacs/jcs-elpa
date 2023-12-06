@@ -109,7 +109,7 @@
   (lemmington :url "https://github.com/lem-project/lemmington.git")
   (license-templates :url "https://github.com/jcs-elpa/license-templates.git")
   (line-reminder :url "https://github.com/emacs-vs/line-reminder.git")
-  (llvm-mode :url "https://github.com/nverno/llvm-mode.git")
+  (llvm-mode :url "https://github.com/llvm/llvm-project.git")
   (lsp-compose :url "https://github.com/lepisma/compose-language-server.git")
   (lsp-grammarly-un :url "https://github.com/emacs-grammarly/lsp-grammarly-un.git")
   (lsp-shader :url "https://github.com/shader-ls/lsp-shader.git")
