@@ -1,0 +1,1 @@
+(dape :repo "svaante/dape" :fetcher github)
