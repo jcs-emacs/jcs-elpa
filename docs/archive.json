@@ -1532,10 +1532,10 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20231207.851",
+    "version": "20231207.1115",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "648f75ef0629adf8da89e4a5b6e54999168f5e4c",
+    "commit": "c14893d4ff4bed006346d43c7c9c6e5450bce21f",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
@@ -1658,10 +1658,10 @@
   {
     "name": "vs-comment-return",
     "summary": "Comment return like Visual Studio",
-    "version": "20231202.1220",
+    "version": "20231207.1152",
     "url": "https://github.com/emacs-vs/vs-comment-return",
     "source": "github",
-    "commit": "dc74bad8624ad419a305136387aed9c1ecbe861e",
+    "commit": "a28f0ee0111d4e50262c22e5f25177c41ee9e32e",
     "tree": "https://github.com/emacs-vs/vs-comment-return"
   },
   {
