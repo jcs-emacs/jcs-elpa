@@ -470,10 +470,10 @@
   {
     "name": "easky",
     "summary": "Control the Eask command-line interface",
-    "version": "20231206.817",
+    "version": "20231207.115",
     "url": "https://github.com/emacs-eask/easky",
     "source": "github",
-    "commit": "bf31249401235e3f5fd06615f2425f74418083e5",
+    "commit": "c0307087e6b4fd7d62432e9556238c16775606f4",
     "tree": "https://github.com/emacs-eask/easky"
   },
   {
