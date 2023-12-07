@@ -1,5 +1,5 @@
 (easky .
-       [(20231206 817)
+       [(20231207 115)
 	((emacs
 	  (27 1))
 	 (eask-mode
@@ -13,7 +13,7 @@
 	 (marquee-header
 	  (0 1 0)))
 	"Control the Eask command-line interface" tar
-	((:commit . "bf31249401235e3f5fd06615f2425f74418083e5")
+	((:commit . "c0307087e6b4fd7d62432e9556238c16775606f4")
 	 (:authors
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))
 	 (:maintainers
