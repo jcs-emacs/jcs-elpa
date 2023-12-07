@@ -812,10 +812,10 @@
   {
     "name": "ic",
     "summary": "Pretty print to debug",
-    "version": "20231126.737",
+    "version": "20231207.1013",
     "url": "https://github.com/jcs-elpa/ic",
     "source": "github",
-    "commit": "0415b1ae57a72e2f0354740576fd144094919072",
+    "commit": "7be4111708ff6ae8c4552e7807f9250353e1bfc3",
     "tree": "https://github.com/jcs-elpa/ic"
   },
   {
@@ -1006,6 +1006,15 @@
     "source": "github",
     "commit": "6d1d7be1335c68aa93b3fe428791a3a4b99d63bc",
     "tree": "https://github.com/llvm/llvm-project"
+  },
+  {
+    "name": "logms",
+    "summary": "Log message with clickable links to context",
+    "version": "20220704.654",
+    "url": "https://github.com/jcs-elpa/logms",
+    "source": "github",
+    "commit": "186478e47265b7d40b87d4b4277275a0031f09f7",
+    "tree": "https://github.com/jcs-elpa/logms"
   },
   {
     "name": "lsp-compose",
