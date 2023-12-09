@@ -1496,10 +1496,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20231209.808",
+    "version": "20231209.821",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "2bb98487560664689252d8f928b6d347dc062729",
+    "commit": "fcc4ebb9636729e6cbd0b3af28afcf12666ff855",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
@@ -1532,10 +1532,10 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20231209.825",
+    "version": "20231209.947",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "250567abd213a67a99e943a15e4779656223dd89",
+    "commit": "9717243a85384206ab823306e432295982a6bd12",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
