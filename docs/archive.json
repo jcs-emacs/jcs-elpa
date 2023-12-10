@@ -659,10 +659,10 @@
   {
     "name": "flx-style",
     "summary": "Completion style for flx",
-    "version": "20220704.642",
+    "version": "20231210.756",
     "url": "https://github.com/jcs-elpa/flx-style",
     "source": "github",
-    "commit": "b0441bd84881698e0d0b7b1178d296799c47950b",
+    "commit": "a852aaeab5b690a2524bd21e8d94acfd43c7b62d",
     "tree": "https://github.com/jcs-elpa/flx-style"
   },
   {
