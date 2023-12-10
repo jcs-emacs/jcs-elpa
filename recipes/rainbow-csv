@@ -1,0 +1,1 @@
+(rainbow-csv :repo "emacs-vs/rainbow-csv" :fetcher github)
