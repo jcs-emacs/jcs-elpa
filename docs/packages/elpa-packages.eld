@@ -144,6 +144,7 @@
   (qsharp-mode :url "https://github.com/forked-from-1kasper/emacs-qsharp-mode.git")
   (qss-mode :url "https://github.com/jcs-elpa/qss-mode.git")
   (quick-peek :url "https://github.com/emacs-vs/quick-peek.git")
+  (rainbow-csv :url "https://github.com/emacs-vs/rainbow-csv.git")
   (recentf-excl :url "https://github.com/jcs-elpa/recentf-excl.git")
   (region-occurrences-highlighter :url "https://github.com/alvarogonzalezsotillo/region-occurrences-highlighter.git")
   (repos-window :url "https://github.com/jcs-elpa/repos-window.git")
