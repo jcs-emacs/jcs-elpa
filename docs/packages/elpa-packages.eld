@@ -38,6 +38,7 @@
   (company-mlton :url "https://github.com/MatthewFluet/company-mlton.git")
   (company-paths :url "https://github.com/emacs-vs/company-paths.git")
   (company-powershell :url "https://github.com/elp-revive/company-powershell.git")
+  (company-sml :url "https://github.com/nverno/company-sml.git")
   (consult-todo :url "https://github.com/liuyinz/consult-todo.git")
   (copilot :url "https://github.com/zerolfx/copilot.el.git")
   (cycle-case-style :url "https://github.com/jcs-elpa/cycle-case-style.git")

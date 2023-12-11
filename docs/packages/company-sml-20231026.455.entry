@@ -1,0 +1,10 @@
+(company-sml .
+	     [(20231026 455)
+	      nil "No description available." tar
+	      ((:commit . "b586459c4d3b6b54081c6acc14d376ae3a854f2d")
+	       (:authors
+		("Noah Peart" . "noah.v.peart@gmail.com"))
+	       (:maintainers
+		("Noah Peart" . "noah.v.peart@gmail.com"))
+	       (:maintainer "Noah Peart" . "noah.v.peart@gmail.com")
+	       (:url . "https://github.com/nverno/company-sml"))])
