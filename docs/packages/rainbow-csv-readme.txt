@@ -1,2 +1,2 @@
 
-Highlight CSV and TSV spreadsheet files in different rainbow colors.
+Highlight CSV and TSV files in different rainbow colors.
