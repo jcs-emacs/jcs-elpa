@@ -864,6 +864,15 @@
     "tree": "https://github.com/SuzumiyaAoba/ivy-point-history"
   },
   {
+    "name": "jack-mode",
+    "summary": "Major mode for Jack language",
+    "version": "20231022.1812",
+    "url": "https://github.com/nverno/jack-mode",
+    "source": "github",
+    "commit": "4db6d97017e82eeb46777eb0ae8e33a2a6cac192",
+    "tree": "https://github.com/nverno/jack-mode"
+  },
+  {
     "name": "jai-mode",
     "summary": "Major mode for JAI",
     "version": "20230913.920",
