@@ -1,0 +1,12 @@
+(jack-mode .
+	   [(20231022 1812)
+	    ((emacs
+	      (27 1)))
+	    "Major mode for Jack language" tar
+	    ((:commit . "4db6d97017e82eeb46777eb0ae8e33a2a6cac192")
+	     (:authors
+	      ("Noah Peart" . "noah.v.peart@gmail.com"))
+	     (:maintainers
+	      ("Noah Peart" . "noah.v.peart@gmail.com"))
+	     (:maintainer "Noah Peart" . "noah.v.peart@gmail.com")
+	     (:url . "https://github.com/nverno/jack-mode"))])

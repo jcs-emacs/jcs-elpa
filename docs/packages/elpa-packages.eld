@@ -94,6 +94,7 @@
   (isearch-project :url "https://github.com/jcs-elpa/isearch-project.git")
   (ivy-describe-modes :url "https://github.com/jcs-legacy/ivy-describe-modes.git")
   (ivy-point-history :url "https://github.com/SuzumiyaAoba/ivy-point-history.git")
+  (jack-mode :url "https://github.com/nverno/jack-mode.git")
   (jai-mode :url "https://github.com/krig/jai-mode.git")
   (javap-mode :url "https://github.com/elp-revive/javap-mode.git")
   (jayces-mode :url "https://github.com/jayces-lang/jayces-mode.git")
