@@ -1,0 +1,1 @@
+(nand-hdl-mode :repo "nverno/nand-hdl-mode" :fetcher github)
