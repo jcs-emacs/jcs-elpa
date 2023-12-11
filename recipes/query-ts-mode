@@ -1,0 +1,1 @@
+(query-ts-mode :repo "nverno/query-ts-mode" :fetcher github)
