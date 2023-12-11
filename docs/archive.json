@@ -360,6 +360,15 @@
     "tree": "https://github.com/elp-revive/company-powershell"
   },
   {
+    "name": "company-sml",
+    "summary": "No description available.",
+    "version": "20231026.455",
+    "url": "https://github.com/nverno/company-sml",
+    "source": "github",
+    "commit": "b586459c4d3b6b54081c6acc14d376ae3a854f2d",
+    "tree": "https://github.com/nverno/company-sml"
+  },
+  {
     "name": "consult-todo",
     "summary": "Search hl-todo keywords in consult",
     "version": "20231022.2059",
@@ -1152,6 +1161,15 @@
     "tree": "https://github.com/jcs-elpa/multi-shell"
   },
   {
+    "name": "nand-hdl-mode",
+    "summary": "Major mode for NAND hdl files",
+    "version": "20231124.826",
+    "url": "https://github.com/nverno/nand-hdl-mode",
+    "source": "github",
+    "commit": "b7701cf416b7fdbffd3ad0c3467e08f9c6a92abf",
+    "tree": "https://github.com/nverno/nand-hdl-mode"
+  },
+  {
     "name": "nerd-icons",
     "summary": "Emacs Nerd Font Icons Library",
     "version": "20231206.1836",
@@ -1312,6 +1330,15 @@
     "source": "github",
     "commit": "6874cae92996d8adc809a6fdf83ba86f1001c26a",
     "tree": "https://github.com/jcs-elpa/qss-mode"
+  },
+  {
+    "name": "query-ts-mode",
+    "summary": "Tree-sitter support for tree-sitter queries",
+    "version": "20231209.345",
+    "url": "https://github.com/nverno/query-ts-mode",
+    "source": "github",
+    "commit": "73c72993c90bcab76a1c47b95c6637e5d4d73a2a",
+    "tree": "https://github.com/nverno/query-ts-mode"
   },
   {
     "name": "quick-peek",
