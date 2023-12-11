@@ -1,0 +1,1 @@
+(company-sml :repo "nverno/company-sml" :fetcher github)
