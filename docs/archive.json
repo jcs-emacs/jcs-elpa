@@ -911,10 +911,10 @@
   {
     "name": "jcs-modeline",
     "summary": "A modeline for jcs-emacs",
-    "version": "20231210.1157",
+    "version": "20231211.46",
     "url": "https://github.com/jcs-emacs/jcs-modeline",
     "source": "github",
-    "commit": "0e455405cb246e3e661352d805bc3fc21f508a5e",
+    "commit": "72bd08ec49a5e13e8f99383347ef943a6e0bed60",
     "tree": "https://github.com/jcs-emacs/jcs-modeline"
   },
   {
@@ -1315,11 +1315,11 @@
   },
   {
     "name": "rainbow-csv",
-    "summary": "Highlight CSV and TSV spreadsheet files in different rainbow colors",
-    "version": "20231211.7",
+    "summary": "Highlight CSV and TSV files in different rainbow colors",
+    "version": "20231211.40",
     "url": "https://github.com/emacs-vs/rainbow-csv",
     "source": "github",
-    "commit": "a5de8203361632444fcde216db6e7b28da2e94b3",
+    "commit": "d6813bd14bc1759fea3c1af83459be7c391cc55a",
     "tree": "https://github.com/emacs-vs/rainbow-csv"
   },
   {
