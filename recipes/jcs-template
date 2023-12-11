@@ -1,1 +1,1 @@
-(jcs-modeline :repo "jcs-emacs/jcs-template" :fetcher github)
+(jcs-template :repo "jcs-emacs/jcs-template" :fetcher github)
