@@ -155,10 +155,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "ChatGPT shell + buffer insert commands",
-    "version": "20231210.1932",
+    "version": "20231212.2355",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "edf2d046c116897ce06e85dc82e198a7460e57f6",
+    "commit": "009fbf04ffb3dc89b6dc3729ac95b1c201c0a061",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -416,10 +416,10 @@
   {
     "name": "dape",
     "summary": "Debug Adapter Protocol for Emacs",
-    "version": "20231211.1731",
+    "version": "20231212.2311",
     "url": "https://github.com/svaante/dape",
     "source": "github",
-    "commit": "23aa4626d9fcaf1cf566e366ada2353bf2d251e3",
+    "commit": "d40152ed6713265d02efbced3169c2d118f7f57a",
     "tree": "https://github.com/svaante/dape"
   },
   {
