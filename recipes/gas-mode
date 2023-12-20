@@ -1,0 +1,1 @@
+(gas-mode :repo "Enocstocks/gas-mode.el" :fetcher codeberg)
