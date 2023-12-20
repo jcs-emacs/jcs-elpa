@@ -756,6 +756,15 @@
     "tree": "https://github.com/jcs-elpa/fuz-bin"
   },
   {
+    "name": "gas-mode",
+    "summary": "Mode for editing assembly code with AT&T sintax",
+    "version": "20220217.26",
+    "url": "",
+    "source": "codeberg",
+    "commit": "f841a80603c409d9e492180363be85d83ee2f8e3",
+    "tree": ""
+  },
+  {
     "name": "git",
     "summary": "An Elisp API for programmatically using Git",
     "version": "20140128.1041",
