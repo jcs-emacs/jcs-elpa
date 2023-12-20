@@ -1181,10 +1181,10 @@
   {
     "name": "nerd-icons",
     "summary": "Emacs Nerd Font Icons Library",
-    "version": "20231206.1836",
+    "version": "20231220.243",
     "url": "https://github.com/rainstormstudio/nerd-icons.el",
     "source": "github",
-    "commit": "b29ef760e92f36f47720f6c58435854129ee7163",
+    "commit": "0727a648518dec07755f1e044f6192cf2ced85ab",
     "tree": "https://github.com/rainstormstudio/nerd-icons.el"
   },
   {
@@ -1550,10 +1550,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20231209.821",
+    "version": "20231220.117",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "fcc4ebb9636729e6cbd0b3af28afcf12666ff855",
+    "commit": "ea90abc265b82530c92d39ab13c7df42f4cca6e2",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
