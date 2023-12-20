@@ -1,9 +1,9 @@
 (nerd-icons .
-	    [(20231206 1836)
+	    [(20231220 243)
 	     ((emacs
 	       (24 3)))
 	     "Emacs Nerd Font Icons Library" tar
-	     ((:commit . "b29ef760e92f36f47720f6c58435854129ee7163")
+	     ((:commit . "0727a648518dec07755f1e044f6192cf2ced85ab")
 	      (:authors
 	       ("Hongyu Ding" . "rainstormstudio@yahoo.com")
 	       ("Vincent Zhang" . "seagle0128@gmail.com"))
