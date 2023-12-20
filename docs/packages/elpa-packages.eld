@@ -82,6 +82,7 @@
   (fof :url "https://github.com/jcs-elpa/fof.git")
   (font-lock-ext :url "https://github.com/sensorflo/font-lock-ext.git")
   (fuz-bin :url "https://github.com/jcs-legacy/fuz-bin.git")
+  (gas-mode :url "https://codeberg.org/Enocstocks/gas-mode.el.git")
   (git :url "https://github.com/rejeep/git.el.git")
   (github-elpa :url "https://github.com/10sr/github-elpa.git")
   (github-tags :url "https://github.com/jcs-elpa/github-tags.git")
