@@ -1,5 +1,5 @@
 (company-c-headers .
-		   [(20231223 803)
+		   [(20231223 805)
 		    ((emacs
 		      (26 1))
 		     (company
@@ -7,7 +7,7 @@
 		     (f
 		      (0 20 0)))
 		    "Company mode backend for C/C++ header files" tar
-		    ((:commit . "98362532f2742a343303fd67e78273bf8b9ecd1b")
+		    ((:commit . "fa1b905a5f5bb0d9372ca2763d7ea23f3f58c624")
 		     (:authors
 		      ("Alastair Rankine" . "alastair@girtby.net"))
 		     (:maintainers
