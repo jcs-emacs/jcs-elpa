@@ -245,10 +245,10 @@
   {
     "name": "company-c-headers",
     "summary": "Company mode backend for C/C++ header files",
-    "version": "20231223.803",
+    "version": "20231223.805",
     "url": "http://github.com/elp-revive/company-c-headers",
     "source": "github",
-    "commit": "98362532f2742a343303fd67e78273bf8b9ecd1b",
+    "commit": "fa1b905a5f5bb0d9372ca2763d7ea23f3f58c624",
     "tree": "http://github.com/elp-revive/company-c-headers"
   },
   {
