@@ -1721,10 +1721,10 @@
   {
     "name": "vs-comment-return",
     "summary": "Comment return like Visual Studio",
-    "version": "20231224.758",
+    "version": "20231228.2208",
     "url": "https://github.com/emacs-vs/vs-comment-return",
     "source": "github",
-    "commit": "1bed2a3e002c7be5cfbf0b93b9fa354659866ac9",
+    "commit": "6652486a4e328e177ba35150d30e1dd07286d3e6",
     "tree": "https://github.com/emacs-vs/vs-comment-return"
   },
   {
