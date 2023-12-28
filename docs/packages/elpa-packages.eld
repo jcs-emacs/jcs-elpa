@@ -159,6 +159,7 @@
   (sideline :url "https://github.com/emacs-sideline/sideline.git")
   (sideline-blame :url "https://github.com/emacs-sideline/sideline-blame.git")
   (sideline-color :url "https://github.com/emacs-sideline/sideline-color.git")
+  (sideline-eglot :url "https://github.com/emacs-sideline/sideline-eglot.git")
   (sideline-eldoc :url "https://github.com/ginqi7/sideline-eldoc.git")
   (sideline-flycheck :url "https://github.com/emacs-sideline/sideline-flycheck.git")
   (sideline-flymake :url "https://github.com/emacs-sideline/sideline-flymake.git")
