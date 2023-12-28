@@ -1449,6 +1449,15 @@
     "tree": "https://github.com/emacs-sideline/sideline-color"
   },
   {
+    "name": "sideline-eglot",
+    "summary": "Show eglot information with sideline",
+    "version": "20231228.453",
+    "url": "https://github.com/emacs-sideline/sideline-eglot",
+    "source": "github",
+    "commit": "158e8819172b144364658833db80b7aa0ef24e72",
+    "tree": "https://github.com/emacs-sideline/sideline-eglot"
+  },
+  {
     "name": "sideline-eldoc",
     "summary": "sideline backend for eldoc.",
     "version": "20230512.620",
