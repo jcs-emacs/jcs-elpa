@@ -1,13 +1,15 @@
 (sideline-eglot .
-		[(20231228 453)
+		[(20231228 503)
 		 ((emacs
 		   (27 1))
+		  (eglot
+		   (1 12 29))
 		  (sideline
 		   (0 1 0))
 		  (ht
 		   (2 4)))
 		 "Show eglot information with sideline" tar
-		 ((:commit . "158e8819172b144364658833db80b7aa0ef24e72")
+		 ((:commit . "bec02720f9c1c5db635140e3c5c97d7578f9897b")
 		  (:authors
 		   ("Jen-Chieh" . "jcs090218@gmail.com"))
 		  (:maintainers
