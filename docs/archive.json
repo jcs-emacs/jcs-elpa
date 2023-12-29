@@ -297,12 +297,21 @@
     "tree": "https://github.com/jcs-elpa/company-elisp-keywords"
   },
   {
+    "name": "company-emmet",
+    "summary": "Company completion for emmet",
+    "version": "20231229.1331",
+    "url": "https://github.com/emacs-vs/company-emmet",
+    "source": "github",
+    "commit": "f1ea13e25ab2b104705a55b3d80d3f5e27cb6a31",
+    "tree": "https://github.com/emacs-vs/company-emmet"
+  },
+  {
     "name": "company-fuzzy",
     "summary": "Fuzzy matching for `company-mode'",
-    "version": "20230531.743",
+    "version": "20231229.1311",
     "url": "https://github.com/jcs-elpa/company-fuzzy",
     "source": "github",
-    "commit": "85dd0a7852db70673d70387a834af01ed705c3f7",
+    "commit": "eb80c961f7ff34bbec724b933161986575ad4aec",
     "tree": "https://github.com/jcs-elpa/company-fuzzy"
   },
   {
