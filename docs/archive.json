@@ -299,10 +299,10 @@
   {
     "name": "company-emmet",
     "summary": "Company completion for emmet",
-    "version": "20231229.1335",
+    "version": "20231229.1351",
     "url": "https://github.com/emacs-vs/company-emmet",
     "source": "github",
-    "commit": "6c5c0132f297aeb95400a8563efce313b2eedf52",
+    "commit": "db9c0a12729ea64c976973fb8730f04679ea922b",
     "tree": "https://github.com/emacs-vs/company-emmet"
   },
   {
