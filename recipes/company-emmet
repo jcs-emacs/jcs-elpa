@@ -1,0 +1,1 @@
+(company-emmet :repo "emacs-vs/company-emmet" :fetcher github)
