@@ -1,5 +1,5 @@
 (company-emmet .
-	       [(20231229 1331)
+	       [(20231229 1335)
 		((emacs
 		  (26 1))
 		 (company
@@ -7,7 +7,7 @@
 		 (emmet-mode
 		  (1 0 10)))
 		"Company completion for emmet" tar
-		((:commit . "f1ea13e25ab2b104705a55b3d80d3f5e27cb6a31")
+		((:commit . "6c5c0132f297aeb95400a8563efce313b2eedf52")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainers
