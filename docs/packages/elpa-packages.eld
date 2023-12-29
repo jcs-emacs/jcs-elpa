@@ -31,6 +31,7 @@
   (company-dockerfile :url "https://github.com/elp-revive/company-dockerfile.git")
   (company-eask :url "https://github.com/emacs-eask/company-eask.git")
   (company-elisp-keywords :url "https://github.com/jcs-elpa/company-elisp-keywords.git")
+  (company-emmet :url "https://github.com/emacs-vs/company-emmet.git")
   (company-fuzzy :url "https://github.com/jcs-elpa/company-fuzzy.git")
   (company-kaomoji :url "https://github.com/jcs-elpa/company-kaomoji.git")
   (company-makefile :url "https://github.com/elp-revive/company-makefile.git")
