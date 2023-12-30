@@ -1,9 +1,9 @@
 (dape .
-      [(20231228 2307)
+      [(20231230 2200)
        ((emacs
 	 (29 1)))
        "Debug Adapter Protocol for Emacs" tar
-       ((:commit . "00b226369cc53509aaf368d97e981b8536ef2263")
+       ((:commit . "61ff3b61a86ae04a1dd5c74ecc04f4caaa419d7f")
 	(:maintainers
 	 ("Daniel Pettersson" . "daniel@dpettersson.net"))
 	(:maintainer "Daniel Pettersson" . "daniel@dpettersson.net")
