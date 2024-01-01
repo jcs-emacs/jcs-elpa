@@ -1,0 +1,19 @@
+(nerd-icons-buffer-menu .
+			[(20240101 933)
+			 ((emacs
+			   (26 1))
+			  (nerd-icons
+			   (0 0 1))
+			  (noflet
+			   (0 0 15))
+			  (msgu
+			   (0 1 0)))
+			 "Display nerd icons in `buffer-menu'" tar
+			 ((:commit . "7cd060403f97c1e6cd0c6287eefadc0743189d37")
+			  (:authors
+			   ("Jen-Chieh" . "jcs090218@gmail.com"))
+			  (:maintainers
+			   ("Jen-Chieh" . "jcs090218@gmail.com"))
+			  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+			  (:keywords "frames")
+			  (:url . "https://github.com/jcs-elpa/nerd-icons-buffer-menu"))])

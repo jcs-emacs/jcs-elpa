@@ -1,0 +1,17 @@
+(prt .
+     [(20240101 940)
+      ((emacs
+	(27 1))
+       (spinner
+	(1 7 4))
+       (msgu
+	(0 1 0)))
+      "Progress Reporter Library" tar
+      ((:commit . "b7c20d8573b63970f6c49b72e9e5d16e4c35bb6f")
+       (:authors
+	("Jen-Chieh" . "jcs090218@gmail.com"))
+       (:maintainers
+	("Jen-Chieh" . "jcs090218@gmail.com"))
+       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+       (:keywords "convenience")
+       (:url . "https://github.com/jcs-elpa/prt"))])

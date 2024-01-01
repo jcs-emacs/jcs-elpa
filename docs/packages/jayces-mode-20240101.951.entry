@@ -1,0 +1,13 @@
+(jayces-mode .
+	     [(20240101 951)
+	      ((emacs
+		(26 1)))
+	      "Major mode for editing JayCeS file" tar
+	      ((:commit . "48af98f6218a243e16008330539cd2e1f98709cf")
+	       (:authors
+		("Jen-Chieh" . "jcs090218@gmail.com"))
+	       (:maintainers
+		("Jen-Chieh" . "jcs090218@gmail.com"))
+	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	       (:keywords "lisp" "jayces")
+	       (:url . "https://github.com/jayces-lang/jayces-mode"))])
