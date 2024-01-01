@@ -1,5 +1,5 @@
 (meta-view .
-	   [(20220704 632)
+	   [(20240101 857)
 	    ((emacs
 	      (26 1))
 	     (csharp-mode
@@ -11,7 +11,7 @@
 	     (f
 	      (0 20 0)))
 	    "View metadata from .NET assemblies" tar
-	    ((:commit . "68d6c29af5b8fc1c5af849ea606b17e08faf7901")
+	    ((:commit . "afc36e49c6553400ac93e8c9224ffb3e2e07b21d")
 	     (:authors
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))
 	     (:maintainers
