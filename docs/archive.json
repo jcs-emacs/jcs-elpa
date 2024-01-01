@@ -281,10 +281,10 @@
   {
     "name": "company-eask",
     "summary": "Company backend for Eask-file",
-    "version": "20231008.1908",
+    "version": "20240101.819",
     "url": "https://github.com/emacs-eask/company-eask",
     "source": "github",
-    "commit": "27f0a46259427df6a29f352b9bf1079812c3f7bf",
+    "commit": "c1dd9411bed01cc79f8b34d900396e53198b918e",
     "tree": "https://github.com/emacs-eask/company-eask"
   },
   {
@@ -299,10 +299,10 @@
   {
     "name": "company-emmet",
     "summary": "Company completion for emmet",
-    "version": "20231229.1351",
+    "version": "20240101.859",
     "url": "https://github.com/emacs-vs/company-emmet",
     "source": "github",
-    "commit": "db9c0a12729ea64c976973fb8730f04679ea922b",
+    "commit": "3be60b04e5fd1411bae02440cce91cbf540eaaf7",
     "tree": "https://github.com/emacs-vs/company-emmet"
   },
   {
@@ -335,10 +335,10 @@
   {
     "name": "company-meta-net",
     "summary": "Company completion for C# project using meta-net",
-    "version": "20220704.631",
+    "version": "20240101.855",
     "url": "https://github.com/emacs-vs/company-meta-net",
     "source": "github",
-    "commit": "0abcd6148fdea09dc7c65dce4d71a1aa78554873",
+    "commit": "dc7a262cc6a404d71351f6fd77a080237b1788e8",
     "tree": "https://github.com/emacs-vs/company-meta-net"
   },
   {
@@ -353,10 +353,10 @@
   {
     "name": "company-paths",
     "summary": "A company backend for paths",
-    "version": "20221201.742",
+    "version": "20240101.856",
     "url": "https://github.com/emacs-vs/company-paths",
     "source": "github",
-    "commit": "64d48319077094ed74157f652eaa166fcd602302",
+    "commit": "6f096992430ba042372c00d4a9646f4eea71fd9c",
     "tree": "https://github.com/emacs-vs/company-paths"
   },
   {
@@ -434,19 +434,19 @@
   {
     "name": "dashboard",
     "summary": "A startup screen extracted from Spacemacs",
-    "version": "20231201.922",
+    "version": "20240101.841",
     "url": "https://github.com/emacs-dashboard/emacs-dashboard",
     "source": "github",
-    "commit": "54b7767b79fb7b9966c48a31a9d32f372ef9ec3d",
+    "commit": "e9867036ebc100768023eabc21dd5bf4619029c2",
     "tree": "https://github.com/emacs-dashboard/emacs-dashboard"
   },
   {
     "name": "dashboard-ls",
     "summary": "Display files/directories in current directory on Dashboard",
-    "version": "20221231.1629",
+    "version": "20240101.841",
     "url": "https://github.com/emacs-dashboard/dashboard-ls",
     "source": "github",
-    "commit": "b24e0bcb87e20ffcc71efb83a97f9516255fa8e4",
+    "commit": "bc79640e8fcc625ff1af31d5e17b054b1f535f39",
     "tree": "https://github.com/emacs-dashboard/dashboard-ls"
   },
   {
@@ -461,55 +461,55 @@
   {
     "name": "doxygen-asterisk",
     "summary": "Minor mode that helps you insert pair /* and */",
-    "version": "20231031.436",
+    "version": "20240101.857",
     "url": "https://github.com/emacs-vs/doxygen-asterisk",
     "source": "github",
-    "commit": "d7e5ed914e4c1826eebe5caa499096aabce5bcc5",
+    "commit": "a05f0f5f7efa1abbc4f7ac5e9b55969b80bf7079",
     "tree": "https://github.com/emacs-vs/doxygen-asterisk"
   },
   {
     "name": "eask",
     "summary": "Core Eask APIs, for Eask CLI development",
-    "version": "20231229.1236",
+    "version": "20240101.824",
     "url": "https://github.com/emacs-eask/eask",
     "source": "github",
-    "commit": "ce75f05671fb9f91591c57cf005a1815629aa36a",
+    "commit": "e332aa05211097cf48f2755c755bcd19a838e35b",
     "tree": "https://github.com/emacs-eask/eask"
   },
   {
     "name": "eask-mode",
     "summary": "Major mode for editing Eask files",
-    "version": "20231001.1914",
+    "version": "20240101.819",
     "url": "https://github.com/emacs-eask/eask-mode",
     "source": "github",
-    "commit": "2fb19f30812c5c0db2bcc7078fdd43958731bfef",
+    "commit": "774bf05f2d778a107f27f8fa47034ad15f16395c",
     "tree": "https://github.com/emacs-eask/eask-mode"
   },
   {
     "name": "easky",
     "summary": "Control the Eask command-line interface",
-    "version": "20231207.115",
+    "version": "20240101.818",
     "url": "https://github.com/emacs-eask/easky",
     "source": "github",
-    "commit": "c0307087e6b4fd7d62432e9556238c16775606f4",
+    "commit": "b44f6c87cc73138aa0692e69f138a0e7a684903b",
     "tree": "https://github.com/emacs-eask/easky"
   },
   {
     "name": "eglot-grammarly",
     "summary": "Eglot Clients for Grammarly",
-    "version": "20221231.1654",
+    "version": "20240101.847",
     "url": "https://github.com/emacs-grammarly/eglot-grammarly",
     "source": "github",
-    "commit": "bf2bc0c7d6b113ec48d80bb808e9c3427e7935f1",
+    "commit": "98808ddab58fce259d8144d48db56b21ebfa4a2e",
     "tree": "https://github.com/emacs-grammarly/eglot-grammarly"
   },
   {
     "name": "eglot-ltex",
     "summary": "Eglot Clients for LTEX",
-    "version": "20231117.2255",
+    "version": "20240101.851",
     "url": "https://github.com/emacs-languagetool/eglot-ltex",
     "source": "github",
-    "commit": "422d6ef570c0ce08400affc7fdba34de1f569a1d",
+    "commit": "164c0af7e3d7d7fbf85eaeecd4a56d9a777ae211",
     "tree": "https://github.com/emacs-languagetool/eglot-ltex"
   },
   {
@@ -542,28 +542,28 @@
   {
     "name": "eldoc-eask",
     "summary": "Eldoc support for Eask-file",
-    "version": "20230906.611",
+    "version": "20240101.819",
     "url": "https://github.com/emacs-eask/eldoc-eask",
     "source": "github",
-    "commit": "c82dedc41772f6a84f02b2fe24bea7ba9512e246",
+    "commit": "ade0f239814f3b8bc77229e903d2c4b806ded90a",
     "tree": "https://github.com/emacs-eask/eldoc-eask"
   },
   {
     "name": "eldoc-meta-net",
     "summary": "Eldoc support for meta-net",
-    "version": "20221220.1254",
+    "version": "20240101.855",
     "url": "https://github.com/emacs-vs/eldoc-meta-net",
     "source": "github",
-    "commit": "37adccdbe47281c788fdaa4c879874e7dfb38b87",
+    "commit": "ae98185b614d2fddd09d9269eed3c09bd63d878c",
     "tree": "https://github.com/emacs-vs/eldoc-meta-net"
   },
   {
     "name": "electric-indent-sexp",
     "summary": "Automatically indent entire balanced expression block",
-    "version": "20221024.1103",
+    "version": "20240101.855",
     "url": "https://github.com/jcs-elpa/electric-indent-sexp",
     "source": "github",
-    "commit": "8ecd873a7fb425d82935c911677e1cacac380511",
+    "commit": "24f0a21a97af3a58002d8b4709781e6c4497acac",
     "tree": "https://github.com/jcs-elpa/electric-indent-sexp"
   },
   {
@@ -632,10 +632,10 @@
   {
     "name": "fextern",
     "summary": "Record file external stats",
-    "version": "20221004.1304",
+    "version": "20240101.855",
     "url": "https://github.com/emacs-vs/fextern",
     "source": "github",
-    "commit": "ec0f998c91c0e81acc79f735bfa8638896469b9e",
+    "commit": "430a09d9757120d6d0ed474a549e883d614bf221",
     "tree": "https://github.com/emacs-vs/fextern"
   },
   {
@@ -686,19 +686,19 @@
   {
     "name": "flycheck-deno",
     "summary": "Flycheck for deno-lint",
-    "version": "20230212.1754",
+    "version": "20240101.833",
     "url": "https://github.com/flycheck/flycheck-deno",
     "source": "github",
-    "commit": "e7cd15a6a05be73d1f83a16d2efa6b49a105a9cd",
+    "commit": "5e4d66865d7d91e7af3b1b69b02dd540c9ea5aca",
     "tree": "https://github.com/flycheck/flycheck-deno"
   },
   {
     "name": "flycheck-eask",
     "summary": "Eask support in Flycheck",
-    "version": "20230212.1748",
+    "version": "20240101.833",
     "url": "https://github.com/flycheck/flycheck-eask",
     "source": "github",
-    "commit": "93cf80d60a8d7080f380e16443e0882ac4656ff1",
+    "commit": "1871b7ee94342f7673abef65337b8741f37c01e2",
     "tree": "https://github.com/flycheck/flycheck-eask"
   },
   {
@@ -713,19 +713,19 @@
   {
     "name": "flymake-eask",
     "summary": "Eask support in Flymake",
-    "version": "20231022.1740",
+    "version": "20240101.837",
     "url": "https://github.com/flymake/flymake-eask",
     "source": "github",
-    "commit": "82204f96fd4168a7641df81fd90cb6d8561914f3",
+    "commit": "3962a059f3437bee73faa11d997fdb92d180eee7",
     "tree": "https://github.com/flymake/flymake-eask"
   },
   {
     "name": "flymake-elsa",
     "summary": "Flymake integration for Elsa",
-    "version": "20230131.1211",
+    "version": "20240101.837",
     "url": "https://github.com/flymake/flymake-elsa",
     "source": "github",
-    "commit": "f4f05ab17c57486dcb715ee6f42db2d95a1737d8",
+    "commit": "ae7bd4b8077983523431a587619c9e38a62f4312",
     "tree": "https://github.com/flymake/flymake-elsa"
   },
   {
@@ -812,10 +812,10 @@
   {
     "name": "hl-preproc",
     "summary": "Unhighlight invalid preprocessor region",
-    "version": "20220704.631",
+    "version": "20240101.856",
     "url": "https://github.com/emacs-vs/hl-preproc",
     "source": "github",
-    "commit": "bc6a52a626b4735010e56fec8d31c8d1f581a2cf",
+    "commit": "16a3b3dedea635217ce83287f86618c558e4ecd3",
     "tree": "https://github.com/emacs-vs/hl-preproc"
   },
   {
@@ -1028,10 +1028,10 @@
   {
     "name": "line-reminder",
     "summary": "Line annotation for changed and saved lines",
-    "version": "20231030.406",
+    "version": "20240101.857",
     "url": "https://github.com/emacs-vs/line-reminder",
     "source": "github",
-    "commit": "1835ea7dbd4943a165c9786d19cebaceff170a71",
+    "commit": "91d8f57f11f5ddbb5e94cb23877c67a8f59d4d8c",
     "tree": "https://github.com/emacs-vs/line-reminder"
   },
   {
@@ -1127,19 +1127,19 @@
   {
     "name": "meta-net",
     "summary": "Parse .NET assembly's XML",
-    "version": "20220704.632",
+    "version": "20240101.856",
     "url": "https://github.com/emacs-vs/meta-net",
     "source": "github",
-    "commit": "23002c1e94a39fd600f56f1c3c0a25d082b6a8c3",
+    "commit": "3dd350df70e6a5ad5af5eea81c88cc3fa19de0b7",
     "tree": "https://github.com/emacs-vs/meta-net"
   },
   {
     "name": "meta-view",
     "summary": "View metadata from .NET assemblies",
-    "version": "20220704.632",
+    "version": "20240101.857",
     "url": "https://github.com/emacs-vs/meta-view",
     "source": "github",
-    "commit": "68d6c29af5b8fc1c5af849ea606b17e08faf7901",
+    "commit": "afc36e49c6553400ac93e8c9224ffb3e2e07b21d",
     "tree": "https://github.com/emacs-vs/meta-view"
   },
   {
@@ -1370,10 +1370,10 @@
   {
     "name": "rainbow-csv",
     "summary": "Highlight CSV and TSV files in different rainbow colors",
-    "version": "20231211.40",
+    "version": "20240101.858",
     "url": "https://github.com/emacs-vs/rainbow-csv",
     "source": "github",
-    "commit": "d6813bd14bc1759fea3c1af83459be7c391cc55a",
+    "commit": "1fc510741f9a437aafeed99b42a09dafc3ffb09e",
     "tree": "https://github.com/emacs-vs/rainbow-csv"
   },
   {
@@ -1424,10 +1424,10 @@
   {
     "name": "send-to-osx-grammarly",
     "summary": "A simple plugin to sent text to Grammarly",
-    "version": "20221231.1655",
+    "version": "20240101.847",
     "url": "https://github.com/emacs-grammarly/send-to-osx-grammarly",
     "source": "github",
-    "commit": "d47ea3f46a62a7155a312be73cf0b4c1ecd9be82",
+    "commit": "6936f767d23c34e028bd7d633eb64f2f554335c0",
     "tree": "https://github.com/emacs-grammarly/send-to-osx-grammarly"
   },
   {
@@ -1595,19 +1595,19 @@
   {
     "name": "ts-docstr",
     "summary": "A document string minor mode using tree-sitter",
-    "version": "20230913.114",
+    "version": "20240101.904",
     "url": "https://github.com/emacs-vs/ts-docstr",
     "source": "github",
-    "commit": "1eb1898ec504f6b3152e4c701640668c5638fcce",
+    "commit": "d28313cb5384aea8d9574e2273f95ff228629ddc",
     "tree": "https://github.com/emacs-vs/ts-docstr"
   },
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20231229.747",
+    "version": "20240101.853",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "c6014608c7ea3d3dfb491e16a2ec7508cec239cf",
+    "commit": "91fdf441bfaec4c0f8fc53f55c9bfcacc4693468",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
@@ -1730,73 +1730,73 @@
   {
     "name": "vs-comment-return",
     "summary": "Comment return like Visual Studio",
-    "version": "20231228.2208",
+    "version": "20240101.859",
     "url": "https://github.com/emacs-vs/vs-comment-return",
     "source": "github",
-    "commit": "6652486a4e328e177ba35150d30e1dd07286d3e6",
+    "commit": "2e0268d471d765c250553b0297af53643a41f994",
     "tree": "https://github.com/emacs-vs/vs-comment-return"
   },
   {
     "name": "vs-dark-theme",
     "summary": "Visual Studio IDE dark theme",
-    "version": "20231226.6",
+    "version": "20240101.859",
     "url": "https://github.com/emacs-vs/vs-dark-theme",
     "source": "github",
-    "commit": "4a0d8354a9978d6e1d4910bcd5e5fc9e8aaf4cd9",
+    "commit": "2fb14fbaca5a8f996f44d3f2ca29235ed029985a",
     "tree": "https://github.com/emacs-vs/vs-dark-theme"
   },
   {
     "name": "vs-edit-mode",
     "summary": "Minor mode accomplish editing experience in Visual Studio",
-    "version": "20231209.958",
+    "version": "20240101.857",
     "url": "https://github.com/emacs-vs/vs-edit-mode",
     "source": "github",
-    "commit": "da2f4b46b4e37e036636d0749b4bcaf559a74e94",
+    "commit": "c7b365454ee922e86e40870d429a5feaf130530f",
     "tree": "https://github.com/emacs-vs/vs-edit-mode"
   },
   {
     "name": "vs-electric-spacing",
     "summary": "Add spacing around operators like Visual Studio",
-    "version": "20221006.1601",
+    "version": "20240101.856",
     "url": "https://github.com/jcs-elpa/vs-electric-spacing",
     "source": "github",
-    "commit": "d1e4e5cc3180e3137289c188961752c5598b3643",
+    "commit": "c97e28e03a33f1a9fc0ead789b9a7d277842fe7b",
     "tree": "https://github.com/jcs-elpa/vs-electric-spacing"
   },
   {
     "name": "vs-light-theme",
     "summary": "Visual Studio IDE light theme",
-    "version": "20231226.5",
+    "version": "20240101.858",
     "url": "https://github.com/emacs-vs/vs-light-theme",
     "source": "github",
-    "commit": "e4fc33c91ce320a6f312c23bbe466a1780cc4d9f",
+    "commit": "581daf70d9ca05dbbc32f04856473a7c9999819b",
     "tree": "https://github.com/emacs-vs/vs-light-theme"
   },
   {
     "name": "vs-revbuf",
     "summary": "Revert buffers like Visual Studio",
-    "version": "20221229.1228",
+    "version": "20240101.856",
     "url": "https://github.com/emacs-vs/vs-revbuf",
     "source": "github",
-    "commit": "5572daea403bd62d8b2bccaffd7e9dca43d1de77",
+    "commit": "84fdda6754435f1c0757d0f25c6bb45432c5bdc5",
     "tree": "https://github.com/emacs-vs/vs-revbuf"
   },
   {
     "name": "vsc-edit-mode",
     "summary": "Implement editing experience like VSCode",
-    "version": "20231231.1229",
+    "version": "20240101.859",
     "url": "https://github.com/emacs-vs/vsc-edit-mode",
     "source": "github",
-    "commit": "93869fd0919f577c0fd0dab5b565091278ad8edf",
+    "commit": "2293235eca2a77014cc06d2e382bc0443890bd45",
     "tree": "https://github.com/emacs-vs/vsc-edit-mode"
   },
   {
     "name": "vsc-multiple-cursors",
     "summary": "multiple-curosrs integration behave like VSCode",
-    "version": "20221020.1609",
+    "version": "20240101.856",
     "url": "https://github.com/emacs-vs/vsc-multiple-cursors",
     "source": "github",
-    "commit": "2aafc8c47e7862fe6394a9a195df54f77be90f76",
+    "commit": "3a5321a7af5fdb11dd67c9ba36e8c00b1850acb1",
     "tree": "https://github.com/emacs-vs/vsc-multiple-cursors"
   },
   {
