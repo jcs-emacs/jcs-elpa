@@ -1,11 +1,11 @@
 (company-paths .
-	       [(20221201 742)
+	       [(20240101 856)
 		((emacs
 		  (28 1))
 		 (company
 		  (0 8 12)))
 		"A company backend for paths" tar
-		((:commit . "64d48319077094ed74157f652eaa166fcd602302")
+		((:commit . "6f096992430ba042372c00d4a9646f4eea71fd9c")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainers

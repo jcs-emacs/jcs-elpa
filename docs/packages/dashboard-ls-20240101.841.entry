@@ -1,11 +1,11 @@
 (dashboard-ls .
-	      [(20221231 1629)
+	      [(20240101 841)
 	       ((emacs
 		 (26 1))
 		(dashboard
 		 (1 2 5)))
 	       "Display files/directories in current directory on Dashboard" tar
-	       ((:commit . "b24e0bcb87e20ffcc71efb83a97f9516255fa8e4")
+	       ((:commit . "bc79640e8fcc625ff1af31d5e17b054b1f535f39")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainers
