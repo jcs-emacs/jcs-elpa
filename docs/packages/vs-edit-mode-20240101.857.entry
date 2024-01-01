@@ -1,5 +1,5 @@
 (vs-edit-mode .
-	      [(20231209 958)
+	      [(20240101 857)
 	       ((emacs
 		 (26 1))
 		(mwim
@@ -9,7 +9,7 @@
 		(noflet
 		 (0 0 15)))
 	       "Minor mode accomplish editing experience in Visual Studio" tar
-	       ((:commit . "da2f4b46b4e37e036636d0749b4bcaf559a74e94")
+	       ((:commit . "c7b365454ee922e86e40870d429a5feaf130530f")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainers

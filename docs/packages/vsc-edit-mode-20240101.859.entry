@@ -1,5 +1,5 @@
 (vsc-edit-mode .
-	       [(20231231 1229)
+	       [(20240101 859)
 		((emacs
 		  (26 1))
 		 (indent-control
@@ -13,7 +13,7 @@
 		 (mwim
 		  (0 4)))
 		"Implement editing experience like VSCode" tar
-		((:commit . "93869fd0919f577c0fd0dab5b565091278ad8edf")
+		((:commit . "2293235eca2a77014cc06d2e382bc0443890bd45")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainers
