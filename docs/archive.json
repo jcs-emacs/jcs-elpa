@@ -20,10 +20,10 @@
   {
     "name": "auto-highlight-symbol",
     "summary": "Automatic highlighting current symbol minor mode",
-    "version": "20231027.715",
+    "version": "20240101.905",
     "url": "http://github.com/jcs-elpa/auto-highlight-symbol",
     "source": "github",
-    "commit": "1c79083b9b6af70b0eba3d4c00cafafeb6154845",
+    "commit": "6194af718b758e10a0401104760b9d9cf96735db",
     "tree": "http://github.com/jcs-elpa/auto-highlight-symbol"
   },
   {
@@ -110,10 +110,10 @@
   {
     "name": "buffer-move",
     "summary": "easily swap buffers",
-    "version": "20220411.1846",
+    "version": "20240101.907",
     "url": "https://github.com/elp-revive/buffer-move/",
     "source": "github",
-    "commit": "39a651e9e30056922ab58caea030960cbfd72374",
+    "commit": "d20de0065695ee815f1c17cf2de527d6e9a7bbf1",
     "tree": "https://github.com/elp-revive/buffer-move/"
   },
   {
@@ -236,10 +236,10 @@
   {
     "name": "company-box",
     "summary": "Company front-end with icons",
-    "version": "20231224.850",
+    "version": "20240101.908",
     "url": "https://github.com/elp-revive/company-box",
     "source": "github",
-    "commit": "3de3be7db6c4fbdfd764777ed6926145bed5a1dd",
+    "commit": "3571a0ae1b6a2da72ddae43e52931292ad282f33",
     "tree": "https://github.com/elp-revive/company-box"
   },
   {
@@ -956,10 +956,10 @@
   {
     "name": "jcs-poptip",
     "summary": "Generic popup tip",
-    "version": "20230417.14",
+    "version": "20240101.911",
     "url": "https://github.com/jcs-emacs/jcs-poptip",
     "source": "github",
-    "commit": "e35fa7134e6eb4e6b51bdc0cc210c0fb400a1d1f",
+    "commit": "85980083a3d89d8b8a85fb02fb8aa8677d099c4a",
     "tree": "https://github.com/jcs-emacs/jcs-poptip"
   },
   {
