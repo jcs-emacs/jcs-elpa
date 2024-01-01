@@ -1,0 +1,15 @@
+(deepl .
+       [(20240101 920)
+	((emacs
+	  (26 1))
+	 (request
+	  (0 3 0)))
+	"Elisp library for the DeepL API" tar
+	((:commit . "cd8b691937d784c63158464b0e6fa613f2d4eab3")
+	 (:authors
+	  ("Jen-Chieh" . "jcs090218@gmail.com"))
+	 (:maintainers
+	  ("Jen-Chieh" . "jcs090218@gmail.com"))
+	 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	 (:keywords "comm" "deepl")
+	 (:url . "https://github.com/emacs-openai/deepl"))])

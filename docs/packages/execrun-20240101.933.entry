@@ -1,0 +1,17 @@
+(execrun .
+	 [(20240101 933)
+	  ((emacs
+	    (26 1))
+	   (ffpc
+	    (0 1 0))
+	   (f
+	    (0 20 0)))
+	  "Run through `compilation-mode'" tar
+	  ((:commit . "ebc302d289e3d697545223a293e571aa63020d39")
+	   (:authors
+	    ("Jen-Chieh" . "jcs090218@gmail.com"))
+	   (:maintainers
+	    ("Jen-Chieh" . "jcs090218@gmail.com"))
+	   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	   (:keywords "tools")
+	   (:url . "https://github.com/jcs-elpa/execrun"))])
