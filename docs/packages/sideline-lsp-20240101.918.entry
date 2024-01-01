@@ -1,5 +1,5 @@
 (sideline-lsp .
-	      [(20221231 1636)
+	      [(20240101 918)
 	       ((emacs
 		 (27 1))
 		(sideline
@@ -13,7 +13,7 @@
 		(s
 		 (1 12 0)))
 	       "Show lsp information with sideline" tar
-	       ((:commit . "38ba700db1769de216989fb9217795934147d160")
+	       ((:commit . "0a085a29b943eede42824981b5d0cd9fb951e9d8")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainers

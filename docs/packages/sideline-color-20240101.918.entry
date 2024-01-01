@@ -1,11 +1,11 @@
 (sideline-color .
-		[(20221231 1636)
+		[(20240101 918)
 		 ((emacs
 		   (27 1))
 		  (sideline
 		   (0 1 0)))
 		 "Show color information with sideline" tar
-		 ((:commit . "7bf64587c378778c0fd1a5d58c6afded92d93030")
+		 ((:commit . "357d2fdefabbcc68f136f441ae2dd57e6fc2e843")
 		  (:authors
 		   ("Jen-Chieh" . "jcs090218@gmail.com"))
 		  (:maintainers
