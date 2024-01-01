@@ -1,11 +1,11 @@
 (flymake-elsa .
-	      [(20230131 1211)
+	      [(20240101 837)
 	       ((emacs
 		 (26 1))
 		(flymake-easy
 		 (0 1)))
 	       "Flymake integration for Elsa" tar
-	       ((:commit . "f4f05ab17c57486dcb715ee6f42db2d95a1737d8")
+	       ((:commit . "ae7bd4b8077983523431a587619c9e38a62f4312")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainers

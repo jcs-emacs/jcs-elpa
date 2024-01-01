@@ -1,11 +1,11 @@
 (flymake-eask .
-	      [(20231022 1740)
+	      [(20240101 837)
 	       ((emacs
 		 (26 1))
 		(flymake-easy
 		 (0 1)))
 	       "Eask support in Flymake" tar
-	       ((:commit . "82204f96fd4168a7641df81fd90cb6d8561914f3")
+	       ((:commit . "3962a059f3437bee73faa11d997fdb92d180eee7")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainers

@@ -1,11 +1,11 @@
 (eask-mode .
-	   [(20231001 1914)
+	   [(20240101 819)
 	    ((emacs
 	      (24 3))
 	     (eask
 	      (0 1 0)))
 	    "Major mode for editing Eask files" tar
-	    ((:commit . "2fb19f30812c5c0db2bcc7078fdd43958731bfef")
+	    ((:commit . "774bf05f2d778a107f27f8fa47034ad15f16395c")
 	     (:authors
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))
 	     (:maintainers

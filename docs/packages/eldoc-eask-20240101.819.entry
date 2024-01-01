@@ -1,11 +1,11 @@
 (eldoc-eask .
-	    [(20230906 611)
+	    [(20240101 819)
 	     ((emacs
 	       (26 1))
 	      (eask
 	       (0 1 0)))
 	     "Eldoc support for Eask-file" tar
-	     ((:commit . "c82dedc41772f6a84f02b2fe24bea7ba9512e246")
+	     ((:commit . "ade0f239814f3b8bc77229e903d2c4b806ded90a")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
 	      (:maintainers
