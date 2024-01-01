@@ -155,10 +155,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "ChatGPT shell + buffer insert commands",
-    "version": "20240101.1236",
+    "version": "20240101.2228",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "9d3664d76b0f4eff524c5c08de3963a411d32b73",
+    "commit": "2f6625536285e9122b1a77e05ee97b6cb64d2228",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -1271,10 +1271,10 @@
   {
     "name": "package-build",
     "summary": "Tools for assembling a package archive",
-    "version": "20231230.1739",
+    "version": "20240101.2224",
     "url": "https://github.com/melpa/package-build",
     "source": "github",
-    "commit": "abad0d94a5e79d3c39b0f89ce2aac02053d0f6a5",
+    "commit": "9f62062900b2186a6c9a1d06de3cb75d7daa6110",
     "tree": "https://github.com/melpa/package-build"
   },
   {
