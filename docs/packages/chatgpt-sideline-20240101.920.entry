@@ -1,5 +1,5 @@
 (chatgpt-sideline .
-		  [(20230914 559)
+		  [(20240101 920)
 		   ((emacs
 		     (27 1))
 		    (chatgpt
@@ -7,7 +7,7 @@
 		    (sideline
 		     (0 1 0)))
 		   "Sideline support for chatgpt" tar
-		   ((:commit . "db77fd86002f1847aafcd812b4c0db5f823428e7")
+		   ((:commit . "4848b7b31afec9c0c649fe03eb68b1c7486e6968")
 		    (:authors
 		     ("Jen-Chieh" . "jcs090218@gmail.com"))
 		    (:maintainers

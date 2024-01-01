@@ -1,9 +1,9 @@
 (block-travel .
-	      [(20221015 1757)
+	      [(20240101 931)
 	       ((emacs
 		 (26 1)))
 	       "Move to previous/next blank line" tar
-	       ((:commit . "e57d005a1b983ea68c2ec45b7a5593ee90aba225")
+	       ((:commit . "7102642e7440901d8032f84016a96fc2c802157f")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainers

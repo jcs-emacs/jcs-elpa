@@ -1,9 +1,9 @@
 (cycle-slash .
-	     [(20221117 1154)
+	     [(20240101 929)
 	      ((emacs
 		(28 1)))
 	      "Cycle through slash, backslash, and double backslash" tar
-	      ((:commit . "839218d28c609ce1ff6ff2f84eb2edfd6f19e1f6")
+	      ((:commit . "4762fe1c8cab05690b69b1923b421ae88fa83492")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainers

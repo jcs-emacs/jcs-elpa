@@ -1,11 +1,11 @@
 (company-elisp-keywords .
-			[(20221117 1104)
+			[(20240101 937)
 			 ((emacs
 			   (26 1))
 			  (company
 			   (0 8 0)))
 			 "Company completion for `finder-known-keywords'" tar
-			 ((:commit . "2a6b96beb116202b3e7fd3d455d83bda7eaf1520")
+			 ((:commit . "f1869d2f1c0cb10bb38c4abad78f8b7722ff1323")
 			  (:authors
 			   ("Jen-Chieh" . "jcs090218@gmail.com"))
 			  (:maintainers

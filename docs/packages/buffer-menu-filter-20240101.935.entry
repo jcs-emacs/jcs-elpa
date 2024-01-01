@@ -1,5 +1,5 @@
 (buffer-menu-filter .
-		    [(20230312 1039)
+		    [(20240101 935)
 		     ((emacs
 		       (26 1))
 		      (buffer-menu-project
@@ -11,7 +11,7 @@
 		      (msgu
 		       (0 1 0)))
 		     "Filter buffer-menu items using fake header" tar
-		     ((:commit . "6bd4bb623cd604a4decb97ad512c59661aa14ec3")
+		     ((:commit . "777e259a1de248c524dc132d35ad2565a214c049")
 		      (:authors
 		       ("Jen-Chieh" . "jcs090218@gmail.com"))
 		      (:maintainers
