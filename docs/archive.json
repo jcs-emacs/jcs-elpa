@@ -29,10 +29,10 @@
   {
     "name": "auto-scroll-bar",
     "summary": "Automatically show/hide scroll-bars as needed",
-    "version": "20230130.732",
+    "version": "20240101.934",
     "url": "https://github.com/jcs-elpa/auto-scroll-bar",
     "source": "github",
-    "commit": "3ddec689d2c6c45dffdb04b7b735154b6a0d4a50",
+    "commit": "34b9780d3b02367893ce7eb3795e4cfc1dc38a6e",
     "tree": "https://github.com/jcs-elpa/auto-scroll-bar"
   },
   {
@@ -74,10 +74,10 @@
   {
     "name": "block-travel",
     "summary": "Move to previous/next blank line",
-    "version": "20221015.1757",
+    "version": "20240101.931",
     "url": "https://github.com/jcs-elpa/block-travel",
     "source": "github",
-    "commit": "e57d005a1b983ea68c2ec45b7a5593ee90aba225",
+    "commit": "7102642e7440901d8032f84016a96fc2c802157f",
     "tree": "https://github.com/jcs-elpa/block-travel"
   },
   {
@@ -92,19 +92,19 @@
   {
     "name": "buffer-menu-filter",
     "summary": "Filter buffer-menu items using fake header",
-    "version": "20230312.1039",
+    "version": "20240101.935",
     "url": "https://github.com/jcs-elpa/buffer-menu-filter",
     "source": "github",
-    "commit": "6bd4bb623cd604a4decb97ad512c59661aa14ec3",
+    "commit": "777e259a1de248c524dc132d35ad2565a214c049",
     "tree": "https://github.com/jcs-elpa/buffer-menu-filter"
   },
   {
     "name": "buffer-menu-project",
     "summary": "List buffers relative to project",
-    "version": "20220704.646",
+    "version": "20240101.930",
     "url": "https://github.com/jcs-elpa/buffer-menu-project",
     "source": "github",
-    "commit": "53accb77a9bfb80e9e745994e0cba21b1fb35241",
+    "commit": "e4e3f78433c29890018bc504011aa00b2791126c",
     "tree": "https://github.com/jcs-elpa/buffer-menu-project"
   },
   {
@@ -146,10 +146,10 @@
   {
     "name": "chatgpt",
     "summary": "Use ChatGPT inside Emacs",
-    "version": "20231113.29",
+    "version": "20240101.921",
     "url": "https://github.com/emacs-openai/chatgpt",
     "source": "github",
-    "commit": "53c285cfe8b223d3d71042e80fb11665b3c35cd1",
+    "commit": "2cba5719971d2ce09754c4917f04166ea045469f",
     "tree": "https://github.com/emacs-openai/chatgpt"
   },
   {
@@ -164,10 +164,10 @@
   {
     "name": "chatgpt-sideline",
     "summary": "Sideline support for chatgpt",
-    "version": "20230914.559",
+    "version": "20240101.920",
     "url": "https://github.com/emacs-openai/chatgpt-sideline",
     "source": "github",
-    "commit": "db77fd86002f1847aafcd812b4c0db5f823428e7",
+    "commit": "4848b7b31afec9c0c649fe03eb68b1c7486e6968",
     "tree": "https://github.com/emacs-openai/chatgpt-sideline"
   },
   {
@@ -182,10 +182,10 @@
   {
     "name": "codegpt",
     "summary": "Use GPT-3 tp help you write code",
-    "version": "20230329.2022",
+    "version": "20240101.920",
     "url": "https://github.com/emacs-openai/codegpt",
     "source": "github",
-    "commit": "d5de204b6438eafeaa667d3007699f84ac87f5f9",
+    "commit": "b3ff081ae02c35b31d862bacd9612a75d042b78a",
     "tree": "https://github.com/emacs-openai/codegpt"
   },
   {
@@ -200,10 +200,10 @@
   {
     "name": "codemetrics",
     "summary": "Plugin shows complexity information",
-    "version": "20230926.800",
+    "version": "20240101.944",
     "url": "https://github.com/jcs-elpa/codemetrics",
     "source": "github",
-    "commit": "a5d875091dd5d7a0e88f9fb65df0a55e3cd2f398",
+    "commit": "a335acf9004923b2db8f2e90f6ab1cb5d524b573",
     "tree": "https://github.com/jcs-elpa/codemetrics"
   },
   {
@@ -290,10 +290,10 @@
   {
     "name": "company-elisp-keywords",
     "summary": "Company completion for `finder-known-keywords'",
-    "version": "20221117.1104",
+    "version": "20240101.937",
     "url": "https://github.com/jcs-elpa/company-elisp-keywords",
     "source": "github",
-    "commit": "2a6b96beb116202b3e7fd3d455d83bda7eaf1520",
+    "commit": "f1869d2f1c0cb10bb38c4abad78f8b7722ff1323",
     "tree": "https://github.com/jcs-elpa/company-elisp-keywords"
   },
   {
@@ -308,19 +308,19 @@
   {
     "name": "company-fuzzy",
     "summary": "Fuzzy matching for `company-mode'",
-    "version": "20231229.1311",
+    "version": "20240101.943",
     "url": "https://github.com/jcs-elpa/company-fuzzy",
     "source": "github",
-    "commit": "eb80c961f7ff34bbec724b933161986575ad4aec",
+    "commit": "059e3e0893a2b3c0ad4bf27b6963e7547b97b5d4",
     "tree": "https://github.com/jcs-elpa/company-fuzzy"
   },
   {
     "name": "company-kaomoji",
     "summary": "Company backend for Kaomoj",
-    "version": "20220727.1816",
+    "version": "20240101.927",
     "url": "https://github.com/jcs-elpa/company-kaomoji",
     "source": "github",
-    "commit": "0c4b26fb19de00ac3fcbb63673d4a0faa9c9b9f0",
+    "commit": "0ba51f55e9008080aba16230da1c9a04fa43e4d3",
     "tree": "https://github.com/jcs-elpa/company-kaomoji"
   },
   {
@@ -398,28 +398,28 @@
   {
     "name": "cycle-case-style",
     "summary": "Cycle through case style (PascalCase, camelCase, etc)",
-    "version": "20221117.1901",
+    "version": "20240101.929",
     "url": "https://github.com/jcs-elpa/cycle-case-style",
     "source": "github",
-    "commit": "f4a1d34ced3d4384ede85c998da9c8f1d074108d",
+    "commit": "d6d67981d74d1b48ce1ff58bcefdb04d18d193be",
     "tree": "https://github.com/jcs-elpa/cycle-case-style"
   },
   {
     "name": "cycle-slash",
     "summary": "Cycle through slash, backslash, and double backslash",
-    "version": "20221117.1154",
+    "version": "20240101.929",
     "url": "https://github.com/jcs-elpa/cycle-slash",
     "source": "github",
-    "commit": "839218d28c609ce1ff6ff2f84eb2edfd6f19e1f6",
+    "commit": "4762fe1c8cab05690b69b1923b421ae88fa83492",
     "tree": "https://github.com/jcs-elpa/cycle-slash"
   },
   {
     "name": "dall-e",
     "summary": "Use DALL-E inside Emacs",
-    "version": "20230329.2030",
+    "version": "20240101.920",
     "url": "https://github.com/emacs-openai/dall-e",
     "source": "github",
-    "commit": "7c62003923aea61dfb4bdc627da6daf7c363b965",
+    "commit": "b2e183315700c0348d5dd4e938db737dac9bb781",
     "tree": "https://github.com/emacs-openai/dall-e"
   },
   {
@@ -452,10 +452,10 @@
   {
     "name": "deepl",
     "summary": "Elisp library for the DeepL API",
-    "version": "20230413.1900",
+    "version": "20240101.920",
     "url": "https://github.com/emacs-openai/deepl",
     "source": "github",
-    "commit": "436a0d479e31949945686b0fa328603df5ee5063",
+    "commit": "cd8b691937d784c63158464b0e6fa613f2d4eab3",
     "tree": "https://github.com/emacs-openai/deepl"
   },
   {
@@ -515,19 +515,19 @@
   {
     "name": "eglot-shader",
     "summary": "Eglot Clients for Shader",
-    "version": "20230924.231",
+    "version": "20240101.952",
     "url": "https://github.com/shader-ls/eglot-shader",
     "source": "github",
-    "commit": "c352922cea1c358113031eb1b7668d24aab36088",
+    "commit": "556f20d4e2226d9e9f55cc8246d59969140f4bb9",
     "tree": "https://github.com/shader-ls/eglot-shader"
   },
   {
     "name": "eglot-uniteai",
     "summary": "Eglot Clients for UniteAI",
-    "version": "20230827.2317",
+    "version": "20240101.920",
     "url": "https://github.com/emacs-openai/eglot-uniteai",
     "source": "github",
-    "commit": "6d8cf0cd2f0b7a39cb0938524397b9126726b77e",
+    "commit": "9640efb2c6c2ec8d54725a9e7eafc06f36e41b5a",
     "tree": "https://github.com/emacs-openai/eglot-uniteai"
   },
   {
@@ -569,28 +569,28 @@
   {
     "name": "elenv",
     "summary": "Environment variable management",
-    "version": "20231202.1215",
+    "version": "20240101.941",
     "url": "https://github.com/jcs-elpa/elenv",
     "source": "github",
-    "commit": "88b142e3644bd20e0babffb0da79ebdea175c62f",
+    "commit": "6d870078b1fdcd14924e4ff55d70238243f4c66c",
     "tree": "https://github.com/jcs-elpa/elenv"
   },
   {
     "name": "ellsp",
     "summary": "Elisp Language Server",
-    "version": "20231120.1120",
+    "version": "20240101.959",
     "url": "https://github.com/jcs-elpa/ellsp",
     "source": "github",
-    "commit": "faacd471546a180f6859490b3f8107ce4dbbef67",
+    "commit": "0ebd7309c0a611a5a9585fb8eaca1043c7f79220",
     "tree": "https://github.com/jcs-elpa/ellsp"
   },
   {
     "name": "emp",
     "summary": "Emacs Music Playlist",
-    "version": "20221231.1709",
+    "version": "20240101.936",
     "url": "https://github.com/jcs-elpa/emp",
     "source": "github",
-    "commit": "66c2c64d2594563227cb8ce71b6edba60414ad2d",
+    "commit": "5b581aba54f024c330aa174f6548ffac5842dc10",
     "tree": "https://github.com/jcs-elpa/emp"
   },
   {
@@ -605,19 +605,19 @@
   {
     "name": "eval-mark",
     "summary": "Evaluate then deactive mark",
-    "version": "20221119.1128",
+    "version": "20240101.936",
     "url": "https://github.com/jcs-elpa/eval-mark",
     "source": "github",
-    "commit": "6749ce3326529dd503ee5a5170516c2aad84b55b",
+    "commit": "58702f162529431ace0793f7a73fbf048a63f943",
     "tree": "https://github.com/jcs-elpa/eval-mark"
   },
   {
     "name": "execrun",
     "summary": "Run through `compilation-mode'",
-    "version": "20221231.1709",
+    "version": "20240101.933",
     "url": "https://github.com/jcs-elpa/execrun",
     "source": "github",
-    "commit": "7806bd55474e9d21b8a74f05d40eabfece5cb218",
+    "commit": "ebc302d289e3d697545223a293e571aa63020d39",
     "tree": "https://github.com/jcs-elpa/execrun"
   },
   {
@@ -641,46 +641,46 @@
   {
     "name": "ff-guard",
     "summary": "Create parent directory for non-existent file",
-    "version": "20221005.1923",
+    "version": "20240101.930",
     "url": "https://github.com/jcs-elpa/ff-guard",
     "source": "github",
-    "commit": "4c6079c1d3fe80d8f116654c646648bc420a9bad",
+    "commit": "9634d3f121d74a438df1f933e6a648abe9c9b3b9",
     "tree": "https://github.com/jcs-elpa/ff-guard"
   },
   {
     "name": "ffpc",
     "summary": "Find file in project or current directory",
-    "version": "20221117.1002",
+    "version": "20240101.931",
     "url": "https://github.com/jcs-elpa/ffpc",
     "source": "github",
-    "commit": "b42222b491b32449466ccd3528c823b2bd95cc88",
+    "commit": "d3d04b46211e24de6b0dc87af9792dbab9fb8ff6",
     "tree": "https://github.com/jcs-elpa/ffpc"
   },
   {
     "name": "file-header",
     "summary": "Highly customizable self design file header",
-    "version": "20221231.1710",
+    "version": "20240101.931",
     "url": "https://github.com/jcs-elpa/file-header",
     "source": "github",
-    "commit": "916396acbe383a9d882fb9ffeacfc86e9c1984b2",
+    "commit": "8b94ef826ce7cc87467eae811ba116317ceeeb70",
     "tree": "https://github.com/jcs-elpa/file-header"
   },
   {
     "name": "flx-rs",
     "summary": "flx in Rust using dynamic module",
-    "version": "20231209.2142",
+    "version": "20240101.943",
     "url": "https://github.com/jcs-elpa/flx-rs",
     "source": "github",
-    "commit": "ad3e64663359e171da43de2582554b3cf25cacea",
+    "commit": "e1f10261bf2207e720b0551bac44c1c25735cdce",
     "tree": "https://github.com/jcs-elpa/flx-rs"
   },
   {
     "name": "flx-style",
     "summary": "Completion style for flx",
-    "version": "20231210.756",
+    "version": "20240101.942",
     "url": "https://github.com/jcs-elpa/flx-style",
     "source": "github",
-    "commit": "a852aaeab5b690a2524bd21e8d94acfd43c7b62d",
+    "commit": "43ea83addab697a35ceb2d1e5a70037418833971",
     "tree": "https://github.com/jcs-elpa/flx-style"
   },
   {
@@ -740,10 +740,10 @@
   {
     "name": "fof",
     "summary": "Default configuration for `ff-find-other-file'",
-    "version": "20231202.1154",
+    "version": "20240101.941",
     "url": "https://github.com/jcs-elpa/fof",
     "source": "github",
-    "commit": "f1c8e7db2db02196ff74800269ce1c5cfb8d4aa2",
+    "commit": "dea23d75d900360774936c3f35dc4771f382311b",
     "tree": "https://github.com/jcs-elpa/fof"
   },
   {
@@ -794,19 +794,19 @@
   {
     "name": "github-tags",
     "summary": "Retrieve tags information through GitHub API",
-    "version": "20221215.1738",
+    "version": "20240101.936",
     "url": "https://github.com/jcs-elpa/github-tags",
     "source": "github",
-    "commit": "1c96ab259c334c10e8ef69b70b8e4e6df3322a66",
+    "commit": "9bd5f013a933137911b3620d9e82a5a85f44ab44",
     "tree": "https://github.com/jcs-elpa/github-tags"
   },
   {
     "name": "helafy",
     "summary": "Minify/Uglify/Prettify contents",
-    "version": "20221103.1418",
+    "version": "20240101.937",
     "url": "https://github.com/jcs-elpa/helafy",
     "source": "github",
-    "commit": "a6658f8e223014066f23bc5ed6c654cbf7f1bf05",
+    "commit": "2feeaa28afd37daa521942e371cbeaebc84493a7",
     "tree": "https://github.com/jcs-elpa/helafy"
   },
   {
@@ -839,10 +839,10 @@
   {
     "name": "ic",
     "summary": "Pretty print to debug",
-    "version": "20231207.1013",
+    "version": "20240101.942",
     "url": "https://github.com/jcs-elpa/ic",
     "source": "github",
-    "commit": "7be4111708ff6ae8c4552e7807f9250353e1bfc3",
+    "commit": "29e0212fe95a111196076d60dd2b9c234d5f0f2d",
     "tree": "https://github.com/jcs-elpa/ic"
   },
   {
@@ -857,28 +857,28 @@
   {
     "name": "indent-control",
     "summary": "Management for indentation level",
-    "version": "20231031.116",
+    "version": "20240101.940",
     "url": "https://github.com/jcs-elpa/indent-control",
     "source": "github",
-    "commit": "944030cf4137caaf5356519aaf44159073bad50e",
+    "commit": "27a545181d629e286009d313c60ce10abc407610",
     "tree": "https://github.com/jcs-elpa/indent-control"
   },
   {
     "name": "isearch-project",
     "summary": "Incremental search through the whole project",
-    "version": "20231104.855",
+    "version": "20240101.940",
     "url": "https://github.com/jcs-elpa/isearch-project",
     "source": "github",
-    "commit": "b5d5d6ddbc5f636d9c1d2fb68a7950b1b3738074",
+    "commit": "07f26dee4636b8e17179dcf57622d40f8d6fee38",
     "tree": "https://github.com/jcs-elpa/isearch-project"
   },
   {
     "name": "ivy-describe-modes",
     "summary": "Ivy interface to `describe-mode`",
-    "version": "20230623.731",
+    "version": "20240101.1004",
     "url": "https://github.com/jcs-elpa/ivy-describe-modes",
     "source": "github",
-    "commit": "c6bfc09db13df6d466a1ddd228335349743f3370",
+    "commit": "31e6f8b69c4a051b01ddc17bd263cc900d2f6deb",
     "tree": "https://github.com/jcs-elpa/ivy-describe-modes"
   },
   {
@@ -920,37 +920,37 @@
   {
     "name": "jayces-mode",
     "summary": "Major mode for editing JayCeS file",
-    "version": "20231230.809",
+    "version": "20240101.951",
     "url": "https://github.com/jayces-lang/jayces-mode",
     "source": "github",
-    "commit": "5df8c6fec68a5928acbf8bfa0343a3f7ae2902ef",
+    "commit": "48af98f6218a243e16008330539cd2e1f98709cf",
     "tree": "https://github.com/jayces-lang/jayces-mode"
   },
   {
     "name": "jcs-echobar",
     "summary": "An echo-bar for jcs-emacs",
-    "version": "20230429.539",
+    "version": "20240101.912",
     "url": "https://github.com/jcs-emacs/jcs-echobar",
     "source": "github",
-    "commit": "28743d8d93485c3cdfabddb0a52317261c54f2b5",
+    "commit": "a485112ed539f437e8cf45e8af96d2e48ab2c16e",
     "tree": "https://github.com/jcs-emacs/jcs-echobar"
   },
   {
     "name": "jcs-frametitle",
     "summary": "A frame title for jcs-emacs",
-    "version": "20230427.57",
+    "version": "20240101.912",
     "url": "https://github.com/jcs-emacs/jcs-frametitle",
     "source": "github",
-    "commit": "3223b40ffc468e078bb427b8ef415bd376a230d3",
+    "commit": "54770f97149bc391aa1a950327fea7315276f16f",
     "tree": "https://github.com/jcs-emacs/jcs-frametitle"
   },
   {
     "name": "jcs-modeline",
     "summary": "A modeline for jcs-emacs",
-    "version": "20231211.46",
+    "version": "20240101.912",
     "url": "https://github.com/jcs-emacs/jcs-modeline",
     "source": "github",
-    "commit": "72bd08ec49a5e13e8f99383347ef943a6e0bed60",
+    "commit": "7be5f156e9a4722ba142ef6c55c440e08cea5731",
     "tree": "https://github.com/jcs-emacs/jcs-modeline"
   },
   {
@@ -965,10 +965,10 @@
   {
     "name": "jcs-template",
     "summary": "Template module for jcs-emacs",
-    "version": "20231128.822",
+    "version": "20240101.912",
     "url": "https://github.com/jcs-emacs/jcs-template",
     "source": "github",
-    "commit": "ff04b07faad4ad4e59137c413acc59f95e3ef4ba",
+    "commit": "7583df94b3972ce06a44c79540bf3d2a6d0045a6",
     "tree": "https://github.com/jcs-emacs/jcs-template"
   },
   {
@@ -1019,10 +1019,10 @@
   {
     "name": "license-templates",
     "summary": "Create LICENSE using GitHub API",
-    "version": "20230311.11",
+    "version": "20240101.932",
     "url": "https://github.com/jcs-elpa/license-templates",
     "source": "github",
-    "commit": "09f1b017c93067c2970a0a63b69026bfc172d2b7",
+    "commit": "62adc47eb36a6f2eabe63c3e9dc8ce7f94007f19",
     "tree": "https://github.com/jcs-elpa/license-templates"
   },
   {
@@ -1046,10 +1046,10 @@
   {
     "name": "logms",
     "summary": "Log message with clickable links to context",
-    "version": "20220704.654",
+    "version": "20240101.942",
     "url": "https://github.com/jcs-elpa/logms",
     "source": "github",
-    "commit": "186478e47265b7d40b87d4b4277275a0031f09f7",
+    "commit": "ef571d7ab8b2809363197e6867bfc1fbff5d14b7",
     "tree": "https://github.com/jcs-elpa/logms"
   },
   {
@@ -1073,19 +1073,19 @@
   {
     "name": "lsp-shader",
     "summary": "LSP Clients for ShaderLab",
-    "version": "20230824.220",
+    "version": "20240101.952",
     "url": "https://github.com/shader-ls/lsp-shader",
     "source": "github",
-    "commit": "b268edbcb406bbdcf8df51fc305d73d7ef2bc0c3",
+    "commit": "65b90c66222043dfed07e193670eb8e9e9a396b5",
     "tree": "https://github.com/shader-ls/lsp-shader"
   },
   {
     "name": "lsp-uniteai",
     "summary": "LSP Clients for UniteAI",
-    "version": "20230827.2352",
+    "version": "20240101.920",
     "url": "https://github.com/emacs-openai/lsp-uniteai",
     "source": "github",
-    "commit": "5ed526078fd47e58a89fbe365745740d23b8d022",
+    "commit": "e13b3121c12e4b88213820965b6e762f827ca1fd",
     "tree": "https://github.com/emacs-openai/lsp-uniteai"
   },
   {
@@ -1100,28 +1100,28 @@
   {
     "name": "marquee-header",
     "summary": "Code interface for displaying marquee in header",
-    "version": "20221230.1008",
+    "version": "20240101.930",
     "url": "https://github.com/jcs-elpa/marquee-header",
     "source": "github",
-    "commit": "1fee5bbec486d0755954f5cafda67f342dc7daa1",
+    "commit": "cb5c17be49fcf96614364eb12079351bf4d749a4",
     "tree": "https://github.com/jcs-elpa/marquee-header"
   },
   {
     "name": "mbs",
     "summary": "Minibuffer Stats",
-    "version": "20231123.115",
+    "version": "20240101.941",
     "url": "https://github.com/jcs-elpa/mbs",
     "source": "github",
-    "commit": "7b6c57fc4c8bb6de22d849444080ca5544427655",
+    "commit": "9e22d6ca0fc3b8e86722477566e18a802da16640",
     "tree": "https://github.com/jcs-elpa/mbs"
   },
   {
     "name": "message-clean-mode",
     "summary": "Keep messages buffer clean",
-    "version": "20221229.1457",
+    "version": "20240101.940",
     "url": "https://github.com/jcs-elpa/message-clean-mode",
     "source": "github",
-    "commit": "23746ce0d08a55280bd65238683430356f5b0e17",
+    "commit": "f547d86b6df039d4f6a27c51eb5dc9558810c877",
     "tree": "https://github.com/jcs-elpa/message-clean-mode"
   },
   {
@@ -1163,19 +1163,19 @@
   {
     "name": "msgu",
     "summary": "Utility functions help output the messages",
-    "version": "20221023.1024",
+    "version": "20240101.927",
     "url": "https://github.com/jcs-elpa/msgu",
     "source": "github",
-    "commit": "0d95ab830391c697c6b0eb117d557b83ce4827fa",
+    "commit": "912dd81b9b4d1a8ef49668c907cf64405932073f",
     "tree": "https://github.com/jcs-elpa/msgu"
   },
   {
     "name": "multi-shell",
     "summary": "Managing multiple shell buffers",
-    "version": "20220704.656",
+    "version": "20240101.928",
     "url": "https://github.com/jcs-elpa/multi-shell",
     "source": "github",
-    "commit": "726f72da0d0f3878c7cdeac831d7ea29f8595b20",
+    "commit": "29a0f32599a8249ca61b47e06fba9b20be91e804",
     "tree": "https://github.com/jcs-elpa/multi-shell"
   },
   {
@@ -1199,10 +1199,10 @@
   {
     "name": "nerd-icons-buffer-menu",
     "summary": "Display nerd icons in `buffer-menu'",
-    "version": "20230601.2158",
+    "version": "20240101.933",
     "url": "https://github.com/jcs-elpa/nerd-icons-buffer-menu",
     "source": "github",
-    "commit": "36a6edcff0cf23e6e92d00938cef719a90ed32ad",
+    "commit": "7cd060403f97c1e6cd0c6287eefadc0743189d37",
     "tree": "https://github.com/jcs-elpa/nerd-icons-buffer-menu"
   },
   {
@@ -1226,10 +1226,10 @@
   {
     "name": "openai",
     "summary": "Elisp library for the OpenAI API",
-    "version": "20231211.1944",
+    "version": "20240101.923",
     "url": "https://github.com/emacs-openai/openai",
     "source": "github",
-    "commit": "ea7fe1affc533b565e07ecbbafd1e602d9dacfc3",
+    "commit": "ad23e5a50b6f04f68a14ca01d5617db30cd9f618",
     "tree": "https://github.com/emacs-openai/openai"
   },
   {
@@ -1289,10 +1289,10 @@
   {
     "name": "pkg-dm",
     "summary": "Package dependencies management",
-    "version": "20221019.1214",
+    "version": "20240101.943",
     "url": "https://github.com/jcs-elpa/pkg-dm",
     "source": "github",
-    "commit": "628457b60940d8512bd8cc71f83de82307754bbf",
+    "commit": "7564a2399fccdd4eef6ee604393cc9e8f2c35b73",
     "tree": "https://github.com/jcs-elpa/pkg-dm"
   },
   {
@@ -1316,19 +1316,19 @@
   {
     "name": "preview-it",
     "summary": "Preview anything at point",
-    "version": "20220820.729",
+    "version": "20240101.933",
     "url": "https://github.com/jcs-elpa/preview-it",
     "source": "github",
-    "commit": "4cc722722d4b040f0af2780086817f87085b5cf8",
+    "commit": "0aa43fb646d69d8766d8ae72c52c6f08d7867024",
     "tree": "https://github.com/jcs-elpa/preview-it"
   },
   {
     "name": "prt",
     "summary": "Progress Reporter Library",
-    "version": "20221023.1025",
+    "version": "20240101.940",
     "url": "https://github.com/jcs-elpa/prt",
     "source": "github",
-    "commit": "cc4f53073246ad38fc53bda90055c496a2221bae",
+    "commit": "b7c20d8573b63970f6c49b72e9e5d16e4c35bb6f",
     "tree": "https://github.com/jcs-elpa/prt"
   },
   {
@@ -1343,10 +1343,10 @@
   {
     "name": "qss-mode",
     "summary": "Major mode for Qt Style Sheets",
-    "version": "20231203.1131",
+    "version": "20240101.941",
     "url": "https://github.com/jcs-elpa/qss-mode",
     "source": "github",
-    "commit": "6874cae92996d8adc809a6fdf83ba86f1001c26a",
+    "commit": "8b618e30fff5337ae51d1c98a95c04007aecb32b",
     "tree": "https://github.com/jcs-elpa/qss-mode"
   },
   {
@@ -1379,10 +1379,10 @@
   {
     "name": "recentf-excl",
     "summary": "Exclude commands for recent files",
-    "version": "20221020.1603",
+    "version": "20240101.934",
     "url": "https://github.com/jcs-elpa/recentf-excl",
     "source": "github",
-    "commit": "2b29ac3225dfb3b03f01816be6bb657eed7f019b",
+    "commit": "7c267b0e4efaa58dd2547d8ba12411352506a699",
     "tree": "https://github.com/jcs-elpa/recentf-excl"
   },
   {
@@ -1397,10 +1397,10 @@
   {
     "name": "repos-window",
     "summary": "Reposition window if when needed",
-    "version": "20221103.2135",
+    "version": "20240101.938",
     "url": "https://github.com/jcs-elpa/repos-window",
     "source": "github",
-    "commit": "672e3ed80bbc44226945b37c3ec0e8266e9d5239",
+    "commit": "d677d8ee6539e4cc5793514150474324ad74f6a1",
     "tree": "https://github.com/jcs-elpa/repos-window"
   },
   {
@@ -1433,37 +1433,37 @@
   {
     "name": "sideline",
     "summary": "Show information on the side",
-    "version": "20231020.621",
+    "version": "20240101.918",
     "url": "https://github.com/emacs-sideline/sideline",
     "source": "github",
-    "commit": "1c6a15d23d50df218c8c1546bbcc31b5fabe8af9",
+    "commit": "20e04fa2fd4dcc0cba47d0336aab37f3f42909d3",
     "tree": "https://github.com/emacs-sideline/sideline"
   },
   {
     "name": "sideline-blame",
     "summary": "Show blame messages with sideline",
-    "version": "20231015.1917",
+    "version": "20240101.918",
     "url": "https://github.com/emacs-sideline/sideline-blame",
     "source": "github",
-    "commit": "014ac17de30b4fcafa7b73d8c886cffa3807d8b1",
+    "commit": "b597c047d2a8ef7dd155e85e43fd65530ecf0a61",
     "tree": "https://github.com/emacs-sideline/sideline-blame"
   },
   {
     "name": "sideline-color",
     "summary": "Show color information with sideline",
-    "version": "20221231.1636",
+    "version": "20240101.918",
     "url": "https://github.com/emacs-sideline/sideline-color",
     "source": "github",
-    "commit": "7bf64587c378778c0fd1a5d58c6afded92d93030",
+    "commit": "357d2fdefabbcc68f136f441ae2dd57e6fc2e843",
     "tree": "https://github.com/emacs-sideline/sideline-color"
   },
   {
     "name": "sideline-eglot",
     "summary": "Show eglot information with sideline",
-    "version": "20231228.503",
+    "version": "20240101.918",
     "url": "https://github.com/emacs-sideline/sideline-eglot",
     "source": "github",
-    "commit": "bec02720f9c1c5db635140e3c5c97d7578f9897b",
+    "commit": "9d2290d62efa58c1f86c919f5b8ff97ec430a432",
     "tree": "https://github.com/emacs-sideline/sideline-eglot"
   },
   {
@@ -1478,28 +1478,28 @@
   {
     "name": "sideline-flycheck",
     "summary": "Show flycheck errors with sideline",
-    "version": "20230402.1816",
+    "version": "20240101.918",
     "url": "https://github.com/emacs-sideline/sideline-flycheck",
     "source": "github",
-    "commit": "3d74a008835eff71899b9455cd00f989378fe70e",
+    "commit": "36262547f57699b02e456661156600b044ef26da",
     "tree": "https://github.com/emacs-sideline/sideline-flycheck"
   },
   {
     "name": "sideline-flymake",
     "summary": "Show flymake errors with sideline",
-    "version": "20230402.1816",
+    "version": "20240101.917",
     "url": "https://github.com/emacs-sideline/sideline-flymake",
     "source": "github",
-    "commit": "316325cb050d13f33e83e7d7823e3730a70ecf4e",
+    "commit": "e6b0e7dd7eea511aad1d9af1d944f1379bd7ad7d",
     "tree": "https://github.com/emacs-sideline/sideline-flymake"
   },
   {
     "name": "sideline-lsp",
     "summary": "Show lsp information with sideline",
-    "version": "20221231.1636",
+    "version": "20240101.918",
     "url": "https://github.com/emacs-sideline/sideline-lsp",
     "source": "github",
-    "commit": "38ba700db1769de216989fb9217795934147d160",
+    "commit": "0a085a29b943eede42824981b5d0cd9fb951e9d8",
     "tree": "https://github.com/emacs-sideline/sideline-lsp"
   },
   {
@@ -1523,10 +1523,10 @@
   {
     "name": "sound-async",
     "summary": "Play sound asynchronously",
-    "version": "20221019.1127",
+    "version": "20240101.935",
     "url": "https://github.com/jcs-elpa/sound-async",
     "source": "github",
-    "commit": "324c07ad4624d6b31ba0a077c71ee2a56d0c392d",
+    "commit": "4c0cf628ae2da9cfd14d2770c2a09c983533c1ec",
     "tree": "https://github.com/jcs-elpa/sound-async"
   },
   {
@@ -1541,10 +1541,10 @@
   {
     "name": "toggle-profiler",
     "summary": "Useful functions to interact with profiler",
-    "version": "20220925.1438",
+    "version": "20240101.932",
     "url": "https://github.com/jcs-elpa/toggle-profiler",
     "source": "github",
-    "commit": "81a9deb64384ad1d930e4e6f70be184f05728966",
+    "commit": "76331727f75e86dfcb522913f23938b83169d1a5",
     "tree": "https://github.com/jcs-elpa/toggle-profiler"
   },
   {
@@ -1667,19 +1667,19 @@
   {
     "name": "undo-tree-vf",
     "summary": "visualizer follow mode for undo-tree",
-    "version": "20221003.1228",
+    "version": "20240101.932",
     "url": "https://github.com/jcs-elpa/undo-tree-vf",
     "source": "github",
-    "commit": "4585eb2642fd7391fd0ce753b22695b78b76e45b",
+    "commit": "9cb9042ad29c56509845e03c3aca5d6b0239d189",
     "tree": "https://github.com/jcs-elpa/undo-tree-vf"
   },
   {
     "name": "use-ttf",
     "summary": "Keep font consistency across different OSs",
-    "version": "20230503.1015",
+    "version": "20240101.928",
     "url": "https://github.com/jcs-elpa/use-ttf",
     "source": "github",
-    "commit": "a01d9aef26ffc45dbe8d57d7c061a3a80eb79a2b",
+    "commit": "e0f61ad6c0b6ecf89ff0b43c430b15c94ec8c8b3",
     "tree": "https://github.com/jcs-elpa/use-ttf"
   },
   {
@@ -1703,19 +1703,19 @@
   {
     "name": "vc-refresh",
     "summary": "Refresh vc-state in certain events for better UX",
-    "version": "20221203.1607",
+    "version": "20240101.932",
     "url": "https://github.com/jcs-elpa/vc-refresh",
     "source": "github",
-    "commit": "42efd81f682b803b5a46228e0b119388fa31db60",
+    "commit": "e36abe12a5c4feb1dd9e4464fe6f1e599218d2d1",
     "tree": "https://github.com/jcs-elpa/vc-refresh"
   },
   {
     "name": "vertico-flx",
     "summary": "Flx integration for vertico",
-    "version": "20231123.116",
+    "version": "20240101.941",
     "url": "https://github.com/jcs-elpa/vertico-flx",
     "source": "github",
-    "commit": "4ed515ed9250dcedf7495ea587e0ca131dac4438",
+    "commit": "5fb00e59aa3bd067d0602b48b523c11214b8256b",
     "tree": "https://github.com/jcs-elpa/vertico-flx"
   },
   {
