@@ -38,10 +38,10 @@
   {
     "name": "aws",
     "summary": "AWS Toolkit",
-    "version": "20231027.831",
+    "version": "20240101.1009",
     "url": "https://github.com/jcs090218/aws-toolkit-emacs",
     "source": "github",
-    "commit": "ea785b71c8b20e5948d54e01d8ea4ce962505d7f",
+    "commit": "f892e09b4dc1ad9a01e63482c58fc5067774f7c5",
     "tree": "https://github.com/jcs090218/aws-toolkit-emacs"
   },
   {
@@ -1532,10 +1532,10 @@
   {
     "name": "sublime-fuzzy",
     "summary": "Fuzzy matching algorithm like Sublime Text's string search",
-    "version": "20220704.659",
+    "version": "20240101.1006",
     "url": "https://github.com/jcs-elpa/sublime-fuzzy",
     "source": "github",
-    "commit": "e8652a5bc4d2a99b5d7517612beec1136b33b8c2",
+    "commit": "a0f1c86601e3287e96956fd79cc46252f21ef8aa",
     "tree": "https://github.com/jcs-elpa/sublime-fuzzy"
   },
   {
