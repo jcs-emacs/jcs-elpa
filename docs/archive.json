@@ -74,10 +74,10 @@
   {
     "name": "block-travel",
     "summary": "Move to previous/next blank line",
-    "version": "20240101.931",
+    "version": "20240103.2356",
     "url": "https://github.com/jcs-elpa/block-travel",
     "source": "github",
-    "commit": "7102642e7440901d8032f84016a96fc2c802157f",
+    "commit": "fae4866506c1e58288ae9d72711426e8e21ba97b",
     "tree": "https://github.com/jcs-elpa/block-travel"
   },
   {
@@ -1244,10 +1244,10 @@
   {
     "name": "org-modern-indent",
     "summary": "org-indent blocks like org-modern",
-    "version": "20231225.2319",
+    "version": "20231231.1840",
     "url": "https://github.com/jdtsmith/org-modern-indent",
     "source": "github",
-    "commit": "30cdd1bcf360f5b2bfde3ddfdedd44eb8f19068d",
+    "commit": "ad60fa2f60623142544e9960646678266edae19a",
     "tree": "https://github.com/jdtsmith/org-modern-indent"
   },
   {
