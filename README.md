@@ -37,7 +37,7 @@ Use priority if you don't want this archive overridden with other larger archive
                                    ("jcs-elpa" . 0)))
 ```
 
-## Contribute
+## 🛠️ Contribute
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 [![Donate on paypal](https://img.shields.io/badge/paypal-donate-1?logo=paypal&color=blue)](https://www.paypal.me/jcs090218)
@@ -47,7 +47,7 @@ If you would like to contribute to this project, you may either clone and make p
 requests to this repository. Or you can clone the project and establish your own
 branch of this tool. Any methods are welcome!
 
-## 📝 License
+## ⚜️ License
 
 This work is licensed under the [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/) license.
 
