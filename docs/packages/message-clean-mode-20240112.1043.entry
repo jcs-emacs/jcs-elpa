@@ -1,11 +1,11 @@
 (message-clean-mode .
-		    [(20240101 940)
+		    [(20240112 1043)
 		     ((emacs
 		       (25 1))
 		      (msgu
 		       (0 1 0)))
 		     "Keep messages buffer clean" tar
-		     ((:commit . "f547d86b6df039d4f6a27c51eb5dc9558810c877")
+		     ((:commit . "1fe8215a5b759cef1f74e447436c2737cbb567bd")
 		      (:authors
 		       ("Jen-Chieh" . "jcs090218@gmail.com"))
 		      (:maintainers
