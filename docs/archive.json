@@ -155,10 +155,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "ChatGPT shell + buffer insert commands",
-    "version": "20240111.840",
+    "version": "20240112.1703",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "f0ea5ff835178d082a59495f1cc9d2146b2ee8ff",
+    "commit": "5c63df5a8641fe416473b40cda28cdf70cded4fe",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
