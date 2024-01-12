@@ -1118,10 +1118,10 @@
   {
     "name": "message-clean-mode",
     "summary": "Keep messages buffer clean",
-    "version": "20240101.940",
+    "version": "20240112.1043",
     "url": "https://github.com/jcs-elpa/message-clean-mode",
     "source": "github",
-    "commit": "f547d86b6df039d4f6a27c51eb5dc9558810c877",
+    "commit": "1fe8215a5b759cef1f74e447436c2737cbb567bd",
     "tree": "https://github.com/jcs-elpa/message-clean-mode"
   },
   {
