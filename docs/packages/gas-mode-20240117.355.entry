@@ -1,7 +1,7 @@
 (gas-mode .
-	  [(20220217 26)
+	  [(20240117 355)
 	   nil "Mode for editing assembly code with AT&T sintax" tar
-	   ((:commit . "f841a80603c409d9e492180363be85d83ee2f8e3")
+	   ((:commit . "599cbcebd01124cc9b429bdb78e0cade7a59bc66")
 	    (:authors
 	     ("Bryan Hernández" . "masterenoc@tutamail.com"))
 	    (:maintainers
