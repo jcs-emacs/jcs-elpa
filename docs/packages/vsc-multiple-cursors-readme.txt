@@ -1,2 +1,2 @@
 
-multiple-curosrs integration behave like VSCode.
+multiple-cursors integration behave like VSCode.
