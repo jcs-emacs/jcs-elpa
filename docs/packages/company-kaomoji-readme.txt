@@ -1,2 +1,2 @@
 
-Company backend for Kaomoj
+Company backend for Kaomoji
