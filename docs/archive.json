@@ -316,11 +316,11 @@
   },
   {
     "name": "company-kaomoji",
-    "summary": "Company backend for Kaomoj",
-    "version": "20240101.927",
+    "summary": "Company backend for Kaomoji",
+    "version": "20240118.619",
     "url": "https://github.com/jcs-elpa/company-kaomoji",
     "source": "github",
-    "commit": "0ba51f55e9008080aba16230da1c9a04fa43e4d3",
+    "commit": "ee872d7518b5b0f364c38508c4a7b5125a54e404",
     "tree": "https://github.com/jcs-elpa/company-kaomoji"
   },
   {
