@@ -74,11 +74,11 @@
   {
     "name": "block-travel",
     "summary": "Move to previous/next blank line",
-    "version": "20240103.2356",
-    "url": "https://github.com/jcs-elpa/block-travel",
+    "version": "20240120.1011",
+    "url": "https://github.com/emacs-vs/block-travel",
     "source": "github",
-    "commit": "fae4866506c1e58288ae9d72711426e8e21ba97b",
-    "tree": "https://github.com/jcs-elpa/block-travel"
+    "commit": "69bcb6eb00ebcce1bd4f7641d6be124af31a42e0",
+    "tree": "https://github.com/emacs-vs/block-travel"
   },
   {
     "name": "breadcrumb",
@@ -200,11 +200,11 @@
   {
     "name": "codemetrics",
     "summary": "Plugin shows complexity information",
-    "version": "20240101.944",
-    "url": "https://github.com/jcs-elpa/codemetrics",
+    "version": "20240120.1012",
+    "url": "https://github.com/emacs-vs/codemetrics",
     "source": "github",
-    "commit": "a335acf9004923b2db8f2e90f6ab1cb5d524b573",
-    "tree": "https://github.com/jcs-elpa/codemetrics"
+    "commit": "8176af52885a31ae346df3491577dafd97b930b2",
+    "tree": "https://github.com/emacs-vs/codemetrics"
   },
   {
     "name": "comint-fold",
