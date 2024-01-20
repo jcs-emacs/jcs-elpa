@@ -1,1 +1,1 @@
-(block-travel :repo "jcs-elpa/block-travel" :fetcher github)
+(block-travel :repo "emacs-vs/block-travel" :fetcher github)

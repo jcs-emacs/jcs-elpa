@@ -1,1 +1,1 @@
-(codemetrics :repo "jcs-elpa/codemetrics" :fetcher github)
+(codemetrics :repo "emacs-vs/codemetrics" :fetcher github)
