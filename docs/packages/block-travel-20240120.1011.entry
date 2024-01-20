@@ -1,13 +1,13 @@
 (block-travel .
-	      [(20240103 2356)
+	      [(20240120 1011)
 	       ((emacs
 		 (26 1)))
 	       "Move to previous/next blank line" tar
-	       ((:commit . "fae4866506c1e58288ae9d72711426e8e21ba97b")
+	       ((:commit . "69bcb6eb00ebcce1bd4f7641d6be124af31a42e0")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainers
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 		(:keywords "convenience")
-		(:url . "https://github.com/jcs-elpa/block-travel"))])
+		(:url . "https://github.com/emacs-vs/block-travel"))])

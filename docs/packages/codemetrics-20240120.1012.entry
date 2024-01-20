@@ -1,5 +1,5 @@
 (codemetrics .
-	     [(20240101 944)
+	     [(20240120 1012)
 	      ((emacs
 		(27 1))
 	       (tree-sitter
@@ -7,11 +7,11 @@
 	       (s
 		(1 12 0)))
 	      "Plugin shows complexity information" tar
-	      ((:commit . "a335acf9004923b2db8f2e90f6ab1cb5d524b573")
+	      ((:commit . "8176af52885a31ae346df3491577dafd97b930b2")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainers
 		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 	       (:keywords "convenience" "complexity")
-	       (:url . "https://github.com/jcs-elpa/codemetrics"))])
+	       (:url . "https://github.com/emacs-vs/codemetrics"))])
