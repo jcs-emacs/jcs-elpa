@@ -1586,10 +1586,10 @@
   {
     "name": "treesit-langs",
     "summary": "TODO",
-    "version": "20240115.53",
+    "version": "20240122.54",
     "url": "https://github.com/kiennq/treesit-langs",
     "source": "github",
-    "commit": "dad72e85be260e7412c313aa6e72905daf4ffc69",
+    "commit": "766b99abf4849a62884db90c00295f138d1a9a5e",
     "tree": "https://github.com/kiennq/treesit-langs"
   },
   {
