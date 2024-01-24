@@ -1,0 +1,14 @@
+(company-bootstrap .
+		   [(20190419 1344)
+		    ((emacs
+		      (24 3))
+		     (company
+		      (0 9 10)))
+		    "A company backend for bootstrap." tar
+		    ((:commit . "5077c193c88bf943212300d1b285b9d9ccc2a6c4")
+		     (:authors
+		      ("typefo" . "typefo@hotmail.com"))
+		     (:maintainers
+		      ("typefo" . "typefo@hotmail.com"))
+		     (:maintainer "typefo" . "typefo@hotmail.com")
+		     (:url . "https://github.com/typefo/company-bootstrap"))])

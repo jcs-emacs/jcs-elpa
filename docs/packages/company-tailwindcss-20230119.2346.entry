@@ -1,0 +1,12 @@
+(company-tailwindcss .
+		     [(20230119 2346)
+		      ((emacs
+			(26 1))
+		       (company
+			(0 8 0))
+		       (dash
+			(2 19 1)))
+		      "Company mode for tailwind css suggestions" tar
+		      ((:commit . "d94d90df23131cc59ce9b1e1619f04110bbcfa91")
+		       (:keywords "convenience" "matching")
+		       (:url . "https://github.com/tyler-dodge/company-tailwindcss"))])
