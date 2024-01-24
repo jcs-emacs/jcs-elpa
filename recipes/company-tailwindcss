@@ -1,0 +1,1 @@
+(company-tailwindcss :repo "tyler-dodge/company-tailwindcss" :fetcher github)
