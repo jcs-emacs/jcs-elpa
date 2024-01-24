@@ -234,6 +234,15 @@
     "tree": "https://github.com/elp-revive/company-autoconf"
   },
   {
+    "name": "company-bootstrap",
+    "summary": "A company backend for bootstrap.",
+    "version": "20190419.1344",
+    "url": "https://github.com/typefo/company-bootstrap",
+    "source": "github",
+    "commit": "5077c193c88bf943212300d1b285b9d9ccc2a6c4",
+    "tree": "https://github.com/typefo/company-bootstrap"
+  },
+  {
     "name": "company-box",
     "summary": "Company front-end with icons",
     "version": "20240102.102",
@@ -376,6 +385,15 @@
     "source": "github",
     "commit": "b586459c4d3b6b54081c6acc14d376ae3a854f2d",
     "tree": "https://github.com/nverno/company-sml"
+  },
+  {
+    "name": "company-tailwindcss",
+    "summary": "Company mode for tailwind css suggestions",
+    "version": "20230119.2346",
+    "url": "https://github.com/tyler-dodge/company-tailwindcss",
+    "source": "github",
+    "commit": "d94d90df23131cc59ce9b1e1619f04110bbcfa91",
+    "tree": "https://github.com/tyler-dodge/company-tailwindcss"
   },
   {
     "name": "consult-todo",
