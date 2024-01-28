@@ -43,7 +43,7 @@
   (company-sml :url "https://github.com/nverno/company-sml.git")
   (company-tailwindcss :url "https://github.com/tyler-dodge/company-tailwindcss.git")
   (consult-todo :url "https://github.com/liuyinz/consult-todo.git")
-  (copilot :url "https://github.com/zerolfx/copilot.el.git")
+  (copilot :url "https://github.com/copilot-emacs/copilot.el.git")
   (cycle-case-style :url "https://github.com/jcs-elpa/cycle-case-style.git")
   (cycle-slash :url "https://github.com/jcs-elpa/cycle-slash.git")
   (dall-e :url "https://github.com/emacs-openai/dall-e.git")
