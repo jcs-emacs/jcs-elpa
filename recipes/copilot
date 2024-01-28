@@ -1,4 +1,4 @@
 (copilot
- :repo "zerolfx/copilot.el"
+ :repo "copilot-emacs/copilot.el"
  :fetcher github
  :files (:defaults "dist"))
