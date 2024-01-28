@@ -408,10 +408,10 @@
     "name": "copilot",
     "summary": "An unofficial Copilot plugin for Emacs",
     "version": "20240114.1446",
-    "url": "https://github.com/zerolfx/copilot.el",
+    "url": "https://github.com/copilot-emacs/copilot.el",
     "source": "github",
     "commit": "8f5e45405ead77fcbe85b5c02193f23449d2d518",
-    "tree": "https://github.com/zerolfx/copilot.el"
+    "tree": "https://github.com/copilot-emacs/copilot.el"
   },
   {
     "name": "cycle-case-style",
