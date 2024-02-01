@@ -1,9 +1,9 @@
 (multi-shell .
-	     [(20240201 452)
+	     [(20240201 659)
 	      ((emacs
 		(25 1)))
 	      "Managing multiple shell buffers" tar
-	      ((:commit . "7776d57977f193f92ef0b25ae2fdb61a4929fddd")
+	      ((:commit . "70561331ee3cb44b3a38bb3d798c2ef27c9bedb1")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainers
