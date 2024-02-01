@@ -1190,10 +1190,10 @@
   {
     "name": "multi-shell",
     "summary": "Managing multiple shell buffers",
-    "version": "20240201.659",
+    "version": "20240201.722",
     "url": "https://github.com/jcs-elpa/multi-shell",
     "source": "github",
-    "commit": "70561331ee3cb44b3a38bb3d798c2ef27c9bedb1",
+    "commit": "4b477280725144e9b9b21ec0ec3b40b34dd17514",
     "tree": "https://github.com/jcs-elpa/multi-shell"
   },
   {
