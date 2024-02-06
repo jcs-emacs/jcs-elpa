@@ -1,0 +1,13 @@
+(goto-line-preview .
+		   [(20240206 105)
+		    ((emacs
+		      (25)))
+		    "Preview line when executing `goto-line` command" tar
+		    ((:commit . "c98dc626e55195419fc26010e49b3c6d460303bf")
+		     (:authors
+		      ("Jen-Chieh" . "jcs090218@gmail.com"))
+		     (:maintainers
+		      ("Jen-Chieh" . "jcs090218@gmail.com"))
+		     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		     (:keywords "convenience" "line" "navigation")
+		     (:url . "https://github.com/emacs-vs/goto-line-preview"))])

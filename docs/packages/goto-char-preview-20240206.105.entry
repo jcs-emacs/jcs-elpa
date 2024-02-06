@@ -1,0 +1,13 @@
+(goto-char-preview .
+		   [(20240206 105)
+		    ((emacs
+		      (24 3)))
+		    "Preview character when executing `goto-char` command" tar
+		    ((:commit . "2a52aac671caf3f72526f3d1c3c3d472e67ce7a5")
+		     (:authors
+		      ("Jen-Chieh" . "jcs090218@gmail.com"))
+		     (:maintainers
+		      ("Jen-Chieh" . "jcs090218@gmail.com"))
+		     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		     (:keywords "convenience" "character" "navigation")
+		     (:url . "https://github.com/emacs-vs/goto-char-preview"))])

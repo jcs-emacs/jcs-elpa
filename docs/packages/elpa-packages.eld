@@ -89,6 +89,8 @@
   (git :url "https://github.com/rejeep/git.el.git")
   (github-elpa :url "https://github.com/10sr/github-elpa.git")
   (github-tags :url "https://github.com/jcs-elpa/github-tags.git")
+  (goto-char-preview :url "https://github.com/emacs-vs/goto-char-preview.git")
+  (goto-line-preview :url "https://github.com/emacs-vs/goto-line-preview.git")
   (helafy :url "https://github.com/jcs-elpa/helafy.git")
   (hl-preproc :url "https://github.com/emacs-vs/hl-preproc.git")
   (hlsl-mode :url "https://github.com/darfink/hlsl-mode.git")
