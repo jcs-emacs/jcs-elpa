@@ -1,9 +1,9 @@
 (goto-char-preview .
-		   [(20240206 105)
+		   [(20240206 139)
 		    ((emacs
 		      (24 3)))
 		    "Preview character when executing `goto-char` command" tar
-		    ((:commit . "2a52aac671caf3f72526f3d1c3c3d472e67ce7a5")
+		    ((:commit . "d40eb8c1e8844ab7d265197191a759f62bf1099c")
 		     (:authors
 		      ("Jen-Chieh" . "jcs090218@gmail.com"))
 		     (:maintainers

@@ -1,9 +1,9 @@
 (goto-line-preview .
-		   [(20240206 105)
+		   [(20240206 138)
 		    ((emacs
 		      (25)))
 		    "Preview line when executing `goto-line` command" tar
-		    ((:commit . "c98dc626e55195419fc26010e49b3c6d460303bf")
+		    ((:commit . "4e712da4e5e90b02440bd1f435a89ad02ff5a894")
 		     (:authors
 		      ("Jen-Chieh" . "jcs090218@gmail.com"))
 		     (:maintainers
