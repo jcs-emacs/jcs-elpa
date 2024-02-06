@@ -819,6 +819,24 @@
     "tree": "https://github.com/jcs-elpa/github-tags"
   },
   {
+    "name": "goto-char-preview",
+    "summary": "Preview character when executing `goto-char` command",
+    "version": "20240206.105",
+    "url": "https://github.com/emacs-vs/goto-char-preview",
+    "source": "github",
+    "commit": "2a52aac671caf3f72526f3d1c3c3d472e67ce7a5",
+    "tree": "https://github.com/emacs-vs/goto-char-preview"
+  },
+  {
+    "name": "goto-line-preview",
+    "summary": "Preview line when executing `goto-line` command",
+    "version": "20240206.105",
+    "url": "https://github.com/emacs-vs/goto-line-preview",
+    "source": "github",
+    "commit": "c98dc626e55195419fc26010e49b3c6d460303bf",
+    "tree": "https://github.com/emacs-vs/goto-line-preview"
+  },
+  {
     "name": "helafy",
     "summary": "Minify/Uglify/Prettify contents",
     "version": "20240101.937",
