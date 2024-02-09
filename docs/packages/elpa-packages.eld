@@ -29,6 +29,7 @@
   (company-c-headers :url "https://github.com/elp-revive/company-c-headers.git")
   (company-cmd :url "https://github.com/elp-revive/company-cmd.git")
   (company-coffee :url "https://github.com/elp-revive/company-coffee.git")
+  (company-dart :url "https://github.com/sid-kurias/company-dart.git")
   (company-dockerfile :url "https://github.com/elp-revive/company-dockerfile.git")
   (company-eask :url "https://github.com/emacs-eask/company-eask.git")
   (company-elisp-keywords :url "https://github.com/jcs-elpa/company-elisp-keywords.git")
