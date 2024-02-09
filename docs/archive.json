@@ -279,6 +279,15 @@
     "tree": "https://github.com/elp-revive/company-coffee"
   },
   {
+    "name": "company-dart",
+    "summary": "Autocompletion for Dart files",
+    "version": "20170318.1404",
+    "url": "https://github.com/sid-kurias/company-dart",
+    "source": "github",
+    "commit": "6508c728e2076de3463bd1af0819c9e6962912d3",
+    "tree": "https://github.com/sid-kurias/company-dart"
+  },
+  {
     "name": "company-dockerfile",
     "summary": "Company mode backend for dockefile",
     "version": "20220702.1859",
