@@ -497,10 +497,10 @@
   {
     "name": "eask",
     "summary": "Core Eask APIs, for Eask CLI development",
-    "version": "20240128.1012",
+    "version": "20240210.2122",
     "url": "https://github.com/emacs-eask/eask",
     "source": "github",
-    "commit": "3f8d4b668c4568d65f40c4f8bbb20c3b8dbfaa05",
+    "commit": "a0361201d5d0c4552b3075cec8ffaf11a867054d",
     "tree": "https://github.com/emacs-eask/eask"
   },
   {
