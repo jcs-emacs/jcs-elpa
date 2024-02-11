@@ -416,10 +416,10 @@
   {
     "name": "copilot",
     "summary": "An unofficial Copilot plugin for Emacs",
-    "version": "20240204.1401",
+    "version": "20240211.1159",
     "url": "https://github.com/copilot-emacs/copilot.el",
     "source": "github",
-    "commit": "22f0446a17753716456e0cb8ee33f47731fc4ec3",
+    "commit": "581cadd6f4229223fd5c57984f9595aeb86c84f7",
     "tree": "https://github.com/copilot-emacs/copilot.el"
   },
   {
@@ -1087,6 +1087,15 @@
     "source": "github",
     "commit": "91d8f57f11f5ddbb5e94cb23877c67a8f59d4d8c",
     "tree": "https://github.com/emacs-vs/line-reminder"
+  },
+  {
+    "name": "llm",
+    "summary": "Interface to pluggable llm backends",
+    "version": "20240208.343",
+    "url": "https://github.com/ahyatt/llm",
+    "source": "github",
+    "commit": "4add6102f83176beb9655083dd3844ab91672238",
+    "tree": "https://github.com/ahyatt/llm"
   },
   {
     "name": "llvm-mode",
