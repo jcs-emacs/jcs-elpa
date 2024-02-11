@@ -828,6 +828,15 @@
     "tree": "https://github.com/jcs-elpa/github-tags"
   },
   {
+    "name": "google-gemini",
+    "summary": "Elisp library for the Google Gemini API",
+    "version": "20240211.1146",
+    "url": "https://github.com/emacs-openai/google-gemini",
+    "source": "github",
+    "commit": "37b790f069bb4005a02798f511753878faab907a",
+    "tree": "https://github.com/emacs-openai/google-gemini"
+  },
+  {
     "name": "goto-char-preview",
     "summary": "Preview character when executing `goto-char` command",
     "version": "20240206.139",
