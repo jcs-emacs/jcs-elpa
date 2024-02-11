@@ -1,0 +1,1 @@
+(google-gemini :repo "emacs-openai/google-gemini" :fetcher github)
