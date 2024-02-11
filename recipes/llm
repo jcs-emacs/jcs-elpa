@@ -1,1 +1,1 @@
-(llm :repo "hyatt/llm" :fetcher github)
+(llm :repo "ahyatt/llm" :fetcher github)
