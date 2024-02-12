@@ -830,10 +830,10 @@
   {
     "name": "google-gemini",
     "summary": "Elisp library for the Google Gemini API",
-    "version": "20240212.244",
+    "version": "20240212.328",
     "url": "https://github.com/emacs-openai/google-gemini",
     "source": "github",
-    "commit": "120a21d1fbdfae7069bd484980b4c04a440e565f",
+    "commit": "5d11f2c243347b17b5bb40fe0dccc51414a1fa1b",
     "tree": "https://github.com/emacs-openai/google-gemini"
   },
   {
