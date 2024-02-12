@@ -1,11 +1,13 @@
 (google-gemini .
-	       [(20240212 149)
+	       [(20240212 244)
 		((emacs
 		  (26 1))
 		 (request
-		  (0 3 0)))
+		  (0 3 0))
+		 (tblui
+		  (0 1 0)))
 		"Elisp library for the Google Gemini API" tar
-		((:commit . "00d26ee480efdda62707e6bb419f559e72cf894f")
+		((:commit . "120a21d1fbdfae7069bd484980b4c04a440e565f")
 		 (:authors
 		  ("JenChieh" . "jcs090218@gmail.com"))
 		 (:maintainers
