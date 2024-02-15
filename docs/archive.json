@@ -893,10 +893,10 @@
   {
     "name": "ic",
     "summary": "Pretty print to debug",
-    "version": "20240101.942",
+    "version": "20240215.1152",
     "url": "https://github.com/jcs-elpa/ic",
     "source": "github",
-    "commit": "29e0212fe95a111196076d60dd2b9c234d5f0f2d",
+    "commit": "86af704d7556dce5dd22c5931fd6caa0ef04133e",
     "tree": "https://github.com/jcs-elpa/ic"
   },
   {
