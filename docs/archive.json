@@ -1631,10 +1631,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20240217.2355",
+    "version": "20240218.513",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "7ee9173206a2049824669b60b55c11cff9d60d1f",
+    "commit": "70d57c4905c0afc7f934e20a8ba45dbce14f76e3",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
