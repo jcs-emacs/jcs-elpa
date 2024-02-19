@@ -236,10 +236,10 @@
   {
     "name": "company-bootstrap",
     "summary": "A company backend for bootstrap.",
-    "version": "20190419.1344",
+    "version": "20240219.2346",
     "url": "https://github.com/typefo/company-bootstrap",
     "source": "github",
-    "commit": "5077c193c88bf943212300d1b285b9d9ccc2a6c4",
+    "commit": "0fb010b6fba891eac1873bbfd420c053113f4c36",
     "tree": "https://github.com/typefo/company-bootstrap"
   },
   {
