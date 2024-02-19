@@ -866,10 +866,10 @@
   {
     "name": "gptscript-mode",
     "summary": "Major mode for editing GPTScript natural language",
-    "version": "20240219.2227",
+    "version": "20240219.2331",
     "url": "https://github.com/emacs-openai/gptscript-mode",
     "source": "github",
-    "commit": "ee2f7b4afd8be62caeb30bc919d7a41707c994aa",
+    "commit": "785ee4d32263f1ae17707c8e5f9f265ad468f2db",
     "tree": "https://github.com/emacs-openai/gptscript-mode"
   },
   {
