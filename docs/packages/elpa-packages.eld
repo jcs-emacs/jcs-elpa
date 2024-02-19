@@ -24,7 +24,7 @@
   (comint-fold :url "https://github.com/jdtsmith/comint-fold.git")
   (commander :url "https://github.com/rejeep/commander.el.git")
   (company-autoconf :url "https://github.com/elp-revive/company-autoconf.git")
-  (company-bootstrap :url "https://github.com/ehsud/company-bootstrap.git")
+  (company-bootstrap :url "https://github.com/elp-revive/company-bootstrap.git")
   (company-box :url "https://github.com/elp-revive/company-box.git")
   (company-c-headers :url "https://github.com/elp-revive/company-c-headers.git")
   (company-cmd :url "https://github.com/elp-revive/company-cmd.git")
