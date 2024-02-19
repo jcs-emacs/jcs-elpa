@@ -416,10 +416,10 @@
   {
     "name": "copilot",
     "summary": "An unofficial Copilot plugin for Emacs",
-    "version": "20240217.1744",
+    "version": "20240219.509",
     "url": "https://github.com/copilot-emacs/copilot.el",
     "source": "github",
-    "commit": "26fa165bfd0e943608c628f0251e9341f0552183",
+    "commit": "b3344d7980b5ee107549a9d3ccf67090d2adc5d9",
     "tree": "https://github.com/copilot-emacs/copilot.el"
   },
   {
@@ -466,6 +466,15 @@
     "source": "github",
     "commit": "f51bdc9e88c473e4eff40bb923c52b4f2256311e",
     "tree": "https://github.com/emacs-dashboard/emacs-dashboard"
+  },
+  {
+    "name": "dashboard-bm",
+    "summary": "Visual Bookmarks for Dashboard",
+    "version": "20240219.542",
+    "url": "https://github.com/emacs-dashboard/dashboard-bm",
+    "source": "github",
+    "commit": "f4dea2fa2383dbe1408ff8d9793fe6d5c874e186",
+    "tree": "https://github.com/emacs-dashboard/dashboard-bm"
   },
   {
     "name": "dashboard-ls",
