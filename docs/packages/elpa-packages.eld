@@ -50,6 +50,7 @@
   (dall-e :url "https://github.com/emacs-openai/dall-e.git")
   (dape :url "https://github.com/svaante/dape.git")
   (dashboard :url "https://github.com/emacs-dashboard/emacs-dashboard.git")
+  (dashboard-bm :url "https://github.com/emacs-dashboard/dashboard-bm.git")
   (dashboard-ls :url "https://github.com/emacs-dashboard/dashboard-ls.git")
   (deepl :url "https://github.com/emacs-openai/deepl.git")
   (doxygen-asterisk :url "https://github.com/emacs-vs/doxygen-asterisk.git")
