@@ -1,5 +1,5 @@
 (dashboard-bm .
-	      [(20240219 542)
+	      [(20240219 551)
 	       ((emacs
 		 (26 1))
 		(dashboard
@@ -7,9 +7,7 @@
 		(bm
 		 (0)))
 	       "Visual Bookmarks for Dashboard" tar
-	       ((:commit . "f4dea2fa2383dbe1408ff8d9793fe6d5c874e186")
-		(:authors
-		 ("Jeffrey Phillips" . "jcs090218@gmail.com"))
+	       ((:commit . "67d6d77d4350cc6d894beae7fc1b37e58ea76437")
 		(:maintainers
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
