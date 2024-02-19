@@ -1,1 +1,1 @@
-(company-bootstrap :repo "ehsud/company-bootstrap" :fetcher github)
+(company-bootstrap :repo "elp-revive/company-bootstrap" :fetcher github)
