@@ -470,10 +470,10 @@
   {
     "name": "dashboard-bm",
     "summary": "Visual Bookmarks for Dashboard",
-    "version": "20240219.542",
+    "version": "20240219.551",
     "url": "https://github.com/emacs-dashboard/dashboard-bm",
     "source": "github",
-    "commit": "f4dea2fa2383dbe1408ff8d9793fe6d5c874e186",
+    "commit": "67d6d77d4350cc6d894beae7fc1b37e58ea76437",
     "tree": "https://github.com/emacs-dashboard/dashboard-bm"
   },
   {
