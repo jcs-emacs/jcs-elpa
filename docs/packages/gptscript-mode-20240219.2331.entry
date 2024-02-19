@@ -1,9 +1,9 @@
 (gptscript-mode .
-		[(20240219 2227)
+		[(20240219 2331)
 		 ((emacs
 		   (26 1)))
 		 "Major mode for editing GPTScript natural language" tar
-		 ((:commit . "ee2f7b4afd8be62caeb30bc919d7a41707c994aa")
+		 ((:commit . "785ee4d32263f1ae17707c8e5f9f265ad468f2db")
 		  (:authors
 		   ("Jen-Chieh" . "jcs090218@gmail.com"))
 		  (:maintainers
