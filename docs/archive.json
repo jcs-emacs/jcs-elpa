@@ -864,6 +864,15 @@
     "tree": "https://github.com/emacs-vs/goto-line-preview"
   },
   {
+    "name": "gptscript-mode",
+    "summary": "Major mode for editing GPTScript natural language",
+    "version": "20240219.2227",
+    "url": "https://github.com/emacs-openai/gptscript-mode",
+    "source": "github",
+    "commit": "ee2f7b4afd8be62caeb30bc919d7a41707c994aa",
+    "tree": "https://github.com/emacs-openai/gptscript-mode"
+  },
+  {
     "name": "helafy",
     "summary": "Minify/Uglify/Prettify contents",
     "version": "20240101.937",
