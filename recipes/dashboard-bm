@@ -1,0 +1,1 @@
+(dashboard-bm :repo "emacs-dashboard/dashboard-bm" :fetcher github)
