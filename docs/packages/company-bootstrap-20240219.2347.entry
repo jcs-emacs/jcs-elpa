@@ -1,11 +1,11 @@
 (company-bootstrap .
-		   [(20240219 2346)
+		   [(20240219 2347)
 		    ((emacs
 		      (24 3))
 		     (company
 		      (0 9 10)))
 		    "A company backend for bootstrap." tar
-		    ((:commit . "0fb010b6fba891eac1873bbfd420c053113f4c36")
+		    ((:commit . "3df09598c50c824b1dfe2b9d2f2aa95b1e55995e")
 		     (:authors
 		      ("typefo" . "typefo@hotmail.com"))
 		     (:maintainers
