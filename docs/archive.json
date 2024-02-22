@@ -1514,10 +1514,10 @@
   {
     "name": "sideline",
     "summary": "Show information on the side",
-    "version": "20240101.918",
+    "version": "20240222.151",
     "url": "https://github.com/emacs-sideline/sideline",
     "source": "github",
-    "commit": "20e04fa2fd4dcc0cba47d0336aab37f3f42909d3",
+    "commit": "3bd6315e8c3437b262d6f9975f37d94ac84d0720",
     "tree": "https://github.com/emacs-sideline/sideline"
   },
   {
@@ -1667,10 +1667,10 @@
   {
     "name": "treesit-langs",
     "summary": "TODO",
-    "version": "20240217.942",
+    "version": "20240222.48",
     "url": "https://github.com/kiennq/treesit-langs",
     "source": "github",
-    "commit": "2e9849d54beeaa7b12b0b4e67bfc3c1894ff20cd",
+    "commit": "630171ea11e05071e8ee3d1ee4cb5a97b2c20bc3",
     "tree": "https://github.com/kiennq/treesit-langs"
   },
   {
