@@ -721,12 +721,12 @@
   },
   {
     "name": "flycheck-dart",
-    "summary": "Dart Support for flycheck using dartanalyzer.",
-    "version": "20190108.1338",
-    "url": "https://github.com/mswift42/flycheck-dart",
+    "summary": "Flycheck for dart analyze",
+    "version": "20240223.816",
+    "url": "https://github.com/jcs090218/flycheck-dart",
     "source": "github",
-    "commit": "ccfed0a91a12278089db9b995371128f5cc72dba",
-    "tree": "https://github.com/mswift42/flycheck-dart"
+    "commit": "40bc0b8ebf17fb4b68982964c625403d166a62c5",
+    "tree": "https://github.com/jcs090218/flycheck-dart"
   },
   {
     "name": "flycheck-deno",
