@@ -1,9 +1,0 @@
-(flycheck-dart .
-	       [(20190108 1338)
-		((flycheck
-		  (0 22))
-		 (dart-mode
-		  (0 11)))
-		"Dart Support for flycheck using dartanalyzer." tar
-		((:commit . "ccfed0a91a12278089db9b995371128f5cc72dba")
-		 (:keywords "tools" "convenience"))])

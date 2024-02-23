@@ -1,0 +1,2 @@
+
+Flycheck for dart analyze.

@@ -78,7 +78,7 @@
   (file-header :url "https://github.com/jcs-elpa/file-header.git")
   (flx-rs :url "https://github.com/jcs-elpa/flx-rs.git")
   (flx-style :url "https://github.com/jcs-elpa/flx-style.git")
-  (flycheck-dart :url "https://github.com/mswift42/flycheck-dart.git")
+  (flycheck-dart :url "https://github.com/flycheck/flycheck-dart.git")
   (flycheck-deno :url "https://github.com/flycheck/flycheck-deno.git")
   (flycheck-eask :url "https://github.com/flycheck/flycheck-eask.git")
   (flycheck-hl-todo :url "https://github.com/alvarogonzalezsotillo/flycheck-hl-todo.git")
