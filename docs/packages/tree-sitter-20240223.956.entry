@@ -1,11 +1,11 @@
 (tree-sitter .
-	     [(20230910 341)
+	     [(20240223 956)
 	      ((emacs
 		(25 1))
 	       (tsc
 		(0 18 0)))
 	      "Incremental parsing system" tar
-	      ((:commit . "69fa82c76fc25b30fc0528291423002dd18a89e5")
+	      ((:commit . "f1f1fade3650f8a60f1212ab01d774da92565e66")
 	       (:authors
 		("Tuấn-Anh Nguyễn" . "ubolonton@gmail.com"))
 	       (:maintainers
