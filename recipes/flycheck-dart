@@ -1,0 +1,1 @@
+(flycheck-dart :repo "mswift42/flycheck-dart" :fetcher github)
