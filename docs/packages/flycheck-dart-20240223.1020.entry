@@ -1,5 +1,5 @@
 (flycheck-dart .
-	       [(20240223 922)
+	       [(20240223 1020)
 		((emacs
 		  (27 1))
 		 (flycheck
@@ -7,11 +7,11 @@
 		 (dart-mode
 		  (0 11)))
 		"Flycheck for dart analyze" tar
-		((:commit . "9faead8203bc94def7988d41f0ff940a35fd260b")
+		((:commit . "0830277d0732312fd2e202e57bcf36cc02b86ba0")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainers
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 		 (:keywords "tools")
-		 (:url . "https://github.com/jcs090218/flycheck-dart"))])
+		 (:url . "https://github.com/flycheck/flycheck-dart"))])

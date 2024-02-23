@@ -1,0 +1,15 @@
+(flymake-dart .
+	      [(20240223 1039)
+	       ((emacs
+		 (26 1))
+		(flymake-easy
+		 (0 1)))
+	       "Flymake support for dart analyze" tar
+	       ((:commit . "964d0100e2bea2ae338ec19fb577ee42198aa07f")
+		(:authors
+		 ("Jen-Chieh" . "jcs090218@gmail.com"))
+		(:maintainers
+		 ("Jen-Chieh" . "jcs090218@gmail.com"))
+		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		(:keywords "tools")
+		(:url . "https://github.com/flymake/flymake-dart"))])

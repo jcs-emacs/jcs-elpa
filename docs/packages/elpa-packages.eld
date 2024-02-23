@@ -82,6 +82,7 @@
   (flycheck-deno :url "https://github.com/flycheck/flycheck-deno.git")
   (flycheck-eask :url "https://github.com/flycheck/flycheck-eask.git")
   (flycheck-hl-todo :url "https://github.com/alvarogonzalezsotillo/flycheck-hl-todo.git")
+  (flymake-dart :url "https://github.com/flymake/flymake-dart.git")
   (flymake-eask :url "https://github.com/flymake/flymake-eask.git")
   (flymake-elsa :url "https://github.com/flymake/flymake-elsa.git")
   (flymake-vale :url "https://github.com/tpeacock19/flymake-vale.git")
