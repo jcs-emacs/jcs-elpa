@@ -1,11 +1,11 @@
 (flycheck-eask .
-	       [(20240101 833)
+	       [(20240223 916)
 		((emacs
 		  (26 1))
 		 (flycheck
 		  (0 14)))
 		"Eask support in Flycheck" tar
-		((:commit . "1871b7ee94342f7673abef65337b8741f37c01e2")
+		((:commit . "c07204c4872be6d2c97e3aa153b11a04da2b5c08")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainers
