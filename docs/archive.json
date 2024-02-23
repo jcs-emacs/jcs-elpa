@@ -722,11 +722,11 @@
   {
     "name": "flycheck-dart",
     "summary": "Flycheck for dart analyze",
-    "version": "20240223.922",
-    "url": "https://github.com/jcs090218/flycheck-dart",
+    "version": "20240223.1020",
+    "url": "https://github.com/flycheck/flycheck-dart",
     "source": "github",
-    "commit": "9faead8203bc94def7988d41f0ff940a35fd260b",
-    "tree": "https://github.com/jcs090218/flycheck-dart"
+    "commit": "0830277d0732312fd2e202e57bcf36cc02b86ba0",
+    "tree": "https://github.com/flycheck/flycheck-dart"
   },
   {
     "name": "flycheck-deno",
@@ -740,10 +740,10 @@
   {
     "name": "flycheck-eask",
     "summary": "Eask support in Flycheck",
-    "version": "20240223.916",
+    "version": "20240223.1023",
     "url": "https://github.com/flycheck/flycheck-eask",
     "source": "github",
-    "commit": "c07204c4872be6d2c97e3aa153b11a04da2b5c08",
+    "commit": "c1c82b359bb94cbca29f2f0fb29b7f5132691d04",
     "tree": "https://github.com/flycheck/flycheck-eask"
   },
   {
@@ -756,12 +756,21 @@
     "tree": "https://github.com/alvarogonzalezsotillo/flycheck-hl-todo"
   },
   {
+    "name": "flymake-dart",
+    "summary": "Flymake support for dart analyze",
+    "version": "20240223.1039",
+    "url": "https://github.com/flymake/flymake-dart",
+    "source": "github",
+    "commit": "964d0100e2bea2ae338ec19fb577ee42198aa07f",
+    "tree": "https://github.com/flymake/flymake-dart"
+  },
+  {
     "name": "flymake-eask",
     "summary": "Eask support in Flymake",
-    "version": "20240223.915",
+    "version": "20240223.1022",
     "url": "https://github.com/flymake/flymake-eask",
     "source": "github",
-    "commit": "eb76c0723667dcf8bc6187be758329ef93ca0e3d",
+    "commit": "0e83cec77aab54365ef8d604151888bb1f61049c",
     "tree": "https://github.com/flymake/flymake-eask"
   },
   {
@@ -1658,10 +1667,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20240222.529",
+    "version": "20240223.933",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "5b6650013790582e3cbec94b0b37a388ea64b41a",
+    "commit": "c938e131e649d0731f40cf8285ad64488f820a37",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
