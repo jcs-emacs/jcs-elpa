@@ -1,11 +1,11 @@
 (tree-sitter-langs .
-		   [(20240225 453)
+		   [(20240226 429)
 		    ((emacs
 		      (25 1))
 		     (tree-sitter
 		      (0 15 0)))
 		    "Grammar bundle for tree-sitter" tar
-		    ((:commit . "ef4e9e4ee7d733b8bf2299034e4ed08b9f092997")
+		    ((:commit . "2ff60edbdf2a21ed899ecea402f1133d6ff398cb")
 		     (:authors
 		      ("Tuấn-Anh Nguyễn" . "ubolonton@gmail.com"))
 		     (:maintainers
