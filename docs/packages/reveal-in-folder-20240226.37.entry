@@ -1,0 +1,17 @@
+(reveal-in-folder .
+		  [(20240226 37)
+		   ((emacs
+		     (24 3))
+		    (f
+		     (0 20 0))
+		    (s
+		     (1 12 0)))
+		   "Reveal current file/directory in folder" tar
+		   ((:commit . "ef1b86f745ff2e1d13dc57f6f9fe7e0c53fe26bd")
+		    (:authors
+		     ("Jen-Chieh" . "jcs090218@gmail.com"))
+		    (:maintainers
+		     ("Jen-Chieh" . "jcs090218@gmail.com"))
+		    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		    (:keywords "convenience" "folder" "finder" "reveal" "file" "explorer")
+		    (:url . "https://github.com/jcs-elpa/reveal-in-folder"))])
