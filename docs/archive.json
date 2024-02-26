@@ -1512,6 +1512,15 @@
     "tree": "https://github.com/fbkante/resurrect"
   },
   {
+    "name": "reveal-in-folder",
+    "summary": "Reveal current file/directory in folder",
+    "version": "20240226.37",
+    "url": "https://github.com/jcs-elpa/reveal-in-folder",
+    "source": "github",
+    "commit": "ef1b86f745ff2e1d13dc57f6f9fe7e0c53fe26bd",
+    "tree": "https://github.com/jcs-elpa/reveal-in-folder"
+  },
+  {
     "name": "selection-highlight-mode",
     "summary": "Auto highlights matches to the current active region",
     "version": "20231116.1958",
