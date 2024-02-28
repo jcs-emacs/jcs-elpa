@@ -1,9 +1,9 @@
 (chatgpt-shell .
-	       [(20240220 1129)
+	       [(20240227 2313)
 		((emacs
 		  (27 1))
 		 (shell-maker
-		  (0 49 1)))
+		  (0 50 1)))
 		"ChatGPT shell + buffer insert commands" tar
-		((:commit . "ca5a91fe803663a4849b1ccfe1a2be91409cb43d")
+		((:commit . "d09df22aa125c5c88dc7d363693f08ff18f490c9")
 		 (:url . "https://github.com/xenodium/chatgpt-shell"))])
