@@ -452,10 +452,10 @@
   {
     "name": "dape",
     "summary": "Debug Adapter Protocol for Emacs",
-    "version": "20240228.1949",
+    "version": "20240228.2021",
     "url": "https://github.com/svaante/dape",
     "source": "github",
-    "commit": "af944dd0e799366d9a8450ac1cc04d1d327bb5fa",
+    "commit": "0d38f79bc6501febb4c846e8e0bdc4e58b6caf85",
     "tree": "https://github.com/svaante/dape"
   },
   {
@@ -542,10 +542,10 @@
   {
     "name": "eglot-ltex",
     "summary": "Eglot Clients for LTEX",
-    "version": "20240206.125",
+    "version": "20240228.2022",
     "url": "https://github.com/emacs-languagetool/eglot-ltex",
     "source": "github",
-    "commit": "c8daf17e04bc9f825f906bc6367e87db1b4549fe",
+    "commit": "61d908950efe287da1ca021e8c9e8563c15d65cf",
     "tree": "https://github.com/emacs-languagetool/eglot-ltex"
   },
   {
