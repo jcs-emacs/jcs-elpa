@@ -1,0 +1,15 @@
+(flymake-ziglint .
+		 [(20240229 1006)
+		  ((emacs
+		    (26 1))
+		   (flymake-easy
+		    (0 1)))
+		  "Flymake for ziglint" tar
+		  ((:commit . "5009abe7bba52c69aa3b986b05e4daa044c55cad")
+		   (:authors
+		    ("Jen-Chieh" . "jcs090218@gmail.com"))
+		   (:maintainers
+		    ("Jen-Chieh" . "jcs090218@gmail.com"))
+		   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+		   (:keywords "tools")
+		   (:url . "https://github.com/flymake/flymake-ziglint"))])

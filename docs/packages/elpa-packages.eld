@@ -87,6 +87,7 @@
   (flymake-eask :url "https://github.com/flymake/flymake-eask.git")
   (flymake-elsa :url "https://github.com/flymake/flymake-elsa.git")
   (flymake-vale :url "https://github.com/tpeacock19/flymake-vale.git")
+  (flymake-ziglint :url "https://github.com/flymake/flymake-ziglint.git")
   (fof :url "https://github.com/jcs-elpa/fof.git")
   (font-lock-ext :url "https://github.com/sensorflo/font-lock-ext.git")
   (fuz-bin :url "https://github.com/jcs-legacy/fuz-bin.git")

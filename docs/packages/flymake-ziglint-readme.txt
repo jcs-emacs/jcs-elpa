@@ -1,0 +1,2 @@
+
+Flymake for ziglint.
