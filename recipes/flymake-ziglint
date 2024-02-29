@@ -1,0 +1,1 @@
+(flymake-ziglint :repo "flymake/flymake-ziglint" :fetcher github)
