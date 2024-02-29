@@ -758,10 +758,10 @@
   {
     "name": "flycheck-ziglint",
     "summary": "Flycheck for ziglint",
-    "version": "20240229.944",
+    "version": "20240229.948",
     "url": "https://github.com/flycheck/flycheck-ziglint",
     "source": "github",
-    "commit": "81520c592c3f250de6ed7dcddfeb7f0b31a7b7c2",
+    "commit": "55d3714403b9bea0a98d7c74382014f891f696c7",
     "tree": "https://github.com/flycheck/flycheck-ziglint"
   },
   {
