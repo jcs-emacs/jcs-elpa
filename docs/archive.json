@@ -758,10 +758,10 @@
   {
     "name": "flycheck-ziglint",
     "summary": "Flycheck for ziglint",
-    "version": "20240229.948",
+    "version": "20240229.1015",
     "url": "https://github.com/flycheck/flycheck-ziglint",
     "source": "github",
-    "commit": "55d3714403b9bea0a98d7c74382014f891f696c7",
+    "commit": "f0371a1a2d13004c66eaf72c99cc874391e70dd9",
     "tree": "https://github.com/flycheck/flycheck-ziglint"
   },
   {
@@ -1694,10 +1694,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20240229.831",
+    "version": "20240229.833",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "9248d6c91411acf58d45d3b66c7121e35c97580c",
+    "commit": "57349a55b3fcc19ee905a864c55c51cdf4b5fa91",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
