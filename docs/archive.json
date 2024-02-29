@@ -756,6 +756,15 @@
     "tree": "https://github.com/alvarogonzalezsotillo/flycheck-hl-todo"
   },
   {
+    "name": "flycheck-ziglint",
+    "summary": "Flycheck for ziglint",
+    "version": "20240229.944",
+    "url": "https://github.com/flycheck/flycheck-ziglint",
+    "source": "github",
+    "commit": "81520c592c3f250de6ed7dcddfeb7f0b31a7b7c2",
+    "tree": "https://github.com/flycheck/flycheck-ziglint"
+  },
+  {
     "name": "flymake-dart",
     "summary": "Flymake support for dart analyze",
     "version": "20240223.1055",
@@ -1676,10 +1685,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20240228.624",
+    "version": "20240229.831",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "f62062fd9d86fc5f1fd9bd1ea2412d5f2e1b1683",
+    "commit": "9248d6c91411acf58d45d3b66c7121e35c97580c",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
