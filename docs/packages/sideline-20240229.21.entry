@@ -1,9 +1,9 @@
 (sideline .
-	  [(20240228 2348)
+	  [(20240229 21)
 	   ((emacs
 	     (27 1)))
 	   "Show information on the side" tar
-	   ((:commit . "1dc13272b6b1ba6fc0c246f4cd150752ae6a5f1d")
+	   ((:commit . "16f86752a1ff6add9721313b7305c419f31c40c8")
 	    (:authors
 	     ("Jen-Chieh" . "jcs090218@gmail.com"))
 	    (:maintainers
