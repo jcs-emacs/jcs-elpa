@@ -801,6 +801,15 @@
     "tree": "https://github.com/tpeacock19/new"
   },
   {
+    "name": "flymake-ziglint",
+    "summary": "Flymake for ziglint",
+    "version": "20240229.1006",
+    "url": "https://github.com/flymake/flymake-ziglint",
+    "source": "github",
+    "commit": "5009abe7bba52c69aa3b986b05e4daa044c55cad",
+    "tree": "https://github.com/flymake/flymake-ziglint"
+  },
+  {
     "name": "fof",
     "summary": "Default configuration for `ff-find-other-file'",
     "version": "20240101.941",
