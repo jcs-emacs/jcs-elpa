@@ -1,9 +1,9 @@
 (outli .
-       [(20231213 1243)
+       [(20240301 2230)
 	((emacs
 	  (27 1)))
 	"Org-like code outliner" tar
-	((:commit . "956755f3949b63c83cdc4b272cba7d77347d89ab")
+	((:commit . "ad2d753fed6a170a4041ac0c1313607fc80cc20d")
 	 (:authors
 	  ("J.D. Smith" . "jdtsmith@gmail.com"))
 	 (:maintainers
