@@ -9,4 +9,8 @@
 =======
 2024-03-01T05:05:50+0000  tree-sitter-indent         Command ‘git clone https\://codeberg.org/FelipeLema/tree-sitter-indent.el.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/tree-sitter-indent/’ exited with non-zero exit-code: 128
 >>>>>>> Stashed changes
+<<<<<<< Updated upstream
 2024-03-01T06:05:23+0000  gas-mode                   Command ‘git clone https\://codeberg.org/Enocstocks/gas-mode.el.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/gas-mode/’ exited with non-zero exit-code: 128
+=======
+2024-03-01T06:05:47+0000  tree-sitter-indent         Command ‘git clone https\://codeberg.org/FelipeLema/tree-sitter-indent.el.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/tree-sitter-indent/’ exited with non-zero exit-code: 128
+>>>>>>> Stashed changes
