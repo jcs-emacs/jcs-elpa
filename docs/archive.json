@@ -1379,10 +1379,10 @@
   {
     "name": "outli",
     "summary": "Org-like code outliner",
-    "version": "20231213.1243",
+    "version": "20240301.2230",
     "url": "https://github.com/jdtsmith/outli",
     "source": "github",
-    "commit": "956755f3949b63c83cdc4b272cba7d77347d89ab",
+    "commit": "ad2d753fed6a170a4041ac0c1313607fc80cc20d",
     "tree": "https://github.com/jdtsmith/outli"
   },
   {
