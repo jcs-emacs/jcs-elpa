@@ -1,0 +1,1 @@
+(zig-mode :repo "ziglang/zig-mode" :fetcher github)
