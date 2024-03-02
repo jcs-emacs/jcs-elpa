@@ -215,5 +215,6 @@
   (wat-mode :url "https://github.com/devonsparks/wat-mode.git")
   (yank-indent :url "https://github.com/jimeh/yank-indent.git")
   (yasnippet-capf :url "https://github.com/elken/yasnippet-capf.git")
+  (zig-mode :url "https://github.com/ziglang/zig-mode.git")
   (zoom-to-point :url "https://github.com/rmloveland/zoom-to-point.git"))
  :version 1 :default-vc Git)
