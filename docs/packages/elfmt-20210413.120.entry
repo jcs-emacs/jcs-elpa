@@ -1,0 +1,8 @@
+(elfmt .
+       [(20210413 120)
+	((emacs
+	  (24 3)))
+	"Code formatter for Elisp" tar
+	((:commit . "c2cd81988a916ee78acc7b9347792a06740ded0c")
+	 (:keywords "lisp")
+	 (:url . "https://github.com/riscy/elfmt"))])
