@@ -612,6 +612,15 @@
     "tree": "https://github.com/jcs-elpa/elenv"
   },
   {
+    "name": "elfmt",
+    "summary": "Code formatter for Elisp",
+    "version": "20210413.120",
+    "url": "https://github.com/riscy/elfmt",
+    "source": "github",
+    "commit": "c2cd81988a916ee78acc7b9347792a06740ded0c",
+    "tree": "https://github.com/riscy/elfmt"
+  },
+  {
     "name": "ellsp",
     "summary": "Elisp Language Server",
     "version": "20240101.959",
