@@ -1,0 +1,1 @@
+(elfmt :repo "riscy/elfmt" :fetcher github)
