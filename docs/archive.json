@@ -803,10 +803,10 @@
   {
     "name": "flymake-vale",
     "summary": "flymake integration for vale",
-    "version": "20221116.1718",
+    "version": "20240306.1653",
     "url": "https://github.com/tpeacock19/new",
     "source": "github",
-    "commit": "914f30177dec0310d1ecab1fb798f2b70a018f24",
+    "commit": "3481d30223a113d2af2f329b7758915811f4ad84",
     "tree": "https://github.com/tpeacock19/new"
   },
   {
