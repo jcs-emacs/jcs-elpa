@@ -531,6 +531,15 @@
     "tree": "https://github.com/emacs-eask/easky"
   },
   {
+    "name": "echo-bar",
+    "summary": "Turn the echo area into a custom status bar",
+    "version": "20240307.741",
+    "url": "https://github.com/qaiviq/echo-bar.el",
+    "source": "github",
+    "commit": "71ef563df7f1b85cfe64854b6e40bb353a281cc5",
+    "tree": "https://github.com/qaiviq/echo-bar.el"
+  },
+  {
     "name": "eglot-grammarly",
     "summary": "Eglot Clients for Grammarly",
     "version": "20240101.847",
