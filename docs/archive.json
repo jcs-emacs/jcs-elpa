@@ -1631,10 +1631,10 @@
   {
     "name": "sideline-flymake",
     "summary": "Show flymake errors with sideline",
-    "version": "20240101.917",
+    "version": "20240309.1112",
     "url": "https://github.com/emacs-sideline/sideline-flymake",
     "source": "github",
-    "commit": "e6b0e7dd7eea511aad1d9af1d944f1379bd7ad7d",
+    "commit": "e6a9ae69fc048f8eaacbf653e7136678dbef4597",
     "tree": "https://github.com/emacs-sideline/sideline-flymake"
   },
   {
