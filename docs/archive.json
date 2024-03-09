@@ -452,10 +452,10 @@
   {
     "name": "dape",
     "summary": "Debug Adapter Protocol for Emacs",
-    "version": "20240308.1458",
+    "version": "20240309.1607",
     "url": "https://github.com/svaante/dape",
     "source": "github",
-    "commit": "fcb386cc24653f464d5332addaace601f4df6cc0",
+    "commit": "23afe54a683f3fd69a94cf0c3f6313a39d00edce",
     "tree": "https://github.com/svaante/dape"
   },
   {
@@ -1397,10 +1397,10 @@
   {
     "name": "outli",
     "summary": "Org-like code outliner",
-    "version": "20240302.1445",
+    "version": "20240309.1655",
     "url": "https://github.com/jdtsmith/outli",
     "source": "github",
-    "commit": "bd08b10b6f6596dda3cf3f691f9131dd1bdcf3e6",
+    "commit": "bdb8225feb381b1e8f2b3d4fc89a4798965b8b24",
     "tree": "https://github.com/jdtsmith/outli"
   },
   {
