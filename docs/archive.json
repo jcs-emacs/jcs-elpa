@@ -1577,10 +1577,10 @@
   {
     "name": "sideline",
     "summary": "Show information on the side",
-    "version": "20240311.636",
+    "version": "20240313.2301",
     "url": "https://github.com/emacs-sideline/sideline",
     "source": "github",
-    "commit": "270a6627db7949c4467d412736138f368199be94",
+    "commit": "d574249c7a6780cde9d52de5a9865d95be577b9d",
     "tree": "https://github.com/emacs-sideline/sideline"
   },
   {
@@ -1622,10 +1622,10 @@
   {
     "name": "sideline-flycheck",
     "summary": "Show flycheck errors with sideline",
-    "version": "20240311.440",
+    "version": "20240313.2304",
     "url": "https://github.com/emacs-sideline/sideline-flycheck",
     "source": "github",
-    "commit": "ce68ae1fede3442def4c58c6d4d0e64c8d96ccde",
+    "commit": "1b3fc4d41b93ab3fa3754d188545d9e8cc0150f1",
     "tree": "https://github.com/emacs-sideline/sideline-flycheck"
   },
   {
