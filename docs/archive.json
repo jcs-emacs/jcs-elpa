@@ -416,10 +416,10 @@
   {
     "name": "copilot",
     "summary": "An unofficial Copilot plugin for Emacs",
-    "version": "20240309.1226",
+    "version": "20240313.858",
     "url": "https://github.com/copilot-emacs/copilot.el",
     "source": "github",
-    "commit": "4e203efaa1f4047c800a026ba496d3bda8b67119",
+    "commit": "57d5e670786ca8156772c6dcb38e6ff67c5efd62",
     "tree": "https://github.com/copilot-emacs/copilot.el"
   },
   {
@@ -452,10 +452,10 @@
   {
     "name": "dape",
     "summary": "Debug Adapter Protocol for Emacs",
-    "version": "20240311.1545",
+    "version": "20240313.823",
     "url": "https://github.com/svaante/dape",
     "source": "github",
-    "commit": "990f86f7cef95841eedafb35884f5d16793219de",
+    "commit": "0488145637e60b08b00f7f14113d585a8a8a0230",
     "tree": "https://github.com/svaante/dape"
   },
   {
