@@ -1503,6 +1503,15 @@
     "tree": "https://github.com/emacs-vs/quick-peek"
   },
   {
+    "name": "quickrun",
+    "summary": "Run commands quickly",
+    "version": "20240316.807",
+    "url": "https://github.com/emacsorphanage/quickrun",
+    "source": "github",
+    "commit": "4604cbd7dff6996a0d35d4eb042a5623530763bb",
+    "tree": "https://github.com/emacsorphanage/quickrun"
+  },
+  {
     "name": "rainbow-csv",
     "summary": "Highlight CSV and TSV files in different rainbow colors",
     "version": "20240125.1921",
