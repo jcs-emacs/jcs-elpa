@@ -165,6 +165,7 @@
   (qss-mode :url "https://github.com/jcs-elpa/qss-mode.git")
   (query-ts-mode :url "https://github.com/nverno/query-ts-mode.git")
   (quick-peek :url "https://github.com/emacs-vs/quick-peek.git")
+  (quickrun :url "https://github.com/emacsorphanage/quickrun.git")
   (rainbow-csv :url "https://github.com/emacs-vs/rainbow-csv.git")
   (recentf-excl :url "https://github.com/jcs-elpa/recentf-excl.git")
   (region-occurrences-highlighter :url "https://github.com/alvarogonzalezsotillo/region-occurrences-highlighter.git")
