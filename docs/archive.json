@@ -461,10 +461,10 @@
   {
     "name": "dashboard",
     "summary": "A startup screen extracted from Spacemacs",
-    "version": "20240314.2117",
+    "version": "20240316.253",
     "url": "https://github.com/emacs-dashboard/emacs-dashboard",
     "source": "github",
-    "commit": "844fcc3d27bebc9a070e4c067ecee200b8a87847",
+    "commit": "a63d772f042727a911152f3cd628750c4fd6bf07",
     "tree": "https://github.com/emacs-dashboard/emacs-dashboard"
   },
   {
@@ -506,10 +506,10 @@
   {
     "name": "eask",
     "summary": "Core Eask APIs, for Eask CLI development",
-    "version": "20240305.112",
+    "version": "20240316.220",
     "url": "https://github.com/emacs-eask/eask",
     "source": "github",
-    "commit": "1d42c02fd6734dde53f826040c5678cc99d82560",
+    "commit": "8adf14304a6d9aeddded320a39e5af63525ab0b2",
     "tree": "https://github.com/emacs-eask/eask"
   },
   {
@@ -965,10 +965,10 @@
   {
     "name": "ic",
     "summary": "Pretty print to debug",
-    "version": "20240215.1152",
+    "version": "20240316.252",
     "url": "https://github.com/jcs-elpa/ic",
     "source": "github",
-    "commit": "86af704d7556dce5dd22c5931fd6caa0ef04133e",
+    "commit": "387d2530cea21af5da2f4d9e8347fe202564fa34",
     "tree": "https://github.com/jcs-elpa/ic"
   },
   {
