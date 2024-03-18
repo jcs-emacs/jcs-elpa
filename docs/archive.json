@@ -461,10 +461,10 @@
   {
     "name": "dashboard",
     "summary": "A startup screen extracted from Spacemacs",
-    "version": "20240316.2353",
+    "version": "20240318.1856",
     "url": "https://github.com/emacs-dashboard/emacs-dashboard",
     "source": "github",
-    "commit": "10e596da1e963bed6d66d02e6c4e4b90a5cf3356",
+    "commit": "14c281a8e9513cfc36e03cd299a9298101a0443e",
     "tree": "https://github.com/emacs-dashboard/emacs-dashboard"
   },
   {
@@ -1586,10 +1586,10 @@
   {
     "name": "sideline",
     "summary": "Show information on the side",
-    "version": "20240314.2150",
+    "version": "20240318.1900",
     "url": "https://github.com/emacs-sideline/sideline",
     "source": "github",
-    "commit": "61dd837815c31440c09cad3c5e8b44c5e9d2fc20",
+    "commit": "f3f5a40da838838b5f583f6e195d6948ec8d03ca",
     "tree": "https://github.com/emacs-sideline/sideline"
   },
   {
