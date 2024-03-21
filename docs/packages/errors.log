@@ -18,4 +18,8 @@
 2024-03-17T16:05:07+0000  company-bootstrap          Command ‘git clone https\://github.com/elp-revive/company-bootstrap.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/company-bootstrap/’ exited with non-zero exit-code: 128
 2024-03-20T16:06:09+0000  balanced-windows           Command ‘git clone https\://github.com/elp-revive/balanced-windows.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/balanced-windows/’ exited with non-zero exit-code: 128
 2024-03-20T16:06:23+0000  buffer-move                Command ‘git clone https\://github.com/elp-revive/buffer-move.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/buffer-move/’ exited with non-zero exit-code: 128
+<<<<<<< Updated upstream
 2024-03-21T18:07:38+0000  gas-mode                   Command ‘git clone https\://codeberg.org/Enocstocks/gas-mode.el.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/gas-mode/’ exited with non-zero exit-code: 128
+=======
+2024-03-21T18:07:53+0000  tree-sitter-indent         Command ‘git clone https\://codeberg.org/FelipeLema/tree-sitter-indent.el.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/tree-sitter-indent/’ exited with non-zero exit-code: 128
+>>>>>>> Stashed changes
