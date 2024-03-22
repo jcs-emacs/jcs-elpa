@@ -1613,10 +1613,10 @@
   {
     "name": "sideline-eglot",
     "summary": "Show eglot information with sideline",
-    "version": "20240101.918",
+    "version": "20240322.2245",
     "url": "https://github.com/emacs-sideline/sideline-eglot",
     "source": "github",
-    "commit": "9d2290d62efa58c1f86c919f5b8ff97ec430a432",
+    "commit": "b9118faba1cceea7fe6ba7b95118a17baf02956d",
     "tree": "https://github.com/emacs-sideline/sideline-eglot"
   },
   {
