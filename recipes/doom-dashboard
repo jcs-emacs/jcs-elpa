@@ -1,0 +1,1 @@
+(doom-dashboard :repo "emacs-dashboard/doom-dashboard" :fetcher github)
