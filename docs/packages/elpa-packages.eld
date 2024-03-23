@@ -53,6 +53,7 @@
   (dashboard-bm :url "https://github.com/emacs-dashboard/dashboard-bm.git")
   (dashboard-ls :url "https://github.com/emacs-dashboard/dashboard-ls.git")
   (deepl :url "https://github.com/emacs-openai/deepl.git")
+  (doom-dashboard :url "https://github.com/emacs-dashboard/doom-dashboard.git")
   (doxygen-asterisk :url "https://github.com/emacs-vs/doxygen-asterisk.git")
   (eask :url "https://github.com/emacs-eask/eask.git")
   (eask-mode :url "https://github.com/emacs-eask/eask-mode.git")
