@@ -495,6 +495,15 @@
     "tree": "https://github.com/emacs-openai/deepl"
   },
   {
+    "name": "doom-dashboard",
+    "summary": "Doom dashboard style for emacs-dashboard",
+    "version": "20240323.2353",
+    "url": "https://github.com/emacs-dashboard/doom-dashboard",
+    "source": "github",
+    "commit": "00bfe2ee4b0b8b20cd46a38ee20743fed8cf80a8",
+    "tree": "https://github.com/emacs-dashboard/doom-dashboard"
+  },
+  {
     "name": "doxygen-asterisk",
     "summary": "Minor mode that helps you insert pair /* and */",
     "version": "20240101.857",
