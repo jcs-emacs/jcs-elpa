@@ -452,19 +452,19 @@
   {
     "name": "dape",
     "summary": "Debug Adapter Protocol for Emacs",
-    "version": "20240325.2035",
+    "version": "20240325.2149",
     "url": "https://github.com/svaante/dape",
     "source": "github",
-    "commit": "f27faeb169146f5c9db38e40826bf719f492df96",
+    "commit": "930a03902156eeb468f4b864b7d5cd7e5015280d",
     "tree": "https://github.com/svaante/dape"
   },
   {
     "name": "dashboard",
     "summary": "A startup screen extracted from Spacemacs",
-    "version": "20240322.340",
+    "version": "20240325.2111",
     "url": "https://github.com/emacs-dashboard/emacs-dashboard",
     "source": "github",
-    "commit": "05b4b1a7bc5ec5d0fca5ee6cd6a2099107c47b15",
+    "commit": "d15bffc858085c80875843619356727302cf10af",
     "tree": "https://github.com/emacs-dashboard/emacs-dashboard"
   },
   {
