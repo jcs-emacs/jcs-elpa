@@ -936,6 +936,15 @@
     "tree": "https://github.com/emacs-openai/gptscript-mode"
   },
   {
+    "name": "guard-lf",
+    "summary": "Guard large files",
+    "version": "20240328.37",
+    "url": "https://github.com/jcs-elpa/guard-lf",
+    "source": "github",
+    "commit": "6dbf52ed92eea7d6303decd9cbacbbc6e4167db5",
+    "tree": "https://github.com/jcs-elpa/guard-lf"
+  },
+  {
     "name": "helafy",
     "summary": "Minify/Uglify/Prettify contents",
     "version": "20240101.937",
