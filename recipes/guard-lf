@@ -1,0 +1,1 @@
+(guard-lf :repo "jcs-elpa/guard-lf" :fetcher github)
