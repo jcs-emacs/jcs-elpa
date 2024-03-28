@@ -938,10 +938,10 @@
   {
     "name": "guard-lf",
     "summary": "Guard large files",
-    "version": "20240328.37",
+    "version": "20240328.103",
     "url": "https://github.com/jcs-elpa/guard-lf",
     "source": "github",
-    "commit": "6dbf52ed92eea7d6303decd9cbacbbc6e4167db5",
+    "commit": "4f3ea0883be714c3781f02ffcbe13865389df1c4",
     "tree": "https://github.com/jcs-elpa/guard-lf"
   },
   {
