@@ -938,10 +938,10 @@
   {
     "name": "guard-lf",
     "summary": "Guard large files",
-    "version": "20240328.116",
+    "version": "20240330.515",
     "url": "https://github.com/jcs-elpa/guard-lf",
     "source": "github",
-    "commit": "6c0789ad49889e7b0f566ffd44cec269bf747b40",
+    "commit": "15f9c3f6a0c9f6b846e236e5fcc61444f39d82d9",
     "tree": "https://github.com/jcs-elpa/guard-lf"
   },
   {
@@ -983,10 +983,10 @@
   {
     "name": "ic",
     "summary": "Pretty print to debug",
-    "version": "20240330.507",
+    "version": "20240330.511",
     "url": "https://github.com/jcs-elpa/ic",
     "source": "github",
-    "commit": "0910fff80c91be21d8548f4e67b5731b43f32dea",
+    "commit": "aa785efa5f766cf7d741f287834f66dcb43a9433",
     "tree": "https://github.com/jcs-elpa/ic"
   },
   {
