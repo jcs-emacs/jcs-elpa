@@ -1665,6 +1665,15 @@
     "tree": "https://github.com/emacs-sideline/sideline-flymake"
   },
   {
+    "name": "sideline-load-cost",
+    "summary": "Display load/require module size with sideline",
+    "version": "20240331.444",
+    "url": "https://github.com/emacs-sideline/sideline-load-cost",
+    "source": "github",
+    "commit": "2a9228b70512fa0db90341435333e43972314550",
+    "tree": "https://github.com/emacs-sideline/sideline-load-cost"
+  },
+  {
     "name": "sideline-lsp",
     "summary": "Show lsp information with sideline",
     "version": "20240101.918",
