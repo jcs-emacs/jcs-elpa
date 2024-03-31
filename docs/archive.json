@@ -983,10 +983,10 @@
   {
     "name": "ic",
     "summary": "Pretty print to debug",
-    "version": "20240330.2046",
+    "version": "20240331.52",
     "url": "https://github.com/jcs-elpa/ic",
     "source": "github",
-    "commit": "e5062c0e4bf631af3220bd7d9c180057536d08c3",
+    "commit": "f763e4eaf0aa2f8ae34bccf9fe35c2649191cd9f",
     "tree": "https://github.com/jcs-elpa/ic"
   },
   {
@@ -1181,10 +1181,10 @@
   {
     "name": "llm",
     "summary": "Interface to pluggable llm backends",
-    "version": "20240331.13",
+    "version": "20240331.33",
     "url": "https://github.com/ahyatt/llm",
     "source": "github",
-    "commit": "cdfe8c6255e119d86dd842ee1543bc347866fa2f",
+    "commit": "fdeb6c1c3e0703c74d8bed4ac9931efb29655067",
     "tree": "https://github.com/ahyatt/llm"
   },
   {
