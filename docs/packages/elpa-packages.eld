@@ -183,6 +183,7 @@
   (sideline-eldoc :url "https://github.com/ginqi7/sideline-eldoc.git")
   (sideline-flycheck :url "https://github.com/emacs-sideline/sideline-flycheck.git")
   (sideline-flymake :url "https://github.com/emacs-sideline/sideline-flymake.git")
+  (sideline-load-cost :url "https://github.com/emacs-sideline/sideline-load-cost.git")
   (sideline-lsp :url "https://github.com/emacs-sideline/sideline-lsp.git")
   (sln-mode :url "https://github.com/sensorflo/sln-mode.git")
   (smartchr :url "https://github.com/imakado/emacs-smartchr.git")
