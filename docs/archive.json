@@ -1667,10 +1667,10 @@
   {
     "name": "sideline-load-cost",
     "summary": "Display load/require module size with sideline",
-    "version": "20240331.527",
+    "version": "20240331.2323",
     "url": "https://github.com/emacs-sideline/sideline-load-cost",
     "source": "github",
-    "commit": "59f5c18675dd74093fb2cf120a7240bbdb9f58af",
+    "commit": "a5f5f804704dc9545113067fce80b7be3023fd4a",
     "tree": "https://github.com/emacs-sideline/sideline-load-cost"
   },
   {
