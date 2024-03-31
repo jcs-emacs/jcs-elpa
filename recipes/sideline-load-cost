@@ -1,0 +1,1 @@
+(sideline-load-cost :repo "emacs-sideline/sideline-load-cost" :fetcher github)
