@@ -1415,10 +1415,10 @@
   {
     "name": "outli",
     "summary": "Org-like code outliner",
-    "version": "20240322.2039",
+    "version": "20240401.2137",
     "url": "https://github.com/jdtsmith/outli",
     "source": "github",
-    "commit": "ca342c03a5048b26a51e71affdd6163aff81d9aa",
+    "commit": "5b1085f3a4997dd98e872c9681696f2331dbf411",
     "tree": "https://github.com/jdtsmith/outli"
   },
   {
