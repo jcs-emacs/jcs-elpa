@@ -1,5 +1,5 @@
 (turbo-log .
-	   [(20240325 1949)
+	   [(20240402 1910)
 	    ((emacs
 	      (25 1))
 	     (tree-sitter
@@ -7,7 +7,7 @@
 	     (s
 	      (1 12 0)))
 	    "The simple package for fast log selected region" tar
-	    ((:commit . "6512249adcb19c6fe8f7dfd85e1524211b49bec5")
+	    ((:commit . "c8f3adae7f783dcdc000d1cb355d4d367e7d6bab")
 	     (:authors
 	      ("Artur Yaroshenko" . "artawower@protonmail.com"))
 	     (:maintainers
