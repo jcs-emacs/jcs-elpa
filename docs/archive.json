@@ -677,10 +677,10 @@
   {
     "name": "execrun",
     "summary": "Run through `compilation-mode'",
-    "version": "20240101.933",
+    "version": "20240402.103",
     "url": "https://github.com/jcs-elpa/execrun",
     "source": "github",
-    "commit": "ebc302d289e3d697545223a293e571aa63020d39",
+    "commit": "98263f3fb3056f32225994052e646a122277828e",
     "tree": "https://github.com/jcs-elpa/execrun"
   },
   {
@@ -713,10 +713,10 @@
   {
     "name": "ffpc",
     "summary": "Find file in project or current directory",
-    "version": "20240101.931",
+    "version": "20240402.102",
     "url": "https://github.com/jcs-elpa/ffpc",
     "source": "github",
-    "commit": "d3d04b46211e24de6b0dc87af9792dbab9fb8ff6",
+    "commit": "9b0d39030da7073b6376705a072d939af8639c66",
     "tree": "https://github.com/jcs-elpa/ffpc"
   },
   {
