@@ -1,13 +1,15 @@
 (flymake-vale .
-	      [(20240306 1653)
+	      [(20240402 358)
 	       ((emacs
-		 (24 4))
+		 (27 1))
 		(flymake
 		 (0 22))
 		(let-alist
-		    (1 0 4)))
+		    (1 0 4))
+		(compat
+		 (29 1 4 4)))
 	       "flymake integration for vale" tar
-	       ((:commit . "3481d30223a113d2af2f329b7758915811f4ad84")
+	       ((:commit . "f28c0b056696bd550825fc91ab9977fd6d0ae158")
 		(:authors
 		 ("Trey Peacock" . "http://github/tpeacock19"))
 		(:maintainers
