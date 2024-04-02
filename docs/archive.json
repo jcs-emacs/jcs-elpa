@@ -200,10 +200,10 @@
   {
     "name": "codemetrics",
     "summary": "Plugin shows complexity information",
-    "version": "20240120.1012",
+    "version": "20240402.1914",
     "url": "https://github.com/emacs-vs/codemetrics",
     "source": "github",
-    "commit": "8176af52885a31ae346df3491577dafd97b930b2",
+    "commit": "132315487205938363e7f4dfc1bf931dc03ad6d4",
     "tree": "https://github.com/emacs-vs/codemetrics"
   },
   {
@@ -1811,10 +1811,10 @@
   {
     "name": "turbo-log",
     "summary": "The simple package for fast log selected region",
-    "version": "20240325.1949",
+    "version": "20240402.1910",
     "url": "https://github.com/Artawower/turbo-log",
     "source": "github",
-    "commit": "6512249adcb19c6fe8f7dfd85e1524211b49bec5",
+    "commit": "c8f3adae7f783dcdc000d1cb355d4d367e7d6bab",
     "tree": "https://github.com/Artawower/turbo-log"
   },
   {
