@@ -155,10 +155,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "ChatGPT shell + buffer insert commands",
-    "version": "20240402.2203",
+    "version": "20240402.2216",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "93f7a9fb39910699185bb1ffe3d15e0223c6c234",
+    "commit": "42cf53ba7d43e0622e8c4c57ef8f635e1248182b",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -1604,10 +1604,10 @@
   {
     "name": "sideline",
     "summary": "Show information on the side",
-    "version": "20240319.315",
+    "version": "20240402.2252",
     "url": "https://github.com/emacs-sideline/sideline",
     "source": "github",
-    "commit": "04a525f624e1a42c47a2755fbc63be32104f44cb",
+    "commit": "2a9854a704a6d34982142b8066cf090093de5419",
     "tree": "https://github.com/emacs-sideline/sideline"
   },
   {
@@ -1649,10 +1649,10 @@
   {
     "name": "sideline-flycheck",
     "summary": "Show flycheck errors with sideline",
-    "version": "20240313.2304",
+    "version": "20240402.2255",
     "url": "https://github.com/emacs-sideline/sideline-flycheck",
     "source": "github",
-    "commit": "1b3fc4d41b93ab3fa3754d188545d9e8cc0150f1",
+    "commit": "212b8193becc012d39ccb1e68abf0e19f68764f4",
     "tree": "https://github.com/emacs-sideline/sideline-flycheck"
   },
   {
