@@ -821,10 +821,10 @@
   {
     "name": "flymake-vale",
     "summary": "flymake integration for vale",
-    "version": "20240402.358",
+    "version": "20240402.425",
     "url": "https://github.com/tpeacock19/new",
     "source": "github",
-    "commit": "f28c0b056696bd550825fc91ab9977fd6d0ae158",
+    "commit": "32691d788a378915b98dba81e3af63227a630af3",
     "tree": "https://github.com/tpeacock19/new"
   },
   {
@@ -1181,10 +1181,10 @@
   {
     "name": "llm",
     "summary": "Interface to pluggable llm backends",
-    "version": "20240331.2248",
+    "version": "20240402.442",
     "url": "https://github.com/ahyatt/llm",
     "source": "github",
-    "commit": "17a1cf917556168f23c7f6f4e4c8b1b51bf9a0b5",
+    "commit": "a090d3bdbd8764c2d0ea6e157ad02569068a09cb",
     "tree": "https://github.com/ahyatt/llm"
   },
   {
