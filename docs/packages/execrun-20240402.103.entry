@@ -1,5 +1,5 @@
 (execrun .
-	 [(20240101 933)
+	 [(20240402 103)
 	  ((emacs
 	    (26 1))
 	   (ffpc
@@ -7,7 +7,7 @@
 	   (f
 	    (0 20 0)))
 	  "Run through `compilation-mode'" tar
-	  ((:commit . "ebc302d289e3d697545223a293e571aa63020d39")
+	  ((:commit . "98263f3fb3056f32225994052e646a122277828e")
 	   (:authors
 	    ("Jen-Chieh" . "jcs090218@gmail.com"))
 	   (:maintainers

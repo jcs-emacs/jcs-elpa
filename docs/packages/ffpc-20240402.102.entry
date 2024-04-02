@@ -1,13 +1,13 @@
 (ffpc .
-      [(20240101 931)
+      [(20240402 102)
        ((emacs
-	 (26 1))
+	 (28 1))
 	(dash
 	 (2 12 0))
 	(f
 	 (0 20 0)))
        "Find file in project or current directory" tar
-       ((:commit . "d3d04b46211e24de6b0dc87af9792dbab9fb8ff6")
+       ((:commit . "9b0d39030da7073b6376705a072d939af8639c66")
 	(:authors
 	 ("Jen-Chieh" . "jcs090218@gmail.com"))
 	(:maintainers
