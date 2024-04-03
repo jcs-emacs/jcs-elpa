@@ -1,0 +1,14 @@
+(lsp-pylyzer .
+	     [(20240402 1856)
+	      ((emacs
+		(27 1))
+	       (lsp-mode
+		(7 0))
+	       (dash
+		(2 18 0))
+	       (ht
+		(2 0)))
+	      "Python LSP client using pylyzer" tar
+	      ((:commit . "dd0e5ef0ff8f8a6ea4c16f8d2b05d32a35e2efb5")
+	       (:keywords "languages" "tools" "lsp")
+	       (:url . "https://github.com/seagle0128/lsp-pylyzer"))])

@@ -134,6 +134,7 @@
   (logms :url "https://github.com/jcs-elpa/logms.git")
   (lsp-compose :url "https://github.com/lepisma/compose-language-server.git")
   (lsp-grammarly-un :url "https://github.com/emacs-grammarly/lsp-grammarly-un.git")
+  (lsp-pylyzer :url "https://github.com/emacs-lsp/lsp-pylyzer.git")
   (lsp-shader :url "https://github.com/shader-ls/lsp-shader.git")
   (lsp-uniteai :url "https://github.com/emacs-openai/lsp-uniteai.git")
   (maple-line :url "https://github.com/honmaple/emacs-maple-line.git")
