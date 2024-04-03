@@ -1,0 +1,1 @@
+(lsp-pylyzer :repo "emacs-lsp/lsp-pylyzer" :fetcher github)
