@@ -1224,6 +1224,15 @@
     "tree": "https://github.com/emacs-grammarly/lsp-grammarly-un"
   },
   {
+    "name": "lsp-pylyzer",
+    "summary": "Python LSP client using pylyzer",
+    "version": "20240402.1856",
+    "url": "https://github.com/seagle0128/lsp-pylyzer",
+    "source": "github",
+    "commit": "dd0e5ef0ff8f8a6ea4c16f8d2b05d32a35e2efb5",
+    "tree": "https://github.com/seagle0128/lsp-pylyzer"
+  },
+  {
     "name": "lsp-shader",
     "summary": "LSP Clients for ShaderLab",
     "version": "20240229.111",
