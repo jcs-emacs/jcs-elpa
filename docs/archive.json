@@ -1685,10 +1685,10 @@
   {
     "name": "sideline-lsp",
     "summary": "Show lsp information with sideline",
-    "version": "20240101.918",
+    "version": "20240403.2151",
     "url": "https://github.com/emacs-sideline/sideline-lsp",
     "source": "github",
-    "commit": "0a085a29b943eede42824981b5d0cd9fb951e9d8",
+    "commit": "cf9d03cd58ff0105dda9e444b9fb9f464eb6270d",
     "tree": "https://github.com/emacs-sideline/sideline-lsp"
   },
   {
@@ -1820,10 +1820,10 @@
   {
     "name": "turbo-log",
     "summary": "The simple package for fast log selected region",
-    "version": "20240402.1910",
+    "version": "20240403.2139",
     "url": "https://github.com/Artawower/turbo-log",
     "source": "github",
-    "commit": "c8f3adae7f783dcdc000d1cb355d4d367e7d6bab",
+    "commit": "3bd235a0d495a4cc58fb2669badeb991e307008d",
     "tree": "https://github.com/Artawower/turbo-log"
   },
   {
