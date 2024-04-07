@@ -1,9 +1,9 @@
 (tsc .
-     [(20231205 2328)
+     [(20240407 1001)
       ((emacs
 	(25 1)))
       "Core Tree-sitter APIs" tar
-      ((:commit . "3e1e06df491fd61a4005caae39e70ad90ad46a50")
+      ((:commit . "090f5e3d8d42ba5f62966ac5d9ec32365a99f253")
        (:authors
 	("Tuấn-Anh Nguyễn" . "ubolonton@gmail.com")
 	("Jorge Javier Araya Navarro" . "jorgejavieran@yahoo.com.mx"))
