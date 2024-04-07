@@ -200,10 +200,10 @@
   {
     "name": "codemetrics",
     "summary": "Plugin shows complexity information",
-    "version": "20240403.1850",
+    "version": "20240407.923",
     "url": "https://github.com/emacs-vs/codemetrics",
     "source": "github",
-    "commit": "823604731d244fd027a6c313187cfd44ab4d4b4b",
+    "commit": "5588e94b8e4a92d941d51091e04bc50dfd0c4936",
     "tree": "https://github.com/emacs-vs/codemetrics"
   },
   {
@@ -1802,10 +1802,10 @@
   {
     "name": "tsc",
     "summary": "Core Tree-sitter APIs",
-    "version": "20231205.2328",
+    "version": "20240407.1001",
     "url": "https://github.com/emacs-tree-sitter/elisp-tree-sitter",
     "source": "github",
-    "commit": "3e1e06df491fd61a4005caae39e70ad90ad46a50",
+    "commit": "090f5e3d8d42ba5f62966ac5d9ec32365a99f253",
     "tree": "https://github.com/emacs-tree-sitter/elisp-tree-sitter"
   },
   {
