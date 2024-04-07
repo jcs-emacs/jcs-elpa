@@ -1181,10 +1181,10 @@
   {
     "name": "llm",
     "summary": "Interface to pluggable llm backends",
-    "version": "20240407.1812",
+    "version": "20240407.1959",
     "url": "https://github.com/ahyatt/llm",
     "source": "github",
-    "commit": "f4f3c672b260db48fb82d91d1100059ff3c4403f",
+    "commit": "880f37a473f9a21bd17dd64c575fe9afe4953d41",
     "tree": "https://github.com/ahyatt/llm"
   },
   {
@@ -1757,10 +1757,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20240407.927",
+    "version": "20240407.1827",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "58ffb5fd22d42e3e47132f333f3f893e360c9054",
+    "commit": "bc106a00c5efd957a8d159c0d271e9f3193ed367",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
