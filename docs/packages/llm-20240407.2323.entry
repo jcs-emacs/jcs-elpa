@@ -1,9 +1,9 @@
 (llm .
-     [(20240407 2110)
+     [(20240407 2323)
       ((emacs
 	(28 1)))
       "Interface to pluggable llm backends" tar
-      ((:commit . "87e1e16a19e21d78490de24e9102ce40083b4be9")
+      ((:commit . "150fcbd0b59a26d66941df48155347bce6c8ab8c")
        (:authors
 	("Andrew Hyatt" . "ahyatt@gmail.com"))
        (:maintainers
