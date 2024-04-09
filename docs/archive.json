@@ -991,11 +991,11 @@
   },
   {
     "name": "indent-bars",
-    "summary": "highlight indentation with bars",
-    "version": "20240403.1704",
+    "summary": "Highlight indentation with bars",
+    "version": "20240409.135",
     "url": "https://github.com/jdtsmith/indent-bars",
     "source": "github",
-    "commit": "6e864e049e65b060ddde5629c4d0909391a6c7d8",
+    "commit": "6a68c5e7fffa3e7bdeaf84058d5bea1673fa73db",
     "tree": "https://github.com/jdtsmith/indent-bars"
   },
   {
