@@ -992,10 +992,10 @@
   {
     "name": "indent-bars",
     "summary": "Highlight indentation with bars",
-    "version": "20240409.135",
+    "version": "20240409.301",
     "url": "https://github.com/jdtsmith/indent-bars",
     "source": "github",
-    "commit": "6a68c5e7fffa3e7bdeaf84058d5bea1673fa73db",
+    "commit": "def1e3e3955d88839f69a6f9936c3c67986377bf",
     "tree": "https://github.com/jdtsmith/indent-bars"
   },
   {
@@ -1352,10 +1352,10 @@
   {
     "name": "nerd-icons",
     "summary": "Emacs Nerd Font Icons Library",
-    "version": "20240319.833",
+    "version": "20240409.217",
     "url": "https://github.com/rainstormstudio/nerd-icons.el",
     "source": "github",
-    "commit": "8095215a503d8048739de8b4ea4066598edb8cbb",
+    "commit": "2f7b3d492026f4beb1984decfb071dd6a60921bb",
     "tree": "https://github.com/rainstormstudio/nerd-icons.el"
   },
   {
