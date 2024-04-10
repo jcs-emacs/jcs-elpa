@@ -1,0 +1,1 @@
+(auto-close-block :repo "emacs-vs/auto-close-block" :fetcher github)
