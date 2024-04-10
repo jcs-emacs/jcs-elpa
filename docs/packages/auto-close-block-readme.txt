@@ -1,0 +1,2 @@
+
+Automatically close block.

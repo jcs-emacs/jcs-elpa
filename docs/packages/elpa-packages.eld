@@ -1,5 +1,6 @@
 (((ace-link-dashboard :url "https://github.com/emacs-dashboard/ace-link-dashboard.git")
   (asoc :url "https://github.com/troyp/asoc.el.git")
+  (auto-close-block :url "https://github.com/emacs-vs/auto-close-block.git")
   (auto-highlight-symbol :url "https://github.com/elp-revive/auto-highlight-symbol.git")
   (auto-scroll-bar :url "https://github.com/jcs-elpa/auto-scroll-bar.git")
   (aws :url "https://github.com/jcs090218/aws-toolkit-emacs.git")
