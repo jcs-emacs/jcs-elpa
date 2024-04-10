@@ -902,10 +902,10 @@
   {
     "name": "google-gemini",
     "summary": "Elisp library for the Google Gemini API",
-    "version": "20240212.328",
+    "version": "20240410.2042",
     "url": "https://github.com/emacs-openai/google-gemini",
     "source": "github",
-    "commit": "5d11f2c243347b17b5bb40fe0dccc51414a1fa1b",
+    "commit": "e8476d2b04d3ff90b226b29d21629b41093217b4",
     "tree": "https://github.com/emacs-openai/google-gemini"
   },
   {
@@ -992,10 +992,10 @@
   {
     "name": "indent-bars",
     "summary": "Highlight indentation with bars",
-    "version": "20240410.308",
+    "version": "20240410.2018",
     "url": "https://github.com/jdtsmith/indent-bars",
     "source": "github",
-    "commit": "f34bd2194005ba61e988b9af2d12c116f1cae2c6",
+    "commit": "7a1413cb15d44bedf36bd796766abef4df860dea",
     "tree": "https://github.com/jdtsmith/indent-bars"
   },
   {
