@@ -18,6 +18,15 @@
     "tree": "https://github.com/troyp/asoc.el"
   },
   {
+    "name": "auto-close-block",
+    "summary": "Automatically close block",
+    "version": "20240410.2217",
+    "url": "https://github.com/emacs-vs/auto-close-block",
+    "source": "github",
+    "commit": "3f748b61a4f9be661ac5a089a20ba1ccbcb355db",
+    "tree": "https://github.com/emacs-vs/auto-close-block"
+  },
+  {
     "name": "auto-highlight-symbol",
     "summary": "Automatic highlighting current symbol minor mode",
     "version": "20240101.905",
