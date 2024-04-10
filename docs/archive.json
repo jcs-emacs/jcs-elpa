@@ -20,10 +20,10 @@
   {
     "name": "auto-close-block",
     "summary": "Automatically close block",
-    "version": "20240410.2217",
+    "version": "20240410.2242",
     "url": "https://github.com/emacs-vs/auto-close-block",
     "source": "github",
-    "commit": "3f748b61a4f9be661ac5a089a20ba1ccbcb355db",
+    "commit": "defde03baa11b94a6eb882366eabf07c2adebc2d",
     "tree": "https://github.com/emacs-vs/auto-close-block"
   },
   {
@@ -511,15 +511,6 @@
     "source": "github",
     "commit": "aef5c5783c3e80ab6c42c8cccc921efc22e23e08",
     "tree": "https://github.com/emacs-dashboard/doom-dashboard"
-  },
-  {
-    "name": "doxygen-asterisk",
-    "summary": "Minor mode that helps you insert pair /* and */",
-    "version": "20240101.857",
-    "url": "https://github.com/emacs-vs/doxygen-asterisk",
-    "source": "github",
-    "commit": "a05f0f5f7efa1abbc4f7ac5e9b55969b80bf7079",
-    "tree": "https://github.com/emacs-vs/doxygen-asterisk"
   },
   {
     "name": "eask",
