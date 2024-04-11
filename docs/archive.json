@@ -209,10 +209,10 @@
   {
     "name": "codemetrics",
     "summary": "Plugin shows complexity information",
-    "version": "20240408.1336",
+    "version": "20240411.618",
     "url": "https://github.com/emacs-vs/codemetrics",
     "source": "github",
-    "commit": "19adb9863824740e5c7a9c4f2c76df86b349a099",
+    "commit": "cd7e849a05d6bd6a7d2c53869fa2e291de80b392",
     "tree": "https://github.com/emacs-vs/codemetrics"
   },
   {
