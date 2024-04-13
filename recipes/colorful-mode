@@ -1,0 +1,1 @@
+(colorful-mode :repo "DevelopmentCool2449/colorful-mode" :fetcher github)
