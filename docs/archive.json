@@ -209,10 +209,10 @@
   {
     "name": "codemetrics",
     "summary": "Plugin shows complexity information",
-    "version": "20240411.618",
+    "version": "20240413.2147",
     "url": "https://github.com/emacs-vs/codemetrics",
     "source": "github",
-    "commit": "cd7e849a05d6bd6a7d2c53869fa2e291de80b392",
+    "commit": "da9b3000c9b4b8f38694ad98c2250b6113ecb29c",
     "tree": "https://github.com/emacs-vs/codemetrics"
   },
   {
@@ -992,10 +992,10 @@
   {
     "name": "indent-bars",
     "summary": "Highlight indentation with bars",
-    "version": "20240411.156",
+    "version": "20240413.2132",
     "url": "https://github.com/jdtsmith/indent-bars",
     "source": "github",
-    "commit": "29005e1bd0ead4017c2d203f26ad05f41344a9e8",
+    "commit": "a7e9554671159c587c1eb37d21bf5f017bc5ae06",
     "tree": "https://github.com/jdtsmith/indent-bars"
   },
   {
