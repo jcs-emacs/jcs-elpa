@@ -216,6 +216,15 @@
     "tree": "https://github.com/emacs-vs/codemetrics"
   },
   {
+    "name": "colorful-mode",
+    "summary": "Preview any color in your buffer in real time.",
+    "version": "20240413.1957",
+    "url": "https://github.com/DevelopmentCool2449/colorful-mode",
+    "source": "github",
+    "commit": "608058349046ce902369deba4c0077731386cfa0",
+    "tree": "https://github.com/DevelopmentCool2449/colorful-mode"
+  },
+  {
     "name": "comint-fold",
     "summary": "Fold comint-input",
     "version": "20231214.1258",
