@@ -218,10 +218,10 @@
   {
     "name": "colorful-mode",
     "summary": "Preview any color in your buffer in real time",
-    "version": "20240414.1840",
+    "version": "20240414.2340",
     "url": "https://github.com/DevelopmentCool2449/colorful-mode",
     "source": "github",
-    "commit": "9e1154268cb5a534ba42e7d4614b8cac55c0e257",
+    "commit": "ee72b3bbcffda5d7327d57b78fc5f464e9a36bea",
     "tree": "https://github.com/DevelopmentCool2449/colorful-mode"
   },
   {
@@ -524,10 +524,10 @@
   {
     "name": "eask",
     "summary": "Core Eask APIs, for Eask CLI development",
-    "version": "20240414.1111",
+    "version": "20240414.2339",
     "url": "https://github.com/emacs-eask/eask",
     "source": "github",
-    "commit": "85b93afb96e2f9c8fa9b1091e1a95c532b42dd97",
+    "commit": "df5185d27003eee461391d39072bd7b53358131f",
     "tree": "https://github.com/emacs-eask/eask"
   },
   {
@@ -542,10 +542,10 @@
   {
     "name": "easky",
     "summary": "Control the Eask command-line interface",
-    "version": "20240316.327",
+    "version": "20240415.4",
     "url": "https://github.com/emacs-eask/easky",
     "source": "github",
-    "commit": "85fcdf4db86f8d6773ce7d309cf752c9f972e564",
+    "commit": "602e43a558e95823ac0b3e84f48db7c987da132a",
     "tree": "https://github.com/emacs-eask/easky"
   },
   {
