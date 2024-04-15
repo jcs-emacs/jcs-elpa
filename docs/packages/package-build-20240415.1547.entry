@@ -1,20 +1,20 @@
 (package-build .
-	       [(20240306 2234)
+	       [(20240415 1547)
 		((emacs
 		  (26 1))
 		 (compat
 		  (27 1)))
 		"Tools for assembling a package archive" tar
-		((:commit . "236ef4e4d615699d4ba8b7ad28bd40b87d269411")
+		((:commit . "d9ce37b82529827ce720ad3ccf4af887d19fcfb0")
 		 (:authors
 		  ("Donald Ephraim Curtis" . "dcurtis@milkbox.net")
 		  ("Steve Purcell" . "steve@sanityinc.com")
-		  ("Jonas Bernoulli" . "jonas@bernoul.li")
+		  ("Jonas Bernoulli" . "emacs.package-build@jonas.bernoulli.dev")
 		  ("Phil Hagelberg" . "technomancy@gmail.com"))
 		 (:maintainers
 		  ("Donald Ephraim Curtis" . "dcurtis@milkbox.net")
 		  ("Steve Purcell" . "steve@sanityinc.com")
-		  ("Jonas Bernoulli" . "jonas@bernoul.li")
+		  ("Jonas Bernoulli" . "emacs.package-build@jonas.bernoulli.dev")
 		  ("Phil Hagelberg" . "technomancy@gmail.com"))
 		 (:maintainer "Donald Ephraim Curtis" . "dcurtis@milkbox.net")
 		 (:keywords "maint" "tools")
