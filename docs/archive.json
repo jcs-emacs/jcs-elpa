@@ -218,10 +218,10 @@
   {
     "name": "colorful-mode",
     "summary": "Preview any color in your buffer in real time",
-    "version": "20240414.2340",
+    "version": "20240415.304",
     "url": "https://github.com/DevelopmentCool2449/colorful-mode",
     "source": "github",
-    "commit": "ee72b3bbcffda5d7327d57b78fc5f464e9a36bea",
+    "commit": "8f209221800ceddb38ce5e84418e18e2c04178f4",
     "tree": "https://github.com/DevelopmentCool2449/colorful-mode"
   },
   {
@@ -1190,10 +1190,10 @@
   {
     "name": "llm",
     "summary": "Interface to pluggable llm backends",
-    "version": "20240412.211",
+    "version": "20240415.336",
     "url": "https://github.com/ahyatt/llm",
     "source": "github",
-    "commit": "4058691d3f9cb8324c63212260728cc7b7cc1699",
+    "commit": "35e2b6ebce5749f0bfbe1c44800b343f768a2cf9",
     "tree": "https://github.com/ahyatt/llm"
   },
   {
