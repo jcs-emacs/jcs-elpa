@@ -1,0 +1,2 @@
+
+Toggle render `ansi-color'.
