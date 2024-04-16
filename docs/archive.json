@@ -479,10 +479,10 @@
   {
     "name": "dape",
     "summary": "Debug Adapter Protocol for Emacs",
-    "version": "20240415.2121",
+    "version": "20240416.1522",
     "url": "https://github.com/svaante/dape",
     "source": "github",
-    "commit": "dae8d114008ba2bad507993cc045612982dc4658",
+    "commit": "9f4df93f44775c07a7eb960f3cd7cbf096f4c2b5",
     "tree": "https://github.com/svaante/dape"
   },
   {
@@ -1576,11 +1576,11 @@
   },
   {
     "name": "region-occurrences-highlighter",
-    "summary": "Mark occurrences of current region (selection).",
-    "version": "20240405.1427",
+    "summary": "Mark occurrences of current region (selection)",
+    "version": "20240416.1540",
     "url": "https://github.com/alvarogonzalezsotillo/region-occurrences-highlighter",
     "source": "github",
-    "commit": "ca6c8765ddfa3393e5fe87f1be4185098fd60b67",
+    "commit": "ce4267f33fde7440587950fbcf529f7543856a1b",
     "tree": "https://github.com/alvarogonzalezsotillo/region-occurrences-highlighter"
   },
   {
