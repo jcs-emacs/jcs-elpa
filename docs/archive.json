@@ -218,10 +218,10 @@
   {
     "name": "colorful-mode",
     "summary": "Preview any color in your buffer in real time",
-    "version": "20240415.304",
+    "version": "20240416.121",
     "url": "https://github.com/DevelopmentCool2449/colorful-mode",
     "source": "github",
-    "commit": "8f209221800ceddb38ce5e84418e18e2c04178f4",
+    "commit": "ab952b89df7340cd450311391b38ac760241fee9",
     "tree": "https://github.com/DevelopmentCool2449/colorful-mode"
   },
   {
@@ -1766,10 +1766,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20240414.1923",
+    "version": "20240415.2347",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "6351acb48a2111cf711f918e457f253a63e1c528",
+    "commit": "86f50376f8e5452390afeb71f78b17e349603b2a",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
