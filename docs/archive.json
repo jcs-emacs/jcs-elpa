@@ -9,6 +9,15 @@
     "tree": "https://github.com/emacs-dashboard/ace-link-dashboard"
   },
   {
+    "name": "ansi-colorful",
+    "summary": "Toggle render ansi-color",
+    "version": "20240416.256",
+    "url": "https://github.com/jcs-elpa/ansi-colorful",
+    "source": "github",
+    "commit": "08a2e53bcc3b0549f0d26bcf865fab2ad72e6f08",
+    "tree": "https://github.com/jcs-elpa/ansi-colorful"
+  },
+  {
     "name": "asoc",
     "summary": "alist functions and macros",
     "version": "20170917.1208",
