@@ -1,9 +1,9 @@
 (region-occurrences-highlighter .
-				[(20240405 1427)
+				[(20240416 1540)
 				 ((emacs
 				   (24)))
-				 "Mark occurrences of current region (selection)." tar
-				 ((:commit . "ca6c8765ddfa3393e5fe87f1be4185098fd60b67")
+				 "Mark occurrences of current region (selection)" tar
+				 ((:commit . "ce4267f33fde7440587950fbcf529f7543856a1b")
 				  (:authors
 				   ("lvaro González Sotillo" . "alvarogonzalezsotillo@gmail.com"))
 				  (:maintainers
