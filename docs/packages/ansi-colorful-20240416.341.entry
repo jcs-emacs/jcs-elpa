@@ -1,9 +1,9 @@
 (ansi-colorful .
-	       [(20240416 256)
+	       [(20240416 341)
 		((emacs
 		  (26 1)))
 		"Toggle render ansi-color" tar
-		((:commit . "08a2e53bcc3b0549f0d26bcf865fab2ad72e6f08")
+		((:commit . "914c2c9cfec34ce53ce4a14a167fd7c338818521")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainers
