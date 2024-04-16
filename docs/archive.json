@@ -11,10 +11,10 @@
   {
     "name": "ansi-colorful",
     "summary": "Toggle render ansi-color",
-    "version": "20240416.256",
+    "version": "20240416.341",
     "url": "https://github.com/jcs-elpa/ansi-colorful",
     "source": "github",
-    "commit": "08a2e53bcc3b0549f0d26bcf865fab2ad72e6f08",
+    "commit": "914c2c9cfec34ce53ce4a14a167fd7c338818521",
     "tree": "https://github.com/jcs-elpa/ansi-colorful"
   },
   {
