@@ -1,0 +1,1 @@
+(ansi-colorful :repo "jcs-elpa/ansi-colorful" :fetcher github)
