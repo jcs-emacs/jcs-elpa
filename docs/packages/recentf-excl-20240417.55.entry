@@ -1,11 +1,11 @@
 (recentf-excl .
-	      [(20240417 54)
+	      [(20240417 55)
 	       ((emacs
 		 (26 1))
 		(msgu
 		 (0 1 0)))
 	       "Exclude commands for recent files" tar
-	       ((:commit . "6d6b0f2d82af7ad2bb0c1d567d3fe7dcb51dabe9")
+	       ((:commit . "f9029e3167206c9dc3b14dbc53cdabb24cc5bde6")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainers
