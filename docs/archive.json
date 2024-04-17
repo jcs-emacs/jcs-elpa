@@ -83,10 +83,10 @@
   {
     "name": "bitwarden",
     "summary": "Bitwarden command wrapper",
-    "version": "20231205.1842",
+    "version": "20240417.1653",
     "url": "https://github.com/seanfarley/emacs-bitwarden",
     "source": "github",
-    "commit": "072b9e4584c58a31d187e1ed16cbe7fcf81e2792",
+    "commit": "50c0078d356e0ac0bcaf26b40113700ba4123ec3",
     "tree": "https://github.com/seanfarley/emacs-bitwarden"
   },
   {
