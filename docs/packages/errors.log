@@ -25,3 +25,5 @@
 >>>>>>> Stashed changes
 2024-04-01T23:05:28+0000  bitwarden                  Command ‘git clone https\://github.com/seanfarley/emacs-bitwarden.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/bitwarden/’ exited with non-zero exit-code: 128
 2024-04-10T07:06:16+0000  cycle-case-style           Command ‘git clone https\://github.com/jcs-elpa/cycle-case-style.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/cycle-case-style/’ exited with non-zero exit-code: 128
+2024-04-18T02:18:04+0000  logms                      Command ‘git clone https\://github.com/jcs-elpa/logms.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/logms/’ exited with non-zero exit-code: 128
+2024-04-18T02:20:19+0000  lsp-compose                Command ‘git clone https\://github.com/lepisma/compose-language-server.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/lsp-compose/’ exited with non-zero exit-code: 128
