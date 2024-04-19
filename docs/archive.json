@@ -1658,10 +1658,10 @@
   {
     "name": "sideline-eglot",
     "summary": "Show eglot information with sideline",
-    "version": "20240322.2245",
+    "version": "20240419.12",
     "url": "https://github.com/emacs-sideline/sideline-eglot",
     "source": "github",
-    "commit": "b9118faba1cceea7fe6ba7b95118a17baf02956d",
+    "commit": "034e95c6491a82ce0c488f954100106a29b51660",
     "tree": "https://github.com/emacs-sideline/sideline-eglot"
   },
   {
