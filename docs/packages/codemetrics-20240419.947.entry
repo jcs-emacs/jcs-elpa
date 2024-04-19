@@ -1,5 +1,5 @@
 (codemetrics .
-	     [(20240413 2147)
+	     [(20240419 947)
 	      ((emacs
 		(27 1))
 	       (tree-sitter
@@ -9,7 +9,7 @@
 	       (dash
 		(2 19 1)))
 	      "Plugin shows complexity information" tar
-	      ((:commit . "da9b3000c9b4b8f38694ad98c2250b6113ecb29c")
+	      ((:commit . "01faa3c5e10e329e25e7be9bb6da13ef9429cbf1")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainers
