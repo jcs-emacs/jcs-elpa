@@ -30,3 +30,4 @@
 2024-04-18T09:04:57+0000  goto-char-preview          Command ‘git clone https\://github.com/emacs-vs/goto-char-preview.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/goto-char-preview/’ exited with non-zero exit-code: 128
 2024-04-18T09:05:04+0000  ivy-describe-modes         Command ‘git clone https\://github.com/jcs-legacy/ivy-describe-modes.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/ivy-describe-modes/’ exited with non-zero exit-code: 128
 2024-04-18T09:05:11+0000  jet                        Command ‘git clone https\://github.com/ericdallo/jet.el.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/jet/’ exited with non-zero exit-code: 128
+2024-04-20T10:05:18+0000  gas-mode                   Command ‘git clone https\://codeberg.org/Enocstocks/gas-mode.el.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/gas-mode/’ exited with non-zero exit-code: 128
