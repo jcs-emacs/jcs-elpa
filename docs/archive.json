@@ -2027,10 +2027,10 @@
   {
     "name": "yasnippet-capf",
     "summary": "Yasnippet Completion At Point Function",
-    "version": "20240309.1316",
+    "version": "20240420.1531",
     "url": "https://github.com/elken/yasnippet-capf",
     "source": "github",
-    "commit": "9043f8275176a8f198ce8e81fadab1870fa165bb",
+    "commit": "ea2bbf4f1c5c133ca7105a5cda2bc01c8e378ef5",
     "tree": "https://github.com/elken/yasnippet-capf"
   },
   {
