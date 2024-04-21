@@ -1289,10 +1289,10 @@
   {
     "name": "mbs",
     "summary": "Minibuffer Stats",
-    "version": "20240101.941",
+    "version": "20240421.2239",
     "url": "https://github.com/jcs-elpa/mbs",
     "source": "github",
-    "commit": "9e22d6ca0fc3b8e86722477566e18a802da16640",
+    "commit": "98663baf4201f048e9eebbc4c5d6d8f00028b6c0",
     "tree": "https://github.com/jcs-elpa/mbs"
   },
   {
@@ -1919,10 +1919,10 @@
   {
     "name": "vertico-flx",
     "summary": "Flx integration for vertico",
-    "version": "20240101.941",
+    "version": "20240421.2239",
     "url": "https://github.com/jcs-elpa/vertico-flx",
     "source": "github",
-    "commit": "5fb00e59aa3bd067d0602b48b523c11214b8256b",
+    "commit": "a1cb17461180fd93e996d0d9f96f87cb4780bbf0",
     "tree": "https://github.com/jcs-elpa/vertico-flx"
   },
   {
