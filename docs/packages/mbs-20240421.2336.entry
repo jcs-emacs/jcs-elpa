@@ -1,11 +1,11 @@
 (mbs .
-     [(20240421 2239)
+     [(20240421 2336)
       ((emacs
 	(26 1))
        (s
 	(1 12 0)))
       "Minibuffer Stats" tar
-      ((:commit . "98663baf4201f048e9eebbc4c5d6d8f00028b6c0")
+      ((:commit . "e20f6f334a2c93c88c3740a1bb26a061c0142aa8")
        (:authors
 	("Jen-Chieh" . "jcs090218@gmail.com"))
        (:maintainers
