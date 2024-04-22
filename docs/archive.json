@@ -1289,10 +1289,10 @@
   {
     "name": "mbs",
     "summary": "Minibuffer Stats",
-    "version": "20240422.723",
+    "version": "20240422.810",
     "url": "https://github.com/jcs-elpa/mbs",
     "source": "github",
-    "commit": "4935006c842607a56e9c97497a7adb72f76a3fbb",
+    "commit": "6e25baf83dd57cc3b90659d4f5df5fa6320c9a7a",
     "tree": "https://github.com/jcs-elpa/mbs"
   },
   {
