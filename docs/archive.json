@@ -479,10 +479,10 @@
   {
     "name": "dape",
     "summary": "Debug Adapter Protocol for Emacs",
-    "version": "20240421.1450",
+    "version": "20240422.1644",
     "url": "https://github.com/svaante/dape",
     "source": "github",
-    "commit": "c6c8db18d3012c8aa704f49b841d8dcfbfe175b1",
+    "commit": "1a99a17b4d52d557383c7e3adc5e29640191c5a1",
     "tree": "https://github.com/svaante/dape"
   },
   {
@@ -1793,10 +1793,10 @@
   {
     "name": "treesit-langs",
     "summary": "TODO",
-    "version": "20240421.2122",
+    "version": "20240422.1618",
     "url": "https://github.com/kiennq/treesit-langs",
     "source": "github",
-    "commit": "66e726224d37a066e91c1b5df23bb4fe122a3157",
+    "commit": "368fd3a9ba325be52005ec351f9814b4cc405b96",
     "tree": "https://github.com/kiennq/treesit-langs"
   },
   {
