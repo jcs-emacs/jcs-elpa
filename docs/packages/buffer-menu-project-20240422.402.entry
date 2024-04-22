@@ -1,5 +1,5 @@
 (buffer-menu-project .
-		     [(20240101 930)
+		     [(20240422 402)
 		      ((emacs
 			(25 1))
 		       (project
@@ -7,7 +7,7 @@
 		       (f
 			(0 20 0)))
 		      "List buffers relative to project" tar
-		      ((:commit . "e4e3f78433c29890018bc504011aa00b2791126c")
+		      ((:commit . "e6bd17e489b163e13f3aaa43e72bcf76868be519")
 		       (:authors
 			("Jen-Chieh" . "jcs090218@gmail.com"))
 		       (:maintainers
