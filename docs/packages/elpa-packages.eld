@@ -81,6 +81,7 @@
   (ff-guard :url "https://github.com/jcs-elpa/ff-guard.git")
   (ffpc :url "https://github.com/jcs-elpa/ffpc.git")
   (file-header :url "https://github.com/jcs-elpa/file-header.git")
+  (fill-page :url "https://github.com/jcs-elpa/fill-page.git")
   (flx-rs :url "https://github.com/jcs-elpa/flx-rs.git")
   (flx-style :url "https://github.com/jcs-elpa/flx-style.git")
   (flycheck-dart :url "https://github.com/flycheck/flycheck-dart.git")
