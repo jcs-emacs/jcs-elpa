@@ -747,6 +747,15 @@
     "tree": "https://github.com/jcs-elpa/file-header"
   },
   {
+    "name": "fill-page",
+    "summary": "Fill buffer so you don't see empty lines at the end",
+    "version": "20240423.924",
+    "url": "https://github.com/jcs-elpa/fill-page",
+    "source": "github",
+    "commit": "c04d29a83d50c9f1dfc039c05c6508f8370514fd",
+    "tree": "https://github.com/jcs-elpa/fill-page"
+  },
+  {
     "name": "flx-rs",
     "summary": "flx in Rust using dynamic module",
     "version": "20240419.206",
