@@ -1784,10 +1784,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20240422.819",
+    "version": "20240422.2133",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "a971c34371ecf2e466e898d0e909106ab01ca035",
+    "commit": "ccb5529406fe2a1f9e54d6425ebf4931cd4c59c7",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
@@ -1802,10 +1802,10 @@
   {
     "name": "treesit-langs",
     "summary": "TODO",
-    "version": "20240422.1618",
+    "version": "20240424.2257",
     "url": "https://github.com/kiennq/treesit-langs",
     "source": "github",
-    "commit": "368fd3a9ba325be52005ec351f9814b4cc405b96",
+    "commit": "5a5ad1bf39bed54adae07954ef26939b33979451",
     "tree": "https://github.com/kiennq/treesit-langs"
   },
   {
