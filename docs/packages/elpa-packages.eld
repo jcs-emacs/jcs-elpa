@@ -198,6 +198,7 @@
   (tree-sitter-indent :url "https://codeberg.org/FelipeLema/tree-sitter-indent.el.git")
   (tree-sitter-langs :url "https://github.com/emacs-tree-sitter/tree-sitter-langs.git" :branch "release")
   (treemacs-nerd-icons :url "https://github.com/rainstormstudio/treemacs-nerd-icons.git")
+  (treesit-fold :url "https://github.com/emacs-tree-sitter/treesit-fold.git")
   (treesit-langs :url "https://github.com/kiennq/treesit-langs.git")
   (ts-docstr :url "https://github.com/emacs-vs/ts-docstr.git")
   (ts-fold :url "https://github.com/emacs-tree-sitter/ts-fold.git")
