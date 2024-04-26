@@ -1800,6 +1800,15 @@
     "tree": "https://github.com/rainstormstudio/treemacs-nerd-icons"
   },
   {
+    "name": "treesit-fold",
+    "summary": "Code folding using treesit",
+    "version": "20240426.2154",
+    "url": "https://github.com/emacs-tree-sitter/treesit-fold",
+    "source": "github",
+    "commit": "0d602a06b178f227cefd95fabb88664574d9a08e",
+    "tree": "https://github.com/emacs-tree-sitter/treesit-fold"
+  },
+  {
     "name": "treesit-langs",
     "summary": "TODO",
     "version": "20240424.2257",
