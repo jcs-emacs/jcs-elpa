@@ -1,0 +1,1 @@
+(treesit-fold :repo "emacs-tree-sitter/treesit-fold" :fetcher github)
