@@ -227,10 +227,10 @@
   {
     "name": "colorful-mode",
     "summary": "Preview any color in your buffer in real time",
-    "version": "20240423.250",
+    "version": "20240427.1638",
     "url": "https://github.com/DevelopmentCool2449/colorful-mode",
     "source": "github",
-    "commit": "8c9924685ca6503af43286f12113c1a8b866af44",
+    "commit": "40204fa9c93c91d17676f14a36b019ff7551229e",
     "tree": "https://github.com/DevelopmentCool2449/colorful-mode"
   },
   {
