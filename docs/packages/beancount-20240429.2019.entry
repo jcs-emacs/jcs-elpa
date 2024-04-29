@@ -1,7 +1,7 @@
 (beancount .
-	   [(20240303 1547)
+	   [(20240429 2019)
 	    nil "A major mode to edit Beancount input files." tar
-	    ((:commit . "3725c027026f45431d891a13810c218dc60e723e")
+	    ((:commit . "fbfdf2b6a664deba2c3ccaaf961c86a2ab562061")
 	     (:authors
 	      ("Martin Blais" . "blais@furius.ca"))
 	     (:maintainers
