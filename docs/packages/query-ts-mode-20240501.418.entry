@@ -1,11 +1,11 @@
 (query-ts-mode .
-	       [(20240501 324)
+	       [(20240501 418)
 		((emacs
 		  (29 1))
 		 (dash
 		  (2 18 0)))
 		"Tree-sitter support for tree-sitter queries" tar
-		((:commit . "1853643cdeba9988faf2d8212416d0693fcce44e")
+		((:commit . "9e6e2c314eea9072f6d002e485b4a71c05859965")
 		 (:authors
 		  ("Noah Peart" . "noah.v.peart@gmail.com"))
 		 (:maintainers
