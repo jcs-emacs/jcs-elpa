@@ -1541,10 +1541,10 @@
   {
     "name": "query-ts-mode",
     "summary": "Tree-sitter support for tree-sitter queries",
-    "version": "20240501.324",
+    "version": "20240501.418",
     "url": "https://github.com/nverno/query-ts-mode",
     "source": "github",
-    "commit": "1853643cdeba9988faf2d8212416d0693fcce44e",
+    "commit": "9e6e2c314eea9072f6d002e485b4a71c05859965",
     "tree": "https://github.com/nverno/query-ts-mode"
   },
   {
@@ -1847,10 +1847,10 @@
   {
     "name": "tspew",
     "summary": "Clean and format \"template spew\" errors from gcc and Clang",
-    "version": "20240214.20",
+    "version": "20240501.407",
     "url": "https://github.com/jefftrull/tspew",
     "source": "github",
-    "commit": "dc76aa46649c874779f3991a086a3ff57ba8f4a0",
+    "commit": "d42bfeefa0d39777988bd2c59cd491e378f95112",
     "tree": "https://github.com/jefftrull/tspew"
   },
   {
