@@ -1541,10 +1541,10 @@
   {
     "name": "query-ts-mode",
     "summary": "Tree-sitter support for tree-sitter queries",
-    "version": "20231209.345",
+    "version": "20240501.324",
     "url": "https://github.com/nverno/query-ts-mode",
     "source": "github",
-    "commit": "73c72993c90bcab76a1c47b95c6637e5d4d73a2a",
+    "commit": "1853643cdeba9988faf2d8212416d0693fcce44e",
     "tree": "https://github.com/nverno/query-ts-mode"
   },
   {
