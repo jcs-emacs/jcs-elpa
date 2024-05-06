@@ -153,6 +153,15 @@
     "tree": "http://github.com/cask/cask"
   },
   {
+    "name": "centaur-tabs",
+    "summary": "Aesthetic, modern looking customizable tabs plugin",
+    "version": "20240411.2153",
+    "url": "https://github.com/ema2159/centaur-tabs",
+    "source": "github",
+    "commit": "24d90efc72754cd1197a0c2f14d18e7c90dd2b4f",
+    "tree": "https://github.com/ema2159/centaur-tabs"
+  },
+  {
     "name": "change-case",
     "summary": "Case conversion between camelCase, PascalCase, snake_case and more",
     "version": "20221211.907",
