@@ -15,6 +15,7 @@
   (buffer-move :url "https://github.com/elp-revive/buffer-move.git")
   (bump-version :url "https://github.com/atykhonov/emacs-bump-version.git")
   (cask :url "https://github.com/cask/cask.git")
+  (centaur-tabs :url "https://github.com/ema2159/centaur-tabs.git")
   (change-case :url "https://github.com/TakesxiSximada/change-case.el.git")
   (chatgpt :url "https://github.com/emacs-openai/chatgpt.git")
   (chatgpt-shell :url "https://github.com/xenodium/chatgpt-shell.git")
