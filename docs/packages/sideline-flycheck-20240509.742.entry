@@ -1,5 +1,5 @@
 (sideline-flycheck .
-		   [(20240402 2255)
+		   [(20240509 742)
 		    ((emacs
 		      (27 1))
 		     (sideline
@@ -9,7 +9,7 @@
 		     (ht
 		      (2 4)))
 		    "Show flycheck errors with sideline" tar
-		    ((:commit . "212b8193becc012d39ccb1e68abf0e19f68764f4")
+		    ((:commit . "f809e627e433bd9a58471e4dea1ed50305eef7f2")
 		     (:authors
 		      ("Jen-Chieh" . "jcs090218@gmail.com"))
 		     (:maintainers
