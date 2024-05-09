@@ -1694,19 +1694,19 @@
   {
     "name": "sideline-flycheck",
     "summary": "Show flycheck errors with sideline",
-    "version": "20240402.2255",
+    "version": "20240509.742",
     "url": "https://github.com/emacs-sideline/sideline-flycheck",
     "source": "github",
-    "commit": "212b8193becc012d39ccb1e68abf0e19f68764f4",
+    "commit": "f809e627e433bd9a58471e4dea1ed50305eef7f2",
     "tree": "https://github.com/emacs-sideline/sideline-flycheck"
   },
   {
     "name": "sideline-flymake",
     "summary": "Show flymake errors with sideline",
-    "version": "20240309.1112",
+    "version": "20240509.742",
     "url": "https://github.com/emacs-sideline/sideline-flymake",
     "source": "github",
-    "commit": "e6a9ae69fc048f8eaacbf653e7136678dbef4597",
+    "commit": "06e84875022a5645ece8f4c2c8b56aa5f003c65d",
     "tree": "https://github.com/emacs-sideline/sideline-flymake"
   },
   {
