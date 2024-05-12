@@ -1775,10 +1775,10 @@
   {
     "name": "tree-sitter",
     "summary": "Incremental parsing system",
-    "version": "20240512.438",
+    "version": "20240512.2310",
     "url": "https://github.com/emacs-tree-sitter/elisp-tree-sitter",
     "source": "github",
-    "commit": "210983b1f040861a51bb7296e4f73791e61add60",
+    "commit": "02fe7b86d92b1aab954045146469b7893f0ab371",
     "tree": "https://github.com/emacs-tree-sitter/elisp-tree-sitter"
   },
   {
@@ -1793,10 +1793,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20240512.902",
+    "version": "20240512.2226",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "97b1c37f3cd281fe5fe82b5583601d0d1340bdf6",
+    "commit": "5c18599c371af14deda2a0ff12706ffbbfe171ca",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
