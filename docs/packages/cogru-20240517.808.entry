@@ -1,0 +1,13 @@
+(cogru .
+       [(20240517 808)
+	((emacs
+	  (26 1)))
+	"Cogru plugin for real-time collaborative editing" tar
+	((:commit . "28858557f82cbb35bb347924ce918695f0b705b0")
+	 (:authors
+	  ("Jen-Chieh" . "jcs090218@gmail.com"))
+	 (:maintainers
+	  ("Jen-Chieh" . "jcs090218@gmail.com"))
+	 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
+	 (:keywords "convenience" "cogru")
+	 (:url . "https://github.com/Cogru/cogru.el"))])

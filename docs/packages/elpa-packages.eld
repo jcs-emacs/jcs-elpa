@@ -24,6 +24,7 @@
   (codegpt :url "https://github.com/emacs-openai/codegpt.git")
   (codeium :url "https://github.com/Exafunction/codeium.el.git")
   (codemetrics :url "https://github.com/emacs-vs/codemetrics.git")
+  (cogru :url "https://github.com/Cogru/cogru.el.git")
   (colorful-mode :url "https://github.com/DevelopmentCool2449/colorful-mode.git")
   (comint-fold :url "https://github.com/jdtsmith/comint-fold.git")
   (commander :url "https://github.com/rejeep/commander.el.git")
