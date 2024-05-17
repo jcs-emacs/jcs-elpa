@@ -182,10 +182,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "ChatGPT shell + buffer insert commands",
-    "version": "20240514.1554",
+    "version": "20240517.2003",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "3c594ded569b9f9298fcc9dbd7018ea741af3de9",
+    "commit": "910b0ad5cdb633f6be64f88596219a7eb58af226",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -1829,10 +1829,10 @@
   {
     "name": "treesit-langs",
     "summary": "TODO",
-    "version": "20240424.2257",
+    "version": "20240517.1920",
     "url": "https://github.com/kiennq/treesit-langs",
     "source": "github",
-    "commit": "5a5ad1bf39bed54adae07954ef26939b33979451",
+    "commit": "c1435d386f410e154cb8247b5bc8d9d2235913d7",
     "tree": "https://github.com/kiennq/treesit-langs"
   },
   {
