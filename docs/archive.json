@@ -1136,10 +1136,10 @@
   {
     "name": "jcs-modeline",
     "summary": "A modeline for jcs-emacs",
-    "version": "20240406.420",
+    "version": "20240518.743",
     "url": "https://github.com/jcs-emacs/jcs-modeline",
     "source": "github",
-    "commit": "9803b4276d358d7004bb33b370e33b919c1b60a0",
+    "commit": "74f93a38e2b3ee8703d7f873e97056cc2664a6b4",
     "tree": "https://github.com/jcs-emacs/jcs-modeline"
   },
   {
@@ -1406,10 +1406,10 @@
   {
     "name": "nerd-icons-buffer-menu",
     "summary": "Display nerd icons in `buffer-menu'",
-    "version": "20240101.933",
+    "version": "20240518.743",
     "url": "https://github.com/jcs-elpa/nerd-icons-buffer-menu",
     "source": "github",
-    "commit": "7cd060403f97c1e6cd0c6287eefadc0743189d37",
+    "commit": "613a0fc2d42867d98ee101d0275674ebc679ab4b",
     "tree": "https://github.com/jcs-elpa/nerd-icons-buffer-menu"
   },
   {
