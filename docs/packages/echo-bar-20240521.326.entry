@@ -1,7 +1,7 @@
 (echo-bar .
-	  [(20240307 741)
+	  [(20240521 326)
 	   nil "Turn the echo area into a custom status bar" tar
-	   ((:commit . "71ef563df7f1b85cfe64854b6e40bb353a281cc5")
+	   ((:commit . "0e221754cb40406609ae5c79ac294683850638e1")
 	    (:authors
 	     ("Adam Tillou" . "qaiviq@gmail.com"))
 	    (:maintainers
