@@ -1658,10 +1658,10 @@
   {
     "name": "sideline",
     "summary": "Show information on the side",
-    "version": "20240520.2251",
+    "version": "20240521.31",
     "url": "https://github.com/emacs-sideline/sideline",
     "source": "github",
-    "commit": "b87f47b42338c3a8bb466480fdb7b5b6035c8076",
+    "commit": "31ef3c21d99785e7a066ad8c188ddcd2b478b5fe",
     "tree": "https://github.com/emacs-sideline/sideline"
   },
   {
