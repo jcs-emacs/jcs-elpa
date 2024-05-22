@@ -1820,10 +1820,10 @@
   {
     "name": "treesit-fold",
     "summary": "Code folding using treesit",
-    "version": "20240522.2306",
+    "version": "20240522.2325",
     "url": "https://github.com/emacs-tree-sitter/treesit-fold",
     "source": "github",
-    "commit": "8972eb674e4f40e8bcb356565c14f75a38773fd2",
+    "commit": "e82256dd2711382f1c3676289acc5fca7d05aecc",
     "tree": "https://github.com/emacs-tree-sitter/treesit-fold"
   },
   {
@@ -1847,10 +1847,10 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20240522.2304",
+    "version": "20240522.2319",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "51b6b8603074ddf84e7d48824c4dfcf3a9e8c2d0",
+    "commit": "d03a4f0cdbbe09f1ce6633f72367a3a2c42c50ee",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
