@@ -1,5 +1,5 @@
 (company-fuzzy .
-	       [(20240519 904)
+	       [(20240522 2348)
 		((emacs
 		  (26 1))
 		 (company
@@ -9,7 +9,7 @@
 		 (ht
 		  (2 0)))
 		"Fuzzy matching for `company-mode'" tar
-		((:commit . "ae4dbb00d91fae8f13e236093d99c7e4d0d8fa73")
+		((:commit . "f312aada75489ce3ea7432d0395e1225c9eb7461")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainers
