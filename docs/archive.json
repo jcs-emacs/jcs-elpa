@@ -1991,10 +1991,10 @@
   {
     "name": "vs-edit-mode",
     "summary": "Minor mode accomplish editing experience in Visual Studio",
-    "version": "20240520.818",
+    "version": "20240522.15",
     "url": "https://github.com/emacs-vs/vs-edit-mode",
     "source": "github",
-    "commit": "26b9c3ba77c7300e53a530cf083fe87820f4b2fa",
+    "commit": "368f50cbb8b6dc82f794da2b39960bc8638ba502",
     "tree": "https://github.com/emacs-vs/vs-edit-mode"
   },
   {
