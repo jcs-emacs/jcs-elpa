@@ -1,0 +1,4 @@
+(codeium .
+	 [(20240523 2036)
+	  nil "codeium client for emacs" tar
+	  ((:commit . "b1fc0853f8ff2333196eededc981cd871ad78469"))])
