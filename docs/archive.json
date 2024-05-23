@@ -218,10 +218,10 @@
   {
     "name": "codeium",
     "summary": "codeium client for emacs",
-    "version": "20240502.2314",
+    "version": "20240523.2036",
     "url": "https://github.com/Exafunction/codeium.el",
     "source": "github",
-    "commit": "084952888a902049968dcbc5d0d694f3573d8a9c",
+    "commit": "b1fc0853f8ff2333196eededc981cd871ad78469",
     "tree": "https://github.com/Exafunction/codeium.el"
   },
   {
@@ -497,10 +497,10 @@
   {
     "name": "dape",
     "summary": "Debug Adapter Protocol for Emacs",
-    "version": "20240523.1755",
+    "version": "20240523.2031",
     "url": "https://github.com/svaante/dape",
     "source": "github",
-    "commit": "c369cb652e1426d6f2171b319d197b03980eeeb3",
+    "commit": "6964a1ef6f3f68a57839976b16539acf88a0f6c6",
     "tree": "https://github.com/svaante/dape"
   },
   {
