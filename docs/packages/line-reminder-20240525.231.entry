@@ -1,5 +1,5 @@
 (line-reminder .
-	       [(20240101 857)
+	       [(20240525 231)
 		((emacs
 		  (25 1))
 		 (fringe-helper
@@ -9,7 +9,7 @@
 		 (ht
 		  (2 0)))
 		"Line annotation for changed and saved lines" tar
-		((:commit . "91d8f57f11f5ddbb5e94cb23877c67a8f59d4d8c")
+		((:commit . "47e36afdf8f753bb187406abf73940d267fbc89d")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainers
