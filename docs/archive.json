@@ -155,10 +155,10 @@
   {
     "name": "centaur-tabs",
     "summary": "Aesthetic, modern looking customizable tabs plugin",
-    "version": "20240521.2204",
+    "version": "20240526.2212",
     "url": "https://github.com/ema2159/centaur-tabs",
     "source": "github",
-    "commit": "3346b23545932c73c4c88a4cdb54778ecff95443",
+    "commit": "9e5e94561b7c7f9594a7ac8a75212504e846b76f",
     "tree": "https://github.com/ema2159/centaur-tabs"
   },
   {
@@ -1910,10 +1910,10 @@
   {
     "name": "undo-tree-vf",
     "summary": "Visualizer follow mode for undo-tree",
-    "version": "20240526.839",
+    "version": "20240526.2251",
     "url": "https://github.com/jcs-elpa/undo-tree-vf",
     "source": "github",
-    "commit": "28e910441a358cebad649869ad438f151be79915",
+    "commit": "07c07c704403c6fe21b634368ae8637f018a9d73",
     "tree": "https://github.com/jcs-elpa/undo-tree-vf"
   },
   {
