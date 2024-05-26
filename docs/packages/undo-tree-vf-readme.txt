@@ -1,2 +1,2 @@
 
-visualizer follow mode for undo-tree.
+Visualizer follow mode for undo-tree.
