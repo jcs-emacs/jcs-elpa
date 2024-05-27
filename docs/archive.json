@@ -542,10 +542,10 @@
   {
     "name": "doom-dashboard",
     "summary": "Doom dashboard style for emacs-dashboard",
-    "version": "20240324.19",
+    "version": "20240527.1344",
     "url": "https://github.com/emacs-dashboard/doom-dashboard",
     "source": "github",
-    "commit": "aef5c5783c3e80ab6c42c8cccc921efc22e23e08",
+    "commit": "397b77419a618da9ca45191570949f5fbcc869c8",
     "tree": "https://github.com/emacs-dashboard/doom-dashboard"
   },
   {
