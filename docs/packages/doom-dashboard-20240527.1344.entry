@@ -1,5 +1,5 @@
 (doom-dashboard .
-		[(20240324 19)
+		[(20240527 1344)
 		 ((emacs
 		   (26 1))
 		  (dashboard
@@ -7,7 +7,7 @@
 		  (nerd-icons
 		   (0 1 0)))
 		 "Doom dashboard style for emacs-dashboard" tar
-		 ((:commit . "aef5c5783c3e80ab6c42c8cccc921efc22e23e08")
+		 ((:commit . "397b77419a618da9ca45191570949f5fbcc869c8")
 		  (:authors
 		   ("Elijah G." . "eg642616@gmail.com"))
 		  (:maintainers
