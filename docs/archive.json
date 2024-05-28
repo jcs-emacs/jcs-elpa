@@ -659,10 +659,10 @@
   {
     "name": "elenv",
     "summary": "Environment variable management",
-    "version": "20240328.1810",
+    "version": "20240528.2241",
     "url": "https://github.com/jcs-elpa/elenv",
     "source": "github",
-    "commit": "2577f6ea22b27c0959d8d2dec6fa159b5b76b9f3",
+    "commit": "779a3ca4f5de016c9d97bf5e30aed93858b7f130",
     "tree": "https://github.com/jcs-elpa/elenv"
   },
   {
