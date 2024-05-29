@@ -1,7 +1,7 @@
 (vs-light-theme .
-		[(20240521 2340)
+		[(20240529 443)
 		 ((emacs
 		   (24 1)))
 		 "Visual Studio IDE light theme" tar
-		 ((:commit . "bc0250f261c066f576fa13112dcfbb10a4e5c6ef")
+		 ((:commit . "eec7bf744ccdd6d0637b6fbd11fe28d066d6cf2b")
 		  (:url . "https://github.com/emacs-vs/vs-light-theme"))])
