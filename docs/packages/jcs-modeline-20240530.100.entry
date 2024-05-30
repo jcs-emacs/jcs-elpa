@@ -1,5 +1,5 @@
 (jcs-modeline .
-	      [(20240529 2300)
+	      [(20240530 100)
 	       ((emacs
 		 (28 1))
 		(moody
@@ -13,7 +13,7 @@
 		(reveal-in-folder
 		 (0 1 2)))
 	       "A modeline for jcs-emacs" tar
-	       ((:commit . "f42b594b1a74083255c8d8ed3081f89fea4e8116")
+	       ((:commit . "b8ded2e11fe76a9b46b46400a311547e1c10fd0f")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainers
