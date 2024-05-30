@@ -1703,10 +1703,10 @@
   {
     "name": "sideline-flycheck",
     "summary": "Show flycheck errors with sideline",
-    "version": "20240509.742",
+    "version": "20240530.2209",
     "url": "https://github.com/emacs-sideline/sideline-flycheck",
     "source": "github",
-    "commit": "f809e627e433bd9a58471e4dea1ed50305eef7f2",
+    "commit": "11f34abcd34b55c021453e332e58282654b35a7c",
     "tree": "https://github.com/emacs-sideline/sideline-flycheck"
   },
   {
