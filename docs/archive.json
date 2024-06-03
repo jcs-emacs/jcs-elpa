@@ -74,10 +74,10 @@
   {
     "name": "beancount",
     "summary": "A major mode to edit Beancount input files.",
-    "version": "20240522.917",
+    "version": "20240603.1835",
     "url": "https://github.com/beancount/beancount-mode",
     "source": "github",
-    "commit": "60cf33195900bd21a0de28bcfc879917dae2f61a",
+    "commit": "bdd71c570df3466560260072a863e215f7d5ba1e",
     "tree": "https://github.com/beancount/beancount-mode"
   },
   {
@@ -1829,10 +1829,10 @@
   {
     "name": "treesit-langs",
     "summary": "TODO",
-    "version": "20240531.1033",
+    "version": "20240603.1830",
     "url": "https://github.com/kiennq/treesit-langs",
     "source": "github",
-    "commit": "ba6de9e20d11311a041159a34912959201e1670b",
+    "commit": "f84a0a4269b19f5075dae64fc4f47a95d46cb52a",
     "tree": "https://github.com/kiennq/treesit-langs"
   },
   {
