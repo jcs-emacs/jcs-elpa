@@ -218,10 +218,10 @@
   {
     "name": "codeium",
     "summary": "codeium client for emacs",
-    "version": "20240523.2036",
+    "version": "20240605.47",
     "url": "https://github.com/Exafunction/codeium.el",
     "source": "github",
-    "commit": "b1fc0853f8ff2333196eededc981cd871ad78469",
+    "commit": "335bad4baaf3ad7943c72a5966ab4bdcddc6ca74",
     "tree": "https://github.com/Exafunction/codeium.el"
   },
   {
@@ -236,10 +236,10 @@
   {
     "name": "cogru",
     "summary": "Cogru plugin for real-time collaborative editing",
-    "version": "20240604.2342",
+    "version": "20240605.110",
     "url": "https://github.com/Cogru/cogru.el",
     "source": "github",
-    "commit": "ed0bfdc1abf65bba78d4fccc172f7a0598ace233",
+    "commit": "9db268aedf0225b96af5748d9e9da13b033e6858",
     "tree": "https://github.com/Cogru/cogru.el"
   },
   {
