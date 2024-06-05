@@ -1,5 +1,5 @@
 (cogru .
-       [(20240604 2228)
+       [(20240604 2342)
 	((emacs
 	  (26 1))
 	 (msgu
@@ -11,7 +11,7 @@
 	 (log4e
 	  (0 4 1)))
 	"Cogru plugin for real-time collaborative editing" tar
-	((:commit . "81d58faeded003d2cc8ab914626aaa26b3ef0068")
+	((:commit . "ed0bfdc1abf65bba78d4fccc172f7a0598ace233")
 	 (:authors
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))
 	 (:maintainers
