@@ -236,10 +236,10 @@
   {
     "name": "cogru",
     "summary": "Cogru plugin for real-time collaborative editing",
-    "version": "20240604.2228",
+    "version": "20240604.2342",
     "url": "https://github.com/Cogru/cogru.el",
     "source": "github",
-    "commit": "81d58faeded003d2cc8ab914626aaa26b3ef0068",
+    "commit": "ed0bfdc1abf65bba78d4fccc172f7a0598ace233",
     "tree": "https://github.com/Cogru/cogru.el"
   },
   {
@@ -1829,10 +1829,10 @@
   {
     "name": "treesit-langs",
     "summary": "TODO",
-    "version": "20240604.1755",
+    "version": "20240605.6",
     "url": "https://github.com/kiennq/treesit-langs",
     "source": "github",
-    "commit": "92bc14338a8485375921b9005a41cc050a2dbe1e",
+    "commit": "a7e0943ee3007b867ae3024be1ffca6826cdecbd",
     "tree": "https://github.com/kiennq/treesit-langs"
   },
   {
