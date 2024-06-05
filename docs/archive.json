@@ -1370,10 +1370,10 @@
   {
     "name": "msgu",
     "summary": "Utility functions help output the messages",
-    "version": "20240605.836",
+    "version": "20240605.2301",
     "url": "https://github.com/jcs-elpa/msgu",
     "source": "github",
-    "commit": "ca223c9b7fbcc82ff510d2f1e153107576f3d31f",
+    "commit": "f99ca37751dd272573a45d47b4433fcaedd56c03",
     "tree": "https://github.com/jcs-elpa/msgu"
   },
   {
