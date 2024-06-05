@@ -1,9 +1,9 @@
 (msgu .
-      [(20240605 836)
+      [(20240605 2301)
        ((emacs
 	 (26 1)))
        "Utility functions help output the messages" tar
-       ((:commit . "ca223c9b7fbcc82ff510d2f1e153107576f3d31f")
+       ((:commit . "f99ca37751dd272573a45d47b4433fcaedd56c03")
 	(:authors
 	 ("Jen-Chieh" . "jcs090218@gmail.com"))
 	(:maintainers
