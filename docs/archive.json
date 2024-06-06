@@ -497,10 +497,10 @@
   {
     "name": "dape",
     "summary": "Debug Adapter Protocol for Emacs",
-    "version": "20240603.1628",
+    "version": "20240606.924",
     "url": "https://github.com/svaante/dape",
     "source": "github",
-    "commit": "bb688ed8218e538e11d5b869bf32682511398be1",
+    "commit": "378b685c9f2be99d453d359208b022148fe97e48",
     "tree": "https://github.com/svaante/dape"
   },
   {
@@ -659,10 +659,10 @@
   {
     "name": "elenv",
     "summary": "Environment variable management",
-    "version": "20240528.2241",
+    "version": "20240606.951",
     "url": "https://github.com/jcs-elpa/elenv",
     "source": "github",
-    "commit": "779a3ca4f5de016c9d97bf5e30aed93858b7f130",
+    "commit": "813b9f92c03309d4f122ab50b4e4e05fce8221bb",
     "tree": "https://github.com/jcs-elpa/elenv"
   },
   {
