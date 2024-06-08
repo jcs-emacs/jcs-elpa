@@ -236,10 +236,10 @@
   {
     "name": "cogru",
     "summary": "Cogru plugin for real-time collaborative editing",
-    "version": "20240607.655",
+    "version": "20240608.712",
     "url": "https://github.com/Cogru/cogru.el",
     "source": "github",
-    "commit": "1153c5be691dd9a597c9a819957d8b7602afa1e7",
+    "commit": "3e90b5df8fb729448a071eca54d2df0cbfd2e4b7",
     "tree": "https://github.com/Cogru/cogru.el"
   },
   {
@@ -569,10 +569,10 @@
   {
     "name": "easky",
     "summary": "Control the Eask command-line interface",
-    "version": "20240420.113",
+    "version": "20240608.744",
     "url": "https://github.com/emacs-eask/easky",
     "source": "github",
-    "commit": "bde4a0af084f356b993b5fd5b727c05c54e1d132",
+    "commit": "d75ec4865742a4939bd685360f8ec5b076bdcf77",
     "tree": "https://github.com/emacs-eask/easky"
   },
   {
