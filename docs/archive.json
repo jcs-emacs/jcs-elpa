@@ -236,10 +236,10 @@
   {
     "name": "cogru",
     "summary": "Cogru plugin for real-time collaborative editing",
-    "version": "20240609.740",
+    "version": "20240609.822",
     "url": "https://github.com/Cogru/cogru.el",
     "source": "github",
-    "commit": "0af75d7c839b5f83664d63528ee8cd82ae0950a3",
+    "commit": "df86a2b9fbaed6723ede2a3729bf165a8d15236e",
     "tree": "https://github.com/Cogru/cogru.el"
   },
   {
@@ -1802,10 +1802,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20240602.731",
+    "version": "20240609.742",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "a7b51c99c44194a853be138ffde1a73360966bae",
+    "commit": "a94cfcf64ea15cc6a6c330bb145d2810f5f771a1",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
