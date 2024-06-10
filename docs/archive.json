@@ -236,10 +236,10 @@
   {
     "name": "cogru",
     "summary": "Cogru plugin for real-time collaborative editing",
-    "version": "20240610.537",
+    "version": "20240610.647",
     "url": "https://github.com/Cogru/cogru.el",
     "source": "github",
-    "commit": "3daf697b66f59f9ef4f26acad6fc15e6970f2313",
+    "commit": "f871f1aef75385e27e3d69383e94bd7f958257a8",
     "tree": "https://github.com/Cogru/cogru.el"
   },
   {
@@ -1991,10 +1991,10 @@
   {
     "name": "vs-edit-mode",
     "summary": "Minor mode accomplish editing experience in Visual Studio",
-    "version": "20240609.2224",
+    "version": "20240610.659",
     "url": "https://github.com/emacs-vs/vs-edit-mode",
     "source": "github",
-    "commit": "f26a973969bb7ed97caf02740391f7b4dc568588",
+    "commit": "7666ace5ec7bccd98b69aa2e8e03ce51e238ba19",
     "tree": "https://github.com/emacs-vs/vs-edit-mode"
   },
   {
