@@ -540,6 +540,15 @@
     "tree": "https://github.com/emacs-openai/deepl"
   },
   {
+    "name": "diminish-buffer",
+    "summary": "Diminish (hide) buffers from buffer-menu",
+    "version": "20240611.2338",
+    "url": "https://github.com/jcs-elpa/diminish-buffer",
+    "source": "github",
+    "commit": "79936ff02ed7ec9a5889a46b7db83a450975e806",
+    "tree": "https://github.com/jcs-elpa/diminish-buffer"
+  },
+  {
     "name": "doom-dashboard",
     "summary": "Doom dashboard style for emacs-dashboard",
     "version": "20240527.1344",
