@@ -58,6 +58,7 @@
   (dashboard-bm :url "https://github.com/emacs-dashboard/dashboard-bm.git")
   (dashboard-ls :url "https://github.com/emacs-dashboard/dashboard-ls.git")
   (deepl :url "https://github.com/emacs-openai/deepl.git")
+  (diminish-buffer :url "https://github.com/jcs-elpa/diminish-buffer.git")
   (doom-dashboard :url "https://github.com/emacs-dashboard/doom-dashboard.git")
   (eask :url "https://github.com/emacs-eask/eask.git")
   (eask-mode :url "https://github.com/emacs-eask/eask-mode.git")
