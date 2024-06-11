@@ -236,10 +236,10 @@
   {
     "name": "cogru",
     "summary": "Cogru plugin for real-time collaborative editing",
-    "version": "20240611.47",
+    "version": "20240611.1116",
     "url": "https://github.com/Cogru/cogru.el",
     "source": "github",
-    "commit": "0a80ea8035729152b8bacf6ffcad7ddfb9c6c57d",
+    "commit": "70d5f92a265359df121e7e795eb6fd3533805e47",
     "tree": "https://github.com/Cogru/cogru.el"
   },
   {
