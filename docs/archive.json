@@ -182,10 +182,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "ChatGPT shell + buffer insert commands",
-    "version": "20240611.1755",
+    "version": "20240611.2019",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "6493a482e57e63cf301eac8997394a01d39f566e",
+    "commit": "e0ed6018a6a91168cd4fea26b4aa9ab7b118285e",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -1991,10 +1991,10 @@
   {
     "name": "vs-edit-mode",
     "summary": "Minor mode accomplish editing experience in Visual Studio",
-    "version": "20240610.659",
+    "version": "20240611.2058",
     "url": "https://github.com/emacs-vs/vs-edit-mode",
     "source": "github",
-    "commit": "7666ace5ec7bccd98b69aa2e8e03ce51e238ba19",
+    "commit": "25bc31d61a40f970e1d33d454e64ddc4baa71028",
     "tree": "https://github.com/emacs-vs/vs-edit-mode"
   },
   {
