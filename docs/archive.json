@@ -542,10 +542,10 @@
   {
     "name": "diminish-buffer",
     "summary": "Diminish (hide) buffers from buffer-menu",
-    "version": "20240612.44",
+    "version": "20240612.52",
     "url": "https://github.com/jcs-elpa/diminish-buffer",
     "source": "github",
-    "commit": "8ea64a703bef23f3266b766a74b087ffffb31107",
+    "commit": "ba65fec96983ae471edbeee2b38c2107bee94f31",
     "tree": "https://github.com/jcs-elpa/diminish-buffer"
   },
   {
