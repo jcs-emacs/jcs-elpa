@@ -1,9 +1,9 @@
 (diminish-buffer .
-		 [(20240612 44)
+		 [(20240612 52)
 		  ((emacs
 		    (24 4)))
 		  "Diminish (hide) buffers from buffer-menu" tar
-		  ((:commit . "8ea64a703bef23f3266b766a74b087ffffb31107")
+		  ((:commit . "ba65fec96983ae471edbeee2b38c2107bee94f31")
 		   (:authors
 		    ("Jen-Chieh" . "jcs090218@gmail.com"))
 		   (:maintainers
