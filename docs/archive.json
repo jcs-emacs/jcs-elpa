@@ -155,10 +155,10 @@
   {
     "name": "centaur-tabs",
     "summary": "Aesthetic, modern looking customizable tabs plugin",
-    "version": "20240613.936",
+    "version": "20240613.2218",
     "url": "https://github.com/ema2159/centaur-tabs",
     "source": "github",
-    "commit": "1bf223e6a162cc7a33da397146d31bb82bba8d7d",
+    "commit": "a1dffa3da14fca819f2dab891d07431344108f91",
     "tree": "https://github.com/ema2159/centaur-tabs"
   },
   {
@@ -236,10 +236,10 @@
   {
     "name": "cogru",
     "summary": "Cogru plugin for real-time collaborative editing",
-    "version": "20240613.953",
+    "version": "20240613.2209",
     "url": "https://github.com/Cogru/cogru.el",
     "source": "github",
-    "commit": "afe7ae9ee3d03a5623011af9470637d9c3a86276",
+    "commit": "7c3199d94eba3dd162a6d7e67b2ccdf135eebbe0",
     "tree": "https://github.com/Cogru/cogru.el"
   },
   {
