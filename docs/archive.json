@@ -155,10 +155,10 @@
   {
     "name": "centaur-tabs",
     "summary": "Aesthetic, modern looking customizable tabs plugin",
-    "version": "20240613.2218",
+    "version": "20240615.2337",
     "url": "https://github.com/ema2159/centaur-tabs",
     "source": "github",
-    "commit": "a1dffa3da14fca819f2dab891d07431344108f91",
+    "commit": "6cf05e5c275662b1db0f96115c6b1a39baa1d67b",
     "tree": "https://github.com/ema2159/centaur-tabs"
   },
   {
@@ -1829,10 +1829,10 @@
   {
     "name": "treesit-fold",
     "summary": "Code folding using treesit",
-    "version": "20240606.2238",
+    "version": "20240615.2327",
     "url": "https://github.com/emacs-tree-sitter/treesit-fold",
     "source": "github",
-    "commit": "d50f5dd2f8d3b23be5f39e3084b30b5d2cc7d7a9",
+    "commit": "9f82f1e632bb586f5990a43655198cd066572f78",
     "tree": "https://github.com/emacs-tree-sitter/treesit-fold"
   },
   {
