@@ -371,10 +371,10 @@
   {
     "name": "company-fuzzy",
     "summary": "Fuzzy matching for `company-mode'",
-    "version": "20240615.2318",
+    "version": "20240616.549",
     "url": "https://github.com/jcs-elpa/company-fuzzy",
     "source": "github",
-    "commit": "4c5323baaff29c8cead0c7f47fef6fbf7ef36ee9",
+    "commit": "204f7d63a5388637a3767c0232173c477ce96df3",
     "tree": "https://github.com/jcs-elpa/company-fuzzy"
   },
   {
@@ -1226,10 +1226,10 @@
   {
     "name": "line-reminder",
     "summary": "Line annotation for changed and saved lines",
-    "version": "20240615.2318",
+    "version": "20240616.548",
     "url": "https://github.com/emacs-vs/line-reminder",
     "source": "github",
-    "commit": "71658899c54090a37d961709dfc74f305242c83c",
+    "commit": "cfee8d91c4a5dc05e6b0bb22fb2a1e275d0aaf8a",
     "tree": "https://github.com/emacs-vs/line-reminder"
   },
   {
