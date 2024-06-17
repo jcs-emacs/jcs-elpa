@@ -1,13 +1,15 @@
 (auto-scroll-bar .
-		 [(20240101 934)
+		 [(20240617 102)
 		  ((emacs
-		    (27 1)))
+		    (27 1))
+		   (elenv
+		    (0 1 0)))
 		  "Automatically show/hide scroll-bars as needed" tar
-		  ((:commit . "34b9780d3b02367893ce7eb3795e4cfc1dc38a6e")
+		  ((:commit . "66a2b02d5ba994122109e1782a9b98b47bad998a")
 		   (:authors
 		    ("Jen-Chieh" . "jcs090218@gmail.com"))
 		   (:maintainers
 		    ("Jen-Chieh" . "jcs090218@gmail.com"))
 		   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
 		   (:keywords "convenience" "scrollbar")
-		   (:url . "https://github.com/jcs-elpa/auto-scroll-bar"))])
+		   (:url . "https://github.com/emacs-vs/auto-scroll-bar"))])
