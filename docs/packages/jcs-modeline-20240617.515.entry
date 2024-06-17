@@ -1,7 +1,7 @@
 (jcs-modeline .
-	      [(20240617 35)
+	      [(20240617 515)
 	       ((emacs
-		 (28 1))
+		 (29 1))
 		(moody
 		 (0 7 1))
 		(minions
@@ -13,7 +13,7 @@
 		(reveal-in-folder
 		 (0 1 2)))
 	       "A modeline for jcs-emacs" tar
-	       ((:commit . "faa775f46473f31ed81e0c6bc262c28a5bd1b6e9")
+	       ((:commit . "4fa8190ec72a0ed5dcfa3b8e92d1ecd3e35e16c2")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainers
