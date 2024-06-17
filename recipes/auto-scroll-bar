@@ -1,1 +1,1 @@
-(auto-scroll-bar :repo "jcs-elpa/auto-scroll-bar" :fetcher github)
+(auto-scroll-bar :repo "emacs-vs/auto-scroll-bar" :fetcher github)
