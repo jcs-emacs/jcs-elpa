@@ -1,5 +1,5 @@
 (cogru .
-       [(20240616 2315)
+       [(20240617 1147)
 	((emacs
 	  (26 1))
 	 (elenv
@@ -19,7 +19,7 @@
 	 (show-eol
 	  (0 0 5)))
 	"Cogru plugin for real-time collaborative editing" tar
-	((:commit . "e137b427a3386f7c2fdfcd973315d1804d61958f")
+	((:commit . "d381cabf8dd5bf4929b762826f21e56f91e5d9ea")
 	 (:authors
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))
 	 (:maintainers
