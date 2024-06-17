@@ -155,10 +155,10 @@
   {
     "name": "centaur-tabs",
     "summary": "Aesthetic, modern looking customizable tabs plugin",
-    "version": "20240615.2337",
+    "version": "20240617.1917",
     "url": "https://github.com/ema2159/centaur-tabs",
     "source": "github",
-    "commit": "6cf05e5c275662b1db0f96115c6b1a39baa1d67b",
+    "commit": "951271e18b2c415f3dc092eba9f5c2ed8b4651b8",
     "tree": "https://github.com/ema2159/centaur-tabs"
   },
   {
@@ -497,10 +497,10 @@
   {
     "name": "dape",
     "summary": "Debug Adapter Protocol for Emacs",
-    "version": "20240617.1804",
+    "version": "20240617.2003",
     "url": "https://github.com/svaante/dape",
     "source": "github",
-    "commit": "5ff199325bf70db4aec0f612a5375494378a1dda",
+    "commit": "5aa2a3bd7585893498b95a726ebca9b83a2bd74f",
     "tree": "https://github.com/svaante/dape"
   },
   {
