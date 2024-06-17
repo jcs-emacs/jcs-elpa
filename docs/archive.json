@@ -47,11 +47,11 @@
   {
     "name": "auto-scroll-bar",
     "summary": "Automatically show/hide scroll-bars as needed",
-    "version": "20240101.934",
-    "url": "https://github.com/jcs-elpa/auto-scroll-bar",
+    "version": "20240617.102",
+    "url": "https://github.com/emacs-vs/auto-scroll-bar",
     "source": "github",
-    "commit": "34b9780d3b02367893ce7eb3795e4cfc1dc38a6e",
-    "tree": "https://github.com/jcs-elpa/auto-scroll-bar"
+    "commit": "66a2b02d5ba994122109e1782a9b98b47bad998a",
+    "tree": "https://github.com/emacs-vs/auto-scroll-bar"
   },
   {
     "name": "aws",
