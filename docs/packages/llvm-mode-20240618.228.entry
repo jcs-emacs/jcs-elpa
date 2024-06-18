@@ -1,0 +1,4 @@
+(llvm-mode .
+	   [(20240618 228)
+	    nil "Major mode for the LLVM assembler language." tar
+	    ((:commit . "e4b130fa00a01cad73709b782e8044e5a9535b85"))])
