@@ -1,5 +1,5 @@
 (centaur-tabs .
-	      [(20240618 2112)
+	      [(20240619 305)
 	       ((emacs
 		 (26 1))
 		(powerline
@@ -7,7 +7,7 @@
 		(cl-lib
 		 (0 5)))
 	       "Aesthetic, modern looking customizable tabs plugin" tar
-	       ((:commit . "01e946094f17b069abfb9a09f6d9c84b11d08e03")
+	       ((:commit . "e7d322a2ea4745bdb81323d912bad6240f79ce62")
 		(:authors
 		 ("Emmanuel Bustos" . "ema2159@gmail.com"))
 		(:maintainers
