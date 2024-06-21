@@ -1,5 +1,5 @@
 (ts-fold .
-	 [(20240620 428)
+	 [(20240621 18)
 	  ((emacs
 	    (26 1))
 	   (tree-sitter
@@ -9,7 +9,7 @@
 	   (fringe-helper
 	    (1 0 1)))
 	  "Code folding using tree-sitter" tar
-	  ((:commit . "92b2d2ee7befb743568625f8bc7e09c8517741a4")
+	  ((:commit . "6ce584d1ac39f1e2bc2f66f815964e3047bd6f16")
 	   (:authors
 	    ("Junyi Hou" . "junyi.yi.hou@gmail.com")
 	    ("Jen-Chieh" . "jcs090218@gmail.com"))
