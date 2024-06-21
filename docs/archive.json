@@ -1919,10 +1919,10 @@
   {
     "name": "undo-tree-vf",
     "summary": "Visualizer follow mode for undo-tree",
-    "version": "20240621.510",
+    "version": "20240621.635",
     "url": "https://github.com/jcs-elpa/undo-tree-vf",
     "source": "github",
-    "commit": "b1e69516d5ba292340014e30c77604beb79e69a9",
+    "commit": "0afac7aa36d8b5924c88b332fd8a840fb6878b1c",
     "tree": "https://github.com/jcs-elpa/undo-tree-vf"
   },
   {
