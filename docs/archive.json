@@ -47,10 +47,10 @@
   {
     "name": "auto-scroll-bar",
     "summary": "Automatically show/hide scroll-bars as needed",
-    "version": "20240617.506",
+    "version": "20240621.327",
     "url": "https://github.com/emacs-vs/auto-scroll-bar",
     "source": "github",
-    "commit": "d1a9169cf7d731e7ea382738699977d911389b65",
+    "commit": "1e0423749732b5bce22e68437ce125d1dadaf857",
     "tree": "https://github.com/emacs-vs/auto-scroll-bar"
   },
   {
