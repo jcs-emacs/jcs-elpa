@@ -290,10 +290,10 @@
   {
     "name": "company-box",
     "summary": "Company front-end with icons",
-    "version": "20240617.924",
+    "version": "20240621.2210",
     "url": "https://github.com/elp-revive/company-box",
     "source": "github",
-    "commit": "c9873224080a6a9ba32cfbbcfab9a01ddde97ed2",
+    "commit": "f4d1e8c80499b865927dd2852e60f96d8dd9ce51",
     "tree": "https://github.com/elp-revive/company-box"
   },
   {
@@ -992,10 +992,10 @@
   {
     "name": "guard-lf",
     "summary": "Guard large files",
-    "version": "20240620.2229",
+    "version": "20240621.2137",
     "url": "https://github.com/jcs-elpa/guard-lf",
     "source": "github",
-    "commit": "86bd3041dc678d235d6abf599dad179df62b7380",
+    "commit": "2df42fa3c3be7f249fe8fcad051b8d64b73b211f",
     "tree": "https://github.com/jcs-elpa/guard-lf"
   },
   {
