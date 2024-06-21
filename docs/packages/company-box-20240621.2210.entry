@@ -1,5 +1,5 @@
 (company-box .
-	     [(20240617 924)
+	     [(20240621 2210)
 	      ((emacs
 		(27 1))
 	       (dash
@@ -11,7 +11,7 @@
 	       (msgu
 		(0 1 0)))
 	      "Company front-end with icons" tar
-	      ((:commit . "c9873224080a6a9ba32cfbbcfab9a01ddde97ed2")
+	      ((:commit . "f4d1e8c80499b865927dd2852e60f96d8dd9ce51")
 	       (:authors
 		("Sebastien Chapuis" . "sebastien@chapu.is"))
 	       (:maintainers
