@@ -1,5 +1,5 @@
 (undo-tree-vf .
-	      [(20240621 635)
+	      [(20240622 1046)
 	       ((emacs
 		 (26 1))
 		(undo-tree
@@ -7,7 +7,7 @@
 		(fill-page
 		 (0 3 7)))
 	       "Visualizer follow mode for undo-tree" tar
-	       ((:commit . "0afac7aa36d8b5924c88b332fd8a840fb6878b1c")
+	       ((:commit . "d7305ad5e42050d3f848aefff59e275289663356")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainers
