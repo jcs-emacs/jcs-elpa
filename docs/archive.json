@@ -1127,10 +1127,10 @@
   {
     "name": "jcs-echobar",
     "summary": "An echo-bar for jcs-emacs",
-    "version": "20240621.2326",
+    "version": "20240622.2331",
     "url": "https://github.com/jcs-emacs/jcs-echobar",
     "source": "github",
-    "commit": "53b81b00e4e482d43eb004d8921d9445a46b931b",
+    "commit": "b1a062c0b4806ba6461c4065125248f77d61978f",
     "tree": "https://github.com/jcs-emacs/jcs-echobar"
   },
   {
