@@ -1,9 +1,9 @@
 (treesit-fold .
-	      [(20240623 549)
+	      [(20240623 701)
 	       ((emacs
 		 (29 1)))
 	       "Code folding using treesit" tar
-	       ((:commit . "545ec26be1d1a1fe1f48413f404408e9826db066")
+	       ((:commit . "675e5e732cc0fe5a0866a01c1afafa1445bbde0c")
 		(:authors
 		 ("Junyi Hou" . "junyi.yi.hou@gmail.com")
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
