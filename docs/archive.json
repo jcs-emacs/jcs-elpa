@@ -1127,10 +1127,10 @@
   {
     "name": "jcs-echobar",
     "summary": "An echo-bar for jcs-emacs",
-    "version": "20240622.2331",
+    "version": "20240623.744",
     "url": "https://github.com/jcs-emacs/jcs-echobar",
     "source": "github",
-    "commit": "b1a062c0b4806ba6461c4065125248f77d61978f",
+    "commit": "6f76e9e37a47cdfc902307f04613f1f0b772794f",
     "tree": "https://github.com/jcs-emacs/jcs-echobar"
   },
   {
@@ -1928,10 +1928,10 @@
   {
     "name": "undo-tree-vf",
     "summary": "Visualizer follow mode for undo-tree",
-    "version": "20240622.1046",
+    "version": "20240623.718",
     "url": "https://github.com/jcs-elpa/undo-tree-vf",
     "source": "github",
-    "commit": "d7305ad5e42050d3f848aefff59e275289663356",
+    "commit": "5131cf91c78404abb368b8cbbb61626bd29e3ddc",
     "tree": "https://github.com/jcs-elpa/undo-tree-vf"
   },
   {
