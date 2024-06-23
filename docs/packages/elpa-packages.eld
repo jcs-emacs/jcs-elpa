@@ -179,6 +179,7 @@
   (recentf-excl :url "https://github.com/jcs-elpa/recentf-excl.git")
   (region-occurrences-highlighter :url "https://github.com/alvarogonzalezsotillo/region-occurrences-highlighter.git")
   (repos-window :url "https://github.com/jcs-elpa/repos-window.git")
+  (responsive-window :url "https://github.com/jcs-elpa/responsive-window.git")
   (resurrect :url "https://github.com/fbkante/resurrect.git")
   (reveal-in-folder :url "https://github.com/jcs-elpa/reveal-in-folder.git")
   (selection-highlight-mode :url "https://github.com/balloneij/selection-highlight-mode.git")
