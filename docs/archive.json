@@ -1127,10 +1127,10 @@
   {
     "name": "jcs-echobar",
     "summary": "An echo-bar for jcs-emacs",
-    "version": "20240623.813",
+    "version": "20240623.832",
     "url": "https://github.com/jcs-emacs/jcs-echobar",
     "source": "github",
-    "commit": "b740b897347306e8073f8f08904a226d6d081a36",
+    "commit": "3d85b1bf579e47d963b333bb6dd0ab3751710ee6",
     "tree": "https://github.com/jcs-emacs/jcs-echobar"
   },
   {
@@ -2009,10 +2009,10 @@
   {
     "name": "vs-edit-mode",
     "summary": "Minor mode accomplish editing experience in Visual Studio",
-    "version": "20240611.2058",
+    "version": "20240623.834",
     "url": "https://github.com/emacs-vs/vs-edit-mode",
     "source": "github",
-    "commit": "25bc31d61a40f970e1d33d454e64ddc4baa71028",
+    "commit": "bce8ef5c9f182bb19ffa01dcdc98835b86ad487e",
     "tree": "https://github.com/emacs-vs/vs-edit-mode"
   },
   {
