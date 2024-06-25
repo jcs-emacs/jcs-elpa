@@ -1530,6 +1530,15 @@
     "tree": "https://github.com/ncaq/point-undo"
   },
   {
+    "name": "powerline",
+    "summary": "Rewrite of Powerline",
+    "version": "20221110.1956",
+    "url": "http://github.com/milkypostman/powerline/",
+    "source": "github",
+    "commit": "c35c35bdf5ce2d992882c1f06f0f078058870d4a",
+    "tree": "http://github.com/milkypostman/powerline/"
+  },
+  {
     "name": "preview-it",
     "summary": "Preview anything at point",
     "version": "20240101.933",
@@ -1613,10 +1622,10 @@
   {
     "name": "region-occurrences-highlighter",
     "summary": "Mark occurrences of current region (selection)",
-    "version": "20240417.2146",
+    "version": "20240625.1002",
     "url": "https://github.com/alvarogonzalezsotillo/region-occurrences-highlighter",
     "source": "github",
-    "commit": "a1ade7985656faf00f8a6afda885e8bdf959d133",
+    "commit": "6857e76dd6d4791870ed849928032a22d2b2ea9d",
     "tree": "https://github.com/alvarogonzalezsotillo/region-occurrences-highlighter"
   },
   {
