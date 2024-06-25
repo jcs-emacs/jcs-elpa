@@ -168,6 +168,7 @@
   (pkg-dm :url "https://github.com/jcs-elpa/pkg-dm.git")
   (point-history :url "https://github.com/blue0513/point-history.git")
   (point-undo :url "https://github.com/ncaq/point-undo.git")
+  (powerline :url "https://github.com/milkypostman/powerline.git")
   (preview-it :url "https://github.com/jcs-elpa/preview-it.git")
   (prt :url "https://github.com/jcs-elpa/prt.git")
   (qsharp-mode :url "https://github.com/forked-from-1kasper/emacs-qsharp-mode.git")
