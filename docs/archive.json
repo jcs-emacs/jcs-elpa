@@ -236,10 +236,10 @@
   {
     "name": "cogru",
     "summary": "Cogru plugin for real-time collaborative editing",
-    "version": "20240623.842",
+    "version": "20240625.729",
     "url": "https://github.com/Cogru/cogru.el",
     "source": "github",
-    "commit": "c6d8fb39b2087fb8e88905f90f3dba6192bee79e",
+    "commit": "95cd22fb1adf532cb381a8c1f8f8ec715273efb6",
     "tree": "https://github.com/Cogru/cogru.el"
   },
   {
@@ -290,10 +290,10 @@
   {
     "name": "company-box",
     "summary": "Company front-end with icons",
-    "version": "20240621.2210",
+    "version": "20240625.756",
     "url": "https://github.com/elp-revive/company-box",
     "source": "github",
-    "commit": "f4d1e8c80499b865927dd2852e60f96d8dd9ce51",
+    "commit": "d0423df36c5da2c4fca33f0d382796041175d2fa",
     "tree": "https://github.com/elp-revive/company-box"
   },
   {
