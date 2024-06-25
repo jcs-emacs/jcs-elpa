@@ -1,11 +1,11 @@
 (responsive-window .
-		   [(20240625 913)
+		   [(20240625 1121)
 		    ((emacs
 		      (26 1))
 		     (elenv
 		      (0 1 0)))
 		    "Adapt to different screen sizes automatically" tar
-		    ((:commit . "41e4eb1eb55c04c866316dafd73568e2296acfc2")
+		    ((:commit . "e138292b4c76d680aa3a920a4ce7f5fa851f8b53")
 		     (:authors
 		      ("Jen-Chieh" . "jcs090218@gmail.com"))
 		     (:maintainers
