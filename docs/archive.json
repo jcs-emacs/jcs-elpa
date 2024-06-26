@@ -1622,10 +1622,10 @@
   {
     "name": "region-occurrences-highlighter",
     "summary": "Mark occurrences of current region (selection)",
-    "version": "20240625.1002",
+    "version": "20240626.1101",
     "url": "https://github.com/alvarogonzalezsotillo/region-occurrences-highlighter",
     "source": "github",
-    "commit": "6857e76dd6d4791870ed849928032a22d2b2ea9d",
+    "commit": "55f9d100ef67f174c55209f8d4cef1962a9adfc2",
     "tree": "https://github.com/alvarogonzalezsotillo/region-occurrences-highlighter"
   },
   {
@@ -1685,10 +1685,10 @@
   {
     "name": "sideline",
     "summary": "Show information on the side",
-    "version": "20240623.758",
+    "version": "20240626.1102",
     "url": "https://github.com/emacs-sideline/sideline",
     "source": "github",
-    "commit": "3e869345de2973c36c9c6dae4678c814fb2a4d79",
+    "commit": "eb84fa5e34e94fdfbc157aef7682bb2f01b0b2da",
     "tree": "https://github.com/emacs-sideline/sideline"
   },
   {
