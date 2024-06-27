@@ -1,11 +1,11 @@
 (colorful-mode .
-	       [(20240502 1503)
+	       [(20240627 43)
 		((emacs
 		  (28 1))
 		 (compat
 		  (29 1 4 4)))
 		"Preview any color in your buffer in real time" tar
-		((:commit . "2d9d1dd8c4b1975ca0bfdf6cb92cc6a598dc8b6b")
+		((:commit . "945c9905af2045ab2e57717c01e5b20a907f939a")
 		 (:authors
 		  ("Elias G. Perez" . "eg642616@gmail.com"))
 		 (:maintainers
