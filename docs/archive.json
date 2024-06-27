@@ -38,11 +38,11 @@
   {
     "name": "auto-highlight-symbol",
     "summary": "Automatic highlighting current symbol minor mode",
-    "version": "20240101.905",
-    "url": "http://github.com/jcs-elpa/auto-highlight-symbol",
+    "version": "20240627.650",
+    "url": "http://github.com/elp-revive/auto-highlight-symbol",
     "source": "github",
-    "commit": "6194af718b758e10a0401104760b9d9cf96735db",
-    "tree": "http://github.com/jcs-elpa/auto-highlight-symbol"
+    "commit": "fe230750fdd3de07f71e776cb3270754e0865234",
+    "tree": "http://github.com/elp-revive/auto-highlight-symbol"
   },
   {
     "name": "auto-scroll-bar",
@@ -992,10 +992,10 @@
   {
     "name": "guard-lf",
     "summary": "Guard large files",
-    "version": "20240626.2107",
+    "version": "20240627.704",
     "url": "https://github.com/jcs-elpa/guard-lf",
     "source": "github",
-    "commit": "0efc611ec4e5ed0b582a889b63506b903f643354",
+    "commit": "49896160613ff538755793052be0156b9fa8965b",
     "tree": "https://github.com/jcs-elpa/guard-lf"
   },
   {
