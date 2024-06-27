@@ -155,10 +155,10 @@
   {
     "name": "centaur-tabs",
     "summary": "Aesthetic, modern looking customizable tabs plugin",
-    "version": "20240624.730",
+    "version": "20240627.2241",
     "url": "https://github.com/ema2159/centaur-tabs",
     "source": "github",
-    "commit": "becd54b663b945b5f6bf0baab8fb81e42c833b07",
+    "commit": "90b21c2e6e0d19e2de59ae8450deffe5eec92a15",
     "tree": "https://github.com/ema2159/centaur-tabs"
   },
   {
@@ -1892,10 +1892,10 @@
   {
     "name": "tspew",
     "summary": "Clean and format \"template spew\" errors from gcc and Clang",
-    "version": "20240502.348",
+    "version": "20240627.418",
     "url": "https://github.com/jefftrull/tspew",
     "source": "github",
-    "commit": "e68b94805fa7723f74f12cfd0eec94a38e2cd366",
+    "commit": "27b386996c38ac6a076ff3ec61fc474f6cd1d789",
     "tree": "https://github.com/jefftrull/tspew"
   },
   {
