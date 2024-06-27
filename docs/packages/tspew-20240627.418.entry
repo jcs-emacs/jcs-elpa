@@ -1,9 +1,9 @@
 (tspew .
-       [(20240502 348)
+       [(20240627 418)
 	((emacs
 	  (29 1)))
 	"Clean and format \"template spew\" errors from gcc and Clang" tar
-	((:commit . "e68b94805fa7723f74f12cfd0eec94a38e2cd366")
+	((:commit . "27b386996c38ac6a076ff3ec61fc474f6cd1d789")
 	 (:authors
 	  ("Jeff Trull" . "edaskel@att.net"))
 	 (:maintainers
