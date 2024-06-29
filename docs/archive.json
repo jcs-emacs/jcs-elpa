@@ -497,10 +497,10 @@
   {
     "name": "dape",
     "summary": "Debug Adapter Protocol for Emacs",
-    "version": "20240625.2102",
+    "version": "20240629.831",
     "url": "https://github.com/svaante/dape",
     "source": "github",
-    "commit": "c70d44734cc095a9a75e7cffaa21e85bf9931f28",
+    "commit": "3feca662d000dd66197d8888e14908d1a1fc4767",
     "tree": "https://github.com/svaante/dape"
   },
   {
@@ -1712,10 +1712,10 @@
   {
     "name": "sideline-eglot",
     "summary": "Show eglot information with sideline",
-    "version": "20240419.12",
+    "version": "20240629.838",
     "url": "https://github.com/emacs-sideline/sideline-eglot",
     "source": "github",
-    "commit": "034e95c6491a82ce0c488f954100106a29b51660",
+    "commit": "04c83d3c4e64f9555cec2299879491c47794398a",
     "tree": "https://github.com/emacs-sideline/sideline-eglot"
   },
   {
@@ -1730,10 +1730,10 @@
   {
     "name": "sideline-flycheck",
     "summary": "Show flycheck errors with sideline",
-    "version": "20240530.2209",
+    "version": "20240629.840",
     "url": "https://github.com/emacs-sideline/sideline-flycheck",
     "source": "github",
-    "commit": "11f34abcd34b55c021453e332e58282654b35a7c",
+    "commit": "4147f2754c353e0b7920caf385b8dccc5e6301f7",
     "tree": "https://github.com/emacs-sideline/sideline-flycheck"
   },
   {
