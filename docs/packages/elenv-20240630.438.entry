@@ -1,9 +1,11 @@
 (elenv .
-       [(20240623 123)
+       [(20240630 438)
 	((emacs
-	  (26 1)))
+	  (26 1))
+	 (list-utils
+	  (0 4 6)))
 	"Environment variable management" tar
-	((:commit . "881d7542ec58a3a10035b8c0e4fc257e003959c7")
+	((:commit . "b8f79936af8b7b3e08a48ca7ba6defdd39302656")
 	 (:authors
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))
 	 (:maintainers
