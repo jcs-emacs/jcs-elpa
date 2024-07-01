@@ -290,10 +290,10 @@
   {
     "name": "company-box",
     "summary": "Company front-end with icons",
-    "version": "20240625.756",
+    "version": "20240701.2137",
     "url": "https://github.com/elp-revive/company-box",
     "source": "github",
-    "commit": "d0423df36c5da2c4fca33f0d382796041175d2fa",
+    "commit": "e58c87806d4a5202544ec4aa1bbc236e2724b54c",
     "tree": "https://github.com/elp-revive/company-box"
   },
   {
