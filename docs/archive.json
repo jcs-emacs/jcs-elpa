@@ -1604,10 +1604,10 @@
   {
     "name": "rainbow-csv",
     "summary": "Highlight CSV and TSV files in different rainbow colors",
-    "version": "20240320.305",
+    "version": "20240701.543",
     "url": "https://github.com/emacs-vs/rainbow-csv",
     "source": "github",
-    "commit": "414631d30445d981caf7990a7c8644675550d13d",
+    "commit": "2a91a23abc05f26d513a1eb59c3e8cf1f42a0336",
     "tree": "https://github.com/emacs-vs/rainbow-csv"
   },
   {
