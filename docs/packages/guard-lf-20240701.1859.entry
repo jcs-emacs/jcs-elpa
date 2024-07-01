@@ -1,9 +1,9 @@
 (guard-lf .
-	  [(20240630 939)
+	  [(20240701 1859)
 	   ((emacs
 	     (27 1)))
 	   "Guard large files" tar
-	   ((:commit . "940399e28fd9a42e61b2c30c4ff46c52396921da")
+	   ((:commit . "a3f210552477e20e3a7bb870a901ef87f5fd44e6")
 	    (:authors
 	     ("JenChieh" . "jcs090218@gmail.com"))
 	    (:maintainers
