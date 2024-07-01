@@ -1640,10 +1640,10 @@
   {
     "name": "responsive-window",
     "summary": "Adapt to different screen sizes automatically",
-    "version": "20240625.1121",
+    "version": "20240701.2341",
     "url": "https://github.com/jcs-elpa/responsive-window",
     "source": "github",
-    "commit": "e138292b4c76d680aa3a920a4ce7f5fa851f8b53",
+    "commit": "6e8791b44bebec3e6e13399421d65e0ec1a2b3cd",
     "tree": "https://github.com/jcs-elpa/responsive-window"
   },
   {
