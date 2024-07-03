@@ -236,10 +236,10 @@
   {
     "name": "cogru",
     "summary": "Cogru plugin for real-time collaborative editing",
-    "version": "20240702.934",
+    "version": "20240703.2050",
     "url": "https://github.com/Cogru/cogru.el",
     "source": "github",
-    "commit": "8b48b17b0a09bb7230f3ad045e764f54765485b8",
+    "commit": "193855e9cababab2ac458e92e93357c153a810bd",
     "tree": "https://github.com/Cogru/cogru.el"
   },
   {
@@ -1937,10 +1937,10 @@
   {
     "name": "undo-tree-vf",
     "summary": "Visualizer follow mode for undo-tree",
-    "version": "20240623.718",
+    "version": "20240703.2016",
     "url": "https://github.com/jcs-elpa/undo-tree-vf",
     "source": "github",
-    "commit": "5131cf91c78404abb368b8cbbb61626bd29e3ddc",
+    "commit": "1f2bc32ad183294d011a508af72e4d5c680c0eb8",
     "tree": "https://github.com/jcs-elpa/undo-tree-vf"
   },
   {
