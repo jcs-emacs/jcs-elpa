@@ -155,10 +155,10 @@
   {
     "name": "centaur-tabs",
     "summary": "Aesthetic, modern looking customizable tabs plugin",
-    "version": "20240703.123",
+    "version": "20240703.147",
     "url": "https://github.com/ema2159/centaur-tabs",
     "source": "github",
-    "commit": "5bad9946f72e4f69b6251a34ea8fa4f5e8488c5c",
+    "commit": "c72029609c7a6ae64cfcbf69331d6253319c0906",
     "tree": "https://github.com/ema2159/centaur-tabs"
   },
   {
@@ -2045,10 +2045,10 @@
   {
     "name": "vs-revbuf",
     "summary": "Revert buffers like Visual Studio",
-    "version": "20240520.1058",
+    "version": "20240703.158",
     "url": "https://github.com/emacs-vs/vs-revbuf",
     "source": "github",
-    "commit": "78f5ee384b8975939485872d2ff06af9a81918e7",
+    "commit": "3ec620b96bb8357abedfa10be2d57d299c9e7475",
     "tree": "https://github.com/emacs-vs/vs-revbuf"
   },
   {
