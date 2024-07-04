@@ -236,10 +236,10 @@
   {
     "name": "cogru",
     "summary": "Cogru plugin for real-time collaborative editing",
-    "version": "20240703.2344",
+    "version": "20240704.28",
     "url": "https://github.com/Cogru/cogru.el",
     "source": "github",
-    "commit": "977cd62edfaa0c4583be8a65ed9e6d16733776f8",
+    "commit": "2c739021740d18076f906dab0d95d9b8bf34d99b",
     "tree": "https://github.com/Cogru/cogru.el"
   },
   {
@@ -1640,10 +1640,10 @@
   {
     "name": "responsive-window",
     "summary": "Adapt to different screen sizes automatically",
-    "version": "20240703.2106",
+    "version": "20240704.27",
     "url": "https://github.com/jcs-elpa/responsive-window",
     "source": "github",
-    "commit": "39bfa72138fea074e929986789fc5b4078ceb81e",
+    "commit": "563cfe13dea096b9185503ae50e06c18fcb8cc0a",
     "tree": "https://github.com/jcs-elpa/responsive-window"
   },
   {
