@@ -992,10 +992,10 @@
   {
     "name": "guard-lf",
     "summary": "Guard large files",
-    "version": "20240701.1859",
+    "version": "20240705.334",
     "url": "https://github.com/jcs-elpa/guard-lf",
     "source": "github",
-    "commit": "a3f210552477e20e3a7bb870a901ef87f5fd44e6",
+    "commit": "c045a5d204b1a605d14b0ee03ce31dc6b4147ead",
     "tree": "https://github.com/jcs-elpa/guard-lf"
   },
   {
@@ -1127,10 +1127,10 @@
   {
     "name": "jcs-echobar",
     "summary": "An echo-bar for jcs-emacs",
-    "version": "20240623.832",
+    "version": "20240705.402",
     "url": "https://github.com/jcs-emacs/jcs-echobar",
     "source": "github",
-    "commit": "3d85b1bf579e47d963b333bb6dd0ab3751710ee6",
+    "commit": "d824bb24ffa3b66c6ea5c223a62d7a17c3a7f27f",
     "tree": "https://github.com/jcs-emacs/jcs-echobar"
   },
   {
