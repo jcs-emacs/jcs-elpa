@@ -47,10 +47,10 @@
   {
     "name": "auto-scroll-bar",
     "summary": "Automatically show/hide scroll-bars as needed",
-    "version": "20240707.330",
+    "version": "20240707.416",
     "url": "https://github.com/emacs-vs/auto-scroll-bar",
     "source": "github",
-    "commit": "6b80ff02fe7f7f89afc6c058697e58f5698d0107",
+    "commit": "62d0b56fe5ce642ada976dd978984d3397f15644",
     "tree": "https://github.com/emacs-vs/auto-scroll-bar"
   },
   {
@@ -1874,10 +1874,10 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20240707.330",
+    "version": "20240707.415",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "c773663a3bed6fd14755a840d5c8c5bb21f04700",
+    "commit": "85e2bbead02d47766ac0387cc6277a9b169a39ea",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
