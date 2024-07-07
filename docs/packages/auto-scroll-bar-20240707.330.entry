@@ -1,11 +1,11 @@
 (auto-scroll-bar .
-		 [(20240706 511)
+		 [(20240707 330)
 		  ((emacs
 		    (29 1))
 		   (elenv
 		    (0 1 0)))
 		  "Automatically show/hide scroll-bars as needed" tar
-		  ((:commit . "e838975ba540ba96629d74fbe608d518efd76483")
+		  ((:commit . "6b80ff02fe7f7f89afc6c058697e58f5698d0107")
 		   (:authors
 		    ("Jen-Chieh" . "jcs090218@gmail.com"))
 		   (:maintainers
