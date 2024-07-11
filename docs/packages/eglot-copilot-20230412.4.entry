@@ -1,0 +1,29 @@
+(eglot-copilot .
+	       [(20230412 4)
+		((emacs
+		  (28 2))
+		 (f
+		  (0 20 0))
+		 (bash-completion
+		  (3 1 0))
+		 (projectile
+		  (2 6 0 -4))
+		 (s
+		  (1 12 0))
+		 (company
+		  (0 9 13))
+		 (eglot-copilot
+		  (0 1))
+		 (dash
+		  (2 19 1))
+		 (ht
+		  (2 4)))
+		"Copilot integration with EGLOT and Company" tar
+		((:commit . "1fb665fcd5dd7416ef19a4ef00e419265b186ccf")
+		 (:authors
+		  ("Tyler Dodge" . "(tyler@tdodge.consulting)"))
+		 (:maintainers
+		  ("Tyler Dodge" . "(tyler@tdodge.consulting)"))
+		 (:maintainer "Tyler Dodge" . "(tyler@tdodge.consulting)")
+		 (:keywords "convenience")
+		 (:url . "https://github.com/tyler-dodge/eglot-copilot"))])

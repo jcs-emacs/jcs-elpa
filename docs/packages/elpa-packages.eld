@@ -64,6 +64,7 @@
   (eask-mode :url "https://github.com/emacs-eask/eask-mode.git")
   (easky :url "https://github.com/emacs-eask/easky.git")
   (echo-bar :url "https://github.com/benzanol/echo-bar.el.git")
+  (eglot-copilot :url "https://github.com/tyler-dodge/eglot-copilot.git")
   (eglot-grammarly :url "https://github.com/emacs-grammarly/eglot-grammarly.git")
   (eglot-ltex :url "https://github.com/emacs-languagetool/eglot-ltex.git")
   (eglot-shader :url "https://github.com/shader-ls/eglot-shader.git")
