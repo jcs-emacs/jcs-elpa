@@ -1,0 +1,1 @@
+(eglot-copilot :repo "tyler-dodge/eglot-copilot" :fetcher github)
