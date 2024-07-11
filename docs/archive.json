@@ -594,6 +594,15 @@
     "tree": "https://github.com/qaiviq/echo-bar.el"
   },
   {
+    "name": "eglot-copilot",
+    "summary": "Copilot integration with EGLOT and Company",
+    "version": "20230412.4",
+    "url": "https://github.com/tyler-dodge/eglot-copilot",
+    "source": "github",
+    "commit": "1fb665fcd5dd7416ef19a4ef00e419265b186ccf",
+    "tree": "https://github.com/tyler-dodge/eglot-copilot"
+  },
+  {
     "name": "eglot-grammarly",
     "summary": "Eglot Clients for Grammarly",
     "version": "20240101.847",
