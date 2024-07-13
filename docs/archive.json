@@ -270,6 +270,15 @@
     "tree": "http://github.com/rejeep/commander.el"
   },
   {
+    "name": "company",
+    "summary": "Modular text completion framework",
+    "version": "20240625.0",
+    "url": "http://company-mode.github.io/",
+    "source": "github",
+    "commit": "8d2ca28a161f8b912889684412bb1d7fb07d035c",
+    "tree": "http://company-mode.github.io/"
+  },
+  {
     "name": "company-autoconf",
     "summary": "completion for autoconf script",
     "version": "20220711.659",
@@ -461,10 +470,10 @@
   {
     "name": "copilot",
     "summary": "An unofficial Copilot plugin for Emacs",
-    "version": "20240703.756",
+    "version": "20240713.631",
     "url": "https://github.com/copilot-emacs/copilot.el",
     "source": "github",
-    "commit": "e15bafa95b39091dbb2a99ad62e42f03a8d78f01",
+    "commit": "eedd881fd9b3574d77ec2499f877dc26d875fffb",
     "tree": "https://github.com/copilot-emacs/copilot.el"
   },
   {
