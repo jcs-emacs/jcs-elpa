@@ -1,11 +1,11 @@
 (treesit-langs .
-	       [(20240713 344)
+	       [(20240713 530)
 		((emacs
 		  (29 1))
 		 (tree-sitter-langs
 		  (0 12 18)))
 		"Language bundle for Emacs's treesit.el" tar
-		((:commit . "c826e0f47cf605961db23bc239624ab865801f24")
+		((:commit . "365bc4752eca9d796cc704fab4455ebe3a7dfc35")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainers
