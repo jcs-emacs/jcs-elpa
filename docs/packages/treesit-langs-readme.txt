@@ -1,2 +1,2 @@
 
- TODO
+Language bundle for Emacs's treesit.el.
