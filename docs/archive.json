@@ -1440,6 +1440,15 @@
     "tree": "https://github.com/jcs-elpa/nerd-icons-buffer-menu"
   },
   {
+    "name": "nerd-icons-completion",
+    "summary": "Add icons to completion candidates",
+    "version": "20240712.855",
+    "url": "https://github.com/rainstormstudio/nerd-icons-completion",
+    "source": "github",
+    "commit": "9cf2602f0d8ffe39ff1f60b63a8d61f7d93072b2",
+    "tree": "https://github.com/rainstormstudio/nerd-icons-completion"
+  },
+  {
     "name": "noflet",
     "summary": "locally override functions",
     "version": "20230414.531",
