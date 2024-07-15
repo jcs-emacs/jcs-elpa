@@ -1,0 +1,12 @@
+(clean-buffers .
+	       [(20240715 2333)
+		((emacs
+		  (26 1)))
+		"clean useless buffers" tar
+		((:commit . "bdbefc919e64874b5359792128235afdadf6b379")
+		 (:authors
+		  ("DarkSun" . "lujun9972@gmail.com"))
+		 (:maintainers
+		  ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
+		 (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
+		 (:keywords "convenience" "usability" "buffers"))])

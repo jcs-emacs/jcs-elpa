@@ -21,6 +21,7 @@
   (chatgpt-shell :url "https://github.com/xenodium/chatgpt-shell.git")
   (chatgpt-sideline :url "https://github.com/emacs-openai/chatgpt-sideline.git")
   (cisco-router-mode :url "https://github.com/emacsmirror/cisco-router-mode.git")
+  (clean-buffers :url "https://github.com/elp-revive/clean-buffers.git")
   (codegpt :url "https://github.com/emacs-openai/codegpt.git")
   (codeium :url "https://github.com/Exafunction/codeium.el.git")
   (codemetrics :url "https://github.com/emacs-vs/codemetrics.git")
