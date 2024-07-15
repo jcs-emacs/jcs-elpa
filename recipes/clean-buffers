@@ -1,0 +1,1 @@
+(clean-buffers :fetcher github :repo "elp-revive/clean-buffers")
