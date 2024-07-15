@@ -47,10 +47,10 @@
   {
     "name": "auto-scroll-bar",
     "summary": "Automatically show/hide scroll-bars as needed",
-    "version": "20240715.900",
+    "version": "20240715.905",
     "url": "https://github.com/emacs-vs/auto-scroll-bar",
     "source": "github",
-    "commit": "e3f24345adcf80156f1e2746cacbffb4cd6c6c52",
+    "commit": "1be5f38a92b604eac6607e402d11989730f27c12",
     "tree": "https://github.com/emacs-vs/auto-scroll-bar"
   },
   {
@@ -1244,10 +1244,10 @@
   {
     "name": "line-reminder",
     "summary": "Line annotation for changed and saved lines",
-    "version": "20240715.853",
+    "version": "20240715.913",
     "url": "https://github.com/emacs-vs/line-reminder",
     "source": "github",
-    "commit": "a6b4dae728c7b414fc42f917399e29c7fc459bad",
+    "commit": "f64f9e01572e5c12ce76c6a931e5f4e35d544ebe",
     "tree": "https://github.com/emacs-vs/line-reminder"
   },
   {
@@ -1901,10 +1901,10 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20240715.852",
+    "version": "20240715.906",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "98e9e7e56cd6bb37e6b779e58d0fb9af98b03cbb",
+    "commit": "6643972b76a382525994dfd5402662e88d30d88e",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
