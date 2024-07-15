@@ -207,6 +207,15 @@
     "tree": "https://github.com/emacsmirror/cisco-router-mode"
   },
   {
+    "name": "clean-buffers",
+    "summary": "clean useless buffers",
+    "version": "20240715.2333",
+    "url": "https://github.com/elp-revive/clean-buffers",
+    "source": "github",
+    "commit": "bdbefc919e64874b5359792128235afdadf6b379",
+    "tree": "https://github.com/elp-revive/clean-buffers"
+  },
+  {
     "name": "codegpt",
     "summary": "Use GPT-3 tp help you write code",
     "version": "20240101.920",
