@@ -1,9 +1,9 @@
 (clean-buffers .
-	       [(20240715 2333)
+	       [(20240715 2355)
 		((emacs
 		  (26 1)))
 		"clean useless buffers" tar
-		((:commit . "bdbefc919e64874b5359792128235afdadf6b379")
+		((:commit . "fec82f624da40b85e74cc0ea75e29c28d247911d")
 		 (:authors
 		  ("DarkSun" . "lujun9972@gmail.com"))
 		 (:maintainers
