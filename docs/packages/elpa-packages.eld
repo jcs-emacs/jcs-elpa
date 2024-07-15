@@ -158,6 +158,7 @@
   (nand-hdl-mode :url "https://github.com/nverno/nand-hdl-mode.git")
   (nerd-icons :url "https://github.com/rainstormstudio/nerd-icons.el.git")
   (nerd-icons-buffer-menu :url "https://github.com/jcs-elpa/nerd-icons-buffer-menu.git")
+  (nerd-icons-completion :url "https://github.com/maxecharel/nerd-icons-completion.git" :branch "contrib")
   (noflet :url "https://github.com/elp-revive/noflet.git")
   (on :url "https://github.com/elp-revive/on.el.git")
   (openai :url "https://github.com/emacs-openai/openai.git")
