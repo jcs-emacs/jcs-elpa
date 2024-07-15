@@ -1,0 +1,4 @@
+(nerd-icons-completion
+ :repo "maxecharel/nerd-icons-completion"
+ :branch "contrib"
+ :fetcher github)
