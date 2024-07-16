@@ -209,10 +209,10 @@
   {
     "name": "clean-buffers",
     "summary": "clean useless buffers",
-    "version": "20240715.2333",
+    "version": "20240715.2355",
     "url": "https://github.com/elp-revive/clean-buffers",
     "source": "github",
-    "commit": "bdbefc919e64874b5359792128235afdadf6b379",
+    "commit": "fec82f624da40b85e74cc0ea75e29c28d247911d",
     "tree": "https://github.com/elp-revive/clean-buffers"
   },
   {
