@@ -1,0 +1,1 @@
+(show-eof-mode :repo "zk-phi/show-eof-mode" :fetcher github)
