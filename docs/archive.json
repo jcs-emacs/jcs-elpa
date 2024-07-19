@@ -1440,6 +1440,15 @@
     "tree": "https://github.com/rainstormstudio/nerd-icons.el"
   },
   {
+    "name": "nerd-icons-archive",
+    "summary": "Shows icons for each file in archive-mode and tar-mode",
+    "version": "20240705.2113",
+    "url": "https://github.com/abougouffa/nerd-icons-archive",
+    "source": "github",
+    "commit": "9dc13f24b4c04ac85aa06719cc0e01d4415468a1",
+    "tree": "https://github.com/abougouffa/nerd-icons-archive"
+  },
+  {
     "name": "nerd-icons-buffer-menu",
     "summary": "Display nerd icons in `buffer-menu'",
     "version": "20240518.743",
@@ -1717,6 +1726,15 @@
     "source": "github",
     "commit": "6936f767d23c34e028bd7d633eb64f2f554335c0",
     "tree": "https://github.com/emacs-grammarly/send-to-osx-grammarly"
+  },
+  {
+    "name": "show-eof-mode",
+    "summary": "No description available.",
+    "version": "20220417.1221",
+    "url": "https://github.com/zk-phi/show-eof-mode",
+    "source": "github",
+    "commit": "60bbef9399c504c0e3352c137072c4717755ae3a",
+    "tree": "https://github.com/zk-phi/show-eof-mode"
   },
   {
     "name": "sideline",
