@@ -1,11 +1,11 @@
 (rainbow-csv .
-	     [(20240701 543)
+	     [(20240720 2247)
 	      ((emacs
 		(27 1))
 	       (csv-mode
 		(1 22)))
 	      "Highlight CSV and TSV files in different rainbow colors" tar
-	      ((:commit . "2a91a23abc05f26d513a1eb59c3e8cf1f42a0336")
+	      ((:commit . "7e87472087f6a958394adc05ee83ee44b7d04ec2")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainers
