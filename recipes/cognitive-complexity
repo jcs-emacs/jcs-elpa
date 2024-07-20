@@ -1,0 +1,1 @@
+(cognitive-complexity :repo "emacs-vs/cognitive-complexity" :fetcher github)
