@@ -1739,10 +1739,10 @@
   {
     "name": "show-eof-mode",
     "summary": "No description available.",
-    "version": "20220417.1221",
+    "version": "20240720.1434",
     "url": "https://github.com/zk-phi/show-eof-mode",
     "source": "github",
-    "commit": "60bbef9399c504c0e3352c137072c4717755ae3a",
+    "commit": "cb1881df257ff8fb96478829ba14c0d94dc94667",
     "tree": "https://github.com/zk-phi/show-eof-mode"
   },
   {
