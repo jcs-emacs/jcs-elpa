@@ -1559,10 +1559,10 @@
   {
     "name": "pkg-dm",
     "summary": "Package dependencies management",
-    "version": "20240713.621",
+    "version": "20240722.425",
     "url": "https://github.com/jcs-elpa/pkg-dm",
     "source": "github",
-    "commit": "ada8e724426995adf1b19395dba8df62e2ae63ce",
+    "commit": "d90e177eb9357ef9b02d8a54383bbeffd49b56f8",
     "tree": "https://github.com/jcs-elpa/pkg-dm"
   },
   {
