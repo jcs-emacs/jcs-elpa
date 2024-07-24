@@ -1,5 +1,5 @@
 (copilot .
-	 [(20240713 631)
+	 [(20240724 1030)
 	  ((emacs
 	    (27 2))
 	   (s
@@ -13,7 +13,7 @@
 	   (f
 	    (0 20 0)))
 	  "An unofficial Copilot plugin for Emacs" tar
-	  ((:commit . "eedd881fd9b3574d77ec2499f877dc26d875fffb")
+	  ((:commit . "f831b2b8375950eb1cc282d15ccc78ed90f30a1a")
 	   (:authors
 	    ("zerol" . "z@zerol.me"))
 	   (:maintainers
