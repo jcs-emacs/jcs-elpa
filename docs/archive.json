@@ -1784,10 +1784,10 @@
   {
     "name": "sideline-eldoc",
     "summary": "sideline backend for eldoc.",
-    "version": "20230512.620",
+    "version": "20240727.532",
     "url": "https://github.com/ginqi7/sideline-eldoc",
     "source": "github",
-    "commit": "ffeecf0da1a007380fc2e6358ff90d3aad3db0db",
+    "commit": "70f616af494586e19e6d79f491391b600321056b",
     "tree": "https://github.com/ginqi7/sideline-eldoc"
   },
   {
