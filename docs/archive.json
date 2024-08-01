@@ -245,10 +245,10 @@
   {
     "name": "cognitive-complexity",
     "summary": "Minor mode to show the cognitive complexity of code",
-    "version": "20240720.912",
+    "version": "20240801.2236",
     "url": "https://github.com/abougouffa/cognitive-complexity",
     "source": "github",
-    "commit": "ef51f6ae87e7817367dff2d8c242ba509d064696",
+    "commit": "8b9451fd88c9a730941ff24bb714e63379e25332",
     "tree": "https://github.com/abougouffa/cognitive-complexity"
   },
   {
