@@ -1,5 +1,5 @@
 (nerd-icons-completion .
-		       [(20240723 454)
+		       [(20240731 1213)
 			((emacs
 			  (25 1))
 			 (nerd-icons
@@ -7,7 +7,7 @@
 			 (compat
 			  (30)))
 			"Add icons to completion candidates" tar
-			((:commit . "2626c77de52dd38d75243e5d58d412461396c7e7")
+			((:commit . "426a1d7c29a04ae8e6ae9b55b0559f11a1e8b420")
 			 (:authors
 			  ("Hongyu Ding" . "rainstormstudio@yahoo.com"))
 			 (:maintainers
