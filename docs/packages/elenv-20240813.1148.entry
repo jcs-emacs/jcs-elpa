@@ -1,5 +1,5 @@
 (elenv .
-       [(20240701 1011)
+       [(20240813 1148)
 	((emacs
 	  (26 1))
 	 (msgu
@@ -9,7 +9,7 @@
 	 (list-utils
 	  (0 4 6)))
 	"Environment variable management" tar
-	((:commit . "43c81fb0dd3c92662ed6d10478b1aac560baa27f")
+	((:commit . "e684e2a73b8385a26fc2bda96b9fff839c726f92")
 	 (:authors
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))
 	 (:maintainers
