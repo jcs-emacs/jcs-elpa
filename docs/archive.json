@@ -155,10 +155,10 @@
   {
     "name": "centaur-tabs",
     "summary": "Aesthetic, modern looking customizable tabs plugin",
-    "version": "20240806.636",
+    "version": "20240813.1143",
     "url": "https://github.com/ema2159/centaur-tabs",
     "source": "github",
-    "commit": "063534bd003850816ccd620e105619948785977b",
+    "commit": "ecee903518f1650421891f6c7bf521f200e22765",
     "tree": "https://github.com/ema2159/centaur-tabs"
   },
   {
@@ -704,10 +704,10 @@
   {
     "name": "elenv",
     "summary": "Environment variable management",
-    "version": "20240701.1011",
+    "version": "20240813.1148",
     "url": "https://github.com/jcs-elpa/elenv",
     "source": "github",
-    "commit": "43c81fb0dd3c92662ed6d10478b1aac560baa27f",
+    "commit": "e684e2a73b8385a26fc2bda96b9fff839c726f92",
     "tree": "https://github.com/jcs-elpa/elenv"
   },
   {
