@@ -524,10 +524,10 @@
   {
     "name": "dape",
     "summary": "Debug Adapter Protocol for Emacs",
-    "version": "20240813.1958",
+    "version": "20240816.1520",
     "url": "https://github.com/svaante/dape",
     "source": "github",
-    "commit": "7b432a8558a4a58cfda0a953d253123084386ff9",
+    "commit": "daa32c57156641023dbbf03d1aa8353e72f5cdd6",
     "tree": "https://github.com/svaante/dape"
   },
   {
@@ -1442,10 +1442,10 @@
   {
     "name": "nerd-icons",
     "summary": "Emacs Nerd Font Icons Library",
-    "version": "20240808.625",
+    "version": "20240816.1555",
     "url": "https://github.com/rainstormstudio/nerd-icons.el",
     "source": "github",
-    "commit": "dcfc64152ada7514bcdd1c6ce45590c359445ec6",
+    "commit": "c3d641d8e14bd11b5f98372da34ee5313636e363",
     "tree": "https://github.com/rainstormstudio/nerd-icons.el"
   },
   {
