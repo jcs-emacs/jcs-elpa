@@ -1748,10 +1748,10 @@
   {
     "name": "sideline",
     "summary": "Show information on the side",
-    "version": "20240627.47",
+    "version": "20240824.2024",
     "url": "https://github.com/emacs-sideline/sideline",
     "source": "github",
-    "commit": "ba55945617f04763f9e93525fdf1e2826e4d667a",
+    "commit": "0994d4d78f79385e5830563d42a41118acc5a9ef",
     "tree": "https://github.com/emacs-sideline/sideline"
   },
   {
