@@ -75,3 +75,5 @@
 2024-08-26T03:07:06+0000  hl-preproc                 Command ‘git clone https\://github.com/emacs-vs/hl-preproc.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/hl-preproc/’ exited with non-zero exit-code: 128
 2024-08-26T03:07:10+0000  jack-mode                  Command ‘git clone https\://github.com/nverno/jack-mode.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/jack-mode/’ exited with non-zero exit-code: 128
 2024-08-26T03:07:12+0000  jcs-frametitle             Command ‘git clone https\://github.com/jcs-emacs/jcs-frametitle.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/jcs-frametitle/’ exited with non-zero exit-code: 128
+2024-08-29T21:05:32+0000  company-emmet              Command ‘git clone https\://github.com/emacs-vs/company-emmet.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/company-emmet/’ exited with non-zero exit-code: 128
+2024-08-29T21:05:33+0000  company-makefile           Command ‘git clone https\://github.com/elp-revive/company-makefile.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/company-makefile/’ exited with non-zero exit-code: 128
