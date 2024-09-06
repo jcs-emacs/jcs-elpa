@@ -1757,10 +1757,10 @@
   {
     "name": "sideline-blame",
     "summary": "Show blame messages with sideline",
-    "version": "20240101.918",
+    "version": "20240906.1906",
     "url": "https://github.com/emacs-sideline/sideline-blame",
     "source": "github",
-    "commit": "b597c047d2a8ef7dd155e85e43fd65530ecf0a61",
+    "commit": "48288bc77a90b58c7609598d0a129ba1638d0098",
     "tree": "https://github.com/emacs-sideline/sideline-blame"
   },
   {
