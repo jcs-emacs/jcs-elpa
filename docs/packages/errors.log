@@ -77,3 +77,4 @@
 2024-08-26T03:07:12+0000  jcs-frametitle             Command ‘git clone https\://github.com/jcs-emacs/jcs-frametitle.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/jcs-frametitle/’ exited with non-zero exit-code: 128
 2024-08-29T21:05:32+0000  company-emmet              Command ‘git clone https\://github.com/emacs-vs/company-emmet.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/company-emmet/’ exited with non-zero exit-code: 128
 2024-08-29T21:05:33+0000  company-makefile           Command ‘git clone https\://github.com/elp-revive/company-makefile.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/company-makefile/’ exited with non-zero exit-code: 128
+2024-09-06T02:29:45+0000  logms                      Command ‘git clone https\://github.com/jcs-elpa/logms.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/logms/’ exited with non-zero exit-code: 128
