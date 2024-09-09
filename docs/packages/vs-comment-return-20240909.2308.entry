@@ -1,9 +1,9 @@
 (vs-comment-return .
-		   [(20240101 859)
+		   [(20240909 2308)
 		    ((emacs
 		      (28 1)))
 		    "Comment return like Visual Studio" tar
-		    ((:commit . "2e0268d471d765c250553b0297af53643a41f994")
+		    ((:commit . "78f45a1468cf7d465924af48bace5be6ccf72255")
 		     (:authors
 		      ("Jen-Chieh" . "jcs090218@gmail.com"))
 		     (:maintainers
