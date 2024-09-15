@@ -8,7 +8,7 @@ tab or space-based indentation.  In the terminal (or on request) it
 uses vertical bar characters instead of stipple patterns.  Optional
 treesitter support is also available; see indent-bars-ts.el.
 
-For Developers:
+;; For Developers:
 
 To efficiently accommodate simultaneous alternative bar styling, we
 do two things:
