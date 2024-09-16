@@ -2,7 +2,7 @@
 	     [(20240101 907)
 	      ((emacs
 		(24 1)))
-	      "easily swap buffers" tar
+	      "Easily swap buffers" tar
 	      ((:commit . "d20de0065695ee815f1c17cf2de527d6e9a7bbf1")
 	       (:maintainers
 		("Jen-Chieh Shen" . "jcs090218@gmail.com"))

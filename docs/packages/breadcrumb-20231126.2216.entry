@@ -4,7 +4,7 @@
 	       (28 1))
 	      (project
 	       (0 9 8)))
-	     "project and imenu-based breadcrumb paths" tar
+	     "Project and imenu-based breadcrumb paths" tar
 	     ((:commit . "dcb6e2e82de2432d8eb75be74c8d6215fc97a2d3")
 	      (:authors
 	       ("João Távora" . "joaotavora@gmail.com"))

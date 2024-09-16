@@ -4,7 +4,7 @@
 		     (26 1))
 		    (company
 		     (0 8 12)))
-		   "completion backend for gnu makefiles" tar
+		   "Completion backend for gnu makefiles" tar
 		   ((:commit . "19b2b1c6b99cb59c99ae714bc9e06d5227ed36da")
 		    (:authors
 		     ("Noah Peart" . "noah.v.peart@gmail.com"))

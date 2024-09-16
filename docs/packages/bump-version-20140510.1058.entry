@@ -1,6 +1,6 @@
 (bump-version .
 	      [(20140510 1058)
-	       nil "Emacs package which helps bump version." tar
+	       nil "Emacs package which helps bump version" tar
 	       ((:commit . "be213c9fd843f6f76560333e275f73e20181d50b")
 		(:authors
 		 ("Andrey Tykhonov" . "atykhonov@gmail.com"))

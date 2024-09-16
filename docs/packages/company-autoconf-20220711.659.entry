@@ -4,7 +4,7 @@
 		     (26 1))
 		    (company
 		     (0 8 12)))
-		   "completion for autoconf script" tar
+		   "Completion for autoconf script" tar
 		   ((:commit . "1a1439e597bb1bd7be73f8c473ebb30b1dcc76ea")
 		    (:authors
 		     ("Noah Peart" . "noah.v.peart@gmail.com"))
