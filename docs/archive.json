@@ -19,7 +19,7 @@
   },
   {
     "name": "asoc",
-    "summary": "alist functions and macros",
+    "summary": "Alist functions and macros",
     "version": "20170917.1208",
     "url": "https://github.com/troyp/asoc.el",
     "source": "github",
@@ -73,7 +73,7 @@
   },
   {
     "name": "beancount",
-    "summary": "A major mode to edit Beancount input files.",
+    "summary": "A major mode to edit Beancount input files",
     "version": "20240908.2039",
     "url": "https://github.com/beancount/beancount-mode",
     "source": "github",
@@ -100,7 +100,7 @@
   },
   {
     "name": "breadcrumb",
-    "summary": "project and imenu-based breadcrumb paths",
+    "summary": "Project and imenu-based breadcrumb paths",
     "version": "20231126.2216",
     "url": "https://github.com/joaotavora/breadcrumb",
     "source": "github",
@@ -127,7 +127,7 @@
   },
   {
     "name": "buffer-move",
-    "summary": "easily swap buffers",
+    "summary": "Easily swap buffers",
     "version": "20240101.907",
     "url": "https://github.com/elp-revive/buffer-move/",
     "source": "github",
@@ -136,7 +136,7 @@
   },
   {
     "name": "bump-version",
-    "summary": "Emacs package which helps bump version.",
+    "summary": "Emacs package which helps bump version",
     "version": "20140510.1058",
     "url": "https://github.com/atykhonov/emacs-bump-version",
     "source": "github",
@@ -208,7 +208,7 @@
   },
   {
     "name": "clean-buffers",
-    "summary": "clean useless buffers",
+    "summary": "Clean useless buffers",
     "version": "20240715.2355",
     "url": "https://github.com/elp-revive/clean-buffers",
     "source": "github",
@@ -226,7 +226,7 @@
   },
   {
     "name": "codeium",
-    "summary": "codeium client for emacs",
+    "summary": "Codeium client for emacs",
     "version": "20240810.3",
     "url": "https://github.com/Exafunction/codeium.el",
     "source": "github",
@@ -254,10 +254,10 @@
   {
     "name": "cogru",
     "summary": "Cogru plugin for real-time collaborative editing",
-    "version": "20240915.335",
+    "version": "20240915.2306",
     "url": "https://github.com/Cogru/cogru.el",
     "source": "github",
-    "commit": "fd5297c7a414ca5eb4b934ebd96a8b8c81b7fc18",
+    "commit": "4757a51f63d03bc1cb6235cdddaf42a575419a6a",
     "tree": "https://github.com/Cogru/cogru.el"
   },
   {
@@ -298,7 +298,7 @@
   },
   {
     "name": "company-autoconf",
-    "summary": "completion for autoconf script",
+    "summary": "Completion for autoconf script",
     "version": "20220711.659",
     "url": "https://github.com/elp-revive/company-autoconf",
     "source": "github",
@@ -307,7 +307,7 @@
   },
   {
     "name": "company-bootstrap",
-    "summary": "A company backend for bootstrap.",
+    "summary": "A company backend for bootstrap",
     "version": "20240219.2347",
     "url": "https://github.com/typefo/company-bootstrap",
     "source": "github",
@@ -334,7 +334,7 @@
   },
   {
     "name": "company-cmd",
-    "summary": "company backend for cmd/batch",
+    "summary": "Company backend for cmd/batch",
     "version": "20220704.611",
     "url": "https://github.com/elp-revive/company-cmd",
     "source": "github",
@@ -415,7 +415,7 @@
   },
   {
     "name": "company-makefile",
-    "summary": "completion backend for gnu makefiles",
+    "summary": "Completion backend for gnu makefiles",
     "version": "20220711.646",
     "url": "https://github.com/elp-revive/company-makefile",
     "source": "github",
@@ -433,7 +433,7 @@
   },
   {
     "name": "company-mlton",
-    "summary": "company-mode backend for MLton/Standard ML",
+    "summary": "Company-mode backend for MLton/Standard ML",
     "version": "20201207.1445",
     "url": "https://github.com/MatthewFluet/company-mlton",
     "source": "github",
@@ -460,7 +460,7 @@
   },
   {
     "name": "company-sml",
-    "summary": "No description available.",
+    "summary": "[No description available]",
     "version": "20231026.455",
     "url": "https://github.com/nverno/company-sml",
     "source": "github",
@@ -667,7 +667,7 @@
   },
   {
     "name": "ejira",
-    "summary": "org-mode interface to JIRA",
+    "summary": "Org-mode interface to JIRA",
     "version": "20220622.33",
     "url": "https://github.com/nyyManni/ejira",
     "source": "github",
@@ -820,7 +820,7 @@
   },
   {
     "name": "flx-rs",
-    "summary": "flx in Rust using dynamic module",
+    "summary": "Flx in Rust using dynamic module",
     "version": "20240419.206",
     "url": "https://github.com/jcs-elpa/flx-rs",
     "source": "github",
@@ -910,7 +910,7 @@
   },
   {
     "name": "flymake-vale",
-    "summary": "flymake integration for vale",
+    "summary": "Flymake integration for vale",
     "version": "20240402.425",
     "url": "https://github.com/tpeacock19/new",
     "source": "github",
@@ -937,7 +937,7 @@
   },
   {
     "name": "font-lock-ext",
-    "summary": "extensions to Emacs font-lock.el",
+    "summary": "Extensions to Emacs font-lock.el",
     "version": "20171030.1445",
     "url": "https://github.com/sensorflo/font-lock-ext/",
     "source": "github",
@@ -1054,7 +1054,7 @@
   },
   {
     "name": "hlsl-mode",
-    "summary": "major mode for Open HLSL shader files",
+    "summary": "Major mode for Open HLSL shader files",
     "version": "20160306.1437",
     "url": "https://github.com/darfink/hlsl-mode",
     "source": "github",
@@ -1117,7 +1117,7 @@
   },
   {
     "name": "ivy-point-history",
-    "summary": "point-history with ivy interface",
+    "summary": "Point-history with ivy interface",
     "version": "20200726.1639",
     "url": "https://github.com/SuzumiyaAoba/ivy-point-history",
     "source": "github",
@@ -1279,7 +1279,7 @@
   },
   {
     "name": "llvm-mode",
-    "summary": "Major mode for the LLVM assembler language.",
+    "summary": "Major mode for the LLVM assembler language",
     "version": "20240717.1120",
     "url": "https://github.com/llvm/llvm-project",
     "source": "github",
@@ -1297,7 +1297,7 @@
   },
   {
     "name": "lsp-compose",
-    "summary": "lsp-mode client for compose server",
+    "summary": "Lsp-mode client for compose server",
     "version": "20200515.1833",
     "url": "https://github.com/lepisma/compose-language-server.el",
     "source": "github",
@@ -1342,7 +1342,7 @@
   },
   {
     "name": "maple-line",
-    "summary": "maple line configuration.",
+    "summary": "Maple line configuration",
     "version": "20200519.1557",
     "url": "https://github.com/honmaple/emacs-maple-line",
     "source": "github",
@@ -1477,7 +1477,7 @@
   },
   {
     "name": "noflet",
-    "summary": "locally override functions",
+    "summary": "Locally override functions",
     "version": "20230414.531",
     "url": "https://github.com/elp-revive/noflet",
     "source": "github",
@@ -1513,7 +1513,7 @@
   },
   {
     "name": "org-modern-indent",
-    "summary": "org-indent blocks like org-modern",
+    "summary": "Org-indent blocks like org-modern",
     "version": "20240320.2321",
     "url": "https://github.com/jdtsmith/org-modern-indent",
     "source": "github",
@@ -1541,15 +1541,15 @@
   {
     "name": "package-build",
     "summary": "Tools for assembling a package archive",
-    "version": "20240915.1552",
+    "version": "20240915.2323",
     "url": "https://github.com/melpa/package-build",
     "source": "github",
-    "commit": "9756e18fbe951e05dc1fdcb677e1788c0397c970",
+    "commit": "ac03f07fbb76ec3e83e871e057ddd54ede543653",
     "tree": "https://github.com/melpa/package-build"
   },
   {
     "name": "pallet",
-    "summary": "A package management tool for Emacs, using Cask.",
+    "summary": "A package management tool for Emacs, using Cask",
     "version": "20150512.702",
     "url": "https://github.com/rdallasgray/pallet",
     "source": "github",
@@ -1576,7 +1576,7 @@
   },
   {
     "name": "point-undo",
-    "summary": "undo/redo position",
+    "summary": "Undo/redo position",
     "version": "20211208.842",
     "url": "https://github.com/ncaq/point-undo",
     "source": "github",
@@ -1702,7 +1702,7 @@
   },
   {
     "name": "resurrect",
-    "summary": "No description available.",
+    "summary": "[No description available]",
     "version": "20140829.1717",
     "url": "https://github.com/fbkante/resurrect",
     "source": "github",
@@ -1738,7 +1738,7 @@
   },
   {
     "name": "show-eof-mode",
-    "summary": "No description available.",
+    "summary": "[No description available]",
     "version": "20240720.1434",
     "url": "https://github.com/zk-phi/show-eof-mode",
     "source": "github",
@@ -1783,7 +1783,7 @@
   },
   {
     "name": "sideline-eldoc",
-    "summary": "sideline backend for eldoc.",
+    "summary": "Sideline backend for eldoc",
     "version": "20240727.532",
     "url": "https://github.com/ginqi7/sideline-eldoc",
     "source": "github",
@@ -1828,7 +1828,7 @@
   },
   {
     "name": "sln-mode",
-    "summary": "a major-mode for msvc's *.sln files",
+    "summary": "A major-mode for msvc's *.sln files",
     "version": "20150212.752",
     "url": "https://github.com/sensorflo/sln-mode",
     "source": "github",
@@ -1837,7 +1837,7 @@
   },
   {
     "name": "smartchr",
-    "summary": "emacs version of smartchr.vim",
+    "summary": "Emacs version of smartchr.vim",
     "version": "20220606.1252",
     "url": "https://github.com/imakado/emacs-smartchr",
     "source": "github",
@@ -2026,7 +2026,7 @@
   },
   {
     "name": "vbscript-mode",
-    "summary": "No description available.",
+    "summary": "[No description available]",
     "version": "20160720.820",
     "url": "http://www.emacswiki.org/emacs/VbsReplMode",
     "source": "github",
@@ -2053,7 +2053,7 @@
   },
   {
     "name": "visual-basic-mode",
-    "summary": "A mode for editing Visual Basic programs.",
+    "summary": "A mode for editing Visual Basic programs",
     "version": "20160720.820",
     "url": "http://www.emacswiki.org/cgi-bin/wiki/visual-basic-mode.el",
     "source": "github",
@@ -2125,7 +2125,7 @@
   },
   {
     "name": "vsc-multiple-cursors",
-    "summary": "multiple-cursors integration behave like VSCode",
+    "summary": "Multiple-cursors integration behave like VSCode",
     "version": "20240117.1014",
     "url": "https://github.com/emacs-vs/vsc-multiple-cursors",
     "source": "github",
@@ -2170,7 +2170,7 @@
   },
   {
     "name": "zoom-to-point",
-    "summary": "Zoom in or out on the line at point.",
+    "summary": "Zoom in or out on the line at point",
     "version": "20131216.1307",
     "url": "https://github.com/rmloveland/zoom-to-point",
     "source": "github",
