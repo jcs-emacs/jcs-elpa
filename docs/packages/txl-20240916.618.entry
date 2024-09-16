@@ -1,5 +1,5 @@
 (txl .
-     [(20240910 840)
+     [(20240916 618)
       ((request
 	(0 3 2))
        (guess-language
@@ -7,7 +7,7 @@
        (emacs
 	(24 4)))
       "Provides machine translation via DeepL's REST API" tar
-      ((:commit . "ab1d7fd862d0accabbf3e68b3fec758cb7026343")
+      ((:commit . "b60b2127cd342d54cb4f54984e84f6e39da68678")
        (:authors
 	("Titus von der Malsburg" . "malsburg@posteo.de"))
        (:maintainers
