@@ -1,6 +1,6 @@
 (sideline-eldoc .
 		[(20240727 532)
-		 nil "sideline backend for eldoc." tar
+		 nil "Sideline backend for eldoc" tar
 		 ((:commit . "70f616af494586e19e6d79f491391b600321056b")
 		  (:authors
 		   ("Qiqi Jin" . "ginqi7@gmail.com"))
