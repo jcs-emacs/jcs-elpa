@@ -8,7 +8,7 @@
 		    (1 0 4))
 		(compat
 		 (29 1 4 4)))
-	       "flymake integration for vale" tar
+	       "Flymake integration for vale" tar
 	       ((:commit . "32691d788a378915b98dba81e3af63227a630af3")
 		(:authors
 		 ("Trey Peacock" . "http://github/tpeacock19"))

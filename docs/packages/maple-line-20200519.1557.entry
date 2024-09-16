@@ -1,6 +1,6 @@
 (maple-line .
 	    [(20200519 1557)
-	     nil "maple line configuration." tar
+	     nil "Maple line configuration" tar
 	     ((:commit . "266dae95df1d9e9394cc61e57f3b88327a79d6f5")
 	      (:authors
 	       ("lin.jiang" . "mail@honmaple.com"))
