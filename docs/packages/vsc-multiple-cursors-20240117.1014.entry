@@ -4,7 +4,7 @@
 			 (27 1))
 			(multiple-cursors
 			 (1 4 0)))
-		       "multiple-cursors integration behave like VSCode" tar
+		       "Multiple-cursors integration behave like VSCode" tar
 		       ((:commit . "3914e1949564f0060d26930c156440a94d789d93")
 			(:authors
 			 ("Jen-Chieh" . "jcs090218@gmail.com"))
