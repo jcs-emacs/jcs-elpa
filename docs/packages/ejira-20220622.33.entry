@@ -16,7 +16,7 @@
 	  (1 0))
 	 (language-detection
 	  (1 0)))
-	"org-mode interface to JIRA" tar
+	"Org-mode interface to JIRA" tar
 	((:commit . "49cb61239b19bf13775528231d7d49656ec7a8bb")
 	 (:authors
 	  ("Henrik Nyman" . "h@nyymanni.com"))

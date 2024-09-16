@@ -2,7 +2,7 @@
 	[(20240419 206)
 	 ((emacs
 	   (25 1)))
-	 "flx in Rust using dynamic module" tar
+	 "Flx in Rust using dynamic module" tar
 	 ((:commit . "d6809bdf552d6ba495ca6183debaabb1a9397b67")
 	  (:authors
 	   ("Jen-Chieh" . "jcs090218@gmail.com"))
