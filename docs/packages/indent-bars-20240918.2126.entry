@@ -1,11 +1,11 @@
 (indent-bars .
-	     [(20240918 1743)
+	     [(20240918 2126)
 	      ((emacs
 		(27 1))
 	       (compat
 		(29 1)))
 	      "Highlight indentation with bars" tar
-	      ((:commit . "8ccb86707ca647dede9c99e31982575f67987df1")
+	      ((:commit . "95bc9f85e653d03beed8aa118850f94e720891a1")
 	       (:authors
 		("J.D. Smith" . "jdtsmith+elpa@gmail.com"))
 	       (:maintainers
