@@ -1,11 +1,11 @@
 (quickrun .
-	  [(20240316 807)
+	  [(20240924 2359)
 	   ((emacs
 	     (26 1))
 	    (ht
 	     (2 0)))
 	   "Run commands quickly" tar
-	   ((:commit . "4604cbd7dff6996a0d35d4eb042a5623530763bb")
+	   ((:commit . "bb0f7580cd95022c4f8d016700a73260687c9722")
 	    (:authors
 	     ("Syohei YOSHIDA" . "syohex@gmail.com"))
 	    (:maintainers
