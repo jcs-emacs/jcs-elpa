@@ -1091,10 +1091,10 @@
   {
     "name": "indent-control",
     "summary": "Management for indentation level",
-    "version": "20240512.503",
+    "version": "20240925.2337",
     "url": "https://github.com/jcs-elpa/indent-control",
     "source": "github",
-    "commit": "bf4863c9f7d1d5cadf47b78bebbafc5431361597",
+    "commit": "30879af55fbba1e0b0b8cc1dcc9006e72c329020",
     "tree": "https://github.com/jcs-elpa/indent-control"
   },
   {
