@@ -78,4 +78,8 @@
 2024-08-29T21:05:32+0000  company-emmet              Command ‘git clone https\://github.com/emacs-vs/company-emmet.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/company-emmet/’ exited with non-zero exit-code: 128
 2024-08-29T21:05:33+0000  company-makefile           Command ‘git clone https\://github.com/elp-revive/company-makefile.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/company-makefile/’ exited with non-zero exit-code: 128
 2024-09-06T02:29:45+0000  logms                      Command ‘git clone https\://github.com/jcs-elpa/logms.git /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/logms/’ exited with non-zero exit-code: 128
+<<<<<<< Updated upstream
 2024-09-25T23:53:25+0000  tree-sitter-indent         Command ‘git clone https\://codeberg.org/FelipeLema/tree-sitter-indent.el /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/tree-sitter-indent/’ exited with non-zero exit-code: 128
+=======
+2024-09-25T23:55:39+0000  gas-mode                   Command ‘git clone https\://codeberg.org/Enocstocks/gas-mode.el /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/gas-mode/’ exited with non-zero exit-code: 128
+>>>>>>> Stashed changes

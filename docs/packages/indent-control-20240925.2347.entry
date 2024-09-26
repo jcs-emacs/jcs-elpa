@@ -1,9 +1,9 @@
 (indent-control .
-		[(20240925 2337)
+		[(20240925 2347)
 		 ((emacs
 		   (26 1)))
 		 "Management for indentation level" tar
-		 ((:commit . "30879af55fbba1e0b0b8cc1dcc9006e72c329020")
+		 ((:commit . "3c3ff2b10289cf6affc0d922908789deade3cbd2")
 		  (:authors
 		   ("Jen-Chieh" . "jcs090218@gmail.com"))
 		  (:maintainers
