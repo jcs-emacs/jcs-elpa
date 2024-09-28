@@ -7,11 +7,13 @@
 		 (dart-mode
 		  (0 11)))
 		"Flycheck for dart analyze" tar
-		((:commit . "0830277d0732312fd2e202e57bcf36cc02b86ba0")
+		((:url . "https://github.com/flycheck/flycheck-dart")
+		 (:commit . "0830277d0732312fd2e202e57bcf36cc02b86ba0")
+		 (:revdesc . "0830277d0732")
+		 (:keywords "tools")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainers
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
-		 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		 (:keywords "tools")
-		 (:url . "https://github.com/flycheck/flycheck-dart"))])
+		 (:maintainer
+		  ("Jen-Chieh" . "jcs090218@gmail.com")))])

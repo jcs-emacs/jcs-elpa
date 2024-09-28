@@ -13,11 +13,13 @@
 	 (marquee-header
 	  (0 1 0)))
 	"Control the Eask command-line interface" tar
-	((:commit . "d75ec4865742a4939bd685360f8ec5b076bdcf77")
+	((:url . "https://github.com/emacs-eask/easky")
+	 (:commit . "d75ec4865742a4939bd685360f8ec5b076bdcf77")
+	 (:revdesc . "d75ec4865742")
+	 (:keywords "maint" "easky")
 	 (:authors
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))
 	 (:maintainers
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))
-	 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	 (:keywords "maint" "easky")
-	 (:url . "https://github.com/emacs-eask/easky"))])
+	 (:maintainer
+	  ("Jen-Chieh" . "jcs090218@gmail.com")))])

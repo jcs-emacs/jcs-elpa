@@ -5,11 +5,13 @@
 			(msgu
 			 (0 1 0)))
 		       "Automatically indent entire balanced expression block" tar
-		       ((:commit . "24f0a21a97af3a58002d8b4709781e6c4497acac")
+		       ((:url . "https://github.com/emacs-vs/electric-indent-sexp")
+			(:commit . "24f0a21a97af3a58002d8b4709781e6c4497acac")
+			(:revdesc . "24f0a21a97af")
+			(:keywords "convenience" "indent" "sexp" "electric")
 			(:authors
 			 ("Jen-Chieh" . "jcs090218@gmail.com"))
 			(:maintainers
 			 ("Jen-Chieh" . "jcs090218@gmail.com"))
-			(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-			(:keywords "convenience" "indent" "sexp" "electric")
-			(:url . "https://github.com/jcs-elpa/electric-indent-sexp"))])
+			(:maintainer
+			 ("Jen-Chieh" . "jcs090218@gmail.com")))])

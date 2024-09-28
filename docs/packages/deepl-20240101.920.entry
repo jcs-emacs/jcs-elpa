@@ -5,11 +5,13 @@
 	 (request
 	  (0 3 0)))
 	"Elisp library for the DeepL API" tar
-	((:commit . "cd8b691937d784c63158464b0e6fa613f2d4eab3")
+	((:url . "https://github.com/emacs-openai/deepl")
+	 (:commit . "cd8b691937d784c63158464b0e6fa613f2d4eab3")
+	 (:revdesc . "cd8b691937d7")
+	 (:keywords "comm" "deepl")
 	 (:authors
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))
 	 (:maintainers
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))
-	 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	 (:keywords "comm" "deepl")
-	 (:url . "https://github.com/emacs-openai/deepl"))])
+	 (:maintainer
+	  ("Jen-Chieh" . "jcs090218@gmail.com")))])

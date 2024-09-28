@@ -5,11 +5,13 @@
 		(flymake-easy
 		 (0 1)))
 	       "Eask support in Flymake" tar
-	       ((:commit . "0e83cec77aab54365ef8d604151888bb1f61049c")
+	       ((:url . "https://github.com/flymake/flymake-eask")
+		(:commit . "0e83cec77aab54365ef8d604151888bb1f61049c")
+		(:revdesc . "0e83cec77aab")
+		(:keywords "lisp" "eask")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainers
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
-		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		(:keywords "lisp" "eask")
-		(:url . "https://github.com/flymake/flymake-eask"))])
+		(:maintainer
+		 ("Jen-Chieh" . "jcs090218@gmail.com")))])

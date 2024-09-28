@@ -1,11 +1,13 @@
 (echo-bar .
 	  [(20240601 1744)
 	   nil "Turn the echo area into a custom status bar" tar
-	   ((:commit . "80f5a8bbd8ac848d4a69796c9568b4a55958e974")
+	   ((:url . "https://github.com/benzanol/echo-bar.el")
+	    (:commit . "80f5a8bbd8ac848d4a69796c9568b4a55958e974")
+	    (:revdesc . "80f5a8bbd8ac")
+	    (:keywords "convenience" "tools")
 	    (:authors
 	     ("Adam Tillou" . "qaiviq@gmail.com"))
 	    (:maintainers
 	     ("Adam Tillou" . "qaiviq@gmail.com"))
-	    (:maintainer "Adam Tillou" . "qaiviq@gmail.com")
-	    (:keywords "convenience" "tools")
-	    (:url . "https://github.com/qaiviq/echo-bar.el"))])
+	    (:maintainer
+	     ("Adam Tillou" . "qaiviq@gmail.com")))])

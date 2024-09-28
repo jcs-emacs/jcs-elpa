@@ -15,11 +15,13 @@
 	 (msgu
 	  (0 1 0)))
 	"Elisp Language Server" tar
-	((:commit . "0ebd7309c0a611a5a9585fb8eaca1043c7f79220")
+	((:url . "https://github.com/jcs090218/ellsp")
+	 (:commit . "0ebd7309c0a611a5a9585fb8eaca1043c7f79220")
+	 (:revdesc . "0ebd7309c0a6")
+	 (:keywords "convenience" "lsp")
 	 (:authors
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))
 	 (:maintainers
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))
-	 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	 (:keywords "convenience" "lsp")
-	 (:url . "https://github.com/jcs-elpa/ellsp"))])
+	 (:maintainer
+	  ("Jen-Chieh" . "jcs090218@gmail.com")))])

@@ -7,6 +7,7 @@
 		       (dash
 			(2 19 1)))
 		      "Company mode for tailwind css suggestions" tar
-		      ((:commit . "d94d90df23131cc59ce9b1e1619f04110bbcfa91")
-		       (:keywords "convenience" "matching")
-		       (:url . "https://github.com/tyler-dodge/company-tailwindcss"))])
+		      ((:url . "https://github.com/tyler-dodge/company-tailwindcss")
+		       (:commit . "d94d90df23131cc59ce9b1e1619f04110bbcfa91")
+		       (:revdesc . "d94d90df2313")
+		       (:keywords "convenience" "matching"))])

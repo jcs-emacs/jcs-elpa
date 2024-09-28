@@ -7,11 +7,13 @@
 	   (f
 	    (0 20 0)))
 	  "Run through `compilation-mode'" tar
-	  ((:commit . "98263f3fb3056f32225994052e646a122277828e")
+	  ((:url . "https://github.com/jcs-elpa/execrun")
+	   (:commit . "98263f3fb3056f32225994052e646a122277828e")
+	   (:revdesc . "98263f3fb305")
+	   (:keywords "tools")
 	   (:authors
 	    ("Jen-Chieh" . "jcs090218@gmail.com"))
 	   (:maintainers
 	    ("Jen-Chieh" . "jcs090218@gmail.com"))
-	   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	   (:keywords "tools")
-	   (:url . "https://github.com/jcs-elpa/execrun"))])
+	   (:maintainer
+	    ("Jen-Chieh" . "jcs090218@gmail.com")))])

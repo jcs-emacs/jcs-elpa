@@ -3,11 +3,13 @@
 	    ((emacs
 	      (26 1)))
 	    "Evaluate then deactive mark" tar
-	    ((:commit . "58702f162529431ace0793f7a73fbf048a63f943")
+	    ((:url . "https://github.com/jcs-elpa/eval-mark")
+	     (:commit . "58702f162529431ace0793f7a73fbf048a63f943")
+	     (:revdesc . "58702f162529")
+	     (:keywords "lisp")
 	     (:authors
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))
 	     (:maintainers
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))
-	     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	     (:keywords "lisp")
-	     (:url . "https://github.com/jcs-elpa/eval-mark"))])
+	     (:maintainer
+	      ("Jen-Chieh" . "jcs090218@gmail.com")))])

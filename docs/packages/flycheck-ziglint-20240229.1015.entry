@@ -7,11 +7,13 @@
 		    (zig-mode
 		     (0 0 8)))
 		   "Flycheck for ziglint" tar
-		   ((:commit . "f0371a1a2d13004c66eaf72c99cc874391e70dd9")
+		   ((:url . "https://github.com/flycheck/flycheck-ziglint")
+		    (:commit . "f0371a1a2d13004c66eaf72c99cc874391e70dd9")
+		    (:revdesc . "f0371a1a2d13")
+		    (:keywords "tools")
 		    (:authors
 		     ("Jen-Chieh" . "jcs090218@gmail.com"))
 		    (:maintainers
 		     ("Jen-Chieh" . "jcs090218@gmail.com"))
-		    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		    (:keywords "tools")
-		    (:url . "https://github.com/flycheck/flycheck-ziglint"))])
+		    (:maintainer
+		     ("Jen-Chieh" . "jcs090218@gmail.com")))])

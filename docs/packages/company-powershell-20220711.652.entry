@@ -7,11 +7,13 @@
 		      (ht
 		       (2 4)))
 		     "Emacs autocompletion backend for powershell" tar
-		     ((:commit . "0380259960aeac873c7bec1e9c5218da0a82c358")
+		     ((:url . "https://github.com/elp-revive/company-powershell")
+		      (:commit . "0380259960aeac873c7bec1e9c5218da0a82c358")
+		      (:revdesc . "0380259960ae")
+		      (:keywords "convenience")
 		      (:authors
 		       ("Noah Peart" . "noah.v.peart@gmail.com"))
 		      (:maintainers
 		       ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
-		      (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
-		      (:keywords "convenience")
-		      (:url . "https://github.com/elp-revive/company-powershell"))])
+		      (:maintainer
+		       ("Jen-Chieh Shen" . "jcs090218@gmail.com")))])

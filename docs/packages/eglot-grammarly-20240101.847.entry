@@ -5,11 +5,13 @@
 		   (eglot
 		    (1 4)))
 		  "Eglot Clients for Grammarly" tar
-		  ((:commit . "98808ddab58fce259d8144d48db56b21ebfa4a2e")
+		  ((:url . "https://github.com/emacs-grammarly/eglot-grammarly")
+		   (:commit . "98808ddab58fce259d8144d48db56b21ebfa4a2e")
+		   (:revdesc . "98808ddab58f")
+		   (:keywords "convenience" "eglot" "grammarly" "checker")
 		   (:authors
 		    ("Jen-Chieh" . "jcs090218@gmail.com"))
 		   (:maintainers
 		    ("Jen-Chieh" . "jcs090218@gmail.com"))
-		   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		   (:keywords "convenience" "eglot" "grammarly" "checker")
-		   (:url . "https://github.com/emacs-grammarly/eglot-grammarly"))])
+		   (:maintainer
+		    ("Jen-Chieh" . "jcs090218@gmail.com")))])

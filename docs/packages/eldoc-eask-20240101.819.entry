@@ -5,11 +5,13 @@
 	      (eask
 	       (0 1 0)))
 	     "Eldoc support for Eask-file" tar
-	     ((:commit . "ade0f239814f3b8bc77229e903d2c4b806ded90a")
+	     ((:url . "https://github.com/emacs-eask/eldoc-eask")
+	      (:commit . "ade0f239814f3b8bc77229e903d2c4b806ded90a")
+	      (:revdesc . "ade0f239814f")
+	      (:keywords "convenience")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
 	      (:maintainers
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
-	      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	      (:keywords "convenience")
-	      (:url . "https://github.com/emacs-eask/eldoc-eask"))])
+	      (:maintainer
+	       ("Jen-Chieh" . "jcs090218@gmail.com")))])

@@ -3,11 +3,13 @@
 	  ((emacs
 	    (25 1)))
 	  "Record file external stats" tar
-	  ((:commit . "430a09d9757120d6d0ed474a549e883d614bf221")
+	  ((:url . "https://github.com/emacs-vs/fextern")
+	   (:commit . "430a09d9757120d6d0ed474a549e883d614bf221")
+	   (:revdesc . "430a09d97571")
+	   (:keywords "convenience" "externally" "file" "stats")
 	   (:authors
 	    ("Jen-Chieh" . "jcs090218@gmail.com"))
 	   (:maintainers
 	    ("Jen-Chieh" . "jcs090218@gmail.com"))
-	   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	   (:keywords "convenience" "externally" "file" "stats")
-	   (:url . "https://github.com/emacs-vs/fextern"))])
+	   (:maintainer
+	    ("Jen-Chieh" . "jcs090218@gmail.com")))])

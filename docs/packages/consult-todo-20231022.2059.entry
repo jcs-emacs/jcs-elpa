@@ -7,10 +7,12 @@
 		(hl-todo
 		 (3 1 2)))
 	       "Search hl-todo keywords in consult" tar
-	       ((:commit . "84f3c9876a285f733d75053076a97cc30f7d8eb9")
+	       ((:url . "https://github.com/liuyinz/consult-todo")
+		(:commit . "84f3c9876a285f733d75053076a97cc30f7d8eb9")
+		(:revdesc . "84f3c9876a28")
 		(:authors
 		 ("liuyinz" . "liuyinz@gmail.com"))
 		(:maintainers
 		 ("liuyinz" . "liuyinz@gmail.com"))
-		(:maintainer "liuyinz" . "liuyinz@gmail.com")
-		(:url . "https://github.com/liuyinz/consult-todo"))])
+		(:maintainer
+		 ("liuyinz" . "liuyinz@gmail.com")))])

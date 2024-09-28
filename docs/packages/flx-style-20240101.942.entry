@@ -5,11 +5,13 @@
 	     (flx
 	      (0 5)))
 	    "Completion style for flx" tar
-	    ((:commit . "43ea83addab697a35ceb2d1e5a70037418833971")
+	    ((:url . "https://github.com/jcs-elpa/flx-style")
+	     (:commit . "43ea83addab697a35ceb2d1e5a70037418833971")
+	     (:revdesc . "43ea83addab6")
+	     (:keywords "matching" "flx" "completion" "style")
 	     (:authors
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))
 	     (:maintainers
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))
-	     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	     (:keywords "matching" "flx" "completion" "style")
-	     (:url . "https://github.com/jcs-elpa/flx-style"))])
+	     (:maintainer
+	      ("Jen-Chieh" . "jcs090218@gmail.com")))])

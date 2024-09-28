@@ -9,11 +9,13 @@
 		  (csharp-mode
 		   (1 0 2)))
 		 "Eldoc support for meta-net" tar
-		 ((:commit . "ae98185b614d2fddd09d9269eed3c09bd63d878c")
+		 ((:url . "https://github.com/emacs-vs/eldoc-meta-net")
+		  (:commit . "ae98185b614d2fddd09d9269eed3c09bd63d878c")
+		  (:revdesc . "ae98185b614d")
+		  (:keywords "convenience" "eldoc" "c#" "dotnet" "sdk")
 		  (:authors
 		   ("Jen-Chieh" . "jcs090218@gmail.com"))
 		  (:maintainers
 		   ("Jen-Chieh" . "jcs090218@gmail.com"))
-		  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		  (:keywords "convenience" "eldoc" "c#" "dotnet" "sdk")
-		  (:url . "https://github.com/emacs-vs/eldoc-meta-net"))])
+		  (:maintainer
+		   ("Jen-Chieh" . "jcs090218@gmail.com")))])

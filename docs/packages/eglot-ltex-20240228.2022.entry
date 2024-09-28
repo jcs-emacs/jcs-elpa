@@ -7,11 +7,13 @@
 	      (f
 	       (0 20 0)))
 	     "Eglot Clients for LTEX" tar
-	     ((:commit . "61d908950efe287da1ca021e8c9e8563c15d65cf")
+	     ((:url . "https://github.com/emacs-languagetool/eglot-ltex")
+	      (:commit . "61d908950efe287da1ca021e8c9e8563c15d65cf")
+	      (:revdesc . "61d908950efe")
+	      (:keywords "convenience" "eglot" "languagetool" "checker")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
 	      (:maintainers
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
-	      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	      (:keywords "convenience" "eglot" "languagetool" "checker")
-	      (:url . "https://github.com/emacs-languagetool/eglot-ltex"))])
+	      (:maintainer
+	       ("Jen-Chieh" . "jcs090218@gmail.com")))])

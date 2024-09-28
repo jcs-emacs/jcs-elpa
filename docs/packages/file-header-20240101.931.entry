@@ -3,11 +3,13 @@
 	      ((emacs
 		(28 1)))
 	      "Highly customizable self design file header" tar
-	      ((:commit . "8b94ef826ce7cc87467eae811ba116317ceeeb70")
+	      ((:url . "https://github.com/jcs-elpa/file-header")
+	       (:commit . "8b94ef826ce7cc87467eae811ba116317ceeeb70")
+	       (:revdesc . "8b94ef826ce7")
+	       (:keywords "convenience" "file" "header")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainers
 		("Jen-Chieh" . "jcs090218@gmail.com"))
-	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	       (:keywords "convenience" "file" "header")
-	       (:url . "https://github.com/jcs-elpa/file-header"))])
+	       (:maintainer
+		("Jen-Chieh" . "jcs090218@gmail.com")))])

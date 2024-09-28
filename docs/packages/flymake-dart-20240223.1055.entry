@@ -5,11 +5,13 @@
 		(flymake-easy
 		 (0 1)))
 	       "Flymake support for dart analyze" tar
-	       ((:commit . "1c321e6c14705bf0719a44f430122b82330c66ec")
+	       ((:url . "https://github.com/flymake/flymake-dart")
+		(:commit . "1c321e6c14705bf0719a44f430122b82330c66ec")
+		(:revdesc . "1c321e6c1470")
+		(:keywords "tools")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainers
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
-		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		(:keywords "tools")
-		(:url . "https://github.com/flymake/flymake-dart"))])
+		(:maintainer
+		 ("Jen-Chieh" . "jcs090218@gmail.com")))])

@@ -7,11 +7,13 @@
 		    (flycheck
 		     (0 14)))
 		   "Display hl-todo keywords in flycheck" tar
-		   ((:commit . "16b66ea07e9d31950093ef0ff97d42b8e7ebf10f")
+		   ((:url . "https://github.com/alvarogonzalezsotillo/flycheck-hl-todo")
+		    (:commit . "16b66ea07e9d31950093ef0ff97d42b8e7ebf10f")
+		    (:revdesc . "16b66ea07e9d")
+		    (:keywords "convenience")
 		    (:authors
 		     ("lvaro González Sotillo" . "alvarogonzalezsotillo@gmail.com"))
 		    (:maintainers
 		     ("lvaro González Sotillo" . "alvarogonzalezsotillo@gmail.com"))
-		    (:maintainer "lvaro González Sotillo" . "alvarogonzalezsotillo@gmail.com")
-		    (:keywords "convenience")
-		    (:url . "https://github.com/alvarogonzalezsotillo/flycheck-hl-todo"))])
+		    (:maintainer
+		     ("lvaro González Sotillo" . "alvarogonzalezsotillo@gmail.com")))])

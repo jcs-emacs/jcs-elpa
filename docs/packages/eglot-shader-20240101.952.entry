@@ -5,11 +5,13 @@
 		(eglot
 		 (1 4)))
 	       "Eglot Clients for Shader" tar
-	       ((:commit . "556f20d4e2226d9e9f55cc8246d59969140f4bb9")
+	       ((:url . "https://github.com/shader-ls/eglot-shader")
+		(:commit . "556f20d4e2226d9e9f55cc8246d59969140f4bb9")
+		(:revdesc . "556f20d4e222")
+		(:keywords "convenience" "shader")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainers
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
-		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		(:keywords "convenience" "shader")
-		(:url . "https://github.com/shader-ls/eglot-shader"))])
+		(:maintainer
+		 ("Jen-Chieh" . "jcs090218@gmail.com")))])

@@ -5,11 +5,13 @@
 		 (flycheck
 		  (0 14)))
 		"Flycheck for deno-lint" tar
-		((:commit . "5e4d66865d7d91e7af3b1b69b02dd540c9ea5aca")
+		((:url . "https://github.com/flycheck/flycheck-deno")
+		 (:commit . "5e4d66865d7d91e7af3b1b69b02dd540c9ea5aca")
+		 (:revdesc . "5e4d66865d7d")
+		 (:keywords "lisp" "deno")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainers
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
-		 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		 (:keywords "lisp" "deno")
-		 (:url . "https://github.com/flycheck/flycheck-deno"))])
+		 (:maintainer
+		  ("Jen-Chieh" . "jcs090218@gmail.com")))])

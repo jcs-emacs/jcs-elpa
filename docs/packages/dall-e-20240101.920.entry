@@ -15,11 +15,13 @@
 	  (async
 	   (1 9 3)))
 	 "Use DALL-E inside Emacs" tar
-	 ((:commit . "b2e183315700c0348d5dd4e938db737dac9bb781")
+	 ((:url . "https://github.com/emacs-openai/dall-e")
+	  (:commit . "b2e183315700c0348d5dd4e938db737dac9bb781")
+	  (:revdesc . "b2e183315700")
+	  (:keywords "comm" "dall-e")
 	  (:authors
 	   ("Jen-Chieh" . "jcs090218@gmail.com"))
 	  (:maintainers
 	   ("Jen-Chieh" . "jcs090218@gmail.com"))
-	  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	  (:keywords "comm" "dall-e")
-	  (:url . "https://github.com/emacs-openai/dall-e"))])
+	  (:maintainer
+	   ("Jen-Chieh" . "jcs090218@gmail.com")))])

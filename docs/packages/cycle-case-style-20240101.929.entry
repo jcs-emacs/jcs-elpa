@@ -5,11 +5,13 @@
 		    (change-case
 		     (9)))
 		   "Cycle through case style (PascalCase, camelCase, etc)" tar
-		   ((:commit . "d6d67981d74d1b48ce1ff58bcefdb04d18d193be")
+		   ((:url . "https://github.com/jcs-elpa/cycle-case-style")
+		    (:commit . "d6d67981d74d1b48ce1ff58bcefdb04d18d193be")
+		    (:revdesc . "d6d67981d74d")
+		    (:keywords "convenience")
 		    (:authors
 		     ("Jen-Chieh" . "jcs090218@gmail.com"))
 		    (:maintainers
 		     ("Jen-Chieh" . "jcs090218@gmail.com"))
-		    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		    (:keywords "convenience")
-		    (:url . "https://github.com/jcs-elpa/cycle-case-style"))])
+		    (:maintainer
+		     ("Jen-Chieh" . "jcs090218@gmail.com")))])

@@ -3,11 +3,13 @@
 	    ((emacs
 	      (24 4)))
 	    "Fill buffer so you don't see empty lines at the end" tar
-	    ((:commit . "c04d29a83d50c9f1dfc039c05c6508f8370514fd")
+	    ((:url . "https://github.com/jcs-elpa/fill-page")
+	     (:commit . "c04d29a83d50c9f1dfc039c05c6508f8370514fd")
+	     (:revdesc . "c04d29a83d50")
+	     (:keywords "convenience" "fill" "page" "buffer")
 	     (:authors
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))
 	     (:maintainers
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))
-	     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	     (:keywords "convenience" "fill" "page" "buffer")
-	     (:url . "https://github.com/jcs-elpa/fill-page"))])
+	     (:maintainer
+	      ("Jen-Chieh" . "jcs090218@gmail.com")))])

@@ -9,11 +9,13 @@
 	 (list-utils
 	  (0 4 6)))
 	"Environment variable management" tar
-	((:commit . "e684e2a73b8385a26fc2bda96b9fff839c726f92")
+	((:url . "https://github.com/jcs-elpa/elenv")
+	 (:commit . "e684e2a73b8385a26fc2bda96b9fff839c726f92")
+	 (:revdesc . "e684e2a73b83")
+	 (:keywords "maint")
 	 (:authors
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))
 	 (:maintainers
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))
-	 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	 (:keywords "maint")
-	 (:url . "https://github.com/jcs-elpa/elenv"))])
+	 (:maintainer
+	  ("Jen-Chieh" . "jcs090218@gmail.com")))])

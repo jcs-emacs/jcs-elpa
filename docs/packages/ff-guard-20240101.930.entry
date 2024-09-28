@@ -7,11 +7,13 @@
 	    (s
 	     (1 9 0)))
 	   "Create parent directory for non-existent file" tar
-	   ((:commit . "9634d3f121d74a438df1f933e6a648abe9c9b3b9")
+	   ((:url . "https://github.com/jcs-elpa/ff-guard")
+	    (:commit . "9634d3f121d74a438df1f933e6a648abe9c9b3b9")
+	    (:revdesc . "9634d3f121d7")
+	    (:keywords "convenience")
 	    (:authors
 	     ("Jen-Chieh" . "jcs090218@gmail.com"))
 	    (:maintainers
 	     ("Jen-Chieh" . "jcs090218@gmail.com"))
-	    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	    (:keywords "convenience")
-	    (:url . "https://github.com/jcs-elpa/ff-guard"))])
+	    (:maintainer
+	     ("Jen-Chieh" . "jcs090218@gmail.com")))])

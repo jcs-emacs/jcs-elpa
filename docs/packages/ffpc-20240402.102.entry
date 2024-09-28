@@ -7,11 +7,13 @@
 	(f
 	 (0 20 0)))
        "Find file in project or current directory" tar
-       ((:commit . "9b0d39030da7073b6376705a072d939af8639c66")
+       ((:url . "https://github.com/jcs-elpa/ffpc")
+	(:commit . "9b0d39030da7073b6376705a072d939af8639c66")
+	(:revdesc . "9b0d39030da7")
+	(:keywords "lisp")
 	(:authors
 	 ("Jen-Chieh" . "jcs090218@gmail.com"))
 	(:maintainers
 	 ("Jen-Chieh" . "jcs090218@gmail.com"))
-	(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	(:keywords "lisp")
-	(:url . "https://github.com/jcs-elpa/ffpc"))])
+	(:maintainer
+	 ("Jen-Chieh" . "jcs090218@gmail.com")))])
