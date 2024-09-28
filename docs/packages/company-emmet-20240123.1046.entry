@@ -7,11 +7,13 @@
 		 (emmet-mode
 		  (1 0 10)))
 		"Company completion for emmet" tar
-		((:commit . "a2b7c6b8b6b52bd5a5f89cc74a9c0ca0da0edab6")
+		((:url . "https://github.com/emacs-vs/company-emmet")
+		 (:commit . "a2b7c6b8b6b52bd5a5f89cc74a9c0ca0da0edab6")
+		 (:revdesc . "a2b7c6b8b6b5")
+		 (:keywords "convenience" "emmet" "company")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainers
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
-		 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		 (:keywords "convenience" "emmet" "company")
-		 (:url . "https://github.com/emacs-vs/company-emmet"))])
+		 (:maintainer
+		  ("Jen-Chieh" . "jcs090218@gmail.com")))])

@@ -5,9 +5,12 @@
 	      (project
 	       (0 9 8)))
 	     "Project and imenu-based breadcrumb paths" tar
-	     ((:commit . "dcb6e2e82de2432d8eb75be74c8d6215fc97a2d3")
+	     ((:url . "https://github.com/joaotavora/breadcrumb")
+	      (:commit . "dcb6e2e82de2432d8eb75be74c8d6215fc97a2d3")
+	      (:revdesc . "dcb6e2e82de2")
 	      (:authors
 	       ("João Távora" . "joaotavora@gmail.com"))
 	      (:maintainers
 	       ("João Távora" . "joaotavora@gmail.com"))
-	      (:maintainer "João Távora" . "joaotavora@gmail.com"))])
+	      (:maintainer
+	       ("João Távora" . "joaotavora@gmail.com")))])

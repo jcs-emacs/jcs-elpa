@@ -5,11 +5,13 @@
 		    (company
 		     (0 8 12)))
 		   "Completion for autoconf script" tar
-		   ((:commit . "1a1439e597bb1bd7be73f8c473ebb30b1dcc76ea")
+		   ((:url . "https://github.com/elp-revive/company-autoconf")
+		    (:commit . "1a1439e597bb1bd7be73f8c473ebb30b1dcc76ea")
+		    (:revdesc . "1a1439e597bb")
+		    (:keywords "convenience")
 		    (:authors
 		     ("Noah Peart" . "noah.v.peart@gmail.com"))
 		    (:maintainers
 		     ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
-		    (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
-		    (:keywords "convenience")
-		    (:url . "https://github.com/elp-revive/company-autoconf"))])
+		    (:maintainer
+		     ("Jen-Chieh Shen" . "jcs090218@gmail.com")))])

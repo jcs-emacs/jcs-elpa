@@ -3,10 +3,13 @@
 		((emacs
 		  (26 1)))
 		"Clean useless buffers" tar
-		((:commit . "fec82f624da40b85e74cc0ea75e29c28d247911d")
+		((:url . "https://github.com/elp-revive/clean-buffers")
+		 (:commit . "fec82f624da40b85e74cc0ea75e29c28d247911d")
+		 (:revdesc . "fec82f624da4")
+		 (:keywords "convenience" "usability" "buffers")
 		 (:authors
 		  ("DarkSun" . "lujun9972@gmail.com"))
 		 (:maintainers
 		  ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
-		 (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
-		 (:keywords "convenience" "usability" "buffers"))])
+		 (:maintainer
+		  ("Jen-Chieh Shen" . "jcs090218@gmail.com")))])

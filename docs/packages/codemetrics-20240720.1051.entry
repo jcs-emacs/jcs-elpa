@@ -9,11 +9,13 @@
 	       (dash
 		(2 19 1)))
 	      "Plugin shows complexity information" tar
-	      ((:commit . "a191b05e707168d819ff4d3aabeaf29c7ddacce2")
+	      ((:url . "https://github.com/emacs-vs/codemetrics")
+	       (:commit . "a191b05e707168d819ff4d3aabeaf29c7ddacce2")
+	       (:revdesc . "a191b05e7071")
+	       (:keywords "convenience" "complexity")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainers
 		("Jen-Chieh" . "jcs090218@gmail.com"))
-	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	       (:keywords "convenience" "complexity")
-	       (:url . "https://github.com/emacs-vs/codemetrics"))])
+	       (:maintainer
+		("Jen-Chieh" . "jcs090218@gmail.com")))])

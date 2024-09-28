@@ -7,9 +7,11 @@
 		      (dockerfile-mode
 		       (1 0)))
 		     "Company mode backend for dockefile" tar
-		     ((:commit . "9272a09eb300401fdcc99adaf900520d273bbffb")
+		     ((:url . "https://github.com/elp-revive/company-dockerfile")
+		      (:commit . "9272a09eb300401fdcc99adaf900520d273bbffb")
+		      (:revdesc . "9272a09eb300")
+		      (:keywords "convenience")
 		      (:maintainers
 		       ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
-		      (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
-		      (:keywords "convenience")
-		      (:url . "https://github.com/elp-revive/company-dockerfile"))])
+		      (:maintainer
+		       ("Jen-Chieh Shen" . "jcs090218@gmail.com")))])

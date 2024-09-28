@@ -7,5 +7,7 @@
 		(pos-tip
 		 (0 4 6)))
 	       "Autocompletion for Dart files" tar
-	       ((:commit . "6508c728e2076de3463bd1af0819c9e6962912d3")
+	       ((:url . "https://github.com/sid-kurias/company-dart")
+		(:commit . "6508c728e2076de3463bd1af0819c9e6962912d3")
+		(:revdesc . "6508c728e207")
 		(:keywords "language"))])

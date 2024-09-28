@@ -15,11 +15,13 @@
 	(ansi
 	 (0 4 1)))
        "Cask: Project management for package development" tar
-       ((:commit . "10899c8075d7d8e427ab837b7353036f65b37081")
+       ((:url . "https://github.com/cask/cask")
+	(:commit . "10899c8075d7d8e427ab837b7353036f65b37081")
+	(:revdesc . "10899c8075d7")
+	(:keywords "speed" "convenience")
 	(:authors
 	 ("Johan Andersson" . "johan.rejeep@gmail.com"))
 	(:maintainers
 	 ("Johan Andersson" . "johan.rejeep@gmail.com"))
-	(:maintainer "Johan Andersson" . "johan.rejeep@gmail.com")
-	(:keywords "speed" "convenience")
-	(:url . "http://github.com/cask/cask"))])
+	(:maintainer
+	 ("Johan Andersson" . "johan.rejeep@gmail.com")))])

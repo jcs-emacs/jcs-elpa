@@ -9,11 +9,13 @@
 		 (ht
 		  (2 0)))
 		"Fuzzy matching for `company-mode'" tar
-		((:commit . "204f7d63a5388637a3767c0232173c477ce96df3")
+		((:url . "https://github.com/jcs-elpa/company-fuzzy")
+		 (:commit . "204f7d63a5388637a3767c0232173c477ce96df3")
+		 (:revdesc . "204f7d63a538")
+		 (:keywords "matching" "auto-complete" "complete" "fuzzy")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainers
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
-		 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		 (:keywords "matching" "auto-complete" "complete" "fuzzy")
-		 (:url . "https://github.com/jcs-elpa/company-fuzzy"))])
+		 (:maintainer
+		  ("Jen-Chieh" . "jcs090218@gmail.com")))])

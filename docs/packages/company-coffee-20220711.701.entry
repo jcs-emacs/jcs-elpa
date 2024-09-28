@@ -5,11 +5,13 @@
 		  (company
 		   (0 8 12)))
 		 "Emacs coffee completion" tar
-		 ((:commit . "cab6ebe0c1048881e565de98c3d159a05652db75")
+		 ((:url . "https://github.com/elp-revive/company-coffee")
+		  (:commit . "cab6ebe0c1048881e565de98c3d159a05652db75")
+		  (:revdesc . "cab6ebe0c104")
+		  (:keywords "convenience")
 		  (:authors
 		   ("Noah Peart" . "noah.v.peart@gmail.com"))
 		  (:maintainers
 		   ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
-		  (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
-		  (:keywords "convenience")
-		  (:url . "https://github.com/elp-revive/company-coffee"))])
+		  (:maintainer
+		   ("Jen-Chieh Shen" . "jcs090218@gmail.com")))])

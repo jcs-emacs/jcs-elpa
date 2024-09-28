@@ -11,11 +11,13 @@
 	       (msgu
 		(0 1 0)))
 	      "Company front-end with icons" tar
-	      ((:commit . "875ebc5a97f99d5a4d215ad454624f6318a3b7d1")
+	      ((:url . "https://github.com/elp-revive/company-box")
+	       (:commit . "875ebc5a97f99d5a4d215ad454624f6318a3b7d1")
+	       (:revdesc . "875ebc5a97f9")
+	       (:keywords "company" "completion" "front-end" "convenience")
 	       (:authors
 		("Sebastien Chapuis" . "sebastien@chapu.is"))
 	       (:maintainers
 		("Jen-Chieh Shen" . "jcs090218@gmail.com"))
-	       (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
-	       (:keywords "company" "completion" "front-end" "convenience")
-	       (:url . "https://github.com/elp-revive/company-box"))])
+	       (:maintainer
+		("Jen-Chieh Shen" . "jcs090218@gmail.com")))])

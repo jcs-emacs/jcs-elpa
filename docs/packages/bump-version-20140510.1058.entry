@@ -1,9 +1,13 @@
 (bump-version .
 	      [(20140510 1058)
 	       nil "Emacs package which helps bump version" tar
-	       ((:commit . "be213c9fd843f6f76560333e275f73e20181d50b")
+	       ((:url . "https://github.com/atykhonov/emacs-bump-version")
+		(:commit . "be213c9fd843f6f76560333e275f73e20181d50b")
+		(:revdesc . "be213c9fd843")
+		(:keywords "tool")
 		(:authors
 		 ("Andrey Tykhonov" . "atykhonov@gmail.com"))
-		(:maintainer "Andrey Tykhonov" . "atykhonov@gmail.com")
-		(:keywords "tool")
-		(:url . "https://github.com/atykhonov/emacs-bump-version"))])
+		(:maintainers
+		 ("Andrey Tykhonov" . "atykhonov@gmail.com"))
+		(:maintainer
+		 ("Andrey Tykhonov" . "atykhonov@gmail.com")))])

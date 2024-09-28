@@ -19,11 +19,13 @@
 	 (show-eol
 	  (0 0 5)))
 	"Cogru plugin for real-time collaborative editing" tar
-	((:commit . "4757a51f63d03bc1cb6235cdddaf42a575419a6a")
+	((:url . "https://github.com/Cogru/cogru.el")
+	 (:commit . "4757a51f63d03bc1cb6235cdddaf42a575419a6a")
+	 (:revdesc . "4757a51f63d0")
+	 (:keywords "convenience" "cogru")
 	 (:authors
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))
 	 (:maintainers
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))
-	 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	 (:keywords "convenience" "cogru")
-	 (:url . "https://github.com/Cogru/cogru.el"))])
+	 (:maintainer
+	  ("Jen-Chieh" . "jcs090218@gmail.com")))])

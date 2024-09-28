@@ -9,11 +9,13 @@
 	   (spinner
 	    (1 7 4)))
 	  "Use GPT-3 tp help you write code" tar
-	  ((:commit . "b3ff081ae02c35b31d862bacd9612a75d042b78a")
+	  ((:url . "https://github.com/emacs-openai/codegpt")
+	   (:commit . "b3ff081ae02c35b31d862bacd9612a75d042b78a")
+	   (:revdesc . "b3ff081ae02c")
+	   (:keywords "convenience" "codegpt")
 	   (:authors
 	    ("Jen-Chieh" . "jcs090218@gmail.com"))
 	   (:maintainers
 	    ("Jen-Chieh" . "jcs090218@gmail.com"))
-	   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	   (:keywords "convenience" "codegpt")
-	   (:url . "https://github.com/emacs-openai/codegpt"))])
+	   (:maintainer
+	    ("Jen-Chieh" . "jcs090218@gmail.com")))])

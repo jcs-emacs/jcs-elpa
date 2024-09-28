@@ -5,6 +5,7 @@
 	       (compat
 		(29 1 4 3)))
 	      "Fold comint-input" tar
-	      ((:commit . "9b9f2bbc762c846bf328e698413391db149cc759")
-	       (:keywords "convenience")
-	       (:url . "https://github.com/jdtsmith/comint-fold"))])
+	      ((:url . "https://github.com/jdtsmith/comint-fold")
+	       (:commit . "9b9f2bbc762c846bf328e698413391db149cc759")
+	       (:revdesc . "9b9f2bbc762c")
+	       (:keywords "convenience"))])

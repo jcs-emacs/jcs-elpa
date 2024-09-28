@@ -7,11 +7,13 @@
 		     (f
 		      (0 20 0)))
 		    "Company mode backend for C/C++ header files" tar
-		    ((:commit . "fa1b905a5f5bb0d9372ca2763d7ea23f3f58c624")
+		    ((:url . "https://github.com/elp-revive/company-c-headers")
+		     (:commit . "fa1b905a5f5bb0d9372ca2763d7ea23f3f58c624")
+		     (:revdesc . "fa1b905a5f5b")
+		     (:keywords "convenience" "development" "company")
 		     (:authors
 		      ("Alastair Rankine" . "alastair@girtby.net"))
 		     (:maintainers
 		      ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
-		     (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
-		     (:keywords "convenience" "development" "company")
-		     (:url . "http://github.com/elp-revive/company-c-headers"))])
+		     (:maintainer
+		      ("Jen-Chieh Shen" . "jcs090218@gmail.com")))])

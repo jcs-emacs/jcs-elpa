@@ -3,11 +3,13 @@
 		   ((emacs
 		     (25 1)))
 		   "Keep windows balanced" tar
-		   ((:commit . "fd360ca6416e56d8df92bbcb0f7aec37e201f2e7")
+		   ((:url . "https://github.com/elp-revive/balanced-windows")
+		    (:commit . "fd360ca6416e56d8df92bbcb0f7aec37e201f2e7")
+		    (:revdesc . "fd360ca6416e")
+		    (:keywords "convenience")
 		    (:authors
 		     ("wouter bolsterlee" . "wouter@bolsterl.ee"))
 		    (:maintainers
 		     ("wouter bolsterlee" . "wouter@bolsterl.ee"))
-		    (:maintainer "wouter bolsterlee" . "wouter@bolsterl.ee")
-		    (:keywords "convenience")
-		    (:url . "https://github.com/elp-revive/emacs-balanced-windows"))])
+		    (:maintainer
+		     ("wouter bolsterlee" . "wouter@bolsterl.ee")))])

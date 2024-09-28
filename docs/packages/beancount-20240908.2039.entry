@@ -1,9 +1,12 @@
 (beancount .
 	   [(20240908 2039)
 	    nil "A major mode to edit Beancount input files" tar
-	    ((:commit . "452621fa1f918d8a105e09d3bd82b2deb45b7146")
+	    ((:url . "https://github.com/beancount/beancount-mode")
+	     (:commit . "452621fa1f918d8a105e09d3bd82b2deb45b7146")
+	     (:revdesc . "452621fa1f91")
 	     (:authors
 	      ("Martin Blais" . "blais@furius.ca"))
 	     (:maintainers
 	      ("Martin Blais" . "blais@furius.ca"))
-	     (:maintainer "Martin Blais" . "blais@furius.ca"))])
+	     (:maintainer
+	      ("Martin Blais" . "blais@furius.ca")))])

@@ -7,9 +7,11 @@
 	       (ht
 		(2 4)))
 	      "Company backend for cmd/batch" tar
-	      ((:commit . "cf393156e92fb2ac503dfa328e7e96b547fc2a97")
+	      ((:url . "https://github.com/elp-revive/company-cmd")
+	       (:commit . "cf393156e92fb2ac503dfa328e7e96b547fc2a97")
+	       (:revdesc . "cf393156e92f")
+	       (:keywords "convenience")
 	       (:maintainers
 		("Jen-Chieh Shen" . "jcs090218@gmail.com"))
-	       (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
-	       (:keywords "convenience")
-	       (:url . "https://github.com/elp-revive/company-cmd"))])
+	       (:maintainer
+		("Jen-Chieh Shen" . "jcs090218@gmail.com")))])

@@ -3,9 +3,11 @@
 	      ((emacs
 		(24 1)))
 	      "Easily swap buffers" tar
-	      ((:commit . "d20de0065695ee815f1c17cf2de527d6e9a7bbf1")
+	      ((:url . "https://github.com/elp-revive/buffer-move")
+	       (:commit . "d20de0065695ee815f1c17cf2de527d6e9a7bbf1")
+	       (:revdesc . "d20de0065695")
+	       (:keywords "convenience")
 	       (:maintainers
 		("Jen-Chieh Shen" . "jcs090218@gmail.com"))
-	       (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
-	       (:keywords "convenience")
-	       (:url . "https://github.com/elp-revive/buffer-move/"))])
+	       (:maintainer
+		("Jen-Chieh Shen" . "jcs090218@gmail.com")))])

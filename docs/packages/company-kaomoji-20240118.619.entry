@@ -9,11 +9,13 @@
 		   (ht
 		    (2 0)))
 		  "Company backend for Kaomoji" tar
-		  ((:commit . "ee872d7518b5b0f364c38508c4a7b5125a54e404")
+		  ((:url . "https://github.com/jcs-elpa/company-kaomoji")
+		   (:commit . "ee872d7518b5b0f364c38508c4a7b5125a54e404")
+		   (:revdesc . "ee872d7518b5")
+		   (:keywords "matching" "kaomoji")
 		   (:authors
 		    ("Jen-Chieh" . "jcs090218@gmail.com"))
 		   (:maintainers
 		    ("Jen-Chieh" . "jcs090218@gmail.com"))
-		   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		   (:keywords "matching" "kaomoji")
-		   (:url . "https://github.com/jcs-elpa/company-kaomoji"))])
+		   (:maintainer
+		    ("Jen-Chieh" . "jcs090218@gmail.com")))])

@@ -7,11 +7,13 @@
 		(eask
 		 (0 1 0)))
 	       "Company backend for Eask-file" tar
-	       ((:commit . "3d8973a70f01121cad052b352ec0a3d76d8110d2")
+	       ((:url . "https://github.com/emacs-eask/company-eask")
+		(:commit . "3d8973a70f01121cad052b352ec0a3d76d8110d2")
+		(:revdesc . "3d8973a70f01")
+		(:keywords "convenience")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainers
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
-		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		(:keywords "convenience")
-		(:url . "https://github.com/emacs-eask/company-eask"))])
+		(:maintainer
+		 ("Jen-Chieh" . "jcs090218@gmail.com")))])

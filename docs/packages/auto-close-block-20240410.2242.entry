@@ -3,11 +3,13 @@
 		   ((emacs
 		     (26 1)))
 		   "Automatically close block" tar
-		   ((:commit . "defde03baa11b94a6eb882366eabf07c2adebc2d")
+		   ((:url . "https://github.com/emacs-vs/auto-close-block")
+		    (:commit . "defde03baa11b94a6eb882366eabf07c2adebc2d")
+		    (:revdesc . "defde03baa11")
+		    (:keywords "convenience")
 		    (:authors
 		     ("Jen-Chieh" . "jcs090218@gmail.com"))
 		    (:maintainers
 		     ("Jen-Chieh" . "jcs090218@gmail.com"))
-		    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		    (:keywords "convenience")
-		    (:url . "https://github.com/emacs-vs/auto-close-block"))])
+		    (:maintainer
+		     ("Jen-Chieh" . "jcs090218@gmail.com")))])

@@ -5,11 +5,13 @@
        (lsp-mode
 	(6 1)))
       "AWS Toolkit" tar
-      ((:commit . "f892e09b4dc1ad9a01e63482c58fc5067774f7c5")
+      ((:url . "https://github.com/jcs090218/aws-toolkit-emacs")
+       (:commit . "f892e09b4dc1ad9a01e63482c58fc5067774f7c5")
+       (:revdesc . "f892e09b4dc1")
+       (:keywords "aws" "convenience")
        (:authors
 	("Jen-Chieh" . "jcs090218@gmail.com"))
        (:maintainers
 	("Jen-Chieh" . "jcs090218@gmail.com"))
-       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-       (:keywords "aws" "convenience")
-       (:url . "https://github.com/jcs090218/aws-toolkit-emacs"))])
+       (:maintainer
+	("Jen-Chieh" . "jcs090218@gmail.com")))])

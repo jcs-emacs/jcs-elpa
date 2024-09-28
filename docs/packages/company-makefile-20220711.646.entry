@@ -5,11 +5,13 @@
 		    (company
 		     (0 8 12)))
 		   "Completion backend for gnu makefiles" tar
-		   ((:commit . "19b2b1c6b99cb59c99ae714bc9e06d5227ed36da")
+		   ((:url . "https://github.com/elp-revive/company-makefile")
+		    (:commit . "19b2b1c6b99cb59c99ae714bc9e06d5227ed36da")
+		    (:revdesc . "19b2b1c6b99c")
+		    (:keywords "convenience" "matching")
 		    (:authors
 		     ("Noah Peart" . "noah.v.peart@gmail.com"))
 		    (:maintainers
 		     ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
-		    (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
-		    (:keywords "convenience" "matching")
-		    (:url . "https://github.com/elp-revive/company-makefile"))])
+		    (:maintainer
+		     ("Jen-Chieh Shen" . "jcs090218@gmail.com")))])
