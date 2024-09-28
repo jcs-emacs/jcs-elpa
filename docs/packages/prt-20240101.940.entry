@@ -7,11 +7,13 @@
        (msgu
 	(0 1 0)))
       "Progress Reporter Library" tar
-      ((:commit . "b7c20d8573b63970f6c49b72e9e5d16e4c35bb6f")
+      ((:url . "https://github.com/jcs-elpa/prt")
+       (:commit . "b7c20d8573b63970f6c49b72e9e5d16e4c35bb6f")
+       (:revdesc . "b7c20d8573b6")
+       (:keywords "convenience")
        (:authors
 	("Jen-Chieh" . "jcs090218@gmail.com"))
        (:maintainers
 	("Jen-Chieh" . "jcs090218@gmail.com"))
-       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-       (:keywords "convenience")
-       (:url . "https://github.com/jcs-elpa/prt"))])
+       (:maintainer
+	("Jen-Chieh" . "jcs090218@gmail.com")))])

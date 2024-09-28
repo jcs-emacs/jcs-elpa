@@ -3,11 +3,13 @@
 	       ((emacs
 		 (26 1)))
 	       "Reposition window if when needed" tar
-	       ((:commit . "d677d8ee6539e4cc5793514150474324ad74f6a1")
+	       ((:url . "https://github.com/jcs-elpa/repos-window")
+		(:commit . "d677d8ee6539e4cc5793514150474324ad74f6a1")
+		(:revdesc . "d677d8ee6539")
+		(:keywords "convenience")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainers
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
-		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		(:keywords "convenience")
-		(:url . "https://github.com/jcs-elpa/repos-window"))])
+		(:maintainer
+		 ("Jen-Chieh" . "jcs090218@gmail.com")))])

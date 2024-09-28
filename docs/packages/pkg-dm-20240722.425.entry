@@ -13,11 +13,13 @@
 	  (s
 	   (1 12 0)))
 	 "Package dependencies management" tar
-	 ((:commit . "d90e177eb9357ef9b02d8a54383bbeffd49b56f8")
+	 ((:url . "https://github.com/jcs-elpa/pkg-dm")
+	  (:commit . "d90e177eb9357ef9b02d8a54383bbeffd49b56f8")
+	  (:revdesc . "d90e177eb935")
+	  (:keywords "maint")
 	  (:authors
 	   ("Jen-Chieh" . "jcs090218@gmail.com"))
 	  (:maintainers
 	   ("Jen-Chieh" . "jcs090218@gmail.com"))
-	  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	  (:keywords "maint")
-	  (:url . "https://github.com/jcs-elpa/pkg-dm"))])
+	  (:maintainer
+	   ("Jen-Chieh" . "jcs090218@gmail.com")))])

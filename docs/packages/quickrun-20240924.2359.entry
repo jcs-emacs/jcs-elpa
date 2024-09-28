@@ -5,11 +5,13 @@
 	    (ht
 	     (2 0)))
 	   "Run commands quickly" tar
-	   ((:commit . "bb0f7580cd95022c4f8d016700a73260687c9722")
+	   ((:url . "https://github.com/emacsorphanage/quickrun")
+	    (:commit . "bb0f7580cd95022c4f8d016700a73260687c9722")
+	    (:revdesc . "bb0f7580cd95")
+	    (:keywords "tools")
 	    (:authors
 	     ("Syohei YOSHIDA" . "syohex@gmail.com"))
 	    (:maintainers
 	     ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
-	    (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
-	    (:keywords "tools")
-	    (:url . "https://github.com/emacsorphanage/quickrun"))])
+	    (:maintainer
+	     ("Jen-Chieh Shen" . "jcs090218@gmail.com")))])

@@ -7,11 +7,13 @@
 		  (vc-msg
 		   (1 1 1)))
 		 "Show blame messages with sideline" tar
-		 ((:commit . "48288bc77a90b58c7609598d0a129ba1638d0098")
+		 ((:url . "https://github.com/emacs-sideline/sideline-blame")
+		  (:commit . "48288bc77a90b58c7609598d0a129ba1638d0098")
+		  (:revdesc . "48288bc77a90")
+		  (:keywords "convenience" "blame")
 		  (:authors
 		   ("Jen-Chieh" . "jcs090218@gmail.com"))
 		  (:maintainers
 		   ("Jen-Chieh" . "jcs090218@gmail.com"))
-		  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		  (:keywords "convenience" "blame")
-		  (:url . "https://github.com/emacs-sideline/sideline-blame"))])
+		  (:maintainer
+		   ("Jen-Chieh" . "jcs090218@gmail.com")))])

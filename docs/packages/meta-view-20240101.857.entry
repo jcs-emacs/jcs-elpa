@@ -11,11 +11,13 @@
 	     (f
 	      (0 20 0)))
 	    "View metadata from .NET assemblies" tar
-	    ((:commit . "afc36e49c6553400ac93e8c9224ffb3e2e07b21d")
+	    ((:url . "https://github.com/emacs-vs/meta-view")
+	     (:commit . "afc36e49c6553400ac93e8c9224ffb3e2e07b21d")
+	     (:revdesc . "afc36e49c655")
+	     (:keywords "convenience" "assembly" "metadata" "source")
 	     (:authors
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))
 	     (:maintainers
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))
-	     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	     (:keywords "convenience" "assembly" "metadata" "source")
-	     (:url . "https://github.com/emacs-vs/meta-view"))])
+	     (:maintainer
+	      ("Jen-Chieh" . "jcs090218@gmail.com")))])

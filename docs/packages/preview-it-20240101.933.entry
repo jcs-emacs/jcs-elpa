@@ -9,11 +9,13 @@
 	      (gh-md
 	       (0 1 1)))
 	     "Preview anything at point" tar
-	     ((:commit . "0aa43fb646d69d8766d8ae72c52c6f08d7867024")
+	     ((:url . "https://github.com/jcs-elpa/preview-it")
+	      (:commit . "0aa43fb646d69d8766d8ae72c52c6f08d7867024")
+	      (:revdesc . "0aa43fb646d6")
+	      (:keywords "convenience" "preview" "image" "path" "file")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
 	      (:maintainers
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
-	      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	      (:keywords "convenience" "preview" "image" "path" "file")
-	      (:url . "https://github.com/jcs-elpa/preview-it"))])
+	      (:maintainer
+	       ("Jen-Chieh" . "jcs090218@gmail.com")))])

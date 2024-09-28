@@ -7,11 +7,13 @@
 	  (tblui
 	   (0 1 0)))
 	 "Elisp library for the OpenAI API" tar
-	 ((:commit . "34c9ea4df753ed73b3e070a6d560dc43d5693599")
+	 ((:url . "https://github.com/emacs-openai/openai")
+	  (:commit . "34c9ea4df753ed73b3e070a6d560dc43d5693599")
+	  (:revdesc . "34c9ea4df753")
+	  (:keywords "comm" "openai")
 	  (:authors
 	   ("Jen-Chieh" . "jcs090218@gmail.com"))
 	  (:maintainers
 	   ("Jen-Chieh" . "jcs090218@gmail.com"))
-	  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	  (:keywords "comm" "openai")
-	  (:url . "https://github.com/emacs-openai/openai"))])
+	  (:maintainer
+	   ("Jen-Chieh" . "jcs090218@gmail.com")))])

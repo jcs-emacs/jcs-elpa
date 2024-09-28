@@ -3,11 +3,13 @@
        ((emacs
 	 (26 1)))
        "Utility functions help output the messages" tar
-       ((:commit . "f99ca37751dd272573a45d47b4433fcaedd56c03")
+       ((:url . "https://github.com/jcs-elpa/msgu")
+	(:commit . "f99ca37751dd272573a45d47b4433fcaedd56c03")
+	(:revdesc . "f99ca37751dd")
+	(:keywords "lisp")
 	(:authors
 	 ("Jen-Chieh" . "jcs090218@gmail.com"))
 	(:maintainers
 	 ("Jen-Chieh" . "jcs090218@gmail.com"))
-	(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	(:keywords "lisp")
-	(:url . "https://github.com/jcs-elpa/msgu"))])
+	(:maintainer
+	 ("Jen-Chieh" . "jcs090218@gmail.com")))])

@@ -7,6 +7,7 @@
 		     (compat
 		      (29 1 4 0)))
 		    "Org-indent blocks like org-modern" tar
-		    ((:commit . "f2b859bc53107b2a1027b76dbf4aaebf14c03433")
-		     (:keywords "convenience")
-		     (:url . "https://github.com/jdtsmith/org-modern-indent"))])
+		    ((:url . "https://github.com/jdtsmith/org-modern-indent")
+		     (:commit . "f2b859bc53107b2a1027b76dbf4aaebf14c03433")
+		     (:revdesc . "f2b859bc5310")
+		     (:keywords "convenience"))])

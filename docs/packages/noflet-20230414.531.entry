@@ -5,11 +5,13 @@
 	  (dash
 	   (2 18)))
 	 "Locally override functions" tar
-	 ((:commit . "b2645dace4646977369c81e840324c0d4df746fa")
+	 ((:url . "https://github.com/elp-revive/noflet")
+	  (:commit . "b2645dace4646977369c81e840324c0d4df746fa")
+	  (:revdesc . "b2645dace464")
+	  (:keywords "lisp")
 	  (:authors
 	   ("Nic Ferrier" . "nferrier@ferrier.me.uk"))
 	  (:maintainers
 	   ("Jen-Chieh" . "jcs090218@gmail.com"))
-	  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	  (:keywords "lisp")
-	  (:url . "https://github.com/elp-revive/noflet"))])
+	  (:maintainer
+	   ("Jen-Chieh" . "jcs090218@gmail.com")))])

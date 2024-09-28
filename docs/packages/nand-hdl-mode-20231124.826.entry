@@ -3,10 +3,12 @@
 		((emacs
 		  (25 1)))
 		"Major mode for NAND hdl files" tar
-		((:commit . "b7701cf416b7fdbffd3ad0c3467e08f9c6a92abf")
+		((:url . "https://github.com/nverno/nand-hdl-mode")
+		 (:commit . "b7701cf416b7fdbffd3ad0c3467e08f9c6a92abf")
+		 (:revdesc . "b7701cf416b7")
 		 (:authors
 		  ("Noah Peart" . "noah.v.peart@gmail.com"))
 		 (:maintainers
 		  ("Noah Peart" . "noah.v.peart@gmail.com"))
-		 (:maintainer "Noah Peart" . "noah.v.peart@gmail.com")
-		 (:url . "https://github.com/nverno/nand-hdl-mode"))])
+		 (:maintainer
+		  ("Noah Peart" . "noah.v.peart@gmail.com")))])

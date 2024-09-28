@@ -3,11 +3,13 @@
 			   ((emacs
 			     (25 1)))
 			   "Auto highlights matches to the current active region" tar
-			   ((:commit . "a1960f9e098b9980b2f07791488305ac835047ff")
+			   ((:url . "https://github.com/balloneij/selection-highlight-mode")
+			    (:commit . "a1960f9e098b9980b2f07791488305ac835047ff")
+			    (:revdesc . "a1960f9e098b")
+			    (:keywords "matching")
 			    (:authors
 			     ("Isaac Ballone" . "isaac@ballone.dev"))
 			    (:maintainers
 			     ("Isaac Ballone" . "isaac@ballone.dev"))
-			    (:maintainer "Isaac Ballone" . "isaac@ballone.dev")
-			    (:keywords "matching")
-			    (:url . "https://github.com/balloneij/selection-highlight-mode"))])
+			    (:maintainer
+			     ("Isaac Ballone" . "isaac@ballone.dev")))])

@@ -9,11 +9,13 @@
 			  (msgu
 			   (0 1 0)))
 			 "Display nerd icons in `buffer-menu'" tar
-			 ((:commit . "613a0fc2d42867d98ee101d0275674ebc679ab4b")
+			 ((:url . "https://github.com/jcs-elpa/nerd-icons-buffer-menu")
+			  (:commit . "613a0fc2d42867d98ee101d0275674ebc679ab4b")
+			  (:revdesc . "613a0fc2d428")
+			  (:keywords "frames")
 			  (:authors
 			   ("Jen-Chieh" . "jcs090218@gmail.com"))
 			  (:maintainers
 			   ("Jen-Chieh" . "jcs090218@gmail.com"))
-			  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-			  (:keywords "frames")
-			  (:url . "https://github.com/jcs-elpa/nerd-icons-buffer-menu"))])
+			  (:maintainer
+			   ("Jen-Chieh" . "jcs090218@gmail.com")))])

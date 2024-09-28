@@ -3,11 +3,13 @@
 	   ((emacs
 	     (26 1)))
 	   "Major mode for Qt Style Sheets" tar
-	   ((:commit . "8b618e30fff5337ae51d1c98a95c04007aecb32b")
+	   ((:url . "https://github.com/jcs-elpa/qss-mode")
+	    (:commit . "8b618e30fff5337ae51d1c98a95c04007aecb32b")
+	    (:revdesc . "8b618e30fff5")
+	    (:keywords "languages")
 	    (:authors
 	     ("Jen-Chieh" . "jcs090218@gmail.com"))
 	    (:maintainers
 	     ("Jen-Chieh" . "jcs090218@gmail.com"))
-	    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	    (:keywords "languages")
-	    (:url . "https://github.com/jcs-elpa/qss-mode"))])
+	    (:maintainer
+	     ("Jen-Chieh" . "jcs090218@gmail.com")))])

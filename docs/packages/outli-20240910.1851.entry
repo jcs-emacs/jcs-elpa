@@ -3,11 +3,13 @@
 	((emacs
 	  (27 1)))
 	"Org-like code outliner" tar
-	((:commit . "1366c230421aa834a9f4c986e31e63aa54e1c70b")
+	((:url . "https://github.com/jdtsmith/outli")
+	 (:commit . "1366c230421aa834a9f4c986e31e63aa54e1c70b")
+	 (:revdesc . "1366c230421a")
+	 (:keywords "convenience" "outlines" "org")
 	 (:authors
 	  ("J.D. Smith" . "jdtsmith@gmail.com"))
 	 (:maintainers
 	  ("J.D. Smith" . "jdtsmith@gmail.com"))
-	 (:maintainer "J.D. Smith" . "jdtsmith@gmail.com")
-	 (:keywords "convenience" "outlines" "org")
-	 (:url . "https://github.com/jdtsmith/outli"))])
+	 (:maintainer
+	  ("J.D. Smith" . "jdtsmith@gmail.com")))])

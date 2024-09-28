@@ -3,11 +3,13 @@
      ((emacs
        (27 1)))
      "Hooks for faster startup" tar
-     ((:commit . "26ff01594a1e326af468350e1a22dcd1b7da71ae")
+     ((:url . "https://github.com/elp-revive/on.el")
+      (:commit . "26ff01594a1e326af468350e1a22dcd1b7da71ae")
+      (:revdesc . "26ff01594a1e")
+      (:keywords "convenience")
       (:authors
        ("Alex Griffin" . "a@ajgrf.com"))
       (:maintainers
        ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
-      (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
-      (:keywords "convenience")
-      (:url . "https://github.com/elp-revive/on.el"))])
+      (:maintainer
+       ("Jen-Chieh Shen" . "jcs090218@gmail.com")))])

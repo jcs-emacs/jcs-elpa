@@ -5,11 +5,13 @@
        (s
 	(1 12 0)))
       "Minibuffer Stats" tar
-      ((:commit . "657aca00f9c4c91e8fb039a55227c17ed6711ce5")
+      ((:url . "https://github.com/jcs-elpa/mbs")
+       (:commit . "657aca00f9c4c91e8fb039a55227c17ed6711ce5")
+       (:revdesc . "657aca00f9c4")
+       (:keywords "convenience" "minibuffer" "stats")
        (:authors
 	("Jen-Chieh" . "jcs090218@gmail.com"))
        (:maintainers
 	("Jen-Chieh" . "jcs090218@gmail.com"))
-       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-       (:keywords "convenience" "minibuffer" "stats")
-       (:url . "https://github.com/jcs-elpa/mbs"))])
+       (:maintainer
+	("Jen-Chieh" . "jcs090218@gmail.com")))])

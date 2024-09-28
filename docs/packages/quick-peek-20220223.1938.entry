@@ -3,10 +3,13 @@
 	     ((emacs
 	       (24 3)))
 	     "Inline quick-peek windows" tar
-	     ((:commit . "5eadb029d2e3abe92de54a995fb00ee425bf9bf8")
+	     ((:url . "https://github.com/emacs-vs/quick-peek")
+	      (:commit . "5eadb029d2e3abe92de54a995fb00ee425bf9bf8")
+	      (:revdesc . "5eadb029d2e3")
+	      (:keywords "tools" "help" "doc" "convenience")
 	      (:authors
 	       ("Clément Pit-Claudel" . "clement.pitclaudel@live.com"))
 	      (:maintainers
 	       ("Clément Pit-Claudel" . "clement.pitclaudel@live.com"))
-	      (:maintainer "Clément Pit-Claudel" . "clement.pitclaudel@live.com")
-	      (:keywords "tools" "help" "doc" "convenience"))])
+	      (:maintainer
+	       ("Clément Pit-Claudel" . "clement.pitclaudel@live.com")))])

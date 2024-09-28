@@ -7,11 +7,13 @@
 	    (s
 	     (1 12 0)))
 	   "Add bars to virtual indentation" tar
-	   ((:commit . "94c37f63fcfec9cdde6b99457b4dac5275589d95")
+	   ((:url . "https://github.com/tonyaldon/org-bars")
+	    (:commit . "94c37f63fcfec9cdde6b99457b4dac5275589d95")
+	    (:revdesc . "94c37f63fcfe")
+	    (:keywords "outlines")
 	    (:authors
 	     ("Tony Aldon" . "tony.aldon.adm@gmail.com"))
 	    (:maintainers
 	     ("Tony Aldon" . "tony.aldon.adm@gmail.com"))
-	    (:maintainer "Tony Aldon" . "tony.aldon.adm@gmail.com")
-	    (:keywords "outlines")
-	    (:url . "https://github.com/tonyaldon/org-bars"))])
+	    (:maintainer
+	     ("Tony Aldon" . "tony.aldon.adm@gmail.com")))])

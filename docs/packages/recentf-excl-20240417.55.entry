@@ -5,11 +5,13 @@
 		(msgu
 		 (0 1 0)))
 	       "Exclude commands for recent files" tar
-	       ((:commit . "f9029e3167206c9dc3b14dbc53cdabb24cc5bde6")
+	       ((:url . "https://github.com/jcs-elpa/recentf-excl")
+		(:commit . "f9029e3167206c9dc3b14dbc53cdabb24cc5bde6")
+		(:revdesc . "f9029e316720")
+		(:keywords "convenience" "excl" "exclude" "recentf")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainers
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
-		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		(:keywords "convenience" "excl" "exclude" "recentf")
-		(:url . "https://github.com/jcs-elpa/recentf-excl"))])
+		(:maintainer
+		 ("Jen-Chieh" . "jcs090218@gmail.com")))])

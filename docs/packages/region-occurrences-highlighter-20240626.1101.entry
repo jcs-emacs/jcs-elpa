@@ -3,11 +3,13 @@
 				 ((emacs
 				   (26 1)))
 				 "Mark occurrences of current region (selection)" tar
-				 ((:commit . "55f9d100ef67f174c55209f8d4cef1962a9adfc2")
+				 ((:url . "https://github.com/alvarogonzalezsotillo/region-occurrences-highlighter")
+				  (:commit . "55f9d100ef67f174c55209f8d4cef1962a9adfc2")
+				  (:revdesc . "55f9d100ef67")
+				  (:keywords "convenience")
 				  (:authors
 				   ("lvaro González Sotillo" . "alvarogonzalezsotillo@gmail.com"))
 				  (:maintainers
 				   ("Jen-Chieh" . "jcs090218@gmail.com"))
-				  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-				  (:keywords "convenience")
-				  (:url . "https://github.com/alvarogonzalezsotillo/region-occurrences-highlighter"))])
+				  (:maintainer
+				   ("Jen-Chieh" . "jcs090218@gmail.com")))])

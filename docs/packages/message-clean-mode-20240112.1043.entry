@@ -5,11 +5,13 @@
 		      (msgu
 		       (0 1 0)))
 		     "Keep messages buffer clean" tar
-		     ((:commit . "1fe8215a5b759cef1f74e447436c2737cbb567bd")
+		     ((:url . "https://github.com/jcs-elpa/message-clean-mode")
+		      (:commit . "1fe8215a5b759cef1f74e447436c2737cbb567bd")
+		      (:revdesc . "1fe8215a5b75")
+		      (:keywords "convenience" "messages" "clean")
 		      (:authors
 		       ("Jen-Chieh" . "jcs090218@gmail.com"))
 		      (:maintainers
 		       ("Jen-Chieh" . "jcs090218@gmail.com"))
-		      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		      (:keywords "convenience" "messages" "clean")
-		      (:url . "https://github.com/jcs-elpa/message-clean-mode"))])
+		      (:maintainer
+		       ("Jen-Chieh" . "jcs090218@gmail.com")))])

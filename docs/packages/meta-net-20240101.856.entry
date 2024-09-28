@@ -9,11 +9,13 @@
 	    (s
 	     (1 12 0)))
 	   "Parse .NET assembly's XML" tar
-	   ((:commit . "3dd350df70e6a5ad5af5eea81c88cc3fa19de0b7")
+	   ((:url . "https://github.com/emacs-vs/meta-net")
+	    (:commit . "3dd350df70e6a5ad5af5eea81c88cc3fa19de0b7")
+	    (:revdesc . "3dd350df70e6")
+	    (:keywords "convenience" "assembly" "xml" "utility")
 	    (:authors
 	     ("Jen-Chieh" . "jcs090218@gmail.com"))
 	    (:maintainers
 	     ("Jen-Chieh" . "jcs090218@gmail.com"))
-	    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	    (:keywords "convenience" "assembly" "xml" "utility")
-	    (:url . "https://github.com/emacs-vs/meta-net"))])
+	    (:maintainer
+	     ("Jen-Chieh" . "jcs090218@gmail.com")))])

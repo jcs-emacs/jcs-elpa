@@ -9,11 +9,13 @@
 		  (ht
 		   (2 4)))
 		 "Show eglot information with sideline" tar
-		 ((:commit . "04c83d3c4e64f9555cec2299879491c47794398a")
+		 ((:url . "https://github.com/emacs-sideline/sideline-eglot")
+		  (:commit . "04c83d3c4e64f9555cec2299879491c47794398a")
+		  (:revdesc . "04c83d3c4e64")
+		  (:keywords "convenience" "eglot")
 		  (:authors
 		   ("Jen-Chieh" . "jcs090218@gmail.com"))
 		  (:maintainers
 		   ("Jen-Chieh" . "jcs090218@gmail.com"))
-		  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		  (:keywords "convenience" "eglot")
-		  (:url . "https://github.com/emacs-sideline/sideline-eglot"))])
+		  (:maintainer
+		   ("Jen-Chieh" . "jcs090218@gmail.com")))])
