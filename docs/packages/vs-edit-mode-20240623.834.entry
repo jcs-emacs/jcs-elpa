@@ -9,11 +9,13 @@
 		(noflet
 		 (0 0 15)))
 	       "Minor mode accomplish editing experience in Visual Studio" tar
-	       ((:commit . "bce8ef5c9f182bb19ffa01dcdc98835b86ad487e")
+	       ((:url . "https://github.com/emacs-vs/vs-edit-mode")
+		(:commit . "bce8ef5c9f182bb19ffa01dcdc98835b86ad487e")
+		(:revdesc . "bce8ef5c9f18")
+		(:keywords "convenience" "editing" "vs")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainers
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
-		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		(:keywords "convenience" "editing" "vs")
-		(:url . "https://github.com/emacs-vs/vs-edit-mode"))])
+		(:maintainer
+		 ("Jen-Chieh" . "jcs090218@gmail.com")))])

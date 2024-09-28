@@ -3,11 +3,13 @@
 		  ((emacs
 		    (26 1)))
 		  "Useful functions to interact with profiler" tar
-		  ((:commit . "76331727f75e86dfcb522913f23938b83169d1a5")
+		  ((:url . "https://github.com/jcs-elpa/toggle-profiler")
+		   (:commit . "76331727f75e86dfcb522913f23938b83169d1a5")
+		   (:revdesc . "76331727f75e")
+		   (:keywords "convenience")
 		   (:authors
 		    ("Jen-Chieh" . "jcs090218@gmail.com"))
 		   (:maintainers
 		    ("Jen-Chieh" . "jcs090218@gmail.com"))
-		   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		   (:keywords "convenience")
-		   (:url . "https://github.com/jcs-elpa/toggle-profiler"))])
+		   (:maintainer
+		    ("Jen-Chieh" . "jcs090218@gmail.com")))])

@@ -5,11 +5,13 @@
 		    (sideline
 		     (0 1 0)))
 		   "Show flymake errors with sideline" tar
-		   ((:commit . "06e84875022a5645ece8f4c2c8b56aa5f003c65d")
+		   ((:url . "https://github.com/emacs-sideline/sideline-flymake")
+		    (:commit . "06e84875022a5645ece8f4c2c8b56aa5f003c65d")
+		    (:revdesc . "06e84875022a")
+		    (:keywords "convenience" "flymake")
 		    (:authors
 		     ("Jen-Chieh" . "jcs090218@gmail.com"))
 		    (:maintainers
 		     ("Jen-Chieh" . "jcs090218@gmail.com"))
-		    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		    (:keywords "convenience" "flymake")
-		    (:url . "https://github.com/emacs-sideline/sideline-flymake"))])
+		    (:maintainer
+		     ("Jen-Chieh" . "jcs090218@gmail.com")))])

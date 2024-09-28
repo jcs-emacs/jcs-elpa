@@ -7,11 +7,13 @@
 		(fill-page
 		 (0 3 7)))
 	       "Visualizer follow mode for undo-tree" tar
-	       ((:commit . "1f2bc32ad183294d011a508af72e4d5c680c0eb8")
+	       ((:url . "https://github.com/jcs-elpa/undo-tree-vf")
+		(:commit . "1f2bc32ad183294d011a508af72e4d5c680c0eb8")
+		(:revdesc . "1f2bc32ad183")
+		(:keywords "convenience")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainers
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
-		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		(:keywords "convenience")
-		(:url . "https://github.com/jcs-elpa/undo-tree-vf"))])
+		(:maintainer
+		 ("Jen-Chieh" . "jcs090218@gmail.com")))])

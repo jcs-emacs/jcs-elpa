@@ -1,10 +1,13 @@
 (sln-mode .
 	  [(20150212 752)
 	   nil "A major-mode for msvc's *.sln files" tar
-	   ((:commit . "0f91d1b957c7d2a7bab9278ec57b54d57f1dbd9c")
+	   ((:url . "https://github.com/sensorflo/sln-mode")
+	    (:commit . "0f91d1b957c7d2a7bab9278ec57b54d57f1dbd9c")
+	    (:revdesc . "0f91d1b957c7")
+	    (:keywords "languages")
 	    (:authors
 	     ("Florian Kaufmann" . "sensorflo@gmail.com"))
 	    (:maintainers
 	     ("Florian Kaufmann" . "sensorflo@gmail.com"))
-	    (:maintainer "Florian Kaufmann" . "sensorflo@gmail.com")
-	    (:keywords "languages"))])
+	    (:maintainer
+	     ("Florian Kaufmann" . "sensorflo@gmail.com")))])

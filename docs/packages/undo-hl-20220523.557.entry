@@ -3,11 +3,13 @@
 	  ((emacs
 	    (26 0)))
 	  "Highlight undo/redo" tar
-	  ((:commit . "89fdcc62e3d938854433bc14d95e1c8e505eee20")
+	  ((:url . "https://github.com/casouri/undo-hl")
+	   (:commit . "89fdcc62e3d938854433bc14d95e1c8e505eee20")
+	   (:revdesc . "89fdcc62e3d9")
+	   (:keywords "undo")
 	   (:authors
 	    ("Yuan Fu" . "casouri@gmail.com"))
 	   (:maintainers
 	    ("Yuan Fu" . "casouri@gmail.com"))
-	   (:maintainer "Yuan Fu" . "casouri@gmail.com")
-	   (:keywords "undo")
-	   (:url . "https://github.com/casouri/undo-hl"))])
+	   (:maintainer
+	    ("Yuan Fu" . "casouri@gmail.com")))])

@@ -3,11 +3,13 @@
 	     ((emacs
 	       (26 1)))
 	     "Refresh vc-state in certain events for better UX" tar
-	     ((:commit . "e36abe12a5c4feb1dd9e4464fe6f1e599218d2d1")
+	     ((:url . "https://github.com/jcs-elpa/vc-refresh")
+	      (:commit . "e36abe12a5c4feb1dd9e4464fe6f1e599218d2d1")
+	      (:revdesc . "e36abe12a5c4")
+	      (:keywords "vc")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
 	      (:maintainers
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
-	      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	      (:keywords "vc")
-	      (:url . "https://github.com/jcs-elpa/vc-refresh"))])
+	      (:maintainer
+	       ("Jen-Chieh" . "jcs090218@gmail.com")))])

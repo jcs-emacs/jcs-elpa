@@ -1,10 +1,12 @@
 (wat-mode .
 	  [(20220713 251)
 	   nil "A major mode for WebAssembly" tar
-	   ((:commit . "46b4df83e92c585295d659d049560dbf190fe501")
+	   ((:url . "https://github.com/devonsparks/wat-mode")
+	    (:commit . "46b4df83e92c585295d659d049560dbf190fe501")
+	    (:revdesc . "46b4df83e92c")
 	    (:authors
 	     ("Devon Sparks" . "devon.sparks@gmail.com"))
 	    (:maintainers
 	     ("Devon Sparks" . "devon.sparks@gmail.com"))
-	    (:maintainer "Devon Sparks" . "devon.sparks@gmail.com")
-	    (:url . "https://github.com/devonsparks/wat-mode"))])
+	    (:maintainer
+	     ("Devon Sparks" . "devon.sparks@gmail.com")))])

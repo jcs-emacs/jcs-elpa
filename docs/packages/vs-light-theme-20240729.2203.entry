@@ -3,5 +3,6 @@
 		 ((emacs
 		   (24 1)))
 		 "Visual Studio IDE light theme" tar
-		 ((:commit . "e07fdeb808763b65dd918d7ae936744bc60d49fa")
-		  (:url . "https://github.com/emacs-vs/vs-light-theme"))])
+		 ((:url . "https://github.com/emacs-vs/vs-light-theme")
+		  (:commit . "e07fdeb808763b65dd918d7ae936744bc60d49fa")
+		  (:revdesc . "e07fdeb80876"))])

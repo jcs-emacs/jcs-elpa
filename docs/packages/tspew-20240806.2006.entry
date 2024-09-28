@@ -3,9 +3,12 @@
 	((emacs
 	  (29 1)))
 	"Clean and format \"template spew\" errors from gcc and Clang" tar
-	((:commit . "582b7f63fe5bd69b343d5733d0f109f4d9a826a3")
+	((:url . "https://github.com/jefftrull/tspew")
+	 (:commit . "582b7f63fe5bd69b343d5733d0f109f4d9a826a3")
+	 (:revdesc . "582b7f63fe5b")
 	 (:authors
 	  ("Jeff Trull" . "edaskel@att.net"))
 	 (:maintainers
 	  ("Jeff Trull" . "edaskel@att.net"))
-	 (:maintainer "Jeff Trull" . "edaskel@att.net"))])
+	 (:maintainer
+	  ("Jeff Trull" . "edaskel@att.net")))])

@@ -17,11 +17,13 @@
 	       (s
 		(1 12 0)))
 	      "Flx integration for vertico" tar
-	      ((:commit . "a1cb17461180fd93e996d0d9f96f87cb4780bbf0")
+	      ((:url . "https://github.com/jcs-elpa/vertico-flx")
+	       (:commit . "a1cb17461180fd93e996d0d9f96f87cb4780bbf0")
+	       (:revdesc . "a1cb17461180")
+	       (:keywords "convenience" "vertico" "flx")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainers
 		("Jen-Chieh" . "jcs090218@gmail.com"))
-	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	       (:keywords "convenience" "vertico" "flx")
-	       (:url . "https://github.com/jcs-elpa/vertico-flx"))])
+	       (:maintainer
+		("Jen-Chieh" . "jcs090218@gmail.com")))])

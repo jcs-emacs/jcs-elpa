@@ -5,11 +5,13 @@
 			(multiple-cursors
 			 (1 4 0)))
 		       "Multiple-cursors integration behave like VSCode" tar
-		       ((:commit . "3914e1949564f0060d26930c156440a94d789d93")
+		       ((:url . "https://github.com/emacs-vs/vsc-multiple-cursors")
+			(:commit . "3914e1949564f0060d26930c156440a94d789d93")
+			(:revdesc . "3914e1949564")
+			(:keywords "convenience" "vscode" "vsc" "multiple-cursors")
 			(:authors
 			 ("Jen-Chieh" . "jcs090218@gmail.com"))
 			(:maintainers
 			 ("Jen-Chieh" . "jcs090218@gmail.com"))
-			(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-			(:keywords "convenience" "vscode" "vsc" "multiple-cursors")
-			(:url . "https://github.com/emacs-vs/vsc-multiple-cursors"))])
+			(:maintainer
+			 ("Jen-Chieh" . "jcs090218@gmail.com")))])

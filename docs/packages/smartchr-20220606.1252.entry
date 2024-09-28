@@ -3,10 +3,12 @@
 	   ((emacs
 	     (24 3)))
 	   "Emacs version of smartchr.vim" tar
-	   ((:commit . "b2410de732484030758f72b07e619cc594e6d287")
+	   ((:url . "https://github.com/imakado/emacs-smartchr")
+	    (:commit . "b2410de732484030758f72b07e619cc594e6d287")
+	    (:revdesc . "b2410de73248")
 	    (:authors
 	     ("IMAKADO" . "ken.imakado@gmail.com"))
 	    (:maintainers
 	     ("IMAKADO" . "ken.imakado@gmail.com"))
-	    (:maintainer "IMAKADO" . "ken.imakado@gmail.com")
-	    (:url . "https://github.com/imakado/emacs-smartchr"))])
+	    (:maintainer
+	     ("IMAKADO" . "ken.imakado@gmail.com")))])

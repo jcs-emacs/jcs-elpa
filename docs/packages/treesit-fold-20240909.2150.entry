@@ -3,13 +3,15 @@
 	       ((emacs
 		 (29 1)))
 	       "Code folding using treesit" tar
-	       ((:commit . "3a7760f4c953ce14f9c2607dfdc1629cdc2664c9")
+	       ((:url . "https://github.com/emacs-tree-sitter/treesit-fold")
+		(:commit . "3a7760f4c953ce14f9c2607dfdc1629cdc2664c9")
+		(:revdesc . "3a7760f4c953")
+		(:keywords "convenience" "folding" "tree-sitter")
 		(:authors
 		 ("Junyi Hou" . "junyi.yi.hou@gmail.com")
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainers
 		 ("Junyi Hou" . "junyi.yi.hou@gmail.com")
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
-		(:maintainer "Junyi Hou" . "junyi.yi.hou@gmail.com")
-		(:keywords "convenience" "folding" "tree-sitter")
-		(:url . "https://github.com/emacs-tree-sitter/treesit-fold"))])
+		(:maintainer
+		 ("Junyi Hou" . "junyi.yi.hou@gmail.com")))])

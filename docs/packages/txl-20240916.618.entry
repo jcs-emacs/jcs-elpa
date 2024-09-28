@@ -7,11 +7,13 @@
        (emacs
 	(24 4)))
       "Provides machine translation via DeepL's REST API" tar
-      ((:commit . "b60b2127cd342d54cb4f54984e84f6e39da68678")
+      ((:url . "https://github.com/tmalsburg/txl.el")
+       (:commit . "b60b2127cd342d54cb4f54984e84f6e39da68678")
+       (:revdesc . "b60b2127cd34")
+       (:keywords "wp")
        (:authors
 	("Titus von der Malsburg" . "malsburg@posteo.de"))
        (:maintainers
 	("Titus von der Malsburg" . "malsburg@posteo.de"))
-       (:maintainer "Titus von der Malsburg" . "malsburg@posteo.de")
-       (:keywords "wp")
-       (:url . "https://github.com/tmalsburg/txl.el"))])
+       (:maintainer
+	("Titus von der Malsburg" . "malsburg@posteo.de")))])

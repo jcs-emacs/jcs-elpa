@@ -13,11 +13,13 @@
 		(s
 		 (1 12 0)))
 	       "Show lsp information with sideline" tar
-	       ((:commit . "69aca6403509abb4f5c5ba8499e98f80f81ebc88")
+	       ((:url . "https://github.com/emacs-sideline/sideline-lsp")
+		(:commit . "69aca6403509abb4f5c5ba8499e98f80f81ebc88")
+		(:revdesc . "69aca6403509")
+		(:keywords "convenience" "lsp")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
 		(:maintainers
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
-		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		(:keywords "convenience" "lsp")
-		(:url . "https://github.com/emacs-sideline/sideline-lsp"))])
+		(:maintainer
+		 ("Jen-Chieh" . "jcs090218@gmail.com")))])

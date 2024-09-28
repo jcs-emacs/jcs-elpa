@@ -5,11 +5,13 @@
 	       (async
 		(1 9 3)))
 	      "Play sound asynchronously" tar
-	      ((:commit . "4c0cf628ae2da9cfd14d2770c2a09c983533c1ec")
+	      ((:url . "https://github.com/jcs-elpa/sound-async")
+	       (:commit . "4c0cf628ae2da9cfd14d2770c2a09c983533c1ec")
+	       (:revdesc . "4c0cf628ae2d")
+	       (:keywords "multimedia")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainers
 		("Jen-Chieh" . "jcs090218@gmail.com"))
-	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	       (:keywords "multimedia")
-	       (:url . "https://github.com/jcs-elpa/sound-async"))])
+	       (:maintainer
+		("Jen-Chieh" . "jcs090218@gmail.com")))])

@@ -5,11 +5,13 @@
 	      (emacs
 	       (24 3)))
 	     "A major mode for working with Typst typesetting system" tar
-	     ((:commit . "5776fd4f3608350ff6a2b61b118d38165d342aa3")
+	     ((:url . "https://github.com/Ziqi-Yang/typst-mode.el")
+	      (:commit . "5776fd4f3608350ff6a2b61b118d38165d342aa3")
+	      (:revdesc . "5776fd4f3608")
+	      (:keywords "outlines")
 	      (:authors
 	       ("Ziqi Yang" . "mr.meowking@anche.no"))
 	      (:maintainers
 	       ("Ziqi Yang" . "mr.meowking@anche.no"))
-	      (:maintainer "Ziqi Yang" . "mr.meowking@anche.no")
-	      (:keywords "outlines")
-	      (:url . "https://github.com/Ziqi-Yang/typst-mode.el"))])
+	      (:maintainer
+	       ("Ziqi Yang" . "mr.meowking@anche.no")))])

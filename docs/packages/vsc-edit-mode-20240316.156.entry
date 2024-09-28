@@ -13,11 +13,13 @@
 		 (mwim
 		  (0 4)))
 		"Implement editing experience like VSCode" tar
-		((:commit . "bbbe7fe65e4b965fd7707a84c7131b37ea718c72")
+		((:url . "https://github.com/emacs-vs/vsc-edit-mode")
+		 (:commit . "bbbe7fe65e4b965fd7707a84c7131b37ea718c72")
+		 (:revdesc . "bbbe7fe65e4b")
+		 (:keywords "convenience" "editing" "vs")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainers
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
-		 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		 (:keywords "convenience" "editing" "vs")
-		 (:url . "https://github.com/emacs-vs/vsc-edit-mode"))])
+		 (:maintainer
+		  ("Jen-Chieh" . "jcs090218@gmail.com")))])
