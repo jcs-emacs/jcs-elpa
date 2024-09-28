@@ -3,10 +3,12 @@
 	      ((emacs
 		(26)))
 	      "Lsp-mode client for compose server" tar
-	      ((:commit . "44df194778503cd2e29e907af4c6989c7ea27d1c")
+	      ((:url . "https://github.com/lepisma/compose-language-server")
+	       (:commit . "44df194778503cd2e29e907af4c6989c7ea27d1c")
+	       (:revdesc . "44df19477850")
 	       (:authors
 		("Abhinav Tushar" . "abhinav@lepisma.xyz"))
 	       (:maintainers
 		("Abhinav Tushar" . "abhinav@lepisma.xyz"))
-	       (:maintainer "Abhinav Tushar" . "abhinav@lepisma.xyz")
-	       (:url . "https://github.com/lepisma/compose-language-server.el"))])
+	       (:maintainer
+		("Abhinav Tushar" . "abhinav@lepisma.xyz")))])

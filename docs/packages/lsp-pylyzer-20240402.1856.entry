@@ -9,6 +9,7 @@
 	       (ht
 		(2 0)))
 	      "Python LSP client using pylyzer" tar
-	      ((:commit . "dd0e5ef0ff8f8a6ea4c16f8d2b05d32a35e2efb5")
-	       (:keywords "languages" "tools" "lsp")
-	       (:url . "https://github.com/seagle0128/lsp-pylyzer"))])
+	      ((:url . "https://github.com/emacs-lsp/lsp-pylyzer")
+	       (:commit . "dd0e5ef0ff8f8a6ea4c16f8d2b05d32a35e2efb5")
+	       (:revdesc . "dd0e5ef0ff8f")
+	       (:keywords "languages" "tools" "lsp"))])

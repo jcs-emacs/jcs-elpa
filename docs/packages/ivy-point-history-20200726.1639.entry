@@ -5,5 +5,6 @@
 		     (ivy
 		      (0 11 0)))
 		    "Point-history with ivy interface" tar
-		    ((:commit . "5d450a91656503c98a548557a563ee99d65b46b3")
-		     (:url . "https://github.com/SuzumiyaAoba/ivy-point-history"))])
+		    ((:url . "https://github.com/SuzumiyaAoba/ivy-point-history")
+		     (:commit . "5d450a91656503c98a548557a563ee99d65b46b3")
+		     (:revdesc . "5d450a916565"))])

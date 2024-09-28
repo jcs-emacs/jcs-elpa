@@ -7,10 +7,12 @@
 	       (git
 		(0 1 1)))
 	      "Build and publish ELPA repositories with GitHub Pages" tar
-	      ((:commit . "c818883d9dc8d34eaee03691574e0408f18db28a")
+	      ((:url . "https://github.com/10sr/github-elpa")
+	       (:commit . "c818883d9dc8d34eaee03691574e0408f18db28a")
+	       (:revdesc . "c818883d9dc8")
 	       (:authors
 		("10sr" . "8slashes+el@gmail.com"))
 	       (:maintainers
 		("10sr" . "8slashes+el@gmail.com"))
-	       (:maintainer "10sr" . "8slashes+el@gmail.com")
-	       (:url . "https://github.com/10sr/github-elpa"))])
+	       (:maintainer
+		("10sr" . "8slashes+el@gmail.com")))])

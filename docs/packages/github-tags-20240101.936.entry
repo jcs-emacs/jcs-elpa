@@ -3,11 +3,13 @@
 	      ((emacs
 		(24 3)))
 	      "Retrieve tags information through GitHub API" tar
-	      ((:commit . "9bd5f013a933137911b3620d9e82a5a85f44ab44")
+	      ((:url . "https://github.com/jcs-elpa/github-tags")
+	       (:commit . "9bd5f013a933137911b3620d9e82a5a85f44ab44")
+	       (:revdesc . "9bd5f013a933")
+	       (:keywords "vc" "github" "tags")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainers
 		("Jen-Chieh" . "jcs090218@gmail.com"))
-	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	       (:keywords "vc" "github" "tags")
-	       (:url . "https://github.com/jcs-elpa/github-tags"))])
+	       (:maintainer
+		("Jen-Chieh" . "jcs090218@gmail.com")))])

@@ -3,13 +3,15 @@
 	  ((emacs
 	    (26 1)))
 	  "Fast and precise fuzzy scoring/matching utils" tar
-	  ((:commit . "dcaee61d4d64e81f17859c5ed36412042f2c832e")
+	  ((:url . "https://github.com/jcs-legacy/fuz-bin")
+	   (:commit . "dcaee61d4d64e81f17859c5ed36412042f2c832e")
+	   (:revdesc . "dcaee61d4d64")
+	   (:keywords "lisp")
 	   (:authors
 	    ("Zhu Zihao" . "all_but_last@163.com")
 	    ("Jen-Chieh" . "jcs090218@gmail.com"))
 	   (:maintainers
 	    ("Zhu Zihao" . "all_but_last@163.com")
 	    ("Jen-Chieh" . "jcs090218@gmail.com"))
-	   (:maintainer "Zhu Zihao" . "all_but_last@163.com")
-	   (:keywords "lisp")
-	   (:url . "https://github.com/jcs-elpa/fuz-bin"))])
+	   (:maintainer
+	    ("Zhu Zihao" . "all_but_last@163.com")))])

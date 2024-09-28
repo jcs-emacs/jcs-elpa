@@ -9,11 +9,13 @@
 		 (ht
 		  (2 0)))
 		"Line annotation for changed and saved lines" tar
-		((:commit . "76677e48451b77508673a52dcc0845b87e5f81fe")
+		((:url . "https://github.com/emacs-vs/line-reminder")
+		 (:commit . "76677e48451b77508673a52dcc0845b87e5f81fe")
+		 (:revdesc . "76677e48451b")
+		 (:keywords "convenience" "annotation")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
 		 (:maintainers
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
-		 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		 (:keywords "convenience" "annotation")
-		 (:url . "https://github.com/emacs-vs/line-reminder"))])
+		 (:maintainer
+		  ("Jen-Chieh" . "jcs090218@gmail.com")))])

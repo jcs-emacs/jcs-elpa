@@ -1,10 +1,13 @@
 (gas-mode .
 	  [(20240117 355)
 	   nil "Mode for editing assembly code with AT&T sintax" tar
-	   ((:commit . "599cbcebd01124cc9b429bdb78e0cade7a59bc66")
+	   ((:url . "https://codeberg.org/Enocstocks/gas-mode.el")
+	    (:commit . "599cbcebd01124cc9b429bdb78e0cade7a59bc66")
+	    (:revdesc . "599cbcebd011")
+	    (:keywords "languages")
 	    (:authors
 	     ("Bryan Hernández" . "masterenoc@tutamail.com"))
 	    (:maintainers
 	     ("Bryan Hernández" . "masterenoc@tutamail.com"))
-	    (:maintainer "Bryan Hernández" . "masterenoc@tutamail.com")
-	    (:keywords "languages"))])
+	    (:maintainer
+	     ("Bryan Hernández" . "masterenoc@tutamail.com")))])

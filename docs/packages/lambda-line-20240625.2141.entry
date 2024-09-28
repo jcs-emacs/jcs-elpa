@@ -5,6 +5,7 @@
 	       (all-the-icons
 		(5 0 0)))
 	      "A custom status line" tar
-	      ((:commit . "72dc248010d5bb1c20f153c8fea7f891e294bc7e")
-	       (:keywords "mode-line" "faces")
-	       (:url . "https://github.com/Lambda-Emacs/lambda-line"))])
+	      ((:url . "https://github.com/Lambda-Emacs/lambda-line")
+	       (:commit . "72dc248010d5bb1c20f153c8fea7f891e294bc7e")
+	       (:revdesc . "72dc248010d5")
+	       (:keywords "mode-line" "faces"))])

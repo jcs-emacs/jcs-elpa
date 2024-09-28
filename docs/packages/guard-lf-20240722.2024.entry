@@ -3,11 +3,13 @@
 	   ((emacs
 	     (27 1)))
 	   "Guard large files" tar
-	   ((:commit . "802b3ff6c4f4c1cd9f4f6fafb8e380a4f988172b")
+	   ((:url . "https://github.com/jcs-elpa/guard-lf")
+	    (:commit . "802b3ff6c4f4c1cd9f4f6fafb8e380a4f988172b")
+	    (:revdesc . "802b3ff6c4f4")
+	    (:keywords "help")
 	    (:authors
 	     ("JenChieh" . "jcs090218@gmail.com"))
 	    (:maintainers
 	     ("JenChieh" . "jcs090218@gmail.com"))
-	    (:maintainer "JenChieh" . "jcs090218@gmail.com")
-	    (:keywords "help")
-	    (:url . "https://github.com/jcs-elpa/guard-lf"))])
+	    (:maintainer
+	     ("JenChieh" . "jcs090218@gmail.com")))])

@@ -1,5 +1,7 @@
 (hlsl-mode .
 	   [(20160306 1437)
 	    nil "Major mode for Open HLSL shader files" tar
-	    ((:commit . "c9c80ce43a274a78ffdaa662e23ef81408d25549")
+	    ((:url . "https://github.com/darfink/hlsl-mode")
+	     (:commit . "c9c80ce43a274a78ffdaa662e23ef81408d25549")
+	     (:revdesc . "c9c80ce43a27")
 	     (:keywords "languages" "hlsl" "shader"))])

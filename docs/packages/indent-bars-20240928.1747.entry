@@ -5,11 +5,13 @@
 	       (compat
 		(29 1)))
 	      "Highlight indentation with bars" tar
-	      ((:commit . "5119ae8f8d9f24f1c793fbff362ea6416e035a77")
+	      ((:url . "https://github.com/jdtsmith/indent-bars")
+	       (:commit . "5119ae8f8d9f24f1c793fbff362ea6416e035a77")
+	       (:revdesc . "5119ae8f8d9f")
+	       (:keywords "convenience")
 	       (:authors
 		("J.D. Smith" . "jdtsmith+elpa@gmail.com"))
 	       (:maintainers
 		("J.D. Smith" . "jdtsmith+elpa@gmail.com"))
-	       (:maintainer "J.D. Smith" . "jdtsmith+elpa@gmail.com")
-	       (:keywords "convenience")
-	       (:url . "https://github.com/jdtsmith/indent-bars"))])
+	       (:maintainer
+		("J.D. Smith" . "jdtsmith+elpa@gmail.com")))])

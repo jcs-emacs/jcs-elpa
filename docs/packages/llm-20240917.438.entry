@@ -5,10 +5,12 @@
        (plz
 	(0 8)))
       "Interface to pluggable llm backends" tar
-      ((:commit . "7ca20902f2546cb46a9efa22d000aa79992b1c07")
+      ((:url . "https://github.com/ahyatt/llm")
+       (:commit . "7ca20902f2546cb46a9efa22d000aa79992b1c07")
+       (:revdesc . "7ca20902f254")
        (:authors
 	("Andrew Hyatt" . "ahyatt@gmail.com"))
        (:maintainers
 	("Andrew Hyatt" . "ahyatt@gmail.com"))
-       (:maintainer "Andrew Hyatt" . "ahyatt@gmail.com")
-       (:url . "https://github.com/ahyatt/llm"))])
+       (:maintainer
+	("Andrew Hyatt" . "ahyatt@gmail.com")))])

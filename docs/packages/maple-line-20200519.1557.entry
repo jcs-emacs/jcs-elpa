@@ -1,10 +1,12 @@
 (maple-line .
 	    [(20200519 1557)
 	     nil "Maple line configuration" tar
-	     ((:commit . "266dae95df1d9e9394cc61e57f3b88327a79d6f5")
+	     ((:url . "https://github.com/honmaple/emacs-maple-line")
+	      (:commit . "266dae95df1d9e9394cc61e57f3b88327a79d6f5")
+	      (:revdesc . "266dae95df1d")
 	      (:authors
 	       ("lin.jiang" . "mail@honmaple.com"))
 	      (:maintainers
 	       ("lin.jiang" . "mail@honmaple.com"))
-	      (:maintainer "lin.jiang" . "mail@honmaple.com")
-	      (:url . "https://github.com/honmaple/emacs-maple-line"))])
+	      (:maintainer
+	       ("lin.jiang" . "mail@honmaple.com")))])

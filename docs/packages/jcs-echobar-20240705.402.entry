@@ -11,11 +11,13 @@
 	       (keycast
 		(1 2 0)))
 	      "An echo-bar for jcs-emacs" tar
-	      ((:commit . "d824bb24ffa3b66c6ea5c223a62d7a17c3a7f27f")
+	      ((:url . "https://github.com/jcs-emacs/jcs-echobar")
+	       (:commit . "d824bb24ffa3b66c6ea5c223a62d7a17c3a7f27f")
+	       (:revdesc . "d824bb24ffa3")
+	       (:keywords "faces" "echo-bar")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
 	       (:maintainers
 		("Jen-Chieh" . "jcs090218@gmail.com"))
-	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	       (:keywords "faces" "echo-bar")
-	       (:url . "https://github.com/jcs-emacs/jcs-echobar"))])
+	       (:maintainer
+		("Jen-Chieh" . "jcs090218@gmail.com")))])

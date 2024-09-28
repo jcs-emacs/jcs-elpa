@@ -1,4 +1,6 @@
 (llvm-mode .
 	   [(20240717 1120)
 	    nil "Major mode for the LLVM assembler language" tar
-	    ((:commit . "d2bfc2b52bfc1c17248b897ae8618865d4d9a3af"))])
+	    ((:url . "https://github.com/llvm/llvm-project")
+	     (:commit . "d2bfc2b52bfc1c17248b897ae8618865d4d9a3af")
+	     (:revdesc . "d2bfc2b52bfc"))])

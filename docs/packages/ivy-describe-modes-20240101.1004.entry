@@ -5,10 +5,12 @@
 		      (ivy
 		       (0 13 0)))
 		     "Ivy interface to `describe-mode`" tar
-		     ((:commit . "31e6f8b69c4a051b01ddc17bd263cc900d2f6deb")
+		     ((:url . "https://github.com/jcs-legacy/ivy-describe-modes")
+		      (:commit . "31e6f8b69c4a051b01ddc17bd263cc900d2f6deb")
+		      (:revdesc . "31e6f8b69c4a")
 		      (:authors
 		       ("Jen-Chieh" . "jcs090218@gmail.com"))
 		      (:maintainers
 		       ("Jen-Chieh" . "jcs090218@gmail.com"))
-		      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		      (:url . "https://github.com/jcs-elpa/ivy-describe-modes"))])
+		      (:maintainer
+		       ("Jen-Chieh" . "jcs090218@gmail.com")))])

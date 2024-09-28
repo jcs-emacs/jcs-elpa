@@ -3,11 +3,13 @@
 		    ((emacs
 		      (25)))
 		    "Preview line when executing `goto-line` command" tar
-		    ((:commit . "4e712da4e5e90b02440bd1f435a89ad02ff5a894")
+		    ((:url . "https://github.com/emacs-vs/goto-line-preview")
+		     (:commit . "4e712da4e5e90b02440bd1f435a89ad02ff5a894")
+		     (:revdesc . "4e712da4e5e9")
+		     (:keywords "convenience" "line" "navigation")
 		     (:authors
 		      ("Jen-Chieh" . "jcs090218@gmail.com"))
 		     (:maintainers
 		      ("Jen-Chieh" . "jcs090218@gmail.com"))
-		     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		     (:keywords "convenience" "line" "navigation")
-		     (:url . "https://github.com/emacs-vs/goto-line-preview"))])
+		     (:maintainer
+		      ("Jen-Chieh" . "jcs090218@gmail.com")))])

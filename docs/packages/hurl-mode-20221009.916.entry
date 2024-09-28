@@ -3,11 +3,13 @@
 	    ((emacs
 	      (24)))
 	    "Major mode for hurl" tar
-	    ((:commit . "aa87da4a6f5dc6a612a576d34a81000835b819e0")
+	    ((:url . "https://github.com/azzamsa/emacs-hurl")
+	     (:commit . "aa87da4a6f5dc6a612a576d34a81000835b819e0")
+	     (:revdesc . "aa87da4a6f5d")
+	     (:keywords "hurl" "shell")
 	     (:authors
 	      ("Azzam S.A" . "vcs@azzamsa.com"))
 	     (:maintainers
 	      ("Azzam S.A" . "vcs@azzamsa.com"))
-	     (:maintainer "Azzam S.A" . "vcs@azzamsa.com")
-	     (:keywords "hurl" "shell")
-	     (:url . "https://github.com/azzamsa/emacs-hurl"))])
+	     (:maintainer
+	      ("Azzam S.A" . "vcs@azzamsa.com")))])

@@ -3,11 +3,13 @@
 	  ((emacs
 	    (24 3)))
 	  "Input kaomoji superb easily" tar
-	  ((:commit . "a2e78406afdcb7d5650975006a69afd3e7c4c6ac")
+	  ((:url . "https://github.com/elp-revive/kaomoji.el")
+	   (:commit . "a2e78406afdcb7d5650975006a69afd3e7c4c6ac")
+	   (:revdesc . "a2e78406afdc")
+	   (:keywords "tools" "fun")
 	   (:authors
 	    ("Ono Hiroko" . "azazabc123@gmail.com"))
 	   (:maintainers
 	    ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
-	   (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com")
-	   (:keywords "tools" "fun")
-	   (:url . "https://github.com/elp-revive/kaomoji.el"))])
+	   (:maintainer
+	    ("Jen-Chieh Shen" . "jcs090218@gmail.com")))])

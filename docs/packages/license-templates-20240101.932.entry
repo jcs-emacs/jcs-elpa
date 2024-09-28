@@ -5,11 +5,13 @@
 		     (request
 		      (0 3 0)))
 		    "Create LICENSE using GitHub API" tar
-		    ((:commit . "62adc47eb36a6f2eabe63c3e9dc8ce7f94007f19")
+		    ((:url . "https://github.com/jcs-elpa/license-templates")
+		     (:commit . "62adc47eb36a6f2eabe63c3e9dc8ce7f94007f19")
+		     (:revdesc . "62adc47eb36a")
+		     (:keywords "convenience" "license" "api" "template")
 		     (:authors
 		      ("Jen-Chieh" . "jcs090218@gmail.com"))
 		     (:maintainers
 		      ("Jen-Chieh" . "jcs090218@gmail.com"))
-		     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		     (:keywords "convenience" "license" "api" "template")
-		     (:url . "https://github.com/jcs-elpa/license-templates"))])
+		     (:maintainer
+		      ("Jen-Chieh" . "jcs090218@gmail.com")))])

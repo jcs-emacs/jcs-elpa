@@ -3,11 +3,13 @@
 		 ((emacs
 		   (26 1)))
 		 "Major mode for editing GPTScript natural language" tar
-		 ((:commit . "785ee4d32263f1ae17707c8e5f9f265ad468f2db")
+		 ((:url . "https://github.com/emacs-openai/gptscript-mode")
+		  (:commit . "785ee4d32263f1ae17707c8e5f9f265ad468f2db")
+		  (:revdesc . "785ee4d32263")
+		  (:keywords "languages")
 		  (:authors
 		   ("Jen-Chieh" . "jcs090218@gmail.com"))
 		  (:maintainers
 		   ("Jen-Chieh" . "jcs090218@gmail.com"))
-		  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-		  (:keywords "languages")
-		  (:url . "https://github.com/emacs-openai/gptscript-mode"))])
+		  (:maintainer
+		   ("Jen-Chieh" . "jcs090218@gmail.com")))])

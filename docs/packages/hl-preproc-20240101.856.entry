@@ -5,11 +5,13 @@
 	      (meta-net
 	       (1 1 0)))
 	     "Unhighlight invalid preprocessor region" tar
-	     ((:commit . "16a3b3dedea635217ce83287f86618c558e4ecd3")
+	     ((:url . "https://github.com/emacs-vs/hl-preproc")
+	      (:commit . "16a3b3dedea635217ce83287f86618c558e4ecd3")
+	      (:revdesc . "16a3b3dedea6")
+	      (:keywords "convenience" "preprocessor")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
 	      (:maintainers
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
-	      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com")
-	      (:keywords "convenience" "preprocessor")
-	      (:url . "https://github.com/emacs-vs/hl-preproc"))])
+	      (:maintainer
+	       ("Jen-Chieh" . "jcs090218@gmail.com")))])

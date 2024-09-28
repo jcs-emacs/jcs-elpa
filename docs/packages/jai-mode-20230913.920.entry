@@ -3,11 +3,13 @@
 	   ((emacs
 	     (26 1)))
 	   "Major mode for JAI" tar
-	   ((:commit . "080323441b393a6fa4c5750872771fb4fc96152b")
+	   ((:url . "https://github.com/krig/jai-mode")
+	    (:commit . "080323441b393a6fa4c5750872771fb4fc96152b")
+	    (:revdesc . "080323441b39")
+	    (:keywords "languages")
 	    (:authors
 	     ("Kristoffer Grönlund" . "k@ziran.se"))
 	    (:maintainers
 	     ("Kristoffer Grönlund" . "k@ziran.se"))
-	    (:maintainer "Kristoffer Grönlund" . "k@ziran.se")
-	    (:keywords "languages")
-	    (:url . "https://github.com/krig/jai-mode"))])
+	    (:maintainer
+	     ("Kristoffer Grönlund" . "k@ziran.se")))])

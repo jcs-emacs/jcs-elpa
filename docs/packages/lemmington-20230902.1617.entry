@@ -7,9 +7,11 @@
 	      (elisp-refs
 	       (1 6)))
 	     "RPC Emacs server" tar
-	     ((:commit . "e3fe31a903501f003109816abe0474bfa94fe917")
+	     ((:url . "https://github.com/lem-project/lemmington")
+	      (:commit . "e3fe31a903501f003109816abe0474bfa94fe917")
+	      (:revdesc . "e3fe31a90350")
+	      (:keywords "tools" "languages")
 	      (:maintainers
 	       ("Fermin Munoz" . "fmfs@posteo.net"))
-	      (:maintainer "Fermin Munoz" . "fmfs@posteo.net")
-	      (:keywords "tools" "languages")
-	      (:url . "https://github.com/lem-project/lemmington.git"))])
+	      (:maintainer
+	       ("Fermin Munoz" . "fmfs@posteo.net")))])
