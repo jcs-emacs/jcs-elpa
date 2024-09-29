@@ -39,10 +39,10 @@
     "name": "auto-highlight-symbol",
     "summary": "Automatic highlighting current symbol minor mode",
     "version": "20240627.650",
-    "url": "http://github.com/elp-revive/auto-highlight-symbol",
+    "url": "https://github.com/elp-revive/auto-highlight-symbol",
     "source": "github",
     "commit": "fe230750fdd3de07f71e776cb3270754e0865234",
-    "tree": "http://github.com/elp-revive/auto-highlight-symbol"
+    "tree": "https://github.com/elp-revive/auto-highlight-symbol"
   },
   {
     "name": "auto-scroll-bar",
@@ -66,10 +66,10 @@
     "name": "balanced-windows",
     "summary": "Keep windows balanced",
     "version": "20220919.824",
-    "url": "https://github.com/elp-revive/emacs-balanced-windows",
+    "url": "https://github.com/elp-revive/balanced-windows",
     "source": "github",
     "commit": "fd360ca6416e56d8df92bbcb0f7aec37e201f2e7",
-    "tree": "https://github.com/elp-revive/emacs-balanced-windows"
+    "tree": "https://github.com/elp-revive/balanced-windows"
   },
   {
     "name": "beancount",
@@ -129,10 +129,10 @@
     "name": "buffer-move",
     "summary": "Easily swap buffers",
     "version": "20240101.907",
-    "url": "https://github.com/elp-revive/buffer-move/",
+    "url": "https://github.com/elp-revive/buffer-move",
     "source": "github",
     "commit": "d20de0065695ee815f1c17cf2de527d6e9a7bbf1",
-    "tree": "https://github.com/elp-revive/buffer-move/"
+    "tree": "https://github.com/elp-revive/buffer-move"
   },
   {
     "name": "bump-version",
@@ -147,10 +147,10 @@
     "name": "cask",
     "summary": "Cask: Project management for package development",
     "version": "20230623.2158",
-    "url": "http://github.com/cask/cask",
+    "url": "https://github.com/cask/cask",
     "source": "github",
     "commit": "10899c8075d7d8e427ab837b7353036f65b37081",
-    "tree": "http://github.com/cask/cask"
+    "tree": "https://github.com/cask/cask"
   },
   {
     "name": "centaur-tabs",
@@ -246,10 +246,10 @@
     "name": "cognitive-complexity",
     "summary": "Minor mode to show the cognitive complexity of code",
     "version": "20240801.2236",
-    "url": "https://github.com/abougouffa/cognitive-complexity",
+    "url": "https://github.com/emacs-vs/cognitive-complexity",
     "source": "github",
     "commit": "8b9451fd88c9a730941ff24bb714e63379e25332",
-    "tree": "https://github.com/abougouffa/cognitive-complexity"
+    "tree": "https://github.com/emacs-vs/cognitive-complexity"
   },
   {
     "name": "cogru",
@@ -282,19 +282,19 @@
     "name": "commander",
     "summary": "Emacs command line parser",
     "version": "20140120.1852",
-    "url": "http://github.com/rejeep/commander.el",
+    "url": "https://github.com/rejeep/commander.el",
     "source": "github",
     "commit": "2c8a57b9c619e29ccbe2d5a85921b9c689e95bf9",
-    "tree": "http://github.com/rejeep/commander.el"
+    "tree": "https://github.com/rejeep/commander.el"
   },
   {
     "name": "company",
     "summary": "Modular text completion framework",
     "version": "20240625.0",
-    "url": "http://company-mode.github.io/",
+    "url": "https://github.com/elp-revive/company-mode",
     "source": "github",
     "commit": "8d2ca28a161f8b912889684412bb1d7fb07d035c",
-    "tree": "http://company-mode.github.io/"
+    "tree": "https://github.com/elp-revive/company-mode"
   },
   {
     "name": "company-autoconf",
@@ -309,10 +309,10 @@
     "name": "company-bootstrap",
     "summary": "A company backend for bootstrap",
     "version": "20240219.2347",
-    "url": "https://github.com/typefo/company-bootstrap",
+    "url": "https://github.com/elp-revive/company-bootstrap",
     "source": "github",
     "commit": "3df09598c50c824b1dfe2b9d2f2aa95b1e55995e",
-    "tree": "https://github.com/typefo/company-bootstrap"
+    "tree": "https://github.com/elp-revive/company-bootstrap"
   },
   {
     "name": "company-box",
@@ -327,10 +327,10 @@
     "name": "company-c-headers",
     "summary": "Company mode backend for C/C++ header files",
     "version": "20231223.805",
-    "url": "http://github.com/elp-revive/company-c-headers",
+    "url": "https://github.com/elp-revive/company-c-headers",
     "source": "github",
     "commit": "fa1b905a5f5bb0d9372ca2763d7ea23f3f58c624",
-    "tree": "http://github.com/elp-revive/company-c-headers"
+    "tree": "https://github.com/elp-revive/company-c-headers"
   },
   {
     "name": "company-cmd",
@@ -615,10 +615,10 @@
     "name": "echo-bar",
     "summary": "Turn the echo area into a custom status bar",
     "version": "20240601.1744",
-    "url": "https://github.com/qaiviq/echo-bar.el",
+    "url": "https://github.com/benzanol/echo-bar.el",
     "source": "github",
     "commit": "80f5a8bbd8ac848d4a69796c9568b4a55958e974",
-    "tree": "https://github.com/qaiviq/echo-bar.el"
+    "tree": "https://github.com/benzanol/echo-bar.el"
   },
   {
     "name": "eglot-copilot",
@@ -696,10 +696,10 @@
     "name": "electric-indent-sexp",
     "summary": "Automatically indent entire balanced expression block",
     "version": "20240101.855",
-    "url": "https://github.com/jcs-elpa/electric-indent-sexp",
+    "url": "https://github.com/emacs-vs/electric-indent-sexp",
     "source": "github",
     "commit": "24f0a21a97af3a58002d8b4709781e6c4497acac",
-    "tree": "https://github.com/jcs-elpa/electric-indent-sexp"
+    "tree": "https://github.com/emacs-vs/electric-indent-sexp"
   },
   {
     "name": "elenv",
@@ -723,10 +723,10 @@
     "name": "ellsp",
     "summary": "Elisp Language Server",
     "version": "20240101.959",
-    "url": "https://github.com/jcs-elpa/ellsp",
+    "url": "https://github.com/jcs090218/ellsp",
     "source": "github",
     "commit": "0ebd7309c0a611a5a9585fb8eaca1043c7f79220",
-    "tree": "https://github.com/jcs-elpa/ellsp"
+    "tree": "https://github.com/jcs090218/ellsp"
   },
   {
     "name": "emp",
@@ -768,10 +768,10 @@
     "name": "fasm-mode",
     "summary": "Fasm major mode",
     "version": "20150517.1227",
-    "url": "https://github.com/Fanael/fasm-mode",
+    "url": "https://github.com/the-little-language-designer/fasm-mode",
     "source": "github",
     "commit": "cb4b9bf48c7f05530e140456eb1f4a54716470f9",
-    "tree": "https://github.com/Fanael/fasm-mode"
+    "tree": "https://github.com/the-little-language-designer/fasm-mode"
   },
   {
     "name": "fextern",
@@ -912,10 +912,10 @@
     "name": "flymake-vale",
     "summary": "Flymake integration for vale",
     "version": "20240402.425",
-    "url": "https://github.com/tpeacock19/new",
+    "url": "https://github.com/tpeacock19/flymake-vale",
     "source": "github",
     "commit": "32691d788a378915b98dba81e3af63227a630af3",
-    "tree": "https://github.com/tpeacock19/new"
+    "tree": "https://github.com/tpeacock19/flymake-vale"
   },
   {
     "name": "flymake-ziglint",
@@ -939,37 +939,37 @@
     "name": "font-lock-ext",
     "summary": "Extensions to Emacs font-lock.el",
     "version": "20171030.1445",
-    "url": "https://github.com/sensorflo/font-lock-ext/",
+    "url": "https://github.com/sensorflo/font-lock-ext",
     "source": "github",
     "commit": "b6c82e8ac7996d96494a54454015a98ceb883feb",
-    "tree": "https://github.com/sensorflo/font-lock-ext/"
+    "tree": "https://github.com/sensorflo/font-lock-ext"
   },
   {
     "name": "fuz-bin",
     "summary": "Fast and precise fuzzy scoring/matching utils",
     "version": "20230325.115",
-    "url": "https://github.com/jcs-elpa/fuz-bin",
+    "url": "https://github.com/jcs-legacy/fuz-bin",
     "source": "github",
     "commit": "dcaee61d4d64e81f17859c5ed36412042f2c832e",
-    "tree": "https://github.com/jcs-elpa/fuz-bin"
+    "tree": "https://github.com/jcs-legacy/fuz-bin"
   },
   {
     "name": "gas-mode",
     "summary": "Mode for editing assembly code with AT&T sintax",
     "version": "20240117.355",
-    "url": "",
+    "url": "https://codeberg.org/Enocstocks/gas-mode.el",
     "source": "codeberg",
     "commit": "599cbcebd01124cc9b429bdb78e0cade7a59bc66",
-    "tree": ""
+    "tree": "https://codeberg.org/Enocstocks/gas-mode.el"
   },
   {
     "name": "git",
     "summary": "An Elisp API for programmatically using Git",
     "version": "20140128.1041",
-    "url": "http://github.com/rejeep/git.el",
+    "url": "https://github.com/rejeep/git.el",
     "source": "github",
     "commit": "8b7f1477ef367b5b7de452589dd9a8ab30150d0a",
-    "tree": "http://github.com/rejeep/git.el"
+    "tree": "https://github.com/rejeep/git.el"
   },
   {
     "name": "github-elpa",
@@ -1110,10 +1110,10 @@
     "name": "ivy-describe-modes",
     "summary": "Ivy interface to `describe-mode`",
     "version": "20240101.1004",
-    "url": "https://github.com/jcs-elpa/ivy-describe-modes",
+    "url": "https://github.com/jcs-legacy/ivy-describe-modes",
     "source": "github",
     "commit": "31e6f8b69c4a051b01ddc17bd263cc900d2f6deb",
-    "tree": "https://github.com/jcs-elpa/ivy-describe-modes"
+    "tree": "https://github.com/jcs-legacy/ivy-describe-modes"
   },
   {
     "name": "ivy-point-history",
@@ -1146,10 +1146,10 @@
     "name": "javap-mode",
     "summary": "Javap major mode",
     "version": "20220523.1728",
-    "url": "http://github.com/elp-revive/javap-mode",
+    "url": "https://github.com/elp-revive/javap-mode",
     "source": "github",
     "commit": "25c3cd0d13b122fa1f06c054e319ef8218f9b48f",
-    "tree": "http://github.com/elp-revive/javap-mode"
+    "tree": "https://github.com/elp-revive/javap-mode"
   },
   {
     "name": "jayces-mode",
@@ -1245,10 +1245,10 @@
     "name": "lemmington",
     "summary": "RPC Emacs server",
     "version": "20230902.1617",
-    "url": "https://github.com/lem-project/lemmington.git",
+    "url": "https://github.com/lem-project/lemmington",
     "source": "github",
     "commit": "e3fe31a903501f003109816abe0474bfa94fe917",
-    "tree": "https://github.com/lem-project/lemmington.git"
+    "tree": "https://github.com/lem-project/lemmington"
   },
   {
     "name": "license-templates",
@@ -1299,10 +1299,10 @@
     "name": "lsp-compose",
     "summary": "Lsp-mode client for compose server",
     "version": "20200515.1833",
-    "url": "https://github.com/lepisma/compose-language-server.el",
+    "url": "https://github.com/lepisma/compose-language-server",
     "source": "github",
     "commit": "44df194778503cd2e29e907af4c6989c7ea27d1c",
-    "tree": "https://github.com/lepisma/compose-language-server.el"
+    "tree": "https://github.com/lepisma/compose-language-server"
   },
   {
     "name": "lsp-grammarly-un",
@@ -1317,10 +1317,10 @@
     "name": "lsp-pylyzer",
     "summary": "Python LSP client using pylyzer",
     "version": "20240402.1856",
-    "url": "https://github.com/seagle0128/lsp-pylyzer",
+    "url": "https://github.com/emacs-lsp/lsp-pylyzer",
     "source": "github",
     "commit": "dd0e5ef0ff8f8a6ea4c16f8d2b05d32a35e2efb5",
-    "tree": "https://github.com/seagle0128/lsp-pylyzer"
+    "tree": "https://github.com/emacs-lsp/lsp-pylyzer"
   },
   {
     "name": "lsp-shader",
@@ -1541,15 +1541,15 @@
   {
     "name": "package-build",
     "summary": "Tools for assembling a package archive",
-    "version": "20240922.1057",
+    "version": "20240928.2149",
     "url": "https://github.com/melpa/package-build",
     "source": "github",
-    "commit": "c292e78b9509cc1c3a2369a67357d36ef20dbc30",
+    "commit": "89477a466ccfb5f21d8535fd0b6ebedf8110e8f6",
     "tree": "https://github.com/melpa/package-build"
   },
   {
     "name": "pallet",
-    "summary": "A package management tool for Emacs, using Cask",
+    "summary": "Manage your packages with Cask",
     "version": "20150512.702",
     "url": "https://github.com/rdallasgray/pallet",
     "source": "github",
@@ -1587,10 +1587,10 @@
     "name": "powerline",
     "summary": "Rewrite of Powerline",
     "version": "20221110.1956",
-    "url": "http://github.com/milkypostman/powerline/",
+    "url": "https://github.com/milkypostman/powerline",
     "source": "github",
     "commit": "c35c35bdf5ce2d992882c1f06f0f078058870d4a",
-    "tree": "http://github.com/milkypostman/powerline/"
+    "tree": "https://github.com/milkypostman/powerline"
   },
   {
     "name": "preview-it",
@@ -1857,10 +1857,10 @@
     "name": "sublime-fuzzy",
     "summary": "Fuzzy matching algorithm like Sublime Text's string search",
     "version": "20240101.1006",
-    "url": "https://github.com/jcs-elpa/sublime-fuzzy",
+    "url": "https://github.com/jcs-legacy/sublime-fuzzy",
     "source": "github",
     "commit": "a0f1c86601e3287e96956fd79cc46252f21ef8aa",
-    "tree": "https://github.com/jcs-elpa/sublime-fuzzy"
+    "tree": "https://github.com/jcs-legacy/sublime-fuzzy"
   },
   {
     "name": "toggle-profiler",
@@ -2019,19 +2019,19 @@
     "name": "vbs-repl",
     "summary": "Run visual basic repl as inferior process",
     "version": "20160720.820",
-    "url": "http://www.emacswiki.org/emacs/VbsReplMode",
+    "url": "https://github.com/nverno/vbs-mode",
     "source": "github",
     "commit": "483dd5a2c8c4675ddb3c32fdd93146c6d248285d",
-    "tree": "http://www.emacswiki.org/emacs/VbsReplMode"
+    "tree": "https://github.com/nverno/vbs-mode"
   },
   {
     "name": "vbscript-mode",
     "summary": "[No description available]",
     "version": "20160720.820",
-    "url": "http://www.emacswiki.org/emacs/VbsReplMode",
+    "url": "https://github.com/nverno/vbs-mode",
     "source": "github",
     "commit": "483dd5a2c8c4675ddb3c32fdd93146c6d248285d",
-    "tree": "http://www.emacswiki.org/emacs/VbsReplMode"
+    "tree": "https://github.com/nverno/vbs-mode"
   },
   {
     "name": "vc-refresh",
@@ -2055,10 +2055,10 @@
     "name": "visual-basic-mode",
     "summary": "A mode for editing Visual Basic programs",
     "version": "20160720.820",
-    "url": "http://www.emacswiki.org/cgi-bin/wiki/visual-basic-mode.el",
+    "url": "https://github.com/nverno/vbs-mode",
     "source": "github",
     "commit": "483dd5a2c8c4675ddb3c32fdd93146c6d248285d",
-    "tree": "http://www.emacswiki.org/cgi-bin/wiki/visual-basic-mode.el"
+    "tree": "https://github.com/nverno/vbs-mode"
   },
   {
     "name": "vs-comment-return",
@@ -2091,10 +2091,10 @@
     "name": "vs-electric-spacing",
     "summary": "Add spacing around operators like Visual Studio",
     "version": "20240101.856",
-    "url": "https://github.com/jcs-elpa/vs-electric-spacing",
+    "url": "https://github.com/emacs-vs/vs-electric-spacing",
     "source": "github",
     "commit": "c97e28e03a33f1a9fc0ead789b9a7d277842fe7b",
-    "tree": "https://github.com/jcs-elpa/vs-electric-spacing"
+    "tree": "https://github.com/emacs-vs/vs-electric-spacing"
   },
   {
     "name": "vs-light-theme",
@@ -2163,10 +2163,10 @@
     "name": "zig-mode",
     "summary": "A major mode for the Zig programming language",
     "version": "20240416.1636",
-    "url": "https://github.com/zig-lang/zig-mode",
+    "url": "https://github.com/ziglang/zig-mode",
     "source": "github",
     "commit": "b4170b747ae4c45d145ff8bcb7fafe095e17b4c6",
-    "tree": "https://github.com/zig-lang/zig-mode"
+    "tree": "https://github.com/ziglang/zig-mode"
   },
   {
     "name": "zoom-to-point",
