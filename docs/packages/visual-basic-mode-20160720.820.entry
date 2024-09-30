@@ -9,5 +9,4 @@
 		      ("Fred White" . "fwhite@alum.mit.edu"))
 		     (:maintainers
 		      ("Fred White" . "fwhite@alum.mit.edu"))
-		     (:maintainer
-		      ("Fred White" . "fwhite@alum.mit.edu")))])
+		     (:maintainer "Fred White" . "fwhite@alum.mit.edu"))])

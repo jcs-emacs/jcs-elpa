@@ -13,5 +13,4 @@
 	       ("Ziqi Yang" . "mr.meowking@anche.no"))
 	      (:maintainers
 	       ("Ziqi Yang" . "mr.meowking@anche.no"))
-	      (:maintainer
-	       ("Ziqi Yang" . "mr.meowking@anche.no")))])
+	      (:maintainer "Ziqi Yang" . "mr.meowking@anche.no"))])

@@ -10,5 +10,4 @@
 	     ("IMAKADO" . "ken.imakado@gmail.com"))
 	    (:maintainers
 	     ("IMAKADO" . "ken.imakado@gmail.com"))
-	    (:maintainer
-	     ("IMAKADO" . "ken.imakado@gmail.com")))])
+	    (:maintainer "IMAKADO" . "ken.imakado@gmail.com"))])

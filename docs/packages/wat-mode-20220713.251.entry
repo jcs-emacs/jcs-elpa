@@ -8,5 +8,4 @@
 	     ("Devon Sparks" . "devon.sparks@gmail.com"))
 	    (:maintainers
 	     ("Devon Sparks" . "devon.sparks@gmail.com"))
-	    (:maintainer
-	     ("Devon Sparks" . "devon.sparks@gmail.com")))])
+	    (:maintainer "Devon Sparks" . "devon.sparks@gmail.com"))])

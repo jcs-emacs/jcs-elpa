@@ -10,5 +10,4 @@
 	  ("Jeff Trull" . "edaskel@att.net"))
 	 (:maintainers
 	  ("Jeff Trull" . "edaskel@att.net"))
-	 (:maintainer
-	  ("Jeff Trull" . "edaskel@att.net")))])
+	 (:maintainer "Jeff Trull" . "edaskel@att.net"))])

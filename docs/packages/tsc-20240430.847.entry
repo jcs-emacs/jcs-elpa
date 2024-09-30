@@ -13,5 +13,4 @@
        (:maintainers
 	("Tuấn-Anh Nguyễn" . "ubolonton@gmail.com")
 	("Jorge Javier Araya Navarro" . "jorgejavieran@yahoo.com.mx"))
-       (:maintainer
-	("Tuấn-Anh Nguyễn" . "ubolonton@gmail.com")))])
+       (:maintainer "Tuấn-Anh Nguyễn" . "ubolonton@gmail.com"))])

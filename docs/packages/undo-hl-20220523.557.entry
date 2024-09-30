@@ -11,5 +11,4 @@
 	    ("Yuan Fu" . "casouri@gmail.com"))
 	   (:maintainers
 	    ("Yuan Fu" . "casouri@gmail.com"))
-	   (:maintainer
-	    ("Yuan Fu" . "casouri@gmail.com")))])
+	   (:maintainer "Yuan Fu" . "casouri@gmail.com"))])

@@ -12,5 +12,4 @@
 		   ("Ellis Kenyő" . "me@elken.dev"))
 		  (:maintainers
 		   ("Ellis Kenyő" . "me@elken.dev"))
-		  (:maintainer
-		   ("Ellis Kenyő" . "me@elken.dev")))])
+		  (:maintainer "Ellis Kenyő" . "me@elken.dev"))])

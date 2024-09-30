@@ -9,5 +9,4 @@
 		  ("Rich Loveland" . "r@rmloveland.com"))
 		 (:maintainers
 		  ("Rich Loveland" . "r@rmloveland.com"))
-		 (:maintainer
-		  ("Rich Loveland" . "r@rmloveland.com")))])
+		 (:maintainer "Rich Loveland" . "r@rmloveland.com"))])

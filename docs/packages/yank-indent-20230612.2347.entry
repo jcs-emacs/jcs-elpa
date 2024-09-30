@@ -11,5 +11,4 @@
 		("Jim Myhrberg" . "contact@jimeh.me"))
 	       (:maintainers
 		("Jim Myhrberg" . "contact@jimeh.me"))
-	       (:maintainer
-		("Jim Myhrberg" . "contact@jimeh.me")))])
+	       (:maintainer "Jim Myhrberg" . "contact@jimeh.me"))])
