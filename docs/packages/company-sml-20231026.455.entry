@@ -8,5 +8,4 @@
 		("Noah Peart" . "noah.v.peart@gmail.com"))
 	       (:maintainers
 		("Noah Peart" . "noah.v.peart@gmail.com"))
-	       (:maintainer
-		("Noah Peart" . "noah.v.peart@gmail.com")))])
+	       (:maintainer "Noah Peart" . "noah.v.peart@gmail.com"))])

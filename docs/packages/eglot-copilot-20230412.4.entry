@@ -27,5 +27,4 @@
 		  ("Tyler Dodge" . "(tyler@tdodge.consulting)"))
 		 (:maintainers
 		  ("Tyler Dodge" . "(tyler@tdodge.consulting)"))
-		 (:maintainer
-		  ("Tyler Dodge" . "(tyler@tdodge.consulting)")))])
+		 (:maintainer "Tyler Dodge" . "(tyler@tdodge.consulting)"))])

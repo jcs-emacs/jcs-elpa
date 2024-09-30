@@ -12,5 +12,4 @@
 	     (:maintainers
 	      ("Jesús Martínez" . "jesusmartinez93@gmail.com")
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))
-	     (:maintainer
-	      ("Jesús Martínez" . "jesusmartinez93@gmail.com")))])
+	     (:maintainer "Jesús Martínez" . "jesusmartinez93@gmail.com"))])

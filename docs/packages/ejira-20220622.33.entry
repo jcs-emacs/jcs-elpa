@@ -11,5 +11,4 @@
 	  ("Henrik Nyman" . "h@nyymanni.com"))
 	 (:maintainers
 	  ("Henrik Nyman" . "h@nyymanni.com"))
-	 (:maintainer
-	  ("Henrik Nyman" . "h@nyymanni.com")))])
+	 (:maintainer "Henrik Nyman" . "h@nyymanni.com"))])

@@ -13,5 +13,4 @@
 		(:keywords "tools")
 		(:maintainers
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
-		(:maintainer
-		 ("Jen-Chieh" . "jcs090218@gmail.com")))])
+		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

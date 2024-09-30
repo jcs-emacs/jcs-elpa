@@ -9,5 +9,4 @@
 	     ("Adam Tillou" . "qaiviq@gmail.com"))
 	    (:maintainers
 	     ("Adam Tillou" . "qaiviq@gmail.com"))
-	    (:maintainer
-	     ("Adam Tillou" . "qaiviq@gmail.com")))])
+	    (:maintainer "Adam Tillou" . "qaiviq@gmail.com"))])

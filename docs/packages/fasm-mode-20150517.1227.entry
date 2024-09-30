@@ -8,5 +8,4 @@
 	      ("Fanael Linithien" . "fanael4@gmail.com"))
 	     (:maintainers
 	      ("Fanael Linithien" . "fanael4@gmail.com"))
-	     (:maintainer
-	      ("Fanael Linithien" . "fanael4@gmail.com")))])
+	     (:maintainer "Fanael Linithien" . "fanael4@gmail.com"))])

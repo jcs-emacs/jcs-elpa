@@ -14,5 +14,4 @@
 		 ("liuyinz" . "liuyinz@gmail.com"))
 		(:maintainers
 		 ("liuyinz" . "liuyinz@gmail.com"))
-		(:maintainer
-		 ("liuyinz" . "liuyinz@gmail.com")))])
+		(:maintainer "liuyinz" . "liuyinz@gmail.com"))])

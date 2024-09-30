@@ -15,5 +15,4 @@
 		     ("lvaro González Sotillo" . "alvarogonzalezsotillo@gmail.com"))
 		    (:maintainers
 		     ("lvaro González Sotillo" . "alvarogonzalezsotillo@gmail.com"))
-		    (:maintainer
-		     ("lvaro González Sotillo" . "alvarogonzalezsotillo@gmail.com")))])
+		    (:maintainer "lvaro González Sotillo" . "alvarogonzalezsotillo@gmail.com"))])
