@@ -13,5 +13,4 @@
 		       ("Abdelhak Bougouffa" . "abougouffa@fedoraproject.org"))
 		      (:maintainers
 		       ("Abdelhak Bougouffa" . "abougouffa@fedoraproject.org"))
-		      (:maintainer
-		       ("Abdelhak Bougouffa" . "abougouffa@fedoraproject.org")))])
+		      (:maintainer "Abdelhak Bougouffa" . "abougouffa@fedoraproject.org"))])

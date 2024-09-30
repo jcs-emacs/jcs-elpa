@@ -11,5 +11,4 @@
 		("Siegmentation Fault" . "siegmentationfault@yandex.ru"))
 	       (:maintainers
 		("Siegmentation Fault" . "siegmentationfault@yandex.ru"))
-	       (:maintainer
-		("Siegmentation Fault" . "siegmentationfault@yandex.ru")))])
+	       (:maintainer "Siegmentation Fault" . "siegmentationfault@yandex.ru"))])

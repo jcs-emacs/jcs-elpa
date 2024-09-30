@@ -11,5 +11,4 @@
 	      ("Donald Ephraim Curtis" . "dcurtis@milkbox.net"))
 	     (:maintainers
 	      ("Donald Ephraim Curtis" . "dcurtis@milkbox.net"))
-	     (:maintainer
-	      ("Donald Ephraim Curtis" . "dcurtis@milkbox.net")))])
+	     (:maintainer "Donald Ephraim Curtis" . "dcurtis@milkbox.net"))])

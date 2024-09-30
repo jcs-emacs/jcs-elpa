@@ -11,5 +11,4 @@
 	       ("Clément Pit-Claudel" . "clement.pitclaudel@live.com"))
 	      (:maintainers
 	       ("Clément Pit-Claudel" . "clement.pitclaudel@live.com"))
-	      (:maintainer
-	       ("Clément Pit-Claudel" . "clement.pitclaudel@live.com")))])
+	      (:maintainer "Clément Pit-Claudel" . "clement.pitclaudel@live.com"))])

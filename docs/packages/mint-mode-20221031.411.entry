@@ -11,5 +11,4 @@
 	      ("Diwank Tomer" . "singh@diwank.name"))
 	     (:maintainers
 	      ("jgart" . "jgart@dismail.de"))
-	     (:maintainer
-	      ("jgart" . "jgart@dismail.de")))])
+	     (:maintainer "jgart" . "jgart@dismail.de"))])

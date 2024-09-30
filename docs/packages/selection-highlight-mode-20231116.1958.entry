@@ -11,5 +11,4 @@
 			     ("Isaac Ballone" . "isaac@ballone.dev"))
 			    (:maintainers
 			     ("Isaac Ballone" . "isaac@ballone.dev"))
-			    (:maintainer
-			     ("Isaac Ballone" . "isaac@ballone.dev")))])
+			    (:maintainer "Isaac Ballone" . "isaac@ballone.dev"))])

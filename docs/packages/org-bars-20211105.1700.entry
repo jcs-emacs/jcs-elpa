@@ -15,5 +15,4 @@
 	     ("Tony Aldon" . "tony.aldon.adm@gmail.com"))
 	    (:maintainers
 	     ("Tony Aldon" . "tony.aldon.adm@gmail.com"))
-	    (:maintainer
-	     ("Tony Aldon" . "tony.aldon.adm@gmail.com")))])
+	    (:maintainer "Tony Aldon" . "tony.aldon.adm@gmail.com"))])

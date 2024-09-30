@@ -13,5 +13,4 @@
 	      (:maintainers
 	       ("Hongyu Ding" . "rainstormstudio@yahoo.com")
 	       ("Vincent Zhang" . "seagle0128@gmail.com"))
-	      (:maintainer
-	       ("Hongyu Ding" . "rainstormstudio@yahoo.com")))])
+	      (:maintainer "Hongyu Ding" . "rainstormstudio@yahoo.com"))])
