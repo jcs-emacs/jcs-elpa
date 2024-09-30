@@ -11,5 +11,4 @@
 	      ("Azzam S.A" . "vcs@azzamsa.com"))
 	     (:maintainers
 	      ("Azzam S.A" . "vcs@azzamsa.com"))
-	     (:maintainer
-	      ("Azzam S.A" . "vcs@azzamsa.com")))])
+	     (:maintainer "Azzam S.A" . "vcs@azzamsa.com"))])

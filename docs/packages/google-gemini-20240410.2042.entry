@@ -15,5 +15,4 @@
 		  ("JenChieh" . "jcs090218@gmail.com"))
 		 (:maintainers
 		  ("JenChieh" . "jcs090218@gmail.com"))
-		 (:maintainer
-		  ("JenChieh" . "jcs090218@gmail.com")))])
+		 (:maintainer "JenChieh" . "jcs090218@gmail.com"))])

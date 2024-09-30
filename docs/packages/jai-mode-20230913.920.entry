@@ -11,5 +11,4 @@
 	     ("Kristoffer Grönlund" . "k@ziran.se"))
 	    (:maintainers
 	     ("Kristoffer Grönlund" . "k@ziran.se"))
-	    (:maintainer
-	     ("Kristoffer Grönlund" . "k@ziran.se")))])
+	    (:maintainer "Kristoffer Grönlund" . "k@ziran.se"))])

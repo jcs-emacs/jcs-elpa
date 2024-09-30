@@ -9,5 +9,4 @@
 	     ("Bryan Hernández" . "masterenoc@tutamail.com"))
 	    (:maintainers
 	     ("Bryan Hernández" . "masterenoc@tutamail.com"))
-	    (:maintainer
-	     ("Bryan Hernández" . "masterenoc@tutamail.com")))])
+	    (:maintainer "Bryan Hernández" . "masterenoc@tutamail.com"))])

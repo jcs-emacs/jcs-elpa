@@ -13,5 +13,4 @@
 	      (:keywords "tools" "languages")
 	      (:maintainers
 	       ("Fermin Munoz" . "fmfs@posteo.net"))
-	      (:maintainer
-	       ("Fermin Munoz" . "fmfs@posteo.net")))])
+	      (:maintainer "Fermin Munoz" . "fmfs@posteo.net"))])

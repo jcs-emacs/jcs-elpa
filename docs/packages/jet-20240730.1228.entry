@@ -13,5 +13,4 @@
 	("Eric Dallo" . "ercdll1337@gmail.com"))
        (:maintainers
 	("Eric Dallo" . "ercdll1337@gmail.com"))
-       (:maintainer
-	("Eric Dallo" . "ercdll1337@gmail.com")))])
+       (:maintainer "Eric Dallo" . "ercdll1337@gmail.com"))])

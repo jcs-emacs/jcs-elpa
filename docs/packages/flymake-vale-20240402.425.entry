@@ -16,5 +16,4 @@
 		 ("Trey Peacock" . "http://github/tpeacock19"))
 		(:maintainers
 		 ("Trey Peacock" . "git@treypeacock.com"))
-		(:maintainer
-		 ("Trey Peacock" . "git@treypeacock.com")))])
+		(:maintainer "Trey Peacock" . "git@treypeacock.com"))])

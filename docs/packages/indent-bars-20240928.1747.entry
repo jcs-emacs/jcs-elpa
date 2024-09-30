@@ -13,5 +13,4 @@
 		("J.D. Smith" . "jdtsmith+elpa@gmail.com"))
 	       (:maintainers
 		("J.D. Smith" . "jdtsmith+elpa@gmail.com"))
-	       (:maintainer
-		("J.D. Smith" . "jdtsmith+elpa@gmail.com")))])
+	       (:maintainer "J.D. Smith" . "jdtsmith+elpa@gmail.com"))])

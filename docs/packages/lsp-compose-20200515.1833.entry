@@ -10,5 +10,4 @@
 		("Abhinav Tushar" . "abhinav@lepisma.xyz"))
 	       (:maintainers
 		("Abhinav Tushar" . "abhinav@lepisma.xyz"))
-	       (:maintainer
-		("Abhinav Tushar" . "abhinav@lepisma.xyz")))])
+	       (:maintainer "Abhinav Tushar" . "abhinav@lepisma.xyz"))])

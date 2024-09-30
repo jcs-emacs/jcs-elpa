@@ -14,5 +14,4 @@
 		("10sr" . "8slashes+el@gmail.com"))
 	       (:maintainers
 		("10sr" . "8slashes+el@gmail.com"))
-	       (:maintainer
-		("10sr" . "8slashes+el@gmail.com")))])
+	       (:maintainer "10sr" . "8slashes+el@gmail.com"))])
