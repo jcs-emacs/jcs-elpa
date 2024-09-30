@@ -15,5 +15,4 @@
 		  ("Matthew Fluet" . "Matthew.Fluet@gmail.com"))
 		 (:maintainers
 		  ("Matthew Fluet" . "Matthew.Fluet@gmail.com"))
-		 (:maintainer
-		  ("Matthew Fluet" . "Matthew.Fluet@gmail.com")))])
+		 (:maintainer "Matthew Fluet" . "Matthew.Fluet@gmail.com"))])

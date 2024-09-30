@@ -23,5 +23,4 @@
 	 ("Johan Andersson" . "johan.rejeep@gmail.com"))
 	(:maintainers
 	 ("Johan Andersson" . "johan.rejeep@gmail.com"))
-	(:maintainer
-	 ("Johan Andersson" . "johan.rejeep@gmail.com")))])
+	(:maintainer "Johan Andersson" . "johan.rejeep@gmail.com"))])

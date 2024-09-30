@@ -9,5 +9,4 @@
 	   (:keywords "abbrev" "convenience" "matching")
 	   (:maintainers
 	    ("Dmitry Gutov" . "dmitry@gutov.dev"))
-	   (:maintainer
-	    ("Dmitry Gutov" . "dmitry@gutov.dev")))])
+	   (:maintainer "Dmitry Gutov" . "dmitry@gutov.dev"))])

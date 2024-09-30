@@ -13,5 +13,4 @@
 		 ("Emmanuel Bustos" . "ema2159@gmail.com"))
 		(:maintainers
 		 ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
-		(:maintainer
-		 ("Jen-Chieh Shen" . "jcs090218@gmail.com")))])
+		(:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com"))])

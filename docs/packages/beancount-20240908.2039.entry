@@ -8,5 +8,4 @@
 	      ("Martin Blais" . "blais@furius.ca"))
 	     (:maintainers
 	      ("Martin Blais" . "blais@furius.ca"))
-	     (:maintainer
-	      ("Martin Blais" . "blais@furius.ca")))])
+	     (:maintainer "Martin Blais" . "blais@furius.ca"))])

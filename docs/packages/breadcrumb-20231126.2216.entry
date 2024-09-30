@@ -12,5 +12,4 @@
 	       ("João Távora" . "joaotavora@gmail.com"))
 	      (:maintainers
 	       ("João Távora" . "joaotavora@gmail.com"))
-	      (:maintainer
-	       ("João Távora" . "joaotavora@gmail.com")))])
+	      (:maintainer "João Távora" . "joaotavora@gmail.com"))])

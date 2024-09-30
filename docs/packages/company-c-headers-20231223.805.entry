@@ -15,5 +15,4 @@
 		      ("Alastair Rankine" . "alastair@girtby.net"))
 		     (:maintainers
 		      ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
-		     (:maintainer
-		      ("Jen-Chieh Shen" . "jcs090218@gmail.com")))])
+		     (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com"))])

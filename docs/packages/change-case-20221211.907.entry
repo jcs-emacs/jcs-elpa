@@ -14,5 +14,4 @@
 		("TakesxiSximada" . "8707279+TakesxiSximada@users.noreply.github.com"))
 	       (:maintainers
 		("TakesxiSximada" . "8707279+TakesxiSximada@users.noreply.github.com"))
-	       (:maintainer
-		("TakesxiSximada" . "8707279+TakesxiSximada@users.noreply.github.com")))])
+	       (:maintainer "TakesxiSximada" . "8707279+TakesxiSximada@users.noreply.github.com"))])

@@ -9,5 +9,4 @@
 		 ("Andrey Tykhonov" . "atykhonov@gmail.com"))
 		(:maintainers
 		 ("Andrey Tykhonov" . "atykhonov@gmail.com"))
-		(:maintainer
-		 ("Andrey Tykhonov" . "atykhonov@gmail.com")))])
+		(:maintainer "Andrey Tykhonov" . "atykhonov@gmail.com"))])

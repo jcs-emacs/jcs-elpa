@@ -12,5 +12,4 @@
 		      ("typefo" . "typefo@hotmail.com"))
 		     (:maintainers
 		      ("typefo" . "typefo@hotmail.com"))
-		     (:maintainer
-		      ("typefo" . "typefo@hotmail.com")))])
+		     (:maintainer "typefo" . "typefo@hotmail.com"))])

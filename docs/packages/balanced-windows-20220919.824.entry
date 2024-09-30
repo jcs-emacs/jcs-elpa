@@ -11,5 +11,4 @@
 		     ("wouter bolsterlee" . "wouter@bolsterl.ee"))
 		    (:maintainers
 		     ("wouter bolsterlee" . "wouter@bolsterl.ee"))
-		    (:maintainer
-		     ("wouter bolsterlee" . "wouter@bolsterl.ee")))])
+		    (:maintainer "wouter bolsterlee" . "wouter@bolsterl.ee"))])
