@@ -524,10 +524,10 @@
   {
     "name": "dape",
     "summary": "Debug Adapter Protocol for Emacs",
-    "version": "20240930.1836",
+    "version": "20240930.2055",
     "url": "https://github.com/svaante/dape",
     "source": "github",
-    "commit": "e51dd21543a636c36f2068ac178a024e9ab21d40",
+    "commit": "6436bb0bf7ab92459813c936874938403e625157",
     "tree": "https://github.com/svaante/dape"
   },
   {
@@ -1541,10 +1541,10 @@
   {
     "name": "package-build",
     "summary": "Tools for assembling a package archive",
-    "version": "20240930.1102",
+    "version": "20240930.1924",
     "url": "https://github.com/melpa/package-build",
     "source": "github",
-    "commit": "de9613ff6e5b1d4bbfd93dc162f4f36c21465088",
+    "commit": "af2dc7784df675cfca7b307e77ec2084ca5432f4",
     "tree": "https://github.com/melpa/package-build"
   },
   {
