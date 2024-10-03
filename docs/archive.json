@@ -1082,10 +1082,10 @@
   {
     "name": "indent-bars",
     "summary": "Highlight indentation with bars",
-    "version": "20241002.1548",
+    "version": "20241003.1303",
     "url": "https://github.com/jdtsmith/indent-bars",
     "source": "github",
-    "commit": "6e08d96beba5ea7666b0a6a49502727ed64eb876",
+    "commit": "6ef0f278d455e64a30ee226c11eba3a1e316ce0a",
     "tree": "https://github.com/jdtsmith/indent-bars"
   },
   {
@@ -1532,10 +1532,10 @@
   {
     "name": "outli",
     "summary": "Org-like code outliner",
-    "version": "20240910.1851",
+    "version": "20241003.1224",
     "url": "https://github.com/jdtsmith/outli",
     "source": "github",
-    "commit": "1366c230421aa834a9f4c986e31e63aa54e1c70b",
+    "commit": "6fef44070900e41586eb89c0017c3b0e948f3725",
     "tree": "https://github.com/jdtsmith/outli"
   },
   {
