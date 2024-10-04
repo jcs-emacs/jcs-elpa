@@ -15,7 +15,7 @@
 
 ## 🏆 Goals
 
-- Prioritize using built-in code over third-party libraries (e.g., dash.el, s.el, f.el).
+- Prioritize using built-in code over third-party libraries (e.g., `dash.el`, `s.el`, `f.el`).
 - Reuse third-party libraries when possible to reduce maintenance (consider ELPA as a single large project), but it's not strictly necessary.
 - Accept package contributions, but they must demonstrate clear usefulness.
 - Avoid reinventing the wheel—search for existing packages before developing a new one.
