@@ -15,12 +15,12 @@
 
 ## 🏆 Goals
 
-- Use built-in code over third-party library (`dash.el`, `s.el`, `f.el`, etc)
-- Reuse third-party libraries if possible to keep the maintenance (think of the entire ELPA is a one huge piece of software), but not required
-- Accept any packages, but they need to show some usefulness
-- Don't remake the wheel, try to search for existing packages before you create one
-- Contribute to existing packages that have similar features (unless the author refuses)
-- Keep up the package's maintenance if possible, and ask someone for help if you need to
+- Prioritize using built-in code over third-party libraries (e.g., dash.el, s.el, f.el).
+- Reuse third-party libraries when possible to reduce maintenance (consider ELPA as a single large project), but it's not strictly necessary.
+- Accept package contributions, but they must demonstrate clear usefulness.
+- Avoid reinventing the wheel—search for existing packages before developing a new one.
+- Contribute to existing packages with similar functionality, unless the author declines contributions.
+- Maintain your packages as much as you can, and ask for help if needed.
 
 ## 🔨 How to use?
 
