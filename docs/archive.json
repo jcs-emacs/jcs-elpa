@@ -182,10 +182,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "ChatGPT shell + buffer insert commands",
-    "version": "20241004.1129",
+    "version": "20241006.1012",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "63adf342822627482677c0591846fb98002e429a",
+    "commit": "b76dcd4c15e98e3da98f9d5b1f0a0666a6165d5c",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -1892,10 +1892,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20241002.346",
+    "version": "20241006.953",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "c1b972988706bdc7159bca5239239cf44ea54927",
+    "commit": "62e169d3122658761581105c91d8a6aad103fed5",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
