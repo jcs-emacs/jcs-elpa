@@ -524,10 +524,10 @@
   {
     "name": "dape",
     "summary": "Debug Adapter Protocol for Emacs",
-    "version": "20241006.2122",
+    "version": "20241007.1637",
     "url": "https://github.com/svaante/dape",
     "source": "github",
-    "commit": "cd20e1e7664fe8a052509cb5089961f4c7700eb1",
+    "commit": "3a132135f4a7924ce70aa8f917cd8b4df18afdd4",
     "tree": "https://github.com/svaante/dape"
   },
   {
