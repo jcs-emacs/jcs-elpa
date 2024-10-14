@@ -641,10 +641,10 @@
   {
     "name": "eglot-ltex",
     "summary": "Eglot Clients for LTEX",
-    "version": "20240228.2022",
+    "version": "20241014.458",
     "url": "https://github.com/emacs-languagetool/eglot-ltex",
     "source": "github",
-    "commit": "61d908950efe287da1ca021e8c9e8563c15d65cf",
+    "commit": "1ec941df79113323e6d0fa827aecc6cddc91dd37",
     "tree": "https://github.com/emacs-languagetool/eglot-ltex"
   },
   {
