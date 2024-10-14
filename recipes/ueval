@@ -1,0 +1,1 @@
+(ueval :repo "jcs-elpa/ueval" :fetcher github)
