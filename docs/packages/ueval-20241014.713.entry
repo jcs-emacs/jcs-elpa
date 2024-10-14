@@ -1,0 +1,14 @@
+(ueval .
+       [(20241014 713)
+	((emacs
+	  (26 1)))
+	"Universal Evaluation Utilities" tar
+	((:url . "https://github.com/jcs-elpa/ueval")
+	 (:commit . "cffd040369f5aa7cb7d62927d2cf508d7bfe1d19")
+	 (:revdesc . "cffd040369f5")
+	 (:keywords "convenience" "eval")
+	 (:authors
+	  ("Jen-Chieh" . "jcs090218@gmail.com"))
+	 (:maintainers
+	  ("Jen-Chieh" . "jcs090218@gmail.com"))
+	 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

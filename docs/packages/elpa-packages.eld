@@ -219,6 +219,7 @@
   (turbo-log :url "https://github.com/Artawower/turbo-log")
   (txl :url "https://github.com/tmalsburg/txl.el")
   (typst-mode :url "https://github.com/Ziqi-Yang/typst-mode.el")
+  (ueval :url "https://github.com/jcs-elpa/ueval")
   (undo-hl :url "https://github.com/casouri/undo-hl")
   (undo-tree-vf :url "https://github.com/jcs-elpa/undo-tree-vf")
   (use-ttf :url "https://github.com/jcs-elpa/use-ttf")
