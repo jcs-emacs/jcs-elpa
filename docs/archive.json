@@ -1989,6 +1989,15 @@
     "tree": "https://github.com/Ziqi-Yang/typst-mode.el"
   },
   {
+    "name": "ueval",
+    "summary": "Universal Evaluation Utilities",
+    "version": "20241014.713",
+    "url": "https://github.com/jcs-elpa/ueval",
+    "source": "github",
+    "commit": "cffd040369f5aa7cb7d62927d2cf508d7bfe1d19",
+    "tree": "https://github.com/jcs-elpa/ueval"
+  },
+  {
     "name": "undo-hl",
     "summary": "Highlight undo/redo",
     "version": "20220523.557",
