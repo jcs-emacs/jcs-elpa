@@ -165,3 +165,4 @@
 =======
 2024-11-03T19:10:06+0000  gas-mode                   Command ‘git clone https\://codeberg.org/Enocstocks/gas-mode.el /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/gas-mode/’ exited with non-zero exit-code: 128
 >>>>>>> Stashed changes
+2024-11-04T03:18:24+0000  reveal-in-folder           Command ‘git clone https\://github.com/jcs-elpa/reveal-in-folder /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/reveal-in-folder/’ exited with non-zero exit-code: 128
