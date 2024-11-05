@@ -1514,10 +1514,10 @@
   {
     "name": "org-modern-indent",
     "summary": "Org-indent blocks like org-modern",
-    "version": "20240320.2321",
+    "version": "20241105.1504",
     "url": "https://github.com/jdtsmith/org-modern-indent",
     "source": "github",
-    "commit": "f2b859bc53107b2a1027b76dbf4aaebf14c03433",
+    "commit": "b5c87056e09cc05213b7bc4c8b89f4e9498af589",
     "tree": "https://github.com/jdtsmith/org-modern-indent"
   },
   {
