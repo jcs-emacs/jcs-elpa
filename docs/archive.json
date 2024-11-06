@@ -963,6 +963,15 @@
     "tree": "https://codeberg.org/Enocstocks/gas-mode.el"
   },
   {
+    "name": "gdshader-mode",
+    "summary": "Major mode for Godot gdshader",
+    "version": "20240912.1601",
+    "url": "https://github.com/bbbscarter/gdshader-mode",
+    "source": "github",
+    "commit": "9720a55cb6c4d54ec0526d4bf57bb54806a88acb",
+    "tree": "https://github.com/bbbscarter/gdshader-mode"
+  },
+  {
     "name": "git",
     "summary": "An Elisp API for programmatically using Git",
     "version": "20140128.1041",
