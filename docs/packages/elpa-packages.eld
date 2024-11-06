@@ -105,6 +105,7 @@
   (font-lock-ext :url "https://github.com/sensorflo/font-lock-ext")
   (fuz-bin :url "https://github.com/jcs-legacy/fuz-bin")
   (gas-mode :url "https://codeberg.org/Enocstocks/gas-mode.el")
+  (gdshader-mode :url "https://github.com/bbbscarter/gdshader-mode")
   (git :url "https://github.com/rejeep/git.el")
   (github-elpa :url "https://github.com/10sr/github-elpa")
   (github-tags :url "https://github.com/jcs-elpa/github-tags")

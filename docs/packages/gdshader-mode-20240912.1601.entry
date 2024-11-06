@@ -1,0 +1,14 @@
+(gdshader-mode .
+	       [(20240912 1601)
+		((glsl-mode
+		  (2 4)))
+		"Major mode for Godot gdshader" tar
+		((:url . "https://github.com/bbbscarter/gdshader-mode")
+		 (:commit . "9720a55cb6c4d54ec0526d4bf57bb54806a88acb")
+		 (:revdesc . "9720a55cb6c4")
+		 (:keywords "languages" "opengl" "gpu" "godot")
+		 (:authors
+		  ("Simon Carter" . "bbbscarter@gmail.com"))
+		 (:maintainers
+		  ("Simon Carter" . "bbbscarter@gmail.com"))
+		 (:maintainer "Simon Carter" . "bbbscarter@gmail.com"))])
