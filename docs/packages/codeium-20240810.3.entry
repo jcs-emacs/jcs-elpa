@@ -1,6 +1,0 @@
-(codeium .
-	 [(20240810 3)
-	  nil "Codeium client for emacs" tar
-	  ((:url . "https://github.com/Exafunction/codeium.el")
-	   (:commit . "08d5ecfa74d960cf18af46c2d7fa0449d789d73b")
-	   (:revdesc . "08d5ecfa74d9"))])
