@@ -1,5 +1,5 @@
 (llm .
-     [(20241118 212)
+     [(20241118 240)
       ((emacs
 	(28 1))
        (plz
@@ -10,8 +10,8 @@
 	(0 2 1)))
       "Interface to pluggable llm backends" tar
       ((:url . "https://github.com/ahyatt/llm")
-       (:commit . "6a513ea01dadc9f1de5f282fa95ab8d85787a3b5")
-       (:revdesc . "6a513ea01dad")
+       (:commit . "90c2451d0c0d1b9598e67b2c1a3516a8496f130f")
+       (:revdesc . "90c2451d0c0d")
        (:authors
 	("Andrew Hyatt" . "ahyatt@gmail.com"))
        (:maintainers
