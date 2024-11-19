@@ -181,11 +181,11 @@
   },
   {
     "name": "chatgpt-shell",
-    "summary": "ChatGPT shell + buffer insert commands",
-    "version": "20241119.1641",
+    "summary": "A multi-llm comint Emacs shell (plus other goodies)",
+    "version": "20241119.1842",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "417a2e43a34e1be8344aa578f434f2e47b05a986",
+    "commit": "be1b5e1e1e394b205c1db287e1edac91b4ac5a6f",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
