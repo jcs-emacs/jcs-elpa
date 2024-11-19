@@ -1,0 +1,10 @@
+(chatgpt-shell .
+	       [(20241119 1842)
+		((emacs
+		  (28 1))
+		 (shell-maker
+		  (0 68 1)))
+		"A multi-llm comint Emacs shell (plus other goodies)" tar
+		((:url . "https://github.com/xenodium/chatgpt-shell")
+		 (:commit . "be1b5e1e1e394b205c1db287e1edac91b4ac5a6f")
+		 (:revdesc . "be1b5e1e1e39"))])
