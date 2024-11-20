@@ -182,10 +182,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "A multi-llm Emacs shell (ChatGPT, Claude, Gemini) + editing integrations",
-    "version": "20241120.1812",
+    "version": "20241120.1938",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "b9a9c71385d1d08a5474b5b2f14396439d1cbb99",
+    "commit": "cc9b0f0829906a7a4935c784bab73bbe530e2b84",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -317,10 +317,10 @@
   {
     "name": "company-box",
     "summary": "Company front-end with icons",
-    "version": "20240713.959",
+    "version": "20241120.2002",
     "url": "https://github.com/elp-revive/company-box",
     "source": "github",
-    "commit": "875ebc5a97f99d5a4d215ad454624f6318a3b7d1",
+    "commit": "8b2d5456324aa8894d9c109d6ebb8d381f5b29b6",
     "tree": "https://github.com/elp-revive/company-box"
   },
   {
@@ -1946,10 +1946,10 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20241031.1323",
+    "version": "20241120.1918",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "e8ddbca1c22f70f5831f931e448c987dc4f1867f",
+    "commit": "2507daeb53306bbf1b4884cb70d4cda3ce94bb21",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
