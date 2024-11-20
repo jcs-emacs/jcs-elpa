@@ -182,10 +182,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "A multi-llm comint Emacs shell (plus other goodies)",
-    "version": "20241120.802",
+    "version": "20241120.1025",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "827798d6ffecaa259ba169d1ebd2bb6ef6d7e142",
+    "commit": "7132a3d718941493818df47a61f6d6006a513ac1",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
