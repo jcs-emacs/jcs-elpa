@@ -1,5 +1,5 @@
 (company-box .
-	     [(20240713 959)
+	     [(20241120 2002)
 	      ((emacs
 		(27 1))
 	       (dash
@@ -12,8 +12,8 @@
 		(0 1 0)))
 	      "Company front-end with icons" tar
 	      ((:url . "https://github.com/elp-revive/company-box")
-	       (:commit . "875ebc5a97f99d5a4d215ad454624f6318a3b7d1")
-	       (:revdesc . "875ebc5a97f9")
+	       (:commit . "8b2d5456324aa8894d9c109d6ebb8d381f5b29b6")
+	       (:revdesc . "8b2d5456324a")
 	       (:keywords "company" "completion" "front-end" "convenience")
 	       (:authors
 		("Sebastien Chapuis" . "sebastien@chapu.is"))
