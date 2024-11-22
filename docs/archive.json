@@ -1757,10 +1757,10 @@
   {
     "name": "sideline",
     "summary": "Show information on the side",
-    "version": "20241120.2005",
+    "version": "20241122.158",
     "url": "https://github.com/emacs-sideline/sideline",
     "source": "github",
-    "commit": "b6b79458d5fd1f6bb2501ce78bb9cc0d0f583b11",
+    "commit": "baa38cf8bae3d2eedc09df960fcb5049095e323b",
     "tree": "https://github.com/emacs-sideline/sideline"
   },
   {
@@ -1919,10 +1919,10 @@
   {
     "name": "treesit-fold",
     "summary": "Code folding using treesit",
-    "version": "20241120.2025",
+    "version": "20241122.156",
     "url": "https://github.com/emacs-tree-sitter/treesit-fold",
     "source": "github",
-    "commit": "4cfea19d1f1d41d0983e26d67c94cd82a83af489",
+    "commit": "2b8ac9e7db92bca7f79579b9dc8aff33d6ed2ff7",
     "tree": "https://github.com/emacs-tree-sitter/treesit-fold"
   },
   {
@@ -1946,10 +1946,10 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20241120.2006",
+    "version": "20241122.156",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "8bc5505f5c140b8f41b4cf6bfa2274a52c9f23e4",
+    "commit": "b8671edea85c6bd8f9246ade6a6d68f4f776f19f",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
