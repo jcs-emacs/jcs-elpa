@@ -524,10 +524,10 @@
   {
     "name": "dape",
     "summary": "Debug Adapter Protocol for Emacs",
-    "version": "20241122.2347",
+    "version": "20241123.1438",
     "url": "https://github.com/svaante/dape",
     "source": "github",
-    "commit": "40169300ee9da6aac1d4f489f334bb0b0e9e100c",
+    "commit": "806ff55f8a50bbc5fa7d8f19b15313545c68b1d4",
     "tree": "https://github.com/svaante/dape"
   },
   {
@@ -587,10 +587,10 @@
   {
     "name": "eask",
     "summary": "Core Eask APIs, for Eask CLI development",
-    "version": "20241123.706",
+    "version": "20241123.1454",
     "url": "https://github.com/emacs-eask/eask",
     "source": "github",
-    "commit": "aa49f6f459dca2ab9b12c68a60066d92ca541562",
+    "commit": "106755df719ceb202d52146d436f370f5bf8f095",
     "tree": "https://github.com/emacs-eask/eask"
   },
   {
