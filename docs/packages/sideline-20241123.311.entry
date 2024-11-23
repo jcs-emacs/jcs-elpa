@@ -1,13 +1,13 @@
 (sideline .
-	  [(20241122 158)
+	  [(20241123 311)
 	   ((emacs
 	     (27 1))
 	    (ht
 	     (2 4)))
 	   "Show information on the side" tar
 	   ((:url . "https://github.com/emacs-sideline/sideline")
-	    (:commit . "baa38cf8bae3d2eedc09df960fcb5049095e323b")
-	    (:revdesc . "baa38cf8bae3")
+	    (:commit . "b329d097a37585cd21c3b9a5862e0bb2a2f76442")
+	    (:revdesc . "b329d097a375")
 	    (:keywords "convenience")
 	    (:authors
 	     ("Jen-Chieh" . "jcs090218@gmail.com"))
