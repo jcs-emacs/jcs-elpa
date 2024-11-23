@@ -182,10 +182,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "A multi-llm Emacs shell (ChatGPT, Claude, Gemini) + editing integrations",
-    "version": "20241123.1810",
+    "version": "20241123.2155",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "8b2670e987b21abbd00cb1d7448b9efb8e7443a2",
+    "commit": "94d5ee2c1f087b78b129f73d3e90d15809456f4d",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -1550,10 +1550,10 @@
   {
     "name": "package-build",
     "summary": "Tools for assembling a package archive",
-    "version": "20240930.1924",
+    "version": "20241123.2136",
     "url": "https://github.com/melpa/package-build",
     "source": "github",
-    "commit": "af2dc7784df675cfca7b307e77ec2084ca5432f4",
+    "commit": "c1b276904278f0f89da2684f5e044760e3232c29",
     "tree": "https://github.com/melpa/package-build"
   },
   {
