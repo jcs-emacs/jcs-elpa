@@ -182,10 +182,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "A multi-llm Emacs shell (ChatGPT, Claude, Gemini, Ollama) + editing integrations",
-    "version": "20241128.1049",
+    "version": "20241128.1514",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "808afa0fabe66b365479fc4c8dbc0af7f86d8889",
+    "commit": "63c7c092d80daa02d85890178bb879ddcfd04bde",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
