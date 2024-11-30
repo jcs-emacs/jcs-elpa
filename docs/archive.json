@@ -1766,28 +1766,28 @@
   {
     "name": "sideline-blame",
     "summary": "Show blame messages with sideline",
-    "version": "20240906.1906",
+    "version": "20241130.1118",
     "url": "https://github.com/emacs-sideline/sideline-blame",
     "source": "github",
-    "commit": "48288bc77a90b58c7609598d0a129ba1638d0098",
+    "commit": "24acacc766f7cc8ffb1a7dda695be6eb67ec5670",
     "tree": "https://github.com/emacs-sideline/sideline-blame"
   },
   {
     "name": "sideline-color",
     "summary": "Show color information with sideline",
-    "version": "20240101.918",
+    "version": "20241130.1118",
     "url": "https://github.com/emacs-sideline/sideline-color",
     "source": "github",
-    "commit": "357d2fdefabbcc68f136f441ae2dd57e6fc2e843",
+    "commit": "9e6cc435dc0a9707da69ee83f6bf3773735abca3",
     "tree": "https://github.com/emacs-sideline/sideline-color"
   },
   {
     "name": "sideline-eglot",
     "summary": "Show eglot information with sideline",
-    "version": "20240629.838",
+    "version": "20241130.1119",
     "url": "https://github.com/emacs-sideline/sideline-eglot",
     "source": "github",
-    "commit": "04c83d3c4e64f9555cec2299879491c47794398a",
+    "commit": "e40c04928c207bde19abbdcb5083e6ded2b57a96",
     "tree": "https://github.com/emacs-sideline/sideline-eglot"
   },
   {
@@ -1802,37 +1802,37 @@
   {
     "name": "sideline-flycheck",
     "summary": "Show flycheck errors with sideline",
-    "version": "20240629.840",
+    "version": "20241130.1119",
     "url": "https://github.com/emacs-sideline/sideline-flycheck",
     "source": "github",
-    "commit": "4147f2754c353e0b7920caf385b8dccc5e6301f7",
+    "commit": "1cc46a244d76027687136b3db0da1f5535d1352c",
     "tree": "https://github.com/emacs-sideline/sideline-flycheck"
   },
   {
     "name": "sideline-flymake",
     "summary": "Show flymake errors with sideline",
-    "version": "20240509.742",
+    "version": "20241130.1119",
     "url": "https://github.com/emacs-sideline/sideline-flymake",
     "source": "github",
-    "commit": "06e84875022a5645ece8f4c2c8b56aa5f003c65d",
+    "commit": "096b2fecfdb5a2192541e6099f761dde22b53aec",
     "tree": "https://github.com/emacs-sideline/sideline-flymake"
   },
   {
     "name": "sideline-load-cost",
     "summary": "Display load/require module size with sideline",
-    "version": "20240331.2323",
+    "version": "20241130.1119",
     "url": "https://github.com/emacs-sideline/sideline-load-cost",
     "source": "github",
-    "commit": "a5f5f804704dc9545113067fce80b7be3023fd4a",
+    "commit": "2821880d73226820e2c9f7fbcfc34dce5a6e9ae6",
     "tree": "https://github.com/emacs-sideline/sideline-load-cost"
   },
   {
     "name": "sideline-lsp",
     "summary": "Show lsp information with sideline",
-    "version": "20240403.2210",
+    "version": "20241130.1119",
     "url": "https://github.com/emacs-sideline/sideline-lsp",
     "source": "github",
-    "commit": "69aca6403509abb4f5c5ba8499e98f80f81ebc88",
+    "commit": "96fd13fa94fc7abfe84dbf1c966cdfe1b5273d94",
     "tree": "https://github.com/emacs-sideline/sideline-lsp"
   },
   {
