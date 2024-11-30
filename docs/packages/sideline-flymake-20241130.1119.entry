@@ -1,13 +1,13 @@
 (sideline-flymake .
-		  [(20240509 742)
+		  [(20241130 1119)
 		   ((emacs
-		     (27 1))
+		     (28 1))
 		    (sideline
 		     (0 1 0)))
 		   "Show flymake errors with sideline" tar
 		   ((:url . "https://github.com/emacs-sideline/sideline-flymake")
-		    (:commit . "06e84875022a5645ece8f4c2c8b56aa5f003c65d")
-		    (:revdesc . "06e84875022a")
+		    (:commit . "096b2fecfdb5a2192541e6099f761dde22b53aec")
+		    (:revdesc . "096b2fecfdb5")
 		    (:keywords "convenience" "flymake")
 		    (:authors
 		     ("Jen-Chieh" . "jcs090218@gmail.com"))
