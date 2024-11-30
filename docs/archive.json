@@ -524,10 +524,10 @@
   {
     "name": "dape",
     "summary": "Debug Adapter Protocol for Emacs",
-    "version": "20241127.2243",
+    "version": "20241130.1043",
     "url": "https://github.com/svaante/dape",
     "source": "github",
-    "commit": "fdd7b07de4e8e41262d679b93f8f44b866450f3e",
+    "commit": "3a9d35ea4b0e00634e12ada235f4fe5368018472",
     "tree": "https://github.com/svaante/dape"
   },
   {
@@ -1757,10 +1757,10 @@
   {
     "name": "sideline",
     "summary": "Show information on the side",
-    "version": "20241123.311",
+    "version": "20241130.1105",
     "url": "https://github.com/emacs-sideline/sideline",
     "source": "github",
-    "commit": "b329d097a37585cd21c3b9a5862e0bb2a2f76442",
+    "commit": "63c913aeb5836f2376d1ad01580e67f9d1c56e0a",
     "tree": "https://github.com/emacs-sideline/sideline"
   },
   {
