@@ -181,11 +181,11 @@
   },
   {
     "name": "chatgpt-shell",
-    "summary": "A multi-llm Emacs shell (ChatGPT, Claude, Gemini, Ollama) + editing integrations",
-    "version": "20241201.1139",
+    "summary": "A multi-llm Emacs shell (ChatGPT, Claude, Gemini, Ollama, Perplexity) + editing integrations",
+    "version": "20241201.1848",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "78c980435e02e3fecacb84762cc6cb729ee1c63f",
+    "commit": "84c7b4c54f493bf6431f71c3fd59c3fd765e9ad8",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -1901,10 +1901,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20241124.1640",
+    "version": "20241125.1549",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "0ebb3c1179c8eec13d12e64c70369a522f6ca84f",
+    "commit": "6028d322b631989958fbaf2fe0c7550227dd215f",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
