@@ -182,10 +182,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "A multi-llm Emacs shell (ChatGPT, Claude, Gemini, Ollama, Perplexity) + editing integrations",
-    "version": "20241202.1146",
+    "version": "20241202.2057",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "57d390eef75650246c6bbf1a3c519273bb4fccf0",
+    "commit": "c5675556cf82227742f26863f2b14fcf77643406",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -524,10 +524,10 @@
   {
     "name": "dape",
     "summary": "Debug Adapter Protocol for Emacs",
-    "version": "20241201.2211",
+    "version": "20241202.2024",
     "url": "https://github.com/svaante/dape",
     "source": "github",
-    "commit": "b0987d0c25ef07082a3bb904299487347565e87f",
+    "commit": "918517c73284f4a48049901793aa0187953da332",
     "tree": "https://github.com/svaante/dape"
   },
   {
