@@ -1,0 +1,1 @@
+(flycheck-janet :repo "sogaiu/flycheck-janet" :fetcher github)
