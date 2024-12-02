@@ -873,6 +873,15 @@
     "tree": "https://github.com/alvarogonzalezsotillo/flycheck-hl-todo"
   },
   {
+    "name": "flycheck-janet",
+    "summary": "Add janet linter to flycheck",
+    "version": "20230518.1132",
+    "url": "https://github.com/sogaiu/flycheck-janet",
+    "source": "github",
+    "commit": "1f3b8796ffc57a6aefcb38063d46cb4787b04fe1",
+    "tree": "https://github.com/sogaiu/flycheck-janet"
+  },
+  {
     "name": "flycheck-ziglint",
     "summary": "Flycheck for ziglint",
     "version": "20240229.1015",
