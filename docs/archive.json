@@ -181,11 +181,11 @@
   },
   {
     "name": "chatgpt-shell",
-    "summary": "A multi-llm Emacs shell (ChatGPT, Claude, Gemini, Ollama, Perplexity) + editing integrations",
-    "version": "20241203.836",
+    "summary": "A multi-LLM shell (ChatGPT, Claude, Gemini, Kagi, Ollama, Perplexity) + editing integrations",
+    "version": "20241203.1331",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "438adbec3a30cf10ba4adef9a0135801c53ba5f6",
+    "commit": "ea67740bc5268b6e35430238eedfecdbe7baf7d9",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -1928,10 +1928,10 @@
   {
     "name": "treesit-fold",
     "summary": "Code folding using treesit",
-    "version": "20241202.1849",
+    "version": "20241203.1332",
     "url": "https://github.com/emacs-tree-sitter/treesit-fold",
     "source": "github",
-    "commit": "3375b2939a372bfb0970198bebcad2e376bc2508",
+    "commit": "0e21e12560f0977d390e3d4af45020f0f6db1c15",
     "tree": "https://github.com/emacs-tree-sitter/treesit-fold"
   },
   {
@@ -1955,10 +1955,10 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20241202.1849",
+    "version": "20241203.1330",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "14e1e92c1bdbdfee481ea4c99f81b48a275e1a7d",
+    "commit": "cc11b64f4690e0aaaec9aaf6d8fe69dd7bd8a5d0",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
