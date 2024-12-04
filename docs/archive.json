@@ -1694,10 +1694,10 @@
   {
     "name": "region-occurrences-highlighter",
     "summary": "Mark occurrences of current region (selection)",
-    "version": "20241204.1802",
+    "version": "20241204.1806",
     "url": "https://github.com/alvarogonzalezsotillo/region-occurrences-highlighter",
     "source": "github",
-    "commit": "a01de0d9b0437dacc7ef92227faa2fd91abc6076",
+    "commit": "5bcc35244411d0f1f93badd7330eac97f316991b",
     "tree": "https://github.com/alvarogonzalezsotillo/region-occurrences-highlighter"
   },
   {
