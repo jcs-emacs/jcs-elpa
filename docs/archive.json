@@ -155,10 +155,10 @@
   {
     "name": "centaur-tabs",
     "summary": "Aesthetic, modern looking customizable tabs plugin",
-    "version": "20241204.1940",
+    "version": "20241204.1949",
     "url": "https://github.com/ema2159/centaur-tabs",
     "source": "github",
-    "commit": "3183329dc8f29c00ebd2d7954380abe2c7be3696",
+    "commit": "a5611ee7ec3de1c2e2f869d4d47e2d410340130c",
     "tree": "https://github.com/ema2159/centaur-tabs"
   },
   {
