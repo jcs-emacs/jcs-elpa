@@ -1,13 +1,13 @@
 (message-clean-mode .
-		    [(20241205 742)
+		    [(20241205 757)
 		     ((emacs
 		       (25 1))
 		      (msgu
 		       (0 1 0)))
 		     "Keep messages buffer clean" tar
 		     ((:url . "https://github.com/jcs-elpa/message-clean-mode")
-		      (:commit . "50a84bab95d63fbad442b329536c316373b7c742")
-		      (:revdesc . "50a84bab95d6")
+		      (:commit . "f55cc39f140da1710a1f6fab0cfa27f43637ee00")
+		      (:revdesc . "f55cc39f140d")
 		      (:keywords "convenience" "messages" "clean")
 		      (:authors
 		       ("Jen-Chieh" . "jcs090218@gmail.com"))
