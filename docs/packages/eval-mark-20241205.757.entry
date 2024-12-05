@@ -1,11 +1,13 @@
 (eval-mark .
-	   [(20241205 749)
+	   [(20241205 757)
 	    ((emacs
-	      (26 1)))
+	      (26 1))
+	     (msgu
+	      (0 1 0)))
 	    "Evaluate then deactive mark" tar
 	    ((:url . "https://github.com/jcs-elpa/eval-mark")
-	     (:commit . "4ead46af93a71aa9459022df9b7104123280a27a")
-	     (:revdesc . "4ead46af93a7")
+	     (:commit . "23c775866fd0c5c942ab0c9c96158393b1936c46")
+	     (:revdesc . "23c775866fd0")
 	     (:keywords "lisp")
 	     (:authors
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))
