@@ -749,10 +749,10 @@
   {
     "name": "eval-mark",
     "summary": "Evaluate then deactive mark",
-    "version": "20240101.936",
+    "version": "20241205.749",
     "url": "https://github.com/jcs-elpa/eval-mark",
     "source": "github",
-    "commit": "58702f162529431ace0793f7a73fbf048a63f943",
+    "commit": "4ead46af93a71aa9459022df9b7104123280a27a",
     "tree": "https://github.com/jcs-elpa/eval-mark"
   },
   {
@@ -1388,10 +1388,10 @@
   {
     "name": "message-clean-mode",
     "summary": "Keep messages buffer clean",
-    "version": "20240112.1043",
+    "version": "20241205.742",
     "url": "https://github.com/jcs-elpa/message-clean-mode",
     "source": "github",
-    "commit": "1fe8215a5b759cef1f74e447436c2737cbb567bd",
+    "commit": "50a84bab95d63fbad442b329536c316373b7c742",
     "tree": "https://github.com/jcs-elpa/message-clean-mode"
   },
   {
@@ -2009,10 +2009,10 @@
   {
     "name": "ueval",
     "summary": "Universal Evaluation Utilities",
-    "version": "20241030.1724",
+    "version": "20241205.752",
     "url": "https://github.com/jcs-elpa/ueval",
     "source": "github",
-    "commit": "935a76facae4f8ee5967234ef11565e0e216d32c",
+    "commit": "57e71f82faca9757c82f95232c482c59ffd9cc14",
     "tree": "https://github.com/jcs-elpa/ueval"
   },
   {
