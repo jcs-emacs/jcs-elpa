@@ -2009,10 +2009,10 @@
   {
     "name": "ueval",
     "summary": "Universal Evaluation Utilities",
-    "version": "20241205.755",
+    "version": "20241206.1243",
     "url": "https://github.com/jcs-elpa/ueval",
     "source": "github",
-    "commit": "a41b76316998ed30a39f46b424ed5f9188a1a5a7",
+    "commit": "24470382fe6c5436d58fab2886a47a7bc503d795",
     "tree": "https://github.com/jcs-elpa/ueval"
   },
   {
