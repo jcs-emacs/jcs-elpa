@@ -205,6 +205,7 @@
   (sideline-flymake :url "https://github.com/emacs-sideline/sideline-flymake")
   (sideline-load-cost :url "https://github.com/emacs-sideline/sideline-load-cost")
   (sideline-lsp :url "https://github.com/emacs-sideline/sideline-lsp")
+  (sideline-sly :url "https://github.com/emacs-sideline/sideline-sly")
   (sln-mode :url "https://github.com/sensorflo/sln-mode")
   (smartchr :url "https://github.com/imakado/emacs-smartchr")
   (sound-async :url "https://github.com/jcs-elpa/sound-async")
