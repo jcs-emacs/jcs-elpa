@@ -1847,10 +1847,10 @@
   {
     "name": "sideline-geiser",
     "summary": "Show Geiser result with sideline",
-    "version": "20241207.1901",
+    "version": "20241207.1902",
     "url": "https://github.com/emacs-sideline/sideline-geiser",
     "source": "github",
-    "commit": "55be1daee7e53fb2df9ace571c5c6a55d3c62160",
+    "commit": "87770cbb39506295dde5bbf6d0f430efa5835803",
     "tree": "https://github.com/emacs-sideline/sideline-geiser"
   },
   {
