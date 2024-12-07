@@ -1,0 +1,1 @@
+(sideline-geiser :repo "emacs-sideline/sideline-geiser" :fetcher github)
