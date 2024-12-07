@@ -1,0 +1,1 @@
+(sideline-eros :repo "emacs-sideline/sideline-eros" :fetcher github)
