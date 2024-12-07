@@ -1,2 +1,2 @@
 
-Show EROS result in sideline.
+Show EROS result with sideline.
