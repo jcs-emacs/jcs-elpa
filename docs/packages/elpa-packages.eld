@@ -196,6 +196,7 @@
   (show-eof-mode :url "https://github.com/zk-phi/show-eof-mode")
   (sideline :url "https://github.com/emacs-sideline/sideline")
   (sideline-blame :url "https://github.com/emacs-sideline/sideline-blame")
+  (sideline-cider :url "https://github.com/emacs-sideline/sideline-cider")
   (sideline-color :url "https://github.com/emacs-sideline/sideline-color")
   (sideline-eglot :url "https://github.com/emacs-sideline/sideline-eglot")
   (sideline-eldoc :url "https://github.com/ginqi7/sideline-eldoc")
