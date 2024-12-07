@@ -1782,6 +1782,15 @@
     "tree": "https://github.com/emacs-sideline/sideline-blame"
   },
   {
+    "name": "sideline-cider",
+    "summary": "Show CIDER result with sideline",
+    "version": "20241207.920",
+    "url": "https://github.com/emacs-sideline/sideline-cider",
+    "source": "github",
+    "commit": "86e46912f086ca720febe861a60e36a83b69345c",
+    "tree": "https://github.com/emacs-sideline/sideline-cider"
+  },
+  {
     "name": "sideline-color",
     "summary": "Show color information with sideline",
     "version": "20241130.1118",
