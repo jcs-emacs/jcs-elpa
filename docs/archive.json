@@ -1809,6 +1809,15 @@
     "tree": "https://github.com/ginqi7/sideline-eldoc"
   },
   {
+    "name": "sideline-eros",
+    "summary": "Show EROS result in sideline",
+    "version": "20241207.828",
+    "url": "https://github.com/emacs-sideline/sideline-eros",
+    "source": "github",
+    "commit": "0089dad498c9dd0d437a06f8dfe7635010df4546",
+    "tree": "https://github.com/emacs-sideline/sideline-eros"
+  },
+  {
     "name": "sideline-flycheck",
     "summary": "Show flycheck errors with sideline",
     "version": "20241130.1119",
