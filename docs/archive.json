@@ -155,10 +155,10 @@
   {
     "name": "centaur-tabs",
     "summary": "Aesthetic, modern looking customizable tabs plugin",
-    "version": "20241205.1611",
+    "version": "20241207.938",
     "url": "https://github.com/ema2159/centaur-tabs",
     "source": "github",
-    "commit": "23c33f9dab2849f764280f8987a12e6643883867",
+    "commit": "b0af210d06a1b046f1ec137b45c52d2680376463",
     "tree": "https://github.com/ema2159/centaur-tabs"
   },
   {
@@ -1784,10 +1784,10 @@
   {
     "name": "sideline-cider",
     "summary": "Show CIDER result with sideline",
-    "version": "20241207.920",
+    "version": "20241207.926",
     "url": "https://github.com/emacs-sideline/sideline-cider",
     "source": "github",
-    "commit": "86e46912f086ca720febe861a60e36a83b69345c",
+    "commit": "ff99473ccb1b962e26d9c98250ea944ffb287085",
     "tree": "https://github.com/emacs-sideline/sideline-cider"
   },
   {
@@ -1861,6 +1861,15 @@
     "source": "github",
     "commit": "96fd13fa94fc7abfe84dbf1c966cdfe1b5273d94",
     "tree": "https://github.com/emacs-sideline/sideline-lsp"
+  },
+  {
+    "name": "sideline-sly",
+    "summary": "Show SLY result with sideline",
+    "version": "20241207.955",
+    "url": "https://github.com/emacs-sideline/sideline-sly",
+    "source": "github",
+    "commit": "b7d42eacbe43f43f7d554467f74fc7fbf484e64a",
+    "tree": "https://github.com/emacs-sideline/sideline-sly"
   },
   {
     "name": "sln-mode",
