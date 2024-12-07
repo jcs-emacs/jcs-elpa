@@ -1865,10 +1865,10 @@
   {
     "name": "sideline-sly",
     "summary": "Show SLY result with sideline",
-    "version": "20241207.955",
+    "version": "20241207.1008",
     "url": "https://github.com/emacs-sideline/sideline-sly",
     "source": "github",
-    "commit": "b7d42eacbe43f43f7d554467f74fc7fbf484e64a",
+    "commit": "dfd574eabddb3eeef41fb24045c447444028bd84",
     "tree": "https://github.com/emacs-sideline/sideline-sly"
   },
   {
