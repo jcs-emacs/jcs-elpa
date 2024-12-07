@@ -1863,6 +1863,15 @@
     "tree": "https://github.com/emacs-sideline/sideline-lsp"
   },
   {
+    "name": "sideline-racket",
+    "summary": "Show racket result with sideline",
+    "version": "20241207.1804",
+    "url": "https://github.com/emacs-sideline/sideline-racket",
+    "source": "github",
+    "commit": "1455de2834bb2d1bbed6d5a770117e66f5cbb0e7",
+    "tree": "https://github.com/emacs-sideline/sideline-racket"
+  },
+  {
     "name": "sideline-sly",
     "summary": "Show SLY result with sideline",
     "version": "20241207.1008",
@@ -2036,10 +2045,10 @@
   {
     "name": "ueval",
     "summary": "Universal Evaluation Utilities",
-    "version": "20241206.1243",
+    "version": "20241207.1746",
     "url": "https://github.com/jcs-elpa/ueval",
     "source": "github",
-    "commit": "24470382fe6c5436d58fab2886a47a7bc503d795",
+    "commit": "cbf44204bf9844dca594e3a3439d299d7ef396f0",
     "tree": "https://github.com/jcs-elpa/ueval"
   },
   {
