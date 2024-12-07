@@ -1926,6 +1926,15 @@
     "tree": "https://github.com/jcs-legacy/sublime-fuzzy"
   },
   {
+    "name": "tocify-markdown",
+    "summary": "A simple TOC generator for markdown file",
+    "version": "20241113.1549",
+    "url": "https://github.com/jamescherti/tocify-markdown.el",
+    "source": "github",
+    "commit": "89002252a188fa98ed0d5345be3bc4ffa67c4afd",
+    "tree": "https://github.com/jamescherti/tocify-markdown.el"
+  },
+  {
     "name": "toggle-profiler",
     "summary": "Useful functions to interact with profiler",
     "version": "20240101.932",
