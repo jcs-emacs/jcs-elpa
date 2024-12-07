@@ -1,5 +1,5 @@
 (sideline-geiser .
-		 [(20241207 1901)
+		 [(20241207 1902)
 		  ((emacs
 		    (28 1))
 		   (sideline
@@ -8,8 +8,8 @@
 		    (0 31 1)))
 		  "Show Geiser result with sideline" tar
 		  ((:url . "https://github.com/emacs-sideline/sideline-geiser")
-		   (:commit . "55be1daee7e53fb2df9ace571c5c6a55d3c62160")
-		   (:revdesc . "55be1daee7e5")
+		   (:commit . "87770cbb39506295dde5bbf6d0f430efa5835803")
+		   (:revdesc . "87770cbb3950")
 		   (:keywords "convenience")
 		   (:authors
 		    ("Jen-Chieh" . "jcs090218@gmail.com"))
