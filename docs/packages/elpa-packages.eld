@@ -203,6 +203,7 @@
   (sideline-eros :url "https://github.com/emacs-sideline/sideline-eros")
   (sideline-flycheck :url "https://github.com/emacs-sideline/sideline-flycheck")
   (sideline-flymake :url "https://github.com/emacs-sideline/sideline-flymake")
+  (sideline-geiser :url "https://github.com/emacs-sideline/sideline-geiser")
   (sideline-load-cost :url "https://github.com/emacs-sideline/sideline-load-cost")
   (sideline-lsp :url "https://github.com/emacs-sideline/sideline-lsp")
   (sideline-racket :url "https://github.com/emacs-sideline/sideline-racket")
