@@ -199,6 +199,7 @@
   (sideline-color :url "https://github.com/emacs-sideline/sideline-color")
   (sideline-eglot :url "https://github.com/emacs-sideline/sideline-eglot")
   (sideline-eldoc :url "https://github.com/ginqi7/sideline-eldoc")
+  (sideline-eros :url "https://github.com/emacs-sideline/sideline-eros")
   (sideline-flycheck :url "https://github.com/emacs-sideline/sideline-flycheck")
   (sideline-flymake :url "https://github.com/emacs-sideline/sideline-flymake")
   (sideline-load-cost :url "https://github.com/emacs-sideline/sideline-load-cost")
