@@ -212,6 +212,7 @@
   (smartchr :url "https://github.com/imakado/emacs-smartchr")
   (sound-async :url "https://github.com/jcs-elpa/sound-async")
   (sublime-fuzzy :url "https://github.com/jcs-legacy/sublime-fuzzy")
+  (tocify-markdown :url "https://github.com/jamescherti/tocify-markdown.el")
   (toggle-profiler :url "https://github.com/jcs-elpa/toggle-profiler")
   (tree-sitter :url "https://github.com/emacs-tree-sitter/elisp-tree-sitter")
   (tree-sitter-indent :url "https://codeberg.org/FelipeLema/tree-sitter-indent.el")
