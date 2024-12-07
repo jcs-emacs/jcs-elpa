@@ -1,0 +1,1 @@
+(sideline-racket :repo "emacs-sideline/sideline-racket" :fetcher github)
