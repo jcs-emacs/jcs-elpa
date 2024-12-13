@@ -1,1 +1,0 @@
-(tocify-markdown :repo "jamescherti/tocify-markdown.el" :fetcher github)
