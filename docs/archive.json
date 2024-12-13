@@ -1431,6 +1431,15 @@
     "tree": "https://github.com/jdtsmith/mode-minder"
   },
   {
+    "name": "modeline-region",
+    "summary": "Show region information in the mode-line",
+    "version": "20241128.505",
+    "url": "https://github.com/jamescherti/modeline-region.el",
+    "source": "github",
+    "commit": "10ffd7dd5378b401301612b13bd3add50994b27f",
+    "tree": "https://github.com/jamescherti/modeline-region.el"
+  },
+  {
     "name": "msgu",
     "summary": "Utility functions help output the messages",
     "version": "20240605.2301",
@@ -1926,15 +1935,6 @@
     "tree": "https://github.com/jcs-legacy/sublime-fuzzy"
   },
   {
-    "name": "tocify-markdown",
-    "summary": "A simple TOC generator for markdown file",
-    "version": "20241113.1549",
-    "url": "https://github.com/jamescherti/tocify-markdown.el",
-    "source": "github",
-    "commit": "89002252a188fa98ed0d5345be3bc4ffa67c4afd",
-    "tree": "https://github.com/jamescherti/tocify-markdown.el"
-  },
-  {
     "name": "toggle-profiler",
     "summary": "Useful functions to interact with profiler",
     "version": "20240101.932",
@@ -1980,6 +1980,15 @@
     "tree": "https://github.com/rainstormstudio/treemacs-nerd-icons"
   },
   {
+    "name": "treesit-auto",
+    "summary": "Automatically use tree-sitter enhanced major modes",
+    "version": "20240511.1425",
+    "url": "https://github.com/renzmann/treesit-auto",
+    "source": "github",
+    "commit": "016bd286a1ba4628f833a626f8b9d497882ecdf3",
+    "tree": "https://github.com/renzmann/treesit-auto"
+  },
+  {
     "name": "treesit-fold",
     "summary": "Code folding using treesit",
     "version": "20241203.1332",
@@ -1991,10 +2000,10 @@
   {
     "name": "treesit-langs",
     "summary": "Language bundle for Emacs's treesit.el",
-    "version": "20240801.221",
+    "version": "20241213.1544",
     "url": "https://github.com/emacs-tree-sitter/treesit-langs",
     "source": "github",
-    "commit": "710aa4fa19d8098fbb4a6293af1c0517cf1a96be",
+    "commit": "ece540e3b58ed925ddc4301df9ebe10af52a22fe",
     "tree": "https://github.com/emacs-tree-sitter/treesit-langs"
   },
   {
