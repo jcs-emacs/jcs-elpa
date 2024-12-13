@@ -1,0 +1,7 @@
+(modeline-region .
+		 [(20241128 505)
+		  nil "Show region information in the mode-line" tar
+		  ((:url . "https://github.com/jamescherti/modeline-region.el")
+		   (:commit . "10ffd7dd5378b401301612b13bd3add50994b27f")
+		   (:revdesc . "10ffd7dd5378")
+		   (:keywords "mode-line" "region" "faces" "help" "column"))])
