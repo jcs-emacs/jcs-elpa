@@ -1,0 +1,1 @@
+(modeline-region :repo "jamescherti/modeline-region.el" :fetcher github)
