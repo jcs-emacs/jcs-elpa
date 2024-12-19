@@ -1,11 +1,11 @@
 (region-occurrences-highlighter .
-				[(20241206 226)
+				[(20241219 1705)
 				 ((emacs
 				   (26 1)))
 				 "Mark occurrences of current region (selection)" tar
 				 ((:url . "https://github.com/alvarogonzalezsotillo/region-occurrences-highlighter")
-				  (:commit . "860105b559252f8e533c5c85a21b86513187586c")
-				  (:revdesc . "860105b55925")
+				  (:commit . "4c2c7a241fd257dd51f2726715cd1be022b3445a")
+				  (:revdesc . "4c2c7a241fd2")
 				  (:keywords "convenience")
 				  (:authors
 				   ("lvaro González Sotillo" . "alvarogonzalezsotillo@gmail.com"))
