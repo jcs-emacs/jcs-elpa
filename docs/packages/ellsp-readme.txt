@@ -1,2 +1,2 @@
 
-Elisp Language Server
+Elisp Language Server.
