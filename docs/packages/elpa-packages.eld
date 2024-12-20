@@ -78,7 +78,7 @@
   (electric-indent-sexp :url "https://github.com/emacs-vs/electric-indent-sexp")
   (elenv :url "https://github.com/jcs-elpa/elenv")
   (elfmt :url "https://github.com/riscy/elfmt")
-  (ellsp :url "https://github.com/jcs090218/ellsp")
+  (ellsp :url "https://github.com/elisp-lsp/ellsp")
   (emp :url "https://github.com/jcs-elpa/emp")
   (eping :url "https://github.com/elp-revive/eping")
   (eval-mark :url "https://github.com/jcs-elpa/eval-mark")
