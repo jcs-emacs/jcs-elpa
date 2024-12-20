@@ -15,7 +15,7 @@
 	 (msgu
 	  (0 1 0)))
 	"Elisp Language Server" tar
-	((:url . "https://github.com/jcs090218/ellsp")
+	((:url . "https://github.com/elisp-lsp/ellsp")
 	 (:commit . "51073348cb11585003ee38327b65696fdb112851")
 	 (:revdesc . "51073348cb11")
 	 (:keywords "convenience" "lsp")
