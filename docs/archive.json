@@ -1215,6 +1215,15 @@
     "tree": "https://github.com/jcs-emacs/jcs-poptip"
   },
   {
+    "name": "jcs-screensaver",
+    "summary": "A screensaver for jcs-emacs",
+    "version": "20241221.248",
+    "url": "https://github.com/jcs-emacs/jcs-screensaver",
+    "source": "github",
+    "commit": "6ef8407b5b74c63eaffc94b18877247d529c8a34",
+    "tree": "https://github.com/jcs-emacs/jcs-screensaver"
+  },
+  {
     "name": "jcs-template",
     "summary": "Template module for jcs-emacs",
     "version": "20240101.912",
