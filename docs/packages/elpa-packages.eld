@@ -133,6 +133,7 @@
   (jcs-frametitle :url "https://github.com/jcs-emacs/jcs-frametitle")
   (jcs-modeline :url "https://github.com/jcs-emacs/jcs-modeline")
   (jcs-poptip :url "https://github.com/jcs-emacs/jcs-poptip")
+  (jcs-screensaver :url "https://github.com/jcs-emacs/jcs-screensaver")
   (jcs-template :url "https://github.com/jcs-emacs/jcs-template")
   (jenkinsfile-mode :url "https://github.com/elp-revive/jenkinsfile-mode")
   (jet :url "https://github.com/ericdallo/jet.el")
