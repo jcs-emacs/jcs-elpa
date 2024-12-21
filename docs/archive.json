@@ -1217,10 +1217,10 @@
   {
     "name": "jcs-screensaver",
     "summary": "A screensaver for jcs-emacs",
-    "version": "20241221.248",
+    "version": "20241221.300",
     "url": "https://github.com/jcs-emacs/jcs-screensaver",
     "source": "github",
-    "commit": "6ef8407b5b74c63eaffc94b18877247d529c8a34",
+    "commit": "cb9b530eb96e2e7f3f9eef2c42e9ddeb362e4763",
     "tree": "https://github.com/jcs-emacs/jcs-screensaver"
   },
   {
