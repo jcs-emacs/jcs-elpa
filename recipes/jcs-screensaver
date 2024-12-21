@@ -1,0 +1,1 @@
+(jcs-screensaver :repo "jcs-emacs/jcs-screensaver" :fetcher github)
