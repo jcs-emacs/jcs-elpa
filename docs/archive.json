@@ -1217,19 +1217,19 @@
   {
     "name": "jcs-screensaver",
     "summary": "A screensaver for jcs-emacs",
-    "version": "20241221.300",
+    "version": "20241222.34",
     "url": "https://github.com/jcs-emacs/jcs-screensaver",
     "source": "github",
-    "commit": "cb9b530eb96e2e7f3f9eef2c42e9ddeb362e4763",
+    "commit": "72af909f217f58ac3c92a90983e85ab5f9c0fd0b",
     "tree": "https://github.com/jcs-emacs/jcs-screensaver"
   },
   {
     "name": "jcs-template",
     "summary": "Template module for jcs-emacs",
-    "version": "20240101.912",
+    "version": "20241222.58",
     "url": "https://github.com/jcs-emacs/jcs-template",
     "source": "github",
-    "commit": "7583df94b3972ce06a44c79540bf3d2a6d0045a6",
+    "commit": "367fe90b9f61f0e6ac52602c004bac02db3b73c9",
     "tree": "https://github.com/jcs-emacs/jcs-template"
   },
   {
