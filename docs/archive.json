@@ -1226,10 +1226,10 @@
   {
     "name": "jcs-template",
     "summary": "Template module for jcs-emacs",
-    "version": "20241222.58",
+    "version": "20241222.235",
     "url": "https://github.com/jcs-emacs/jcs-template",
     "source": "github",
-    "commit": "367fe90b9f61f0e6ac52602c004bac02db3b73c9",
+    "commit": "e7a589c15eb92edc39996a92f27d7cb761b3103e",
     "tree": "https://github.com/jcs-emacs/jcs-template"
   },
   {
