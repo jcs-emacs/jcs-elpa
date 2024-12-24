@@ -1647,6 +1647,15 @@
     "tree": "https://github.com/jcs-elpa/prt"
   },
   {
+    "name": "qob-mode",
+    "summary": "Major mode for editing Qob files",
+    "version": "20241224.140",
+    "url": "https://github.com/cl-qob/qob-mode",
+    "source": "github",
+    "commit": "9e8313d146c3edad231e073bc1f36d999db88d82",
+    "tree": "https://github.com/cl-qob/qob-mode"
+  },
+  {
     "name": "qsharp-mode",
     "summary": "Programming mode for the Q# language",
     "version": "20230502.727",
