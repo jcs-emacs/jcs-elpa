@@ -181,6 +181,7 @@
   (powerline :url "https://github.com/milkypostman/powerline")
   (preview-it :url "https://github.com/jcs-elpa/preview-it")
   (prt :url "https://github.com/jcs-elpa/prt")
+  (qob-mode :url "https://github.com/cl-qob/qob-mode")
   (qsharp-mode :url "https://github.com/forked-from-1kasper/emacs-qsharp-mode")
   (qss-mode :url "https://github.com/jcs-elpa/qss-mode")
   (query-ts-mode :url "https://github.com/nverno/query-ts-mode")
