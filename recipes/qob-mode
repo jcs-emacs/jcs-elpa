@@ -1,0 +1,1 @@
+(qob-mode :repo "cl-qob/qob-mode" :fetcher github)
