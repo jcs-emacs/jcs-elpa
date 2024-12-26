@@ -1,0 +1,13 @@
+(highlight-indent-guides .
+			 [(20200820 2328)
+			  ((emacs
+			    (24 1)))
+			  "Minor mode to highlight indentation" tar
+			  ((:url . "https://github.com/DarthFennec/highlight-indent-guides")
+			   (:commit . "cf352c85cd15dd18aa096ba9d9ab9b7ab493e8f6")
+			   (:revdesc . "cf352c85cd15")
+			   (:authors
+			    ("DarthFennec" . "darthfennec@derpymail.org"))
+			   (:maintainers
+			    ("DarthFennec" . "darthfennec@derpymail.org"))
+			   (:maintainer "DarthFennec" . "darthfennec@derpymail.org"))])

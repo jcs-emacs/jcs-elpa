@@ -116,6 +116,7 @@
   (gptscript-mode :url "https://github.com/emacs-openai/gptscript-mode")
   (guard-lf :url "https://github.com/jcs-elpa/guard-lf")
   (helafy :url "https://github.com/jcs-elpa/helafy")
+  (highlight-indent-guides :url "https://github.com/DarthFennec/highlight-indent-guides")
   (hl-preproc :url "https://github.com/emacs-vs/hl-preproc")
   (hlsl-mode :url "https://github.com/darfink/hlsl-mode")
   (hurl-mode :url "https://github.com/azzamsa/emacs-hurl")
