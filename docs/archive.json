@@ -1062,6 +1062,15 @@
     "tree": "https://github.com/jcs-elpa/helafy"
   },
   {
+    "name": "highlight-indent-guides",
+    "summary": "Minor mode to highlight indentation",
+    "version": "20200820.2328",
+    "url": "https://github.com/DarthFennec/highlight-indent-guides",
+    "source": "github",
+    "commit": "cf352c85cd15dd18aa096ba9d9ab9b7ab493e8f6",
+    "tree": "https://github.com/DarthFennec/highlight-indent-guides"
+  },
+  {
     "name": "hl-preproc",
     "summary": "Unhighlight invalid preprocessor region",
     "version": "20240101.856",
