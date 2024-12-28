@@ -1,10 +1,10 @@
 (chatgpt-shell .
-	       [(20241228 1651)
+	       [(20241228 1953)
 		((emacs
 		  (28 1))
 		 (shell-maker
 		  (0 76 2)))
 		"A multi-LLM shell (ChatGPT, Claude, Gemini, Kagi, Ollama, Perplexity) + editing integrations" tar
 		((:url . "https://github.com/xenodium/chatgpt-shell")
-		 (:commit . "ec58fa006bb9f45d262607cc08f45af341fb9a88")
-		 (:revdesc . "ec58fa006bb9"))])
+		 (:commit . "13859625c6bafcbd311c23940e166e76f5ab856d")
+		 (:revdesc . "13859625c6ba"))])
