@@ -1,5 +1,5 @@
 (vs-edit-mode .
-	      [(20241222 2212)
+	      [(20241229 2055)
 	       ((emacs
 		 (26 1))
 		(mwim
@@ -10,8 +10,8 @@
 		 (0 0 15)))
 	       "Minor mode accomplish editing experience in Visual Studio" tar
 	       ((:url . "https://github.com/emacs-vs/vs-edit-mode")
-		(:commit . "1c0f3d946670fee73225d33052fb13491b831e32")
-		(:revdesc . "1c0f3d946670")
+		(:commit . "7adea4d6e076efe40a6060f22a47cdfc1cc8c720")
+		(:revdesc . "7adea4d6e076")
 		(:keywords "convenience" "editing" "vs")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
