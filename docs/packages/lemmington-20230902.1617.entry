@@ -7,7 +7,7 @@
 	      (elisp-refs
 	       (1 6)))
 	     "RPC Emacs server" tar
-	     ((:url . "https://github.com/lem-project/lemmington")
+	     ((:url . "https://github.com/lem-project/lemmington.git")
 	      (:commit . "e3fe31a903501f003109816abe0474bfa94fe917")
 	      (:revdesc . "e3fe31a90350")
 	      (:keywords "tools" "languages")

@@ -3,7 +3,7 @@
 	  ((emacs
 	    (26 1)))
 	  "Fast and precise fuzzy scoring/matching utils" tar
-	  ((:url . "https://github.com/jcs-legacy/fuz-bin")
+	  ((:url . "https://github.com/jcs-elpa/fuz-bin")
 	   (:commit . "dcaee61d4d64e81f17859c5ed36412042f2c832e")
 	   (:revdesc . "dcaee61d4d64")
 	   (:keywords "lisp")
