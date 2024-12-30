@@ -3,7 +3,7 @@
 		((emacs
 		  (25 1)))
 		"Fuzzy matching algorithm like Sublime Text's string search" tar
-		((:url . "https://github.com/jcs-legacy/sublime-fuzzy")
+		((:url . "https://github.com/jcs-elpa/sublime-fuzzy")
 		 (:commit . "a0f1c86601e3287e96956fd79cc46252f21ef8aa")
 		 (:revdesc . "a0f1c86601e3")
 		 (:keywords "matching" "sublime" "fuzzy" "algorithm")

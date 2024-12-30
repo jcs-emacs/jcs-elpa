@@ -3,7 +3,7 @@
 		      ((emacs
 			(26 1)))
 		      "Add spacing around operators like Visual Studio" tar
-		      ((:url . "https://github.com/emacs-vs/vs-electric-spacing")
+		      ((:url . "https://github.com/jcs-elpa/vs-electric-spacing")
 		       (:commit . "c97e28e03a33f1a9fc0ead789b9a7d277842fe7b")
 		       (:revdesc . "c97e28e03a33")
 		       (:keywords "convenience" "electric" "vs")
