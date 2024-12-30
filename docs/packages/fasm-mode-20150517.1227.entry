@@ -1,7 +1,7 @@
 (fasm-mode .
 	   [(20150517 1227)
 	    nil "Fasm major mode" tar
-	    ((:url . "https://github.com/the-little-language-designer/fasm-mode")
+	    ((:url . "https://github.com/Fanael/fasm-mode")
 	     (:commit . "cb4b9bf48c7f05530e140456eb1f4a54716470f9")
 	     (:revdesc . "cb4b9bf48c7f")
 	     (:authors
