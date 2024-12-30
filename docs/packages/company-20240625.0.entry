@@ -3,7 +3,7 @@
 	  ((emacs
 	    (25 1)))
 	  "Modular text completion framework" tar
-	  ((:url . "https://github.com/elp-revive/company-mode")
+	  ((:url . "http://company-mode.github.io/")
 	   (:commit . "8d2ca28a161f8b912889684412bb1d7fb07d035c")
 	   (:revdesc . "8d2ca28a161f")
 	   (:keywords "abbrev" "convenience" "matching")

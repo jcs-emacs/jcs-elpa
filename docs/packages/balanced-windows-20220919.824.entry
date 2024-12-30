@@ -3,7 +3,7 @@
 		   ((emacs
 		     (25 1)))
 		   "Keep windows balanced" tar
-		   ((:url . "https://github.com/elp-revive/balanced-windows")
+		   ((:url . "https://github.com/elp-revive/emacs-balanced-windows")
 		    (:commit . "fd360ca6416e56d8df92bbcb0f7aec37e201f2e7")
 		    (:revdesc . "fd360ca6416e")
 		    (:keywords "convenience")

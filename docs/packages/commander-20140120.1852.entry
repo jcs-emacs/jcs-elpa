@@ -9,7 +9,7 @@
 	     (f
 	      (0 6 1)))
 	    "Emacs command line parser" tar
-	    ((:url . "https://github.com/rejeep/commander.el")
+	    ((:url . "http://github.com/rejeep/commander.el")
 	     (:commit . "2c8a57b9c619e29ccbe2d5a85921b9c689e95bf9")
 	     (:revdesc . "2c8a57b9c619")
 	     (:keywords "cli" "argv")

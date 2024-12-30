@@ -15,7 +15,7 @@
 	(ansi
 	 (0 4 1)))
        "Cask: Project management for package development" tar
-       ((:url . "https://github.com/cask/cask")
+       ((:url . "http://github.com/cask/cask")
 	(:commit . "10899c8075d7d8e427ab837b7353036f65b37081")
 	(:revdesc . "10899c8075d7")
 	(:keywords "speed" "convenience")
