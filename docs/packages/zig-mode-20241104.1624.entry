@@ -5,7 +5,7 @@
 	    (reformatter
 	     (0 6)))
 	   "A major mode for the Zig programming language" tar
-	   ((:url . "https://github.com/ziglang/zig-mode")
+	   ((:url . "https://github.com/zig-lang/zig-mode")
 	    (:commit . "f0b4a487530146f99230f4a5ff67e8d56c8f3f80")
 	    (:revdesc . "f0b4a4875301")
 	    (:keywords "zig" "languages")
