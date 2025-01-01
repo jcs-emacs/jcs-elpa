@@ -2,10 +2,10 @@
   {
     "name": "ace-link-dashboard",
     "summary": "Ace link for dashboard",
-    "version": "20230501.2353",
+    "version": "20250101.847",
     "url": "https://github.com/emacs-dashboard/ace-link-dashboard",
     "source": "github",
-    "commit": "8ce7e2ba6290ee9aeab56056a61b5df1df501bf0",
+    "commit": "ef396a20e94faf2551b140242661fb1f98bcd668",
     "tree": "https://github.com/emacs-dashboard/ace-link-dashboard"
   },
   {
@@ -29,10 +29,10 @@
   {
     "name": "auto-close-block",
     "summary": "Automatically close block",
-    "version": "20240410.2242",
+    "version": "20250101.906",
     "url": "https://github.com/emacs-vs/auto-close-block",
     "source": "github",
-    "commit": "defde03baa11b94a6eb882366eabf07c2adebc2d",
+    "commit": "b42b4c89edff236fdf73b30ef6caf4ec5204042a",
     "tree": "https://github.com/emacs-vs/auto-close-block"
   },
   {
@@ -47,10 +47,10 @@
   {
     "name": "auto-scroll-bar",
     "summary": "Automatically show/hide scroll-bars as needed",
-    "version": "20240715.2259",
+    "version": "20250101.906",
     "url": "https://github.com/emacs-vs/auto-scroll-bar",
     "source": "github",
-    "commit": "2e87adde4714e6e2e7bda4711df1d62b302e6c31",
+    "commit": "4cbfcba87a670eb0ed9c0a42baab8ea89846acd7",
     "tree": "https://github.com/emacs-vs/auto-scroll-bar"
   },
   {
@@ -92,10 +92,10 @@
   {
     "name": "block-travel",
     "summary": "Move to previous/next blank line",
-    "version": "20240120.1011",
+    "version": "20250101.906",
     "url": "https://github.com/emacs-vs/block-travel",
     "source": "github",
-    "commit": "69bcb6eb00ebcce1bd4f7641d6be124af31a42e0",
+    "commit": "1a3dc5a0c36cf3750e969316623d78d78234b227",
     "tree": "https://github.com/emacs-vs/block-travel"
   },
   {
@@ -236,19 +236,19 @@
   {
     "name": "codemetrics",
     "summary": "Plugin shows complexity information",
-    "version": "20240720.1051",
+    "version": "20250101.906",
     "url": "https://github.com/emacs-vs/codemetrics",
     "source": "github",
-    "commit": "a191b05e707168d819ff4d3aabeaf29c7ddacce2",
+    "commit": "b0b23050ab097f8f25727ebd9ace400b16920080",
     "tree": "https://github.com/emacs-vs/codemetrics"
   },
   {
     "name": "cognitive-complexity",
     "summary": "Minor mode to show the cognitive complexity of code",
-    "version": "20240801.2236",
+    "version": "20250101.907",
     "url": "https://github.com/abougouffa/cognitive-complexity",
     "source": "github",
-    "commit": "8b9451fd88c9a730941ff24bb714e63379e25332",
+    "commit": "01458abc325491c3455c0110894cde74b02e05b2",
     "tree": "https://github.com/abougouffa/cognitive-complexity"
   },
   {
@@ -389,10 +389,10 @@
   {
     "name": "company-emmet",
     "summary": "Company completion for emmet",
-    "version": "20240123.1046",
+    "version": "20250101.907",
     "url": "https://github.com/emacs-vs/company-emmet",
     "source": "github",
-    "commit": "a2b7c6b8b6b52bd5a5f89cc74a9c0ca0da0edab6",
+    "commit": "8f0b7f9a5ca2ea0c4d78866f4c59fdb326b8293c",
     "tree": "https://github.com/emacs-vs/company-emmet"
   },
   {
@@ -425,10 +425,10 @@
   {
     "name": "company-meta-net",
     "summary": "Company completion for C# project using meta-net",
-    "version": "20240101.855",
+    "version": "20250101.907",
     "url": "https://github.com/emacs-vs/company-meta-net",
     "source": "github",
-    "commit": "dc7a262cc6a404d71351f6fd77a080237b1788e8",
+    "commit": "04c779f1b5fb4371639fb9933e17e86b28070b2b",
     "tree": "https://github.com/emacs-vs/company-meta-net"
   },
   {
@@ -533,28 +533,28 @@
   {
     "name": "dashboard",
     "summary": "A startup screen extracted from Spacemacs",
-    "version": "20241211.1245",
+    "version": "20250101.845",
     "url": "https://github.com/emacs-dashboard/emacs-dashboard",
     "source": "github",
-    "commit": "da658d5fb4a430462dcc711a2368d20072ddc512",
+    "commit": "c9f8230f6b7992b7b40c3bb9abc36cc03b6a423d",
     "tree": "https://github.com/emacs-dashboard/emacs-dashboard"
   },
   {
     "name": "dashboard-bm",
     "summary": "Visual Bookmarks for Dashboard",
-    "version": "20240219.551",
+    "version": "20250101.847",
     "url": "https://github.com/emacs-dashboard/dashboard-bm",
     "source": "github",
-    "commit": "67d6d77d4350cc6d894beae7fc1b37e58ea76437",
+    "commit": "ed25585696784543486b4a223ccb50a22a90cd53",
     "tree": "https://github.com/emacs-dashboard/dashboard-bm"
   },
   {
     "name": "dashboard-ls",
     "summary": "Display files/directories in current directory on Dashboard",
-    "version": "20240101.841",
+    "version": "20250101.845",
     "url": "https://github.com/emacs-dashboard/dashboard-ls",
     "source": "github",
-    "commit": "bc79640e8fcc625ff1af31d5e17b054b1f535f39",
+    "commit": "4eea843e5b7dcc4fe23eaf67b163ed7b13b56613",
     "tree": "https://github.com/emacs-dashboard/dashboard-ls"
   },
   {
@@ -578,37 +578,37 @@
   {
     "name": "doom-dashboard",
     "summary": "Doom dashboard style for emacs-dashboard",
-    "version": "20240527.1344",
+    "version": "20250101.846",
     "url": "https://github.com/emacs-dashboard/doom-dashboard",
     "source": "github",
-    "commit": "397b77419a618da9ca45191570949f5fbcc869c8",
+    "commit": "92116cfe2e413dfaf0a9704ec3844dc6e70c1f93",
     "tree": "https://github.com/emacs-dashboard/doom-dashboard"
   },
   {
     "name": "eask",
     "summary": "Core Eask APIs, for Eask CLI development",
-    "version": "20250101.545",
+    "version": "20250101.836",
     "url": "https://github.com/emacs-eask/eask",
     "source": "github",
-    "commit": "812cc3aaee77939673b41e6f4477cc4c0206579b",
+    "commit": "25f7f00ad4d73aacca027d6e1ba6070b8b2019b0",
     "tree": "https://github.com/emacs-eask/eask"
   },
   {
     "name": "eask-mode",
     "summary": "Major mode for editing Eask files",
-    "version": "20240101.819",
+    "version": "20250101.836",
     "url": "https://github.com/emacs-eask/eask-mode",
     "source": "github",
-    "commit": "774bf05f2d778a107f27f8fa47034ad15f16395c",
+    "commit": "9bab3ad0d9a7df6284daed9ecd2cbd89298b958f",
     "tree": "https://github.com/emacs-eask/eask-mode"
   },
   {
     "name": "easky",
     "summary": "Control the Eask command-line interface",
-    "version": "20240608.744",
+    "version": "20250101.836",
     "url": "https://github.com/emacs-eask/easky",
     "source": "github",
-    "commit": "d75ec4865742a4939bd685360f8ec5b076bdcf77",
+    "commit": "fbb64633a690ee1afe8aef873b7be3471e766788",
     "tree": "https://github.com/emacs-eask/easky"
   },
   {
@@ -632,19 +632,19 @@
   {
     "name": "eglot-grammarly",
     "summary": "Eglot Clients for Grammarly",
-    "version": "20240101.847",
+    "version": "20250101.849",
     "url": "https://github.com/emacs-grammarly/eglot-grammarly",
     "source": "github",
-    "commit": "98808ddab58fce259d8144d48db56b21ebfa4a2e",
+    "commit": "0e3157dab4d59c61c1e2fdfc27ad70eead6b7685",
     "tree": "https://github.com/emacs-grammarly/eglot-grammarly"
   },
   {
     "name": "eglot-ltex",
     "summary": "Eglot Clients for LTEX",
-    "version": "20241014.458",
+    "version": "20250101.852",
     "url": "https://github.com/emacs-languagetool/eglot-ltex",
     "source": "github",
-    "commit": "1ec941df79113323e6d0fa827aecc6cddc91dd37",
+    "commit": "261b67961f14693266334c0bfee9f748676ddbb0",
     "tree": "https://github.com/emacs-languagetool/eglot-ltex"
   },
   {
@@ -677,10 +677,10 @@
   {
     "name": "eldoc-eask",
     "summary": "Eldoc support for Eask-file",
-    "version": "20240101.819",
+    "version": "20250101.837",
     "url": "https://github.com/emacs-eask/eldoc-eask",
     "source": "github",
-    "commit": "ade0f239814f3b8bc77229e903d2c4b806ded90a",
+    "commit": "2433fa00abfa8d4b384aff022f496287e0975776",
     "tree": "https://github.com/emacs-eask/eldoc-eask"
   },
   {
@@ -722,10 +722,10 @@
   {
     "name": "ellsp",
     "summary": "Elisp Language Server",
-    "version": "20241220.151",
+    "version": "20250101.826",
     "url": "https://github.com/elisp-lsp/ellsp",
     "source": "github",
-    "commit": "51073348cb11585003ee38327b65696fdb112851",
+    "commit": "5d4992e70e923da2d96c3f9db87ee7322a89e432",
     "tree": "https://github.com/elisp-lsp/ellsp"
   },
   {
@@ -839,28 +839,28 @@
   {
     "name": "flycheck-dart",
     "summary": "Flycheck for dart analyze",
-    "version": "20240223.1020",
+    "version": "20250101.903",
     "url": "https://github.com/flycheck/flycheck-dart",
     "source": "github",
-    "commit": "0830277d0732312fd2e202e57bcf36cc02b86ba0",
+    "commit": "20837d44e443f3760cd3a18f0fba54df7ec995aa",
     "tree": "https://github.com/flycheck/flycheck-dart"
   },
   {
     "name": "flycheck-deno",
     "summary": "Flycheck for deno-lint",
-    "version": "20240101.833",
+    "version": "20250101.902",
     "url": "https://github.com/flycheck/flycheck-deno",
     "source": "github",
-    "commit": "5e4d66865d7d91e7af3b1b69b02dd540c9ea5aca",
+    "commit": "47671457b649b2de422cd56f7b3950aabc015c1f",
     "tree": "https://github.com/flycheck/flycheck-deno"
   },
   {
     "name": "flycheck-eask",
     "summary": "Eask support in Flycheck",
-    "version": "20240223.1023",
+    "version": "20250101.901",
     "url": "https://github.com/flycheck/flycheck-eask",
     "source": "github",
-    "commit": "c1c82b359bb94cbca29f2f0fb29b7f5132691d04",
+    "commit": "f93e5dd30aa9f7c612823760867c2f361fde6631",
     "tree": "https://github.com/flycheck/flycheck-eask"
   },
   {
@@ -884,10 +884,10 @@
   {
     "name": "flycheck-ziglint",
     "summary": "Flycheck for ziglint",
-    "version": "20240229.1015",
+    "version": "20250101.902",
     "url": "https://github.com/flycheck/flycheck-ziglint",
     "source": "github",
-    "commit": "f0371a1a2d13004c66eaf72c99cc874391e70dd9",
+    "commit": "0032f705fedc8ba407234bf2261c494a0a9356d5",
     "tree": "https://github.com/flycheck/flycheck-ziglint"
   },
   {
@@ -1199,46 +1199,46 @@
   {
     "name": "jcs-frametitle",
     "summary": "A frame title for jcs-emacs",
-    "version": "20240101.912",
+    "version": "20250101.823",
     "url": "https://github.com/jcs-emacs/jcs-frametitle",
     "source": "github",
-    "commit": "54770f97149bc391aa1a950327fea7315276f16f",
+    "commit": "42918554292f992e7f74fc7831e19aaeb5e1580e",
     "tree": "https://github.com/jcs-emacs/jcs-frametitle"
   },
   {
     "name": "jcs-modeline",
     "summary": "A modeline for jcs-emacs",
-    "version": "20240703.1159",
+    "version": "20250101.823",
     "url": "https://github.com/jcs-emacs/jcs-modeline",
     "source": "github",
-    "commit": "a4e6c4257ade5c67f20255c7b4b673398a7d1459",
+    "commit": "567f1bba29a65360d0adac1c8e52196c5565c182",
     "tree": "https://github.com/jcs-emacs/jcs-modeline"
   },
   {
     "name": "jcs-poptip",
     "summary": "Generic popup tip",
-    "version": "20240615.834",
+    "version": "20250101.823",
     "url": "https://github.com/jcs-emacs/jcs-poptip",
     "source": "github",
-    "commit": "5dcd363982f679eab4fa97ebc1f2a5b63cf2b31b",
+    "commit": "603dfb34b8ea4e5898d6279ef1a20e1768d80501",
     "tree": "https://github.com/jcs-emacs/jcs-poptip"
   },
   {
     "name": "jcs-screensaver",
     "summary": "A screensaver for jcs-emacs",
-    "version": "20241222.34",
+    "version": "20250101.824",
     "url": "https://github.com/jcs-emacs/jcs-screensaver",
     "source": "github",
-    "commit": "72af909f217f58ac3c92a90983e85ab5f9c0fd0b",
+    "commit": "13e9d126be5dbb0e5b9e9a47c7584bad1cfaad81",
     "tree": "https://github.com/jcs-emacs/jcs-screensaver"
   },
   {
     "name": "jcs-template",
     "summary": "Template module for jcs-emacs",
-    "version": "20241222.235",
+    "version": "20250101.824",
     "url": "https://github.com/jcs-emacs/jcs-template",
     "source": "github",
-    "commit": "e7a589c15eb92edc39996a92f27d7cb761b3103e",
+    "commit": "d069d428821e1408c747eaca5ebe1de1f686be07",
     "tree": "https://github.com/jcs-emacs/jcs-template"
   },
   {
@@ -1784,10 +1784,10 @@
   {
     "name": "send-to-osx-grammarly",
     "summary": "A simple plugin to sent text to Grammarly",
-    "version": "20240101.847",
+    "version": "20250101.850",
     "url": "https://github.com/emacs-grammarly/send-to-osx-grammarly",
     "source": "github",
-    "commit": "6936f767d23c34e028bd7d633eb64f2f554335c0",
+    "commit": "88db4f0cc9b7114fe620b2a183dde5fc3f129f80",
     "tree": "https://github.com/emacs-grammarly/send-to-osx-grammarly"
   },
   {
@@ -1802,46 +1802,46 @@
   {
     "name": "sideline",
     "summary": "Show information on the side",
-    "version": "20241230.37",
+    "version": "20250101.856",
     "url": "https://github.com/emacs-sideline/sideline",
     "source": "github",
-    "commit": "7285ed46c3009f11c4dfecedca26670ff07464e2",
+    "commit": "709095ca022dd4ea4ceeb6ab18ce9b9dbda0d6a5",
     "tree": "https://github.com/emacs-sideline/sideline"
   },
   {
     "name": "sideline-blame",
     "summary": "Show blame messages with sideline",
-    "version": "20241130.1118",
+    "version": "20250101.857",
     "url": "https://github.com/emacs-sideline/sideline-blame",
     "source": "github",
-    "commit": "24acacc766f7cc8ffb1a7dda695be6eb67ec5670",
+    "commit": "872c232b7f5d3805bde24607bd0050fc9464f8d6",
     "tree": "https://github.com/emacs-sideline/sideline-blame"
   },
   {
     "name": "sideline-cider",
     "summary": "Show CIDER result with sideline",
-    "version": "20241207.926",
+    "version": "20250101.857",
     "url": "https://github.com/emacs-sideline/sideline-cider",
     "source": "github",
-    "commit": "ff99473ccb1b962e26d9c98250ea944ffb287085",
+    "commit": "db62e47679f1be64663d3ef89fff58276c5014f7",
     "tree": "https://github.com/emacs-sideline/sideline-cider"
   },
   {
     "name": "sideline-color",
     "summary": "Show color information with sideline",
-    "version": "20241130.1118",
+    "version": "20250101.856",
     "url": "https://github.com/emacs-sideline/sideline-color",
     "source": "github",
-    "commit": "9e6cc435dc0a9707da69ee83f6bf3773735abca3",
+    "commit": "ab7302ab320d3a1047cd1610df638384472c9f97",
     "tree": "https://github.com/emacs-sideline/sideline-color"
   },
   {
     "name": "sideline-eglot",
     "summary": "Show eglot information with sideline",
-    "version": "20241130.1119",
+    "version": "20250101.857",
     "url": "https://github.com/emacs-sideline/sideline-eglot",
     "source": "github",
-    "commit": "e40c04928c207bde19abbdcb5083e6ded2b57a96",
+    "commit": "5ed73e240516f1c4fbe91df724a1ff04ebc3d2b9",
     "tree": "https://github.com/emacs-sideline/sideline-eglot"
   },
   {
@@ -1856,73 +1856,73 @@
   {
     "name": "sideline-eros",
     "summary": "Show EROS result with sideline",
-    "version": "20241207.844",
+    "version": "20250101.857",
     "url": "https://github.com/emacs-sideline/sideline-eros",
     "source": "github",
-    "commit": "1d15a45452fb5ebd8413c928edb76f3456f6eecf",
+    "commit": "ddd4139fada9d621058a2f783703cac5a618609a",
     "tree": "https://github.com/emacs-sideline/sideline-eros"
   },
   {
     "name": "sideline-flycheck",
     "summary": "Show flycheck errors with sideline",
-    "version": "20241130.1119",
+    "version": "20250101.857",
     "url": "https://github.com/emacs-sideline/sideline-flycheck",
     "source": "github",
-    "commit": "1cc46a244d76027687136b3db0da1f5535d1352c",
+    "commit": "bce7bbc90edc3cdeb3144a8fb8d59f5529e3391b",
     "tree": "https://github.com/emacs-sideline/sideline-flycheck"
   },
   {
     "name": "sideline-flymake",
     "summary": "Show flymake errors with sideline",
-    "version": "20241130.1119",
+    "version": "20250101.857",
     "url": "https://github.com/emacs-sideline/sideline-flymake",
     "source": "github",
-    "commit": "096b2fecfdb5a2192541e6099f761dde22b53aec",
+    "commit": "c3099660040fb360f4c02a74e50612aefdfe7999",
     "tree": "https://github.com/emacs-sideline/sideline-flymake"
   },
   {
     "name": "sideline-geiser",
     "summary": "Show Geiser result with sideline",
-    "version": "20241207.1902",
+    "version": "20250101.857",
     "url": "https://github.com/emacs-sideline/sideline-geiser",
     "source": "github",
-    "commit": "87770cbb39506295dde5bbf6d0f430efa5835803",
+    "commit": "17574183667192919bfd702080560b2d179dfeba",
     "tree": "https://github.com/emacs-sideline/sideline-geiser"
   },
   {
     "name": "sideline-load-cost",
     "summary": "Display load/require module size with sideline",
-    "version": "20241130.1119",
+    "version": "20250101.857",
     "url": "https://github.com/emacs-sideline/sideline-load-cost",
     "source": "github",
-    "commit": "2821880d73226820e2c9f7fbcfc34dce5a6e9ae6",
+    "commit": "afce3059f263e7c6929890a1341890981f836d56",
     "tree": "https://github.com/emacs-sideline/sideline-load-cost"
   },
   {
     "name": "sideline-lsp",
     "summary": "Show lsp information with sideline",
-    "version": "20241130.1119",
+    "version": "20250101.857",
     "url": "https://github.com/emacs-sideline/sideline-lsp",
     "source": "github",
-    "commit": "96fd13fa94fc7abfe84dbf1c966cdfe1b5273d94",
+    "commit": "29b95888a91f53e5161a3f2e2fc27a9cfc71ebe5",
     "tree": "https://github.com/emacs-sideline/sideline-lsp"
   },
   {
     "name": "sideline-racket",
     "summary": "Show racket result with sideline",
-    "version": "20241207.1816",
+    "version": "20250101.857",
     "url": "https://github.com/emacs-sideline/sideline-racket",
     "source": "github",
-    "commit": "fc2960bfb3ddccb4bcd45cde59637c35bf2b5158",
+    "commit": "a0018c8c7481b8f26deb28e019bbddccb7a7a136",
     "tree": "https://github.com/emacs-sideline/sideline-racket"
   },
   {
     "name": "sideline-sly",
     "summary": "Show SLY result with sideline",
-    "version": "20241207.1008",
+    "version": "20250101.857",
     "url": "https://github.com/emacs-sideline/sideline-sly",
     "source": "github",
-    "commit": "dfd574eabddb3eeef41fb24045c447444028bd84",
+    "commit": "f112c4eb87aed6c27e69379e8cf3f6a6aa48cf90",
     "tree": "https://github.com/emacs-sideline/sideline-sly"
   },
   {
@@ -2018,19 +2018,19 @@
   {
     "name": "treesit-fold",
     "summary": "Code folding using treesit",
-    "version": "20241229.454",
+    "version": "20250101.854",
     "url": "https://github.com/emacs-tree-sitter/treesit-fold",
     "source": "github",
-    "commit": "7aa6f5d1e23dda4708e286977d7f4a6a7a5b441f",
+    "commit": "a40907676b705c7a1a51ef585b2db11e5021084b",
     "tree": "https://github.com/emacs-tree-sitter/treesit-fold"
   },
   {
     "name": "treesit-langs",
     "summary": "Language bundle for Emacs's treesit.el",
-    "version": "20241213.1617",
+    "version": "20250101.854",
     "url": "https://github.com/emacs-tree-sitter/treesit-langs",
     "source": "github",
-    "commit": "2594bd9fe8e640c7431f152cf789ad67b58e0be3",
+    "commit": "bcaadf05bb15cafbcb353a0cf44d8a20ea9c438f",
     "tree": "https://github.com/emacs-tree-sitter/treesit-langs"
   },
   {
@@ -2045,10 +2045,10 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20241229.453",
+    "version": "20250101.854",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "c66bb52b4e565d51064b0336be088fafc5cb2f36",
+    "commit": "a8b69682bb79c3642ad964e40865212f5c07df12",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
