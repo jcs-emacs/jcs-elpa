@@ -1,13 +1,13 @@
 (lsp-uniteai .
-	     [(20240101 920)
+	     [(20250101 914)
 	      ((emacs
 		(27 1))
 	       (lsp-mode
 		(6 1)))
 	      "LSP Clients for UniteAI" tar
 	      ((:url . "https://github.com/emacs-openai/lsp-uniteai")
-	       (:commit . "e13b3121c12e4b88213820965b6e762f827ca1fd")
-	       (:revdesc . "e13b3121c12e")
+	       (:commit . "2b8bccc1a5bb5afb38b91cd38e62bf7f47d985f4")
+	       (:revdesc . "2b8bccc1a5bb")
 	       (:keywords "convenience" "ai")
 	       (:authors
 		("Josh Freckleton" . "freckletonj@gmail.com")

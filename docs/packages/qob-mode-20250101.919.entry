@@ -1,11 +1,11 @@
 (qob-mode .
-	  [(20241224 140)
+	  [(20250101 919)
 	   ((emacs
 	     (26 1)))
 	   "Major mode for editing Qob files" tar
 	   ((:url . "https://github.com/cl-qob/qob-mode")
-	    (:commit . "9e8313d146c3edad231e073bc1f36d999db88d82")
-	    (:revdesc . "9e8313d146c3")
+	    (:commit . "3585d637a24450d06bc16b5399809ff250d8f241")
+	    (:revdesc . "3585d637a244")
 	    (:keywords "lisp" "qob")
 	    (:authors
 	     ("Jen-Chieh" . "jcs090218@gmail.com"))
