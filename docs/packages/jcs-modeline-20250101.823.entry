@@ -1,5 +1,5 @@
 (jcs-modeline .
-	      [(20240703 1159)
+	      [(20250101 823)
 	       ((emacs
 		 (29 1))
 		(moody
@@ -14,8 +14,8 @@
 		 (0 1 2)))
 	       "A modeline for jcs-emacs" tar
 	       ((:url . "https://github.com/jcs-emacs/jcs-modeline")
-		(:commit . "a4e6c4257ade5c67f20255c7b4b673398a7d1459")
-		(:revdesc . "a4e6c4257ade")
+		(:commit . "567f1bba29a65360d0adac1c8e52196c5565c182")
+		(:revdesc . "567f1bba29a6")
 		(:keywords "faces" "mode-line")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))

@@ -1,5 +1,5 @@
 (jcs-poptip .
-	    [(20240615 834)
+	    [(20250101 823)
 	     ((emacs
 	       (26 1))
 	      (company
@@ -16,8 +16,8 @@
 	       (0 1 0)))
 	     "Generic popup tip" tar
 	     ((:url . "https://github.com/jcs-emacs/jcs-poptip")
-	      (:commit . "5dcd363982f679eab4fa97ebc1f2a5b63cf2b31b")
-	      (:revdesc . "5dcd363982f6")
+	      (:commit . "603dfb34b8ea4e5898d6279ef1a20e1768d80501")
+	      (:revdesc . "603dfb34b8ea")
 	      (:keywords "help")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
