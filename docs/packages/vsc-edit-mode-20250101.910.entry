@@ -1,5 +1,5 @@
 (vsc-edit-mode .
-	       [(20240316 156)
+	       [(20250101 910)
 		((emacs
 		  (26 1))
 		 (indent-control
@@ -14,8 +14,8 @@
 		  (0 4)))
 		"Implement editing experience like VSCode" tar
 		((:url . "https://github.com/emacs-vs/vsc-edit-mode")
-		 (:commit . "bbbe7fe65e4b965fd7707a84c7131b37ea718c72")
-		 (:revdesc . "bbbe7fe65e4b")
+		 (:commit . "237bb53e4cb42c3a5814d02c7dbad9f999becb3e")
+		 (:revdesc . "237bb53e4cb4")
 		 (:keywords "convenience" "editing" "vs")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))

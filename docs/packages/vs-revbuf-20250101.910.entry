@@ -1,13 +1,13 @@
 (vs-revbuf .
-	   [(20240703 158)
+	   [(20250101 910)
 	    ((emacs
 	      (27 1))
 	     (fextern
 	      (0 1 0)))
 	    "Revert buffers like Visual Studio" tar
 	    ((:url . "https://github.com/emacs-vs/vs-revbuf")
-	     (:commit . "3ec620b96bb8357abedfa10be2d57d299c9e7475")
-	     (:revdesc . "3ec620b96bb8")
+	     (:commit . "a404411e89cf3d58b75902a4009c3d986b7a3dc8")
+	     (:revdesc . "a404411e89cf")
 	     (:keywords "convenience" "revert" "vs")
 	     (:authors
 	      ("Jen-Chieh" . "jcs090218@gmail.com"))
