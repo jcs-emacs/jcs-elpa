@@ -1,5 +1,5 @@
 (preview-it .
-	    [(20240101 933)
+	    [(20250101 1011)
 	     ((emacs
 	       (26 1))
 	      (posframe
@@ -10,8 +10,8 @@
 	       (0 1 1)))
 	     "Preview anything at point" tar
 	     ((:url . "https://github.com/jcs-elpa/preview-it")
-	      (:commit . "0aa43fb646d69d8766d8ae72c52c6f08d7867024")
-	      (:revdesc . "0aa43fb646d6")
+	      (:commit . "6d251000b35800d8b79e2c49f0ae23bf607114c8")
+	      (:revdesc . "6d251000b358")
 	      (:keywords "convenience" "preview" "image" "path" "file")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))

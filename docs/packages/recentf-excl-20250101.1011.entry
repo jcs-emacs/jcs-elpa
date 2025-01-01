@@ -1,13 +1,13 @@
 (recentf-excl .
-	      [(20240417 55)
+	      [(20250101 1011)
 	       ((emacs
 		 (26 1))
 		(msgu
 		 (0 1 0)))
 	       "Exclude commands for recent files" tar
 	       ((:url . "https://github.com/jcs-elpa/recentf-excl")
-		(:commit . "f9029e3167206c9dc3b14dbc53cdabb24cc5bde6")
-		(:revdesc . "f9029e316720")
+		(:commit . "8c139ffef598240db1e89e37fe50bb2e69864707")
+		(:revdesc . "8c139ffef598")
 		(:keywords "convenience" "excl" "exclude" "recentf")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))

@@ -1,5 +1,5 @@
 (prt .
-     [(20240101 940)
+     [(20250101 1011)
       ((emacs
 	(27 1))
        (spinner
@@ -8,8 +8,8 @@
 	(0 1 0)))
       "Progress Reporter Library" tar
       ((:url . "https://github.com/jcs-elpa/prt")
-       (:commit . "b7c20d8573b63970f6c49b72e9e5d16e4c35bb6f")
-       (:revdesc . "b7c20d8573b6")
+       (:commit . "de61208ede16764ae5866fa9c29ae9aed25cc119")
+       (:revdesc . "de61208ede16")
        (:keywords "convenience")
        (:authors
 	("Jen-Chieh" . "jcs090218@gmail.com"))

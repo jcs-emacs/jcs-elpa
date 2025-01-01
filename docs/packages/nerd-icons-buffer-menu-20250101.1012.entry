@@ -1,5 +1,5 @@
 (nerd-icons-buffer-menu .
-			[(20240518 743)
+			[(20250101 1012)
 			 ((emacs
 			   (26 1))
 			  (nerd-icons
@@ -10,8 +10,8 @@
 			   (0 1 0)))
 			 "Display nerd icons in `buffer-menu'" tar
 			 ((:url . "https://github.com/jcs-elpa/nerd-icons-buffer-menu")
-			  (:commit . "613a0fc2d42867d98ee101d0275674ebc679ab4b")
-			  (:revdesc . "613a0fc2d428")
+			  (:commit . "5e2ad8d4b65e012e1401264d1cb00bd76b79596d")
+			  (:revdesc . "5e2ad8d4b65e")
 			  (:keywords "frames")
 			  (:authors
 			   ("Jen-Chieh" . "jcs090218@gmail.com"))

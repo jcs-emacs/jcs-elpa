@@ -1,13 +1,13 @@
 (mbs .
-     [(20240512 218)
+     [(20250101 1012)
       ((emacs
 	(26 1))
        (s
 	(1 12 0)))
       "Minibuffer Stats" tar
       ((:url . "https://github.com/jcs-elpa/mbs")
-       (:commit . "657aca00f9c4c91e8fb039a55227c17ed6711ce5")
-       (:revdesc . "657aca00f9c4")
+       (:commit . "a2bea88138a0aadbc928d57b1e32dec0dafb2930")
+       (:revdesc . "a2bea88138a0")
        (:keywords "convenience" "minibuffer" "stats")
        (:authors
 	("Jen-Chieh" . "jcs090218@gmail.com"))

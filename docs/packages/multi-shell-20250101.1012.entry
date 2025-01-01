@@ -1,11 +1,11 @@
 (multi-shell .
-	     [(20240201 722)
+	     [(20250101 1012)
 	      ((emacs
 		(25 1)))
 	      "Managing multiple shell buffers" tar
 	      ((:url . "https://github.com/jcs-elpa/multi-shell")
-	       (:commit . "4b477280725144e9b9b21ec0ec3b40b34dd17514")
-	       (:revdesc . "4b4772807251")
+	       (:commit . "de34c1ebfdd6fb7d415595b329f61544c4d5b64a")
+	       (:revdesc . "de34c1ebfdd6")
 	       (:keywords "convenience" "multiple" "shell" "terminal")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
