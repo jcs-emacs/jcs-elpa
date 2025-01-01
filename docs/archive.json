@@ -182,10 +182,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "A multi-LLM shell (ChatGPT, Claude, Gemini, Kagi, Ollama, Perplexity) + editing integrations",
-    "version": "20250101.1241",
+    "version": "20250101.1704",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "2809b3d5e2662163e0fc0081fd0de96f2496deef",
+    "commit": "d48b638bf1270acf41ddd214d4bab148a3d2f4fb",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
