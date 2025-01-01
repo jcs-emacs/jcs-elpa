@@ -1,5 +1,5 @@
 (eldoc-meta-net .
-		[(20240101 855)
+		[(20250101 908)
 		 ((emacs
 		   (26 1))
 		  (meta-net
@@ -10,8 +10,8 @@
 		   (1 0 2)))
 		 "Eldoc support for meta-net" tar
 		 ((:url . "https://github.com/emacs-vs/eldoc-meta-net")
-		  (:commit . "ae98185b614d2fddd09d9269eed3c09bd63d878c")
-		  (:revdesc . "ae98185b614d")
+		  (:commit . "4a996f0b951bd462ffe946f2141efe14fdcaff66")
+		  (:revdesc . "4a996f0b951b")
 		  (:keywords "convenience" "eldoc" "c#" "dotnet" "sdk")
 		  (:authors
 		   ("Jen-Chieh" . "jcs090218@gmail.com"))
