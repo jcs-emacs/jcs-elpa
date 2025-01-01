@@ -1,0 +1,18 @@
+(ff-guard .
+	  [(20250101 1007)
+	   ((emacs
+	     (26 1))
+	    (f
+	     (0 20 0))
+	    (s
+	     (1 9 0)))
+	   "Create parent directory for non-existent file" tar
+	   ((:url . "https://github.com/jcs-elpa/ff-guard")
+	    (:commit . "c14d6a114888347c2e6caefa48a31960e811c4a0")
+	    (:revdesc . "c14d6a114888")
+	    (:keywords "convenience")
+	    (:authors
+	     ("Jen-Chieh" . "jcs090218@gmail.com"))
+	    (:maintainers
+	     ("Jen-Chieh" . "jcs090218@gmail.com"))
+	    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
