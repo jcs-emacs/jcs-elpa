@@ -1,11 +1,11 @@
 (guard-lf .
-	  [(20241201 1637)
+	  [(20250101 1009)
 	   ((emacs
 	     (27 1)))
 	   "Guard large files" tar
 	   ((:url . "https://github.com/jcs-elpa/guard-lf")
-	    (:commit . "ca18c0edfaf9537ef0c3755b2df67ba9ea2a1588")
-	    (:revdesc . "ca18c0edfaf9")
+	    (:commit . "bf2035684e38f340961a72bbe66b7b99b4d0c2a6")
+	    (:revdesc . "bf2035684e38")
 	    (:keywords "help")
 	    (:authors
 	     ("JenChieh" . "jcs090218@gmail.com"))

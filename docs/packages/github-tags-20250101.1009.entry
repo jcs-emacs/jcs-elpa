@@ -1,11 +1,11 @@
 (github-tags .
-	     [(20240101 936)
+	     [(20250101 1009)
 	      ((emacs
 		(24 3)))
 	      "Retrieve tags information through GitHub API" tar
 	      ((:url . "https://github.com/jcs-elpa/github-tags")
-	       (:commit . "9bd5f013a933137911b3620d9e82a5a85f44ab44")
-	       (:revdesc . "9bd5f013a933")
+	       (:commit . "68255f0b2603f358fdeb9b9238086c0602a3854b")
+	       (:revdesc . "68255f0b2603")
 	       (:keywords "vc" "github" "tags")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))

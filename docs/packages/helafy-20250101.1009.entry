@@ -1,11 +1,11 @@
 (helafy .
-	[(20240101 937)
+	[(20250101 1009)
 	 ((emacs
 	   (26 1)))
 	 "Minify/Uglify/Prettify contents" tar
 	 ((:url . "https://github.com/jcs-elpa/helafy")
-	  (:commit . "2feeaa28afd37daa521942e371cbeaebc84493a7")
-	  (:revdesc . "2feeaa28afd3")
+	  (:commit . "3f377d80278c3dc8bb9aa27a5d5e372e7e199c18")
+	  (:revdesc . "3f377d80278c")
 	  (:keywords "convenience")
 	  (:authors
 	   ("Jen-Chieh" . "jcs090218@gmail.com"))

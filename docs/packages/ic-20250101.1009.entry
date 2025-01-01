@@ -1,5 +1,5 @@
 (ic .
-    [(20240524 742)
+    [(20250101 1009)
      ((emacs
        (29 1))
       (ppp
@@ -12,8 +12,8 @@
        (2 14 1)))
      "Pretty print to debug" tar
      ((:url . "https://github.com/jcs-elpa/ic")
-      (:commit . "01f7fb9d128a09a3cf6120f9e2c98ae09788a5ff")
-      (:revdesc . "01f7fb9d128a")
+      (:commit . "4dd30c8a831371ff7c2d5481f439b1d71dccbeb8")
+      (:revdesc . "4dd30c8a8313")
       (:keywords "convenience")
       (:authors
        ("Jen-Chieh" . "jcs090218@gmail.com"))

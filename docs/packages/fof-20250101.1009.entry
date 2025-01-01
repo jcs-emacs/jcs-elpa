@@ -1,13 +1,13 @@
 (fof .
-     [(20240101 941)
+     [(20250101 1009)
       ((emacs
 	(28 1))
        (ffpc
 	(0 1 0)))
       "Default configuration for `ff-find-other-file'" tar
       ((:url . "https://github.com/jcs-elpa/fof")
-       (:commit . "dea23d75d900360774936c3f35dc4771f382311b")
-       (:revdesc . "dea23d75d900")
+       (:commit . "c2fbccf9615c97a158cab73407f940fe216fa3e9")
+       (:revdesc . "c2fbccf9615c")
        (:keywords "tools")
        (:authors
 	("Jen-Chieh" . "jcs090218@gmail.com"))
