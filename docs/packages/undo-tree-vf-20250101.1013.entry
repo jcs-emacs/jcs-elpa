@@ -1,5 +1,5 @@
 (undo-tree-vf .
-	      [(20240703 2016)
+	      [(20250101 1013)
 	       ((emacs
 		 (27 1))
 		(undo-tree
@@ -8,8 +8,8 @@
 		 (0 3 7)))
 	       "Visualizer follow mode for undo-tree" tar
 	       ((:url . "https://github.com/jcs-elpa/undo-tree-vf")
-		(:commit . "1f2bc32ad183294d011a508af72e4d5c680c0eb8")
-		(:revdesc . "1f2bc32ad183")
+		(:commit . "7dd28763e0322f1d0f50685695f5106f9213442c")
+		(:revdesc . "7dd28763e032")
 		(:keywords "convenience")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))

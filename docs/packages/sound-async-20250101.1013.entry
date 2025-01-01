@@ -1,13 +1,13 @@
 (sound-async .
-	     [(20240101 935)
+	     [(20250101 1013)
 	      ((emacs
 		(26 1))
 	       (async
 		(1 9 3)))
 	      "Play sound asynchronously" tar
 	      ((:url . "https://github.com/jcs-elpa/sound-async")
-	       (:commit . "4c0cf628ae2da9cfd14d2770c2a09c983533c1ec")
-	       (:revdesc . "4c0cf628ae2d")
+	       (:commit . "3bfef0d1e856ea05b2724d6e132617f94117a138")
+	       (:revdesc . "3bfef0d1e856")
 	       (:keywords "multimedia")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
