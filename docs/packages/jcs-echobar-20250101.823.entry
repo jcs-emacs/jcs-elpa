@@ -1,5 +1,5 @@
 (jcs-echobar .
-	     [(20240705 402)
+	     [(20250101 823)
 	      ((emacs
 		(29 1))
 	       (echo-bar
@@ -12,8 +12,8 @@
 		(1 2 0)))
 	      "An echo-bar for jcs-emacs" tar
 	      ((:url . "https://github.com/jcs-emacs/jcs-echobar")
-	       (:commit . "d824bb24ffa3b66c6ea5c223a62d7a17c3a7f27f")
-	       (:revdesc . "d824bb24ffa3")
+	       (:commit . "2e2ec9cc3e9cf1b82cd14497e1de91ed753e6267")
+	       (:revdesc . "2e2ec9cc3e9c")
 	       (:keywords "faces" "echo-bar")
 	       (:authors
 		("Jen-Chieh" . "jcs090218@gmail.com"))
