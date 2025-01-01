@@ -1,0 +1,20 @@
+(sideline-eglot .
+		[(20250101 857)
+		 ((emacs
+		   (28 1))
+		  (eglot
+		   (1 12 29))
+		  (sideline
+		   (0 1 0))
+		  (ht
+		   (2 4)))
+		 "Show eglot information with sideline" tar
+		 ((:url . "https://github.com/emacs-sideline/sideline-eglot")
+		  (:commit . "5ed73e240516f1c4fbe91df724a1ff04ebc3d2b9")
+		  (:revdesc . "5ed73e240516")
+		  (:keywords "convenience" "eglot")
+		  (:authors
+		   ("Jen-Chieh" . "jcs090218@gmail.com"))
+		  (:maintainers
+		   ("Jen-Chieh" . "jcs090218@gmail.com"))
+		  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

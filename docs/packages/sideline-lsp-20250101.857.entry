@@ -1,0 +1,24 @@
+(sideline-lsp .
+	      [(20250101 857)
+	       ((emacs
+		 (28 1))
+		(sideline
+		 (0 1 0))
+		(lsp-mode
+		 (6 0))
+		(dash
+		 (2 18 0))
+		(ht
+		 (2 4))
+		(s
+		 (1 12 0)))
+	       "Show lsp information with sideline" tar
+	       ((:url . "https://github.com/emacs-sideline/sideline-lsp")
+		(:commit . "29b95888a91f53e5161a3f2e2fc27a9cfc71ebe5")
+		(:revdesc . "29b95888a91f")
+		(:keywords "convenience" "lsp")
+		(:authors
+		 ("Jen-Chieh" . "jcs090218@gmail.com"))
+		(:maintainers
+		 ("Jen-Chieh" . "jcs090218@gmail.com"))
+		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
