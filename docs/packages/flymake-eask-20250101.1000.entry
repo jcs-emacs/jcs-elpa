@@ -1,13 +1,13 @@
 (flymake-eask .
-	      [(20240223 1022)
+	      [(20250101 1000)
 	       ((emacs
 		 (26 1))
 		(flymake-easy
 		 (0 1)))
 	       "Eask support in Flymake" tar
 	       ((:url . "https://github.com/flymake/flymake-eask")
-		(:commit . "0e83cec77aab54365ef8d604151888bb1f61049c")
-		(:revdesc . "0e83cec77aab")
+		(:commit . "96fd80e6ff2c34a5898906388cfb6462f9bec7f1")
+		(:revdesc . "96fd80e6ff2c")
 		(:keywords "lisp" "eask")
 		(:authors
 		 ("Jen-Chieh" . "jcs090218@gmail.com"))
