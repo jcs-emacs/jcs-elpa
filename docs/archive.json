@@ -1163,10 +1163,10 @@
   {
     "name": "jai-mode",
     "summary": "Major mode for JAI",
-    "version": "20230913.920",
+    "version": "20250101.649",
     "url": "https://github.com/krig/jai-mode",
     "source": "github",
-    "commit": "080323441b393a6fa4c5750872771fb4fc96152b",
+    "commit": "744f77999530ed76dc1b0715965a4adfe82fbbce",
     "tree": "https://github.com/krig/jai-mode"
   },
   {
