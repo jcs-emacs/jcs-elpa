@@ -1,5 +1,5 @@
 (easky .
-       [(20240608 744)
+       [(20250101 836)
 	((emacs
 	  (27 1))
 	 (eask-mode
@@ -14,8 +14,8 @@
 	  (0 1 0)))
 	"Control the Eask command-line interface" tar
 	((:url . "https://github.com/emacs-eask/easky")
-	 (:commit . "d75ec4865742a4939bd685360f8ec5b076bdcf77")
-	 (:revdesc . "d75ec4865742")
+	 (:commit . "fbb64633a690ee1afe8aef873b7be3471e766788")
+	 (:revdesc . "fbb64633a690")
 	 (:keywords "maint" "easky")
 	 (:authors
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))

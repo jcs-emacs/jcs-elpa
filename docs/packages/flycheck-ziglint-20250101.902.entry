@@ -1,5 +1,5 @@
 (flycheck-ziglint .
-		  [(20240229 1015)
+		  [(20250101 902)
 		   ((emacs
 		     (26 1))
 		    (flycheck
@@ -8,8 +8,8 @@
 		     (0 0 8)))
 		   "Flycheck for ziglint" tar
 		   ((:url . "https://github.com/flycheck/flycheck-ziglint")
-		    (:commit . "f0371a1a2d13004c66eaf72c99cc874391e70dd9")
-		    (:revdesc . "f0371a1a2d13")
+		    (:commit . "0032f705fedc8ba407234bf2261c494a0a9356d5")
+		    (:revdesc . "0032f705fedc")
 		    (:keywords "tools")
 		    (:authors
 		     ("Jen-Chieh" . "jcs090218@gmail.com"))
