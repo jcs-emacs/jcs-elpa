@@ -1,13 +1,13 @@
 (company-elisp-keywords .
-			[(20240101 937)
+			[(20250101 1003)
 			 ((emacs
 			   (26 1))
 			  (company
 			   (0 8 0)))
 			 "Company completion for `finder-known-keywords'" tar
 			 ((:url . "https://github.com/jcs-elpa/company-elisp-keywords")
-			  (:commit . "f1869d2f1c0cb10bb38c4abad78f8b7722ff1323")
-			  (:revdesc . "f1869d2f1c0c")
+			  (:commit . "cfef012d2b3313a1da7dc992056b3627c66a4f72")
+			  (:revdesc . "cfef012d2b33")
 			  (:keywords "lisp")
 			  (:authors
 			   ("Jen-Chieh" . "jcs090218@gmail.com"))

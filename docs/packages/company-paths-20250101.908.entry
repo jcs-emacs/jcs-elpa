@@ -1,13 +1,13 @@
 (company-paths .
-	       [(20240101 856)
+	       [(20250101 908)
 		((emacs
 		  (28 1))
 		 (company
 		  (0 8 12)))
 		"A company backend for paths" tar
 		((:url . "https://github.com/emacs-vs/company-paths")
-		 (:commit . "6f096992430ba042372c00d4a9646f4eea71fd9c")
-		 (:revdesc . "6f096992430b")
+		 (:commit . "61b1a64e5ca975a7937ee2b32cd83e882cf10dab")
+		 (:revdesc . "61b1a64e5ca9")
 		 (:keywords "convenience")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))

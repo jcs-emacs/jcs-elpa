@@ -1,18 +1,22 @@
-(codegpt .
-	 [(20240101 920)
+(chatgpt .
+	 [(20250101 913)
 	  ((emacs
 	    (27 1))
 	   (openai
 	    (0 1 0))
+	   (lv
+	    (0 0))
+	   (ht
+	    (2 0))
 	   (markdown-mode
 	    (2 1))
 	   (spinner
 	    (1 7 4)))
-	  "Use GPT-3 tp help you write code" tar
-	  ((:url . "https://github.com/emacs-openai/codegpt")
-	   (:commit . "b3ff081ae02c35b31d862bacd9612a75d042b78a")
-	   (:revdesc . "b3ff081ae02c")
-	   (:keywords "convenience" "codegpt")
+	  "Use ChatGPT inside Emacs" tar
+	  ((:url . "https://github.com/emacs-openai/chatgpt")
+	   (:commit . "e6ffd2a9d63fa8437301411d81d2488b278911e6")
+	   (:revdesc . "e6ffd2a9d63f")
+	   (:keywords "comm" "openai")
 	   (:authors
 	    ("Jen-Chieh" . "jcs090218@gmail.com"))
 	   (:maintainers
