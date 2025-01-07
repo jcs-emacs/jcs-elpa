@@ -1,13 +1,13 @@
 (dape .
-      [(20250106 1153)
+      [(20250107 1938)
        ((emacs
 	 (29 1))
 	(jsonrpc
 	 (1 0 25)))
        "Debug Adapter Protocol for Emacs" tar
        ((:url . "https://github.com/svaante/dape")
-	(:commit . "b23288e0d6577c79fa200e97a95a2de313734c64")
-	(:revdesc . "b23288e0d657")
+	(:commit . "6a55b489dd97a909b3ba984a67c5627b9eb9d67f")
+	(:revdesc . "6a55b489dd97")
 	(:maintainers
 	 ("Daniel Pettersson" . "daniel@dpettersson.net"))
 	(:maintainer "Daniel Pettersson" . "daniel@dpettersson.net"))])
