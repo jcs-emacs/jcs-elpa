@@ -1973,10 +1973,10 @@
   {
     "name": "tree-sitter",
     "summary": "Incremental parsing system",
-    "version": "20240512.2310",
+    "version": "20250108.531",
     "url": "https://github.com/emacs-tree-sitter/elisp-tree-sitter",
     "source": "github",
-    "commit": "02fe7b86d92b1aab954045146469b7893f0ab371",
+    "commit": "fe98d0cae7babfabd089849808d3d5aa7970ef63",
     "tree": "https://github.com/emacs-tree-sitter/elisp-tree-sitter"
   },
   {
