@@ -722,10 +722,10 @@
   {
     "name": "ellsp",
     "summary": "Elisp Language Server",
-    "version": "20250109.46",
+    "version": "20250109.318",
     "url": "https://github.com/elisp-lsp/ellsp",
     "source": "github",
-    "commit": "903bd9626b1bbfa3adcded7463d9bc21ad6e0cf0",
+    "commit": "4af080315253585863a908739822cb9935284c23",
     "tree": "https://github.com/elisp-lsp/ellsp"
   },
   {
