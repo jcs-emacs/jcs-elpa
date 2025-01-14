@@ -273,4 +273,8 @@
 2024-12-18T01:39:42+0000  repos-window               Command ‘git clone https\://github.com/jcs-elpa/repos-window /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/repos-window/’ exited with non-zero exit-code: 128
 2024-12-18T01:40:57+0000  reveal-in-folder           Command ‘git clone https\://github.com/jcs-elpa/reveal-in-folder /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/reveal-in-folder/’ exited with non-zero exit-code: 128
 2024-12-18T01:42:46+0000  selection-highlight-mode   Command ‘git clone https\://github.com/balloneij/selection-highlight-mode /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/selection-highlight-mode/’ exited with non-zero exit-code: 128
+<<<<<<< Updated upstream
 2025-01-14T00:22:08+0000  ace-link-dashboard         Command `git clone https\://github.com/emacs-dashboard/ace-link-dashboard /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/ace-link-dashboard/' exited with non-zero exit-code: 128
+=======
+2025-01-14T00:23:14+0000  sideline                   Command `git clone https\://github.com/emacs-sideline/sideline /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/sideline/' exited with non-zero exit-code: 128
+>>>>>>> Stashed changes
