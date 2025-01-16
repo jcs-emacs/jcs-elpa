@@ -1,5 +1,5 @@
 (treemacs-nerd-icons .
-		     [(20230828 544)
+		     [(20250116 1651)
 		      ((emacs
 			(24 3))
 		       (nerd-icons
@@ -8,8 +8,8 @@
 			(0 0)))
 		      "Emacs Nerd Font Icons theme for treemacs" tar
 		      ((:url . "https://github.com/rainstormstudio/treemacs-nerd-icons")
-		       (:commit . "9876cb478145a0ec4e36f64ff6583f3de7126216")
-		       (:revdesc . "9876cb478145")
+		       (:commit . "eac9fb5d92b8b29e7c4fcf9f3baddb2cb0b04575")
+		       (:revdesc . "eac9fb5d92b8")
 		       (:keywords "lisp")
 		       (:authors
 			("Hongyu Ding" . "rainstormstudio@yahoo.com"))
