@@ -2018,10 +2018,10 @@
   {
     "name": "treesit-fold",
     "summary": "Code folding using treesit",
-    "version": "20250113.2330",
+    "version": "20250119.606",
     "url": "https://github.com/emacs-tree-sitter/treesit-fold",
     "source": "github",
-    "commit": "d144eaed8191d1c0dc55f5ab22c5f5c6ae25650b",
+    "commit": "fe10708cf9bd7df36e017c1a3561ae371d6d5ea7",
     "tree": "https://github.com/emacs-tree-sitter/treesit-fold"
   },
   {
