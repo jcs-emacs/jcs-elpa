@@ -648,6 +648,15 @@
     "tree": "https://github.com/emacs-languagetool/eglot-ltex"
   },
   {
+    "name": "eglot-ltex-plus",
+    "summary": "Eglot Clients for LTEX+",
+    "version": "20250123.1034",
+    "url": "https://github.com/emacs-languagetool/eglot-ltex-plus",
+    "source": "github",
+    "commit": "cdc0b4df01b5dcd1b24c808e78ff1ee29d6a0fd5",
+    "tree": "https://github.com/emacs-languagetool/eglot-ltex-plus"
+  },
+  {
     "name": "eglot-shader",
     "summary": "Eglot Clients for Shader",
     "version": "20250101.926",
