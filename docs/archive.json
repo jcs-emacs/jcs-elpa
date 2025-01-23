@@ -1350,6 +1350,15 @@
     "tree": "https://github.com/emacs-grammarly/lsp-grammarly-un"
   },
   {
+    "name": "lsp-ltex-plus",
+    "summary": "LSP Clients for LTEX+",
+    "version": "20250123.1017",
+    "url": "https://github.com/emacs-languagetool/lsp-ltex-plus",
+    "source": "github",
+    "commit": "5f462b20278e9c81442b90dc1bf95da38472ec92",
+    "tree": "https://github.com/emacs-languagetool/lsp-ltex-plus"
+  },
+  {
     "name": "lsp-pylyzer",
     "summary": "Python LSP client using pylyzer",
     "version": "20240402.1856",
