@@ -70,6 +70,7 @@
   (eglot-copilot :url "https://github.com/tyler-dodge/eglot-copilot")
   (eglot-grammarly :url "https://github.com/emacs-grammarly/eglot-grammarly")
   (eglot-ltex :url "https://github.com/emacs-languagetool/eglot-ltex")
+  (eglot-ltex-plus :url "https://github.com/emacs-languagetool/eglot-ltex-plus")
   (eglot-shader :url "https://github.com/shader-ls/eglot-shader")
   (eglot-uniteai :url "https://github.com/emacs-openai/eglot-uniteai")
   (ejira :url "https://github.com/nyyManni/ejira")
