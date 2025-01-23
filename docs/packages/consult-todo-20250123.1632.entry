@@ -1,5 +1,5 @@
 (consult-todo .
-	      [(20250123 752)
+	      [(20250123 1632)
 	       ((emacs
 		 (29 1))
 		(consult
@@ -8,8 +8,8 @@
 		 (3 8 2)))
 	       "Search hl-todo keywords in consult" tar
 	       ((:url . "https://github.com/liuyinz/consult-todo")
-		(:commit . "d454a50e9f3847b7cddaaec38e085678dcb8a894")
-		(:revdesc . "d454a50e9f38")
+		(:commit . "af8016ff26a8ccd5b07fcf6896a95fa28fcfca8b")
+		(:revdesc . "af8016ff26a8")
 		(:authors
 		 ("liuyinz" . "liuyinz@gmail.com"))
 		(:maintainers
