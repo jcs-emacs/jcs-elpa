@@ -479,11 +479,11 @@
   {
     "name": "consult-todo",
     "summary": "Search hl-todo keywords in consult",
-    "version": "20250123.1632",
-    "url": "https://github.com/liuyinz/consult-todo",
+    "version": "20250123.1838",
+    "url": "https://github.com/eki3z/consult-todo",
     "source": "github",
-    "commit": "af8016ff26a8ccd5b07fcf6896a95fa28fcfca8b",
-    "tree": "https://github.com/liuyinz/consult-todo"
+    "commit": "d136f85388072d9d4da0be9a5838772c898d69ee",
+    "tree": "https://github.com/eki3z/consult-todo"
   },
   {
     "name": "copilot",
