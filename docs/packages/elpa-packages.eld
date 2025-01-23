@@ -148,6 +148,7 @@
   (logms :url "https://github.com/jcs-elpa/logms")
   (lsp-compose :url "https://github.com/lepisma/compose-language-server")
   (lsp-grammarly-un :url "https://github.com/emacs-grammarly/lsp-grammarly-un")
+  (lsp-ltex-plus :url "https://github.com/emacs-languagetool/lsp-ltex-plus")
   (lsp-pylyzer :url "https://github.com/emacs-lsp/lsp-pylyzer")
   (lsp-shader :url "https://github.com/shader-ls/lsp-shader")
   (lsp-uniteai :url "https://github.com/emacs-openai/lsp-uniteai")
