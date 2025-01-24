@@ -1,11 +1,11 @@
 (outli .
-       [(20241003 1224)
+       [(20250124 216)
 	((emacs
 	  (27 1)))
 	"Org-like code outliner" tar
 	((:url . "https://github.com/jdtsmith/outli")
-	 (:commit . "6fef44070900e41586eb89c0017c3b0e948f3725")
-	 (:revdesc . "6fef44070900")
+	 (:commit . "dac7eae336bdea306637a801e51040f8065d382f")
+	 (:revdesc . "dac7eae336bd")
 	 (:keywords "convenience" "outlines" "org")
 	 (:authors
 	  ("J.D. Smith" . "jdtsmith@gmail.com"))
