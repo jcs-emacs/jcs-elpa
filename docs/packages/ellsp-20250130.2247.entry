@@ -1,5 +1,5 @@
 (ellsp .
-       [(20250130 840)
+       [(20250130 2247)
 	((emacs
 	  (27 1))
 	 (lsp-mode
@@ -16,8 +16,8 @@
 	  (0 1 0)))
 	"Elisp Language Server" tar
 	((:url . "https://github.com/elisp-lsp/ellsp")
-	 (:commit . "125a17ba5eaca20aed08e383df76bd053ce6cc5e")
-	 (:revdesc . "125a17ba5eac")
+	 (:commit . "1bb1b5df3ded06106f19f4f417816f58e1a0bd7d")
+	 (:revdesc . "1bb1b5df3ded")
 	 (:keywords "convenience" "lsp")
 	 (:authors
 	  ("Jen-Chieh" . "jcs090218@gmail.com"))
