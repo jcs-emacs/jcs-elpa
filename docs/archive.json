@@ -731,10 +731,10 @@
   {
     "name": "ellsp",
     "summary": "Elisp Language Server",
-    "version": "20250130.716",
+    "version": "20250130.840",
     "url": "https://github.com/elisp-lsp/ellsp",
     "source": "github",
-    "commit": "eda1bfc33903854442a98c0acb1f02604b7c4f2d",
+    "commit": "125a17ba5eaca20aed08e383df76bd053ce6cc5e",
     "tree": "https://github.com/elisp-lsp/ellsp"
   },
   {
