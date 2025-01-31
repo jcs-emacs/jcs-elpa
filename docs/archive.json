@@ -479,10 +479,10 @@
   {
     "name": "consult-todo",
     "summary": "Search hl-todo keywords in consult",
-    "version": "20250123.1915",
+    "version": "20250131.1447",
     "url": "https://github.com/eki3z/consult-todo",
     "source": "github",
-    "commit": "0d962bd5115ae312505df7f63c9cb82a225245ca",
+    "commit": "f661eed4d5eac1f08db499e23a3dd15c15f0dd62",
     "tree": "https://github.com/eki3z/consult-todo"
   },
   {
