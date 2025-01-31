@@ -587,10 +587,10 @@
   {
     "name": "eask",
     "summary": "Core Eask APIs, for Eask CLI development",
-    "version": "20250115.408",
+    "version": "20250131.627",
     "url": "https://github.com/emacs-eask/eask",
     "source": "github",
-    "commit": "5eb3a891475fc035cf07b05a466ebd4a5edf1e39",
+    "commit": "50b70ff0e67bbdbdbf9c37570956c5c47bf50bc2",
     "tree": "https://github.com/emacs-eask/eask"
   },
   {
@@ -731,10 +731,10 @@
   {
     "name": "ellsp",
     "summary": "Elisp Language Server",
-    "version": "20250131.600",
+    "version": "20250131.621",
     "url": "https://github.com/elisp-lsp/ellsp",
     "source": "github",
-    "commit": "a2d2e0a8fd35210bc0a123cc9bf22ba2c7996359",
+    "commit": "6bef25b6b228468ea1aae68af0b1c3ce91b3edb4",
     "tree": "https://github.com/elisp-lsp/ellsp"
   },
   {
