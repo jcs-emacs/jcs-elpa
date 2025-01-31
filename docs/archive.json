@@ -641,19 +641,19 @@
   {
     "name": "eglot-ltex",
     "summary": "Eglot Clients for LTEX",
-    "version": "20250101.852",
+    "version": "20250131.1659",
     "url": "https://github.com/emacs-languagetool/eglot-ltex",
     "source": "github",
-    "commit": "261b67961f14693266334c0bfee9f748676ddbb0",
+    "commit": "4bc35d72e18f66c15bb628829aa27e0d00a96785",
     "tree": "https://github.com/emacs-languagetool/eglot-ltex"
   },
   {
     "name": "eglot-ltex-plus",
     "summary": "Eglot Clients for LTEX+",
-    "version": "20250123.1042",
+    "version": "20250131.1703",
     "url": "https://github.com/emacs-languagetool/eglot-ltex-plus",
     "source": "github",
-    "commit": "c84678a5c51cc519b13107ffbc17f5583be3da23",
+    "commit": "58bf20eb44129f55578f6b7aad6b13c4991b02a1",
     "tree": "https://github.com/emacs-languagetool/eglot-ltex-plus"
   },
   {
@@ -1361,10 +1361,10 @@
   {
     "name": "lsp-ltex-plus",
     "summary": "LSP Clients for LTEX+",
-    "version": "20250130.1722",
+    "version": "20250131.1644",
     "url": "https://github.com/emacs-languagetool/lsp-ltex-plus",
     "source": "github",
-    "commit": "9e2411d8663e5aeb4da962316a9c81e7732bf54b",
+    "commit": "573b3fdb5f93ed10f32e2ee131012165b210cdc7",
     "tree": "https://github.com/emacs-languagetool/lsp-ltex-plus"
   },
   {
