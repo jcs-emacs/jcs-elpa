@@ -1,15 +1,15 @@
 (eglot-ltex .
-	    [(20250101 852)
+	    [(20250131 1659)
 	     ((emacs
-	       (24 3))
+	       (29 1))
 	      (eglot
 	       (1 4))
 	      (f
 	       (0 20 0)))
 	     "Eglot Clients for LTEX" tar
 	     ((:url . "https://github.com/emacs-languagetool/eglot-ltex")
-	      (:commit . "261b67961f14693266334c0bfee9f748676ddbb0")
-	      (:revdesc . "261b67961f14")
+	      (:commit . "4bc35d72e18f66c15bb628829aa27e0d00a96785")
+	      (:revdesc . "4bc35d72e18f")
 	      (:keywords "convenience" "eglot" "languagetool" "checker")
 	      (:authors
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
