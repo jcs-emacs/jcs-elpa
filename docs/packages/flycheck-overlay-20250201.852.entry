@@ -1,0 +1,18 @@
+(flycheck-overlay .
+		  [(20250201 852)
+		   ((emacs
+		     (25 1))
+		    (flycheck
+		     (0 23))
+		    (cl-lib
+		     (0 5)))
+		   "Display Flycheck errors with overlays" tar
+		   ((:url . "https://github.com/yourusername/flycheck-overlay")
+		    (:commit . "dfdc454b6d5cee218e4322a0e9a857764dacdcea")
+		    (:revdesc . "dfdc454b6d5c")
+		    (:keywords "convenience" "tools")
+		    (:authors
+		     ("Mikael Konradsson" . "mikael.konradsson@outlook.com"))
+		    (:maintainers
+		     ("Mikael Konradsson" . "mikael.konradsson@outlook.com"))
+		    (:maintainer "Mikael Konradsson" . "mikael.konradsson@outlook.com"))])
