@@ -1,0 +1,1 @@
+(flycheck-overlay :repo "konrad1977/flycheck-overlay" :fetcher github)
