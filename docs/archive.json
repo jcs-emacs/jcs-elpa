@@ -891,6 +891,15 @@
     "tree": "https://github.com/sogaiu/flycheck-janet"
   },
   {
+    "name": "flycheck-overlay",
+    "summary": "Display Flycheck errors with overlays",
+    "version": "20250201.852",
+    "url": "https://github.com/yourusername/flycheck-overlay",
+    "source": "github",
+    "commit": "dfdc454b6d5cee218e4322a0e9a857764dacdcea",
+    "tree": "https://github.com/yourusername/flycheck-overlay"
+  },
+  {
     "name": "flycheck-ziglint",
     "summary": "Flycheck for ziglint",
     "version": "20250101.902",
