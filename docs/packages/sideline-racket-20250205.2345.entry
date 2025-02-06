@@ -1,5 +1,5 @@
 (sideline-racket .
-		 [(20250101 857)
+		 [(20250205 2345)
 		  ((emacs
 		    (28 1))
 		   (sideline
@@ -8,8 +8,8 @@
 		    (1)))
 		  "Show racket result with sideline" tar
 		  ((:url . "https://github.com/emacs-sideline/sideline-racket")
-		   (:commit . "a0018c8c7481b8f26deb28e019bbddccb7a7a136")
-		   (:revdesc . "a0018c8c7481")
+		   (:commit . "ce7f58700f0bc13d315d8e4616ec7e58f26218de")
+		   (:revdesc . "ce7f58700f0b")
 		   (:keywords "convenience")
 		   (:authors
 		    ("Jen-Chieh" . "jcs090218@gmail.com"))
