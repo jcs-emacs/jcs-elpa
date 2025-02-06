@@ -2018,10 +2018,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20250127.444",
+    "version": "20250206.19",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "0b91637e22182f2102903ca7203909f1a0d16d3d",
+    "commit": "2ff446b4b813543b7a90015808d38f362f039b10",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
@@ -2225,10 +2225,10 @@
   {
     "name": "vs-edit-mode",
     "summary": "Minor mode accomplish editing experience in Visual Studio",
-    "version": "20250131.2015",
+    "version": "20250206.121",
     "url": "https://github.com/emacs-vs/vs-edit-mode",
     "source": "github",
-    "commit": "8dcfbfcaf4a1f08621f8c6a4945bfbe17dafcb4e",
+    "commit": "b51813a333a4077d72b9dbe931ea38cee16f6bf2",
     "tree": "https://github.com/emacs-vs/vs-edit-mode"
   },
   {
