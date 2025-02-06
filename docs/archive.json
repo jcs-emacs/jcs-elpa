@@ -1847,10 +1847,10 @@
   {
     "name": "sideline-cider",
     "summary": "Show CIDER result with sideline",
-    "version": "20250101.857",
+    "version": "20250205.2347",
     "url": "https://github.com/emacs-sideline/sideline-cider",
     "source": "github",
-    "commit": "db62e47679f1be64663d3ef89fff58276c5014f7",
+    "commit": "308ed1e40da90ecc14cbfb2bf9ac88fbd995b72e",
     "tree": "https://github.com/emacs-sideline/sideline-cider"
   },
   {
@@ -1865,10 +1865,10 @@
   {
     "name": "sideline-eglot",
     "summary": "Show eglot information with sideline",
-    "version": "20250101.857",
+    "version": "20250206.4",
     "url": "https://github.com/emacs-sideline/sideline-eglot",
     "source": "github",
-    "commit": "5ed73e240516f1c4fbe91df724a1ff04ebc3d2b9",
+    "commit": "4495dc09d40a083fe536acc027b584028efac61f",
     "tree": "https://github.com/emacs-sideline/sideline-eglot"
   },
   {
@@ -1883,10 +1883,10 @@
   {
     "name": "sideline-eros",
     "summary": "Show EROS result with sideline",
-    "version": "20250101.857",
+    "version": "20250205.2347",
     "url": "https://github.com/emacs-sideline/sideline-eros",
     "source": "github",
-    "commit": "ddd4139fada9d621058a2f783703cac5a618609a",
+    "commit": "5c476b24a3e8cfc61e71b9d7b4989ee2dbff2dc0",
     "tree": "https://github.com/emacs-sideline/sideline-eros"
   },
   {
@@ -1910,10 +1910,10 @@
   {
     "name": "sideline-geiser",
     "summary": "Show Geiser result with sideline",
-    "version": "20250101.857",
+    "version": "20250205.2346",
     "url": "https://github.com/emacs-sideline/sideline-geiser",
     "source": "github",
-    "commit": "17574183667192919bfd702080560b2d179dfeba",
+    "commit": "2a2c54276774fabdb87d397d8d6d02dce94ab541",
     "tree": "https://github.com/emacs-sideline/sideline-geiser"
   },
   {
@@ -1937,19 +1937,19 @@
   {
     "name": "sideline-racket",
     "summary": "Show racket result with sideline",
-    "version": "20250101.857",
+    "version": "20250205.2345",
     "url": "https://github.com/emacs-sideline/sideline-racket",
     "source": "github",
-    "commit": "a0018c8c7481b8f26deb28e019bbddccb7a7a136",
+    "commit": "ce7f58700f0bc13d315d8e4616ec7e58f26218de",
     "tree": "https://github.com/emacs-sideline/sideline-racket"
   },
   {
     "name": "sideline-sly",
     "summary": "Show SLY result with sideline",
-    "version": "20250101.857",
+    "version": "20250205.2344",
     "url": "https://github.com/emacs-sideline/sideline-sly",
     "source": "github",
-    "commit": "f112c4eb87aed6c27e69379e8cf3f6a6aa48cf90",
+    "commit": "be42f82f071c34203adeb435baf49165b268dcfc",
     "tree": "https://github.com/emacs-sideline/sideline-sly"
   },
   {
