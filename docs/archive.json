@@ -614,11 +614,11 @@
   {
     "name": "echo-bar",
     "summary": "Turn the echo area into a custom status bar",
-    "version": "20240601.1744",
-    "url": "https://github.com/qaiviq/echo-bar.el",
+    "version": "20250207.719",
+    "url": "https://github.com/elp-revive/echo-bar.el",
     "source": "github",
-    "commit": "80f5a8bbd8ac848d4a69796c9568b4a55958e974",
-    "tree": "https://github.com/qaiviq/echo-bar.el"
+    "commit": "993f087cc52f4680f9eb08deef6dac5c5495738a",
+    "tree": "https://github.com/elp-revive/echo-bar.el"
   },
   {
     "name": "eglot-copilot",
