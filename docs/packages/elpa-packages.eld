@@ -129,7 +129,7 @@
   (ivy-describe-modes :url "https://github.com/jcs-legacy/ivy-describe-modes")
   (ivy-point-history :url "https://github.com/SuzumiyaAoba/ivy-point-history")
   (jack-mode :url "https://github.com/nverno/jack-mode")
-  (jai-mode :url "https://github.com/krig/jai-mode")
+  (jai-mode :url "https://github.com/elp-revive/jai-mode")
   (javap-mode :url "https://github.com/elp-revive/javap-mode")
   (jayces-mode :url "https://github.com/jayces-lang/jayces-mode")
   (jcs-echobar :url "https://github.com/jcs-emacs/jcs-echobar")
