@@ -1,0 +1,14 @@
+(jai-mode .
+	  [(20250207 643)
+	   ((emacs
+	     (26 1)))
+	   "Major mode for JAI" tar
+	   ((:url . "https://github.com/elp-revive/jai-mode")
+	    (:commit . "d341bae8470c94d048700779ac3c58f05616e78c")
+	    (:revdesc . "d341bae8470c")
+	    (:keywords "languages")
+	    (:authors
+	     ("Kristoffer Grönlund" . "k@ziran.se"))
+	    (:maintainers
+	     ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
+	    (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com"))])
