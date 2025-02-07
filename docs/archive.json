@@ -1881,6 +1881,15 @@
     "tree": "https://github.com/ginqi7/sideline-eldoc"
   },
   {
+    "name": "sideline-emoji",
+    "summary": "Show emoji information with sideline",
+    "version": "20250207.242",
+    "url": "https://github.com/emacs-sideline/sideline-emoji",
+    "source": "github",
+    "commit": "3b570e3f731ad82a609dd7a46068153c65985656",
+    "tree": "https://github.com/emacs-sideline/sideline-emoji"
+  },
+  {
     "name": "sideline-eros",
     "summary": "Show EROS result with sideline",
     "version": "20250205.2347",
