@@ -1181,11 +1181,11 @@
   {
     "name": "jai-mode",
     "summary": "Major mode for JAI",
-    "version": "20250101.649",
-    "url": "https://github.com/krig/jai-mode",
+    "version": "20250207.643",
+    "url": "https://github.com/elp-revive/jai-mode",
     "source": "github",
-    "commit": "744f77999530ed76dc1b0715965a4adfe82fbbce",
-    "tree": "https://github.com/krig/jai-mode"
+    "commit": "d341bae8470c94d048700779ac3c58f05616e78c",
+    "tree": "https://github.com/elp-revive/jai-mode"
   },
   {
     "name": "javap-mode",
@@ -1928,10 +1928,10 @@
   {
     "name": "sideline-load-cost",
     "summary": "Display load/require module size with sideline",
-    "version": "20250101.857",
+    "version": "20250207.647",
     "url": "https://github.com/emacs-sideline/sideline-load-cost",
     "source": "github",
-    "commit": "afce3059f263e7c6929890a1341890981f836d56",
+    "commit": "86637e59ad027c7c3d8d7d560ddec24dd7f04cb5",
     "tree": "https://github.com/emacs-sideline/sideline-load-cost"
   },
   {
