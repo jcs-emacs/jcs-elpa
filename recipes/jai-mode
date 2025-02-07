@@ -1,1 +1,1 @@
-(jai-mode :repo "krig/jai-mode" :fetcher github)
+(jai-mode :repo "elp-revive/jai-mode" :fetcher github)
