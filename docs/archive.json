@@ -614,10 +614,10 @@
   {
     "name": "echo-bar",
     "summary": "Turn the echo area into a custom status bar",
-    "version": "20250207.719",
+    "version": "20250208.910",
     "url": "https://github.com/elp-revive/echo-bar.el",
     "source": "github",
-    "commit": "993f087cc52f4680f9eb08deef6dac5c5495738a",
+    "commit": "d087ed32d77ac4bb293a5c8e335e61998c82dbef",
     "tree": "https://github.com/elp-revive/echo-bar.el"
   },
   {
