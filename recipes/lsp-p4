@@ -1,4 +1,4 @@
 (lsp-p4
  :fetcher github
- :repo "emacsattic/p4ls"
+ :repo "emacsattic/lsp-p4"
  :files ("clients/emacs/*.el"))
