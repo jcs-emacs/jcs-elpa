@@ -1406,10 +1406,10 @@
   {
     "name": "lsp-smart-req",
     "summary": "Require only the necessary modules",
-    "version": "20250210.533",
+    "version": "20250210.607",
     "url": "https://github.com/jcs-elpa/lsp-smart-req",
     "source": "github",
-    "commit": "97cde9da8ea970fbe6886fce8d970eb6e12aa977",
+    "commit": "cd0c4989ec3a8ae7487edbe45915f3afc60da067",
     "tree": "https://github.com/jcs-elpa/lsp-smart-req"
   },
   {
