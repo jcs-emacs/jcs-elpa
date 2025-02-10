@@ -154,6 +154,7 @@
   (lsp-p4 :url "https://github.com/emacsattic/lsp-p4")
   (lsp-pylyzer :url "https://github.com/emacs-lsp/lsp-pylyzer")
   (lsp-shader :url "https://github.com/shader-ls/lsp-shader")
+  (lsp-smart-req :url "https://github.com/jcs-elpa/lsp-smart-req")
   (lsp-uniteai :url "https://github.com/emacs-openai/lsp-uniteai")
   (maple-line :url "https://github.com/honmaple/emacs-maple-line")
   (marquee-header :url "https://github.com/jcs-elpa/marquee-header")
