@@ -1,1 +1,1 @@
-(message-clean-mode :repo "jcs-elpa/message-clean-mode" :fetcher github)
+(message-clean-mode :fetcher github :repo "jcs-elpa/message-clean-mode")

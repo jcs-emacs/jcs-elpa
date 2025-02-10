@@ -1,1 +1,1 @@
-(font-lock-ext :repo "sensorflo/font-lock-ext" :fetcher github)
+(font-lock-ext :fetcher github :repo "sensorflo/font-lock-ext")

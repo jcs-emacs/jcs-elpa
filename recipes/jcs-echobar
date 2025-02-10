@@ -1,1 +1,1 @@
-(jcs-echobar :repo "jcs-emacs/jcs-echobar" :fetcher github)
+(jcs-echobar :fetcher github :repo "jcs-emacs/jcs-echobar")

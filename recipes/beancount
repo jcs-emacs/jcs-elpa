@@ -1,1 +1,1 @@
-(beancount :repo "beancount/beancount-mode" :fetcher github)
+(beancount :fetcher github :repo "beancount/beancount-mode")

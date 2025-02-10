@@ -1,1 +1,1 @@
-(quick-peek :repo "emacs-vs/quick-peek" :fetcher github)
+(quick-peek :fetcher github :repo "emacs-vs/quick-peek")

@@ -1,1 +1,1 @@
-(easky :repo "emacs-eask/easky" :fetcher github)
+(easky :fetcher github :repo "emacs-eask/easky")

@@ -1,1 +1,1 @@
-(sideline-emoji :repo "emacs-sideline/sideline-emoji" :fetcher github)
+(sideline-emoji :fetcher github :repo "emacs-sideline/sideline-emoji")

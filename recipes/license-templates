@@ -1,1 +1,1 @@
-(license-templates :repo "jcs-elpa/license-templates" :fetcher github)
+(license-templates :fetcher github :repo "jcs-elpa/license-templates")

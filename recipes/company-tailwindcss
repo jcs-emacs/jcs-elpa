@@ -1,1 +1,1 @@
-(company-tailwindcss :repo "tyler-dodge/company-tailwindcss" :fetcher github)
+(company-tailwindcss :fetcher github :repo "tyler-dodge/company-tailwindcss")

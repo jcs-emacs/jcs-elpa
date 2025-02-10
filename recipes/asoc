@@ -1,1 +1,1 @@
-(asoc :repo "troyp/asoc.el" :fetcher github)
+(asoc :fetcher github :repo "troyp/asoc.el")

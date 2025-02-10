@@ -1,1 +1,1 @@
-(vs-edit-mode :repo "emacs-vs/vs-edit-mode" :fetcher github)
+(vs-edit-mode :fetcher github :repo "emacs-vs/vs-edit-mode")

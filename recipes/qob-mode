@@ -1,1 +1,1 @@
-(qob-mode :repo "cl-qob/qob-mode" :fetcher github)
+(qob-mode :fetcher github :repo "cl-qob/qob-mode")

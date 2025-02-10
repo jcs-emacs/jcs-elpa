@@ -1,1 +1,1 @@
-(doom-dashboard :repo "emacs-dashboard/doom-dashboard" :fetcher github)
+(doom-dashboard :fetcher github :repo "emacs-dashboard/doom-dashboard")

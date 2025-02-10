@@ -1,1 +1,1 @@
-(indent-bars :repo "jdtsmith/indent-bars" :fetcher github)
+(indent-bars :fetcher github :repo "jdtsmith/indent-bars")

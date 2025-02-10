@@ -1,1 +1,1 @@
-(codeium :repo "Exafunction/codeium.el" :fetcher github)
+(codeium :fetcher github :repo "Exafunction/codeium.el")

@@ -1,1 +1,1 @@
-(lsp-uniteai :repo "emacs-openai/lsp-uniteai" :fetcher github)
+(lsp-uniteai :fetcher github :repo "emacs-openai/lsp-uniteai")

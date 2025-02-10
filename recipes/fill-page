@@ -1,1 +1,1 @@
-(fill-page :repo "jcs-elpa/fill-page" :fetcher github)
+(fill-page :fetcher github :repo "jcs-elpa/fill-page")

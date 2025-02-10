@@ -1,1 +1,1 @@
-(reveal-in-folder :repo "jcs-elpa/reveal-in-folder" :fetcher github)
+(reveal-in-folder :fetcher github :repo "jcs-elpa/reveal-in-folder")

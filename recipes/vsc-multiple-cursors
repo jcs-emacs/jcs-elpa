@@ -1,1 +1,1 @@
-(vsc-multiple-cursors :repo "emacs-vs/vsc-multiple-cursors" :fetcher github)
+(vsc-multiple-cursors :fetcher github :repo "emacs-vs/vsc-multiple-cursors")

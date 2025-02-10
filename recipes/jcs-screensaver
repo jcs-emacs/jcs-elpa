@@ -1,1 +1,1 @@
-(jcs-screensaver :repo "jcs-emacs/jcs-screensaver" :fetcher github)
+(jcs-screensaver :fetcher github :repo "jcs-emacs/jcs-screensaver")

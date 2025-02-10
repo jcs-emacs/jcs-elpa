@@ -1,1 +1,1 @@
-(yank-indent :repo "jimeh/yank-indent" :fetcher github)
+(yank-indent :fetcher github :repo "jimeh/yank-indent")

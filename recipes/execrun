@@ -1,1 +1,1 @@
-(execrun :repo "jcs-elpa/execrun" :fetcher github)
+(execrun :fetcher github :repo "jcs-elpa/execrun")

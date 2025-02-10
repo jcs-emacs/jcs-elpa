@@ -1,1 +1,1 @@
-(show-eof-mode :repo "zk-phi/show-eof-mode" :fetcher github)
+(show-eof-mode :fetcher github :repo "zk-phi/show-eof-mode")

@@ -1,1 +1,1 @@
-(elenv :repo "jcs-elpa/elenv" :fetcher github)
+(elenv :fetcher github :repo "jcs-elpa/elenv")

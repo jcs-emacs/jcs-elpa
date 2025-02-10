@@ -1,1 +1,1 @@
-(ejira :repo "nyyManni/ejira" :fetcher github)
+(ejira :fetcher github :repo "nyyManni/ejira")

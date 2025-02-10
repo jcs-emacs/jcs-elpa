@@ -1,1 +1,1 @@
-(deepl :repo "emacs-openai/deepl" :fetcher github)
+(deepl :fetcher github :repo "emacs-openai/deepl")

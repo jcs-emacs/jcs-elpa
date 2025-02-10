@@ -1,1 +1,1 @@
-(line-reminder :repo "emacs-vs/line-reminder" :fetcher github)
+(line-reminder :fetcher github :repo "emacs-vs/line-reminder")

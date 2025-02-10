@@ -1,1 +1,1 @@
-(vs-electric-spacing :repo "emacs-vs/vs-electric-spacing" :fetcher github)
+(vs-electric-spacing :fetcher github :repo "emacs-vs/vs-electric-spacing")

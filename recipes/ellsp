@@ -1,4 +1,4 @@
 (ellsp
- :repo "elisp-lsp/ellsp"
  :fetcher github
+ :repo "elisp-lsp/ellsp"
  :files (:defaults "bin"))

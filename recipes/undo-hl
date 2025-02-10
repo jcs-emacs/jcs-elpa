@@ -1,1 +1,1 @@
-(undo-hl :repo "casouri/undo-hl" :fetcher github)
+(undo-hl :fetcher github :repo "casouri/undo-hl")

@@ -1,1 +1,1 @@
-(vertico-flx :repo "jcs-elpa/vertico-flx" :fetcher github)
+(vertico-flx :fetcher github :repo "jcs-elpa/vertico-flx")

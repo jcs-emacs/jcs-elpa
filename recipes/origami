@@ -1,1 +1,1 @@
-(origami :repo "elp-revive/origami.el" :fetcher github)
+(origami :fetcher github :repo "elp-revive/origami.el")

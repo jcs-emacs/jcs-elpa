@@ -1,1 +1,1 @@
-(toggle-profiler :repo "jcs-elpa/toggle-profiler" :fetcher github)
+(toggle-profiler :fetcher github :repo "jcs-elpa/toggle-profiler")

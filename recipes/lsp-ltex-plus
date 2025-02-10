@@ -1,1 +1,1 @@
-(lsp-ltex-plus :repo "emacs-languagetool/lsp-ltex-plus" :fetcher github)
+(lsp-ltex-plus :fetcher github :repo "emacs-languagetool/lsp-ltex-plus")

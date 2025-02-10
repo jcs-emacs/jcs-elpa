@@ -1,1 +1,1 @@
-(eglot-copilot :repo "tyler-dodge/eglot-copilot" :fetcher github)
+(eglot-copilot :fetcher github :repo "tyler-dodge/eglot-copilot")

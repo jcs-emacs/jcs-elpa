@@ -1,1 +1,1 @@
-(zig-mode :repo "ziglang/zig-mode" :fetcher github)
+(zig-mode :fetcher github :repo "ziglang/zig-mode")

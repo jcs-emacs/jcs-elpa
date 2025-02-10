@@ -1,1 +1,1 @@
-(flycheck-overlay :repo "konrad1977/flycheck-overlay" :fetcher github)
+(flycheck-overlay :fetcher github :repo "konrad1977/flycheck-overlay")

@@ -1,4 +1,4 @@
 (flx-rs
- :repo "jcs-elpa/flx-rs"
  :fetcher github
+ :repo "jcs-elpa/flx-rs"
  :files (:defaults "bin"))

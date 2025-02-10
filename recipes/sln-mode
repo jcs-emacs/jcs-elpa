@@ -1,1 +1,1 @@
-(sln-mode :repo "sensorflo/sln-mode" :fetcher github)
+(sln-mode :fetcher github :repo "sensorflo/sln-mode")

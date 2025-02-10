@@ -1,1 +1,1 @@
-(change-case :repo "TakesxiSximada/change-case.el" :fetcher github)
+(change-case :fetcher github :repo "TakesxiSximada/change-case.el")

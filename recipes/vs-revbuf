@@ -1,1 +1,1 @@
-(vs-revbuf :repo "emacs-vs/vs-revbuf" :fetcher github)
+(vs-revbuf :fetcher github :repo "emacs-vs/vs-revbuf")

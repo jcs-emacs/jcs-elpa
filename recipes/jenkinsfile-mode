@@ -1,1 +1,1 @@
-(jenkinsfile-mode :repo "elp-revive/jenkinsfile-mode" :fetcher github)
+(jenkinsfile-mode :fetcher github :repo "elp-revive/jenkinsfile-mode")

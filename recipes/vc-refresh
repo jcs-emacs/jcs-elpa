@@ -1,1 +1,1 @@
-(vc-refresh :repo "jcs-elpa/vc-refresh" :fetcher github)
+(vc-refresh :fetcher github :repo "jcs-elpa/vc-refresh")

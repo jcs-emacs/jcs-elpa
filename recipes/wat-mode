@@ -1,1 +1,1 @@
-(wat-mode :repo "devonsparks/wat-mode" :fetcher github)
+(wat-mode :fetcher github :repo "devonsparks/wat-mode")

@@ -1,1 +1,1 @@
-(company-dart :repo "sid-kurias/company-dart" :fetcher github)
+(company-dart :fetcher github :repo "sid-kurias/company-dart")

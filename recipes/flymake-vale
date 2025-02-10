@@ -1,1 +1,1 @@
-(flymake-vale :repo "tpeacock19/flymake-vale" :fetcher github)
+(flymake-vale :fetcher github :repo "tpeacock19/flymake-vale")

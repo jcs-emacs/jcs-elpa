@@ -1,1 +1,1 @@
-(company-elisp-keywords :repo "jcs-elpa/company-elisp-keywords" :fetcher github)
+(company-elisp-keywords :fetcher github :repo "jcs-elpa/company-elisp-keywords")

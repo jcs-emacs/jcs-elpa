@@ -1,1 +1,1 @@
-(meta-view :repo "emacs-vs/meta-view" :fetcher github)
+(meta-view :fetcher github :repo "emacs-vs/meta-view")

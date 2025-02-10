@@ -1,1 +1,1 @@
-(company-meta-net :repo "emacs-vs/company-meta-net" :fetcher github)
+(company-meta-net :fetcher github :repo "emacs-vs/company-meta-net")

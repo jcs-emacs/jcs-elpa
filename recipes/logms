@@ -1,1 +1,1 @@
-(logms :repo "jcs-elpa/logms" :fetcher github)
+(logms :fetcher github :repo "jcs-elpa/logms")

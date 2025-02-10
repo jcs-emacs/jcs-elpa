@@ -1,4 +1,4 @@
 (company-powershell
- :repo "elp-revive/company-powershell"
  :fetcher github
+ :repo "elp-revive/company-powershell"
  :files (:defaults "commands.ps1"))

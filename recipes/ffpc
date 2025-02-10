@@ -1,1 +1,1 @@
-(ffpc :repo "jcs-elpa/ffpc" :fetcher github)
+(ffpc :fetcher github :repo "jcs-elpa/ffpc")

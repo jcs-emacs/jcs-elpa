@@ -1,3 +1,4 @@
-(pallet :fetcher github
-        :repo "rdallasgray/pallet"
-        :files ("lib/*"))
+(pallet
+ :fetcher github
+ :repo "rdallasgray/pallet"
+ :files ("lib/*"))

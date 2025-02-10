@@ -1,1 +1,1 @@
-(multi-shell :repo "jcs-elpa/multi-shell" :fetcher github)
+(multi-shell :fetcher github :repo "jcs-elpa/multi-shell")

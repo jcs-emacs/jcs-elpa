@@ -1,1 +1,1 @@
-(gas-mode :repo "Enocstocks/gas-mode.el" :fetcher codeberg)
+(gas-mode :fetcher codeberg :repo "Enocstocks/gas-mode.el")

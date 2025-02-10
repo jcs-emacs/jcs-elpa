@@ -1,2 +1,4 @@
-(cask :repo "cask/cask" :fetcher github :old-names (carton)
+(cask :fetcher github
+      :repo "cask/cask"
+      :old-names (carton)
       :files ("cask.el" "cask-bootstrap.el"))

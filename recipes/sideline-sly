@@ -1,1 +1,1 @@
-(sideline-sly :repo "emacs-sideline/sideline-sly" :fetcher github)
+(sideline-sly :fetcher github :repo "emacs-sideline/sideline-sly")

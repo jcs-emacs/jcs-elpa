@@ -1,1 +1,1 @@
-(flymake-dart :repo "flymake/flymake-dart" :fetcher github)
+(flymake-dart :fetcher github :repo "flymake/flymake-dart")

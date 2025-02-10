@@ -1,1 +1,1 @@
-(openai :repo "emacs-openai/openai" :fetcher github)
+(openai :fetcher github :repo "emacs-openai/openai")

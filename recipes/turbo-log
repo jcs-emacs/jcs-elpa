@@ -1,1 +1,1 @@
-(turbo-log :repo "Artawower/turbo-log" :fetcher github)
+(turbo-log :fetcher github :repo "Artawower/turbo-log")

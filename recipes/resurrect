@@ -1,1 +1,1 @@
-(resurrect :repo "fbkante/resurrect" :fetcher github)
+(resurrect :fetcher github :repo "fbkante/resurrect")

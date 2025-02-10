@@ -1,1 +1,1 @@
-(sideline-eldoc :repo "ginqi7/sideline-eldoc" :fetcher github)
+(sideline-eldoc :fetcher github :repo "ginqi7/sideline-eldoc")

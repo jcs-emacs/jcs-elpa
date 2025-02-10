@@ -1,1 +1,1 @@
-(tspew :repo "jefftrull/tspew" :fetcher github)
+(tspew :fetcher github :repo "jefftrull/tspew")

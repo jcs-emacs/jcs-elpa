@@ -1,1 +1,1 @@
-(eval-mark :repo "jcs-elpa/eval-mark" :fetcher github)
+(eval-mark :fetcher github :repo "jcs-elpa/eval-mark")

@@ -1,1 +1,1 @@
-(sideline-color :repo "emacs-sideline/sideline-color" :fetcher github)
+(sideline-color :fetcher github :repo "emacs-sideline/sideline-color")

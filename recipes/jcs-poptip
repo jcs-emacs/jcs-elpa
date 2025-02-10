@@ -1,1 +1,1 @@
-(jcs-poptip :repo "jcs-emacs/jcs-poptip" :fetcher github)
+(jcs-poptip :fetcher github :repo "jcs-emacs/jcs-poptip")

@@ -1,1 +1,1 @@
-(lsp-compose :repo "lepisma/compose-language-server" :fetcher github)
+(lsp-compose :fetcher github :repo "lepisma/compose-language-server")

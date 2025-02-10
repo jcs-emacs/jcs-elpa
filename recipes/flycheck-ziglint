@@ -1,1 +1,1 @@
-(flycheck-ziglint :repo "flycheck/flycheck-ziglint" :fetcher github)
+(flycheck-ziglint :fetcher github :repo "flycheck/flycheck-ziglint")

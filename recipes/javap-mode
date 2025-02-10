@@ -1,1 +1,1 @@
-(javap-mode :repo "elp-revive/javap-mode" :fetcher github)
+(javap-mode :fetcher github :repo "elp-revive/javap-mode")

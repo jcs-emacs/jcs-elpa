@@ -1,1 +1,1 @@
-(lsp-grammarly-un :repo "emacs-grammarly/lsp-grammarly-un" :fetcher github)
+(lsp-grammarly-un :fetcher github :repo "emacs-grammarly/lsp-grammarly-un")

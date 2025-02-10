@@ -1,1 +1,1 @@
-(cogru :repo "Cogru/cogru.el" :fetcher github)
+(cogru :fetcher github :repo "Cogru/cogru.el")

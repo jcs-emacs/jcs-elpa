@@ -1,1 +1,1 @@
-(gptscript-mode :repo "emacs-openai/gptscript-mode" :fetcher github)
+(gptscript-mode :fetcher github :repo "emacs-openai/gptscript-mode")

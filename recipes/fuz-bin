@@ -1,4 +1,4 @@
 (fuz-bin
- :repo "jcs-legacy/fuz-bin"
  :fetcher github
+ :repo "jcs-legacy/fuz-bin"
  :files (:defaults "bin"))

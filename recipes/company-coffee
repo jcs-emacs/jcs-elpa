@@ -1,1 +1,1 @@
-(company-coffee :repo "elp-revive/company-coffee" :fetcher github)
+(company-coffee :fetcher github :repo "elp-revive/company-coffee")

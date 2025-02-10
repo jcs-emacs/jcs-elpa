@@ -1,1 +1,1 @@
-(query-ts-mode :repo "nverno/query-ts-mode" :fetcher github)
+(query-ts-mode :fetcher github :repo "nverno/query-ts-mode")

@@ -1,1 +1,1 @@
-(outli :repo "jdtsmith/outli" :fetcher github)
+(outli :fetcher github :repo "jdtsmith/outli")

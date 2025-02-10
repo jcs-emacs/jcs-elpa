@@ -1,2 +1,3 @@
-(powerline :fetcher github
-           :repo "milkypostman/powerline")
+(powerline
+ :fetcher github
+ :repo "milkypostman/powerline")

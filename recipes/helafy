@@ -1,1 +1,1 @@
-(helafy :repo "jcs-elpa/helafy" :fetcher github)
+(helafy :fetcher github :repo "jcs-elpa/helafy")

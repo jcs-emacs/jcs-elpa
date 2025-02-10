@@ -1,1 +1,1 @@
-(ueval :repo "jcs-elpa/ueval" :fetcher github)
+(ueval :fetcher github :repo "jcs-elpa/ueval")

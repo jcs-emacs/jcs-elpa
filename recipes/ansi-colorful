@@ -1,1 +1,1 @@
-(ansi-colorful :repo "jcs-elpa/ansi-colorful" :fetcher github)
+(ansi-colorful :fetcher github :repo "jcs-elpa/ansi-colorful")

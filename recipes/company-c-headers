@@ -1,1 +1,1 @@
-(company-c-headers :repo "elp-revive/company-c-headers" :fetcher github)
+(company-c-headers :fetcher github :repo "elp-revive/company-c-headers")

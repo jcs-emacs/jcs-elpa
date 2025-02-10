@@ -1,1 +1,1 @@
-(lsp-pylyzer :repo "emacs-lsp/lsp-pylyzer" :fetcher github)
+(lsp-pylyzer :fetcher github :repo "emacs-lsp/lsp-pylyzer")

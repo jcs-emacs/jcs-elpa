@@ -1,1 +1,1 @@
-(company-emmet :repo "emacs-vs/company-emmet" :fetcher github)
+(company-emmet :fetcher github :repo "emacs-vs/company-emmet")

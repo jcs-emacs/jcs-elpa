@@ -1,1 +1,1 @@
-(treesit-langs :repo "emacs-tree-sitter/treesit-langs" :fetcher github)
+(treesit-langs :fetcher github :repo "emacs-tree-sitter/treesit-langs")

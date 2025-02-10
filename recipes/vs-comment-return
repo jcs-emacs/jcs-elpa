@@ -1,1 +1,1 @@
-(vs-comment-return :repo "emacs-vs/vs-comment-return" :fetcher github)
+(vs-comment-return :fetcher github :repo "emacs-vs/vs-comment-return")

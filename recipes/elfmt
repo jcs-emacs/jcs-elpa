@@ -1,1 +1,1 @@
-(elfmt :repo "riscy/elfmt" :fetcher github)
+(elfmt :fetcher github :repo "riscy/elfmt")

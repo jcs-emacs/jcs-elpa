@@ -1,1 +1,1 @@
-(ic :repo "jcs-elpa/ic" :fetcher github)
+(ic :fetcher github :repo "jcs-elpa/ic")

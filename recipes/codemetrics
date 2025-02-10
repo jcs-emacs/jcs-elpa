@@ -1,1 +1,1 @@
-(codemetrics :repo "emacs-vs/codemetrics" :fetcher github)
+(codemetrics :fetcher github :repo "emacs-vs/codemetrics")

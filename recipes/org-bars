@@ -1,1 +1,1 @@
-(org-bars :repo "tonyaldon/org-bars" :fetcher github)
+(org-bars :fetcher github :repo "tonyaldon/org-bars")

@@ -1,1 +1,1 @@
-(eglot-ltex-plus :repo "emacs-languagetool/eglot-ltex-plus" :fetcher github)
+(eglot-ltex-plus :fetcher github :repo "emacs-languagetool/eglot-ltex-plus")

@@ -1,1 +1,1 @@
-(github-tags :repo "jcs-elpa/github-tags" :fetcher github)
+(github-tags :fetcher github :repo "jcs-elpa/github-tags")

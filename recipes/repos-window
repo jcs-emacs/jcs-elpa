@@ -1,1 +1,1 @@
-(repos-window :repo "jcs-elpa/repos-window" :fetcher github)
+(repos-window :fetcher github :repo "jcs-elpa/repos-window")

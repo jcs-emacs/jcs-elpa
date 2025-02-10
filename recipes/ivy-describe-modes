@@ -1,1 +1,1 @@
-(ivy-describe-modes :repo "jcs-legacy/ivy-describe-modes" :fetcher github)
+(ivy-describe-modes :fetcher github :repo "jcs-legacy/ivy-describe-modes")

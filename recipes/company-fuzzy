@@ -1,1 +1,1 @@
-(company-fuzzy :repo "jcs-elpa/company-fuzzy" :fetcher github)
+(company-fuzzy :fetcher github :repo "jcs-elpa/company-fuzzy")

@@ -1,1 +1,1 @@
-(sideline-eglot :repo "emacs-sideline/sideline-eglot" :fetcher github)
+(sideline-eglot :fetcher github :repo "emacs-sideline/sideline-eglot")

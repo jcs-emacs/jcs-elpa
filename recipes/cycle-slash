@@ -1,1 +1,1 @@
-(cycle-slash :repo "jcs-elpa/cycle-slash" :fetcher github)
+(cycle-slash :fetcher github :repo "jcs-elpa/cycle-slash")

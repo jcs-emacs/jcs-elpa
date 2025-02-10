@@ -1,1 +1,1 @@
-(chatgpt :repo "emacs-openai/chatgpt" :fetcher github)
+(chatgpt :fetcher github :repo "emacs-openai/chatgpt")

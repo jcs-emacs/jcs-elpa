@@ -1,1 +1,1 @@
-(on :repo "elp-revive/on.el" :fetcher github)
+(on :fetcher github :repo "elp-revive/on.el")

@@ -1,1 +1,1 @@
-(selection-highlight-mode :repo "balloneij/selection-highlight-mode" :fetcher github)
+(selection-highlight-mode :fetcher github :repo "balloneij/selection-highlight-mode")

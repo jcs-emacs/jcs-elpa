@@ -1,1 +1,1 @@
-(noflet :repo "elp-revive/noflet" :fetcher github)
+(noflet :fetcher github :repo "elp-revive/noflet")

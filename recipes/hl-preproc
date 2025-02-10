@@ -1,1 +1,1 @@
-(hl-preproc :repo "emacs-vs/hl-preproc" :fetcher github)
+(hl-preproc :fetcher github :repo "emacs-vs/hl-preproc")

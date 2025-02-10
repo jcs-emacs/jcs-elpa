@@ -1,1 +1,1 @@
-(lemmington :repo "lem-project/lemmington" :fetcher github)
+(lemmington :fetcher github :repo "lem-project/lemmington")

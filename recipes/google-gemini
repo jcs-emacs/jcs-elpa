@@ -1,1 +1,1 @@
-(google-gemini :repo "emacs-openai/google-gemini" :fetcher github)
+(google-gemini :fetcher github :repo "emacs-openai/google-gemini")

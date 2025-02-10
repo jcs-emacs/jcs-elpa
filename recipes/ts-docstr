@@ -1,1 +1,4 @@
-(ts-docstr :repo "emacs-vs/ts-docstr" :fetcher github :files (:defaults "langs/*.el"))
+(ts-docstr
+ :fetcher github
+ :repo "emacs-vs/ts-docstr"
+ :files (:defaults "langs/*.el"))

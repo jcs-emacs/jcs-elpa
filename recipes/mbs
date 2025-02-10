@@ -1,1 +1,1 @@
-(mbs :repo "jcs-elpa/mbs" :fetcher github)
+(mbs :fetcher github :repo "jcs-elpa/mbs")
