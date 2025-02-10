@@ -1,11 +1,11 @@
 (lsp-smart-req .
-	       [(20250210 503)
+	       [(20250210 533)
 		((emacs
 		  (27 1)))
 		"Require only the necessary modules" tar
 		((:url . "https://github.com/jcs-elpa/lsp-smart-req")
-		 (:commit . "914201dede3dbcf6fc9d4c1cff12c95d3862482c")
-		 (:revdesc . "914201dede3d")
+		 (:commit . "97cde9da8ea970fbe6886fce8d970eb6e12aa977")
+		 (:revdesc . "97cde9da8ea9")
 		 (:keywords "internal" "lsp")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
