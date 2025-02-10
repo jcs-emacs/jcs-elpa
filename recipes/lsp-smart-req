@@ -1,0 +1,1 @@
+(lsp-smart-req :fetcher github :repo "jcs-elpa/lsp-smart-req")
