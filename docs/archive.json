@@ -893,10 +893,10 @@
   {
     "name": "flycheck-overlay",
     "summary": "Display Flycheck errors with overlays",
-    "version": "20250211.1049",
+    "version": "20250211.1716",
     "url": "https://github.com/yourusername/flycheck-overlay",
     "source": "github",
-    "commit": "6e9f3168887f745e19cdaf739af798be91097b02",
+    "commit": "4e0adf6e675ebff83935dce274434afd8ff2fc1a",
     "tree": "https://github.com/yourusername/flycheck-overlay"
   },
   {
