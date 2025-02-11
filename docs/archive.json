@@ -533,10 +533,10 @@
   {
     "name": "dashboard",
     "summary": "A startup screen extracted from Spacemacs",
-    "version": "20250110.2013",
+    "version": "20250211.124",
     "url": "https://github.com/emacs-dashboard/emacs-dashboard",
     "source": "github",
-    "commit": "7b7846689845078cb5604508c5075e28e2160efe",
+    "commit": "6906bf8288eb017c295d9f28d200f83c09878160",
     "tree": "https://github.com/emacs-dashboard/emacs-dashboard"
   },
   {
@@ -1136,10 +1136,10 @@
   {
     "name": "indent-control",
     "summary": "Management for indentation level",
-    "version": "20250101.1009",
+    "version": "20250211.48",
     "url": "https://github.com/jcs-elpa/indent-control",
     "source": "github",
-    "commit": "6b55986999f230760389a4dcd5d784121305de24",
+    "commit": "d8fcfff53abfb47cc806c99ebb7b151e9fff4811",
     "tree": "https://github.com/jcs-elpa/indent-control"
   },
   {
@@ -2243,10 +2243,10 @@
   {
     "name": "vs-dark-theme",
     "summary": "Visual Studio IDE dark theme",
-    "version": "20250101.910",
+    "version": "20250211.133",
     "url": "https://github.com/emacs-vs/vs-dark-theme",
     "source": "github",
-    "commit": "a1a59ebd0fb9294224da31d4b62070ea3fe3c28d",
+    "commit": "8fac750fc562f89c94bfa76ea2032f90a0cb4237",
     "tree": "https://github.com/emacs-vs/vs-dark-theme"
   },
   {
@@ -2270,10 +2270,10 @@
   {
     "name": "vs-light-theme",
     "summary": "Visual Studio IDE light theme",
-    "version": "20250101.910",
+    "version": "20250211.125",
     "url": "https://github.com/emacs-vs/vs-light-theme",
     "source": "github",
-    "commit": "b469a2b7376789494e3448b0722b12556043204a",
+    "commit": "0e0d53d595249fa716f0a12fba3c44622132bce3",
     "tree": "https://github.com/emacs-vs/vs-light-theme"
   },
   {
