@@ -2270,10 +2270,10 @@
   {
     "name": "vs-light-theme",
     "summary": "Visual Studio IDE light theme",
-    "version": "20250211.125",
+    "version": "20250211.133",
     "url": "https://github.com/emacs-vs/vs-light-theme",
     "source": "github",
-    "commit": "0e0d53d595249fa716f0a12fba3c44622132bce3",
+    "commit": "3690bb3eea3863bc81e6864b3f34546d9660b86e",
     "tree": "https://github.com/emacs-vs/vs-light-theme"
   },
   {
