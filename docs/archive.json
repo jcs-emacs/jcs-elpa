@@ -533,10 +533,10 @@
   {
     "name": "dashboard",
     "summary": "A startup screen extracted from Spacemacs",
-    "version": "20250211.124",
+    "version": "20250212.1925",
     "url": "https://github.com/emacs-dashboard/emacs-dashboard",
     "source": "github",
-    "commit": "6906bf8288eb017c295d9f28d200f83c09878160",
+    "commit": "9adf24569d76e428fb98a562f1f1e087dc9d608d",
     "tree": "https://github.com/emacs-dashboard/emacs-dashboard"
   },
   {
@@ -2072,10 +2072,10 @@
   {
     "name": "treesit-fold",
     "summary": "Code folding using treesit",
-    "version": "20250119.606",
+    "version": "20250212.1944",
     "url": "https://github.com/emacs-tree-sitter/treesit-fold",
     "source": "github",
-    "commit": "fe10708cf9bd7df36e017c1a3561ae371d6d5ea7",
+    "commit": "2c70f4d471f3ea820e0721c8cd7e2947c6e4c78d",
     "tree": "https://github.com/emacs-tree-sitter/treesit-fold"
   },
   {
@@ -2099,10 +2099,10 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20250119.607",
+    "version": "20250212.1932",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "8ec6de2b374e9bdbcb2cb42e09e6ce6e25efea5c",
+    "commit": "b2116f3679f477e165a35afa9f8dbf7004a977a2",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
