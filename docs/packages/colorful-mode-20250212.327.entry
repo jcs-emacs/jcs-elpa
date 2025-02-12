@@ -1,13 +1,13 @@
 (colorful-mode .
-	       [(20250208 2227)
+	       [(20250212 327)
 		((emacs
 		  (28 1))
 		 (compat
 		  (29 1 4 4)))
 		"Preview any color in your buffer in real time" tar
 		((:url . "https://github.com/DevelopmentCool2449/colorful-mode")
-		 (:commit . "c57656d9376125df9e58016a7dbbdf346d67055e")
-		 (:revdesc . "c57656d93761")
+		 (:commit . "ed32abcca4a3fdb2cbf8e99c9aae833389792ad4")
+		 (:revdesc . "ed32abcca4a3")
 		 (:keywords "faces" "tools" "matching" "convenience")
 		 (:authors
 		  ("Elias G. Perez" . "eg642616@gmail.com"))
