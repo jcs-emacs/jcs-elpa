@@ -263,10 +263,10 @@
   {
     "name": "colorful-mode",
     "summary": "Preview any color in your buffer in real time",
-    "version": "20250212.536",
+    "version": "20250213.420",
     "url": "https://github.com/DevelopmentCool2449/colorful-mode",
     "source": "github",
-    "commit": "2767f253e9ddf5e5701b50c9f9ea54b1fad5b9da",
+    "commit": "ea81e85fc7185839e0bba1abdeee4bf3a7623d74",
     "tree": "https://github.com/DevelopmentCool2449/colorful-mode"
   },
   {
@@ -2072,10 +2072,10 @@
   {
     "name": "treesit-fold",
     "summary": "Code folding using treesit",
-    "version": "20250212.1944",
+    "version": "20250213.447",
     "url": "https://github.com/emacs-tree-sitter/treesit-fold",
     "source": "github",
-    "commit": "2c70f4d471f3ea820e0721c8cd7e2947c6e4c78d",
+    "commit": "1b4b552867d8eaa03008b887ec0c9236c3c2b416",
     "tree": "https://github.com/emacs-tree-sitter/treesit-fold"
   },
   {
@@ -2099,10 +2099,10 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20250212.1932",
+    "version": "20250213.444",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "b2116f3679f477e165a35afa9f8dbf7004a977a2",
+    "commit": "c3b769d577ccad36f872babfde021eee4b1ba2e9",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
