@@ -1,13 +1,13 @@
 (quickrun .
-	  [(20250213 744)
+	  [(20250214 813)
 	   ((emacs
 	     (26 1))
 	    (ht
 	     (2 0)))
 	   "Run commands quickly" tar
 	   ((:url . "https://github.com/emacsorphanage/quickrun")
-	    (:commit . "23d2671fe246ccfae1482a38043c2c64b3937d70")
-	    (:revdesc . "23d2671fe246")
+	    (:commit . "7345432cea36d4a6cdfcf5371f76af640cc6d192")
+	    (:revdesc . "7345432cea36")
 	    (:keywords "tools")
 	    (:authors
 	     ("Syohei YOSHIDA" . "syohex@gmail.com"))
