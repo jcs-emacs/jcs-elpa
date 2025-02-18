@@ -1649,10 +1649,10 @@
   {
     "name": "pkg-dm",
     "summary": "Package dependencies management",
-    "version": "20250101.1011",
+    "version": "20250218.2350",
     "url": "https://github.com/jcs-elpa/pkg-dm",
     "source": "github",
-    "commit": "a652f5e255593f3bfee56c00724d509ed922119d",
+    "commit": "9cbed5faab85491fedd93d21855915f279c17840",
     "tree": "https://github.com/jcs-elpa/pkg-dm"
   },
   {
@@ -1694,10 +1694,10 @@
   {
     "name": "prt",
     "summary": "Progress Reporter Library",
-    "version": "20250101.1011",
+    "version": "20250218.2349",
     "url": "https://github.com/jcs-elpa/prt",
     "source": "github",
-    "commit": "de61208ede16764ae5866fa9c29ae9aed25cc119",
+    "commit": "7d805202c247bbb87ec614655e165120b7172679",
     "tree": "https://github.com/jcs-elpa/prt"
   },
   {
