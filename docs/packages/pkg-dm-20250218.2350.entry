@@ -1,5 +1,5 @@
 (pkg-dm .
-	[(20250101 1011)
+	[(20250218 2350)
 	 ((emacs
 	   (28 1))
 	  (elenv
@@ -14,8 +14,8 @@
 	   (1 12 0)))
 	 "Package dependencies management" tar
 	 ((:url . "https://github.com/jcs-elpa/pkg-dm")
-	  (:commit . "a652f5e255593f3bfee56c00724d509ed922119d")
-	  (:revdesc . "a652f5e25559")
+	  (:commit . "9cbed5faab85491fedd93d21855915f279c17840")
+	  (:revdesc . "9cbed5faab85")
 	  (:keywords "maint")
 	  (:authors
 	   ("Jen-Chieh" . "jcs090218@gmail.com"))
