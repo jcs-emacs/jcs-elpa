@@ -632,28 +632,28 @@
   {
     "name": "eglot-grammarly",
     "summary": "Eglot Clients for Grammarly",
-    "version": "20250101.849",
+    "version": "20250222.1744",
     "url": "https://github.com/emacs-grammarly/eglot-grammarly",
     "source": "github",
-    "commit": "0e3157dab4d59c61c1e2fdfc27ad70eead6b7685",
+    "commit": "f0a25d0249c197dad0581ee636c3bf7531884b98",
     "tree": "https://github.com/emacs-grammarly/eglot-grammarly"
   },
   {
     "name": "eglot-ltex",
     "summary": "Eglot Clients for LTEX",
-    "version": "20250221.2101",
+    "version": "20250222.1748",
     "url": "https://github.com/emacs-languagetool/eglot-ltex",
     "source": "github",
-    "commit": "843fe75cede79f854df5639b0051c658603522f6",
+    "commit": "6a5d655b9493cfad184ff26d18fa00ad1f6d0b29",
     "tree": "https://github.com/emacs-languagetool/eglot-ltex"
   },
   {
     "name": "eglot-ltex-plus",
     "summary": "Eglot Clients for LTEX+",
-    "version": "20250221.2101",
+    "version": "20250222.1748",
     "url": "https://github.com/emacs-languagetool/eglot-ltex-plus",
     "source": "github",
-    "commit": "e5ecb69f5accdfd000d4ffdd1fd0b39839ef3d3f",
+    "commit": "b9507df0e80902414b193b9c571904f3f54ea2a1",
     "tree": "https://github.com/emacs-languagetool/eglot-ltex-plus"
   },
   {
@@ -1370,10 +1370,10 @@
   {
     "name": "lsp-ltex-plus",
     "summary": "LSP Clients for LTEX+",
-    "version": "20250131.1644",
+    "version": "20250222.1746",
     "url": "https://github.com/emacs-languagetool/lsp-ltex-plus",
     "source": "github",
-    "commit": "573b3fdb5f93ed10f32e2ee131012165b210cdc7",
+    "commit": "5a365ba36fb5bbf5aaa652a46dc7e5a0401fbd5d",
     "tree": "https://github.com/emacs-languagetool/lsp-ltex-plus"
   },
   {
