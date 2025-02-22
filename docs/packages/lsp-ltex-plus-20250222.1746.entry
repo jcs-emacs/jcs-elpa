@@ -1,13 +1,13 @@
 (lsp-ltex-plus .
-	       [(20250131 1644)
+	       [(20250222 1746)
 		((emacs
 		  (27 1))
 		 (lsp-mode
 		  (6 1)))
 		"LSP Clients for LTEX+" tar
 		((:url . "https://github.com/emacs-languagetool/lsp-ltex-plus")
-		 (:commit . "573b3fdb5f93ed10f32e2ee131012165b210cdc7")
-		 (:revdesc . "573b3fdb5f93")
+		 (:commit . "5a365ba36fb5bbf5aaa652a46dc7e5a0401fbd5d")
+		 (:revdesc . "5a365ba36fb5")
 		 (:keywords "convenience" "lsp" "languagetool" "checker")
 		 (:authors
 		  ("Jen-Chieh" . "jcs090218@gmail.com"))
