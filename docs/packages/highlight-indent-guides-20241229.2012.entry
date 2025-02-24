@@ -1,14 +1,9 @@
-(highlight-indent-guides .
-			 [(20241229 2012)
-			  ((emacs
-			    (26 1)))
-			  "Minor mode to highlight indentation" tar
-			  ((:url . "https://github.com/DarthFennec/highlight-indent-guides")
-			   (:commit . "3205abe2721053416e354a1ff53947dd122a6941")
-			   (:revdesc . "3205abe27210")
-			   (:keywords "convenience")
-			   (:authors
-			    ("DarthFennec" . "darthfennec@derpymail.org"))
-			   (:maintainers
-			    ("DarthFennec" . "darthfennec@derpymail.org"))
-			   (:maintainer "DarthFennec" . "darthfennec@derpymail.org"))])
+(highlight-indent-guides
+ . [(20241229 2012) ((emacs (26 1)))
+    "Minor mode to highlight indentation" tar
+    ((:url . "https://github.com/DarthFennec/highlight-indent-guides")
+     (:commit . "3205abe2721053416e354a1ff53947dd122a6941")
+     (:revdesc . "3205abe27210") (:keywords "convenience")
+     (:authors ("DarthFennec" . "darthfennec@derpymail.org"))
+     (:maintainers ("DarthFennec" . "darthfennec@derpymail.org"))
+     (:maintainer "DarthFennec" . "darthfennec@derpymail.org"))])

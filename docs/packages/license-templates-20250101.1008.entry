@@ -1,16 +1,10 @@
-(license-templates .
-		   [(20250101 1008)
-		    ((emacs
-		      (24 3))
-		     (request
-		      (0 3 0)))
-		    "Create LICENSE using GitHub API" tar
-		    ((:url . "https://github.com/jcs-elpa/license-templates")
-		     (:commit . "93c4374301aa3fdb3dc67e3a7513af02e536d367")
-		     (:revdesc . "93c4374301aa")
-		     (:keywords "convenience" "license" "api" "template")
-		     (:authors
-		      ("Jen-Chieh" . "jcs090218@gmail.com"))
-		     (:maintainers
-		      ("Jen-Chieh" . "jcs090218@gmail.com"))
-		     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(license-templates
+ . [(20250101 1008) ((emacs (24 3)) (request (0 3 0)))
+    "Create LICENSE using GitHub API" tar
+    ((:url . "https://github.com/jcs-elpa/license-templates")
+     (:commit . "93c4374301aa3fdb3dc67e3a7513af02e536d367")
+     (:revdesc . "93c4374301aa")
+     (:keywords "convenience" "license" "api" "template")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

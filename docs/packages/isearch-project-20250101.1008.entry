@@ -1,16 +1,9 @@
-(isearch-project .
-		 [(20250101 1008)
-		  ((emacs
-		    (27 1))
-		   (f
-		    (0 20 0)))
-		  "Incremental search through the whole project" tar
-		  ((:url . "https://github.com/jcs-elpa/isearch-project")
-		   (:commit . "abd8ee560d1843f9ea01e1a823ddeafe9fbb0b21")
-		   (:revdesc . "abd8ee560d18")
-		   (:keywords "convenience" "search")
-		   (:authors
-		    ("Jen-Chieh" . "jcs090218@gmail.com"))
-		   (:maintainers
-		    ("Jen-Chieh" . "jcs090218@gmail.com"))
-		   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(isearch-project
+ . [(20250101 1008) ((emacs (27 1)) (f (0 20 0)))
+    "Incremental search through the whole project" tar
+    ((:url . "https://github.com/jcs-elpa/isearch-project")
+     (:commit . "abd8ee560d1843f9ea01e1a823ddeafe9fbb0b21")
+     (:revdesc . "abd8ee560d18") (:keywords "convenience" "search")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

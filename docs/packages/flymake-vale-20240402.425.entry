@@ -1,19 +1,11 @@
-(flymake-vale .
-	      [(20240402 425)
-	       ((emacs
-		 (27 1))
-		(flymake
-		 (0 22))
-		(let-alist
-		    (1 0 4))
-		(compat
-		 (29 1 4 4)))
-	       "Flymake integration for vale" tar
-	       ((:url . "https://github.com/tpeacock19/new")
-		(:commit . "32691d788a378915b98dba81e3af63227a630af3")
-		(:revdesc . "32691d788a37")
-		(:authors
-		 ("Trey Peacock" . "http://github/tpeacock19"))
-		(:maintainers
-		 ("Trey Peacock" . "git@treypeacock.com"))
-		(:maintainer "Trey Peacock" . "git@treypeacock.com"))])
+(flymake-vale
+ . [(20240402 425)
+    ((emacs (27 1)) (flymake (0 22)) (let-alist (1 0 4))
+     (compat (29 1 4 4)))
+    "Flymake integration for vale" tar
+    ((:url . "https://github.com/tpeacock19/new")
+     (:commit . "32691d788a378915b98dba81e3af63227a630af3")
+     (:revdesc . "32691d788a37")
+     (:authors ("Trey Peacock" . "http://github/tpeacock19"))
+     (:maintainers ("Trey Peacock" . "git@treypeacock.com"))
+     (:maintainer "Trey Peacock" . "git@treypeacock.com"))])

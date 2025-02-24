@@ -1,10 +1,6 @@
-(jenkinsfile-mode .
-		  [(20240117 1043)
-		   ((emacs
-		     (24))
-		    (groovy-mode
-		     (2 0)))
-		   "Major mode for editing Jenkins declarative pipeline syntax" tar
-		   ((:url . "https://github.com/elp-revive/jenkinsfile-mode")
-		    (:commit . "9ba38d93bad383c7321a14d6e24b8fd8b18a767e")
-		    (:revdesc . "9ba38d93bad3"))])
+(jenkinsfile-mode
+ . [(20240117 1043) ((emacs (24)) (groovy-mode (2 0)))
+    "Major mode for editing Jenkins declarative pipeline syntax" tar
+    ((:url . "https://github.com/elp-revive/jenkinsfile-mode")
+     (:commit . "9ba38d93bad383c7321a14d6e24b8fd8b18a767e")
+     (:revdesc . "9ba38d93bad3"))])
