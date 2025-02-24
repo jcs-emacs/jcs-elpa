@@ -1631,10 +1631,10 @@
   {
     "name": "package-build",
     "summary": "Tools for assembling a package archive",
-    "version": "20250221.1523",
+    "version": "20250224.1710",
     "url": "https://github.com/melpa/package-build",
     "source": "github",
-    "commit": "df9d860dba32048770d285d0aeaf52e3ae016864",
+    "commit": "0133e09573866d8e7af6c17a2861e5ed7bfc532b",
     "tree": "https://github.com/melpa/package-build"
   },
   {
