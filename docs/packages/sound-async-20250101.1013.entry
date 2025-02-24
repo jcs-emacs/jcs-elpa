@@ -1,16 +1,9 @@
-(sound-async .
-	     [(20250101 1013)
-	      ((emacs
-		(26 1))
-	       (async
-		(1 9 3)))
-	      "Play sound asynchronously" tar
-	      ((:url . "https://github.com/jcs-elpa/sound-async")
-	       (:commit . "3bfef0d1e856ea05b2724d6e132617f94117a138")
-	       (:revdesc . "3bfef0d1e856")
-	       (:keywords "multimedia")
-	       (:authors
-		("Jen-Chieh" . "jcs090218@gmail.com"))
-	       (:maintainers
-		("Jen-Chieh" . "jcs090218@gmail.com"))
-	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(sound-async
+ . [(20250101 1013) ((emacs (26 1)) (async (1 9 3)))
+    "Play sound asynchronously" tar
+    ((:url . "https://github.com/jcs-elpa/sound-async")
+     (:commit . "3bfef0d1e856ea05b2724d6e132617f94117a138")
+     (:revdesc . "3bfef0d1e856") (:keywords "multimedia")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

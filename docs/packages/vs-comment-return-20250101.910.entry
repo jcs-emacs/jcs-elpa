@@ -1,14 +1,9 @@
-(vs-comment-return .
-		   [(20250101 910)
-		    ((emacs
-		      (28 1)))
-		    "Comment return like Visual Studio" tar
-		    ((:url . "https://github.com/emacs-vs/vs-comment-return")
-		     (:commit . "9e63ff5c3d494c73afefff7b442c271aa8c8ed03")
-		     (:revdesc . "9e63ff5c3d49")
-		     (:keywords "convenience")
-		     (:authors
-		      ("Jen-Chieh" . "jcs090218@gmail.com"))
-		     (:maintainers
-		      ("Jen-Chieh" . "jcs090218@gmail.com"))
-		     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(vs-comment-return
+ . [(20250101 910) ((emacs (28 1)))
+    "Comment return like Visual Studio" tar
+    ((:url . "https://github.com/emacs-vs/vs-comment-return")
+     (:commit . "9e63ff5c3d494c73afefff7b442c271aa8c8ed03")
+     (:revdesc . "9e63ff5c3d49") (:keywords "convenience")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

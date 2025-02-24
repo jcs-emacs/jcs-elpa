@@ -1,20 +1,10 @@
-(sideline-flycheck .
-		   [(20250201 1746)
-		    ((emacs
-		      (28 1))
-		     (sideline
-		      (0 1 1))
-		     (flycheck
-		      (0 14))
-		     (ht
-		      (2 4)))
-		    "Show flycheck errors with sideline" tar
-		    ((:url . "https://github.com/emacs-sideline/sideline-flycheck")
-		     (:commit . "886b0d923aeaac5e6e4cd4ab42ee6a6a18553907")
-		     (:revdesc . "886b0d923aea")
-		     (:keywords "convenience" "flycheck")
-		     (:authors
-		      ("Jen-Chieh" . "jcs090218@gmail.com"))
-		     (:maintainers
-		      ("Jen-Chieh" . "jcs090218@gmail.com"))
-		     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(sideline-flycheck
+ . [(20250201 1746)
+    ((emacs (28 1)) (sideline (0 1 1)) (flycheck (0 14)) (ht (2 4)))
+    "Show flycheck errors with sideline" tar
+    ((:url . "https://github.com/emacs-sideline/sideline-flycheck")
+     (:commit . "886b0d923aeaac5e6e4cd4ab42ee6a6a18553907")
+     (:revdesc . "886b0d923aea") (:keywords "convenience" "flycheck")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

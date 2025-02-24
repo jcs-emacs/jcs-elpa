@@ -1,20 +1,11 @@
-(sideline-emoji .
-		[(20250207 242)
-		 ((emacs
-		   (27 1))
-		  (sideline
-		   (0 1 0))
-		  (emojify
-		   (1 2 1))
-		  (ht
-		   (2 4)))
-		 "Show emoji information with sideline" tar
-		 ((:url . "https://github.com/emacs-sideline/sideline-emoji")
-		  (:commit . "3b570e3f731ad82a609dd7a46068153c65985656")
-		  (:revdesc . "3b570e3f731a")
-		  (:keywords "convenience" "sideline" "emoji")
-		  (:authors
-		   ("Jen-Chieh" . "jcs090218@gmail.com"))
-		  (:maintainers
-		   ("Jen-Chieh" . "jcs090218@gmail.com"))
-		  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(sideline-emoji
+ . [(20250207 242)
+    ((emacs (27 1)) (sideline (0 1 0)) (emojify (1 2 1)) (ht (2 4)))
+    "Show emoji information with sideline" tar
+    ((:url . "https://github.com/emacs-sideline/sideline-emoji")
+     (:commit . "3b570e3f731ad82a609dd7a46068153c65985656")
+     (:revdesc . "3b570e3f731a")
+     (:keywords "convenience" "sideline" "emoji")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

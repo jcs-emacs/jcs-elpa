@@ -1,16 +1,10 @@
-(tree-sitter .
-	     [(20250108 531)
-	      ((emacs
-		(25 1))
-	       (tsc
-		(0 18 0)))
-	      "Incremental parsing system" tar
-	      ((:url . "https://github.com/emacs-tree-sitter/elisp-tree-sitter")
-	       (:commit . "fe98d0cae7babfabd089849808d3d5aa7970ef63")
-	       (:revdesc . "fe98d0cae7ba")
-	       (:keywords "languages" "tools" "parsers" "tree-sitter")
-	       (:authors
-		("Tuấn-Anh Nguyễn" . "ubolonton@gmail.com"))
-	       (:maintainers
-		("Tuấn-Anh Nguyễn" . "ubolonton@gmail.com"))
-	       (:maintainer "Tuấn-Anh Nguyễn" . "ubolonton@gmail.com"))])
+(tree-sitter
+ . [(20250108 531) ((emacs (25 1)) (tsc (0 18 0)))
+    "Incremental parsing system" tar
+    ((:url . "https://github.com/emacs-tree-sitter/elisp-tree-sitter")
+     (:commit . "fe98d0cae7babfabd089849808d3d5aa7970ef63")
+     (:revdesc . "fe98d0cae7ba")
+     (:keywords "languages" "tools" "parsers" "tree-sitter")
+     (:authors ("Tuấn-Anh Nguyễn" . "ubolonton@gmail.com"))
+     (:maintainers ("Tuấn-Anh Nguyễn" . "ubolonton@gmail.com"))
+     (:maintainer "Tuấn-Anh Nguyễn" . "ubolonton@gmail.com"))])

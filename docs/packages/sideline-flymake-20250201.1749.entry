@@ -1,16 +1,9 @@
-(sideline-flymake .
-		  [(20250201 1749)
-		   ((emacs
-		     (28 1))
-		    (sideline
-		     (0 1 0)))
-		   "Show flymake errors with sideline" tar
-		   ((:url . "https://github.com/emacs-sideline/sideline-flymake")
-		    (:commit . "87459e2b083674520d7fc4ee36b6b04c990b2e4f")
-		    (:revdesc . "87459e2b0836")
-		    (:keywords "convenience" "flymake")
-		    (:authors
-		     ("Jen-Chieh" . "jcs090218@gmail.com"))
-		    (:maintainers
-		     ("Jen-Chieh" . "jcs090218@gmail.com"))
-		    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(sideline-flymake
+ . [(20250201 1749) ((emacs (28 1)) (sideline (0 1 0)))
+    "Show flymake errors with sideline" tar
+    ((:url . "https://github.com/emacs-sideline/sideline-flymake")
+     (:commit . "87459e2b083674520d7fc4ee36b6b04c990b2e4f")
+     (:revdesc . "87459e2b0836") (:keywords "convenience" "flymake")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

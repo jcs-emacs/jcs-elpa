@@ -1,16 +1,9 @@
-(sideline-load-cost .
-		    [(20250207 647)
-		     ((emacs
-		       (28 1))
-		      (sideline
-		       (0 1 0)))
-		     "Display load/require module size with sideline" tar
-		     ((:url . "https://github.com/emacs-sideline/sideline-load-cost")
-		      (:commit . "86637e59ad027c7c3d8d7d560ddec24dd7f04cb5")
-		      (:revdesc . "86637e59ad02")
-		      (:keywords "help")
-		      (:authors
-		       ("Jen-Chieh" . "jcs090218@gmail.com"))
-		      (:maintainers
-		       ("Jen-Chieh" . "jcs090218@gmail.com"))
-		      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(sideline-load-cost
+ . [(20250207 647) ((emacs (28 1)) (sideline (0 1 0)))
+    "Display load/require module size with sideline" tar
+    ((:url . "https://github.com/emacs-sideline/sideline-load-cost")
+     (:commit . "86637e59ad027c7c3d8d7d560ddec24dd7f04cb5")
+     (:revdesc . "86637e59ad02") (:keywords "help")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

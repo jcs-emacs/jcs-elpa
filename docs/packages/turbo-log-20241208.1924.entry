@@ -1,15 +1,9 @@
-(turbo-log .
-	   [(20241208 1924)
-	    ((emacs
-	      (29))
-	     (s
-	      (1 12 0)))
-	    "The simple package for fast log selected region" tar
-	    ((:url . "https://github.com/Artawower/turbo-log")
-	     (:commit . "8fccc8b80b847fee49c06c48acf0f88cbf850eed")
-	     (:revdesc . "8fccc8b80b84")
-	     (:authors
-	      ("Artur Yaroshenko" . "artawower@protonmail.com"))
-	     (:maintainers
-	      ("Artur Yaroshenko" . "artawower@protonmail.com"))
-	     (:maintainer "Artur Yaroshenko" . "artawower@protonmail.com"))])
+(turbo-log
+ . [(20241208 1924) ((emacs (29)) (s (1 12 0)))
+    "The simple package for fast log selected region" tar
+    ((:url . "https://github.com/Artawower/turbo-log")
+     (:commit . "8fccc8b80b847fee49c06c48acf0f88cbf850eed")
+     (:revdesc . "8fccc8b80b84")
+     (:authors ("Artur Yaroshenko" . "artawower@protonmail.com"))
+     (:maintainers ("Artur Yaroshenko" . "artawower@protonmail.com"))
+     (:maintainer "Artur Yaroshenko" . "artawower@protonmail.com"))])

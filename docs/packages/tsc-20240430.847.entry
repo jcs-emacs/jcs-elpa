@@ -1,16 +1,14 @@
-(tsc .
-     [(20240430 847)
-      ((emacs
-	(25 1)))
-      "Core Tree-sitter APIs" tar
-      ((:url . "https://github.com/emacs-tree-sitter/elisp-tree-sitter")
-       (:commit . "e67aae97dc220206a18d2a58e8bfd7a902aaf882")
-       (:revdesc . "e67aae97dc22")
-       (:keywords "languages" "tools" "parsers" "dynamic-modules" "tree-sitter")
-       (:authors
-	("Tuấn-Anh Nguyễn" . "ubolonton@gmail.com")
-	("Jorge Javier Araya Navarro" . "jorgejavieran@yahoo.com.mx"))
-       (:maintainers
-	("Tuấn-Anh Nguyễn" . "ubolonton@gmail.com")
-	("Jorge Javier Araya Navarro" . "jorgejavieran@yahoo.com.mx"))
-       (:maintainer "Tuấn-Anh Nguyễn" . "ubolonton@gmail.com"))])
+(tsc
+ . [(20240430 847) ((emacs (25 1))) "Core Tree-sitter APIs" tar
+    ((:url . "https://github.com/emacs-tree-sitter/elisp-tree-sitter")
+     (:commit . "e67aae97dc220206a18d2a58e8bfd7a902aaf882")
+     (:revdesc . "e67aae97dc22")
+     (:keywords "languages" "tools" "parsers" "dynamic-modules"
+		"tree-sitter")
+     (:authors ("Tuấn-Anh Nguyễn" . "ubolonton@gmail.com")
+	       ("Jorge Javier Araya Navarro"
+		. "jorgejavieran@yahoo.com.mx"))
+     (:maintainers ("Tuấn-Anh Nguyễn" . "ubolonton@gmail.com")
+		   ("Jorge Javier Araya Navarro"
+		    . "jorgejavieran@yahoo.com.mx"))
+     (:maintainer "Tuấn-Anh Nguyễn" . "ubolonton@gmail.com"))])
