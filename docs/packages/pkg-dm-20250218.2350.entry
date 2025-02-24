@@ -1,24 +1,11 @@
-(pkg-dm .
-	[(20250218 2350)
-	 ((emacs
-	   (28 1))
-	  (elenv
-	   (0 1 0))
-	  (msgu
-	   (0 1 0))
-	  (prt
-	   (0 1 0))
-	  (recentf-excl
-	   (0 1 0))
-	  (s
-	   (1 12 0)))
-	 "Package dependencies management" tar
-	 ((:url . "https://github.com/jcs-elpa/pkg-dm")
-	  (:commit . "9cbed5faab85491fedd93d21855915f279c17840")
-	  (:revdesc . "9cbed5faab85")
-	  (:keywords "maint")
-	  (:authors
-	   ("Jen-Chieh" . "jcs090218@gmail.com"))
-	  (:maintainers
-	   ("Jen-Chieh" . "jcs090218@gmail.com"))
-	  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(pkg-dm
+ . [(20250218 2350)
+    ((emacs (28 1)) (elenv (0 1 0)) (msgu (0 1 0)) (prt (0 1 0))
+     (recentf-excl (0 1 0)) (s (1 12 0)))
+    "Package dependencies management" tar
+    ((:url . "https://github.com/jcs-elpa/pkg-dm")
+     (:commit . "9cbed5faab85491fedd93d21855915f279c17840")
+     (:revdesc . "9cbed5faab85") (:keywords "maint")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

@@ -1,13 +1,6 @@
-(org-modern-indent .
-		   [(20241105 1504)
-		    ((emacs
-		      (27 1))
-		     (org
-		      (9 5 2))
-		     (compat
-		      (29 1 4 0)))
-		    "Org-indent blocks like org-modern" tar
-		    ((:url . "https://github.com/jdtsmith/org-modern-indent")
-		     (:commit . "b5c87056e09cc05213b7bc4c8b89f4e9498af589")
-		     (:revdesc . "b5c87056e09c")
-		     (:keywords "convenience"))])
+(org-modern-indent
+ . [(20241105 1504) ((emacs (27 1)) (org (9 5 2)) (compat (29 1 4 0)))
+    "Org-indent blocks like org-modern" tar
+    ((:url . "https://github.com/jdtsmith/org-modern-indent")
+     (:commit . "b5c87056e09cc05213b7bc4c8b89f4e9498af589")
+     (:revdesc . "b5c87056e09c") (:keywords "convenience"))])

@@ -1,6 +1,5 @@
-(point-undo .
-	    [(20211208 842)
-	     nil "Undo/redo position" tar
-	     ((:url . "https://github.com/ncaq/point-undo")
-	      (:commit . "971efe20e3ef5764587168c5510c4b65406aca02")
-	      (:revdesc . "971efe20e3ef"))])
+(point-undo
+ . [(20211208 842) nil "Undo/redo position" tar
+    ((:url . "https://github.com/ncaq/point-undo")
+     (:commit . "971efe20e3ef5764587168c5510c4b65406aca02")
+     (:revdesc . "971efe20e3ef"))])

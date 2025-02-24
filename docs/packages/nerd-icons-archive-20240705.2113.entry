@@ -1,16 +1,11 @@
-(nerd-icons-archive .
-		    [(20240705 2113)
-		     ((emacs
-		       (28 1))
-		      (nerd-icons
-		       (0 0 1)))
-		     "Shows icons for each file in archive-mode and tar-mode" tar
-		     ((:url . "https://github.com/abougouffa/nerd-icons-archive")
-		      (:commit . "9dc13f24b4c04ac85aa06719cc0e01d4415468a1")
-		      (:revdesc . "9dc13f24b4c0")
-		      (:keywords "files" "icons" "archive")
-		      (:authors
-		       ("Abdelhak Bougouffa" . "abougouffa@fedoraproject.org"))
-		      (:maintainers
-		       ("Abdelhak Bougouffa" . "abougouffa@fedoraproject.org"))
-		      (:maintainer "Abdelhak Bougouffa" . "abougouffa@fedoraproject.org"))])
+(nerd-icons-archive
+ . [(20240705 2113) ((emacs (28 1)) (nerd-icons (0 0 1)))
+    "Shows icons for each file in archive-mode and tar-mode" tar
+    ((:url . "https://github.com/abougouffa/nerd-icons-archive")
+     (:commit . "9dc13f24b4c04ac85aa06719cc0e01d4415468a1")
+     (:revdesc . "9dc13f24b4c0") (:keywords "files" "icons" "archive")
+     (:authors ("Abdelhak Bougouffa" . "abougouffa@fedoraproject.org"))
+     (:maintainers
+      ("Abdelhak Bougouffa" . "abougouffa@fedoraproject.org"))
+     (:maintainer "Abdelhak Bougouffa"
+		  . "abougouffa@fedoraproject.org"))])

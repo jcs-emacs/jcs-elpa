@@ -1,9 +1,5 @@
-(lsp-p4 .
-	[(20190127 1049)
-	 ((lsp-mode
-	   (3 0)))
-	 "P4 support for lsp-mode" tar
-	 ((:url . "https://github.com/dmakarov/p4ls")
-	  (:commit . "084e33a5782f9153502d9b03e63d9cbbe81cdaeb")
-	  (:revdesc . "084e33a5782f")
-	  (:keywords "lsp" "p4"))])
+(lsp-p4
+ . [(20190127 1049) ((lsp-mode (3 0))) "P4 support for lsp-mode" tar
+    ((:url . "https://github.com/dmakarov/p4ls")
+     (:commit . "084e33a5782f9153502d9b03e63d9cbbe81cdaeb")
+     (:revdesc . "084e33a5782f") (:keywords "lsp" "p4"))])

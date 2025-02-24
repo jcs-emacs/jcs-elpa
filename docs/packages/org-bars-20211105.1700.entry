@@ -1,18 +1,9 @@
-(org-bars .
-	  [(20211105 1700)
-	   ((emacs
-	     (27 1))
-	    (dash
-	     (2 17 0))
-	    (s
-	     (1 12 0)))
-	   "Add bars to virtual indentation" tar
-	   ((:url . "https://github.com/tonyaldon/org-bars")
-	    (:commit . "94c37f63fcfec9cdde6b99457b4dac5275589d95")
-	    (:revdesc . "94c37f63fcfe")
-	    (:keywords "outlines")
-	    (:authors
-	     ("Tony Aldon" . "tony.aldon.adm@gmail.com"))
-	    (:maintainers
-	     ("Tony Aldon" . "tony.aldon.adm@gmail.com"))
-	    (:maintainer "Tony Aldon" . "tony.aldon.adm@gmail.com"))])
+(org-bars
+ . [(20211105 1700) ((emacs (27 1)) (dash (2 17 0)) (s (1 12 0)))
+    "Add bars to virtual indentation" tar
+    ((:url . "https://github.com/tonyaldon/org-bars")
+     (:commit . "94c37f63fcfec9cdde6b99457b4dac5275589d95")
+     (:revdesc . "94c37f63fcfe") (:keywords "outlines")
+     (:authors ("Tony Aldon" . "tony.aldon.adm@gmail.com"))
+     (:maintainers ("Tony Aldon" . "tony.aldon.adm@gmail.com"))
+     (:maintainer "Tony Aldon" . "tony.aldon.adm@gmail.com"))])

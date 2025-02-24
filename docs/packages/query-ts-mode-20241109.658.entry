@@ -1,16 +1,10 @@
-(query-ts-mode .
-	       [(20241109 658)
-		((emacs
-		  (29 1))
-		 (dash
-		  (2 18 0)))
-		"Tree-sitter support for tree-sitter queries" tar
-		((:url . "https://github.com/nverno/query-ts-mode")
-		 (:commit . "109b1c35c8f384809e3525c011a4bc664ff8884a")
-		 (:revdesc . "109b1c35c8f3")
-		 (:keywords "languages" "tree-sitter" "query")
-		 (:authors
-		  ("Noah Peart" . "noah.v.peart@gmail.com"))
-		 (:maintainers
-		  ("Noah Peart" . "noah.v.peart@gmail.com"))
-		 (:maintainer "Noah Peart" . "noah.v.peart@gmail.com"))])
+(query-ts-mode
+ . [(20241109 658) ((emacs (29 1)) (dash (2 18 0)))
+    "Tree-sitter support for tree-sitter queries" tar
+    ((:url . "https://github.com/nverno/query-ts-mode")
+     (:commit . "109b1c35c8f384809e3525c011a4bc664ff8884a")
+     (:revdesc . "109b1c35c8f3")
+     (:keywords "languages" "tree-sitter" "query")
+     (:authors ("Noah Peart" . "noah.v.peart@gmail.com"))
+     (:maintainers ("Noah Peart" . "noah.v.peart@gmail.com"))
+     (:maintainer "Noah Peart" . "noah.v.peart@gmail.com"))])

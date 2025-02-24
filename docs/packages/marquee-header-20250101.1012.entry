@@ -1,14 +1,10 @@
-(marquee-header .
-		[(20250101 1012)
-		 ((emacs
-		   (26 1)))
-		 "Code interface for displaying marquee in header" tar
-		 ((:url . "https://github.com/jcs-elpa/marquee-header")
-		  (:commit . "5f40543099ffe55b64dbcc57308dff7efe948bbe")
-		  (:revdesc . "5f40543099ff")
-		  (:keywords "wp" "animation" "marquee")
-		  (:authors
-		   ("Jen-Chieh" . "jcs090218@gmail.com"))
-		  (:maintainers
-		   ("Jen-Chieh" . "jcs090218@gmail.com"))
-		  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(marquee-header
+ . [(20250101 1012) ((emacs (26 1)))
+    "Code interface for displaying marquee in header" tar
+    ((:url . "https://github.com/jcs-elpa/marquee-header")
+     (:commit . "5f40543099ffe55b64dbcc57308dff7efe948bbe")
+     (:revdesc . "5f40543099ff")
+     (:keywords "wp" "animation" "marquee")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

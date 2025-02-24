@@ -1,19 +1,15 @@
-(package-build .
-	       [(20250221 1523)
-		((emacs
-		  (26 1))
-		 (compat
-		  (30 0 0 0)))
-		"Tools for assembling a package archive" tar
-		((:url . "https://github.com/melpa/package-build")
-		 (:commit . "df9d860dba32048770d285d0aeaf52e3ae016864")
-		 (:revdesc . "df9d860dba32")
-		 (:keywords "maint" "tools")
-		 (:authors
-		  ("Donald Ephraim Curtis" . "dcurtis@milkbox.net")
-		  ("Steve Purcell" . "steve@sanityinc.com")
-		  ("Jonas Bernoulli" . "emacs.package-build@jonas.bernoulli.dev")
-		  ("Phil Hagelberg" . "technomancy@gmail.com"))
-		 (:maintainers
-		  ("Jonas Bernoulli" . "emacs.package-build@jonas.bernoulli.dev"))
-		 (:maintainer "Jonas Bernoulli" . "emacs.package-build@jonas.bernoulli.dev"))])
+(package-build
+ . [(20250221 1523) ((emacs (26 1)) (compat (30 0 0 0)))
+    "Tools for assembling a package archive" tar
+    ((:url . "https://github.com/melpa/package-build")
+     (:commit . "df9d860dba32048770d285d0aeaf52e3ae016864")
+     (:revdesc . "df9d860dba32") (:keywords "maint" "tools")
+     (:authors ("Donald Ephraim Curtis" . "dcurtis@milkbox.net")
+	       ("Steve Purcell" . "steve@sanityinc.com")
+	       ("Jonas Bernoulli"
+		. "emacs.package-build@jonas.bernoulli.dev")
+	       ("Phil Hagelberg" . "technomancy@gmail.com"))
+     (:maintainers
+      ("Jonas Bernoulli" . "emacs.package-build@jonas.bernoulli.dev"))
+     (:maintainer "Jonas Bernoulli"
+		  . "emacs.package-build@jonas.bernoulli.dev"))])

@@ -1,14 +1,9 @@
-(mode-minder .
-	     [(20240109 2307)
-	      ((emacs
-		(27 1)))
-	      "List all major and minor modes" tar
-	      ((:url . "https://github.com/jdtsmith/mode-minder")
-	       (:commit . "5ada69ca537d7b06daddf6181419b9205415eb89")
-	       (:revdesc . "5ada69ca537d")
-	       (:keywords "modes")
-	       (:authors
-		("J.D. Smith" . "jdtsmith@gmail.com"))
-	       (:maintainers
-		("J.D. Smith" . "jdtsmith@gmail.com"))
-	       (:maintainer "J.D. Smith" . "jdtsmith@gmail.com"))])
+(mode-minder
+ . [(20240109 2307) ((emacs (27 1))) "List all major and minor modes"
+    tar
+    ((:url . "https://github.com/jdtsmith/mode-minder")
+     (:commit . "5ada69ca537d7b06daddf6181419b9205415eb89")
+     (:revdesc . "5ada69ca537d") (:keywords "modes")
+     (:authors ("J.D. Smith" . "jdtsmith@gmail.com"))
+     (:maintainers ("J.D. Smith" . "jdtsmith@gmail.com"))
+     (:maintainer "J.D. Smith" . "jdtsmith@gmail.com"))])

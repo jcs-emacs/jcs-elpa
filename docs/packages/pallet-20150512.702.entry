@@ -1,7 +1,5 @@
-(pallet .
-	[(20150512 702)
-	 nil "Manage your packages with Cask" tar
-	 ((:url . "https://github.com/rdallasgray/pallet")
-	  (:commit . "0e1ae11e1ebfe644cbf832df62ac2dbf6ecd0501")
-	  (:revdesc . "0e1ae11e1ebf")
-	  (:keywords "elpa" "package"))])
+(pallet
+ . [(20150512 702) nil "Manage your packages with Cask" tar
+    ((:url . "https://github.com/rdallasgray/pallet")
+     (:commit . "0e1ae11e1ebfe644cbf832df62ac2dbf6ecd0501")
+     (:revdesc . "0e1ae11e1ebf") (:keywords "elpa" "package"))])

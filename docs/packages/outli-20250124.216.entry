@@ -1,14 +1,9 @@
-(outli .
-       [(20250124 216)
-	((emacs
-	  (27 1)))
-	"Org-like code outliner" tar
-	((:url . "https://github.com/jdtsmith/outli")
-	 (:commit . "dac7eae336bdea306637a801e51040f8065d382f")
-	 (:revdesc . "dac7eae336bd")
-	 (:keywords "convenience" "outlines" "org")
-	 (:authors
-	  ("J.D. Smith" . "jdtsmith@gmail.com"))
-	 (:maintainers
-	  ("J.D. Smith" . "jdtsmith@gmail.com"))
-	 (:maintainer "J.D. Smith" . "jdtsmith@gmail.com"))])
+(outli
+ . [(20250124 216) ((emacs (27 1))) "Org-like code outliner" tar
+    ((:url . "https://github.com/jdtsmith/outli")
+     (:commit . "dac7eae336bdea306637a801e51040f8065d382f")
+     (:revdesc . "dac7eae336bd")
+     (:keywords "convenience" "outlines" "org")
+     (:authors ("J.D. Smith" . "jdtsmith@gmail.com"))
+     (:maintainers ("J.D. Smith" . "jdtsmith@gmail.com"))
+     (:maintainer "J.D. Smith" . "jdtsmith@gmail.com"))])

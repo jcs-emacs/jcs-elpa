@@ -1,13 +1,9 @@
-(lsp-compose .
-	     [(20200515 1833)
-	      ((emacs
-		(26)))
-	      "Lsp-mode client for compose server" tar
-	      ((:url . "https://github.com/lepisma/compose-language-server.el")
-	       (:commit . "44df194778503cd2e29e907af4c6989c7ea27d1c")
-	       (:revdesc . "44df19477850")
-	       (:authors
-		("Abhinav Tushar" . "abhinav@lepisma.xyz"))
-	       (:maintainers
-		("Abhinav Tushar" . "abhinav@lepisma.xyz"))
-	       (:maintainer "Abhinav Tushar" . "abhinav@lepisma.xyz"))])
+(lsp-compose
+ . [(20200515 1833) ((emacs (26)))
+    "Lsp-mode client for compose server" tar
+    ((:url . "https://github.com/lepisma/compose-language-server.el")
+     (:commit . "44df194778503cd2e29e907af4c6989c7ea27d1c")
+     (:revdesc . "44df19477850")
+     (:authors ("Abhinav Tushar" . "abhinav@lepisma.xyz"))
+     (:maintainers ("Abhinav Tushar" . "abhinav@lepisma.xyz"))
+     (:maintainer "Abhinav Tushar" . "abhinav@lepisma.xyz"))])
