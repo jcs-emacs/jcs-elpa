@@ -1,15 +1,9 @@
-(company-bootstrap .
-		   [(20240219 2347)
-		    ((emacs
-		      (24 3))
-		     (company
-		      (0 9 10)))
-		    "A company backend for bootstrap" tar
-		    ((:url . "https://github.com/typefo/company-bootstrap")
-		     (:commit . "3df09598c50c824b1dfe2b9d2f2aa95b1e55995e")
-		     (:revdesc . "3df09598c50c")
-		     (:authors
-		      ("typefo" . "typefo@hotmail.com"))
-		     (:maintainers
-		      ("typefo" . "typefo@hotmail.com"))
-		     (:maintainer "typefo" . "typefo@hotmail.com"))])
+(company-bootstrap
+ . [(20240219 2347) ((emacs (24 3)) (company (0 9 10)))
+    "A company backend for bootstrap" tar
+    ((:url . "https://github.com/typefo/company-bootstrap")
+     (:commit . "3df09598c50c824b1dfe2b9d2f2aa95b1e55995e")
+     (:revdesc . "3df09598c50c")
+     (:authors ("typefo" . "typefo@hotmail.com"))
+     (:maintainers ("typefo" . "typefo@hotmail.com"))
+     (:maintainer "typefo" . "typefo@hotmail.com"))])

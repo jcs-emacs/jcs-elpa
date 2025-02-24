@@ -1,18 +1,11 @@
-(chatgpt-sideline .
-		  [(20250101 913)
-		   ((emacs
-		     (27 1))
-		    (chatgpt
-		     (0 1 0))
-		    (sideline
-		     (0 1 0)))
-		   "Sideline support for chatgpt" tar
-		   ((:url . "https://github.com/emacs-openai/chatgpt-sideline")
-		    (:commit . "01691093271f57a237ed56451afef6ed8410a754")
-		    (:revdesc . "01691093271f")
-		    (:keywords "convenience" "chatgpt" "ai")
-		    (:authors
-		     ("Jen-Chieh" . "jcs090218@gmail.com"))
-		    (:maintainers
-		     ("Jen-Chieh" . "jcs090218@gmail.com"))
-		    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(chatgpt-sideline
+ . [(20250101 913)
+    ((emacs (27 1)) (chatgpt (0 1 0)) (sideline (0 1 0)))
+    "Sideline support for chatgpt" tar
+    ((:url . "https://github.com/emacs-openai/chatgpt-sideline")
+     (:commit . "01691093271f57a237ed56451afef6ed8410a754")
+     (:revdesc . "01691093271f")
+     (:keywords "convenience" "chatgpt" "ai")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

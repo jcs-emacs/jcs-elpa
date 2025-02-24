@@ -1,17 +1,11 @@
-(colorful-mode .
-	       [(20250216 521)
-		((emacs
-		  (28 1))
-		 (compat
-		  (29 1 4 4)))
-		"Preview any color in your buffer in real time" tar
-		((:url . "https://github.com/DevelopmentCool2449/colorful-mode")
-		 (:commit . "d6d093e55ea63ce3c2b7524f4ffb9ff7cf10cfc9")
-		 (:revdesc . "d6d093e55ea6")
-		 (:keywords "faces" "tools" "matching" "convenience")
-		 (:authors
-		  ("Elias G. Perez" . "eg642616@gmail.com"))
-		 (:maintainers
-		  ("Jen-Chieh" . "jcs090218@gmail.com")
-		  ("Elias G. Perez" . "eg642616@gmail.com"))
-		 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(colorful-mode
+ . [(20250216 521) ((emacs (28 1)) (compat (29 1 4 4)))
+    "Preview any color in your buffer in real time" tar
+    ((:url . "https://github.com/DevelopmentCool2449/colorful-mode")
+     (:commit . "d6d093e55ea63ce3c2b7524f4ffb9ff7cf10cfc9")
+     (:revdesc . "d6d093e55ea6")
+     (:keywords "faces" "tools" "matching" "convenience")
+     (:authors ("Elias G. Perez" . "eg642616@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com")
+		   ("Elias G. Perez" . "eg642616@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

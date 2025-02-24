@@ -1,18 +1,10 @@
-(buffer-menu-project .
-		     [(20250101 1005)
-		      ((emacs
-			(25 1))
-		       (project
-			(0 8 1))
-		       (f
-			(0 20 0)))
-		      "List buffers relative to project" tar
-		      ((:url . "https://github.com/jcs-elpa/buffer-menu-project")
-		       (:commit . "dcca47d4c21e7cf7d773f371cdab03501f32d991")
-		       (:revdesc . "dcca47d4c21e")
-		       (:keywords "convenience" "buffer" "menu" "project")
-		       (:authors
-			("Jen-Chieh" . "jcs090218@gmail.com"))
-		       (:maintainers
-			("Jen-Chieh" . "jcs090218@gmail.com"))
-		       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(buffer-menu-project
+ . [(20250101 1005) ((emacs (25 1)) (project (0 8 1)) (f (0 20 0)))
+    "List buffers relative to project" tar
+    ((:url . "https://github.com/jcs-elpa/buffer-menu-project")
+     (:commit . "dcca47d4c21e7cf7d773f371cdab03501f32d991")
+     (:revdesc . "dcca47d4c21e")
+     (:keywords "convenience" "buffer" "menu" "project")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

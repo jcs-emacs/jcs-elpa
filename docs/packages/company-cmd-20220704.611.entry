@@ -1,16 +1,8 @@
-(company-cmd .
-	     [(20220704 611)
-	      ((emacs
-		(26 1))
-	       (company
-		(0 8 12))
-	       (ht
-		(2 4)))
-	      "Company backend for cmd/batch" tar
-	      ((:url . "https://github.com/elp-revive/company-cmd")
-	       (:commit . "cf393156e92fb2ac503dfa328e7e96b547fc2a97")
-	       (:revdesc . "cf393156e92f")
-	       (:keywords "convenience")
-	       (:maintainers
-		("Jen-Chieh Shen" . "jcs090218@gmail.com"))
-	       (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com"))])
+(company-cmd
+ . [(20220704 611) ((emacs (26 1)) (company (0 8 12)) (ht (2 4)))
+    "Company backend for cmd/batch" tar
+    ((:url . "https://github.com/elp-revive/company-cmd")
+     (:commit . "cf393156e92fb2ac503dfa328e7e96b547fc2a97")
+     (:revdesc . "cf393156e92f") (:keywords "convenience")
+     (:maintainers ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com"))])

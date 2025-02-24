@@ -1,14 +1,9 @@
-(clean-buffers .
-	       [(20240715 2355)
-		((emacs
-		  (26 1)))
-		"Clean useless buffers" tar
-		((:url . "https://github.com/elp-revive/clean-buffers")
-		 (:commit . "fec82f624da40b85e74cc0ea75e29c28d247911d")
-		 (:revdesc . "fec82f624da4")
-		 (:keywords "convenience" "usability" "buffers")
-		 (:authors
-		  ("DarkSun" . "lujun9972@gmail.com"))
-		 (:maintainers
-		  ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
-		 (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com"))])
+(clean-buffers
+ . [(20240715 2355) ((emacs (26 1))) "Clean useless buffers" tar
+    ((:url . "https://github.com/elp-revive/clean-buffers")
+     (:commit . "fec82f624da40b85e74cc0ea75e29c28d247911d")
+     (:revdesc . "fec82f624da4")
+     (:keywords "convenience" "usability" "buffers")
+     (:authors ("DarkSun" . "lujun9972@gmail.com"))
+     (:maintainers ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com"))])

@@ -1,20 +1,12 @@
-(codemetrics .
-	     [(20250101 906)
-	      ((emacs
-		(27 1))
-	       (tree-sitter
-		(0 15 1))
-	       (s
-		(1 12 0))
-	       (dash
-		(2 19 1)))
-	      "Plugin shows complexity information" tar
-	      ((:url . "https://github.com/emacs-vs/codemetrics")
-	       (:commit . "b0b23050ab097f8f25727ebd9ace400b16920080")
-	       (:revdesc . "b0b23050ab09")
-	       (:keywords "convenience" "complexity")
-	       (:authors
-		("Jen-Chieh" . "jcs090218@gmail.com"))
-	       (:maintainers
-		("Jen-Chieh" . "jcs090218@gmail.com"))
-	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(codemetrics
+ . [(20250101 906)
+    ((emacs (27 1)) (tree-sitter (0 15 1)) (s (1 12 0))
+     (dash (2 19 1)))
+    "Plugin shows complexity information" tar
+    ((:url . "https://github.com/emacs-vs/codemetrics")
+     (:commit . "b0b23050ab097f8f25727ebd9ace400b16920080")
+     (:revdesc . "b0b23050ab09")
+     (:keywords "convenience" "complexity")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
