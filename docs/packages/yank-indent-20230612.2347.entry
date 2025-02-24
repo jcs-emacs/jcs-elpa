@@ -1,14 +1,10 @@
-(yank-indent .
-	     [(20230612 2347)
-	      ((emacs
-		(25 1)))
-	      "Automatically indent yanked text" tar
-	      ((:url . "https://github.com/jimeh/yank-indent")
-	       (:commit . "15fd7271bd8b5ff085eacaf047c97530a5af236d")
-	       (:revdesc . "15fd7271bd8b")
-	       (:keywords "convenience" "yank" "indent")
-	       (:authors
-		("Jim Myhrberg" . "contact@jimeh.me"))
-	       (:maintainers
-		("Jim Myhrberg" . "contact@jimeh.me"))
-	       (:maintainer "Jim Myhrberg" . "contact@jimeh.me"))])
+(yank-indent
+ . [(20230612 2347) ((emacs (25 1)))
+    "Automatically indent yanked text" tar
+    ((:url . "https://github.com/jimeh/yank-indent")
+     (:commit . "15fd7271bd8b5ff085eacaf047c97530a5af236d")
+     (:revdesc . "15fd7271bd8b")
+     (:keywords "convenience" "yank" "indent")
+     (:authors ("Jim Myhrberg" . "contact@jimeh.me"))
+     (:maintainers ("Jim Myhrberg" . "contact@jimeh.me"))
+     (:maintainer "Jim Myhrberg" . "contact@jimeh.me"))])

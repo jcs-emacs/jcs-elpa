@@ -1,20 +1,11 @@
-(vs-edit-mode .
-	      [(20250206 121)
-	       ((emacs
-		 (27 1))
-		(mwim
-		 (0 4))
-		(ts-fold
-		 (0 1 0))
-		(noflet
-		 (0 0 15)))
-	       "Minor mode accomplish editing experience in Visual Studio" tar
-	       ((:url . "https://github.com/emacs-vs/vs-edit-mode")
-		(:commit . "b51813a333a4077d72b9dbe931ea38cee16f6bf2")
-		(:revdesc . "b51813a333a4")
-		(:keywords "convenience" "editing" "vs")
-		(:authors
-		 ("Jen-Chieh" . "jcs090218@gmail.com"))
-		(:maintainers
-		 ("Jen-Chieh" . "jcs090218@gmail.com"))
-		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(vs-edit-mode
+ . [(20250206 121)
+    ((emacs (27 1)) (mwim (0 4)) (ts-fold (0 1 0)) (noflet (0 0 15)))
+    "Minor mode accomplish editing experience in Visual Studio" tar
+    ((:url . "https://github.com/emacs-vs/vs-edit-mode")
+     (:commit . "b51813a333a4077d72b9dbe931ea38cee16f6bf2")
+     (:revdesc . "b51813a333a4")
+     (:keywords "convenience" "editing" "vs")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

@@ -1,14 +1,10 @@
-(vs-electric-spacing .
-		     [(20250101 910)
-		      ((emacs
-			(26 1)))
-		      "Add spacing around operators like Visual Studio" tar
-		      ((:url . "https://github.com/jcs-elpa/vs-electric-spacing")
-		       (:commit . "c2bef4c495fc335e9a155e76f14a19bb14f51f4c")
-		       (:revdesc . "c2bef4c495fc")
-		       (:keywords "convenience" "electric" "vs")
-		       (:authors
-			("Jen-Chieh" . "jcs090218@gmail.com"))
-		       (:maintainers
-			("Jen-Chieh" . "jcs090218@gmail.com"))
-		       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(vs-electric-spacing
+ . [(20250101 910) ((emacs (26 1)))
+    "Add spacing around operators like Visual Studio" tar
+    ((:url . "https://github.com/jcs-elpa/vs-electric-spacing")
+     (:commit . "c2bef4c495fc335e9a155e76f14a19bb14f51f4c")
+     (:revdesc . "c2bef4c495fc")
+     (:keywords "convenience" "electric" "vs")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

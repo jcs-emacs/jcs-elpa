@@ -1,24 +1,12 @@
-(vsc-edit-mode .
-	       [(20250101 910)
-		((emacs
-		  (26 1))
-		 (indent-control
-		  (0 1 0))
-		 (company
-		  (0 8 12))
-		 (yasnippet
-		  (0 8 0))
-		 (msgu
-		  (0 1 0))
-		 (mwim
-		  (0 4)))
-		"Implement editing experience like VSCode" tar
-		((:url . "https://github.com/emacs-vs/vsc-edit-mode")
-		 (:commit . "237bb53e4cb42c3a5814d02c7dbad9f999becb3e")
-		 (:revdesc . "237bb53e4cb4")
-		 (:keywords "convenience" "editing" "vs")
-		 (:authors
-		  ("Jen-Chieh" . "jcs090218@gmail.com"))
-		 (:maintainers
-		  ("Jen-Chieh" . "jcs090218@gmail.com"))
-		 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(vsc-edit-mode
+ . [(20250101 910)
+    ((emacs (26 1)) (indent-control (0 1 0)) (company (0 8 12))
+     (yasnippet (0 8 0)) (msgu (0 1 0)) (mwim (0 4)))
+    "Implement editing experience like VSCode" tar
+    ((:url . "https://github.com/emacs-vs/vsc-edit-mode")
+     (:commit . "237bb53e4cb42c3a5814d02c7dbad9f999becb3e")
+     (:revdesc . "237bb53e4cb4")
+     (:keywords "convenience" "editing" "vs")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
