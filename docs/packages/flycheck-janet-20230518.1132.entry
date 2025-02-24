@@ -1,8 +1,6 @@
-(flycheck-janet .
-		[(20230518 1132)
-		 ((flycheck
-		   (0 18)))
-		 "Add janet linter to flycheck" tar
-		 ((:url . "https://github.com/sogaiu/flycheck-janet")
-		  (:commit . "1f3b8796ffc57a6aefcb38063d46cb4787b04fe1")
-		  (:revdesc . "1f3b8796ffc5"))])
+(flycheck-janet
+ . [(20230518 1132) ((flycheck (0 18))) "Add janet linter to flycheck"
+    tar
+    ((:url . "https://github.com/sogaiu/flycheck-janet")
+     (:commit . "1f3b8796ffc57a6aefcb38063d46cb4787b04fe1")
+     (:revdesc . "1f3b8796ffc5"))])

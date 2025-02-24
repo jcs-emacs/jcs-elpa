@@ -1,26 +1,11 @@
-(dall-e .
-	[(20250101 914)
-	 ((emacs
-	   (27 1))
-	  (openai
-	   (0 1 0))
-	  (lv
-	   (0 0))
-	  (ht
-	   (2 0))
-	  (spinner
-	   (1 7 4))
-	  (reveal-in-folder
-	   (0 1 2))
-	  (async
-	   (1 9 3)))
-	 "Use DALL-E inside Emacs" tar
-	 ((:url . "https://github.com/emacs-openai/dall-e")
-	  (:commit . "3289414d54f4af75ac12be7c4ca6bed21f1b13ea")
-	  (:revdesc . "3289414d54f4")
-	  (:keywords "comm" "dall-e")
-	  (:authors
-	   ("Jen-Chieh" . "jcs090218@gmail.com"))
-	  (:maintainers
-	   ("Jen-Chieh" . "jcs090218@gmail.com"))
-	  (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(dall-e
+ . [(20250101 914)
+    ((emacs (27 1)) (openai (0 1 0)) (lv (0 0)) (ht (2 0))
+     (spinner (1 7 4)) (reveal-in-folder (0 1 2)) (async (1 9 3)))
+    "Use DALL-E inside Emacs" tar
+    ((:url . "https://github.com/emacs-openai/dall-e")
+     (:commit . "3289414d54f4af75ac12be7c4ca6bed21f1b13ea")
+     (:revdesc . "3289414d54f4") (:keywords "comm" "dall-e")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

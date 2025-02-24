@@ -1,14 +1,10 @@
-(file-header .
-	     [(20250101 1007)
-	      ((emacs
-		(28 1)))
-	      "Highly customizable self design file header" tar
-	      ((:url . "https://github.com/jcs-elpa/file-header")
-	       (:commit . "61decef46d2c6abe86adc38848fd5ce45d25ba62")
-	       (:revdesc . "61decef46d2c")
-	       (:keywords "convenience" "file" "header")
-	       (:authors
-		("Jen-Chieh" . "jcs090218@gmail.com"))
-	       (:maintainers
-		("Jen-Chieh" . "jcs090218@gmail.com"))
-	       (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(file-header
+ . [(20250101 1007) ((emacs (28 1)))
+    "Highly customizable self design file header" tar
+    ((:url . "https://github.com/jcs-elpa/file-header")
+     (:commit . "61decef46d2c6abe86adc38848fd5ce45d25ba62")
+     (:revdesc . "61decef46d2c")
+     (:keywords "convenience" "file" "header")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

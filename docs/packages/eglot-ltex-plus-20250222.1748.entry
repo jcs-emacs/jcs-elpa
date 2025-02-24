@@ -1,18 +1,10 @@
-(eglot-ltex-plus .
-		 [(20250222 1748)
-		  ((emacs
-		    (29 1))
-		   (eglot
-		    (1 4))
-		   (f
-		    (0 20 0)))
-		  "Eglot Clients for LTEX+" tar
-		  ((:url . "https://github.com/emacs-languagetool/eglot-ltex-plus")
-		   (:commit . "b9507df0e80902414b193b9c571904f3f54ea2a1")
-		   (:revdesc . "b9507df0e809")
-		   (:keywords "convenience" "eglot" "languagetool" "checker")
-		   (:authors
-		    ("Jen-Chieh" . "jcs090218@gmail.com"))
-		   (:maintainers
-		    ("Jen-Chieh" . "jcs090218@gmail.com"))
-		   (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(eglot-ltex-plus
+ . [(20250222 1748) ((emacs (29 1)) (eglot (1 4)) (f (0 20 0)))
+    "Eglot Clients for LTEX+" tar
+    ((:url . "https://github.com/emacs-languagetool/eglot-ltex-plus")
+     (:commit . "b9507df0e80902414b193b9c571904f3f54ea2a1")
+     (:revdesc . "b9507df0e809")
+     (:keywords "convenience" "eglot" "languagetool" "checker")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

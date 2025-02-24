@@ -1,12 +1,9 @@
-(echo-bar .
-	  [(20250208 910)
-	   nil "Turn the echo area into a custom status bar" tar
-	   ((:url . "https://github.com/elp-revive/echo-bar.el")
-	    (:commit . "d087ed32d77ac4bb293a5c8e335e61998c82dbef")
-	    (:revdesc . "d087ed32d77a")
-	    (:keywords "convenience" "tools")
-	    (:authors
-	     ("Adam Tillou" . "qaiviq@gmail.com"))
-	    (:maintainers
-	     ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
-	    (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com"))])
+(echo-bar
+ . [(20250208 910) nil "Turn the echo area into a custom status bar"
+    tar
+    ((:url . "https://github.com/elp-revive/echo-bar.el")
+     (:commit . "d087ed32d77ac4bb293a5c8e335e61998c82dbef")
+     (:revdesc . "d087ed32d77a") (:keywords "convenience" "tools")
+     (:authors ("Adam Tillou" . "qaiviq@gmail.com"))
+     (:maintainers ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com"))])

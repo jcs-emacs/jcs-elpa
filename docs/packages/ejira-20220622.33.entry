@@ -1,14 +1,9 @@
-(ejira .
-       [(20220622 33)
-	((emacs
-	  (26 1)))
-	"Org-mode interface to JIRA" tar
-	((:url . "https://github.com/nyyManni/ejira")
-	 (:commit . "49cb61239b19bf13775528231d7d49656ec7a8bb")
-	 (:revdesc . "49cb61239b19")
-	 (:keywords "calendar" "data" "org" "jira")
-	 (:authors
-	  ("Henrik Nyman" . "h@nyymanni.com"))
-	 (:maintainers
-	  ("Henrik Nyman" . "h@nyymanni.com"))
-	 (:maintainer "Henrik Nyman" . "h@nyymanni.com"))])
+(ejira
+ . [(20220622 33) ((emacs (26 1))) "Org-mode interface to JIRA" tar
+    ((:url . "https://github.com/nyyManni/ejira")
+     (:commit . "49cb61239b19bf13775528231d7d49656ec7a8bb")
+     (:revdesc . "49cb61239b19")
+     (:keywords "calendar" "data" "org" "jira")
+     (:authors ("Henrik Nyman" . "h@nyymanni.com"))
+     (:maintainers ("Henrik Nyman" . "h@nyymanni.com"))
+     (:maintainer "Henrik Nyman" . "h@nyymanni.com"))])

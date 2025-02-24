@@ -1,16 +1,10 @@
-(dashboard-ls .
-	      [(20250101 845)
-	       ((emacs
-		 (26 1))
-		(dashboard
-		 (1 2 5)))
-	       "Display files/directories in current directory on Dashboard" tar
-	       ((:url . "https://github.com/emacs-dashboard/dashboard-ls")
-		(:commit . "4eea843e5b7dcc4fe23eaf67b163ed7b13b56613")
-		(:revdesc . "4eea843e5b7d")
-		(:keywords "convenience" "directory" "file" "show")
-		(:authors
-		 ("Jen-Chieh" . "jcs090218@gmail.com"))
-		(:maintainers
-		 ("Jen-Chieh" . "jcs090218@gmail.com"))
-		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(dashboard-ls
+ . [(20250101 845) ((emacs (26 1)) (dashboard (1 2 5)))
+    "Display files/directories in current directory on Dashboard" tar
+    ((:url . "https://github.com/emacs-dashboard/dashboard-ls")
+     (:commit . "4eea843e5b7dcc4fe23eaf67b163ed7b13b56613")
+     (:revdesc . "4eea843e5b7d")
+     (:keywords "convenience" "directory" "file" "show")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

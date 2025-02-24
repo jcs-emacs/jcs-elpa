@@ -1,16 +1,9 @@
-(cycle-case-style .
-		  [(20250101 1006)
-		   ((emacs
-		     (28 1))
-		    (change-case
-		     (9)))
-		   "Cycle through case style (PascalCase, camelCase, etc)" tar
-		   ((:url . "https://github.com/jcs-elpa/cycle-case-style")
-		    (:commit . "d738843b9c647b142b588a1b452497dd3096e175")
-		    (:revdesc . "d738843b9c64")
-		    (:keywords "convenience")
-		    (:authors
-		     ("Jen-Chieh" . "jcs090218@gmail.com"))
-		    (:maintainers
-		     ("Jen-Chieh" . "jcs090218@gmail.com"))
-		    (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(cycle-case-style
+ . [(20250101 1006) ((emacs (28 1)) (change-case (9)))
+    "Cycle through case style (PascalCase, camelCase, etc)" tar
+    ((:url . "https://github.com/jcs-elpa/cycle-case-style")
+     (:commit . "d738843b9c647b142b588a1b452497dd3096e175")
+     (:revdesc . "d738843b9c64") (:keywords "convenience")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

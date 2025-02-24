@@ -1,15 +1,9 @@
-(eglot-uniteai .
-	       [(20250101 914)
-		((emacs
-		  (26 1)))
-		"Eglot Clients for UniteAI" tar
-		((:url . "https://github.com/emacs-openai/eglot-uniteai")
-		 (:commit . "21fde282d9672ac6e575bbae9e9446b794869b77")
-		 (:revdesc . "21fde282d967")
-		 (:keywords "convenience" "ai")
-		 (:authors
-		  ("Josh Freckleton" . "freckletonj@gmail.com")
-		  ("Jen-Chieh" . "jcs090218@gmail.com"))
-		 (:maintainers
-		  ("Jen-Chieh" . "jcs090218@gmail.com"))
-		 (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(eglot-uniteai
+ . [(20250101 914) ((emacs (26 1))) "Eglot Clients for UniteAI" tar
+    ((:url . "https://github.com/emacs-openai/eglot-uniteai")
+     (:commit . "21fde282d9672ac6e575bbae9e9446b794869b77")
+     (:revdesc . "21fde282d967") (:keywords "convenience" "ai")
+     (:authors ("Josh Freckleton" . "freckletonj@gmail.com")
+	       ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

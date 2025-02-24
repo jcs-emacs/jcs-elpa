@@ -1,16 +1,8 @@
-(dashboard-bm .
-	      [(20250101 847)
-	       ((emacs
-		 (26 1))
-		(dashboard
-		 (1 2 5))
-		(bm
-		 (0)))
-	       "Visual Bookmarks for Dashboard" tar
-	       ((:url . "https://github.com/emacs-dashboard/dashboard-bm")
-		(:commit . "ed25585696784543486b4a223ccb50a22a90cd53")
-		(:revdesc . "ed2558569678")
-		(:keywords "tools")
-		(:maintainers
-		 ("Jen-Chieh" . "jcs090218@gmail.com"))
-		(:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
+(dashboard-bm
+ . [(20250101 847) ((emacs (26 1)) (dashboard (1 2 5)) (bm (0)))
+    "Visual Bookmarks for Dashboard" tar
+    ((:url . "https://github.com/emacs-dashboard/dashboard-bm")
+     (:commit . "ed25585696784543486b4a223ccb50a22a90cd53")
+     (:revdesc . "ed2558569678") (:keywords "tools")
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
