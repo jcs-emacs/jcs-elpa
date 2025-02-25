@@ -1,9 +1,9 @@
 (flycheck-overlay
- . [(20250215 1434) ((emacs (27 1)) (flycheck (0 23)))
+ . [(20250225 642) ((emacs (27 1)) (flycheck (0 23)))
     "Display Flycheck errors with overlays" tar
     ((:url . "https://github.com/yourusername/flycheck-overlay")
-     (:commit . "acf6cc9b8b80041a2a1665775566cefcdfd306ee")
-     (:revdesc . "acf6cc9b8b80") (:keywords "convenience" "tools")
+     (:commit . "7e3ab2a99706be3bcc8a3aa3fad80e5facb748c4")
+     (:revdesc . "7e3ab2a99706") (:keywords "convenience" "tools")
      (:authors ("Mikael Konradsson" . "mikael.konradsson@outlook.com"))
      (:maintainers
       ("Mikael Konradsson" . "mikael.konradsson@outlook.com"))
