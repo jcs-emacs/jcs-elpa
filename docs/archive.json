@@ -2,10 +2,10 @@
   {
     "name": "ace-link-dashboard",
     "summary": "Ace link for dashboard",
-    "version": "20250101.847",
+    "version": "20250226.930",
     "url": "https://github.com/emacs-dashboard/ace-link-dashboard",
     "source": "github",
-    "commit": "ef396a20e94faf2551b140242661fb1f98bcd668",
+    "commit": "a07fb3a3268f43c8979cb392572184f80e37ac53",
     "tree": "https://github.com/emacs-dashboard/ace-link-dashboard"
   },
   {
@@ -542,19 +542,19 @@
   {
     "name": "dashboard-bm",
     "summary": "Visual Bookmarks for Dashboard",
-    "version": "20250101.847",
+    "version": "20250226.930",
     "url": "https://github.com/emacs-dashboard/dashboard-bm",
     "source": "github",
-    "commit": "ed25585696784543486b4a223ccb50a22a90cd53",
+    "commit": "13d24b5dcc287e36f7ec0ebc15357acf81e2a5fb",
     "tree": "https://github.com/emacs-dashboard/dashboard-bm"
   },
   {
     "name": "dashboard-ls",
     "summary": "Display files/directories in current directory on Dashboard",
-    "version": "20250101.845",
+    "version": "20250226.929",
     "url": "https://github.com/emacs-dashboard/dashboard-ls",
     "source": "github",
-    "commit": "4eea843e5b7dcc4fe23eaf67b163ed7b13b56613",
+    "commit": "68ecc61d7302ccb71b0197096e8c9d80a03ad9b5",
     "tree": "https://github.com/emacs-dashboard/dashboard-ls"
   },
   {
@@ -578,10 +578,10 @@
   {
     "name": "doom-dashboard",
     "summary": "Doom dashboard style for emacs-dashboard",
-    "version": "20250101.846",
+    "version": "20250226.931",
     "url": "https://github.com/emacs-dashboard/doom-dashboard",
     "source": "github",
-    "commit": "92116cfe2e413dfaf0a9704ec3844dc6e70c1f93",
+    "commit": "1bc855570610bae280437fb686751a128efe2241",
     "tree": "https://github.com/emacs-dashboard/doom-dashboard"
   },
   {
@@ -866,10 +866,10 @@
   {
     "name": "flycheck-eask",
     "summary": "Eask support in Flycheck",
-    "version": "20250101.901",
+    "version": "20250226.939",
     "url": "https://github.com/flycheck/flycheck-eask",
     "source": "github",
-    "commit": "f93e5dd30aa9f7c612823760867c2f361fde6631",
+    "commit": "8a7f847466935b5937e93f5ccbd4711812d962a3",
     "tree": "https://github.com/flycheck/flycheck-eask"
   },
   {
