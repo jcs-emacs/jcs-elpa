@@ -1,9 +1,9 @@
 (flycheck-deno
- . [(20250101 902) ((emacs (26 1)) (flycheck (0 14)))
+ . [(20250226 2238) ((emacs (27 1)) (flycheck (0 14)))
     "Flycheck for deno-lint" tar
     ((:url . "https://github.com/flycheck/flycheck-deno")
-     (:commit . "47671457b649b2de422cd56f7b3950aabc015c1f")
-     (:revdesc . "47671457b649") (:keywords "lisp" "deno")
+     (:commit . "d59b0cceb81b776a7143d7e25e06f7c3e71aa56f")
+     (:revdesc . "d59b0cceb81b") (:keywords "lisp" "deno")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
