@@ -1,9 +1,9 @@
 (ace-link-dashboard
- . [(20250101 847) ((emacs (26 1)) (avy (0 5 0)))
+ . [(20250226 930) ((emacs (27 1)) (avy (0 5 0)))
     "Ace link for dashboard" tar
     ((:url . "https://github.com/emacs-dashboard/ace-link-dashboard")
-     (:commit . "ef396a20e94faf2551b140242661fb1f98bcd668")
-     (:revdesc . "ef396a20e94f") (:keywords "tools")
+     (:commit . "a07fb3a3268f43c8979cb392572184f80e37ac53")
+     (:revdesc . "a07fb3a3268f") (:keywords "tools")
      (:maintainers ("Ricardo Arredondo" . "ricardo.richo@gmail.com")
 		   ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainer "Ricardo Arredondo" . "ricardo.richo@gmail.com"))])
