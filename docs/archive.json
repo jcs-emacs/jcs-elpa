@@ -857,10 +857,10 @@
   {
     "name": "flycheck-deno",
     "summary": "Flycheck for deno-lint",
-    "version": "20250101.902",
+    "version": "20250226.2238",
     "url": "https://github.com/flycheck/flycheck-deno",
     "source": "github",
-    "commit": "47671457b649b2de422cd56f7b3950aabc015c1f",
+    "commit": "d59b0cceb81b776a7143d7e25e06f7c3e71aa56f",
     "tree": "https://github.com/flycheck/flycheck-deno"
   },
   {
@@ -902,10 +902,10 @@
   {
     "name": "flycheck-ziglint",
     "summary": "Flycheck for ziglint",
-    "version": "20250101.902",
+    "version": "20250226.2237",
     "url": "https://github.com/flycheck/flycheck-ziglint",
     "source": "github",
-    "commit": "0032f705fedc8ba407234bf2261c494a0a9356d5",
+    "commit": "8d91a265237ae19076b8e5f7fb6e31ba44656337",
     "tree": "https://github.com/flycheck/flycheck-ziglint"
   },
   {
