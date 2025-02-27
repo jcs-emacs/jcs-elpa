@@ -1,0 +1,12 @@
+(tsc
+ . [(20250227 1936) ((emacs (25 1))) "Core Tree-sitter APIs" tar
+    ((:url . "https://github.com/emacs-tree-sitter/elisp-tree-sitter")
+     (:commit . "8516c9977e8ba5fdddf841570d1aaa22a219b6b6")
+     (:revdesc . "8516c9977e8b")
+     (:keywords "languages" "tools" "parsers" "dynamic-modules"
+		"tree-sitter")
+     (:authors ("Tuấn-Anh Nguyễn" . "ubolonton@gmail.com")
+	       ("Jorge Javier Araya Navarro"
+		. "jorgejavieran@yahoo.com.mx"))
+     (:maintainers ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com"))])
