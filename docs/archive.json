@@ -2027,10 +2027,10 @@
   {
     "name": "tree-sitter",
     "summary": "Incremental parsing system",
-    "version": "20250108.531",
+    "version": "20250227.1936",
     "url": "https://github.com/emacs-tree-sitter/elisp-tree-sitter",
     "source": "github",
-    "commit": "fe98d0cae7babfabd089849808d3d5aa7970ef63",
+    "commit": "8516c9977e8ba5fdddf841570d1aaa22a219b6b6",
     "tree": "https://github.com/emacs-tree-sitter/elisp-tree-sitter"
   },
   {
@@ -2072,19 +2072,19 @@
   {
     "name": "treesit-fold",
     "summary": "Code folding using treesit",
-    "version": "20250225.931",
+    "version": "20250227.1944",
     "url": "https://github.com/emacs-tree-sitter/treesit-fold",
     "source": "github",
-    "commit": "42f174f69269f7bc72354ae77c3fe8d8dae73682",
+    "commit": "6216c9d4f57c15ac7b30663d40c84f25bd9d89dd",
     "tree": "https://github.com/emacs-tree-sitter/treesit-fold"
   },
   {
     "name": "treesit-langs",
     "summary": "Language bundle for Emacs's treesit.el",
-    "version": "20250101.854",
+    "version": "20250227.1938",
     "url": "https://github.com/emacs-tree-sitter/treesit-langs",
     "source": "github",
-    "commit": "bcaadf05bb15cafbcb353a0cf44d8a20ea9c438f",
+    "commit": "c7933bd2868804819441f6e0f35a60a5d08a6198",
     "tree": "https://github.com/emacs-tree-sitter/treesit-langs"
   },
   {
@@ -2099,19 +2099,19 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20250225.931",
+    "version": "20250227.1944",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "2e9f55fa44509669334d5ae8f016393e05081c64",
+    "commit": "0b2e87ea5369c96e436d909204624923afab7ab4",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
     "name": "tsc",
     "summary": "Core Tree-sitter APIs",
-    "version": "20240430.847",
+    "version": "20250227.1936",
     "url": "https://github.com/emacs-tree-sitter/elisp-tree-sitter",
     "source": "github",
-    "commit": "e67aae97dc220206a18d2a58e8bfd7a902aaf882",
+    "commit": "8516c9977e8ba5fdddf841570d1aaa22a219b6b6",
     "tree": "https://github.com/emacs-tree-sitter/elisp-tree-sitter"
   },
   {
