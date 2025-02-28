@@ -182,10 +182,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "A multi-LLM shell (ChatGPT, Claude, Gemini, Kagi, Ollama, Perplexity) + editing integrations",
-    "version": "20250228.2041",
+    "version": "20250228.2131",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "035a67fe781253aca7107ae497e6b4a9657b6209",
+    "commit": "8760b383810497f9cdce9e3884c8a6cfa6586c60",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -1388,11 +1388,11 @@
   {
     "name": "lsp-pylyzer",
     "summary": "Python LSP client using pylyzer",
-    "version": "20240402.1856",
-    "url": "https://github.com/seagle0128/lsp-pylyzer",
+    "version": "20250228.2204",
+    "url": "https://github.com/emacs-lsp/lsp-pylyzer",
     "source": "github",
-    "commit": "dd0e5ef0ff8f8a6ea4c16f8d2b05d32a35e2efb5",
-    "tree": "https://github.com/seagle0128/lsp-pylyzer"
+    "commit": "2d0bf3f181259b319ebf8b1923c257fbcb74a732",
+    "tree": "https://github.com/emacs-lsp/lsp-pylyzer"
   },
   {
     "name": "lsp-shader",
