@@ -1370,10 +1370,10 @@
   {
     "name": "lsp-ltex-plus",
     "summary": "LSP Clients for LTEX+",
-    "version": "20250222.1746",
+    "version": "20250228.2214",
     "url": "https://github.com/emacs-languagetool/lsp-ltex-plus",
     "source": "github",
-    "commit": "5a365ba36fb5bbf5aaa652a46dc7e5a0401fbd5d",
+    "commit": "1d7a992c9733e5bb2fa7eda02e179d66fe57942f",
     "tree": "https://github.com/emacs-languagetool/lsp-ltex-plus"
   },
   {
