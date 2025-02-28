@@ -182,10 +182,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "A multi-LLM shell (ChatGPT, Claude, Gemini, Kagi, Ollama, Perplexity) + editing integrations",
-    "version": "20250228.1906",
+    "version": "20250228.2041",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "b5e91ec34d8bb4db0d4a082d1b3d638fd0dcc0d5",
+    "commit": "035a67fe781253aca7107ae497e6b4a9657b6209",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -2081,10 +2081,10 @@
   {
     "name": "treesit-langs",
     "summary": "Language bundle for Emacs's treesit.el",
-    "version": "20250227.1938",
+    "version": "20250228.2022",
     "url": "https://github.com/emacs-tree-sitter/treesit-langs",
     "source": "github",
-    "commit": "c7933bd2868804819441f6e0f35a60a5d08a6198",
+    "commit": "1e420b532590ffb3d25eb100090852881a5a9df0",
     "tree": "https://github.com/emacs-tree-sitter/treesit-langs"
   },
   {
