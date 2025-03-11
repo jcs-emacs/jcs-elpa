@@ -182,10 +182,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "A multi-LLM shell (ChatGPT, Claude, Gemini, Kagi, Ollama, Perplexity) + editing integrations",
-    "version": "20250310.1323",
+    "version": "20250311.2144",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "0b8f952c7a218a84c3c03a8c2ea2b6afdbd58540",
+    "commit": "fcc18a1534dfdb91e2a11e09b45ae14dc9dd50f3",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -1847,10 +1847,10 @@
   {
     "name": "sideline",
     "summary": "Show information on the side",
-    "version": "20250219.2052",
+    "version": "20250311.2149",
     "url": "https://github.com/emacs-sideline/sideline",
     "source": "github",
-    "commit": "940128b5040a43b642dd4adab964be8b0ffc8b4f",
+    "commit": "ed0d5ca69104aea2e3de0d9ab62f8709fa07b8e1",
     "tree": "https://github.com/emacs-sideline/sideline"
   },
   {
