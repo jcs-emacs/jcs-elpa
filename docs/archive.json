@@ -893,11 +893,11 @@
   {
     "name": "flycheck-overlay",
     "summary": "Display Flycheck errors with overlays",
-    "version": "20250225.642",
-    "url": "https://github.com/yourusername/flycheck-overlay",
+    "version": "20250315.941",
+    "url": "https://github.com/konrad1977/flycheck-overlay",
     "source": "github",
-    "commit": "7e3ab2a99706be3bcc8a3aa3fad80e5facb748c4",
-    "tree": "https://github.com/yourusername/flycheck-overlay"
+    "commit": "3f51602d9ef91e98b35ec60738e9ab0cfda66337",
+    "tree": "https://github.com/konrad1977/flycheck-overlay"
   },
   {
     "name": "flycheck-ziglint",
