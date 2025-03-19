@@ -1451,10 +1451,10 @@
   {
     "name": "message-clean-mode",
     "summary": "Keep messages buffer clean",
-    "version": "20250101.1012",
+    "version": "20250319.9",
     "url": "https://github.com/jcs-elpa/message-clean-mode",
     "source": "github",
-    "commit": "ca1a65e5bb808f17f6034d6c4a6d1fd171033eb4",
+    "commit": "ab3f96933e06353afea1f6447d527305df6dab21",
     "tree": "https://github.com/jcs-elpa/message-clean-mode"
   },
   {
