@@ -1613,10 +1613,10 @@
   {
     "name": "origami",
     "summary": "Flexible text folding",
-    "version": "20250114.124",
+    "version": "20250402.2121",
     "url": "https://github.com/elp-revive/origami.el",
     "source": "github",
-    "commit": "4b5a56236214dbdccc5f8a40c78e3681fd93e758",
+    "commit": "878b55c0071d14de9e01b132026759c853f783d5",
     "tree": "https://github.com/elp-revive/origami.el"
   },
   {
