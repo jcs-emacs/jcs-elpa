@@ -398,10 +398,10 @@
   {
     "name": "company-fuzzy",
     "summary": "Fuzzy matching for `company-mode'",
-    "version": "20250207.140",
+    "version": "20250403.2235",
     "url": "https://github.com/jcs-elpa/company-fuzzy",
     "source": "github",
-    "commit": "cc144309cecb9d0b913f182a7c9a85ea1089db31",
+    "commit": "9a7cf89bee0b270abd260cb7aae394983cbe1b31",
     "tree": "https://github.com/jcs-elpa/company-fuzzy"
   },
   {
@@ -587,10 +587,10 @@
   {
     "name": "eask",
     "summary": "Core Eask APIs, for Eask CLI development",
-    "version": "20250403.257",
+    "version": "20250403.2242",
     "url": "https://github.com/emacs-eask/eask",
     "source": "github",
-    "commit": "7faf67d059a8271c4b9e2eb23f8e1dc807a974e7",
+    "commit": "c5c67d68094736e130c152066c6df076e1abdde6",
     "tree": "https://github.com/emacs-eask/eask"
   },
   {
