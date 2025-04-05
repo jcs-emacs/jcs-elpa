@@ -200,6 +200,7 @@
   (responsive-window :url "https://github.com/jcs-elpa/responsive-window")
   (resurrect :url "https://github.com/fbkante/resurrect")
   (reveal-in-folder :url "https://github.com/jcs-elpa/reveal-in-folder")
+  (savefold :url "https://github.com/jcfk/savefold.el")
   (selection-highlight-mode :url "https://github.com/balloneij/selection-highlight-mode")
   (send-to-osx-grammarly :url "https://github.com/emacs-grammarly/send-to-osx-grammarly")
   (show-eof-mode :url "https://github.com/zk-phi/show-eof-mode")
