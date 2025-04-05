@@ -1818,6 +1818,15 @@
     "tree": "https://github.com/jcs-elpa/reveal-in-folder"
   },
   {
+    "name": "savefold",
+    "summary": "Persistence for various folding systems",
+    "version": "20250405.601",
+    "url": "https://github.com/jcfk/savefold.el",
+    "source": "github",
+    "commit": "699c3532a39f51b517ab6df60a8f3bae0b0cf7d7",
+    "tree": "https://github.com/jcfk/savefold.el"
+  },
+  {
     "name": "selection-highlight-mode",
     "summary": "Auto highlights matches to the current active region",
     "version": "20231116.1958",
