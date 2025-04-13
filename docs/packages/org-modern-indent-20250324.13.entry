@@ -1,6 +1,0 @@
-(org-modern-indent
- . [(20250324 13) ((emacs (27 1)) (org (9 6 1)) (compat (30 0)))
-    "Indent blocks like org-modern" tar
-    ((:url . "https://github.com/jdtsmith/org-modern-indent")
-     (:commit . "fcd4368476a9c4eadfac4d6f51159d90a15de15a")
-     (:revdesc . "fcd4368476a9") (:keywords "convenience"))])
