@@ -30,7 +30,6 @@
   (colorful-mode :url "https://github.com/DevelopmentCool2449/colorful-mode")
   (comint-fold :url "https://github.com/jdtsmith/comint-fold")
   (commander :url "https://github.com/rejeep/commander.el")
-  (company :url "https://github.com/elp-revive/company-mode")
   (company-autoconf :url "https://github.com/elp-revive/company-autoconf")
   (company-bootstrap :url "https://github.com/elp-revive/company-bootstrap")
   (company-box :url "https://github.com/elp-revive/company-box")
