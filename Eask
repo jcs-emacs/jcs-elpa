@@ -1,3 +1,5 @@
+;; -*- mode: eask; lexical-binding: t -*-
+
 (package "jcs-elpa"
          "0.0.0"
          "ELPA for jcs-emacs, using github-elpa")
