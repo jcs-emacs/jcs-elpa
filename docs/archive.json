@@ -288,15 +288,6 @@
     "tree": "http://github.com/rejeep/commander.el"
   },
   {
-    "name": "company",
-    "summary": "Modular text completion framework",
-    "version": "20240625.0",
-    "url": "http://company-mode.github.io/",
-    "source": "github",
-    "commit": "8d2ca28a161f8b912889684412bb1d7fb07d035c",
-    "tree": "http://company-mode.github.io/"
-  },
-  {
     "name": "company-autoconf",
     "summary": "Completion for autoconf script",
     "version": "20220711.659",
@@ -398,10 +389,10 @@
   {
     "name": "company-fuzzy",
     "summary": "Fuzzy matching for `company-mode'",
-    "version": "20250403.2235",
+    "version": "20250422.112",
     "url": "https://github.com/jcs-elpa/company-fuzzy",
     "source": "github",
-    "commit": "9a7cf89bee0b270abd260cb7aae394983cbe1b31",
+    "commit": "9c7019e500caaa3cb35ca27661f1d07714fb00c0",
     "tree": "https://github.com/jcs-elpa/company-fuzzy"
   },
   {
