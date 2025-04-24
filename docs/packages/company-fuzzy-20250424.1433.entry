@@ -1,10 +1,10 @@
 (company-fuzzy
- . [(20250422 1233)
+ . [(20250424 1433)
     ((emacs (26 1)) (company (0 8 12)) (s (1 12 0)) (ht (2 0)))
     "Fuzzy matching for `company-mode'" tar
     ((:url . "https://github.com/jcs-elpa/company-fuzzy")
-     (:commit . "955c6b31f679fcf2af6af646339193730ac0b816")
-     (:revdesc . "955c6b31f679")
+     (:commit . "536067f67281c5cc375bcc0ba1ce6e6a375e84a0")
+     (:revdesc . "536067f67281")
      (:keywords "matching" "auto-complete" "complete" "fuzzy")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
