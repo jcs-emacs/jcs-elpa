@@ -1,9 +1,9 @@
 (eask
- . [(20250426 655) ((emacs (26 1)))
+ . [(20250503 1119) ((emacs (26 1)))
     "Core Eask APIs, for Eask CLI development" tar
     ((:url . "https://github.com/emacs-eask/eask")
-     (:commit . "65dd7f00d3aaaaacd5b96987ffc36db7acba5795")
-     (:revdesc . "65dd7f00d3aa") (:keywords "lisp" "eask" "api")
+     (:commit . "9c73393dad3df9b327aa64a6d171ebdd2c46bb45")
+     (:revdesc . "9c73393dad3d") (:keywords "lisp" "eask" "api")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
