@@ -1739,10 +1739,10 @@
   {
     "name": "quickrun",
     "summary": "Run commands quickly",
-    "version": "20250214.813",
+    "version": "20250503.2058",
     "url": "https://github.com/emacsorphanage/quickrun",
     "source": "github",
-    "commit": "7345432cea36d4a6cdfcf5371f76af640cc6d192",
+    "commit": "bae8efb8c5bc428e4df731b5c214aae478c707da",
     "tree": "https://github.com/emacsorphanage/quickrun"
   },
   {
