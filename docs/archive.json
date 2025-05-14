@@ -578,10 +578,10 @@
   {
     "name": "eask",
     "summary": "Core Eask APIs, for Eask CLI development",
-    "version": "20250508.1041",
+    "version": "20250514.232",
     "url": "https://github.com/emacs-eask/eask",
     "source": "github",
-    "commit": "f5eb0e87598046077a83b08428f2ebf4a3fec6bd",
+    "commit": "db438a5e09a8a026cc66af09ca409d14ef322633",
     "tree": "https://github.com/emacs-eask/eask"
   },
   {
@@ -1946,10 +1946,10 @@
   {
     "name": "sideline-load-cost",
     "summary": "Display load/require module size with sideline",
-    "version": "20250207.647",
+    "version": "20250514.226",
     "url": "https://github.com/emacs-sideline/sideline-load-cost",
     "source": "github",
-    "commit": "86637e59ad027c7c3d8d7d560ddec24dd7f04cb5",
+    "commit": "6e333a4599c6631bf01754bf1b7be9d64b41920e",
     "tree": "https://github.com/emacs-sideline/sideline-load-cost"
   },
   {
