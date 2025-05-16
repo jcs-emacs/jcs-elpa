@@ -1397,10 +1397,10 @@
   {
     "name": "lsp-smart-req",
     "summary": "Lazy load LSP packages",
-    "version": "20250409.838",
+    "version": "20250516.629",
     "url": "https://github.com/jcs-elpa/lsp-smart-req",
     "source": "github",
-    "commit": "841acfb159646169693ee38ff3a0cb9674c4eb43",
+    "commit": "dec80bde2c1315e3535503b95af3d27c7db13d79",
     "tree": "https://github.com/jcs-elpa/lsp-smart-req"
   },
   {
