@@ -263,10 +263,10 @@
   {
     "name": "colorful-mode",
     "summary": "Preview any color in your buffer in real time",
-    "version": "20250509.240",
+    "version": "20250517.605",
     "url": "https://github.com/DevelopmentCool2449/colorful-mode",
     "source": "github",
-    "commit": "bc96ee3b6af2692c9b066056b015c2df22d3d881",
+    "commit": "3ddd2286fddaaba48eefc7ce873c8a777984376a",
     "tree": "https://github.com/DevelopmentCool2449/colorful-mode"
   },
   {
@@ -1847,10 +1847,10 @@
   {
     "name": "sideline",
     "summary": "Show information on the side",
-    "version": "20250311.2149",
+    "version": "20250517.508",
     "url": "https://github.com/emacs-sideline/sideline",
     "source": "github",
-    "commit": "ed0d5ca69104aea2e3de0d9ab62f8709fa07b8e1",
+    "commit": "6c0562c5abfa9eb16320cec755ffe09ebc26c0cc",
     "tree": "https://github.com/emacs-sideline/sideline"
   },
   {
