@@ -1,8 +1,8 @@
 (jcs-frametitle
- . [(20250101 823) ((emacs (26 1))) "A frame title for jcs-emacs" tar
+ . [(20250519 547) ((emacs (26 1))) "A frame title for jcs-emacs" tar
     ((:url . "https://github.com/jcs-emacs/jcs-frametitle")
-     (:commit . "42918554292f992e7f74fc7831e19aaeb5e1580e")
-     (:revdesc . "42918554292f") (:keywords "faces" "frame-title")
+     (:commit . "451ee9e8a7f5cd76848b21ac8e53fe157be42c10")
+     (:revdesc . "451ee9e8a7f5") (:keywords "faces" "frame-title")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
