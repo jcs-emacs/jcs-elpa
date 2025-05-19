@@ -1,11 +1,11 @@
 (jcs-modeline
- . [(20250101 823)
+ . [(20250519 524)
     ((emacs (29 1)) (moody (0 7 1)) (minions (0 3 7)) (elenv (0 1 0))
      (nerd-icons (0 0 1)) (reveal-in-folder (0 1 2)))
     "A modeline for jcs-emacs" tar
     ((:url . "https://github.com/jcs-emacs/jcs-modeline")
-     (:commit . "567f1bba29a65360d0adac1c8e52196c5565c182")
-     (:revdesc . "567f1bba29a6") (:keywords "faces" "mode-line")
+     (:commit . "63f2e26273bde88d439769d35b82b8ba6c88df5c")
+     (:revdesc . "63f2e26273bd") (:keywords "faces" "mode-line")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
