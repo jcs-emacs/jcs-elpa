@@ -182,10 +182,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "A family of utilities to interact with LLMs (ChatGPT, Claude, DeepSeek, Gemini, Kagi, Ollama, Perplexity)",
-    "version": "20250529.2059",
+    "version": "20250530.1148",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "cd10b2a5e316e1bea1f744abf6040a9ea7258c5d",
+    "commit": "052973946b8cf556ff36e3a360628175c50fce5d",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
