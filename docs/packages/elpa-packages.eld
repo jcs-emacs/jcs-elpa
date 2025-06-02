@@ -155,6 +155,7 @@
   (lsp-shader :url "https://github.com/shader-ls/lsp-shader")
   (lsp-smart-req :url "https://github.com/jcs-elpa/lsp-smart-req")
   (lsp-uniteai :url "https://github.com/emacs-openai/lsp-uniteai")
+  (magik-company :url "https://github.com/reinierkof/magik-company")
   (maple-line :url "https://github.com/honmaple/emacs-maple-line")
   (marquee-header :url "https://github.com/jcs-elpa/marquee-header")
   (mbs :url "https://github.com/jcs-elpa/mbs")
