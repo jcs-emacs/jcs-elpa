@@ -1127,10 +1127,10 @@
   {
     "name": "indent-control",
     "summary": "Management for indentation level",
-    "version": "20250211.48",
+    "version": "20250602.1100",
     "url": "https://github.com/jcs-elpa/indent-control",
     "source": "github",
-    "commit": "d8fcfff53abfb47cc806c99ebb7b151e9fff4811",
+    "commit": "079e7a08345c0abd1d20eadd668c4056adfdb2c6",
     "tree": "https://github.com/jcs-elpa/indent-control"
   },
   {
@@ -2081,10 +2081,10 @@
   {
     "name": "treesit-fold",
     "summary": "Code folding using treesit",
-    "version": "20250522.128",
+    "version": "20250602.1107",
     "url": "https://github.com/emacs-tree-sitter/treesit-fold",
     "source": "github",
-    "commit": "c866b8ea7bdd74817f774e8e432c3828d2921e6b",
+    "commit": "76bba5243883f6c8bff51c744c31e287a045a9f5",
     "tree": "https://github.com/emacs-tree-sitter/treesit-fold"
   },
   {
