@@ -1413,6 +1413,15 @@
     "tree": "https://github.com/emacs-openai/lsp-uniteai"
   },
   {
+    "name": "magik-company",
+    "summary": "Magik backend for company-mode",
+    "version": "20250530.1446",
+    "url": "\"https://github.com/reinierkof/magik-company\"",
+    "source": "github",
+    "commit": "066b7e702ada4137b7a191a00672b9b17ca911b9",
+    "tree": "\"https://github.com/reinierkof/magik-company\""
+  },
+  {
     "name": "maple-line",
     "summary": "Maple line configuration",
     "version": "20200519.1557",
