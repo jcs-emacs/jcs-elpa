@@ -1415,11 +1415,11 @@
   {
     "name": "magik-company",
     "summary": "Magik backend for company-mode",
-    "version": "20250530.1446",
-    "url": "\"https://github.com/reinierkof/magik-company\"",
+    "version": "20250603.932",
+    "url": "https://github.com/reinierkof/magik-company",
     "source": "github",
-    "commit": "066b7e702ada4137b7a191a00672b9b17ca911b9",
-    "tree": "\"https://github.com/reinierkof/magik-company\""
+    "commit": "93bc0a99f0f166a8662a955aabc921f754ea3008",
+    "tree": "https://github.com/reinierkof/magik-company"
   },
   {
     "name": "maple-line",
