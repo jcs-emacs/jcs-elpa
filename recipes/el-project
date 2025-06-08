@@ -1,1 +1,4 @@
-(el-project :fetcher github :repo "Kyure-A/el-project")
+(el-project
+ :fetcher github
+ :repo "Kyure-A/el-project"
+ :files (:defaults "skeleton"))
