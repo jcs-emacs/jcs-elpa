@@ -1,0 +1,1 @@
+(el-project :fetcher github :repo "Kyure-A/el-project")
