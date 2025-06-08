@@ -675,6 +675,15 @@
     "tree": "https://github.com/nyyManni/ejira"
   },
   {
+    "name": "el-project",
+    "summary": "Generate project skeleton for Emacs Lisp",
+    "version": "20240228.1733",
+    "url": "https://github.com/Kyure-A/el-project",
+    "source": "github",
+    "commit": "83899ae63545a772cacb171533759a3823fac6da",
+    "tree": "https://github.com/Kyure-A/el-project"
+  },
+  {
     "name": "eldoc-eask",
     "summary": "Eldoc support for Eask-file",
     "version": "20250101.837",
