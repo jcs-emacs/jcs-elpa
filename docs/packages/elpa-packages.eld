@@ -73,6 +73,7 @@
   (eglot-shader :url "https://github.com/shader-ls/eglot-shader")
   (eglot-uniteai :url "https://github.com/emacs-openai/eglot-uniteai")
   (ejira :url "https://github.com/nyyManni/ejira")
+  (el-project :url "https://github.com/Kyure-A/el-project")
   (eldoc-eask :url "https://github.com/emacs-eask/eldoc-eask")
   (eldoc-meta-net :url "https://github.com/emacs-vs/eldoc-meta-net")
   (electric-indent-sexp :url "https://github.com/emacs-vs/electric-indent-sexp")

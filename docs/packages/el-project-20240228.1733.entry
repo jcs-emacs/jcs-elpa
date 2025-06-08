@@ -1,0 +1,9 @@
+(el-project
+ . [(20240228 1733) ((emacs (24 1)) (f (0 20 0)) (s (1 13 1)))
+    "Generate project skeleton for Emacs Lisp" tar
+    ((:url . "https://github.com/Kyure-A/el-project")
+     (:commit . "83899ae63545a772cacb171533759a3823fac6da")
+     (:revdesc . "83899ae63545") (:keywords "tools")
+     (:authors ("Kyure_A" . "twitter.com/kyureq"))
+     (:maintainers ("Kyure_A" . "twitter.com/kyureq"))
+     (:maintainer "Kyure_A" . "twitter.com/kyureq"))])
