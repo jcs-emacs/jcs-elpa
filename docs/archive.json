@@ -1424,10 +1424,10 @@
   {
     "name": "magik-company",
     "summary": "Magik backend for company-mode",
-    "version": "20250606.706",
+    "version": "20250611.737",
     "url": "https://github.com/reinierkof/magik-company",
     "source": "github",
-    "commit": "456c08b78f849f3715dfd6306eecbc78de94bc43",
+    "commit": "71f6e308b1a38979521534573b8865c27983fbf7",
     "tree": "https://github.com/reinierkof/magik-company"
   },
   {
