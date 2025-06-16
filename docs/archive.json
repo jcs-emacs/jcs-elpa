@@ -146,10 +146,10 @@
   {
     "name": "cask",
     "summary": "Cask: Project management for package development",
-    "version": "20230623.2158",
+    "version": "20250616.1526",
     "url": "http://github.com/cask/cask",
     "source": "github",
-    "commit": "10899c8075d7d8e427ab837b7353036f65b37081",
+    "commit": "3534c7d97b4ae1cb02130fa91192a242c434edc0",
     "tree": "http://github.com/cask/cask"
   },
   {
