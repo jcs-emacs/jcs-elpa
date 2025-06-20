@@ -182,10 +182,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "A family of utilities to interact with LLMs (ChatGPT, Claude, DeepSeek, Gemini, Kagi, Ollama, Perplexity)",
-    "version": "20250619.2004",
+    "version": "20250620.624",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "4799ee03abbe02a8b3a3ff64cd4c8e2fefd1db5c",
+    "commit": "57cef17ecbebc15d0ea4cd861e0ef9aacc507e46",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -893,10 +893,10 @@
   {
     "name": "flycheck-overlay",
     "summary": "Display Flycheck errors with overlays",
-    "version": "20250530.734",
+    "version": "20250620.632",
     "url": "https://github.com/konrad1977/flycheck-overlay",
     "source": "github",
-    "commit": "0e5562aa5a671014bbd861f934d83f6491d965e7",
+    "commit": "1783e8b5e075ccdf179a23ad4525c9b30e0f9c9a",
     "tree": "https://github.com/konrad1977/flycheck-overlay"
   },
   {
