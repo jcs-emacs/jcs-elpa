@@ -1584,6 +1584,15 @@
     "tree": "https://github.com/elp-revive/noflet"
   },
   {
+    "name": "odin-mode",
+    "summary": "A major mode for Odin",
+    "version": "20230912.1527",
+    "url": "https://git.sr.ht/~mgmarlow/odin-mode",
+    "source": "sourcehut",
+    "commit": "5b017380561ebc4c4edefe4da9ba66be5d7de757",
+    "tree": "https://git.sr.ht/~mgmarlow/odin-mode"
+  },
+  {
     "name": "on",
     "summary": "Hooks for faster startup",
     "version": "20230823.39",
