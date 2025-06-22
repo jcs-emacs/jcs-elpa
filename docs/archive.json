@@ -596,10 +596,10 @@
   {
     "name": "easky",
     "summary": "Control the Eask command-line interface",
-    "version": "20250404.17",
+    "version": "20250622.957",
     "url": "https://github.com/emacs-eask/easky",
     "source": "github",
-    "commit": "070c734bdc5fafdf0de060f9584b1a037681eac2",
+    "commit": "0b3216120d4e8c91813b8498694bfd3040a10cd3",
     "tree": "https://github.com/emacs-eask/easky"
   },
   {
@@ -2117,10 +2117,10 @@
   {
     "name": "treesit-langs",
     "summary": "Language bundle for Emacs's treesit.el",
-    "version": "20250502.837",
+    "version": "20250622.918",
     "url": "https://github.com/emacs-tree-sitter/treesit-langs",
     "source": "github",
-    "commit": "89657d3f243bdc6f22cdacca1bf7d37860da4875",
+    "commit": "cc632271981e47a1d12e6e8bf5fd799b8c5fb4f9",
     "tree": "https://github.com/emacs-tree-sitter/treesit-langs"
   },
   {
