@@ -891,6 +891,15 @@
     "tree": "https://github.com/sogaiu/flycheck-janet"
   },
   {
+    "name": "flycheck-odin",
+    "summary": "[No description available]",
+    "version": "20210218.2204",
+    "url": "https://github.com/mattt-b/flycheck-odin",
+    "source": "github",
+    "commit": "704c8a327bf5ef5f6c6e23df0ed560a61ba177a7",
+    "tree": "https://github.com/mattt-b/flycheck-odin"
+  },
+  {
     "name": "flycheck-overlay",
     "summary": "Display Flycheck errors with overlays",
     "version": "20250620.632",
