@@ -174,6 +174,7 @@
   (nerd-icons-buffer-menu :url "https://github.com/jcs-elpa/nerd-icons-buffer-menu")
   (nerd-icons-completion :url "https://github.com/rainstormstudio/nerd-icons-completion")
   (noflet :url "https://github.com/elp-revive/noflet")
+  (odin-mode :url "https://git.sr.ht/~mgmarlow/odin-mode")
   (on :url "https://github.com/elp-revive/on.el")
   (openai :url "https://github.com/emacs-openai/openai")
   (org-bars :url "https://github.com/tonyaldon/org-bars")

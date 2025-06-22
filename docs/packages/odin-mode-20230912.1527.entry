@@ -1,0 +1,5 @@
+(odin-mode
+ . [(20230912 1527) ((emacs (28 1))) "A major mode for Odin" tar
+    ((:url . "https://git.sr.ht/~mgmarlow/odin-mode")
+     (:commit . "5b017380561ebc4c4edefe4da9ba66be5d7de757")
+     (:revdesc . "5b017380561e") (:keywords "languages"))])
