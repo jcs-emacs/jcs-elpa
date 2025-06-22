@@ -97,6 +97,7 @@
   (flycheck-eask :url "https://github.com/flycheck/flycheck-eask")
   (flycheck-hl-todo :url "https://github.com/alvarogonzalezsotillo/flycheck-hl-todo")
   (flycheck-janet :url "https://github.com/sogaiu/flycheck-janet")
+  (flycheck-odin :url "https://github.com/mattt-b/flycheck-odin")
   (flycheck-overlay :url "https://github.com/konrad1977/flycheck-overlay")
   (flycheck-ziglint :url "https://github.com/flycheck/flycheck-ziglint")
   (flymake-dart :url "https://github.com/flymake/flymake-dart")

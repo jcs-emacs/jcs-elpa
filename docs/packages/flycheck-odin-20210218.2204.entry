@@ -1,0 +1,5 @@
+(flycheck-odin
+ . [(20210218 2204) nil "[No description available]" tar
+    ((:url . "https://github.com/mattt-b/flycheck-odin")
+     (:commit . "704c8a327bf5ef5f6c6e23df0ed560a61ba177a7")
+     (:revdesc . "704c8a327bf5"))])
