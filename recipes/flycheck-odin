@@ -1,0 +1,1 @@
+(flycheck-odin :fetcher github :repo "mattt-b/flycheck-odin")
