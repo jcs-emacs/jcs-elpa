@@ -2216,10 +2216,10 @@
   {
     "name": "use-ttf",
     "summary": "Keep font consistency across different OSs",
-    "version": "20250101.1013",
+    "version": "20250624.1031",
     "url": "https://github.com/jcs-elpa/use-ttf",
     "source": "github",
-    "commit": "78a0a55a036cce9442ffb3aae1bb00a2e1e4a78c",
+    "commit": "762a10f270430b278d48fd290100f0b899e5b9f5",
     "tree": "https://github.com/jcs-elpa/use-ttf"
   },
   {
