@@ -642,3 +642,4 @@
 2025-06-30T11:15:17+0000  flycheck-overlay           Missing library "flycheck-overlay.el" matching package name ‘flycheck-overlay’
 2025-06-30T11:15:32+0000  gas-mode                   Command ‘git clone https\://codeberg.org/Enocstocks/gas-mode.el /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/gas-mode/’ exited with non-zero exit-code: 128
 >>>>>>> Stashed changes
+2025-06-30T12:17:35+0000  flycheck-overlay           Missing library "flycheck-overlay.el" matching package name ‘flycheck-overlay’
