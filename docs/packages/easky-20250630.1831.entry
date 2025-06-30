@@ -1,11 +1,11 @@
 (easky
- . [(20250622 957)
+ . [(20250630 1831)
     ((emacs (27 1)) (eask-mode (0 1 0)) (eask (0 1 0)) (ansi (0 4 1))
      (lv (0 0)) (marquee-header (0 1 0)))
     "Control the Eask command-line interface" tar
     ((:url . "https://github.com/emacs-eask/easky")
-     (:commit . "0b3216120d4e8c91813b8498694bfd3040a10cd3")
-     (:revdesc . "0b3216120d4e") (:keywords "maint" "easky")
+     (:commit . "8c9f23446e3e728fc9fb12e3cc02b9b67c1e837d")
+     (:revdesc . "8c9f23446e3e") (:keywords "maint" "easky")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
