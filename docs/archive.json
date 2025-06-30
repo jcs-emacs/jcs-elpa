@@ -1136,10 +1136,10 @@
   {
     "name": "indent-bars",
     "summary": "Highlight indentation with bars",
-    "version": "20250629.2205",
+    "version": "20250630.1914",
     "url": "https://github.com/jdtsmith/indent-bars",
     "source": "github",
-    "commit": "517487aa1666fac688685d01085a7d1fee89ef8d",
+    "commit": "c244aef2a064a300c529028e940d2b6b49a1eb18",
     "tree": "https://github.com/jdtsmith/indent-bars"
   },
   {
