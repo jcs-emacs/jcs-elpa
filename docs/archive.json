@@ -900,15 +900,6 @@
     "tree": "https://github.com/mattt-b/flycheck-odin"
   },
   {
-    "name": "flycheck-overlay",
-    "summary": "Display Flycheck errors with overlays",
-    "version": "20250625.823",
-    "url": "https://github.com/konrad1977/flycheck-overlay",
-    "source": "github",
-    "commit": "4890222620577a0e518b9783c9f7fb25b95b21b7",
-    "tree": "https://github.com/konrad1977/flycheck-overlay"
-  },
-  {
     "name": "flycheck-ziglint",
     "summary": "Flycheck for ziglint",
     "version": "20250226.2237",
@@ -961,6 +952,15 @@
     "source": "github",
     "commit": "62a79c45f59b62fc441a1b5563734d83c2e0c5b0",
     "tree": "https://github.com/flymake/flymake-ziglint"
+  },
+  {
+    "name": "flyover",
+    "summary": "Display Flycheck errors with overlays",
+    "version": "20250705.828",
+    "url": "https://github.com/konrad1977/flyover",
+    "source": "github",
+    "commit": "a7d28f3e94b238155d3e5967dacb07e9d6e28896",
+    "tree": "https://github.com/konrad1977/flyover"
   },
   {
     "name": "fof",
