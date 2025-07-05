@@ -104,6 +104,7 @@
   (flymake-elsa :url "https://github.com/flymake/flymake-elsa")
   (flymake-vale :url "https://github.com/tpeacock19/flymake-vale")
   (flymake-ziglint :url "https://github.com/flymake/flymake-ziglint")
+  (flyover :url "https://github.com/konrad1977/flyover")
   (fof :url "https://github.com/jcs-elpa/fof")
   (font-lock-ext :url "https://github.com/sensorflo/font-lock-ext")
   (fuz-bin :url "https://github.com/jcs-legacy/fuz-bin")
