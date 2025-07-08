@@ -955,11 +955,11 @@
   },
   {
     "name": "flyover",
-    "summary": "Display Flycheck errors with overlays",
-    "version": "20250705.828",
+    "summary": "Display Flycheck and Flymake errors with overlays",
+    "version": "20250708.1611",
     "url": "https://github.com/konrad1977/flyover",
     "source": "github",
-    "commit": "a7d28f3e94b238155d3e5967dacb07e9d6e28896",
+    "commit": "dbbc13f67c427ca771137937105c256fa5989c64",
     "tree": "https://github.com/konrad1977/flyover"
   },
   {
@@ -1136,10 +1136,10 @@
   {
     "name": "indent-bars",
     "summary": "Highlight indentation with bars",
-    "version": "20250630.2033",
+    "version": "20250708.1652",
     "url": "https://github.com/jdtsmith/indent-bars",
     "source": "github",
-    "commit": "a2f8b63f0f79282f04c1120e32ce39fdffca1824",
+    "commit": "e23d42e6adef034adefe58fb65fcf60b50442628",
     "tree": "https://github.com/jdtsmith/indent-bars"
   },
   {
