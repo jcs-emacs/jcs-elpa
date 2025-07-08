@@ -902,10 +902,10 @@
   {
     "name": "flycheck-ziglint",
     "summary": "Flycheck for ziglint",
-    "version": "20250226.2237",
+    "version": "20250708.2042",
     "url": "https://github.com/flycheck/flycheck-ziglint",
     "source": "github",
-    "commit": "8d91a265237ae19076b8e5f7fb6e31ba44656337",
+    "commit": "08906464abaaa7d8f0916114823587c8aaa0dcc2",
     "tree": "https://github.com/flycheck/flycheck-ziglint"
   },
   {
