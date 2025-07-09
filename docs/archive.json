@@ -2171,10 +2171,10 @@
   {
     "name": "txl",
     "summary": "Provides machine translation via DeepL's REST API",
-    "version": "20250318.726",
+    "version": "20250709.1113",
     "url": "https://github.com/tmalsburg/txl.el",
     "source": "github",
-    "commit": "95064614df192c563b37e6135f5986c786a6826e",
+    "commit": "ad0ff6b9b66465457709c9f79d881b7e0ddbd352",
     "tree": "https://github.com/tmalsburg/txl.el"
   },
   {
