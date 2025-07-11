@@ -1,9 +1,9 @@
 (savefold
- . [(20250420 1843) ((emacs (28 1)))
+ . [(20250711 1742) ((emacs (28 1)) (compat (29 1)))
     "Persistence for various folding systems" tar
     ((:url . "https://github.com/jcfk/savefold.el")
-     (:commit . "72014667334918aa8149942662c82a8126165600")
-     (:revdesc . "720146673349") (:keywords "convenience")
+     (:commit . "e6ed82c2960a58c11dc845a1232d58802b19a2f5")
+     (:revdesc . "e6ed82c2960a") (:keywords "convenience")
      (:authors ("Jacob Fong" . "jacobcfong@gmail.com"))
      (:maintainers ("Jacob Fong" . "jacobcfong@gmail.com"))
      (:maintainer "Jacob Fong" . "jacobcfong@gmail.com"))])
