@@ -1847,10 +1847,10 @@
   {
     "name": "savefold",
     "summary": "Persistence for various folding systems",
-    "version": "20250711.1844",
+    "version": "20250720.1837",
     "url": "https://github.com/jcfk/savefold.el",
     "source": "github",
-    "commit": "16d016484fc3957dc4df8384900b98d33a8ea919",
+    "commit": "410bf7e9ab6e86771ad541c3291d42bbfd4a0822",
     "tree": "https://github.com/jcfk/savefold.el"
   },
   {
