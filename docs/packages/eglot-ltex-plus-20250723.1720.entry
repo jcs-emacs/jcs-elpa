@@ -1,9 +1,9 @@
 (eglot-ltex-plus
- . [(20250708 2211) ((emacs (29 1)) (eglot (1 4)) (f (0 20 0)))
+ . [(20250723 1720) ((emacs (29 1)) (eglot (1 4)) (f (0 20 0)))
     "Eglot Clients for LTEX+" tar
     ((:url . "https://github.com/emacs-languagetool/eglot-ltex-plus")
-     (:commit . "da7204e926323f07ba3f9994772bfb1c8ae9d202")
-     (:revdesc . "da7204e92632")
+     (:commit . "ae98e4c2f023ecbc9d2e0092c778dd847dd54449")
+     (:revdesc . "ae98e4c2f023")
      (:keywords "convenience" "eglot" "languagetool" "checker")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
