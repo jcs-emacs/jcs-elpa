@@ -182,10 +182,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "A family of utilities to interact with LLMs (ChatGPT, Claude, DeepSeek, Gemini, Kagi, Ollama, Perplexity)",
-    "version": "20250722.815",
+    "version": "20250725.1750",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "73f37233467e45721922f9626ae16b88528c88ed",
+    "commit": "2ddd4ba832793f5691b5d1f96c649e19b4536fde",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -578,10 +578,10 @@
   {
     "name": "eask",
     "summary": "Core Eask APIs, for Eask CLI development",
-    "version": "20250725.1659",
+    "version": "20250725.1759",
     "url": "https://github.com/emacs-eask/eask",
     "source": "github",
-    "commit": "0ce9f7a157add5909280b14b83e27cd3c31e9e98",
+    "commit": "db09ba68b4422bd8cf51bbf29ffcbecdbb9d089c",
     "tree": "https://github.com/emacs-eask/eask"
   },
   {
