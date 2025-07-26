@@ -1,3 +1,4 @@
 (company-graphql
  :fetcher github
- :repo "timoweave/company-graphql")
+ :repo "timoweave/company-graphql"
+ :files (:defaults "*.graphql"))
