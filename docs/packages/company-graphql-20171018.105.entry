@@ -1,0 +1,12 @@
+(company-graphql
+ . [(20171018 105)
+    ((emacs (25 2 1)) (cl-lib (0 5 0)) (dash (2 13 0)) (s (1 19 0))
+     (company (0 9 4)) (request (0 3 0)) (graphql-mode (20170929 4)))
+    "Company completion for graphql file" tar
+    ((:url . "https://github.com/timoweave/company-graphql")
+     (:commit . "757dfa45ad0cef9b9c362c8993d6474a2426c01c")
+     (:revdesc . "757dfa45ad0c")
+     (:keywords "company" "graphql" "completion" "introspection")
+     (:authors ("Timothy Shiu" . "timoweave@gmail.com"))
+     (:maintainers ("Timothy Shiu" . "timoweave@gmail.com"))
+     (:maintainer "Timothy Shiu" . "timoweave@gmail.com"))])

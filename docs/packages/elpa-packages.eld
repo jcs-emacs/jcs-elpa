@@ -42,6 +42,7 @@
   (company-elisp-keywords :url "https://github.com/jcs-elpa/company-elisp-keywords")
   (company-emmet :url "https://github.com/emacs-vs/company-emmet")
   (company-fuzzy :url "https://github.com/jcs-elpa/company-fuzzy")
+  (company-graphql :url "https://github.com/timoweave/company-graphql")
   (company-kaomoji :url "https://github.com/jcs-elpa/company-kaomoji")
   (company-makefile :url "https://github.com/elp-revive/company-makefile")
   (company-meta-net :url "https://github.com/emacs-vs/company-meta-net")
