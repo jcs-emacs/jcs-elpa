@@ -1,0 +1,1 @@
+(company-graphql :fetcher github :repo "timoweave/company-graphql")
