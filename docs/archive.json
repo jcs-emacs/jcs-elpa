@@ -396,6 +396,15 @@
     "tree": "https://github.com/jcs-elpa/company-fuzzy"
   },
   {
+    "name": "company-graphql",
+    "summary": "Company completion for graphql file",
+    "version": "20171018.105",
+    "url": "https://github.com/timoweave/company-graphql",
+    "source": "github",
+    "commit": "757dfa45ad0cef9b9c362c8993d6474a2426c01c",
+    "tree": "https://github.com/timoweave/company-graphql"
+  },
+  {
     "name": "company-kaomoji",
     "summary": "Company backend for Kaomoji",
     "version": "20250101.1006",
