@@ -1586,10 +1586,10 @@
   {
     "name": "nerd-icons-completion",
     "summary": "Add icons to completion candidates",
-    "version": "20250728.1410",
+    "version": "20250728.1610",
     "url": "https://github.com/rainstormstudio/nerd-icons-completion",
     "source": "github",
-    "commit": "830607c1769f0faf55d81e07924b729ef54494ab",
+    "commit": "5f27607b008a972a27b237d266c8ee7b26fbd721",
     "tree": "https://github.com/rainstormstudio/nerd-icons-completion"
   },
   {
@@ -2126,10 +2126,10 @@
   {
     "name": "treesit-langs",
     "summary": "Language bundle for Emacs's treesit.el",
-    "version": "20250630.858",
+    "version": "20250728.1516",
     "url": "https://github.com/emacs-tree-sitter/treesit-langs",
     "source": "github",
-    "commit": "1a40ab9ef0644a49baaa7bbfd07a65768c8a3bfb",
+    "commit": "55bdd4e0b1e0d95743fb43a0936a821ed63bf2f5",
     "tree": "https://github.com/emacs-tree-sitter/treesit-langs"
   },
   {
