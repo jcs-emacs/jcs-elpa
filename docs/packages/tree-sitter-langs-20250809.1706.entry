@@ -1,9 +1,9 @@
 (tree-sitter-langs
- . [(20250808 1419) ((emacs (25 1)) (tree-sitter (0 15 0)))
+ . [(20250809 1706) ((emacs (25 1)) (tree-sitter (0 15 0)))
     "Grammar bundle for tree-sitter" tar
     ((:url . "https://github.com/emacs-tree-sitter/tree-sitter-langs")
-     (:commit . "e8ee113b4ce7657beedaa35e0faf2fb4d26a2141")
-     (:revdesc . "e8ee113b4ce7")
+     (:commit . "9b7e5084353b89d28a5ed33503731c86b4d6ec70")
+     (:revdesc . "9b7e5084353b")
      (:keywords "languages" "tools" "parsers" "tree-sitter")
      (:authors ("Tuấn-Anh Nguyễn" . "ubolonton@gmail.com"))
      (:maintainers ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
