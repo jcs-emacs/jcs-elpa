@@ -1343,10 +1343,10 @@
   {
     "name": "llm",
     "summary": "Interface to pluggable llm backends",
-    "version": "20250713.1647",
+    "version": "20250810.235",
     "url": "https://github.com/ahyatt/llm",
     "source": "github",
-    "commit": "6d6c88c20a2b485ade7bac53bdfb44ed8f91c279",
+    "commit": "3afea0eb69c5ed615b1cf30bcda3daae3815306e",
     "tree": "https://github.com/ahyatt/llm"
   },
   {
