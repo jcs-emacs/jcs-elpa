@@ -524,10 +524,10 @@
   {
     "name": "dape",
     "summary": "Debug Adapter Protocol for Emacs",
-    "version": "20250810.1426",
+    "version": "20250810.1458",
     "url": "https://github.com/svaante/dape",
     "source": "github",
-    "commit": "92ff5ac0cebd317f0abe5f63aa03da6f59784688",
+    "commit": "bbed2e367d5aef58518b14eefafe76993489a61e",
     "tree": "https://github.com/svaante/dape"
   },
   {
@@ -2090,10 +2090,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20250809.1706",
+    "version": "20250810.1403",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "9b7e5084353b89d28a5ed33503731c86b4d6ec70",
+    "commit": "f8c4248410e0c1b3288437d63495cf52706158a8",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
