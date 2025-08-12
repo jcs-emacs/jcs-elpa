@@ -191,10 +191,10 @@
   {
     "name": "chatgpt-sideline",
     "summary": "Sideline support for chatgpt",
-    "version": "20250101.913",
+    "version": "20250812.249",
     "url": "https://github.com/emacs-openai/chatgpt-sideline",
     "source": "github",
-    "commit": "01691093271f57a237ed56451afef6ed8410a754",
+    "commit": "b4bc0891b59d223ec1ce7a6a18826523f7b945c9",
     "tree": "https://github.com/emacs-openai/chatgpt-sideline"
   },
   {
