@@ -1433,10 +1433,10 @@
   {
     "name": "lsp-uniteai",
     "summary": "LSP Clients for UniteAI",
-    "version": "20250101.914",
+    "version": "20250812.1142",
     "url": "https://github.com/emacs-openai/lsp-uniteai",
     "source": "github",
-    "commit": "2b8bccc1a5bb5afb38b91cd38e62bf7f47d985f4",
+    "commit": "f1c1db46ce4176677edd127df49adc60ac667bc5",
     "tree": "https://github.com/emacs-openai/lsp-uniteai"
   },
   {
