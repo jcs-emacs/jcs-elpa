@@ -23,7 +23,7 @@ jobs:
       with:
         version: 'snapshot'
 
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
 
     - name: Generate archive.json file
       run: make generate_archive_json

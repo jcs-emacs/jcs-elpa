@@ -29,7 +29,7 @@ jobs:
       with:
         version: 'snapshot'
 
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
 
     - name: Change mode flags
       if: matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest'
