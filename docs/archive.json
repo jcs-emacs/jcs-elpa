@@ -1856,10 +1856,10 @@
   {
     "name": "savefold",
     "summary": "Persistence for various folding systems",
-    "version": "20250720.1837",
+    "version": "20250817.1933",
     "url": "https://github.com/jcfk/savefold.el",
     "source": "github",
-    "commit": "410bf7e9ab6e86771ad541c3291d42bbfd4a0822",
+    "commit": "68ec792ced589f64e747bee4fddaba89339f11ca",
     "tree": "https://github.com/jcfk/savefold.el"
   },
   {
@@ -2090,10 +2090,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20250810.1403",
+    "version": "20250817.1805",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "f8c4248410e0c1b3288437d63495cf52706158a8",
+    "commit": "67338ae57f96281e594a32b5346b7047da80682c",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
@@ -2126,10 +2126,10 @@
   {
     "name": "treesit-langs",
     "summary": "Language bundle for Emacs's treesit.el",
-    "version": "20250809.1920",
+    "version": "20250817.1925",
     "url": "https://github.com/emacs-tree-sitter/treesit-langs",
     "source": "github",
-    "commit": "f72153b430a8f880ad4c2f911fc42471e20d81f9",
+    "commit": "8df73584f5b9b44217b5714ad9e48d4e5a8ceefd",
     "tree": "https://github.com/emacs-tree-sitter/treesit-langs"
   },
   {
