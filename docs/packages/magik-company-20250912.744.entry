@@ -1,11 +1,11 @@
 (magik-company
- . [(20250822 1442)
+ . [(20250912 744)
     ((emacs (29 1)) (magik-mode (0 5 1)) (company (1 0 2))
      (yasnippet (0 14 0)))
     "Magik backend for company-mode" tar
     ((:url . "https://github.com/reinierkof/magik-company")
-     (:commit . "db00024a7212dc6af674a9ce27c1a15a29d484e8")
-     (:revdesc . "db00024a7212") (:keywords "convenience")
+     (:commit . "4f8dbd3dcd7b858396e03bba57b908a11378ba9a")
+     (:revdesc . "4f8dbd3dcd7b") (:keywords "convenience")
      (:authors ("Reinier Koffijberg" . "reinierkof@gmail.com"))
      (:maintainers ("Reinier Koffijberg" . "reinierkof@gmail.com"))
      (:maintainer "Reinier Koffijberg" . "reinierkof@gmail.com"))])
