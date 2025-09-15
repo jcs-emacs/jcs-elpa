@@ -2378,10 +2378,10 @@
   {
     "name": "zig-mode",
     "summary": "A major mode for the Zig programming language",
-    "version": "20250618.1627",
+    "version": "20250915.1207",
     "url": "https://github.com/zig-lang/zig-mode",
     "source": "github",
-    "commit": "9f86fded13e28c6c9ccf56d417276547bac7e54e",
+    "commit": "8c1f0bd07e88a443e16e6ffd3abd1d3e76e10f35",
     "tree": "https://github.com/zig-lang/zig-mode"
   },
   {
