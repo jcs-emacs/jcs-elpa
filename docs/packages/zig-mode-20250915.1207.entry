@@ -1,9 +1,9 @@
 (zig-mode
- . [(20250618 1627) ((emacs (26 1)) (reformatter (0 6)))
+ . [(20250915 1207) ((emacs (26 1)) (reformatter (0 6)))
     "A major mode for the Zig programming language" tar
     ((:url . "https://github.com/zig-lang/zig-mode")
-     (:commit . "9f86fded13e28c6c9ccf56d417276547bac7e54e")
-     (:revdesc . "9f86fded13e2") (:keywords "zig" "languages")
+     (:commit . "8c1f0bd07e88a443e16e6ffd3abd1d3e76e10f35")
+     (:revdesc . "8c1f0bd07e88") (:keywords "zig" "languages")
      (:authors ("Andrea Orru" . "andreaorru1991@gmail.com")
 	       ("Andrew Kelley" . "superjoe30@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
