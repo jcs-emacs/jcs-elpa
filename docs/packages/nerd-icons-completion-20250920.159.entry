@@ -1,11 +1,10 @@
 (nerd-icons-completion
- . [(20250910 1356)
-    ((emacs (25 1)) (nerd-icons (0 0 1)) (compat (30)))
+ . [(20250920 159) ((emacs (25 1)) (nerd-icons (0 0 1)) (compat (30)))
     "Add icons to completion candidates" tar
     ((:url
       . "https://github.com/rainstormstudio/nerd-icons-completion")
-     (:commit . "d7582d430283d8e085227a249f6c8b79199b1829")
-     (:revdesc . "d7582d430283") (:keywords "lisp")
+     (:commit . "c6665a8dacdac10037528f0ad13f4953cddba3c6")
+     (:revdesc . "c6665a8dacda") (:keywords "lisp")
      (:authors ("Hongyu Ding" . "rainstormstudio@yahoo.com"))
      (:maintainers ("Hongyu Ding" . "rainstormstudio@yahoo.com"))
      (:maintainer "Hongyu Ding" . "rainstormstudio@yahoo.com"))])
