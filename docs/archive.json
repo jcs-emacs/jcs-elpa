@@ -272,10 +272,10 @@
   {
     "name": "comint-fold",
     "summary": "Fold comint-input",
-    "version": "20231214.1258",
+    "version": "20251008.127",
     "url": "https://github.com/jdtsmith/comint-fold",
     "source": "github",
-    "commit": "9b9f2bbc762c846bf328e698413391db149cc759",
+    "commit": "0dd06663d4e666c20650c3556fe4985731dd600f",
     "tree": "https://github.com/jdtsmith/comint-fold"
   },
   {
