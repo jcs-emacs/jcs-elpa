@@ -1,9 +1,9 @@
 (package-build
- . [(20250807 1034) ((emacs (26 1)) (compat (30 0 0 0)))
+ . [(20251012 1357) ((emacs (26 1)) (compat (30 1)))
     "Tools for assembling a package archive" tar
     ((:url . "https://github.com/melpa/package-build")
-     (:commit . "546e7d7f119be9b0aff5c87064a8000f9a6dfc4a")
-     (:revdesc . "546e7d7f119b") (:keywords "maint" "tools")
+     (:commit . "e4e58616fbfad6686f1de919857ee86642b04a95")
+     (:revdesc . "e4e58616fbfa") (:keywords "maint" "tools")
      (:authors ("Donald Ephraim Curtis" . "dcurtis@milkbox.net")
 	       ("Steve Purcell" . "steve@sanityinc.com")
 	       ("Jonas Bernoulli"
