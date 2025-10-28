@@ -1235,19 +1235,19 @@
   {
     "name": "jcs-frametitle",
     "summary": "A frame title for jcs-emacs",
-    "version": "20250519.547",
+    "version": "20251028.1031",
     "url": "https://github.com/jcs-emacs/jcs-frametitle",
     "source": "github",
-    "commit": "451ee9e8a7f5cd76848b21ac8e53fe157be42c10",
+    "commit": "3b9a9a8a388734a40e9af00eac5ff0db81a93c0c",
     "tree": "https://github.com/jcs-emacs/jcs-frametitle"
   },
   {
     "name": "jcs-modeline",
     "summary": "A modeline for jcs-emacs",
-    "version": "20250519.543",
+    "version": "20251028.1030",
     "url": "https://github.com/jcs-emacs/jcs-modeline",
     "source": "github",
-    "commit": "9bacce1cf99b0c35e984a2b7621ea29bae4b68f9",
+    "commit": "d77e1ad4de9a136c09dc92afc8c591d18c269dac",
     "tree": "https://github.com/jcs-emacs/jcs-modeline"
   },
   {
