@@ -1,9 +1,9 @@
 (nerd-icons
- . [(20251103 1813) ((emacs (25 1))) "Emacs Nerd Font Icons Library"
+ . [(20251108 1545) ((emacs (25 1))) "Emacs Nerd Font Icons Library"
     tar
     ((:url . "https://github.com/rainstormstudio/nerd-icons.el")
-     (:commit . "c65ff02a960b1c509763cbea5922e93877359249")
-     (:revdesc . "c65ff02a960b") (:keywords "lisp")
+     (:commit . "940b28d3dbd134696ef448e906e42a87a9d61e20")
+     (:revdesc . "940b28d3dbd1") (:keywords "lisp")
      (:authors ("Hongyu Ding" . "rainstormstudio@yahoo.com")
 	       ("Vincent Zhang" . "seagle0128@gmail.com"))
      (:maintainers ("Hongyu Ding" . "rainstormstudio@yahoo.com")
