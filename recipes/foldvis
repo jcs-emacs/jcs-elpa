@@ -1,1 +1,1 @@
-(foldvis :fetcher github :repo "emacs-vs/foldvisfoldvis")
+(foldvis :fetcher github :repo "emacs-vs/foldvis")
