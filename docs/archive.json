@@ -983,10 +983,10 @@
   {
     "name": "foldvis",
     "summary": "Display indicators for various folding systems",
-    "version": "20251110.2211",
+    "version": "20251110.2231",
     "url": "https://github.com/emacs-vs/foldvis",
     "source": "github",
-    "commit": "1e876099622b1a74c983d77c4049b33b3be1d4db",
+    "commit": "e16c032fc8d0f326993e2b2cddb3874186132f73",
     "tree": "https://github.com/emacs-vs/foldvis"
   },
   {
