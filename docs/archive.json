@@ -981,6 +981,15 @@
     "tree": "https://github.com/jcs-elpa/fof"
   },
   {
+    "name": "foldvis",
+    "summary": "Display indicators for various folding systems",
+    "version": "20251110.2211",
+    "url": "https://github.com/emacs-vs/foldvis",
+    "source": "github",
+    "commit": "1e876099622b1a74c983d77c4049b33b3be1d4db",
+    "tree": "https://github.com/emacs-vs/foldvis"
+  },
+  {
     "name": "font-lock-ext",
     "summary": "Extensions to Emacs font-lock.el",
     "version": "20171030.1445",
