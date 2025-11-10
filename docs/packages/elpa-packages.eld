@@ -107,6 +107,7 @@
   (flymake-ziglint :url "https://github.com/flymake/flymake-ziglint")
   (flyover :url "https://github.com/konrad1977/flyover")
   (fof :url "https://github.com/jcs-elpa/fof")
+  (foldvis :url "https://github.com/emacs-vs/foldvis")
   (font-lock-ext :url "https://github.com/sensorflo/font-lock-ext")
   (fuz-bin :url "https://github.com/jcs-legacy/fuz-bin")
   (gas-mode :url "https://codeberg.org/Enocstocks/gas-mode.el")
