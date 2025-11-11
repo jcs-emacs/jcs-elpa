@@ -983,10 +983,10 @@
   {
     "name": "foldvis",
     "summary": "Display indicators for various folding systems",
-    "version": "20251111.308",
+    "version": "20251111.317",
     "url": "https://github.com/emacs-vs/foldvis",
     "source": "github",
-    "commit": "95cb62843856ec8ed9e778df0d41107ba2f8a25c",
+    "commit": "8ca0aae60e8691fd943948f56c865e190365e6c7",
     "tree": "https://github.com/emacs-vs/foldvis"
   },
   {
@@ -2297,10 +2297,10 @@
   {
     "name": "vs-dark-theme",
     "summary": "Visual Studio IDE dark theme",
-    "version": "20250725.1905",
+    "version": "20251111.322",
     "url": "https://github.com/emacs-vs/vs-dark-theme",
     "source": "github",
-    "commit": "c3a6d1545600ff4813d8ce2cf5a77beb9e3f8a1e",
+    "commit": "3618c438b8eba8f89cba760b546c3d0f69c9d167",
     "tree": "https://github.com/emacs-vs/vs-dark-theme"
   },
   {
@@ -2324,10 +2324,10 @@
   {
     "name": "vs-light-theme",
     "summary": "Visual Studio IDE light theme",
-    "version": "20250725.1905",
+    "version": "20251111.322",
     "url": "https://github.com/emacs-vs/vs-light-theme",
     "source": "github",
-    "commit": "a3edd50b794816e59ef5ab744dffe5dc3e192210",
+    "commit": "5df4eb5df7ed6a93c4e55bc622a7ad39424bc996",
     "tree": "https://github.com/emacs-vs/vs-light-theme"
   },
   {
