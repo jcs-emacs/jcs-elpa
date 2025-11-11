@@ -983,10 +983,10 @@
   {
     "name": "foldvis",
     "summary": "Display indicators for various folding systems",
-    "version": "20251111.1500",
+    "version": "20251111.1624",
     "url": "https://github.com/emacs-vs/foldvis",
     "source": "github",
-    "commit": "ea9a54505c0becb2fc9b8437465a44f72c1ea5ac",
+    "commit": "ccee21347473109ddcd55f76d7639a720f98fe74",
     "tree": "https://github.com/emacs-vs/foldvis"
   },
   {
@@ -2306,10 +2306,10 @@
   {
     "name": "vs-edit-mode",
     "summary": "Minor mode accomplish editing experience in Visual Studio",
-    "version": "20250415.2249",
+    "version": "20251111.1625",
     "url": "https://github.com/emacs-vs/vs-edit-mode",
     "source": "github",
-    "commit": "9030ada34668fdbdbb5a70ed75ccda170ce541e6",
+    "commit": "f5fe7aa92ccc97f325a6d1babe69b5602deb6270",
     "tree": "https://github.com/emacs-vs/vs-edit-mode"
   },
   {
