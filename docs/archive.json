@@ -983,10 +983,10 @@
   {
     "name": "foldvis",
     "summary": "Display indicators for various folding systems",
-    "version": "20251110.2231",
+    "version": "20251111.154",
     "url": "https://github.com/emacs-vs/foldvis",
     "source": "github",
-    "commit": "e16c032fc8d0f326993e2b2cddb3874186132f73",
+    "commit": "8dbd9bf11e92d8ad888212fb3c4f3b304cffb152",
     "tree": "https://github.com/emacs-vs/foldvis"
   },
   {
@@ -1802,10 +1802,10 @@
   {
     "name": "rainbow-csv",
     "summary": "Highlight CSV and TSV files in different rainbow colors",
-    "version": "20250814.1731",
+    "version": "20251111.158",
     "url": "https://github.com/emacs-vs/rainbow-csv",
     "source": "github",
-    "commit": "0865b7c0e95ca1f8ce561df55d497d2e90774efc",
+    "commit": "72b926888f902145b77d0a6cb3e0ff2bfe48b81c",
     "tree": "https://github.com/emacs-vs/rainbow-csv"
   },
   {
