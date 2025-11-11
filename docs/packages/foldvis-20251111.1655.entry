@@ -1,10 +1,10 @@
 (foldvis
- . [(20251111 1624)
+ . [(20251111 1655)
     ((emacs (26 1)) (elenv (0 1 0)) (fringe-helper (1 0 1)))
     "Display indicators for various folding systems" tar
     ((:url . "https://github.com/emacs-vs/foldvis")
-     (:commit . "ccee21347473109ddcd55f76d7639a720f98fe74")
-     (:revdesc . "ccee21347473") (:keywords "convenience" "folding")
+     (:commit . "76312d52b4a6399289624f34c1eb20c548d87c63")
+     (:revdesc . "76312d52b4a6") (:keywords "convenience" "folding")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
