@@ -488,10 +488,10 @@
   {
     "name": "copilot",
     "summary": "An unofficial Copilot plugin",
-    "version": "20251117.505",
+    "version": "20251117.510",
     "url": "https://github.com/copilot-emacs/copilot.el",
     "source": "github",
-    "commit": "d30c5ec73abc9b45b8a87f6627d1d9e7403ac854",
+    "commit": "8e43edf1f3efe094ea42a21863b3b742a339742c",
     "tree": "https://github.com/copilot-emacs/copilot.el"
   },
   {
@@ -614,10 +614,10 @@
   {
     "name": "echo-bar",
     "summary": "Turn the echo area into a custom status bar",
-    "version": "20250208.910",
+    "version": "20251117.608",
     "url": "https://github.com/elp-revive/echo-bar.el",
     "source": "github",
-    "commit": "d087ed32d77ac4bb293a5c8e335e61998c82dbef",
+    "commit": "4ce8a3a35d3133fb37f59ebef3f0859d03ad2b12",
     "tree": "https://github.com/elp-revive/echo-bar.el"
   },
   {
