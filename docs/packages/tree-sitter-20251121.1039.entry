@@ -1,9 +1,9 @@
 (tree-sitter
- . [(20250227 1936) ((emacs (25 1)) (tsc (0 18 0)))
+ . [(20251121 1039) ((emacs (25 1)) (tsc (0 18 0)))
     "Incremental parsing system" tar
     ((:url . "https://github.com/emacs-tree-sitter/elisp-tree-sitter")
-     (:commit . "8516c9977e8ba5fdddf841570d1aaa22a219b6b6")
-     (:revdesc . "8516c9977e8b")
+     (:commit . "5f89c48f597594f846ea3c57cadba569ddc6244d")
+     (:revdesc . "5f89c48f5975")
      (:keywords "languages" "tools" "parsers" "tree-sitter")
      (:authors ("Tuấn-Anh Nguyễn" . "ubolonton@gmail.com"))
      (:maintainers ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
