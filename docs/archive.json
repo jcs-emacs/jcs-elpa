@@ -1019,10 +1019,10 @@
   {
     "name": "gdshader-mode",
     "summary": "Major mode for Godot gdshader files",
-    "version": "20251120.1131",
+    "version": "20251123.1852",
     "url": "https://github.com/bbbscarter/gdshader-mode",
     "source": "github",
-    "commit": "aab4f4ccf44487639aec7f2ca33a78aa04f9d6f9",
+    "commit": "8e9efda9393d44be96009f37ff7201df3d36f05f",
     "tree": "https://github.com/bbbscarter/gdshader-mode"
   },
   {
