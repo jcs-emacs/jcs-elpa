@@ -1,9 +1,9 @@
 (gdshader-mode
- . [(20251120 1131) ((emacs (24 3)) (glsl-mode (2 4)))
+ . [(20251123 1852) ((emacs (24 3)) (glsl-mode (2 4)))
     "Major mode for Godot gdshader files" tar
     ((:url . "https://github.com/bbbscarter/gdshader-mode")
-     (:commit . "aab4f4ccf44487639aec7f2ca33a78aa04f9d6f9")
-     (:revdesc . "aab4f4ccf444")
+     (:commit . "8e9efda9393d44be96009f37ff7201df3d36f05f")
+     (:revdesc . "8e9efda9393d")
      (:keywords "languages" "opengl" "gpu" "godot")
      (:authors ("Simon Carter" . "bbbscarter@gmail.com"))
      (:maintainers ("Simon Carter" . "bbbscarter@gmail.com"))
