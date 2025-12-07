@@ -1154,10 +1154,10 @@
   {
     "name": "indent-bars",
     "summary": "Highlight indentation with bars",
-    "version": "20251203.1939",
+    "version": "20251207.2051",
     "url": "https://github.com/jdtsmith/indent-bars",
     "source": "github",
-    "commit": "7e3f5fe26edcc71b392543ba1d05d408b3f1de40",
+    "commit": "a4bc36df85dc8123c9e6c9679d74f44f0d757d72",
     "tree": "https://github.com/jdtsmith/indent-bars"
   },
   {
@@ -2135,10 +2135,10 @@
   {
     "name": "treesit-langs",
     "summary": "Language bundle for Emacs's treesit.el",
-    "version": "20251201.644",
+    "version": "20251207.2031",
     "url": "https://github.com/emacs-tree-sitter/treesit-langs",
     "source": "github",
-    "commit": "28fee07ca5acf56df008b16c75ac808caab69952",
+    "commit": "584a4dc381b7b89ee248ac17d3bcbfd647d20a46",
     "tree": "https://github.com/emacs-tree-sitter/treesit-langs"
   },
   {
