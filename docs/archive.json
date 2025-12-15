@@ -587,10 +587,10 @@
   {
     "name": "eask",
     "summary": "Core Eask APIs, for Eask CLI development",
-    "version": "20251202.1411",
+    "version": "20251215.731",
     "url": "https://github.com/emacs-eask/eask",
     "source": "github",
-    "commit": "cbdd817b2cdd34963788ee996a3f6248deb842a5",
+    "commit": "97ffac19407c499db8852b1cd5276b8005123a7d",
     "tree": "https://github.com/emacs-eask/eask"
   },
   {
@@ -2099,10 +2099,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20251215.518",
+    "version": "20251215.520",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "e44a2f1fd525decce890ef26d5b9ee8b21e38fec",
+    "commit": "7691ee5ec2b98d4664d21916d6371a33fdd2f6f4",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
@@ -2135,10 +2135,10 @@
   {
     "name": "treesit-langs",
     "summary": "Language bundle for Emacs's treesit.el",
-    "version": "20251215.416",
+    "version": "20251215.719",
     "url": "https://github.com/emacs-tree-sitter/treesit-langs",
     "source": "github",
-    "commit": "ddd9270a63a2c28c69907d4f16efde7703dd6085",
+    "commit": "2781f35fe18742f1022de0e6a65a079de93651e3",
     "tree": "https://github.com/emacs-tree-sitter/treesit-langs"
   },
   {
