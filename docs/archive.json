@@ -2126,19 +2126,19 @@
   {
     "name": "treesit-fold",
     "summary": "Code folding using treesit",
-    "version": "20251212.614",
+    "version": "20251216.1141",
     "url": "https://github.com/emacs-tree-sitter/treesit-fold",
     "source": "github",
-    "commit": "927e103e17bd9c9bdb5091aec82f9705b2f451be",
+    "commit": "779892490ecd1da5958e8807267abed92a76b13b",
     "tree": "https://github.com/emacs-tree-sitter/treesit-fold"
   },
   {
     "name": "treesit-langs",
     "summary": "Language bundle for Emacs's treesit.el",
-    "version": "20251215.946",
+    "version": "20251216.1139",
     "url": "https://github.com/emacs-tree-sitter/treesit-langs",
     "source": "github",
-    "commit": "653095d784bf635ecb04767ec4682485122ce91e",
+    "commit": "cbae1117a3b63a45893d5c84dc90a514fded57e0",
     "tree": "https://github.com/emacs-tree-sitter/treesit-langs"
   },
   {
@@ -2153,10 +2153,10 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20251212.613",
+    "version": "20251216.1140",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "0f21986193d36027bec2782d06a4978ca3c0c825",
+    "commit": "1e92c98b0bc5c150846bd33a6232f041b90e549d",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
