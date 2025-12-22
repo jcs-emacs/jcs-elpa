@@ -2162,10 +2162,10 @@
   {
     "name": "tsc",
     "summary": "Core Tree-sitter APIs",
-    "version": "20251121.1034",
+    "version": "20251222.1010",
     "url": "https://github.com/emacs-tree-sitter/elisp-tree-sitter",
     "source": "github",
-    "commit": "100dad525f9cde324847801779d68c25ae8d4ee2",
+    "commit": "81d5856e4bb2a7635ee16cb2aa8334e2001fc098",
     "tree": "https://github.com/emacs-tree-sitter/elisp-tree-sitter"
   },
   {
