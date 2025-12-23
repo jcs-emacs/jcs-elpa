@@ -2099,10 +2099,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20251221.1520",
+    "version": "20251223.1516",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "b9910d9a67cd4012fb63c2797692941366a00d2b",
+    "commit": "d32e15078873f65f681dd3742390f1644b161e4d",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
@@ -2135,10 +2135,10 @@
   {
     "name": "treesit-langs",
     "summary": "Language bundle for Emacs's treesit.el",
-    "version": "20251221.1750",
+    "version": "20251223.1642",
     "url": "https://github.com/emacs-tree-sitter/treesit-langs",
     "source": "github",
-    "commit": "1fb60049fc440bdeb2ae96738723c1776e5739c6",
+    "commit": "e0690b8a373fd2c35e5211627939b2059e1311e2",
     "tree": "https://github.com/emacs-tree-sitter/treesit-langs"
   },
   {
