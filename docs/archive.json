@@ -2081,10 +2081,10 @@
   {
     "name": "tree-sitter",
     "summary": "Incremental parsing system",
-    "version": "20251222.1802",
+    "version": "20251224.547",
     "url": "https://github.com/emacs-tree-sitter/elisp-tree-sitter",
     "source": "github",
-    "commit": "d12aff8ee91dcd643da0a65a3bcee7be9a3cac68",
+    "commit": "e3d47a5e46fd960c18ba1cda576364c5caa6ace1",
     "tree": "https://github.com/emacs-tree-sitter/elisp-tree-sitter"
   },
   {
@@ -2099,10 +2099,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20251223.1516",
+    "version": "20251223.1944",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "d32e15078873f65f681dd3742390f1644b161e4d",
+    "commit": "fd2d33a49697ab6d65d5aa055085d4f390dc159e",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
@@ -2135,10 +2135,10 @@
   {
     "name": "treesit-langs",
     "summary": "Language bundle for Emacs's treesit.el",
-    "version": "20251223.1642",
+    "version": "20251224.518",
     "url": "https://github.com/emacs-tree-sitter/treesit-langs",
     "source": "github",
-    "commit": "e0690b8a373fd2c35e5211627939b2059e1311e2",
+    "commit": "2e05c7aadcbe18b968d8d42ad482296d58191b7c",
     "tree": "https://github.com/emacs-tree-sitter/treesit-langs"
   },
   {
@@ -2297,10 +2297,10 @@
   {
     "name": "vs-dark-theme",
     "summary": "Visual Studio IDE dark theme",
-    "version": "20251222.912",
+    "version": "20251224.605",
     "url": "https://github.com/emacs-vs/vs-dark-theme",
     "source": "github",
-    "commit": "f2ce0e490b7fd939aea3700a67247fa934209396",
+    "commit": "249f63aec7778334d43bec79c64ee2d8ec60b0fe",
     "tree": "https://github.com/emacs-vs/vs-dark-theme"
   },
   {
@@ -2324,10 +2324,10 @@
   {
     "name": "vs-light-theme",
     "summary": "Visual Studio IDE light theme",
-    "version": "20251222.912",
+    "version": "20251224.605",
     "url": "https://github.com/emacs-vs/vs-light-theme",
     "source": "github",
-    "commit": "64bf2ddc6235a299ca84651e732df355e35c9f59",
+    "commit": "06a879d929992b34c753171195c2dac59b292c74",
     "tree": "https://github.com/emacs-vs/vs-light-theme"
   },
   {
