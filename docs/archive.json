@@ -2126,19 +2126,19 @@
   {
     "name": "treesit-fold",
     "summary": "Code folding using treesit",
-    "version": "20251224.1501",
+    "version": "20251224.1520",
     "url": "https://github.com/emacs-tree-sitter/treesit-fold",
     "source": "github",
-    "commit": "d57ff357194483f4d3277613345634136a41b509",
+    "commit": "0d6d50dca14139bd677b32267728d5461886bf5f",
     "tree": "https://github.com/emacs-tree-sitter/treesit-fold"
   },
   {
     "name": "treesit-langs",
     "summary": "Language bundle for Emacs's treesit.el",
-    "version": "20251224.518",
+    "version": "20251224.1532",
     "url": "https://github.com/emacs-tree-sitter/treesit-langs",
     "source": "github",
-    "commit": "2e05c7aadcbe18b968d8d42ad482296d58191b7c",
+    "commit": "e43e0001d02fa79e10bc8ef08216fa8eaabe7c8a",
     "tree": "https://github.com/emacs-tree-sitter/treesit-langs"
   },
   {
@@ -2153,10 +2153,10 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20251224.1503",
+    "version": "20251224.1510",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "ab5d4e11a8c10152598c67ef02689df552c17986",
+    "commit": "b5e292c7e38cd9eac73550e5417b8e1f3aacbcb6",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
@@ -2297,10 +2297,10 @@
   {
     "name": "vs-dark-theme",
     "summary": "Visual Studio IDE dark theme",
-    "version": "20251224.605",
+    "version": "20251224.1531",
     "url": "https://github.com/emacs-vs/vs-dark-theme",
     "source": "github",
-    "commit": "249f63aec7778334d43bec79c64ee2d8ec60b0fe",
+    "commit": "95f042c1521ef253171301bccd668e85761d8776",
     "tree": "https://github.com/emacs-vs/vs-dark-theme"
   },
   {
@@ -2324,10 +2324,10 @@
   {
     "name": "vs-light-theme",
     "summary": "Visual Studio IDE light theme",
-    "version": "20251224.605",
+    "version": "20251224.1531",
     "url": "https://github.com/emacs-vs/vs-light-theme",
     "source": "github",
-    "commit": "06a879d929992b34c753171195c2dac59b292c74",
+    "commit": "3ff00e11be497ae841c2c58de2ca5dbb983795cf",
     "tree": "https://github.com/emacs-vs/vs-light-theme"
   },
   {
