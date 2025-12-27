@@ -1,11 +1,11 @@
 (llm
- . [(20251225 2108)
+ . [(20251227 114)
     ((emacs (28 1)) (plz (0 8)) (plz-event-source (0 1 1))
      (plz-media-type (0 2 1)) (compat (29 1)))
     "Interface to pluggable llm backends" tar
     ((:url . "https://github.com/ahyatt/llm")
-     (:commit . "76f2ce2326ecfeec7f91805b3626cc53af429882")
-     (:revdesc . "76f2ce2326ec")
+     (:commit . "54d99eb64662b9f409f269922b23ed634b465564")
+     (:revdesc . "54d99eb64662")
      (:authors ("Andrew Hyatt" . "ahyatt@gmail.com"))
      (:maintainers ("Andrew Hyatt" . "ahyatt@gmail.com"))
      (:maintainer "Andrew Hyatt" . "ahyatt@gmail.com"))])
