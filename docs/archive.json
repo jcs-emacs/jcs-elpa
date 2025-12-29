@@ -155,10 +155,10 @@
   {
     "name": "centaur-tabs",
     "summary": "Aesthetic, modern looking customizable tabs plugin",
-    "version": "20241215.1321",
+    "version": "20251229.1942",
     "url": "https://github.com/ema2159/centaur-tabs",
     "source": "github",
-    "commit": "35389777bc7c4972e302d3793e1a5250f501404d",
+    "commit": "a958500bc4594a5f12d469b03d7fe20ab1e6cc61",
     "tree": "https://github.com/ema2159/centaur-tabs"
   },
   {
@@ -1253,10 +1253,10 @@
   {
     "name": "jcs-modeline",
     "summary": "A modeline for jcs-emacs",
-    "version": "20251229.1853",
+    "version": "20251229.1945",
     "url": "https://github.com/jcs-emacs/jcs-modeline",
     "source": "github",
-    "commit": "f09b22ce445775717d7f09e2147b9d1dc09cb46a",
+    "commit": "e73dc7e65ceb8d861c718df90b3a0c688ad50478",
     "tree": "https://github.com/jcs-emacs/jcs-modeline"
   },
   {
