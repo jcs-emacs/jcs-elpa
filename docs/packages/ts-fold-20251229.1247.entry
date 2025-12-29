@@ -1,11 +1,11 @@
 (ts-fold
- . [(20251224 1510)
+ . [(20251229 1247)
     ((emacs (26 1)) (tree-sitter (0 15 1)) (s (1 9 0))
      (fringe-helper (1 0 1)))
     "Code folding using tree-sitter" tar
     ((:url . "https://github.com/emacs-tree-sitter/ts-fold")
-     (:commit . "b5e292c7e38cd9eac73550e5417b8e1f3aacbcb6")
-     (:revdesc . "b5e292c7e38c")
+     (:commit . "babebebd1a11fb1d4e20a49c853991e4dc90cbc9")
+     (:revdesc . "babebebd1a11")
      (:keywords "convenience" "folding" "tree-sitter")
      (:authors ("Junyi Hou" . "junyi.yi.hou@gmail.com")
 	       ("Jen-Chieh" . "jcs090218@gmail.com"))
