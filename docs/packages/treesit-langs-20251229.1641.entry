@@ -1,9 +1,9 @@
 (treesit-langs
- . [(20251229 1112) ((emacs (29 1)))
+ . [(20251229 1641) ((emacs (29 1)))
     "Language bundle for Emacs's treesit.el" tar
     ((:url . "https://github.com/emacs-tree-sitter/treesit-langs")
-     (:commit . "3926e1a96d54c6d927ed355905869d5b67301cae")
-     (:revdesc . "3926e1a96d54")
+     (:commit . "131e99841789581b361f5374cbe179bc00a362fc")
+     (:revdesc . "131e99841789")
      (:keywords "languages" "tools" "parsers" "tree-sitter")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
