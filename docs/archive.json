@@ -2135,10 +2135,10 @@
   {
     "name": "treesit-langs",
     "summary": "Language bundle for Emacs's treesit.el",
-    "version": "20251229.1112",
+    "version": "20251229.1641",
     "url": "https://github.com/emacs-tree-sitter/treesit-langs",
     "source": "github",
-    "commit": "3926e1a96d54c6d927ed355905869d5b67301cae",
+    "commit": "131e99841789581b361f5374cbe179bc00a362fc",
     "tree": "https://github.com/emacs-tree-sitter/treesit-langs"
   },
   {
