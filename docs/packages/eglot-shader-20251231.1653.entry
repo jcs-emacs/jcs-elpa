@@ -1,9 +1,9 @@
 (eglot-shader
- . [(20250101 926) ((emacs (26 1)) (eglot (1 4)))
+ . [(20251231 1653) ((emacs (26 1)) (eglot (1 4)))
     "Eglot Clients for Shader" tar
     ((:url . "https://github.com/shader-ls/eglot-shader")
-     (:commit . "9eb1ccc69ebc8fcc2b1d481ab3ae09e2053e7d9b")
-     (:revdesc . "9eb1ccc69ebc") (:keywords "convenience" "shader")
+     (:commit . "23b9f844410aa7451a6692cb00c86ffb06eabd4e")
+     (:revdesc . "23b9f844410a") (:keywords "convenience" "shader")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

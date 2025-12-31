@@ -1,10 +1,10 @@
 (doom-dashboard
- . [(20250226 931)
+ . [(20251231 1632)
     ((emacs (27 1)) (dashboard (1 2 5)) (nerd-icons (0 1 0)))
     "Doom dashboard style for emacs-dashboard" tar
     ((:url . "https://github.com/emacs-dashboard/doom-dashboard")
-     (:commit . "1bc855570610bae280437fb686751a128efe2241")
-     (:revdesc . "1bc855570610")
+     (:commit . "27738ce5baad20449d3161ad41048d5a4128a68c")
+     (:revdesc . "27738ce5baad")
      (:keywords "convenience" "tools" "extension")
      (:authors ("Elijah G." . "eg642616@gmail.com"))
      (:maintainers ("Elijah G." . "eg642616@gmail.com"))

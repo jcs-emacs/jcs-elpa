@@ -1,11 +1,11 @@
 (ellsp
- . [(20251215 511)
+ . [(20251231 1633)
     ((emacs (28 1)) (lsp-mode (6 0 1)) (log4e (0 1 0)) (dash (2 14 1))
      (s (1 12 0)) (company (0 8 12)) (msgu (0 1 0)))
     "Elisp Language Server" tar
     ((:url . "https://github.com/elisp-lsp/ellsp")
-     (:commit . "9c91f55fe4333d2308c797d3a83e26380a37e905")
-     (:revdesc . "9c91f55fe433") (:keywords "convenience" "lsp")
+     (:commit . "52e4463b29980c2e15d2e6a360f9523fee9ca322")
+     (:revdesc . "52e4463b2998") (:keywords "convenience" "lsp")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
