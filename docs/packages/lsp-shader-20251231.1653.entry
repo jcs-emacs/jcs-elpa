@@ -1,9 +1,9 @@
 (lsp-shader
- . [(20250722 2024) ((emacs (28 1)) (lsp-mode (6 1)))
+ . [(20251231 1653) ((emacs (28 1)) (lsp-mode (6 1)))
     "LSP Clients for ShaderLab" tar
     ((:url . "https://github.com/shader-ls/lsp-shader")
-     (:commit . "13d696b8d8ab5ca319cc5e4ae4a1045eae2a2413")
-     (:revdesc . "13d696b8d8ab") (:keywords "convenience" "shader")
+     (:commit . "f8772e749d212adf95b901c3c94c9c96f9da3707")
+     (:revdesc . "f8772e749d21") (:keywords "convenience" "shader")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
