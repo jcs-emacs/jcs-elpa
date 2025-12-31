@@ -362,10 +362,10 @@
   {
     "name": "company-eask",
     "summary": "Company backend for Eask-file",
-    "version": "20240329.1742",
+    "version": "20251231.1607",
     "url": "https://github.com/emacs-eask/company-eask",
     "source": "github",
-    "commit": "3d8973a70f01121cad052b352ec0a3d76d8110d2",
+    "commit": "8011dc5c6c931760a80189d1695147cad674e568",
     "tree": "https://github.com/emacs-eask/company-eask"
   },
   {
@@ -587,10 +587,10 @@
   {
     "name": "eask",
     "summary": "Core Eask APIs, for Eask CLI development",
-    "version": "20251227.1301",
+    "version": "20251231.1606",
     "url": "https://github.com/emacs-eask/eask",
     "source": "github",
-    "commit": "8e2d9dc24c80d2f40f1d458051b23a699f15ce00",
+    "commit": "ec894011a91d300b64127905fe12660c1cd3ee4a",
     "tree": "https://github.com/emacs-eask/eask"
   },
   {
