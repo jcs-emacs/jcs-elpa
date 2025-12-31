@@ -2,10 +2,10 @@
   {
     "name": "ace-link-dashboard",
     "summary": "Ace link for dashboard",
-    "version": "20250226.930",
+    "version": "20251231.1632",
     "url": "https://github.com/emacs-dashboard/ace-link-dashboard",
     "source": "github",
-    "commit": "a07fb3a3268f43c8979cb392572184f80e37ac53",
+    "commit": "7b158a01ee230f0e43db022036bd5f7e5601e727",
     "tree": "https://github.com/emacs-dashboard/ace-link-dashboard"
   },
   {
@@ -254,10 +254,10 @@
   {
     "name": "cogru",
     "summary": "Cogru plugin for real-time collaborative editing",
-    "version": "20250101.923",
+    "version": "20251231.1647",
     "url": "https://github.com/Cogru/cogru.el",
     "source": "github",
-    "commit": "4bc6f422709d5102dc1a870d7286dce0e2902337",
+    "commit": "d2ea28bc35de7b17752c891c2fd8af83bae5e7dd",
     "tree": "https://github.com/Cogru/cogru.el"
   },
   {
@@ -533,28 +533,28 @@
   {
     "name": "dashboard",
     "summary": "A startup screen extracted from Spacemacs",
-    "version": "20250708.57",
+    "version": "20251231.1631",
     "url": "https://github.com/emacs-dashboard/emacs-dashboard",
     "source": "github",
-    "commit": "8c2cf0cfde4f5dac8c477f755380fffef6824108",
+    "commit": "49de4c16624f6a86a5beb1196f68f02636a74d1b",
     "tree": "https://github.com/emacs-dashboard/emacs-dashboard"
   },
   {
     "name": "dashboard-bm",
     "summary": "Visual Bookmarks for Dashboard",
-    "version": "20250226.930",
+    "version": "20251231.1632",
     "url": "https://github.com/emacs-dashboard/dashboard-bm",
     "source": "github",
-    "commit": "13d24b5dcc287e36f7ec0ebc15357acf81e2a5fb",
+    "commit": "04cca2f177d16539112fad9cb873ee1d31b84b51",
     "tree": "https://github.com/emacs-dashboard/dashboard-bm"
   },
   {
     "name": "dashboard-ls",
     "summary": "Display files/directories in current directory on Dashboard",
-    "version": "20250226.929",
+    "version": "20251231.1631",
     "url": "https://github.com/emacs-dashboard/dashboard-ls",
     "source": "github",
-    "commit": "68ecc61d7302ccb71b0197096e8c9d80a03ad9b5",
+    "commit": "e6f1ae4e4f4efbc1d3c4cff84b220f44e963e6ab",
     "tree": "https://github.com/emacs-dashboard/dashboard-ls"
   },
   {
@@ -578,10 +578,10 @@
   {
     "name": "doom-dashboard",
     "summary": "Doom dashboard style for emacs-dashboard",
-    "version": "20250226.931",
+    "version": "20251231.1632",
     "url": "https://github.com/emacs-dashboard/doom-dashboard",
     "source": "github",
-    "commit": "1bc855570610bae280437fb686751a128efe2241",
+    "commit": "27738ce5baad20449d3161ad41048d5a4128a68c",
     "tree": "https://github.com/emacs-dashboard/doom-dashboard"
   },
   {
@@ -659,10 +659,10 @@
   {
     "name": "eglot-shader",
     "summary": "Eglot Clients for Shader",
-    "version": "20250101.926",
+    "version": "20251231.1653",
     "url": "https://github.com/shader-ls/eglot-shader",
     "source": "github",
-    "commit": "9eb1ccc69ebc8fcc2b1d481ab3ae09e2053e7d9b",
+    "commit": "23b9f844410aa7451a6692cb00c86ffb06eabd4e",
     "tree": "https://github.com/shader-ls/eglot-shader"
   },
   {
@@ -740,10 +740,10 @@
   {
     "name": "ellsp",
     "summary": "Elisp Language Server",
-    "version": "20251215.511",
+    "version": "20251231.1633",
     "url": "https://github.com/elisp-lsp/ellsp",
     "source": "github",
-    "commit": "9c91f55fe4333d2308c797d3a83e26380a37e905",
+    "commit": "52e4463b29980c2e15d2e6a360f9523fee9ca322",
     "tree": "https://github.com/elisp-lsp/ellsp"
   },
   {
@@ -857,28 +857,28 @@
   {
     "name": "flycheck-dart",
     "summary": "Flycheck for dart analyze",
-    "version": "20250101.903",
+    "version": "20251231.1618",
     "url": "https://github.com/flycheck/flycheck-dart",
     "source": "github",
-    "commit": "20837d44e443f3760cd3a18f0fba54df7ec995aa",
+    "commit": "d5b8aa91358c0e9021b7a8adf7d88a1898404013",
     "tree": "https://github.com/flycheck/flycheck-dart"
   },
   {
     "name": "flycheck-deno",
     "summary": "Flycheck for deno-lint",
-    "version": "20250226.2238",
+    "version": "20251231.1618",
     "url": "https://github.com/flycheck/flycheck-deno",
     "source": "github",
-    "commit": "d59b0cceb81b776a7143d7e25e06f7c3e71aa56f",
+    "commit": "27c2f2a4d5edcc4ddce06a42bf49a3f6b36e8f1f",
     "tree": "https://github.com/flycheck/flycheck-deno"
   },
   {
     "name": "flycheck-eask",
     "summary": "Eask support in Flycheck",
-    "version": "20250226.939",
+    "version": "20251231.1617",
     "url": "https://github.com/flycheck/flycheck-eask",
     "source": "github",
-    "commit": "8a7f847466935b5937e93f5ccbd4711812d962a3",
+    "commit": "9141ad6b9ec2f2572a4dcddf54247825516c93b2",
     "tree": "https://github.com/flycheck/flycheck-eask"
   },
   {
@@ -911,37 +911,37 @@
   {
     "name": "flycheck-ziglint",
     "summary": "Flycheck for ziglint",
-    "version": "20250708.2042",
+    "version": "20251231.1618",
     "url": "https://github.com/flycheck/flycheck-ziglint",
     "source": "github",
-    "commit": "08906464abaaa7d8f0916114823587c8aaa0dcc2",
+    "commit": "fb837a10ab7a1740d5bcaa1f65bf192420e398c1",
     "tree": "https://github.com/flycheck/flycheck-ziglint"
   },
   {
     "name": "flymake-dart",
     "summary": "Flymake support for dart analyze",
-    "version": "20250101.1000",
+    "version": "20251231.1620",
     "url": "https://github.com/flymake/flymake-dart",
     "source": "github",
-    "commit": "43ef1b321150c7677955d2bbe0cb508610c09e9e",
+    "commit": "fa2014864112c71f07141ad7c2143243ff16f3e2",
     "tree": "https://github.com/flymake/flymake-dart"
   },
   {
     "name": "flymake-eask",
     "summary": "Eask support in Flymake",
-    "version": "20250101.1000",
+    "version": "20251231.1620",
     "url": "https://github.com/flymake/flymake-eask",
     "source": "github",
-    "commit": "96fd80e6ff2c34a5898906388cfb6462f9bec7f1",
+    "commit": "b389846ee64cc56c25ffb162be4388f3f31ad809",
     "tree": "https://github.com/flymake/flymake-eask"
   },
   {
     "name": "flymake-elsa",
     "summary": "Flymake integration for Elsa",
-    "version": "20250101.1000",
+    "version": "20251231.1620",
     "url": "https://github.com/flymake/flymake-elsa",
     "source": "github",
-    "commit": "80aa543548d9be7173a42ad2a6f67416c38108ac",
+    "commit": "6afe3d0828f991747a4cc1c610927cffd07674c3",
     "tree": "https://github.com/flymake/flymake-elsa"
   },
   {
@@ -956,10 +956,10 @@
   {
     "name": "flymake-ziglint",
     "summary": "Flymake for ziglint",
-    "version": "20250101.1000",
+    "version": "20251231.1619",
     "url": "https://github.com/flymake/flymake-ziglint",
     "source": "github",
-    "commit": "62a79c45f59b62fc441a1b5563734d83c2e0c5b0",
+    "commit": "052ad08d3c4ce521b824d91c039ce0a747fce5e8",
     "tree": "https://github.com/flymake/flymake-ziglint"
   },
   {
@@ -1226,64 +1226,64 @@
   {
     "name": "jayces-mode",
     "summary": "Major mode for editing JayCeS file",
-    "version": "20250101.927",
+    "version": "20251231.1636",
     "url": "https://github.com/jayces-lang/jayces-mode",
     "source": "github",
-    "commit": "6a52ea7ad0122eaa186fa8de39f692a259b1656e",
+    "commit": "79b080adda57f09225d1cf9555d085ec64dce7e2",
     "tree": "https://github.com/jayces-lang/jayces-mode"
   },
   {
     "name": "jcs-echobar",
     "summary": "An echo-bar for jcs-emacs",
-    "version": "20250101.823",
+    "version": "20251231.1614",
     "url": "https://github.com/jcs-emacs/jcs-echobar",
     "source": "github",
-    "commit": "2e2ec9cc3e9cf1b82cd14497e1de91ed753e6267",
+    "commit": "429ca34727d9147f6c63c9e61d63bbb0d452b701",
     "tree": "https://github.com/jcs-emacs/jcs-echobar"
   },
   {
     "name": "jcs-frametitle",
     "summary": "A frame title for jcs-emacs",
-    "version": "20251028.1032",
+    "version": "20251231.1614",
     "url": "https://github.com/jcs-emacs/jcs-frametitle",
     "source": "github",
-    "commit": "ee07331fe7b03027392189b9c169398275101091",
+    "commit": "caacf59fc8afc8e9b0b194ac998e8de05cda1bc6",
     "tree": "https://github.com/jcs-emacs/jcs-frametitle"
   },
   {
     "name": "jcs-modeline",
     "summary": "A modeline for jcs-emacs",
-    "version": "20251231.651",
+    "version": "20251231.1615",
     "url": "https://github.com/jcs-emacs/jcs-modeline",
     "source": "github",
-    "commit": "8ede8ab6a994a5d0d84706b9a738e409c65feac2",
+    "commit": "dca0dd8e37d78026a9b05d27c8561b0e7c093cca",
     "tree": "https://github.com/jcs-emacs/jcs-modeline"
   },
   {
     "name": "jcs-poptip",
     "summary": "Generic popup tip",
-    "version": "20250505.13",
+    "version": "20251231.1614",
     "url": "https://github.com/jcs-emacs/jcs-poptip",
     "source": "github",
-    "commit": "a81a72167d5605e9ba051db2a7b0fd722633ee99",
+    "commit": "461ae307b1ea42cc3025b3467477c2fe1fd6bf4e",
     "tree": "https://github.com/jcs-emacs/jcs-poptip"
   },
   {
     "name": "jcs-screensaver",
     "summary": "A screensaver for jcs-emacs",
-    "version": "20250101.824",
+    "version": "20251231.1614",
     "url": "https://github.com/jcs-emacs/jcs-screensaver",
     "source": "github",
-    "commit": "13e9d126be5dbb0e5b9e9a47c7584bad1cfaad81",
+    "commit": "4e34534e1432956a711d5aa0b9c8e07948238f0c",
     "tree": "https://github.com/jcs-emacs/jcs-screensaver"
   },
   {
     "name": "jcs-template",
     "summary": "Template module for jcs-emacs",
-    "version": "20250101.824",
+    "version": "20251231.1614",
     "url": "https://github.com/jcs-emacs/jcs-template",
     "source": "github",
-    "commit": "d069d428821e1408c747eaca5ebe1de1f686be07",
+    "commit": "5c92762e4339c920e0ff04f1792fceb07030d0d9",
     "tree": "https://github.com/jcs-emacs/jcs-template"
   },
   {
@@ -1424,10 +1424,10 @@
   {
     "name": "lsp-shader",
     "summary": "LSP Clients for ShaderLab",
-    "version": "20250722.2024",
+    "version": "20251231.1653",
     "url": "https://github.com/shader-ls/lsp-shader",
     "source": "github",
-    "commit": "13d696b8d8ab5ca319cc5e4ae4a1045eae2a2413",
+    "commit": "f8772e749d212adf95b901c3c94c9c96f9da3707",
     "tree": "https://github.com/shader-ls/lsp-shader"
   },
   {
@@ -2081,10 +2081,10 @@
   {
     "name": "tree-sitter",
     "summary": "Incremental parsing system",
-    "version": "20251224.547",
+    "version": "20251231.1625",
     "url": "https://github.com/emacs-tree-sitter/elisp-tree-sitter",
     "source": "github",
-    "commit": "e3d47a5e46fd960c18ba1cda576364c5caa6ace1",
+    "commit": "734a93f0b54394b774fdabf5bace7dcbe7816f03",
     "tree": "https://github.com/emacs-tree-sitter/elisp-tree-sitter"
   },
   {
@@ -2126,19 +2126,19 @@
   {
     "name": "treesit-fold",
     "summary": "Code folding using treesit",
-    "version": "20251229.1251",
+    "version": "20251231.1626",
     "url": "https://github.com/emacs-tree-sitter/treesit-fold",
     "source": "github",
-    "commit": "35b62011cb8ae2f85adb00080a0a9e040eee5c87",
+    "commit": "691541c5589b8213b7abca31223e6b12a9183197",
     "tree": "https://github.com/emacs-tree-sitter/treesit-fold"
   },
   {
     "name": "treesit-langs",
     "summary": "Language bundle for Emacs's treesit.el",
-    "version": "20251230.500",
+    "version": "20251231.1626",
     "url": "https://github.com/emacs-tree-sitter/treesit-langs",
     "source": "github",
-    "commit": "bf795b3cf0c83dc0ffa60fd0169a42b8129b9c01",
+    "commit": "a6b9317b3b9b2957f90b0f99e04d0cc518debe6e",
     "tree": "https://github.com/emacs-tree-sitter/treesit-langs"
   },
   {
@@ -2153,19 +2153,19 @@
   {
     "name": "ts-fold",
     "summary": "Code folding using tree-sitter",
-    "version": "20251229.1247",
+    "version": "20251231.1627",
     "url": "https://github.com/emacs-tree-sitter/ts-fold",
     "source": "github",
-    "commit": "babebebd1a11fb1d4e20a49c853991e4dc90cbc9",
+    "commit": "56fccf2047aac913f2ee48e5b4a8ee87de6f10cc",
     "tree": "https://github.com/emacs-tree-sitter/ts-fold"
   },
   {
     "name": "tsc",
     "summary": "Core Tree-sitter APIs",
-    "version": "20251222.1802",
+    "version": "20251231.1625",
     "url": "https://github.com/emacs-tree-sitter/elisp-tree-sitter",
     "source": "github",
-    "commit": "d12aff8ee91dcd643da0a65a3bcee7be9a3cac68",
+    "commit": "734a93f0b54394b774fdabf5bace7dcbe7816f03",
     "tree": "https://github.com/emacs-tree-sitter/elisp-tree-sitter"
   },
   {
