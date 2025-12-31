@@ -1,9 +1,10 @@
 (jcs-template
- . [(20250101 824) ((emacs (29 1)) (file-header (0 1 0)) (f (0 20 0)))
+ . [(20251231 1614)
+    ((emacs (29 1)) (file-header (0 1 0)) (f (0 20 0)))
     "Template module for jcs-emacs" tar
     ((:url . "https://github.com/jcs-emacs/jcs-template")
-     (:commit . "d069d428821e1408c747eaca5ebe1de1f686be07")
-     (:revdesc . "d069d428821e") (:keywords "convenience")
+     (:commit . "5c92762e4339c920e0ff04f1792fceb07030d0d9")
+     (:revdesc . "5c92762e4339") (:keywords "convenience")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

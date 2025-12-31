@@ -1,9 +1,9 @@
 (flymake-elsa
- . [(20250101 1000) ((emacs (26 1)) (flymake-easy (0 1)))
+ . [(20251231 1620) ((emacs (26 1)) (flymake-easy (0 1)))
     "Flymake integration for Elsa" tar
     ((:url . "https://github.com/flymake/flymake-elsa")
-     (:commit . "80aa543548d9be7173a42ad2a6f67416c38108ac")
-     (:revdesc . "80aa543548d9") (:keywords "lisp" "elsa")
+     (:commit . "6afe3d0828f991747a4cc1c610927cffd07674c3")
+     (:revdesc . "6afe3d0828f9") (:keywords "lisp" "elsa")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

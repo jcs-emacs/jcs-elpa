@@ -1,10 +1,10 @@
 (jcs-screensaver
- . [(20250101 824)
+ . [(20251231 1614)
     ((emacs (26 3)) (snow (0 1)) (zoom-window (0 6)) (msgu (0 1 0)))
     "A screensaver for jcs-emacs" tar
     ((:url . "https://github.com/jcs-emacs/jcs-screensaver")
-     (:commit . "13e9d126be5dbb0e5b9e9a47c7584bad1cfaad81")
-     (:revdesc . "13e9d126be5d") (:keywords "tools")
+     (:commit . "4e34534e1432956a711d5aa0b9c8e07948238f0c")
+     (:revdesc . "4e34534e1432") (:keywords "tools")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
