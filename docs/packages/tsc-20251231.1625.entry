@@ -1,8 +1,8 @@
 (tsc
- . [(20251222 1802) ((emacs (27 1))) "Core Tree-sitter APIs" tar
+ . [(20251231 1625) ((emacs (27 1))) "Core Tree-sitter APIs" tar
     ((:url . "https://github.com/emacs-tree-sitter/elisp-tree-sitter")
-     (:commit . "d12aff8ee91dcd643da0a65a3bcee7be9a3cac68")
-     (:revdesc . "d12aff8ee91d")
+     (:commit . "734a93f0b54394b774fdabf5bace7dcbe7816f03")
+     (:revdesc . "734a93f0b543")
      (:keywords "languages" "tools" "parsers" "dynamic-modules"
 		"tree-sitter")
      (:authors ("Tuấn-Anh Nguyễn" . "ubolonton@gmail.com")
