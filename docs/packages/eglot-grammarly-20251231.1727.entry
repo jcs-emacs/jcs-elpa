@@ -1,9 +1,9 @@
 (eglot-grammarly
- . [(20250222 1744) ((emacs (29 1)) (eglot (1 4)))
+ . [(20251231 1727) ((emacs (29 1)) (eglot (1 4)))
     "Eglot Clients for Grammarly" tar
     ((:url . "https://github.com/emacs-grammarly/eglot-grammarly")
-     (:commit . "f0a25d0249c197dad0581ee636c3bf7531884b98")
-     (:revdesc . "f0a25d0249c1")
+     (:commit . "92ae743c2fd29b20eb84b75c92adbe61d7586535")
+     (:revdesc . "92ae743c2fd2")
      (:keywords "convenience" "eglot" "grammarly" "checker")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
