@@ -1,12 +1,12 @@
 (cogru
- . [(20250101 923)
+ . [(20251231 1647)
     ((emacs (28 1)) (elenv (0 1 0)) (msgu (0 1 0)) (s (1 12 0))
      (ht (2 0)) (log4e (0 4 1)) (posframe (1 4 3)) (named-timer (0 1))
      (show-eol (0 0 5)))
     "Cogru plugin for real-time collaborative editing" tar
     ((:url . "https://github.com/Cogru/cogru.el")
-     (:commit . "4bc6f422709d5102dc1a870d7286dce0e2902337")
-     (:revdesc . "4bc6f422709d") (:keywords "convenience" "cogru")
+     (:commit . "d2ea28bc35de7b17752c891c2fd8af83bae5e7dd")
+     (:revdesc . "d2ea28bc35de") (:keywords "convenience" "cogru")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
