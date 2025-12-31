@@ -596,19 +596,19 @@
   {
     "name": "eask-mode",
     "summary": "Major mode for editing Eask files",
-    "version": "20250101.836",
+    "version": "20251231.1607",
     "url": "https://github.com/emacs-eask/eask-mode",
     "source": "github",
-    "commit": "9bab3ad0d9a7df6284daed9ecd2cbd89298b958f",
+    "commit": "0970dc6f4f8008d58261e36b9b824a0ffa6b9882",
     "tree": "https://github.com/emacs-eask/eask-mode"
   },
   {
     "name": "easky",
     "summary": "Control the Eask command-line interface",
-    "version": "20251227.1304",
+    "version": "20251231.1607",
     "url": "https://github.com/emacs-eask/easky",
     "source": "github",
-    "commit": "f68ef0376b16aa3cebe651a8782cf9076ea0f7dd",
+    "commit": "efe25f0c1ba483378854795fcfe7fa0367cebf27",
     "tree": "https://github.com/emacs-eask/easky"
   },
   {
@@ -695,10 +695,10 @@
   {
     "name": "eldoc-eask",
     "summary": "Eldoc support for Eask-file",
-    "version": "20250101.837",
+    "version": "20251231.1607",
     "url": "https://github.com/emacs-eask/eldoc-eask",
     "source": "github",
-    "commit": "2433fa00abfa8d4b384aff022f496287e0975776",
+    "commit": "d305a63c5e67a3e8a6ff448c7419bcc1ac05d5b4",
     "tree": "https://github.com/emacs-eask/eldoc-eask"
   },
   {
