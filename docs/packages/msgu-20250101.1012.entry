@@ -1,9 +1,0 @@
-(msgu
- . [(20250101 1012) ((emacs (26 1)))
-    "Utility functions help output the messages" tar
-    ((:url . "https://github.com/jcs-elpa/msgu")
-     (:commit . "c7b53f3ebc9f80ff5991038db1e2ab2f3097c792")
-     (:revdesc . "c7b53f3ebc9f") (:keywords "lisp")
-     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
-     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
-     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

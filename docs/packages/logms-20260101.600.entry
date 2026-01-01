@@ -1,0 +1,10 @@
+(logms
+ . [(20260101 600)
+    ((emacs (27 1)) (f (0 20 0)) (s (1 9 0)) (ht (2 3)))
+    "Log message with clickable links to context" tar
+    ((:url . "https://github.com/jcs-elpa/logms")
+     (:commit . "7f430ce289d4f46597e67bf46a24e51a8d7471aa")
+     (:revdesc . "7f430ce289d4") (:keywords "maint" "debug" "log")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

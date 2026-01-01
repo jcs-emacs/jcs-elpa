@@ -1,0 +1,12 @@
+(preview-it
+ . [(20260101 602)
+    ((emacs (26 1)) (posframe (1 1 7)) (request (0 3 0))
+     (gh-md (0 1 1)))
+    "Preview anything at point" tar
+    ((:url . "https://github.com/jcs-elpa/preview-it")
+     (:commit . "abb0e5b27f9497c4c3ada405064487c30e571b20")
+     (:revdesc . "abb0e5b27f94")
+     (:keywords "convenience" "preview" "image" "path" "file")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

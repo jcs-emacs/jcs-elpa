@@ -1,0 +1,12 @@
+(meta-view
+ . [(20260101 549)
+    ((emacs (26 1)) (csharp-mode (0 11 0)) (meta-net (1 1 0))
+     (ht (2 3)) (f (0 20 0)))
+    "View metadata from .NET assemblies" tar
+    ((:url . "https://github.com/emacs-vs/meta-view")
+     (:commit . "d4f145e7f513e2bd9205f7fff19c93b01e6e53e8")
+     (:revdesc . "d4f145e7f513")
+     (:keywords "convenience" "assembly" "metadata" "source")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
