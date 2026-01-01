@@ -1,9 +1,9 @@
 (hl-preproc
- . [(20250101 908) ((emacs (24 4)) (meta-net (1 1 0)))
+ . [(20260101 549) ((emacs (24 4)) (meta-net (1 1 0)))
     "Unhighlight invalid preprocessor region" tar
     ((:url . "https://github.com/emacs-vs/hl-preproc")
-     (:commit . "96b1ac6717ecc3f747614c6c791c949fd889fb2d")
-     (:revdesc . "96b1ac6717ec")
+     (:commit . "2b196be632871a5e30de056eb7460dbdb902fdeb")
+     (:revdesc . "2b196be63287")
      (:keywords "convenience" "preprocessor")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))

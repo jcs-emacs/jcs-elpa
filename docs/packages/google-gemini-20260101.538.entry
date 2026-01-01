@@ -1,9 +1,9 @@
 (google-gemini
- . [(20250101 914) ((emacs (26 1)) (request (0 3 0)) (tblui (0 1 0)))
+ . [(20260101 538) ((emacs (26 1)) (request (0 3 0)) (tblui (0 1 0)))
     "Elisp library for the Google Gemini API" tar
     ((:url . "https://github.com/emacs-openai/google-gemini")
-     (:commit . "7b794bfd397f48a6a518cda78966f7b42ef9c6e4")
-     (:revdesc . "7b794bfd397f") (:keywords "comm" "google" "gemini")
+     (:commit . "45838ff35e4128d40258c20fd2b26e9a1701b149")
+     (:revdesc . "45838ff35e41") (:keywords "comm" "google" "gemini")
      (:authors ("JenChieh" . "jcs090218@gmail.com"))
      (:maintainers ("JenChieh" . "jcs090218@gmail.com"))
      (:maintainer "JenChieh" . "jcs090218@gmail.com"))])

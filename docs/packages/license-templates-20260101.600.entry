@@ -1,9 +1,9 @@
 (license-templates
- . [(20250101 1008) ((emacs (24 3)) (request (0 3 0)))
+ . [(20260101 600) ((emacs (24 3)) (request (0 3 0)))
     "Create LICENSE using GitHub API" tar
     ((:url . "https://github.com/jcs-elpa/license-templates")
-     (:commit . "93c4374301aa3fdb3dc67e3a7513af02e536d367")
-     (:revdesc . "93c4374301aa")
+     (:commit . "c53a4e9f748be1a9c4c032602b927f9ab5a16702")
+     (:revdesc . "c53a4e9f748b")
      (:keywords "convenience" "license" "api" "template")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
