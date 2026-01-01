@@ -1370,10 +1370,10 @@
   {
     "name": "logms",
     "summary": "Log message with clickable links to context",
-    "version": "20250101.1008",
+    "version": "20260101.600",
     "url": "https://github.com/jcs-elpa/logms",
     "source": "github",
-    "commit": "48d50cdc90b68b86333bcdb3f2ebfa4568db198c",
+    "commit": "7f430ce289d4f46597e67bf46a24e51a8d7471aa",
     "tree": "https://github.com/jcs-elpa/logms"
   },
   {
@@ -1397,10 +1397,10 @@
   {
     "name": "lsp-ltex-plus",
     "summary": "LSP Clients for LTEX+",
-    "version": "20250228.2214",
+    "version": "20260101.535",
     "url": "https://github.com/emacs-languagetool/lsp-ltex-plus",
     "source": "github",
-    "commit": "1d7a992c9733e5bb2fa7eda02e179d66fe57942f",
+    "commit": "24e78878ee88b4b6fccedd37ec884897f322a936",
     "tree": "https://github.com/emacs-languagetool/lsp-ltex-plus"
   },
   {
@@ -1433,19 +1433,19 @@
   {
     "name": "lsp-smart-req",
     "summary": "Lazy load LSP packages",
-    "version": "20251216.641",
+    "version": "20260101.600",
     "url": "https://github.com/jcs-elpa/lsp-smart-req",
     "source": "github",
-    "commit": "3cb3fa4cfa87cf54d7fac4b86e35438c9a1a4e94",
+    "commit": "54df06e2c153369d1e930e2daac46c8cc568bbdc",
     "tree": "https://github.com/jcs-elpa/lsp-smart-req"
   },
   {
     "name": "lsp-uniteai",
     "summary": "LSP Clients for UniteAI",
-    "version": "20250812.1142",
+    "version": "20260101.538",
     "url": "https://github.com/emacs-openai/lsp-uniteai",
     "source": "github",
-    "commit": "f1c1db46ce4176677edd127df49adc60ac667bc5",
+    "commit": "5aeeb22ed615e6f6ba5d4a753b6a7972667589c7",
     "tree": "https://github.com/emacs-openai/lsp-uniteai"
   },
   {
@@ -1469,46 +1469,46 @@
   {
     "name": "marquee-header",
     "summary": "Code interface for displaying marquee in header",
-    "version": "20250101.1012",
+    "version": "20260101.601",
     "url": "https://github.com/jcs-elpa/marquee-header",
     "source": "github",
-    "commit": "5f40543099ffe55b64dbcc57308dff7efe948bbe",
+    "commit": "c0e884eea86ef818a652dba9a1719b50489813a6",
     "tree": "https://github.com/jcs-elpa/marquee-header"
   },
   {
     "name": "mbs",
     "summary": "Minibuffer Stats",
-    "version": "20250101.1012",
+    "version": "20260101.601",
     "url": "https://github.com/jcs-elpa/mbs",
     "source": "github",
-    "commit": "a2bea88138a0aadbc928d57b1e32dec0dafb2930",
+    "commit": "92286e02a4e2f8bcf966b9dad6263329dba7591e",
     "tree": "https://github.com/jcs-elpa/mbs"
   },
   {
     "name": "message-clean-mode",
     "summary": "Keep messages buffer clean",
-    "version": "20250319.9",
+    "version": "20260101.601",
     "url": "https://github.com/jcs-elpa/message-clean-mode",
     "source": "github",
-    "commit": "ab3f96933e06353afea1f6447d527305df6dab21",
+    "commit": "8b1f3ca3fbfcd6adcfbfc1dba2ab3c27a648b79a",
     "tree": "https://github.com/jcs-elpa/message-clean-mode"
   },
   {
     "name": "meta-net",
     "summary": "Parse .NET assembly's XML",
-    "version": "20250101.909",
+    "version": "20260101.549",
     "url": "https://github.com/emacs-vs/meta-net",
     "source": "github",
-    "commit": "bdc9477d42a968cb1aa6dd97ca52eb1ba1ac902a",
+    "commit": "d4025869ff051fce9bf480fa2777ae71d9772791",
     "tree": "https://github.com/emacs-vs/meta-net"
   },
   {
     "name": "meta-view",
     "summary": "View metadata from .NET assemblies",
-    "version": "20250101.909",
+    "version": "20260101.549",
     "url": "https://github.com/emacs-vs/meta-view",
     "source": "github",
-    "commit": "5fda53841e51e95fa4243defa88a3009334ffdca",
+    "commit": "d4f145e7f513e2bd9205f7fff19c93b01e6e53e8",
     "tree": "https://github.com/emacs-vs/meta-view"
   },
   {
@@ -1541,19 +1541,19 @@
   {
     "name": "msgu",
     "summary": "Utility functions help output the messages",
-    "version": "20250101.1012",
+    "version": "20260101.601",
     "url": "https://github.com/jcs-elpa/msgu",
     "source": "github",
-    "commit": "c7b53f3ebc9f80ff5991038db1e2ab2f3097c792",
+    "commit": "68abe654c82e16b7f90e05cc8be7c087a1707712",
     "tree": "https://github.com/jcs-elpa/msgu"
   },
   {
     "name": "multi-shell",
     "summary": "Managing multiple shell buffers",
-    "version": "20250101.1012",
+    "version": "20260101.601",
     "url": "https://github.com/jcs-elpa/multi-shell",
     "source": "github",
-    "commit": "de34c1ebfdd6fb7d415595b329f61544c4d5b64a",
+    "commit": "c532904abb0f01f35161198015e4e2ec42f8bec7",
     "tree": "https://github.com/jcs-elpa/multi-shell"
   },
   {
@@ -1586,10 +1586,10 @@
   {
     "name": "nerd-icons-buffer-menu",
     "summary": "Display nerd icons in `buffer-menu'",
-    "version": "20251230.824",
+    "version": "20260101.601",
     "url": "https://github.com/jcs-elpa/nerd-icons-buffer-menu",
     "source": "github",
-    "commit": "41fb612cbaacafcb2c071d1442cbb9c9657c3201",
+    "commit": "01319ab9ca92947fce052a04aaac20d0b45ac3cc",
     "tree": "https://github.com/jcs-elpa/nerd-icons-buffer-menu"
   },
   {
@@ -1631,10 +1631,10 @@
   {
     "name": "openai",
     "summary": "Elisp library for the OpenAI API",
-    "version": "20250101.914",
+    "version": "20260101.538",
     "url": "https://github.com/emacs-openai/openai",
     "source": "github",
-    "commit": "b4c5e5e925ec6155f89e008698e512a0e8899348",
+    "commit": "349aaccee567fceda116a05a310b401e320f186b",
     "tree": "https://github.com/emacs-openai/openai"
   },
   {
@@ -1658,10 +1658,10 @@
   {
     "name": "origami",
     "summary": "Flexible text folding",
-    "version": "20250402.2121",
+    "version": "20260101.554",
     "url": "https://github.com/elp-revive/origami.el",
     "source": "github",
-    "commit": "878b55c0071d14de9e01b132026759c853f783d5",
+    "commit": "1a21a9fc31c59e44059cd7e386c9c54d5a52cccd",
     "tree": "https://github.com/elp-revive/origami.el"
   },
   {
@@ -1694,10 +1694,10 @@
   {
     "name": "pkg-dm",
     "summary": "Package dependencies management",
-    "version": "20250218.2350",
+    "version": "20260101.602",
     "url": "https://github.com/jcs-elpa/pkg-dm",
     "source": "github",
-    "commit": "9cbed5faab85491fedd93d21855915f279c17840",
+    "commit": "17bfa2306a383dd6c912abcc2abf30e2b533734c",
     "tree": "https://github.com/jcs-elpa/pkg-dm"
   },
   {
@@ -1730,19 +1730,19 @@
   {
     "name": "preview-it",
     "summary": "Preview anything at point",
-    "version": "20250101.1011",
+    "version": "20260101.602",
     "url": "https://github.com/jcs-elpa/preview-it",
     "source": "github",
-    "commit": "6d251000b35800d8b79e2c49f0ae23bf607114c8",
+    "commit": "abb0e5b27f9497c4c3ada405064487c30e571b20",
     "tree": "https://github.com/jcs-elpa/preview-it"
   },
   {
     "name": "prt",
     "summary": "Progress Reporter Library",
-    "version": "20250218.2349",
+    "version": "20260101.602",
     "url": "https://github.com/jcs-elpa/prt",
     "source": "github",
-    "commit": "7d805202c247bbb87ec614655e165120b7172679",
+    "commit": "4ee1b9f7959b95c109cb57186f7f6360ab6fac56",
     "tree": "https://github.com/jcs-elpa/prt"
   },
   {
@@ -1766,10 +1766,10 @@
   {
     "name": "qss-mode",
     "summary": "Major mode for Qt Style Sheets",
-    "version": "20250101.1011",
+    "version": "20260101.602",
     "url": "https://github.com/jcs-elpa/qss-mode",
     "source": "github",
-    "commit": "464a2e86e30d20e773ecb96dfd747851de619ee1",
+    "commit": "418b91498171d845da010a8ff8c9ce4d542efd48",
     "tree": "https://github.com/jcs-elpa/qss-mode"
   },
   {
