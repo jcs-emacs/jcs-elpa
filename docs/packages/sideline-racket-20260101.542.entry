@@ -1,0 +1,10 @@
+(sideline-racket
+ . [(20260101 542)
+    ((emacs (28 1)) (sideline (0 1 0)) (racket-mode (1)))
+    "Show racket result with sideline" tar
+    ((:url . "https://github.com/emacs-sideline/sideline-racket")
+     (:commit . "0141f401fef21d6620034c65b3e522d98ba40930")
+     (:revdesc . "0141f401fef2") (:keywords "convenience")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

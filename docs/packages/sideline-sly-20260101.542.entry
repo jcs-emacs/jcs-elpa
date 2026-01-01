@@ -1,0 +1,9 @@
+(sideline-sly
+ . [(20260101 542) ((emacs (28 1)) (sideline (0 1 0)) (sly (1 0 43)))
+    "Show SLY result with sideline" tar
+    ((:url . "https://github.com/emacs-sideline/sideline-sly")
+     (:commit . "8d7ef316474769d7c9aaaac955fb3ce29bdf095a")
+     (:revdesc . "8d7ef3164747") (:keywords "convenience")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

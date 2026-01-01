@@ -1,9 +1,0 @@
-(sideline-eros
- . [(20250205 2347) ((emacs (28 1)) (sideline (0 1 0)) (eros (0 1 0)))
-    "Show EROS result with sideline" tar
-    ((:url . "https://github.com/emacs-sideline/sideline-eros")
-     (:commit . "5c476b24a3e8cfc61e71b9d7b4989ee2dbff2dc0")
-     (:revdesc . "5c476b24a3e8") (:keywords "convenience")
-     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
-     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
-     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

@@ -1,9 +1,0 @@
-(rainbow-csv
- . [(20251111 158) ((emacs (27 1)) (csv-mode (1 22)))
-    "Highlight CSV and TSV files in different rainbow colors" tar
-    ((:url . "https://github.com/emacs-vs/rainbow-csv")
-     (:commit . "72b926888f902145b77d0a6cb3e0ff2bfe48b81c")
-     (:revdesc . "72b926888f90") (:keywords "convenience" "csv")
-     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
-     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
-     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

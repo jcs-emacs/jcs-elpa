@@ -1,9 +1,0 @@
-(repos-window
- . [(20250101 1011) ((emacs (26 1)))
-    "Reposition window if when needed" tar
-    ((:url . "https://github.com/jcs-elpa/repos-window")
-     (:commit . "a955aeb2b82c800dbbb968f13548c0e334876212")
-     (:revdesc . "a955aeb2b82c") (:keywords "convenience")
-     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
-     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
-     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

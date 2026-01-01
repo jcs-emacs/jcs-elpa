@@ -1,0 +1,11 @@
+(sideline-emoji
+ . [(20260101 541)
+    ((emacs (27 1)) (sideline (0 1 0)) (emojify (1 2 1)) (ht (2 4)))
+    "Show emoji information with sideline" tar
+    ((:url . "https://github.com/emacs-sideline/sideline-emoji")
+     (:commit . "cfc8f8c4c31d00e0c619936dac0ea1a3085be7f8")
+     (:revdesc . "cfc8f8c4c31d")
+     (:keywords "convenience" "sideline" "emoji")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

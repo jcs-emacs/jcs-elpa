@@ -1,0 +1,9 @@
+(responsive-window
+ . [(20260101 602) ((emacs (26 1)) (elenv (0 1 0)))
+    "Adapt to different screen sizes automatically" tar
+    ((:url . "https://github.com/jcs-elpa/responsive-window")
+     (:commit . "a5394eb2cfcede890a24a126db584e8acf3f48ea")
+     (:revdesc . "a5394eb2cfce") (:keywords "frames")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

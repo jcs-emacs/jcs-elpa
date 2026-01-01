@@ -1,9 +1,0 @@
-(sideline-load-cost
- . [(20250514 226) ((emacs (28 1)) (sideline (0 1 0)))
-    "Display load/require module size with sideline" tar
-    ((:url . "https://github.com/emacs-sideline/sideline-load-cost")
-     (:commit . "6e333a4599c6631bf01754bf1b7be9d64b41920e")
-     (:revdesc . "6e333a4599c6") (:keywords "help")
-     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
-     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
-     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
