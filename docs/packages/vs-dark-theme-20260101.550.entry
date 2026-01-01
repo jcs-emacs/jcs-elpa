@@ -1,5 +1,0 @@
-(vs-dark-theme
- . [(20260101 550) ((emacs (24 1))) "Visual Studio IDE dark theme" tar
-    ((:url . "https://github.com/emacs-vs/vs-dark-theme")
-     (:commit . "b428e0d0580b8539d931aa351bf5cc13d3a57488")
-     (:revdesc . "b428e0d0580b") (:keywords "faces"))])
