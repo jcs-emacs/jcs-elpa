@@ -1,0 +1,9 @@
+(ffpc
+ . [(20260101 559) ((emacs (28 1)) (dash (2 12 0)) (f (0 20 0)))
+    "Find file in project or current directory" tar
+    ((:url . "https://github.com/jcs-elpa/ffpc")
+     (:commit . "334c3a9c877e0878ee0f07935c12124f1fc90c8e")
+     (:revdesc . "334c3a9c877e") (:keywords "lisp")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

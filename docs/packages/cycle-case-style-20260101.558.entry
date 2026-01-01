@@ -1,0 +1,9 @@
+(cycle-case-style
+ . [(20260101 558) ((emacs (28 1)) (change-case (9)))
+    "Cycle through case style (PascalCase, camelCase, etc)" tar
+    ((:url . "https://github.com/jcs-elpa/cycle-case-style")
+     (:commit . "23d8e0cdd2831cca1296d62473518ff849c6fd4e")
+     (:revdesc . "23d8e0cdd283") (:keywords "convenience")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

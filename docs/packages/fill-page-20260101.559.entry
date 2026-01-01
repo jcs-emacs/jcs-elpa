@@ -1,0 +1,10 @@
+(fill-page
+ . [(20260101 559) ((emacs (24 4)))
+    "Fill buffer so you don't see empty lines at the end" tar
+    ((:url . "https://github.com/jcs-elpa/fill-page")
+     (:commit . "c9bc538f72869f572bf71c95d2b9b6dac5b4b169")
+     (:revdesc . "c9bc538f7286")
+     (:keywords "convenience" "fill" "page" "buffer")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

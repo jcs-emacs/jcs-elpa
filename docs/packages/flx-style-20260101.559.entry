@@ -1,0 +1,10 @@
+(flx-style
+ . [(20260101 559) ((emacs (24 3)) (flx (0 5)))
+    "Completion style for flx" tar
+    ((:url . "https://github.com/jcs-elpa/flx-style")
+     (:commit . "b78857466b63f186410a6478e3dfced79f8712b1")
+     (:revdesc . "b78857466b63")
+     (:keywords "matching" "flx" "completion" "style")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

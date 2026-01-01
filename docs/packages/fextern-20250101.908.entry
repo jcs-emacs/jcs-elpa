@@ -1,9 +1,0 @@
-(fextern
- . [(20250101 908) ((emacs (25 1))) "Record file external stats" tar
-    ((:url . "https://github.com/emacs-vs/fextern")
-     (:commit . "deabdbc8fffdbe4d05ce07775092bda16462b250")
-     (:revdesc . "deabdbc8fffd")
-     (:keywords "convenience" "externally" "file" "stats")
-     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
-     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
-     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

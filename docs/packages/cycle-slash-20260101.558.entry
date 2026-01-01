@@ -1,0 +1,9 @@
+(cycle-slash
+ . [(20260101 558) ((emacs (28 1)))
+    "Cycle through slash, backslash, and double backslash" tar
+    ((:url . "https://github.com/jcs-elpa/cycle-slash")
+     (:commit . "5e6cac9bf20936720ac600281d733d8829996e0b")
+     (:revdesc . "5e6cac9bf209") (:keywords "convenience")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
