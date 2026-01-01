@@ -1,0 +1,10 @@
+(company-kaomoji
+ . [(20260101 558)
+    ((emacs (26 1)) (company (0 8 12)) (kaomoji (0 1 0)) (ht (2 0)))
+    "Company backend for Kaomoji" tar
+    ((:url . "https://github.com/jcs-elpa/company-kaomoji")
+     (:commit . "a706a4a377d2eeb7bbfea4b4406c7df752500314")
+     (:revdesc . "a706a4a377d2") (:keywords "matching" "kaomoji")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

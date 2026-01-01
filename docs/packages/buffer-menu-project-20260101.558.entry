@@ -1,0 +1,10 @@
+(buffer-menu-project
+ . [(20260101 558) ((emacs (25 1)) (project (0 8 1)) (f (0 20 0)))
+    "List buffers relative to project" tar
+    ((:url . "https://github.com/jcs-elpa/buffer-menu-project")
+     (:commit . "b4862db8b7170b7af431b010e5bf6647dac65c11")
+     (:revdesc . "b4862db8b717")
+     (:keywords "convenience" "buffer" "menu" "project")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

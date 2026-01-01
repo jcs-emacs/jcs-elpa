@@ -1,8 +1,0 @@
-(auto-close-block
- . [(20250101 906) ((emacs (26 1))) "Automatically close block" tar
-    ((:url . "https://github.com/emacs-vs/auto-close-block")
-     (:commit . "b42b4c89edff236fdf73b30ef6caf4ec5204042a")
-     (:revdesc . "b42b4c89edff") (:keywords "convenience")
-     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
-     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
-     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

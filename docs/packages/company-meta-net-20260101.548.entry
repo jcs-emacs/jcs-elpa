@@ -1,0 +1,11 @@
+(company-meta-net
+ . [(20260101 548)
+    ((emacs (25 1)) (company (0 8 12)) (meta-net (1 1 0)) (ht (2 3)))
+    "Company completion for C# project using meta-net" tar
+    ((:url . "https://github.com/emacs-vs/company-meta-net")
+     (:commit . "cf88738c9182404d3def7529f038d7496fd91629")
+     (:revdesc . "cf88738c9182")
+     (:keywords "convenience" "csproj" "csharp" "company")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

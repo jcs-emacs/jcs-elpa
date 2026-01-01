@@ -1,0 +1,11 @@
+(company-emmet
+ . [(20260101 548)
+    ((emacs (26 1)) (company (0 8 0)) (emmet-mode (1 0 10)))
+    "Company completion for emmet" tar
+    ((:url . "https://github.com/emacs-vs/company-emmet")
+     (:commit . "6ce19356dfa3477fc112169ceeabf8bc6160d836")
+     (:revdesc . "6ce19356dfa3")
+     (:keywords "convenience" "emmet" "company")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

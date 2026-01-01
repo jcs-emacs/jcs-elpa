@@ -1,0 +1,8 @@
+(ansi-colorful
+ . [(20260101 557) ((emacs (26 1))) "Toggle render ansi-color" tar
+    ((:url . "https://github.com/jcs-elpa/ansi-colorful")
+     (:commit . "ec9aa6dd8dacb875ed7c5552f5e8c19db67b5b4b")
+     (:revdesc . "ec9aa6dd8dac") (:keywords "faces")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
