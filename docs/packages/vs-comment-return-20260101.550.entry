@@ -1,9 +1,9 @@
 (vs-comment-return
- . [(20250410 350) ((emacs (28 1)))
+ . [(20260101 550) ((emacs (28 1)))
     "Comment return like Visual Studio" tar
     ((:url . "https://github.com/emacs-vs/vs-comment-return")
-     (:commit . "514cb51c13e1f720b5e4718948cb47d935365a36")
-     (:revdesc . "514cb51c13e1") (:keywords "convenience")
+     (:commit . "3f26e9337c0ed11621fdeb6b02a3f751b5e7bf19")
+     (:revdesc . "3f26e9337c0e") (:keywords "convenience")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
