@@ -1,9 +1,9 @@
 (flyover
- . [(20260101 2027) ((emacs (27 1)) (flymake (1 0)))
+ . [(20260102 948) ((emacs (27 1)) (flymake (1 0)))
     "Display Flycheck and Flymake errors with overlays" tar
     ((:url . "https://github.com/konrad1977/flyover")
-     (:commit . "705afce399a6c03599e9304c5366cc62cc565c68")
-     (:revdesc . "705afce399a6")
+     (:commit . "275e361fa493db6e1ba9d1b1bb64df94878956b0")
+     (:revdesc . "275e361fa493")
      (:keywords "convenience" "tools" "flycheck" "flymake")
      (:authors ("Mikael Konradsson" . "mikael.konradsson@outlook.com"))
      (:maintainers
