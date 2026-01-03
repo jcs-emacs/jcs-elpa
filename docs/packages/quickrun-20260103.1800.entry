@@ -1,9 +1,9 @@
 (quickrun
- . [(20250503 2058) ((emacs (26 1)) (ht (2 0))) "Run commands quickly"
+ . [(20260103 1800) ((emacs (26 1)) (ht (2 0))) "Run commands quickly"
     tar
     ((:url . "https://github.com/emacsorphanage/quickrun")
-     (:commit . "bae8efb8c5bc428e4df731b5c214aae478c707da")
-     (:revdesc . "bae8efb8c5bc") (:keywords "tools")
+     (:commit . "9199e222f95104ee83e115a9d5ac159d86816706")
+     (:revdesc . "9199e222f951") (:keywords "tools")
      (:authors ("Syohei YOSHIDA" . "syohex@gmail.com"))
      (:maintainers ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
      (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com"))])
