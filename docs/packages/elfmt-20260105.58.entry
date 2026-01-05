@@ -1,0 +1,9 @@
+(elfmt
+ . [(20260105 58) ((emacs (24 3))) "Code formatter for Elisp" tar
+    ((:url . "https://github.com/riscy/elfmt")
+     (:commit . "b0c5264324742ecfa88b1f381a0ccbb30cad90f7")
+     (:revdesc . "b0c526432474") (:keywords "lisp")
+     (:authors
+      (nil . "https://github.com/riscy/elfmt/graphs/contributors"))
+     (:maintainers ("Chris Rayner" . "dchrisrayner@gmail.com"))
+     (:maintainer "Chris Rayner" . "dchrisrayner@gmail.com"))])
