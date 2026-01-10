@@ -965,10 +965,10 @@
   {
     "name": "flyover",
     "summary": "Display Flycheck and Flymake errors with overlays",
-    "version": "20260110.1106",
+    "version": "20260110.1602",
     "url": "https://github.com/konrad1977/flyover",
     "source": "github",
-    "commit": "742e23551809c9bc7ffd6d2c59c7bbed3aacfef1",
+    "commit": "33e065d155952624791dc524cd4fe7bc483071ce",
     "tree": "https://github.com/konrad1977/flyover"
   },
   {
