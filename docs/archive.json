@@ -101,10 +101,10 @@
   {
     "name": "breadcrumb",
     "summary": "Project and imenu-based breadcrumb paths",
-    "version": "20250208.1453",
+    "version": "20260110.1203",
     "url": "https://github.com/joaotavora/breadcrumb",
     "source": "github",
-    "commit": "da34d030e6d01db2bba45b30080204b23a714c9f",
+    "commit": "1d9dd90f77a594cd50b368e6efc85d44539ec209",
     "tree": "https://github.com/joaotavora/breadcrumb"
   },
   {
@@ -965,10 +965,10 @@
   {
     "name": "flyover",
     "summary": "Display Flycheck and Flymake errors with overlays",
-    "version": "20260109.1340",
+    "version": "20260110.1106",
     "url": "https://github.com/konrad1977/flyover",
     "source": "github",
-    "commit": "e20abc64fe6a256f6fcda3c9599d7cbc526f7d28",
+    "commit": "742e23551809c9bc7ffd6d2c59c7bbed3aacfef1",
     "tree": "https://github.com/konrad1977/flyover"
   },
   {
