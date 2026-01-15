@@ -1,7 +1,7 @@
 (company-c-headers
  . [(20231223 805) ((emacs (26 1)) (company (0 8)) (f (0 20 0)))
     "Company mode backend for C/C++ header files" tar
-    ((:url . "http://github.com/elp-revive/company-c-headers")
+    ((:url . "https://github.com/elp-revive/company-c-headers")
      (:commit . "fa1b905a5f5bb0d9372ca2763d7ea23f3f58c624")
      (:revdesc . "fa1b905a5f5b")
      (:keywords "convenience" "development" "company")

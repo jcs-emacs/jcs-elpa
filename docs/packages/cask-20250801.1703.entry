@@ -3,7 +3,7 @@
     ((emacs (25 3)) (s (1 8 0)) (f (0 16 0)) (epl (0 5))
      (shut-up (0 1 0)) (cl-lib (0 3)) (ansi (0 4 1)))
     "Cask: Project management for package development" tar
-    ((:url . "http://github.com/cask/cask")
+    ((:url . "https://github.com/cask/cask")
      (:commit . "e04462801736fc1d76d979aedd7514663786892c")
      (:revdesc . "e04462801736") (:keywords "speed" "convenience")
      (:authors ("Johan Andersson" . "johan.rejeep@gmail.com"))
