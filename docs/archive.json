@@ -39,10 +39,10 @@
     "name": "auto-highlight-symbol",
     "summary": "Automatic highlighting current symbol minor mode",
     "version": "20260101.552",
-    "url": "http://github.com/elp-revive/auto-highlight-symbol",
+    "url": "https://github.com/elp-revive/auto-highlight-symbol",
     "source": "github",
     "commit": "e84da32e7cf1baefb0a9eef42a2fc842cf18f8b3",
-    "tree": "http://github.com/elp-revive/auto-highlight-symbol"
+    "tree": "https://github.com/elp-revive/auto-highlight-symbol"
   },
   {
     "name": "auto-scroll-bar",
@@ -147,10 +147,10 @@
     "name": "cask",
     "summary": "Cask: Project management for package development",
     "version": "20250801.1703",
-    "url": "http://github.com/cask/cask",
+    "url": "https://github.com/cask/cask",
     "source": "github",
     "commit": "e04462801736fc1d76d979aedd7514663786892c",
-    "tree": "http://github.com/cask/cask"
+    "tree": "https://github.com/cask/cask"
   },
   {
     "name": "centaur-tabs",
@@ -282,10 +282,10 @@
     "name": "commander",
     "summary": "Emacs command line parser",
     "version": "20140120.1852",
-    "url": "http://github.com/rejeep/commander.el",
+    "url": "https://github.com/rejeep/commander.el",
     "source": "github",
     "commit": "2c8a57b9c619e29ccbe2d5a85921b9c689e95bf9",
-    "tree": "http://github.com/rejeep/commander.el"
+    "tree": "https://github.com/rejeep/commander.el"
   },
   {
     "name": "company-autoconf",
@@ -318,10 +318,10 @@
     "name": "company-c-headers",
     "summary": "Company mode backend for C/C++ header files",
     "version": "20231223.805",
-    "url": "http://github.com/elp-revive/company-c-headers",
+    "url": "https://github.com/elp-revive/company-c-headers",
     "source": "github",
     "commit": "fa1b905a5f5bb0d9372ca2763d7ea23f3f58c624",
-    "tree": "http://github.com/elp-revive/company-c-headers"
+    "tree": "https://github.com/elp-revive/company-c-headers"
   },
   {
     "name": "company-cmd",
@@ -1029,10 +1029,10 @@
     "name": "git",
     "summary": "An Elisp API for programmatically using Git",
     "version": "20140128.1041",
-    "url": "http://github.com/rejeep/git.el",
+    "url": "https://github.com/rejeep/git.el",
     "source": "github",
     "commit": "8b7f1477ef367b5b7de452589dd9a8ab30150d0a",
-    "tree": "http://github.com/rejeep/git.el"
+    "tree": "https://github.com/rejeep/git.el"
   },
   {
     "name": "github-elpa",
@@ -1218,10 +1218,10 @@
     "name": "javap-mode",
     "summary": "Javap major mode",
     "version": "20220523.1728",
-    "url": "http://github.com/elp-revive/javap-mode",
+    "url": "https://github.com/elp-revive/javap-mode",
     "source": "github",
     "commit": "25c3cd0d13b122fa1f06c054e319ef8218f9b48f",
-    "tree": "http://github.com/elp-revive/javap-mode"
+    "tree": "https://github.com/elp-revive/javap-mode"
   },
   {
     "name": "jayces-mode",
@@ -1722,10 +1722,10 @@
     "name": "powerline",
     "summary": "Rewrite of Powerline",
     "version": "20221110.1956",
-    "url": "http://github.com/milkypostman/powerline/",
+    "url": "https://github.com/milkypostman/powerline/",
     "source": "github",
     "commit": "c35c35bdf5ce2d992882c1f06f0f078058870d4a",
-    "tree": "http://github.com/milkypostman/powerline/"
+    "tree": "https://github.com/milkypostman/powerline/"
   },
   {
     "name": "preview-it",
