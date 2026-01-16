@@ -2081,10 +2081,10 @@
   {
     "name": "tree-sitter",
     "summary": "Incremental parsing system",
-    "version": "20260115.2303",
+    "version": "20260115.2359",
     "url": "https://github.com/emacs-tree-sitter/elisp-tree-sitter",
     "source": "github",
-    "commit": "d991ab85c247e2decf180d6485461f19b4d0c6b1",
+    "commit": "fb57495cd19ad51ce9cf7745e6854fb1a518cb33",
     "tree": "https://github.com/emacs-tree-sitter/elisp-tree-sitter"
   },
   {
@@ -2162,10 +2162,10 @@
   {
     "name": "tsc",
     "summary": "Core Tree-sitter APIs",
-    "version": "20260115.2303",
+    "version": "20260115.2359",
     "url": "https://github.com/emacs-tree-sitter/elisp-tree-sitter",
     "source": "github",
-    "commit": "d991ab85c247e2decf180d6485461f19b4d0c6b1",
+    "commit": "fb57495cd19ad51ce9cf7745e6854fb1a518cb33",
     "tree": "https://github.com/emacs-tree-sitter/elisp-tree-sitter"
   },
   {
