@@ -587,10 +587,10 @@
   {
     "name": "eask",
     "summary": "Core Eask APIs, for Eask CLI development",
-    "version": "20260115.1342",
+    "version": "20260117.1610",
     "url": "https://github.com/emacs-eask/eask",
     "source": "github",
-    "commit": "d5e665fcc63af17bf2177ecc371dda1f999788aa",
+    "commit": "e8857600be6b9c3e40edbff6fd56fcfbc6286679",
     "tree": "https://github.com/emacs-eask/eask"
   },
   {
@@ -1568,10 +1568,10 @@
   {
     "name": "nerd-icons",
     "summary": "Emacs Nerd Font Icons Library",
-    "version": "20260116.1608",
+    "version": "20260117.1631",
     "url": "https://github.com/rainstormstudio/nerd-icons.el",
     "source": "github",
-    "commit": "f9d240b59f9a5461d98a2eeac25901a5ce6c72e9",
+    "commit": "14b9fb4b48a08806836bc93f09cf44565aa9f152",
     "tree": "https://github.com/rainstormstudio/nerd-icons.el"
   },
   {
@@ -2099,10 +2099,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20260117.1333",
+    "version": "20260117.1458",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "44e9ff58eca2ea04b2d948d27f29fc3f7d6765d8",
+    "commit": "22467a4b479e5528331d1283653977edcd2037a5",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
@@ -2135,10 +2135,10 @@
   {
     "name": "treesit-langs",
     "summary": "Language bundle for Emacs's treesit.el",
-    "version": "20260117.1600",
+    "version": "20260117.1612",
     "url": "https://github.com/emacs-tree-sitter/treesit-langs",
     "source": "github",
-    "commit": "995f8d940e79ea3c3a27123ce1dd44b1fee2280c",
+    "commit": "dde0df61d93e71a8e62c8d9fb9041ffd39c86884",
     "tree": "https://github.com/emacs-tree-sitter/treesit-langs"
   },
   {
