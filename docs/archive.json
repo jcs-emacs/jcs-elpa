@@ -1755,6 +1755,15 @@
     "tree": "https://github.com/jcs-elpa/prt"
   },
   {
+    "name": "punch-line",
+    "summary": "A customizeable mode-line with Evil",
+    "version": "20251116.1114",
+    "url": "https://github.com/konrad1977/punch-line",
+    "source": "github",
+    "commit": "9b1043e00170eea26b87377ef97e9541fe7c11ca",
+    "tree": "https://github.com/konrad1977/punch-line"
+  },
+  {
     "name": "qob-mode",
     "summary": "Major mode for editing Qob files",
     "version": "20250101.919",
