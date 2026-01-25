@@ -1,0 +1,6 @@
+(punch-line
+ . [(20251116 1114) ((emacs (28 1)) (async (1 9)))
+    "A customizeable mode-line with Evil" tar
+    ((:url . "https://github.com/konrad1977/punch-line")
+     (:commit . "9b1043e00170eea26b87377ef97e9541fe7c11ca")
+     (:revdesc . "9b1043e00170") (:keywords "mode-line" "faces"))])
