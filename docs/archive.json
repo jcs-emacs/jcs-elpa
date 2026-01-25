@@ -1314,6 +1314,15 @@
     "tree": "https://github.com/elp-revive/kaomoji.el"
   },
   {
+    "name": "knockknock",
+    "summary": "Unobtrusive notifications with icons and SVG support",
+    "version": "20260107.706",
+    "url": "https://github.com/mikaelkonradsson/knockknock",
+    "source": "github",
+    "commit": "0920b9b390d4b4cc0818574e115d87eb245a41b5",
+    "tree": "https://github.com/mikaelkonradsson/knockknock"
+  },
+  {
     "name": "lambda-line",
     "summary": "A custom status line",
     "version": "20250726.316",
