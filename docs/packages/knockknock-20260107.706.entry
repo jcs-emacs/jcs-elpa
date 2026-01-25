@@ -1,0 +1,8 @@
+(knockknock
+ . [(20260107 706)
+    ((emacs (26 1)) (posframe (1 0 0)) (nerd-icons (0 1 0)))
+    "Unobtrusive notifications with icons and SVG support" tar
+    ((:url . "https://github.com/mikaelkonradsson/knockknock")
+     (:commit . "0920b9b390d4b4cc0818574e115d87eb245a41b5")
+     (:revdesc . "0920b9b390d4")
+     (:keywords "convenience" "notifications" "alerts"))])

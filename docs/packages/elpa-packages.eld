@@ -144,6 +144,7 @@
   (jenkinsfile-mode :url "https://github.com/elp-revive/jenkinsfile-mode")
   (jet :url "https://github.com/ericdallo/jet.el")
   (kaomoji :url "https://github.com/elp-revive/kaomoji.el")
+  (knockknock :url "https://github.com/konrad1977/knockknock")
   (lambda-line :url "https://github.com/Lambda-Emacs/lambda-line")
   (lemmington :url "https://github.com/lem-project/lemmington")
   (license-templates :url "https://github.com/jcs-elpa/license-templates")
