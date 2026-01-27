@@ -1109,10 +1109,10 @@
   {
     "name": "highlight-indent-guides",
     "summary": "Minor mode to highlight indentation",
-    "version": "20241229.2012",
+    "version": "20260127.1811",
     "url": "https://github.com/DarthFennec/highlight-indent-guides",
     "source": "github",
-    "commit": "3205abe2721053416e354a1ff53947dd122a6941",
+    "commit": "03bddeba65ec82ebe37686d2d11bcd8a609988c0",
     "tree": "https://github.com/DarthFennec/highlight-indent-guides"
   },
   {
