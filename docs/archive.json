@@ -1163,10 +1163,10 @@
   {
     "name": "indent-control",
     "summary": "Management for indentation level",
-    "version": "20260101.600",
+    "version": "20260127.1637",
     "url": "https://github.com/jcs-elpa/indent-control",
     "source": "github",
-    "commit": "222fa01879c08adc5cc84cef6aa4fcff90c7c938",
+    "commit": "0fb35b8001ce286e700b5c1d5682a7433e53335e",
     "tree": "https://github.com/jcs-elpa/indent-control"
   },
   {
@@ -1235,10 +1235,10 @@
   {
     "name": "jcs-echobar",
     "summary": "An echo-bar for jcs-emacs",
-    "version": "20251231.1614",
+    "version": "20260127.1639",
     "url": "https://github.com/jcs-emacs/jcs-echobar",
     "source": "github",
-    "commit": "429ca34727d9147f6c63c9e61d63bbb0d452b701",
+    "commit": "508e96f0a7fec80253a9f402a53f1a11ae873863",
     "tree": "https://github.com/jcs-emacs/jcs-echobar"
   },
   {
@@ -2315,10 +2315,10 @@
   {
     "name": "vs-dark-theme",
     "summary": "Visual Studio IDE dark theme",
-    "version": "20260101.1429",
+    "version": "20260127.1641",
     "url": "https://github.com/emacs-vs/vs-dark-theme",
     "source": "github",
-    "commit": "ce1442aa8ee8cdc37f29011fb0f88401918bb889",
+    "commit": "ac0daa04be6ff339ffb9af29ee0f6ce1eed0c458",
     "tree": "https://github.com/emacs-vs/vs-dark-theme"
   },
   {
@@ -2342,10 +2342,10 @@
   {
     "name": "vs-light-theme",
     "summary": "Visual Studio IDE light theme",
-    "version": "20260101.1430",
+    "version": "20260127.1641",
     "url": "https://github.com/emacs-vs/vs-light-theme",
     "source": "github",
-    "commit": "3403f6843a87adc38b46993db41610c2db1606f7",
+    "commit": "e590d092882d70a082f1ef397479131ff78618bc",
     "tree": "https://github.com/emacs-vs/vs-light-theme"
   },
   {
