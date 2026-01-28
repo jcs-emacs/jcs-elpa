@@ -1235,10 +1235,10 @@
   {
     "name": "jcs-echobar",
     "summary": "An echo-bar for jcs-emacs",
-    "version": "20260128.657",
+    "version": "20260128.745",
     "url": "https://github.com/jcs-emacs/jcs-echobar",
     "source": "github",
-    "commit": "82fc248bac7c83f94e06cf2e81efc3c18f453213",
+    "commit": "c591041b81db465654b9bcb9cc68bc74f827399a",
     "tree": "https://github.com/jcs-emacs/jcs-echobar"
   },
   {
@@ -1253,10 +1253,10 @@
   {
     "name": "jcs-modeline",
     "summary": "A modeline for jcs-emacs",
-    "version": "20260116.2146",
+    "version": "20260128.745",
     "url": "https://github.com/jcs-emacs/jcs-modeline",
     "source": "github",
-    "commit": "7a7306ad9b6b3b3447f363a51f7b82d4b56ec858",
+    "commit": "d550d93efed5e6253a5336b11b6c69075aa346fb",
     "tree": "https://github.com/jcs-emacs/jcs-modeline"
   },
   {
