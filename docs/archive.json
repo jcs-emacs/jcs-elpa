@@ -839,10 +839,10 @@
   {
     "name": "flx-rs",
     "summary": "Flx in Rust using dynamic module",
-    "version": "20260129.617",
+    "version": "20260129.710",
     "url": "https://github.com/jcs-elpa/flx-rs",
     "source": "github",
-    "commit": "47310057343eb42996a7ae0fa24ac136b8187e96",
+    "commit": "f58f809fe462521adb799c20d3e9b673aeea8bec",
     "tree": "https://github.com/jcs-elpa/flx-rs"
   },
   {
@@ -983,10 +983,10 @@
   {
     "name": "foldvis",
     "summary": "Display indicators for various folding systems",
-    "version": "20260128.1948",
+    "version": "20260129.709",
     "url": "https://github.com/emacs-vs/foldvis",
     "source": "github",
-    "commit": "a203f10c8f8b6181b84f928c9b7b13d1086d4d92",
+    "commit": "b54bef0ce0a484cb90a414eec9725bb786058fd5",
     "tree": "https://github.com/emacs-vs/foldvis"
   },
   {
