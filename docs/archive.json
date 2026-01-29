@@ -839,10 +839,10 @@
   {
     "name": "flx-rs",
     "summary": "Flx in Rust using dynamic module",
-    "version": "20260101.559",
+    "version": "20260129.617",
     "url": "https://github.com/jcs-elpa/flx-rs",
     "source": "github",
-    "commit": "d11fd085aa98ab8a2bef554e23fe7449bb581d15",
+    "commit": "47310057343eb42996a7ae0fa24ac136b8187e96",
     "tree": "https://github.com/jcs-elpa/flx-rs"
   },
   {
