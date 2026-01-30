@@ -2315,10 +2315,10 @@
   {
     "name": "vs-dark-theme",
     "summary": "Visual Studio IDE dark theme",
-    "version": "20260127.1641",
+    "version": "20260130.706",
     "url": "https://github.com/emacs-vs/vs-dark-theme",
     "source": "github",
-    "commit": "ac0daa04be6ff339ffb9af29ee0f6ce1eed0c458",
+    "commit": "755f69424bbd215ac682c7a99de92af852818d2b",
     "tree": "https://github.com/emacs-vs/vs-dark-theme"
   },
   {
@@ -2342,10 +2342,10 @@
   {
     "name": "vs-light-theme",
     "summary": "Visual Studio IDE light theme",
-    "version": "20260127.1641",
+    "version": "20260130.710",
     "url": "https://github.com/emacs-vs/vs-light-theme",
     "source": "github",
-    "commit": "e590d092882d70a082f1ef397479131ff78618bc",
+    "commit": "26c0b48d318245b26872af7d7b11e9aa5be218b1",
     "tree": "https://github.com/emacs-vs/vs-light-theme"
   },
   {
