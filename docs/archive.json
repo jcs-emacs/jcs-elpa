@@ -524,10 +524,10 @@
   {
     "name": "dape",
     "summary": "Debug Adapter Protocol for Emacs",
-    "version": "20260131.1429",
+    "version": "20260202.2033",
     "url": "https://github.com/svaante/dape",
     "source": "github",
-    "commit": "5a5ddac4853a6d767f8522a2cee4764fe18ceb8c",
+    "commit": "51493a00806fe43989b87cd34de2715d523aadb8",
     "tree": "https://github.com/svaante/dape"
   },
   {
@@ -2315,10 +2315,10 @@
   {
     "name": "vs-dark-theme",
     "summary": "Visual Studio IDE dark theme",
-    "version": "20260202.1822",
+    "version": "20260202.1942",
     "url": "https://github.com/emacs-vs/vs-dark-theme",
     "source": "github",
-    "commit": "bde532fcd74abf6be335a063da7c787e796dc4c3",
+    "commit": "d9d35fe53e42cd3126c6c42a7aa519fc57e46b2e",
     "tree": "https://github.com/emacs-vs/vs-dark-theme"
   },
   {
@@ -2342,10 +2342,10 @@
   {
     "name": "vs-light-theme",
     "summary": "Visual Studio IDE light theme",
-    "version": "20260202.1822",
+    "version": "20260202.1942",
     "url": "https://github.com/emacs-vs/vs-light-theme",
     "source": "github",
-    "commit": "283ab40ea1b61caccbf1a0194a822e1b1d2f7f57",
+    "commit": "c7fb515adfc5cd506bbd2a028536bfaeafa77696",
     "tree": "https://github.com/emacs-vs/vs-light-theme"
   },
   {
