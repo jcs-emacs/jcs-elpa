@@ -1109,10 +1109,10 @@
   {
     "name": "highlight-indent-guides",
     "summary": "Minor mode to highlight indentation",
-    "version": "20260202.730",
+    "version": "20260202.1243",
     "url": "https://github.com/DarthFennec/highlight-indent-guides",
     "source": "github",
-    "commit": "b27669babba38985f3d4851fc697625bda6bbac1",
+    "commit": "802fb2eaf67ead730d7e3483b9a1e9639705f267",
     "tree": "https://github.com/DarthFennec/highlight-indent-guides"
   },
   {
@@ -2315,10 +2315,10 @@
   {
     "name": "vs-dark-theme",
     "summary": "Visual Studio IDE dark theme",
-    "version": "20260202.706",
+    "version": "20260202.1235",
     "url": "https://github.com/emacs-vs/vs-dark-theme",
     "source": "github",
-    "commit": "20c80dbc98e35022bacecd80783ff7b92fef6e15",
+    "commit": "4afa85cd27f107f2936ef2774b7113b6a5fd6e0a",
     "tree": "https://github.com/emacs-vs/vs-dark-theme"
   },
   {
@@ -2342,10 +2342,10 @@
   {
     "name": "vs-light-theme",
     "summary": "Visual Studio IDE light theme",
-    "version": "20260202.706",
+    "version": "20260202.1235",
     "url": "https://github.com/emacs-vs/vs-light-theme",
     "source": "github",
-    "commit": "b29295426ede547b385112b0b4edaeac0295f887",
+    "commit": "7e0fad816fc8eee099d3ddd972430904dcdd8b3b",
     "tree": "https://github.com/emacs-vs/vs-light-theme"
   },
   {
