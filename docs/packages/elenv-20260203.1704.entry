@@ -1,10 +1,10 @@
 (elenv
- . [(20260203 1649)
+ . [(20260203 1704)
     ((emacs (26 1)) (msgu (0 1 0)) (s (1 12 0)) (list-utils (0 4 6)))
     "Environment variable management" tar
     ((:url . "https://github.com/jcs-elpa/elenv")
-     (:commit . "a472ed70ec49cf7f629f0b8f0cb77a16a3d372d4")
-     (:revdesc . "a472ed70ec49") (:keywords "maint")
+     (:commit . "174898b931ef8f04c248effdfdb8cd7101386bb9")
+     (:revdesc . "174898b931ef") (:keywords "maint")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
