@@ -164,7 +164,6 @@
   (maple-line :url "https://github.com/honmaple/emacs-maple-line")
   (marquee-header :url "https://github.com/jcs-elpa/marquee-header")
   (mbs :url "https://github.com/jcs-elpa/mbs")
-  (message-clean-mode :url "https://github.com/jcs-elpa/message-clean-mode")
   (meta-net :url "https://github.com/emacs-vs/meta-net")
   (meta-view :url "https://github.com/emacs-vs/meta-view")
   (mint-mode :url "https://github.com/creatorrr/emacs-mint-mode")
