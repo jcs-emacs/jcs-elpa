@@ -1064,19 +1064,19 @@
   {
     "name": "goto-char-preview",
     "summary": "Preview character when executing `goto-char` command",
-    "version": "20260128.834",
+    "version": "20260204.956",
     "url": "https://github.com/emacs-vs/goto-char-preview",
     "source": "github",
-    "commit": "e2a4534e2632e40d0f8042c9804047875bc59e91",
+    "commit": "d81c7186dc3c916ba84a5d8ce2f06c652c1186a8",
     "tree": "https://github.com/emacs-vs/goto-char-preview"
   },
   {
     "name": "goto-line-preview",
     "summary": "Preview line when executing `goto-line` command",
-    "version": "20260128.834",
+    "version": "20260204.956",
     "url": "https://github.com/emacs-vs/goto-line-preview",
     "source": "github",
-    "commit": "e11a1e7bfff5240e44d71d2ff8fae2d5bcbda784",
+    "commit": "7c86228bc4f92b5129302824881f36d7ae39ee0a",
     "tree": "https://github.com/emacs-vs/goto-line-preview"
   },
   {
