@@ -1,9 +1,9 @@
 (goto-line-preview
- . [(20260128 834) ((emacs (25)))
+ . [(20260204 956) ((emacs (25)))
     "Preview line when executing `goto-line` command" tar
     ((:url . "https://github.com/emacs-vs/goto-line-preview")
-     (:commit . "e11a1e7bfff5240e44d71d2ff8fae2d5bcbda784")
-     (:revdesc . "e11a1e7bfff5")
+     (:commit . "7c86228bc4f92b5129302824881f36d7ae39ee0a")
+     (:revdesc . "7c86228bc4f9")
      (:keywords "convenience" "line" "navigation")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
