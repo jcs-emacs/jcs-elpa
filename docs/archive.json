@@ -1494,15 +1494,6 @@
     "tree": "https://github.com/jcs-elpa/mbs"
   },
   {
-    "name": "message-clean-mode",
-    "summary": "Keep messages buffer clean",
-    "version": "20260101.601",
-    "url": "https://github.com/jcs-elpa/message-clean-mode",
-    "source": "github",
-    "commit": "8b1f3ca3fbfcd6adcfbfc1dba2ab3c27a648b79a",
-    "tree": "https://github.com/jcs-elpa/message-clean-mode"
-  },
-  {
     "name": "meta-net",
     "summary": "Parse .NET assembly's XML",
     "version": "20260101.549",
@@ -1546,6 +1537,15 @@
     "source": "github",
     "commit": "10ffd7dd5378b401301612b13bd3add50994b27f",
     "tree": "https://www.emacswiki.org/emacs/modeline-region.el"
+  },
+  {
+    "name": "msg-clean",
+    "summary": "Keep messages buffer clean",
+    "version": "20260204.825",
+    "url": "https://github.com/jcs-elpa/msg-clean",
+    "source": "github",
+    "commit": "cac89fdd54272d059f8e6e42596e2ee43198eec4",
+    "tree": "https://github.com/jcs-elpa/msg-clean"
   },
   {
     "name": "msgu",
