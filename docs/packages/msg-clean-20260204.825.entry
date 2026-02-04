@@ -1,0 +1,10 @@
+(msg-clean
+ . [(20260204 825) ((emacs (26 1)) (msgu (0 1 0)))
+    "Keep messages buffer clean" tar
+    ((:url . "https://github.com/jcs-elpa/msg-clean")
+     (:commit . "cac89fdd54272d059f8e6e42596e2ee43198eec4")
+     (:revdesc . "cac89fdd5427")
+     (:keywords "convenience" "messages" "clean")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

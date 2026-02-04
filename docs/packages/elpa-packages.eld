@@ -169,6 +169,7 @@
   (mint-mode :url "https://github.com/creatorrr/emacs-mint-mode")
   (mode-minder :url "https://github.com/jdtsmith/mode-minder")
   (modeline-region :url "https://github.com/jamescherti/modeline-region.el")
+  (msg-clean :url "https://github.com/jcs-elpa/msg-clean")
   (msgu :url "https://github.com/jcs-elpa/msgu")
   (multi-shell :url "https://github.com/jcs-elpa/multi-shell")
   (nand-hdl-mode :url "https://github.com/nverno/nand-hdl-mode")
