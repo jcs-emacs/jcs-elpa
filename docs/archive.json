@@ -2315,10 +2315,10 @@
   {
     "name": "vs-dark-theme",
     "summary": "Visual Studio IDE dark theme",
-    "version": "20260202.1942",
+    "version": "20260204.1514",
     "url": "https://github.com/emacs-vs/vs-dark-theme",
     "source": "github",
-    "commit": "d9d35fe53e42cd3126c6c42a7aa519fc57e46b2e",
+    "commit": "e0d73e1a7e52e7bbeea45850330265f22c2d588b",
     "tree": "https://github.com/emacs-vs/vs-dark-theme"
   },
   {
