@@ -1325,10 +1325,10 @@
   {
     "name": "lambda-line",
     "summary": "A custom status line",
-    "version": "20250726.316",
+    "version": "20260206.232",
     "url": "https://github.com/Lambda-Emacs/lambda-line",
     "source": "github",
-    "commit": "dabe1855180a789caec56e73761fcb7be89e667d",
+    "commit": "875a36e95329583cf404e3e2dc7bbc0f3ab2a9b2",
     "tree": "https://github.com/Lambda-Emacs/lambda-line"
   },
   {
