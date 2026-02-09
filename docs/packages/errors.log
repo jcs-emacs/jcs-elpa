@@ -30,3 +30,4 @@
 >>>>>>> Stashed changes
 2026-01-30T03:53:55+0000  tree-sitter-indent         Command ‘git clone https\://codeberg.org/FelipeLema/tree-sitter-indent.el /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/tree-sitter-indent/’ exited with non-zero exit-code: 128
 2026-02-03T16:20:26+0000  gas-mode                   Command ‘git clone https\://codeberg.org/Enocstocks/gas-mode.el /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/gas-mode/’ exited with non-zero exit-code: 128
+2026-02-09T17:23:07+0000  company-powershell         Command ‘git clone https\://github.com/elp-revive/company-powershell /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/company-powershell/’ exited with non-zero exit-code: 128
