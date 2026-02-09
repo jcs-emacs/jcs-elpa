@@ -182,10 +182,10 @@
   {
     "name": "chatgpt-shell",
     "summary": "A family of utilities to interact with LLMs (ChatGPT, Claude, DeepSeek, Gemini, Kagi, Ollama, Perplexity)",
-    "version": "20251217.1818",
+    "version": "20260209.1941",
     "url": "https://github.com/xenodium/chatgpt-shell",
     "source": "github",
-    "commit": "e240b1a9004c1452b8bcb5279b4fa79d9f60def7",
+    "commit": "adb5c9230cf328e865bcff8fc48418e158d4bf49",
     "tree": "https://github.com/xenodium/chatgpt-shell"
   },
   {
@@ -2135,10 +2135,10 @@
   {
     "name": "treesit-auto",
     "summary": "Automatically use tree-sitter enhanced major modes",
-    "version": "20240511.1425",
+    "version": "20260209.2010",
     "url": "https://github.com/renzmann/treesit-auto.git",
     "source": "github",
-    "commit": "016bd286a1ba4628f833a626f8b9d497882ecdf3",
+    "commit": "398fcf2678301119aed3d6de78257ee0069986a2",
     "tree": "https://github.com/renzmann/treesit-auto.git"
   },
   {
