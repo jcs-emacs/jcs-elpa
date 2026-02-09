@@ -1,9 +1,9 @@
 (treesit-auto
- . [(20240511 1425) ((emacs (29 0)))
+ . [(20260209 2010) ((emacs (29 0)))
     "Automatically use tree-sitter enhanced major modes" tar
     ((:url . "https://github.com/renzmann/treesit-auto.git")
-     (:commit . "016bd286a1ba4628f833a626f8b9d497882ecdf3")
-     (:revdesc . "016bd286a1ba")
+     (:commit . "398fcf2678301119aed3d6de78257ee0069986a2")
+     (:revdesc . "398fcf267830")
      (:keywords "treesitter" "auto" "automatic" "major" "mode"
 		"fallback" "convenience")
      (:authors ("Robb Enzmann" . "robbenzmann@gmail.com"))
