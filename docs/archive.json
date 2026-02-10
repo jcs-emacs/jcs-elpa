@@ -2135,10 +2135,10 @@
   {
     "name": "treesit-auto",
     "summary": "Automatically use tree-sitter enhanced major modes",
-    "version": "20260209.2027",
+    "version": "20260210.1525",
     "url": "https://github.com/renzmann/treesit-auto.git",
     "source": "github",
-    "commit": "433dac791c3a5c6f2aebddc70066f72940a12489",
+    "commit": "5fc2223efff80694158543d5b59bcb5403c58873",
     "tree": "https://github.com/renzmann/treesit-auto.git"
   },
   {
@@ -2153,10 +2153,10 @@
   {
     "name": "treesit-langs",
     "summary": "Language bundle for Emacs's treesit.el",
-    "version": "20260209.754",
+    "version": "20260210.1451",
     "url": "https://github.com/emacs-tree-sitter/treesit-langs",
     "source": "github",
-    "commit": "a23e57e3153c2f0354d07fe0572d0e406665be70",
+    "commit": "3274b61bf92566d0fb45cc8d2eb999d7dd093209",
     "tree": "https://github.com/emacs-tree-sitter/treesit-langs"
   },
   {
