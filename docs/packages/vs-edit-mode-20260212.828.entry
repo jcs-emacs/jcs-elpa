@@ -1,11 +1,11 @@
 (vs-edit-mode
- . [(20260101 550)
+ . [(20260212 828)
     ((emacs (28 1)) (noflet (0 0 15)) (mwim (0 4)) (ts-fold (0 1 0))
      (foldvis (0 1 0)) (savefold (0 0 1)) (fold-this (0 4 4)))
     "Minor mode accomplish editing experience in Visual Studio" tar
     ((:url . "https://github.com/emacs-vs/vs-edit-mode")
-     (:commit . "6eea683cfa5993a11288cf0e48c833c33c373c26")
-     (:revdesc . "6eea683cfa59")
+     (:commit . "d3c5ca0d3f4fb99d8f058da1b00ef273ed4d2cb5")
+     (:revdesc . "d3c5ca0d3f4f")
      (:keywords "convenience" "editing" "vs")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
