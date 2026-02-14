@@ -488,10 +488,10 @@
   {
     "name": "copilot",
     "summary": "An unofficial Copilot plugin",
-    "version": "20260214.1950",
+    "version": "20260214.2031",
     "url": "https://github.com/copilot-emacs/copilot.el",
     "source": "github",
-    "commit": "95bc9540393ced94527275713c658479853f66a8",
+    "commit": "93bc58be9e156e603bbffdcb6dc1d3cf54b994ad",
     "tree": "https://github.com/copilot-emacs/copilot.el"
   },
   {
@@ -1060,6 +1060,15 @@
     "source": "github",
     "commit": "45838ff35e4128d40258c20fd2b26e9a1701b149",
     "tree": "https://github.com/emacs-openai/google-gemini"
+  },
+  {
+    "name": "google-translate-cli",
+    "summary": "A command-line interface for Google Translate",
+    "version": "20260214.2049",
+    "url": "https://github.com/jcs090218/google-translate-cli",
+    "source": "github",
+    "commit": "baf1dd57918d5933844b89282285512df8fe800a",
+    "tree": "https://github.com/jcs090218/google-translate-cli"
   },
   {
     "name": "goto-char-preview",
