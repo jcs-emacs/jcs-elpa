@@ -116,6 +116,7 @@
   (github-elpa :url "https://github.com/10sr/github-elpa")
   (github-tags :url "https://github.com/jcs-elpa/github-tags")
   (google-gemini :url "https://github.com/emacs-openai/google-gemini")
+  (google-translate-cli :url "https://github.com/emacs-eine/google-translate-cli")
   (goto-char-preview :url "https://github.com/emacs-vs/goto-char-preview")
   (goto-line-preview :url "https://github.com/emacs-vs/goto-line-preview")
   (gptscript-mode :url "https://github.com/emacs-openai/gptscript-mode")
