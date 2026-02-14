@@ -1,10 +1,10 @@
 (change-case
- . [(20221211 907) ((emacs (25 1)) (dash (2 16 0)) (s (1 12 0)))
+ . [(20260123 236) ((emacs (25 1)) (dash (2 16 0)) (s (1 12 0)))
     "Case conversion between camelCase, PascalCase, snake_case and more"
     tar
     ((:url . "https://github.com/TakesxiSximada/change-case.el")
-     (:commit . "8117113a15be15667b6421257fa4cf233dc81bd2")
-     (:revdesc . "8117113a15be")
+     (:commit . "a05089d98efe1d60944de5b422c4252788d77e83")
+     (:revdesc . "a05089d98efe")
      (:authors
       ("TakesxiSximada"
        . "8707279+TakesxiSximada@users.noreply.github.com"))
