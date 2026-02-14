@@ -488,10 +488,10 @@
   {
     "name": "copilot",
     "summary": "An unofficial Copilot plugin",
-    "version": "20260214.2031",
+    "version": "20260214.2201",
     "url": "https://github.com/copilot-emacs/copilot.el",
     "source": "github",
-    "commit": "93bc58be9e156e603bbffdcb6dc1d3cf54b994ad",
+    "commit": "dcfefb56fae9304930b4448e892e481206264800",
     "tree": "https://github.com/copilot-emacs/copilot.el"
   },
   {
@@ -1694,10 +1694,10 @@
   {
     "name": "package-build",
     "summary": "Tools for assembling a package archive",
-    "version": "20260115.1042",
+    "version": "20260214.2132",
     "url": "https://github.com/melpa/package-build",
     "source": "github",
-    "commit": "79cff850383c875119da351567ea4713875f269f",
+    "commit": "32fa831dc51e070abba308d2cfb176e06174af0e",
     "tree": "https://github.com/melpa/package-build"
   },
   {
