@@ -35,4 +35,8 @@
 =======
 2026-02-09T17:23:35+0000  cognitive-complexity       Command ‘git clone https\://github.com/emacs-vs/cognitive-complexity /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/cognitive-complexity/’ exited with non-zero exit-code: 128
 >>>>>>> Stashed changes
+<<<<<<< Updated upstream
 2026-02-15T08:10:38+0000  tree-sitter-indent         Command ‘git clone https\://codeberg.org/FelipeLema/tree-sitter-indent.el /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/tree-sitter-indent/’ exited with non-zero exit-code: 128
+=======
+2026-02-15T08:10:38+0000  gas-mode                   Command ‘git clone https\://codeberg.org/Enocstocks/gas-mode.el /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/gas-mode/’ exited with non-zero exit-code: 128
+>>>>>>> Stashed changes
