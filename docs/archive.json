@@ -2126,10 +2126,10 @@
   {
     "name": "tree-sitter-langs",
     "summary": "Grammar bundle for tree-sitter",
-    "version": "20260209.946",
+    "version": "20260215.1903",
     "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
     "source": "github",
-    "commit": "ce28761a827c71e2b987ebd39a6178c733a0c766",
+    "commit": "541af2244b9eb4db0871e17c80ae741485d9da1e",
     "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
   },
   {
