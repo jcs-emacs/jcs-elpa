@@ -1,11 +1,11 @@
 (google-translate-cli
- . [(20260214 2049)
+ . [(20260215 1617)
     ((emacs (26 1)) (google-translate (0 12 0)) (commander (0 7 0))
      (msgu (0 1 0)))
     "A command-line interface for Google Translate" tar
-    ((:url . "https://github.com/jcs090218/google-translate-cli")
-     (:commit . "baf1dd57918d5933844b89282285512df8fe800a")
-     (:revdesc . "baf1dd57918d") (:keywords "convenience")
+    ((:url . "https://github.com/emacs-eine/google-translate-cli")
+     (:commit . "d7bef541dc0e3528667069c85a91dd333a4ffdcb")
+     (:revdesc . "d7bef541dc0e") (:keywords "convenience")
      (:authors ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
      (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com"))])
