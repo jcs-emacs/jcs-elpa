@@ -1064,11 +1064,11 @@
   {
     "name": "google-translate-cli",
     "summary": "A command-line interface for Google Translate",
-    "version": "20260214.2049",
-    "url": "https://github.com/jcs090218/google-translate-cli",
+    "version": "20260215.1617",
+    "url": "https://github.com/emacs-eine/google-translate-cli",
     "source": "github",
-    "commit": "baf1dd57918d5933844b89282285512df8fe800a",
-    "tree": "https://github.com/jcs090218/google-translate-cli"
+    "commit": "d7bef541dc0e3528667069c85a91dd333a4ffdcb",
+    "tree": "https://github.com/emacs-eine/google-translate-cli"
   },
   {
     "name": "goto-char-preview",
