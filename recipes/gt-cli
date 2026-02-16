@@ -1,0 +1,4 @@
+(gt-cli
+ :fetcher github
+ :repo "emacs-eine/gt-cli"
+ :files (:defaults "bin"))
