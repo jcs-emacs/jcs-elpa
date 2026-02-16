@@ -1098,6 +1098,15 @@
     "tree": "https://github.com/emacs-openai/gptscript-mode"
   },
   {
+    "name": "gt-cli",
+    "summary": "A command-line interface for gt",
+    "version": "20260216.927",
+    "url": "https://github.com/emacs-eine/gt-cli",
+    "source": "github",
+    "commit": "cf506f23057f5d0ec13259b83008adb266bcd26b",
+    "tree": "https://github.com/emacs-eine/gt-cli"
+  },
+  {
     "name": "guard-lf",
     "summary": "Guard large files",
     "version": "20260101.600",
