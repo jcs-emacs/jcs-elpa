@@ -1,0 +1,10 @@
+(gt-cli
+ . [(20260216 927)
+    ((emacs (28 1)) (gt (3 2 1)) (commander (0 7 0)) (msgu (0 1 0)))
+    "A command-line interface for gt" tar
+    ((:url . "https://github.com/emacs-eine/gt-cli")
+     (:commit . "cf506f23057f5d0ec13259b83008adb266bcd26b")
+     (:revdesc . "cf506f23057f") (:keywords "convenience")
+     (:authors ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com"))])

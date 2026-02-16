@@ -120,6 +120,7 @@
   (goto-char-preview :url "https://github.com/emacs-vs/goto-char-preview")
   (goto-line-preview :url "https://github.com/emacs-vs/goto-line-preview")
   (gptscript-mode :url "https://github.com/emacs-openai/gptscript-mode")
+  (gt-cli :url "https://github.com/emacs-eine/gt-cli")
   (guard-lf :url "https://github.com/jcs-elpa/guard-lf")
   (helafy :url "https://github.com/jcs-elpa/helafy")
   (highlight-indent-guides :url "https://github.com/DarthFennec/highlight-indent-guides")
