@@ -228,6 +228,7 @@
   (sideline-lsp :url "https://github.com/emacs-sideline/sideline-lsp")
   (sideline-racket :url "https://github.com/emacs-sideline/sideline-racket")
   (sideline-sly :url "https://github.com/emacs-sideline/sideline-sly")
+  (simple-httpd-cli :url "https://github.com/emacs-eine/simple-httpd-cli")
   (sln-mode :url "https://github.com/sensorflo/sln-mode")
   (smartchr :url "https://github.com/imakado/emacs-smartchr")
   (sound-async :url "https://github.com/jcs-elpa/sound-async")
