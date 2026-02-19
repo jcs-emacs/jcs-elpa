@@ -1064,10 +1064,10 @@
   {
     "name": "google-translate-cli",
     "summary": "A command-line interface for Google Translate",
-    "version": "20260217.1241",
+    "version": "20260219.1945",
     "url": "https://github.com/emacs-eine/google-translate-cli",
     "source": "github",
-    "commit": "2abd3410ea834129f0c873e9ee150fdeddf29849",
+    "commit": "f5f5eebefcf309c26445e67c4e268bfb193d308b",
     "tree": "https://github.com/emacs-eine/google-translate-cli"
   },
   {
@@ -1100,10 +1100,10 @@
   {
     "name": "gt-cli",
     "summary": "A command-line interface for gt",
-    "version": "20260217.1238",
+    "version": "20260219.1945",
     "url": "https://github.com/emacs-eine/gt-cli",
     "source": "github",
-    "commit": "9a8194e7e4f290001f87d8d59d1a54dce0b86438",
+    "commit": "5b6fa042b3f945b904fc18d5645675958e13b945",
     "tree": "https://github.com/emacs-eine/gt-cli"
   },
   {
@@ -2068,6 +2068,15 @@
     "source": "github",
     "commit": "8d7ef316474769d7c9aaaac955fb3ce29bdf095a",
     "tree": "https://github.com/emacs-sideline/sideline-sly"
+  },
+  {
+    "name": "simple-httpd-cli",
+    "summary": "A command-line interface for simple-httpd",
+    "version": "20260219.1952",
+    "url": "https://github.com/emacs-eine/simple-httpd-cli",
+    "source": "github",
+    "commit": "4634537af929728600b82cffe5360c82b8f8b85f",
+    "tree": "https://github.com/emacs-eine/simple-httpd-cli"
   },
   {
     "name": "sln-mode",
