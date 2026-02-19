@@ -1,0 +1,4 @@
+(simple-httpd-cli
+ :fetcher github
+ :repo "emacs-eine/simple-httpd-cli"
+ :files (:defaults "bin"))
