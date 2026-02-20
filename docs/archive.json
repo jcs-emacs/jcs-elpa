@@ -740,10 +740,10 @@
   {
     "name": "ellsp",
     "summary": "Elisp Language Server",
-    "version": "20260220.906",
+    "version": "20260220.927",
     "url": "https://github.com/elisp-lsp/ellsp",
     "source": "github",
-    "commit": "9bde2725d9c87715b938b83575ea59f0736e24c1",
+    "commit": "3ab832fd97bbd391ce861c30a634623cb3bd45ff",
     "tree": "https://github.com/elisp-lsp/ellsp"
   },
   {
@@ -1411,6 +1411,15 @@
     "source": "github",
     "commit": "44df194778503cd2e29e907af4c6989c7ea27d1c",
     "tree": "https://github.com/lepisma/compose-language-server.el"
+  },
+  {
+    "name": "lsp-ellsp",
+    "summary": "LSP Clients for Ellsp",
+    "version": "20260220.928",
+    "url": "https://github.com/elisp-lsp/lsp-ellsp",
+    "source": "github",
+    "commit": "88ba379590d9b0829652c8def6024209e0ebe121",
+    "tree": "https://github.com/elisp-lsp/lsp-ellsp"
   },
   {
     "name": "lsp-grammarly-un",
