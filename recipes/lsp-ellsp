@@ -1,0 +1,3 @@
+(lsp-ellsp
+ :fetcher github
+ :repo "ellsp-lsp/lsp-ellsp")
