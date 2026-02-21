@@ -1,11 +1,11 @@
 (simple-httpd-cli
- . [(20260219 1952)
+ . [(20260221 1304)
     ((emacs (26 1)) (simple-httpd (1 5 1)) (commander (0 7 0))
      (msgu (0 1 0)))
     "A command-line interface for simple-httpd" tar
     ((:url . "https://github.com/emacs-eine/simple-httpd-cli")
-     (:commit . "4634537af929728600b82cffe5360c82b8f8b85f")
-     (:revdesc . "4634537af929") (:keywords "convenience")
+     (:commit . "fe270f0ebcd4e78460104e8d42eb514f4bc468f4")
+     (:revdesc . "fe270f0ebcd4") (:keywords "convenience")
      (:authors ("JenChieh" . "jcs090218@gmail.com"))
      (:maintainers ("JenChieh" . "jcs090218@gmail.com"))
      (:maintainer "JenChieh" . "jcs090218@gmail.com"))])
