@@ -2081,10 +2081,10 @@
   {
     "name": "simple-httpd-cli",
     "summary": "A command-line interface for simple-httpd",
-    "version": "20260219.1952",
+    "version": "20260221.1304",
     "url": "https://github.com/emacs-eine/simple-httpd-cli",
     "source": "github",
-    "commit": "4634537af929728600b82cffe5360c82b8f8b85f",
+    "commit": "fe270f0ebcd4e78460104e8d42eb514f4bc468f4",
     "tree": "https://github.com/emacs-eine/simple-httpd-cli"
   },
   {
