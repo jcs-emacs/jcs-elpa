@@ -1,5 +1,0 @@
-(google-translate-cli
- :fetcher github
- :repo "emacs-eine/google-translate-cli"
- :files (:defaults "bin"))
-
