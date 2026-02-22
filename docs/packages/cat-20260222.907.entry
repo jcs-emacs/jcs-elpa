@@ -1,0 +1,11 @@
+(cat
+ . [(20260222 907)
+    ((emacs (26 1)) (e2ansi (0 2 0)) (commander (0 7 0))
+     (elenv (0 1 0)) (msgu (0 1 0)))
+    "View files with syntax highlighting" tar
+    ((:url . "https://github.com/emacs-eine/cat")
+     (:commit . "07811b290d0f44a7b95cafe9b56a4340b4912b82")
+     (:revdesc . "07811b290d0f") (:keywords "convenience")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
