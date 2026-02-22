@@ -153,6 +153,15 @@
     "tree": "https://github.com/cask/cask"
   },
   {
+    "name": "cat",
+    "summary": "View files with syntax highlighting",
+    "version": "20260222.907",
+    "url": "https://github.com/emacs-eine/cat",
+    "source": "github",
+    "commit": "07811b290d0f44a7b95cafe9b56a4340b4912b82",
+    "tree": "https://github.com/emacs-eine/cat"
+  },
+  {
     "name": "centaur-tabs",
     "summary": "Aesthetic, modern looking customizable tabs plugin",
     "version": "20260128.950",
