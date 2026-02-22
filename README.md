@@ -13,7 +13,7 @@
 # jcs-elpa
 > ELPA for [jcs-emacs][], using [github-elpa][]
 
-Here are the goals for this ELPA:
+Here are the goals for this [ELPA][]:
 
 - Prioritize using built-in code over third-party libraries (e.g., `dash.el`, `s.el`, `f.el`).
 - Reuse third-party libraries when possible to reduce maintenance (consider ELPA as a single large project), but it's not strictly necessary.
@@ -66,6 +66,8 @@ This work is licensed under the [CC BY-ND 4.0](https://creativecommons.org/licen
 
 
 <!-- Links -->
+
+[ELPA]: https://wikemacs.org/wiki/ELPA
 
 [jcs-emacs]: https://github.com/jcs-emacs/jcs-emacs
 [github-elpa]: https://github.com/10sr/github-elpa
