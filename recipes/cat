@@ -1,0 +1,4 @@
+(cat
+ :fetcher github
+ :repo "emacs-eine/cat"
+ :files (:defaults "bin"))
