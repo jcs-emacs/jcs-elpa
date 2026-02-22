@@ -10,7 +10,7 @@
   <img align="right" width="20%" src="">
 </picture>
 
-# jcs-elpa
+# JCS Elpa
 > ELPA for [jcs-emacs][], using [github-elpa][]
 
 Here are the goals for this [ELPA][]:
