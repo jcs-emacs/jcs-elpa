@@ -33,7 +33,8 @@ Add the following to your configuration:
 Use priority if you don't want this archive overridden with other larger archives:
 
 ```elisp
-(setq package-archive-priorities '(("melpa"    . 5)
+(setq package-archive-priorities '(("gnu"      . 5)
+                                   ("melpa"    . 5)
                                    ("jcs-elpa" . 0)))
 ```
 
