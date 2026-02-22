@@ -11,7 +11,7 @@
 </picture>
 
 # jcs-elpa
-> ELPA for [jcs-emacs](https://github.com/jcs-emacs/jcs-emacs), using [github-elpa](https://github.com/10sr/github-elpa)
+> ELPA for [jcs-emacs][], using [github-elpa][]
 
 ## 🏆 Goals
 
@@ -63,3 +63,9 @@ This work is licensed under the [CC BY-ND 4.0](https://creativecommons.org/licen
 [![System](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/system.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/system.yml)
 [![Version](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/version.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/version.yml)
 [![Packages](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/packages.yml/badge.svg)](https://github.com/jcs-emacs/jcs-elpa/actions/workflows/packages.yml)
+
+
+<!-- Links -->
+
+[jcs-emacs]: https://github.com/jcs-emacs/jcs-emacs
+[github-elpa]: https://github.com/10sr/github-elpa
