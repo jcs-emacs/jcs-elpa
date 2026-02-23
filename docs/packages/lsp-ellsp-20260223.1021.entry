@@ -1,9 +1,9 @@
 (lsp-ellsp
- . [(20260223 44) ((emacs (28 1)) (lsp-mode (6 1)))
+ . [(20260223 1021) ((emacs (28 1)) (lsp-mode (6 1)))
     "LSP Clients for Ellsp" tar
     ((:url . "https://github.com/elisp-lsp/lsp-ellsp")
-     (:commit . "e9a559076bf37b30ddaf3e8a2c6287eca89e33e0")
-     (:revdesc . "e9a559076bf3") (:keywords "convenience")
+     (:commit . "172299b8d211344e3c7865d6efa0cf1a1bdf15a1")
+     (:revdesc . "172299b8d211") (:keywords "convenience")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
