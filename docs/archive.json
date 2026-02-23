@@ -1397,10 +1397,10 @@
   {
     "name": "lsp-ellsp",
     "summary": "LSP Clients for Ellsp",
-    "version": "20260220.928",
+    "version": "20260223.44",
     "url": "https://github.com/elisp-lsp/lsp-ellsp",
     "source": "github",
-    "commit": "88ba379590d9b0829652c8def6024209e0ebe121",
+    "commit": "e9a559076bf37b30ddaf3e8a2c6287eca89e33e0",
     "tree": "https://github.com/elisp-lsp/lsp-ellsp"
   },
   {
