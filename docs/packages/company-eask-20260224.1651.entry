@@ -1,9 +1,9 @@
 (company-eask
- . [(20251231 1607) ((emacs (26 1)) (company (0 8 0)) (eask (0 1 0)))
+ . [(20260224 1651) ((emacs (26 1)) (company (0 8 0)) (eask (0 1 0)))
     "Company backend for Eask-file" tar
     ((:url . "https://github.com/emacs-eask/company-eask")
-     (:commit . "8011dc5c6c931760a80189d1695147cad674e568")
-     (:revdesc . "8011dc5c6c93") (:keywords "convenience")
+     (:commit . "748c53fe1530c7b75682d78128f85326e41432d6")
+     (:revdesc . "748c53fe1530") (:keywords "convenience")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
