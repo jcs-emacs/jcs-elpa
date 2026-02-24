@@ -362,19 +362,19 @@
   {
     "name": "company-eask",
     "summary": "Company backend for Eask-file",
-    "version": "20251231.1607",
+    "version": "20260224.1651",
     "url": "https://github.com/emacs-eask/company-eask",
     "source": "github",
-    "commit": "8011dc5c6c931760a80189d1695147cad674e568",
+    "commit": "748c53fe1530c7b75682d78128f85326e41432d6",
     "tree": "https://github.com/emacs-eask/company-eask"
   },
   {
     "name": "company-elisp-keywords",
     "summary": "Company completion for `finder-known-keywords'",
-    "version": "20260101.558",
+    "version": "20260224.1654",
     "url": "https://github.com/jcs-elpa/company-elisp-keywords",
     "source": "github",
-    "commit": "a34456c1ce4584bf2a1dfc5bbe263e0ac1185d6a",
+    "commit": "19dfcc036a72bc505a89e1a2a70d22f46431fd3e",
     "tree": "https://github.com/jcs-elpa/company-elisp-keywords"
   },
   {
