@@ -488,10 +488,10 @@
   {
     "name": "copilot",
     "summary": "An unofficial Copilot plugin",
-    "version": "20260220.1537",
+    "version": "20260225.538",
     "url": "https://github.com/copilot-emacs/copilot.el",
     "source": "github",
-    "commit": "092e6524e965d2ca6a82f1fc68384f954bbd1632",
+    "commit": "0e1c017162f50dbceb32cd00d4d6d41ddde71b2b",
     "tree": "https://github.com/copilot-emacs/copilot.el"
   },
   {
@@ -965,10 +965,10 @@
   {
     "name": "flyover",
     "summary": "Display Flycheck and Flymake errors with overlays",
-    "version": "20260203.1043",
+    "version": "20260225.626",
     "url": "https://github.com/konrad1977/flyover",
     "source": "github",
-    "commit": "4e14ec26bf6668f4ba83171b70c62ad97743fed4",
+    "commit": "8815cb067ca0d3d32607c9ae5093673cb29663a0",
     "tree": "https://github.com/konrad1977/flyover"
   },
   {
@@ -1766,10 +1766,10 @@
   {
     "name": "punch-line",
     "summary": "A customizeable mode-line with Evil",
-    "version": "20251116.1114",
+    "version": "20260225.626",
     "url": "https://github.com/konrad1977/punch-line",
     "source": "github",
-    "commit": "9b1043e00170eea26b87377ef97e9541fe7c11ca",
+    "commit": "1b592e0bef5678dcb7bf78557b43a308321985c0",
     "tree": "https://github.com/konrad1977/punch-line"
   },
   {
