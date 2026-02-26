@@ -1,11 +1,11 @@
 (copilot
- . [(20260225 538)
+ . [(20260226 819)
     ((emacs (27 2)) (editorconfig (0 8 2)) (jsonrpc (1 0 14))
      (compat (30)) (track-changes (1 4)))
-    "An unofficial Copilot plugin" tar
+    "An Emacs plugin for GitHub Copilot" tar
     ((:url . "https://github.com/copilot-emacs/copilot.el")
-     (:commit . "0e1c017162f50dbceb32cd00d4d6d41ddde71b2b")
-     (:revdesc . "0e1c017162f5") (:keywords "convenience" "copilot")
+     (:commit . "7904f13d52e8dcda3af67142c42fa7c8345ba6fe")
+     (:revdesc . "7904f13d52e8") (:keywords "convenience" "copilot")
      (:authors ("zerol" . "z@zerol.me"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com")
 		   ("Rakotomandimby Mihamina"
