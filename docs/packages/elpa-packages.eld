@@ -57,7 +57,7 @@
   (cycle-slash :url "https://github.com/jcs-elpa/cycle-slash")
   (dall-e :url "https://github.com/emacs-openai/dall-e")
   (dape :url "https://github.com/svaante/dape")
-  (dashboard :url "https://github.com/emacs-dashboard/emacs-dashboard")
+  (dashboard :url "https://github.com/emacs-dashboard/dashboard")
   (dashboard-bm :url "https://github.com/emacs-dashboard/dashboard-bm")
   (dashboard-ls :url "https://github.com/emacs-dashboard/dashboard-ls")
   (deepl :url "https://github.com/emacs-openai/deepl")
