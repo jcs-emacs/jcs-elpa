@@ -1,4 +1,4 @@
 (dashboard
  :fetcher github
- :repo "emacs-dashboard/emacs-dashboard"
+ :repo "emacs-dashboard/dashboard"
  :files (:defaults "banners"))
