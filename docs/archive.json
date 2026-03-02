@@ -488,10 +488,10 @@
   {
     "name": "copilot",
     "summary": "An Emacs plugin for GitHub Copilot",
-    "version": "20260301.1950",
+    "version": "20260302.526",
     "url": "https://github.com/copilot-emacs/copilot.el",
     "source": "github",
-    "commit": "a11462a47ec619fbc9ec1af55f9bbea4c81fa966",
+    "commit": "08f96b753e38169d8d80459487744ba6b3ae2c4a",
     "tree": "https://github.com/copilot-emacs/copilot.el"
   },
   {
