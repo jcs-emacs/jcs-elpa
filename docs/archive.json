@@ -585,6 +585,15 @@
     "tree": "https://github.com/emacs-dashboard/doom-dashboard"
   },
   {
+    "name": "e-unit",
+    "summary": "Minitest/JUnit-style testing framework for Emacs Lisp",
+    "version": "20260103.2255",
+    "url": "https://codeberg.org/Trevoke/eunit.el",
+    "source": "codeberg",
+    "commit": "368867b491f0242825adab8645dcd57fde98b399",
+    "tree": "https://codeberg.org/Trevoke/eunit.el"
+  },
+  {
     "name": "eask",
     "summary": "Core Eask APIs, for Eask CLI development",
     "version": "20260222.1247",
