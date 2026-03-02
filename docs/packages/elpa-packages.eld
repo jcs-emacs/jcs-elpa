@@ -63,6 +63,7 @@
   (deepl :url "https://github.com/emacs-openai/deepl")
   (diminish-buffer :url "https://github.com/jcs-elpa/diminish-buffer")
   (doom-dashboard :url "https://github.com/emacs-dashboard/doom-dashboard")
+  (e-unit :url "https://codeberg.org/Trevoke/e-unit.el")
   (eask :url "https://github.com/emacs-eask/eask")
   (eask-mode :url "https://github.com/emacs-eask/eask-mode")
   (easky :url "https://github.com/emacs-eask/easky")
