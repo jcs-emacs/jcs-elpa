@@ -1350,6 +1350,15 @@
     "tree": "https://github.com/lem-project/lemmington.git"
   },
   {
+    "name": "let-completion",
+    "summary": "Show let-binding values in Elisp completion",
+    "version": "20260303.1459",
+    "url": "https://github.com/gggion/let-completion",
+    "source": "github",
+    "commit": "13255c4ad1276ebb0c92fb20d2823bd693124787",
+    "tree": "https://github.com/gggion/let-completion"
+  },
+  {
     "name": "license-templates",
     "summary": "Create LICENSE using GitHub API",
     "version": "20260101.600",
