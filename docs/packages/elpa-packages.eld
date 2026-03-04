@@ -148,6 +148,7 @@
   (knockknock :url "https://github.com/konrad1977/knockknock")
   (lambda-line :url "https://github.com/Lambda-Emacs/lambda-line")
   (lemmington :url "https://github.com/lem-project/lemmington")
+  (let-completion :url "https://github.com/gggion/let-completion.el")
   (license-templates :url "https://github.com/jcs-elpa/license-templates")
   (line-reminder :url "https://github.com/emacs-vs/line-reminder")
   (llm :url "https://github.com/ahyatt/llm")
