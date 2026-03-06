@@ -1404,6 +1404,15 @@
     "tree": "https://github.com/jcs-elpa/logms"
   },
   {
+    "name": "lsp-biome",
+    "summary": "A lsp-mode client for Biome",
+    "version": "20251029.511",
+    "url": "https://github.com/cxa/lsp-biome",
+    "source": "github",
+    "commit": "145c8196c72ff889f47e084c4f70c9adbc8518f2",
+    "tree": "https://github.com/cxa/lsp-biome"
+  },
+  {
     "name": "lsp-compose",
     "summary": "Lsp-mode client for compose server",
     "version": "20200515.1833",
@@ -1469,10 +1478,10 @@
   {
     "name": "lsp-smart-req",
     "summary": "Lazy load LSP packages",
-    "version": "20260221.1346",
+    "version": "20260306.952",
     "url": "https://github.com/jcs-elpa/lsp-smart-req",
     "source": "github",
-    "commit": "46a9293f1705283e77d1251ecdbf5faafc94a3da",
+    "commit": "525d69a0db09cfcd5d237407aa24c6c778a62c42",
     "tree": "https://github.com/jcs-elpa/lsp-smart-req"
   },
   {
