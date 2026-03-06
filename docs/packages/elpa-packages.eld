@@ -154,6 +154,7 @@
   (llm :url "https://github.com/ahyatt/llm")
   (llvm-mode :url "https://github.com/llvm/llvm-project")
   (logms :url "https://github.com/jcs-elpa/logms")
+  (lsp-biome :url "https://github.com/cxa/lsp-biome")
   (lsp-compose :url "https://github.com/lepisma/compose-language-server")
   (lsp-ellsp :url "https://github.com/elisp-lsp/lsp-ellsp")
   (lsp-grammarly-un :url "https://github.com/emacs-grammarly/lsp-grammarly-un")
