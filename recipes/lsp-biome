@@ -1,0 +1,1 @@
+(lsp-biome :fetcher github :repo "cxa/lsp-biome")
