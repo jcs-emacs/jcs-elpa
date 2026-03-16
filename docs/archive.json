@@ -749,10 +749,10 @@
   {
     "name": "ellsp",
     "summary": "Elisp Language Server",
-    "version": "20260227.310",
+    "version": "20260316.341",
     "url": "https://github.com/elisp-lsp/Ellsp",
     "source": "github",
-    "commit": "3a42472fd807da96d6ec0f89f5f4b2c1b411c113",
+    "commit": "a5a25a4884c3ec74ff8d876fafc0beab4fdb3115",
     "tree": "https://github.com/elisp-lsp/Ellsp"
   },
   {
@@ -2189,10 +2189,10 @@
   {
     "name": "treesit-langs",
     "summary": "Language bundle for Emacs's treesit.el",
-    "version": "20260315.1949",
+    "version": "20260316.441",
     "url": "https://github.com/emacs-tree-sitter/treesit-langs",
     "source": "github",
-    "commit": "0c9a1d571d6de5dc6438629449e163189d4ce72e",
+    "commit": "98ffe4e621fbe7c12305fa2db787d3d9303d0dd5",
     "tree": "https://github.com/emacs-tree-sitter/treesit-langs"
   },
   {
