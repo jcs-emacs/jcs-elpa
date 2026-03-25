@@ -263,10 +263,10 @@
   {
     "name": "colorful-mode",
     "summary": "Preview any color in your buffer in real time",
-    "version": "20260325.249",
+    "version": "20260325.433",
     "url": "https://github.com/DevelopmentCool2449/colorful-mode",
     "source": "github",
-    "commit": "b9d8c3c42588237e4e4d2b34483e88fc6c4b7830",
+    "commit": "7d598ceeeec7d9252f88d53a914b0539fb06ef93",
     "tree": "https://github.com/DevelopmentCool2449/colorful-mode"
   },
   {
@@ -1613,10 +1613,10 @@
   {
     "name": "nerd-icons",
     "summary": "Emacs Nerd Font Icons Library",
-    "version": "20260129.1655",
+    "version": "20260325.346",
     "url": "https://github.com/rainstormstudio/nerd-icons.el",
     "source": "github",
-    "commit": "9a7f44db9a53567f04603bc88d05402cad49c64c",
+    "commit": "1db0b0b9203cf293b38ac278273efcfc3581a05f",
     "tree": "https://github.com/rainstormstudio/nerd-icons.el"
   },
   {
