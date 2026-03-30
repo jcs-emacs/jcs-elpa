@@ -1,9 +1,9 @@
 (let-completion
- . [(20260308 2258) ((emacs (28 1)))
+ . [(20260330 2047) ((emacs (28 1)))
     "Show let-binding values in Elisp completion" tar
     ((:url . "https://github.com/gggion/let-completion.el")
-     (:commit . "491edec864d9120ccdaaa20a903d0cf5da67f9be")
-     (:revdesc . "491edec864d9") (:keywords "lisp" "completion")
+     (:commit . "e103218c0d96c14e82b11c05f91cb34a1cbd0dc2")
+     (:revdesc . "e103218c0d96") (:keywords "lisp" "completion")
      (:authors ("Gino Cornejo" . "gggion123@gmail.com"))
      (:maintainers ("Gino Cornejo" . "gggion123@gmail.com"))
      (:maintainer "Gino Cornejo" . "gggion123@gmail.com"))])
