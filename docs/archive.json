@@ -902,10 +902,10 @@
   {
     "name": "flycheck-janet",
     "summary": "Add janet linter to flycheck",
-    "version": "20230518.1132",
+    "version": "20260321.602",
     "url": "https://github.com/sogaiu/flycheck-janet",
     "source": "github",
-    "commit": "1f3b8796ffc57a6aefcb38063d46cb4787b04fe1",
+    "commit": "4cdafe4af5c79134c3e80a6891d3b939a7176554",
     "tree": "https://github.com/sogaiu/flycheck-janet"
   },
   {
