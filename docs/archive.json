@@ -533,10 +533,10 @@
   {
     "name": "dashboard",
     "summary": "A startup screen extracted from Spacemacs",
-    "version": "20260329.1853",
+    "version": "20260402.436",
     "url": "https://github.com/emacs-dashboard/dashboard",
     "source": "github",
-    "commit": "1c21c2586da32180f921df812a9276ab3ef18c17",
+    "commit": "176d641a55543bda1f0c7506fb954702350c1857",
     "tree": "https://github.com/emacs-dashboard/dashboard"
   },
   {
@@ -1379,10 +1379,10 @@
   {
     "name": "llm",
     "summary": "Interface to pluggable llm backends",
-    "version": "20260314.339",
+    "version": "20260402.358",
     "url": "https://github.com/ahyatt/llm",
     "source": "github",
-    "commit": "6d568150af5325395687aae89d58ec4c514e5872",
+    "commit": "0e5d4dee6e48a86a700ccc8cb202a4fc0703ff93",
     "tree": "https://github.com/ahyatt/llm"
   },
   {
