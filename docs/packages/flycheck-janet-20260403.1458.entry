@@ -1,0 +1,5 @@
+(flycheck-janet
+ . [(20260403 1458) ((flycheck (0 18))) "Janet flycheck" tar
+    ((:url . "https://github.com/sogaiu/flycheck-janet")
+     (:commit . "985a2fcb37f72933720142b2fd0392355e1c8d74")
+     (:revdesc . "985a2fcb37f7"))])
