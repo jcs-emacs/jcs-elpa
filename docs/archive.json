@@ -1370,10 +1370,10 @@
   {
     "name": "line-reminder",
     "summary": "Line annotation for changed and saved lines",
-    "version": "20260101.549",
+    "version": "20260406.657",
     "url": "https://github.com/emacs-vs/line-reminder",
     "source": "github",
-    "commit": "4e0170c9e3ed9b41e13bd3a9bcaa6937bae58e40",
+    "commit": "ff080f2f1b42c627d4720cd23751b93f5c6457c2",
     "tree": "https://github.com/emacs-vs/line-reminder"
   },
   {
