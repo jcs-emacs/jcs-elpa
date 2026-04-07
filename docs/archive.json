@@ -1352,10 +1352,10 @@
   {
     "name": "let-completion",
     "summary": "Show let-binding values in Elisp completion",
-    "version": "20260404.1342",
+    "version": "20260407.1428",
     "url": "https://github.com/gggion/let-completion.el",
     "source": "github",
-    "commit": "001f10de44c66d998c2bd90f62192eca3ca0247a",
+    "commit": "460cdd5a73d857d6d91469e28f84f02465db8dac",
     "tree": "https://github.com/gggion/let-completion.el"
   },
   {
