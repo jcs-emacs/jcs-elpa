@@ -110,6 +110,7 @@
   (fof :url "https://github.com/jcs-elpa/fof")
   (foldvis :url "https://github.com/emacs-vs/foldvis")
   (font-lock-ext :url "https://github.com/sensorflo/font-lock-ext")
+  (fringe-helper :url "https://github.com/nschum/fringe-helper.el")
   (fuz-bin :url "https://github.com/jcs-legacy/fuz-bin")
   (gas-mode :url "https://codeberg.org/Enocstocks/gas-mode.el")
   (gdshader-mode :url "https://github.com/bbbscarter/gdshader-mode")
