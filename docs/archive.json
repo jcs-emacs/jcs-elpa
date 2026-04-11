@@ -1008,6 +1008,15 @@
     "tree": "https://github.com/sensorflo/font-lock-ext/"
   },
   {
+    "name": "fringe-helper",
+    "summary": "Helper functions for fringe bitmaps",
+    "version": "20140620.2109",
+    "url": "http://nschum.de/src/emacs/fringe-helper/",
+    "source": "github",
+    "commit": "9bc3d3e82c9cc3937aa090248dc4dd2e289fc55c",
+    "tree": "http://nschum.de/src/emacs/fringe-helper/"
+  },
+  {
     "name": "fuz-bin",
     "summary": "Fast and precise fuzzy scoring/matching utils",
     "version": "20230325.115",
