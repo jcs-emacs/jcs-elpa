@@ -1649,10 +1649,10 @@
   {
     "name": "nerd-icons-completion",
     "summary": "Add icons to completion candidates",
-    "version": "20251029.2106",
+    "version": "20260412.243",
     "url": "https://github.com/rainstormstudio/nerd-icons-completion",
     "source": "github",
-    "commit": "d09ea987ed3d2cc64137234f27851594050e2b64",
+    "commit": "45b585d972192a3eaeb239e15e55de7f46f8920a",
     "tree": "https://github.com/rainstormstudio/nerd-icons-completion"
   },
   {
