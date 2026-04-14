@@ -236,19 +236,19 @@
   {
     "name": "codemetrics",
     "summary": "Plugin shows complexity information",
-    "version": "20260101.548",
+    "version": "20260414.1738",
     "url": "https://github.com/emacs-vs/codemetrics",
     "source": "github",
-    "commit": "a5a69c93d5a91f0e98f5f6ea557710571ca3f04e",
+    "commit": "33ec0a3dc949163666ac559d03d7b5b835fec694",
     "tree": "https://github.com/emacs-vs/codemetrics"
   },
   {
     "name": "cognitive-complexity",
     "summary": "Minor mode to show the cognitive complexity of code",
-    "version": "20260101.548",
+    "version": "20260414.1733",
     "url": "https://github.com/abougouffa/cognitive-complexity",
     "source": "github",
-    "commit": "9fcd9c1080f69a9d810ec02cb4ad14c11c0df0e9",
+    "commit": "b45afe9bf65943f985b645cea514212dc734349b",
     "tree": "https://github.com/abougouffa/cognitive-complexity"
   },
   {
@@ -1379,10 +1379,10 @@
   {
     "name": "line-reminder",
     "summary": "Line annotation for changed and saved lines",
-    "version": "20260406.657",
+    "version": "20260414.1746",
     "url": "https://github.com/emacs-vs/line-reminder",
     "source": "github",
-    "commit": "ff080f2f1b42c627d4720cd23751b93f5c6457c2",
+    "commit": "9a20500704f5b21772d00e4d0a9ff16dac943400",
     "tree": "https://github.com/emacs-vs/line-reminder"
   },
   {
