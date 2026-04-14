@@ -1,7 +1,7 @@
 (cognitive-complexity
- . [(20260101 548) ((emacs (29 1)))
+ . [(20260414 1733) ((emacs (29 1)))
     "Minor mode to show the cognitive complexity of code" tar
     ((:url . "https://github.com/abougouffa/cognitive-complexity")
-     (:commit . "9fcd9c1080f69a9d810ec02cb4ad14c11c0df0e9")
-     (:revdesc . "9fcd9c1080f6")
+     (:commit . "b45afe9bf65943f985b645cea514212dc734349b")
+     (:revdesc . "b45afe9bf659")
      (:keywords "convenience" "tools" "c" "languages"))])
