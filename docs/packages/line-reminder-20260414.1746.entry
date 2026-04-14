@@ -1,10 +1,10 @@
 (line-reminder
- . [(20260406 657)
+ . [(20260414 1746)
     ((emacs (25 1)) (fringe-helper (1 0 1)) (ov (1 0 6)) (ht (2 0)))
     "Line annotation for changed and saved lines" tar
     ((:url . "https://github.com/emacs-vs/line-reminder")
-     (:commit . "ff080f2f1b42c627d4720cd23751b93f5c6457c2")
-     (:revdesc . "ff080f2f1b42")
+     (:commit . "9a20500704f5b21772d00e4d0a9ff16dac943400")
+     (:revdesc . "9a20500704f5")
      (:keywords "convenience" "annotation")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
