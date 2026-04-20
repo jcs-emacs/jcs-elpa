@@ -1729,11 +1729,11 @@
   },
   {
     "name": "package-build",
-    "summary": "Tools for assembling a package archive",
-    "version": "20260301.1635",
+    "summary": "Curate an Emacs Lisp package archive",
+    "version": "20260420.1934",
     "url": "https://github.com/melpa/package-build",
     "source": "github",
-    "commit": "de5b4dada04d85c4df7a424e23a9e637669e4e1e",
+    "commit": "e8294cdb978dea2485b038b5fcab6fc4738197e4",
     "tree": "https://github.com/melpa/package-build"
   },
   {
