@@ -132,4 +132,8 @@
 2026-05-02T11:25:17+0000  odin-mode                  Command ‘git clone https\://git.sr.ht/\~mgmarlow/odin-mode /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/odin-mode/’ exited with non-zero exit-code: 128
 2026-05-02T12:28:13+0000  odin-mode                  Command ‘git clone https\://git.sr.ht/\~mgmarlow/odin-mode /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/odin-mode/’ exited with non-zero exit-code: 128
 2026-05-02T13:39:21+0000  odin-mode                  Command ‘git clone https\://git.sr.ht/\~mgmarlow/odin-mode /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/odin-mode/’ exited with non-zero exit-code: 128
+<<<<<<< Updated upstream
 2026-05-02T14:24:38+0000  tree-sitter-indent         Command ‘git clone https\://codeberg.org/FelipeLema/tree-sitter-indent.el /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/tree-sitter-indent/’ exited with non-zero exit-code: 128
+=======
+2026-05-02T14:24:47+0000  e-unit                     Command ‘git clone https\://codeberg.org/Trevoke/e-unit.el /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/e-unit/’ exited with non-zero exit-code: 128
+>>>>>>> Stashed changes
