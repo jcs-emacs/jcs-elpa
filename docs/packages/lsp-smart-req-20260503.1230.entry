@@ -1,8 +1,8 @@
 (lsp-smart-req
- . [(20260306 952) ((emacs (27 1))) "Lazy load LSP packages" tar
+ . [(20260503 1230) ((emacs (29 1))) "Lazy load LSP packages" tar
     ((:url . "https://github.com/jcs-elpa/lsp-smart-req")
-     (:commit . "525d69a0db09cfcd5d237407aa24c6c778a62c42")
-     (:revdesc . "525d69a0db09") (:keywords "internal" "lsp")
+     (:commit . "2316b59f186241ce6adf7d56d2817e44b8c7cc0c")
+     (:revdesc . "2316b59f1862") (:keywords "internal" "lsp")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
