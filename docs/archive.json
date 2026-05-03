@@ -1874,10 +1874,10 @@
   {
     "name": "recentf-excl",
     "summary": "Exclude commands for recent files",
-    "version": "20260101.602",
+    "version": "20260503.1218",
     "url": "https://github.com/jcs-elpa/recentf-excl",
     "source": "github",
-    "commit": "634b9f8892a77c1a9e8b9421b6dcd669ab2ae94f",
+    "commit": "46a322a8a76d5ede2d80ec8e2dd7b5f6f7941050",
     "tree": "https://github.com/jcs-elpa/recentf-excl"
   },
   {
