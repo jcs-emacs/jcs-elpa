@@ -749,10 +749,10 @@
   {
     "name": "ellsp",
     "summary": "Elisp Language Server",
-    "version": "20260316.341",
+    "version": "20260503.1228",
     "url": "https://github.com/elisp-lsp/Ellsp",
     "source": "github",
-    "commit": "a5a25a4884c3ec74ff8d876fafc0beab4fdb3115",
+    "commit": "2a6a359cf15a09c9aafeb3781f1dfed1944d2a5f",
     "tree": "https://github.com/elisp-lsp/Ellsp"
   },
   {
@@ -1451,10 +1451,10 @@
   {
     "name": "lsp-ltex-plus",
     "summary": "LSP Clients for LTEX+",
-    "version": "20260101.535",
+    "version": "20260503.1233",
     "url": "https://github.com/emacs-languagetool/lsp-ltex-plus",
     "source": "github",
-    "commit": "24e78878ee88b4b6fccedd37ec884897f322a936",
+    "commit": "c6bf97f4b75ca8485baa6e951536cee410010938",
     "tree": "https://github.com/emacs-languagetool/lsp-ltex-plus"
   },
   {
@@ -1478,28 +1478,28 @@
   {
     "name": "lsp-shader",
     "summary": "LSP Clients for ShaderLab",
-    "version": "20251231.1653",
+    "version": "20260503.1236",
     "url": "https://github.com/shader-ls/lsp-shader",
     "source": "github",
-    "commit": "f8772e749d212adf95b901c3c94c9c96f9da3707",
+    "commit": "85430cd7d20019aa39e624990fd814650af9b3a2",
     "tree": "https://github.com/shader-ls/lsp-shader"
   },
   {
     "name": "lsp-smart-req",
     "summary": "Lazy load LSP packages",
-    "version": "20260306.952",
+    "version": "20260503.1230",
     "url": "https://github.com/jcs-elpa/lsp-smart-req",
     "source": "github",
-    "commit": "525d69a0db09cfcd5d237407aa24c6c778a62c42",
+    "commit": "2316b59f186241ce6adf7d56d2817e44b8c7cc0c",
     "tree": "https://github.com/jcs-elpa/lsp-smart-req"
   },
   {
     "name": "lsp-uniteai",
     "summary": "LSP Clients for UniteAI",
-    "version": "20260101.538",
+    "version": "20260503.1231",
     "url": "https://github.com/emacs-openai/lsp-uniteai",
     "source": "github",
-    "commit": "5aeeb22ed615e6f6ba5d4a753b6a7972667589c7",
+    "commit": "7ce0a1a56fe5f0afbeba5d37bee1732443a93f43",
     "tree": "https://github.com/emacs-openai/lsp-uniteai"
   },
   {
@@ -2072,10 +2072,10 @@
   {
     "name": "sideline-lsp",
     "summary": "Show lsp information with sideline",
-    "version": "20260101.542",
+    "version": "20260503.1235",
     "url": "https://github.com/emacs-sideline/sideline-lsp",
     "source": "github",
-    "commit": "dfa29a7b27e5ab64788c76544444f678ae4db18d",
+    "commit": "393459a7a947a62eb3f1d587fe576937afefb63f",
     "tree": "https://github.com/emacs-sideline/sideline-lsp"
   },
   {
