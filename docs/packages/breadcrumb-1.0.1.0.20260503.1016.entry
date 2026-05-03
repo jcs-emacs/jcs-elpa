@@ -1,0 +1,9 @@
+(breadcrumb
+ . [(1 0 1 0 20260503 1016) ((emacs (28 1)) (project (0 9 8)))
+    "Project and imenu-based breadcrumb paths" tar
+    ((:url . "https://github.com/joaotavora/breadcrumb")
+     (:commit . "04c50e32e8f32afd68242e4dc28da02e8a45e237")
+     (:revdesc . "04c50e32e8f3")
+     (:authors ("João Távora" . "joaotavora@gmail.com"))
+     (:maintainers ("João Távora" . "joaotavora@gmail.com"))
+     (:maintainer "João Távora" . "joaotavora@gmail.com"))])
