@@ -1,9 +1,0 @@
-(echo-bar
- . [(20260127 1511) nil "Turn the echo area into a custom status bar"
-    tar
-    ((:url . "https://github.com/elp-revive/echo-bar.el")
-     (:commit . "a28093474a03921434f877434180e4e349da0938")
-     (:revdesc . "a28093474a03") (:keywords "convenience" "tools")
-     (:authors ("Adam Tillou" . "qaiviq@gmail.com"))
-     (:maintainers ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
-     (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com"))])

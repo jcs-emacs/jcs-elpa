@@ -1,0 +1,10 @@
+(dashboard-ls
+ . [(0 3 0 0 20251231 1631) ((emacs (27 1)) (dashboard (1 2 5)))
+    "Display files/directories in current directory on Dashboard" tar
+    ((:url . "https://github.com/emacs-dashboard/dashboard-ls")
+     (:commit . "e6f1ae4e4f4efbc1d3c4cff84b220f44e963e6ab")
+     (:revdesc . "e6f1ae4e4f4e")
+     (:keywords "convenience" "directory" "file" "show")
+     (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
+     (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])

@@ -1,0 +1,10 @@
+(e-unit
+ . [(0 15 0) ((emacs (28 1)))
+    "Minitest/JUnit-style testing framework for Emacs Lisp" tar
+    ((:url . "https://codeberg.org/Trevoke/eunit.el")
+     (:commit . "368867b491f0242825adab8645dcd57fde98b399")
+     (:revdesc . "368867b491f0")
+     (:keywords "tools" "lisp" "testing" "tdd")
+     (:authors ("Aldric Giacomoni" . "trevoke@gmail.com"))
+     (:maintainers ("Aldric Giacomoni" . "trevoke@gmail.com"))
+     (:maintainer "Aldric Giacomoni" . "trevoke@gmail.com"))])
