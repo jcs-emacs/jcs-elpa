@@ -1,1 +1,2468 @@
-null
+[
+  {
+    "name": "ace-link-dashboard",
+    "summary": "Ace link for dashboard",
+    "version": "0.0.0.0.20251231.1632",
+    "url": "https://github.com/emacs-dashboard/ace-link-dashboard",
+    "source": "github",
+    "commit": "7b158a01ee230f0e43db022036bd5f7e5601e727",
+    "tree": "https://github.com/emacs-dashboard/ace-link-dashboard"
+  },
+  {
+    "name": "ansi-colorful",
+    "summary": "Toggle render ansi-color",
+    "version": "0.1.0.0.20260101.557",
+    "url": "https://github.com/jcs-elpa/ansi-colorful",
+    "source": "github",
+    "commit": "ec9aa6dd8dacb875ed7c5552f5e8c19db67b5b4b",
+    "tree": "https://github.com/jcs-elpa/ansi-colorful"
+  },
+  {
+    "name": "asoc",
+    "summary": "Alist functions and macros",
+    "version": "0.6.1",
+    "url": "https://github.com/troyp/asoc.el",
+    "source": "github",
+    "commit": "4a3309a9f250656da6f4a9d34feedf4f5666b17a",
+    "tree": "https://github.com/troyp/asoc.el"
+  },
+  {
+    "name": "auto-close-block",
+    "summary": "Automatically close block",
+    "version": "0.1.0.0.20260101.547",
+    "url": "https://github.com/emacs-vs/auto-close-block",
+    "source": "github",
+    "commit": "f84bc6c36af797b881bf7823364a84eb5f66923b",
+    "tree": "https://github.com/emacs-vs/auto-close-block"
+  },
+  {
+    "name": "auto-highlight-symbol",
+    "summary": "Automatic highlighting current symbol minor mode",
+    "version": "1.61.0.0.20260101.552",
+    "url": "https://github.com/elp-revive/auto-highlight-symbol",
+    "source": "github",
+    "commit": "e84da32e7cf1baefb0a9eef42a2fc842cf18f8b3",
+    "tree": "https://github.com/elp-revive/auto-highlight-symbol"
+  },
+  {
+    "name": "auto-scroll-bar",
+    "summary": "Automatically show/hide scroll-bars as needed",
+    "version": "0.2.0.0.20260404.952",
+    "url": "https://github.com/emacs-vs/auto-scroll-bar",
+    "source": "github",
+    "commit": "96debece42d901d9d3fa799bdebe1e7960dc6886",
+    "tree": "https://github.com/emacs-vs/auto-scroll-bar"
+  },
+  {
+    "name": "aws",
+    "summary": "AWS Toolkit",
+    "version": "0.0.1.0.20251231.2105",
+    "url": "https://github.com/jcs090218/aws-toolkit-emacs",
+    "source": "github",
+    "commit": "59250e6a2d5e7cd0e4d9ce9878d191e62e5f47e6",
+    "tree": "https://github.com/jcs090218/aws-toolkit-emacs"
+  },
+  {
+    "name": "balanced-windows",
+    "summary": "Keep windows balanced",
+    "version": "1.0.0.0.20220919.824",
+    "url": "https://github.com/elp-revive/emacs-balanced-windows",
+    "source": "github",
+    "commit": "fd360ca6416e56d8df92bbcb0f7aec37e201f2e7",
+    "tree": "https://github.com/elp-revive/emacs-balanced-windows"
+  },
+  {
+    "name": "beancount",
+    "summary": "A major mode to edit Beancount input files",
+    "version": "0.9.0.0.20251027.1208",
+    "url": "https://github.com/beancount/beancount-mode",
+    "source": "github",
+    "commit": "8a564f5a26e6245860188ebf71db0262dd78e068",
+    "tree": "https://github.com/beancount/beancount-mode"
+  },
+  {
+    "name": "bitwarden",
+    "summary": "Bitwarden command wrapper",
+    "version": "0.1.1.0.20240417.1653",
+    "url": "https://github.com/seanfarley/emacs-bitwarden",
+    "source": "github",
+    "commit": "50c0078d356e0ac0bcaf26b40113700ba4123ec3",
+    "tree": "https://github.com/seanfarley/emacs-bitwarden"
+  },
+  {
+    "name": "block-travel",
+    "summary": "Move to previous/next blank line",
+    "version": "0.1.0.0.20260101.548",
+    "url": "https://github.com/emacs-vs/block-travel",
+    "source": "github",
+    "commit": "1be79b38c4b19f59fba482688a71c86e6bc85814",
+    "tree": "https://github.com/emacs-vs/block-travel"
+  },
+  {
+    "name": "breadcrumb",
+    "summary": "Project and imenu-based breadcrumb paths",
+    "version": "1.0.1.0.20260503.1016",
+    "url": "https://github.com/joaotavora/breadcrumb",
+    "source": "github",
+    "commit": "04c50e32e8f32afd68242e4dc28da02e8a45e237",
+    "tree": "https://github.com/joaotavora/breadcrumb"
+  },
+  {
+    "name": "buffer-menu-filter",
+    "summary": "Filter buffer-menu items using fake header",
+    "version": "0.1.0.0.20260101.557",
+    "url": "https://github.com/jcs-elpa/buffer-menu-filter",
+    "source": "github",
+    "commit": "b9ee831b510c81ea38d21b0624ab51c85b0241d5",
+    "tree": "https://github.com/jcs-elpa/buffer-menu-filter"
+  },
+  {
+    "name": "buffer-menu-project",
+    "summary": "List buffers relative to project",
+    "version": "0.1.0.0.20260101.558",
+    "url": "https://github.com/jcs-elpa/buffer-menu-project",
+    "source": "github",
+    "commit": "b4862db8b7170b7af431b010e5bf6647dac65c11",
+    "tree": "https://github.com/jcs-elpa/buffer-menu-project"
+  },
+  {
+    "name": "buffer-move",
+    "summary": "Easily swap buffers",
+    "version": "0.6.2.0.20240101.907",
+    "url": "https://github.com/elp-revive/buffer-move/",
+    "source": "github",
+    "commit": "d20de0065695ee815f1c17cf2de527d6e9a7bbf1",
+    "tree": "https://github.com/elp-revive/buffer-move/"
+  },
+  {
+    "name": "bump-version",
+    "summary": "Emacs package which helps bump version",
+    "version": "0.2.6.0.20140510.1058",
+    "url": "https://github.com/atykhonov/emacs-bump-version",
+    "source": "github",
+    "commit": "be213c9fd843f6f76560333e275f73e20181d50b",
+    "tree": "https://github.com/atykhonov/emacs-bump-version"
+  },
+  {
+    "name": "cask",
+    "summary": "Cask: Project management for package development",
+    "version": "0.9.1.0.20250801.1703",
+    "url": "https://github.com/cask/cask",
+    "source": "github",
+    "commit": "e04462801736fc1d76d979aedd7514663786892c",
+    "tree": "https://github.com/cask/cask"
+  },
+  {
+    "name": "centaur-tabs",
+    "summary": "Aesthetic, modern looking customizable tabs plugin",
+    "version": "3.2.0.0.20260128.950",
+    "url": "https://github.com/ema2159/centaur-tabs",
+    "source": "github",
+    "commit": "5ec350da6cacc34ac0efaac17d6ac5031ef82bd4",
+    "tree": "https://github.com/ema2159/centaur-tabs"
+  },
+  {
+    "name": "change-case",
+    "summary": "Case conversion between camelCase, PascalCase, snake_case and more",
+    "version": "9.0.0.0.20260123.236",
+    "url": "https://github.com/TakesxiSximada/change-case.el",
+    "source": "github",
+    "commit": "a05089d98efe1d60944de5b422c4252788d77e83",
+    "tree": "https://github.com/TakesxiSximada/change-case.el"
+  },
+  {
+    "name": "chatgpt",
+    "summary": "Use ChatGPT inside Emacs",
+    "version": "0.1.0.0.20260220.1847",
+    "url": "https://github.com/emacs-openai/chatgpt",
+    "source": "github",
+    "commit": "49f16aad6c78fba3a4827f000710f26de5328693",
+    "tree": "https://github.com/emacs-openai/chatgpt"
+  },
+  {
+    "name": "chatgpt-shell",
+    "summary": "A family of utilities to interact with LLMs (ChatGPT, Claude, DeepSeek, Gemini, Kagi, Ollama, Perplexity)",
+    "version": "2.30.4.0.20260221.2246",
+    "url": "https://github.com/xenodium/chatgpt-shell",
+    "source": "github",
+    "commit": "cbad6ffc9cbde1962a7317cf6d1d4d50ac1c1ac2",
+    "tree": "https://github.com/xenodium/chatgpt-shell"
+  },
+  {
+    "name": "chatgpt-sideline",
+    "summary": "Sideline support for chatgpt",
+    "version": "0.1.0.0.20260101.537",
+    "url": "https://github.com/emacs-openai/chatgpt-sideline",
+    "source": "github",
+    "commit": "f874f71994005fb394510b3ceda399cda28c7ef4",
+    "tree": "https://github.com/emacs-openai/chatgpt-sideline"
+  },
+  {
+    "name": "cisco-router-mode",
+    "summary": "Major mode for editing Cisco router configuration files",
+    "version": "0.0.0.0.20100804.840",
+    "url": "https://github.com/emacsmirror/cisco-router-mode",
+    "source": "github",
+    "commit": "3878fc6d6a1dea48eb9174af567f93659b8542e8",
+    "tree": "https://github.com/emacsmirror/cisco-router-mode"
+  },
+  {
+    "name": "clean-buffers",
+    "summary": "Clean useless buffers",
+    "version": "0.1.0.0.20240715.2355",
+    "url": "https://github.com/elp-revive/clean-buffers",
+    "source": "github",
+    "commit": "fec82f624da40b85e74cc0ea75e29c28d247911d",
+    "tree": "https://github.com/elp-revive/clean-buffers"
+  },
+  {
+    "name": "codegpt",
+    "summary": "Use GPT-3 tp help you write code",
+    "version": "0.1.0.0.20260101.538",
+    "url": "https://github.com/emacs-openai/codegpt",
+    "source": "github",
+    "commit": "01602348999ec22ef93600e4f676b2cd63066dc9",
+    "tree": "https://github.com/emacs-openai/codegpt"
+  },
+  {
+    "name": "codeium",
+    "summary": "Codeium client for emacs",
+    "version": "1.12.0.0.20241112.2146",
+    "url": "https://github.com/Exafunction/codeium.el",
+    "source": "github",
+    "commit": "3c3e7de8810e46f4c9a934fceeb79d8b6777a711",
+    "tree": "https://github.com/Exafunction/codeium.el"
+  },
+  {
+    "name": "codemetrics",
+    "summary": "Plugin shows complexity information",
+    "version": "0.1.0.0.20260414.1738",
+    "url": "https://github.com/emacs-vs/codemetrics",
+    "source": "github",
+    "commit": "33ec0a3dc949163666ac559d03d7b5b835fec694",
+    "tree": "https://github.com/emacs-vs/codemetrics"
+  },
+  {
+    "name": "cognitive-complexity",
+    "summary": "Minor mode to show the cognitive complexity of code",
+    "version": "1.0.0.0.20260414.1733",
+    "url": "https://github.com/abougouffa/cognitive-complexity",
+    "source": "github",
+    "commit": "b45afe9bf65943f985b645cea514212dc734349b",
+    "tree": "https://github.com/abougouffa/cognitive-complexity"
+  },
+  {
+    "name": "cogru",
+    "summary": "Cogru plugin for real-time collaborative editing",
+    "version": "0.1.0.0.20251231.1647",
+    "url": "https://github.com/Cogru/cogru.el",
+    "source": "github",
+    "commit": "d2ea28bc35de7b17752c891c2fd8af83bae5e7dd",
+    "tree": "https://github.com/Cogru/cogru.el"
+  },
+  {
+    "name": "colorful-mode",
+    "summary": "Preview any color in your buffer in real time",
+    "version": "1.2.5.0.20260325.433",
+    "url": "https://github.com/DevelopmentCool2449/colorful-mode",
+    "source": "github",
+    "commit": "7d598ceeeec7d9252f88d53a914b0539fb06ef93",
+    "tree": "https://github.com/DevelopmentCool2449/colorful-mode"
+  },
+  {
+    "name": "comint-fold",
+    "summary": "Fold comint-input",
+    "version": "0.0.3",
+    "url": "https://github.com/jdtsmith/comint-fold",
+    "source": "github",
+    "commit": "0dd06663d4e666c20650c3556fe4985731dd600f",
+    "tree": "https://github.com/jdtsmith/comint-fold"
+  },
+  {
+    "name": "commander",
+    "summary": "Emacs command line parser",
+    "version": "0.7.0",
+    "url": "https://github.com/rejeep/commander.el",
+    "source": "github",
+    "commit": "2c8a57b9c619e29ccbe2d5a85921b9c689e95bf9",
+    "tree": "https://github.com/rejeep/commander.el"
+  },
+  {
+    "name": "company-autoconf",
+    "summary": "Completion for autoconf script",
+    "version": "0.0.1",
+    "url": "https://github.com/elp-revive/company-autoconf",
+    "source": "github",
+    "commit": "1a1439e597bb1bd7be73f8c473ebb30b1dcc76ea",
+    "tree": "https://github.com/elp-revive/company-autoconf"
+  },
+  {
+    "name": "company-bootstrap",
+    "summary": "A company backend for bootstrap",
+    "version": "4.3.1.0.20240219.2347",
+    "url": "https://github.com/typefo/company-bootstrap",
+    "source": "github",
+    "commit": "3df09598c50c824b1dfe2b9d2f2aa95b1e55995e",
+    "tree": "https://github.com/typefo/company-bootstrap"
+  },
+  {
+    "name": "company-box",
+    "summary": "Company front-end with icons",
+    "version": "0.2.0.0.20260115.2224",
+    "url": "https://github.com/elp-revive/company-box",
+    "source": "github",
+    "commit": "9af9772b13b68ad6b5d2dae2aa559dc66d74a6d4",
+    "tree": "https://github.com/elp-revive/company-box"
+  },
+  {
+    "name": "company-c-headers",
+    "summary": "Company mode backend for C/C++ header files",
+    "version": "0.1.0.0.20231223.805",
+    "url": "https://github.com/elp-revive/company-c-headers",
+    "source": "github",
+    "commit": "fa1b905a5f5bb0d9372ca2763d7ea23f3f58c624",
+    "tree": "https://github.com/elp-revive/company-c-headers"
+  },
+  {
+    "name": "company-cmd",
+    "summary": "Company backend for cmd/batch",
+    "version": "0.0.1",
+    "url": "https://github.com/elp-revive/company-cmd",
+    "source": "github",
+    "commit": "cf393156e92fb2ac503dfa328e7e96b547fc2a97",
+    "tree": "https://github.com/elp-revive/company-cmd"
+  },
+  {
+    "name": "company-coffee",
+    "summary": "Emacs coffee completion",
+    "version": "0.0.1.0.20220711.701",
+    "url": "https://github.com/elp-revive/company-coffee",
+    "source": "github",
+    "commit": "cab6ebe0c1048881e565de98c3d159a05652db75",
+    "tree": "https://github.com/elp-revive/company-coffee"
+  },
+  {
+    "name": "company-dart",
+    "summary": "Autocompletion for Dart files",
+    "version": "0.1.0.0.20170318.1404",
+    "url": "https://github.com/sid-kurias/company-dart",
+    "source": "github",
+    "commit": "6508c728e2076de3463bd1af0819c9e6962912d3",
+    "tree": "https://github.com/sid-kurias/company-dart"
+  },
+  {
+    "name": "company-dockerfile",
+    "summary": "Company mode backend for dockefile",
+    "version": "0.1.0.0.20220702.1859",
+    "url": "https://github.com/elp-revive/company-dockerfile",
+    "source": "github",
+    "commit": "9272a09eb300401fdcc99adaf900520d273bbffb",
+    "tree": "https://github.com/elp-revive/company-dockerfile"
+  },
+  {
+    "name": "company-eask",
+    "summary": "Company backend for Eask-file",
+    "version": "0.1.0.0.20260301.1017",
+    "url": "https://github.com/emacs-eask/company-eask",
+    "source": "github",
+    "commit": "94447ebd18b0003d0941ec1e7d027c8d95216411",
+    "tree": "https://github.com/emacs-eask/company-eask"
+  },
+  {
+    "name": "company-elisp-keywords",
+    "summary": "Company completion for `finder-known-keywords'",
+    "version": "0.1.0.0.20260224.1654",
+    "url": "https://github.com/jcs-elpa/company-elisp-keywords",
+    "source": "github",
+    "commit": "19dfcc036a72bc505a89e1a2a70d22f46431fd3e",
+    "tree": "https://github.com/jcs-elpa/company-elisp-keywords"
+  },
+  {
+    "name": "company-emmet",
+    "summary": "Company completion for emmet",
+    "version": "0.1.0.0.20260101.548",
+    "url": "https://github.com/emacs-vs/company-emmet",
+    "source": "github",
+    "commit": "6ce19356dfa3477fc112169ceeabf8bc6160d836",
+    "tree": "https://github.com/emacs-vs/company-emmet"
+  },
+  {
+    "name": "company-fuzzy",
+    "summary": "Fuzzy matching for `company-mode'",
+    "version": "2.0.0.0.20260101.558",
+    "url": "https://github.com/jcs-elpa/company-fuzzy",
+    "source": "github",
+    "commit": "4b023aa623272675112ea57a50f286475ca620d2",
+    "tree": "https://github.com/jcs-elpa/company-fuzzy"
+  },
+  {
+    "name": "company-graphql",
+    "summary": "Company completion for graphql file",
+    "version": "0.0.0.0.20171018.105",
+    "url": "https://github.com/timoweave/company-graphql",
+    "source": "github",
+    "commit": "757dfa45ad0cef9b9c362c8993d6474a2426c01c",
+    "tree": "https://github.com/timoweave/company-graphql"
+  },
+  {
+    "name": "company-kaomoji",
+    "summary": "Company backend for Kaomoji",
+    "version": "0.1.0.0.20260101.558",
+    "url": "https://github.com/jcs-elpa/company-kaomoji",
+    "source": "github",
+    "commit": "a706a4a377d2eeb7bbfea4b4406c7df752500314",
+    "tree": "https://github.com/jcs-elpa/company-kaomoji"
+  },
+  {
+    "name": "company-makefile",
+    "summary": "Completion backend for gnu makefiles",
+    "version": "0.0.1.0.20220711.646",
+    "url": "https://github.com/elp-revive/company-makefile",
+    "source": "github",
+    "commit": "19b2b1c6b99cb59c99ae714bc9e06d5227ed36da",
+    "tree": "https://github.com/elp-revive/company-makefile"
+  },
+  {
+    "name": "company-meta-net",
+    "summary": "Company completion for C# project using meta-net",
+    "version": "0.1.0.0.20260101.548",
+    "url": "https://github.com/emacs-vs/company-meta-net",
+    "source": "github",
+    "commit": "cf88738c9182404d3def7529f038d7496fd91629",
+    "tree": "https://github.com/emacs-vs/company-meta-net"
+  },
+  {
+    "name": "company-mlton",
+    "summary": "Company-mode backend for MLton/Standard ML",
+    "version": "1.0.0.0.20201207.1445",
+    "url": "https://github.com/MatthewFluet/company-mlton",
+    "source": "github",
+    "commit": "9b09d209b4767a2af24784fb5321390ed1d445bf",
+    "tree": "https://github.com/MatthewFluet/company-mlton"
+  },
+  {
+    "name": "company-paths",
+    "summary": "A company backend for paths",
+    "version": "0.1.0.0.20260101.548",
+    "url": "https://github.com/emacs-vs/company-paths",
+    "source": "github",
+    "commit": "66fc3915ce0603baddee1a1649557bffcbcd18fd",
+    "tree": "https://github.com/emacs-vs/company-paths"
+  },
+  {
+    "name": "company-powershell",
+    "summary": "Emacs autocompletion backend for powershell",
+    "version": "0.0.1.0.20220711.652",
+    "url": "https://github.com/elp-revive/company-powershell",
+    "source": "github",
+    "commit": "0380259960aeac873c7bec1e9c5218da0a82c358",
+    "tree": "https://github.com/elp-revive/company-powershell"
+  },
+  {
+    "name": "company-sml",
+    "summary": "[No description available]",
+    "version": "0.0.0.0.20231026.455",
+    "url": "https://github.com/nverno/company-sml",
+    "source": "github",
+    "commit": "b586459c4d3b6b54081c6acc14d376ae3a854f2d",
+    "tree": "https://github.com/nverno/company-sml"
+  },
+  {
+    "name": "company-tailwindcss",
+    "summary": "Company mode for tailwind css suggestions",
+    "version": "0.6.0.0.20230119.2346",
+    "url": "https://github.com/tyler-dodge/company-tailwindcss",
+    "source": "github",
+    "commit": "d94d90df23131cc59ce9b1e1619f04110bbcfa91",
+    "tree": "https://github.com/tyler-dodge/company-tailwindcss"
+  },
+  {
+    "name": "consult-todo",
+    "summary": "Search hl-todo keywords in consult",
+    "version": "0.5.0.0.20250417.1903",
+    "url": "https://github.com/eki3z/consult-todo",
+    "source": "github",
+    "commit": "f9ba063a6714cb95ddbd886786ada93771f3c140",
+    "tree": "https://github.com/eki3z/consult-todo"
+  },
+  {
+    "name": "copilot",
+    "summary": "An Emacs plugin for GitHub Copilot",
+    "version": "0.5.0.0.20260331.713",
+    "url": "https://github.com/copilot-emacs/copilot.el",
+    "source": "github",
+    "commit": "ab5c58bc969f52f6d75e972658f2c3381c70b4fa",
+    "tree": "https://github.com/copilot-emacs/copilot.el"
+  },
+  {
+    "name": "cycle-case-style",
+    "summary": "Cycle through case style (PascalCase, camelCase, etc)",
+    "version": "0.1.0.0.20260101.558",
+    "url": "https://github.com/jcs-elpa/cycle-case-style",
+    "source": "github",
+    "commit": "23d8e0cdd2831cca1296d62473518ff849c6fd4e",
+    "tree": "https://github.com/jcs-elpa/cycle-case-style"
+  },
+  {
+    "name": "cycle-slash",
+    "summary": "Cycle through slash, backslash, and double backslash",
+    "version": "0.1.0.0.20260101.558",
+    "url": "https://github.com/jcs-elpa/cycle-slash",
+    "source": "github",
+    "commit": "5e6cac9bf20936720ac600281d733d8829996e0b",
+    "tree": "https://github.com/jcs-elpa/cycle-slash"
+  },
+  {
+    "name": "dall-e",
+    "summary": "Use DALL-E inside Emacs",
+    "version": "0.1.0.0.20260101.538",
+    "url": "https://github.com/emacs-openai/dall-e",
+    "source": "github",
+    "commit": "036941cf7f39226d9cdd86ca331941c69c16f2ca",
+    "tree": "https://github.com/emacs-openai/dall-e"
+  },
+  {
+    "name": "dape",
+    "summary": "Debug Adapter Protocol for Emacs",
+    "version": "0.27.0",
+    "url": "https://github.com/svaante/dape",
+    "source": "github",
+    "commit": "753cf92ce4fc32e82d3816c525d4da09222c2a8a",
+    "tree": "https://github.com/svaante/dape"
+  },
+  {
+    "name": "dashboard",
+    "summary": "A startup screen extracted from Spacemacs",
+    "version": "1.8.0.0.20260402.436",
+    "url": "https://github.com/emacs-dashboard/dashboard",
+    "source": "github",
+    "commit": "176d641a55543bda1f0c7506fb954702350c1857",
+    "tree": "https://github.com/emacs-dashboard/dashboard"
+  },
+  {
+    "name": "dashboard-bm",
+    "summary": "Visual Bookmarks for Dashboard",
+    "version": "0.0.1.0.20251231.1632",
+    "url": "https://github.com/emacs-dashboard/dashboard-bm",
+    "source": "github",
+    "commit": "04cca2f177d16539112fad9cb873ee1d31b84b51",
+    "tree": "https://github.com/emacs-dashboard/dashboard-bm"
+  },
+  {
+    "name": "dashboard-ls",
+    "summary": "Display files/directories in current directory on Dashboard",
+    "version": "0.3.0.0.20251231.1631",
+    "url": "https://github.com/emacs-dashboard/dashboard-ls",
+    "source": "github",
+    "commit": "e6f1ae4e4f4efbc1d3c4cff84b220f44e963e6ab",
+    "tree": "https://github.com/emacs-dashboard/dashboard-ls"
+  },
+  {
+    "name": "deepl",
+    "summary": "Elisp library for the DeepL API",
+    "version": "0.1.0.0.20260101.538",
+    "url": "https://github.com/emacs-openai/deepl",
+    "source": "github",
+    "commit": "3cec333f9032a015dae5312c631e44fdc9360dab",
+    "tree": "https://github.com/emacs-openai/deepl"
+  },
+  {
+    "name": "diminish-buffer",
+    "summary": "Diminish (hide) buffers from buffer-menu",
+    "version": "0.2.0.0.20260101.558",
+    "url": "https://github.com/jcs-elpa/diminish-buffer",
+    "source": "github",
+    "commit": "bd94b5b58655454728b655a30c93c0347749cf37",
+    "tree": "https://github.com/jcs-elpa/diminish-buffer"
+  },
+  {
+    "name": "doom-dashboard",
+    "summary": "Doom dashboard style for emacs-dashboard",
+    "version": "0.0.0.0.20251231.1632",
+    "url": "https://github.com/emacs-dashboard/doom-dashboard",
+    "source": "github",
+    "commit": "27738ce5baad20449d3161ad41048d5a4128a68c",
+    "tree": "https://github.com/emacs-dashboard/doom-dashboard"
+  },
+  {
+    "name": "e-unit",
+    "summary": "Minitest/JUnit-style testing framework for Emacs Lisp",
+    "version": "0.15.0",
+    "url": "https://codeberg.org/Trevoke/eunit.el",
+    "source": "codeberg",
+    "commit": "368867b491f0242825adab8645dcd57fde98b399",
+    "tree": "https://codeberg.org/Trevoke/eunit.el"
+  },
+  {
+    "name": "eask",
+    "summary": "Core Eask APIs, for Eask CLI development",
+    "version": "0.12.9.0.20260222.1247",
+    "url": "https://github.com/emacs-eask/eask",
+    "source": "github",
+    "commit": "664704775ce2318f7a76b65077e8559ada542814",
+    "tree": "https://github.com/emacs-eask/eask"
+  },
+  {
+    "name": "eask-mode",
+    "summary": "Major mode for editing Eask files",
+    "version": "0.1.0.0.20251231.1607",
+    "url": "https://github.com/emacs-eask/eask-mode",
+    "source": "github",
+    "commit": "0970dc6f4f8008d58261e36b9b824a0ffa6b9882",
+    "tree": "https://github.com/emacs-eask/eask-mode"
+  },
+  {
+    "name": "easky",
+    "summary": "Control the Eask command-line interface",
+    "version": "0.2.0.0.20260123.1934",
+    "url": "https://github.com/emacs-eask/easky",
+    "source": "github",
+    "commit": "2eb06188d2a134c23340421a53cc5bfa94286a4a",
+    "tree": "https://github.com/emacs-eask/easky"
+  },
+  {
+    "name": "echo-bar",
+    "summary": "Turn the echo area into a custom status bar",
+    "version": "1.0.0.0.20260127.1511",
+    "url": "https://github.com/elp-revive/echo-bar.el",
+    "source": "github",
+    "commit": "a28093474a03921434f877434180e4e349da0938",
+    "tree": "https://github.com/elp-revive/echo-bar.el"
+  },
+  {
+    "name": "eglot-copilot",
+    "summary": "Copilot integration with EGLOT and Company",
+    "version": "0.1.0.0.20230412.4",
+    "url": "https://github.com/tyler-dodge/eglot-copilot",
+    "source": "github",
+    "commit": "1fb665fcd5dd7416ef19a4ef00e419265b186ccf",
+    "tree": "https://github.com/tyler-dodge/eglot-copilot"
+  },
+  {
+    "name": "eglot-grammarly",
+    "summary": "Eglot Clients for Grammarly",
+    "version": "0.1.0.0.20251231.1727",
+    "url": "https://github.com/emacs-grammarly/eglot-grammarly",
+    "source": "github",
+    "commit": "92ae743c2fd29b20eb84b75c92adbe61d7586535",
+    "tree": "https://github.com/emacs-grammarly/eglot-grammarly"
+  },
+  {
+    "name": "eglot-ltex",
+    "summary": "Eglot Clients for LTEX",
+    "version": "0.1.0.0.20260101.535",
+    "url": "https://github.com/emacs-languagetool/eglot-ltex",
+    "source": "github",
+    "commit": "35bc85d98f1e55275f1d074f1edcf02edbefdf4d",
+    "tree": "https://github.com/emacs-languagetool/eglot-ltex"
+  },
+  {
+    "name": "eglot-ltex-plus",
+    "summary": "Eglot Clients for LTEX+",
+    "version": "0.2.0.0.20260101.535",
+    "url": "https://github.com/emacs-languagetool/eglot-ltex-plus",
+    "source": "github",
+    "commit": "83ad3ff98b2bfc251a1df4490db9712827ff8cba",
+    "tree": "https://github.com/emacs-languagetool/eglot-ltex-plus"
+  },
+  {
+    "name": "eglot-shader",
+    "summary": "Eglot Clients for Shader",
+    "version": "0.1.0.0.20251231.1653",
+    "url": "https://github.com/shader-ls/eglot-shader",
+    "source": "github",
+    "commit": "23b9f844410aa7451a6692cb00c86ffb06eabd4e",
+    "tree": "https://github.com/shader-ls/eglot-shader"
+  },
+  {
+    "name": "eglot-uniteai",
+    "summary": "Eglot Clients for UniteAI",
+    "version": "0.1.0.0.20260101.538",
+    "url": "https://github.com/emacs-openai/eglot-uniteai",
+    "source": "github",
+    "commit": "3161f01e393c06739e843228e981256306574bca",
+    "tree": "https://github.com/emacs-openai/eglot-uniteai"
+  },
+  {
+    "name": "ejira",
+    "summary": "Org-mode interface to JIRA",
+    "version": "0.9.0.0.20220622.33",
+    "url": "https://github.com/nyyManni/ejira",
+    "source": "github",
+    "commit": "49cb61239b19bf13775528231d7d49656ec7a8bb",
+    "tree": "https://github.com/nyyManni/ejira"
+  },
+  {
+    "name": "el-project",
+    "summary": "Generate project skeleton for Emacs Lisp",
+    "version": "1.1.1.0.20240228.1733",
+    "url": "https://github.com/Kyure-A/el-project",
+    "source": "github",
+    "commit": "83899ae63545a772cacb171533759a3823fac6da",
+    "tree": "https://github.com/Kyure-A/el-project"
+  },
+  {
+    "name": "eldoc-eask",
+    "summary": "Eldoc support for Eask-file",
+    "version": "0.1.0.0.20251231.1607",
+    "url": "https://github.com/emacs-eask/eldoc-eask",
+    "source": "github",
+    "commit": "d305a63c5e67a3e8a6ff448c7419bcc1ac05d5b4",
+    "tree": "https://github.com/emacs-eask/eldoc-eask"
+  },
+  {
+    "name": "eldoc-meta-net",
+    "summary": "Eldoc support for meta-net",
+    "version": "0.1.0.0.20260101.548",
+    "url": "https://github.com/emacs-vs/eldoc-meta-net",
+    "source": "github",
+    "commit": "b63e5b170df47fed6626ad81b4d060b8a4b358e0",
+    "tree": "https://github.com/emacs-vs/eldoc-meta-net"
+  },
+  {
+    "name": "electric-indent-sexp",
+    "summary": "Automatically indent entire balanced expression block",
+    "version": "0.1.0.0.20260101.549",
+    "url": "https://github.com/jcs-elpa/electric-indent-sexp",
+    "source": "github",
+    "commit": "39e8b88d15da2f6097a3229cd0d06100d336e5b3",
+    "tree": "https://github.com/jcs-elpa/electric-indent-sexp"
+  },
+  {
+    "name": "elenv",
+    "summary": "Environment variable management",
+    "version": "0.2.0.0.20260203.1704",
+    "url": "https://github.com/jcs-elpa/elenv",
+    "source": "github",
+    "commit": "174898b931ef8f04c248effdfdb8cd7101386bb9",
+    "tree": "https://github.com/jcs-elpa/elenv"
+  },
+  {
+    "name": "elfmt",
+    "summary": "Code formatter for Elisp",
+    "version": "0.0.0.0.20260105.58",
+    "url": "https://github.com/riscy/elfmt",
+    "source": "github",
+    "commit": "b0c5264324742ecfa88b1f381a0ccbb30cad90f7",
+    "tree": "https://github.com/riscy/elfmt"
+  },
+  {
+    "name": "ellsp",
+    "summary": "Elisp Language Server",
+    "version": "0.2.0",
+    "url": "https://github.com/elisp-lsp/Ellsp",
+    "source": "github",
+    "commit": "2a6a359cf15a09c9aafeb3781f1dfed1944d2a5f",
+    "tree": "https://github.com/elisp-lsp/Ellsp"
+  },
+  {
+    "name": "emp",
+    "summary": "Emacs Music Playlist",
+    "version": "0.1.0.0.20260101.559",
+    "url": "https://github.com/jcs-elpa/emp",
+    "source": "github",
+    "commit": "5de03a71209e7b23859140d8ec22f53797f16299",
+    "tree": "https://github.com/jcs-elpa/emp"
+  },
+  {
+    "name": "eping",
+    "summary": "Ping websites to check internet connectivity",
+    "version": "0.1.1.0.20220416.1525",
+    "url": "https://github.com/elp-revive/eping",
+    "source": "github",
+    "commit": "b5ac5f046bfabdd60f1fa5fc0afde2487f72158f",
+    "tree": "https://github.com/elp-revive/eping"
+  },
+  {
+    "name": "eval-mark",
+    "summary": "Evaluate then deactive mark",
+    "version": "0.1.0.0.20260101.559",
+    "url": "https://github.com/jcs-elpa/eval-mark",
+    "source": "github",
+    "commit": "fb77c333bc3762cbce39afaaa90ef7eab7d202a7",
+    "tree": "https://github.com/jcs-elpa/eval-mark"
+  },
+  {
+    "name": "execrun",
+    "summary": "Run through `compilation-mode'",
+    "version": "0.1.0.0.20260101.559",
+    "url": "https://github.com/jcs-elpa/execrun",
+    "source": "github",
+    "commit": "aa6ef050e49548bf943e06d2b1580e31332fcc2a",
+    "tree": "https://github.com/jcs-elpa/execrun"
+  },
+  {
+    "name": "fasm-mode",
+    "summary": "Fasm major mode",
+    "version": "0.1.11.0.20150517.1227",
+    "url": "https://github.com/Fanael/fasm-mode",
+    "source": "github",
+    "commit": "cb4b9bf48c7f05530e140456eb1f4a54716470f9",
+    "tree": "https://github.com/Fanael/fasm-mode"
+  },
+  {
+    "name": "fextern",
+    "summary": "Record file external stats",
+    "version": "0.1.0.0.20260101.549",
+    "url": "https://github.com/emacs-vs/fextern",
+    "source": "github",
+    "commit": "5b10d8f15feb55d9a691f5b2585454ae42acb5d1",
+    "tree": "https://github.com/emacs-vs/fextern"
+  },
+  {
+    "name": "ff-guard",
+    "summary": "Create parent directory for non-existent file",
+    "version": "0.1.0.0.20260101.559",
+    "url": "https://github.com/jcs-elpa/ff-guard",
+    "source": "github",
+    "commit": "8518474cf040d4428c6645d4b58852939c17ac2b",
+    "tree": "https://github.com/jcs-elpa/ff-guard"
+  },
+  {
+    "name": "ffpc",
+    "summary": "Find file in project or current directory",
+    "version": "0.1.0.0.20260101.559",
+    "url": "https://github.com/jcs-elpa/ffpc",
+    "source": "github",
+    "commit": "334c3a9c877e0878ee0f07935c12124f1fc90c8e",
+    "tree": "https://github.com/jcs-elpa/ffpc"
+  },
+  {
+    "name": "file-header",
+    "summary": "Highly customizable self design file header",
+    "version": "0.1.2.0.20260101.559",
+    "url": "https://github.com/jcs-elpa/file-header",
+    "source": "github",
+    "commit": "3147e0d6ac31d4dd9f2d89acfddd8def417a269f",
+    "tree": "https://github.com/jcs-elpa/file-header"
+  },
+  {
+    "name": "fill-page",
+    "summary": "Fill buffer so you don't see empty lines at the end",
+    "version": "0.3.7.0.20260101.559",
+    "url": "https://github.com/jcs-elpa/fill-page",
+    "source": "github",
+    "commit": "c9bc538f72869f572bf71c95d2b9b6dac5b4b169",
+    "tree": "https://github.com/jcs-elpa/fill-page"
+  },
+  {
+    "name": "flx-rs",
+    "summary": "Flx in Rust using dynamic module",
+    "version": "0.1.3.0.20260129.710",
+    "url": "https://github.com/jcs-elpa/flx-rs",
+    "source": "github",
+    "commit": "f58f809fe462521adb799c20d3e9b673aeea8bec",
+    "tree": "https://github.com/jcs-elpa/flx-rs"
+  },
+  {
+    "name": "flx-style",
+    "summary": "Completion style for flx",
+    "version": "0.1.0.0.20260101.559",
+    "url": "https://github.com/jcs-elpa/flx-style",
+    "source": "github",
+    "commit": "b78857466b63f186410a6478e3dfced79f8712b1",
+    "tree": "https://github.com/jcs-elpa/flx-style"
+  },
+  {
+    "name": "flycheck-dart",
+    "summary": "Flycheck for dart analyze",
+    "version": "0.1.0.0.20251231.1618",
+    "url": "https://github.com/flycheck/flycheck-dart",
+    "source": "github",
+    "commit": "d5b8aa91358c0e9021b7a8adf7d88a1898404013",
+    "tree": "https://github.com/flycheck/flycheck-dart"
+  },
+  {
+    "name": "flycheck-deno",
+    "summary": "Flycheck for deno-lint",
+    "version": "0.1.0.0.20251231.1618",
+    "url": "https://github.com/flycheck/flycheck-deno",
+    "source": "github",
+    "commit": "27c2f2a4d5edcc4ddce06a42bf49a3f6b36e8f1f",
+    "tree": "https://github.com/flycheck/flycheck-deno"
+  },
+  {
+    "name": "flycheck-eask",
+    "summary": "Eask support in Flycheck",
+    "version": "0.1.0.0.20251231.1617",
+    "url": "https://github.com/flycheck/flycheck-eask",
+    "source": "github",
+    "commit": "9141ad6b9ec2f2572a4dcddf54247825516c93b2",
+    "tree": "https://github.com/flycheck/flycheck-eask"
+  },
+  {
+    "name": "flycheck-hl-todo",
+    "summary": "Display hl-todo keywords in flycheck",
+    "version": "1.0.0.0.20230807.1500",
+    "url": "https://github.com/alvarogonzalezsotillo/flycheck-hl-todo",
+    "source": "github",
+    "commit": "16b66ea07e9d31950093ef0ff97d42b8e7ebf10f",
+    "tree": "https://github.com/alvarogonzalezsotillo/flycheck-hl-todo"
+  },
+  {
+    "name": "flycheck-janet",
+    "summary": "Janet flycheck",
+    "version": "2026.4.3",
+    "url": "https://github.com/sogaiu/flycheck-janet",
+    "source": "github",
+    "commit": "985a2fcb37f72933720142b2fd0392355e1c8d74",
+    "tree": "https://github.com/sogaiu/flycheck-janet"
+  },
+  {
+    "name": "flycheck-odin",
+    "summary": "[No description available]",
+    "version": "0.0.0.0.20210218.2204",
+    "url": "https://github.com/mattt-b/flycheck-odin",
+    "source": "github",
+    "commit": "704c8a327bf5ef5f6c6e23df0ed560a61ba177a7",
+    "tree": "https://github.com/mattt-b/flycheck-odin"
+  },
+  {
+    "name": "flycheck-ziglint",
+    "summary": "Flycheck for ziglint",
+    "version": "0.1.0.0.20251231.1618",
+    "url": "https://github.com/flycheck/flycheck-ziglint",
+    "source": "github",
+    "commit": "fb837a10ab7a1740d5bcaa1f65bf192420e398c1",
+    "tree": "https://github.com/flycheck/flycheck-ziglint"
+  },
+  {
+    "name": "flymake-dart",
+    "summary": "Flymake support for dart analyze",
+    "version": "0.1.0.0.20251231.1620",
+    "url": "https://github.com/flymake/flymake-dart",
+    "source": "github",
+    "commit": "fa2014864112c71f07141ad7c2143243ff16f3e2",
+    "tree": "https://github.com/flymake/flymake-dart"
+  },
+  {
+    "name": "flymake-eask",
+    "summary": "Eask support in Flymake",
+    "version": "0.1.0.0.20251231.1620",
+    "url": "https://github.com/flymake/flymake-eask",
+    "source": "github",
+    "commit": "b389846ee64cc56c25ffb162be4388f3f31ad809",
+    "tree": "https://github.com/flymake/flymake-eask"
+  },
+  {
+    "name": "flymake-elsa",
+    "summary": "Flymake integration for Elsa",
+    "version": "0.1.0.0.20251231.1620",
+    "url": "https://github.com/flymake/flymake-elsa",
+    "source": "github",
+    "commit": "6afe3d0828f991747a4cc1c610927cffd07674c3",
+    "tree": "https://github.com/flymake/flymake-elsa"
+  },
+  {
+    "name": "flymake-vale",
+    "summary": "Flymake integration for vale",
+    "version": "0.0.2.0.20240402.425",
+    "url": "https://github.com/tpeacock19/new",
+    "source": "github",
+    "commit": "32691d788a378915b98dba81e3af63227a630af3",
+    "tree": "https://github.com/tpeacock19/new"
+  },
+  {
+    "name": "flymake-ziglint",
+    "summary": "Flymake for ziglint",
+    "version": "0.1.0.0.20251231.1619",
+    "url": "https://github.com/flymake/flymake-ziglint",
+    "source": "github",
+    "commit": "052ad08d3c4ce521b824d91c039ce0a747fce5e8",
+    "tree": "https://github.com/flymake/flymake-ziglint"
+  },
+  {
+    "name": "flyover",
+    "summary": "Display Flycheck and Flymake errors with overlays",
+    "version": "0.9.9.0.20260225.626",
+    "url": "https://github.com/konrad1977/flyover",
+    "source": "github",
+    "commit": "8815cb067ca0d3d32607c9ae5093673cb29663a0",
+    "tree": "https://github.com/konrad1977/flyover"
+  },
+  {
+    "name": "fof",
+    "summary": "Default configuration for `ff-find-other-file'",
+    "version": "0.1.0.0.20260101.559",
+    "url": "https://github.com/jcs-elpa/fof",
+    "source": "github",
+    "commit": "81f47623de435b6a4cb80b46486f95dc46d3e281",
+    "tree": "https://github.com/jcs-elpa/fof"
+  },
+  {
+    "name": "foldvis",
+    "summary": "Display indicators for various folding systems",
+    "version": "0.1.0.0.20260129.709",
+    "url": "https://github.com/emacs-vs/foldvis",
+    "source": "github",
+    "commit": "b54bef0ce0a484cb90a414eec9725bb786058fd5",
+    "tree": "https://github.com/emacs-vs/foldvis"
+  },
+  {
+    "name": "font-lock-ext",
+    "summary": "Extensions to Emacs font-lock.el",
+    "version": "0.0.0.0.20171030.1445",
+    "url": "https://github.com/sensorflo/font-lock-ext/",
+    "source": "github",
+    "commit": "b6c82e8ac7996d96494a54454015a98ceb883feb",
+    "tree": "https://github.com/sensorflo/font-lock-ext/"
+  },
+  {
+    "name": "fringe-helper",
+    "summary": "Helper functions for fringe bitmaps",
+    "version": "1.0.1.0.20140620.2109",
+    "url": "http://nschum.de/src/emacs/fringe-helper/",
+    "source": "github",
+    "commit": "9bc3d3e82c9cc3937aa090248dc4dd2e289fc55c",
+    "tree": "http://nschum.de/src/emacs/fringe-helper/"
+  },
+  {
+    "name": "fuz-bin",
+    "summary": "Fast and precise fuzzy scoring/matching utils",
+    "version": "1.5.0.0.20230325.115",
+    "url": "https://github.com/jcs-elpa/fuz-bin",
+    "source": "github",
+    "commit": "dcaee61d4d64e81f17859c5ed36412042f2c832e",
+    "tree": "https://github.com/jcs-elpa/fuz-bin"
+  },
+  {
+    "name": "gas-mode",
+    "summary": "Mode for editing assembly code with AT&T sintax",
+    "version": "0.1.0.0.20240117.355",
+    "url": "https://codeberg.org/Enocstocks/gas-mode.el",
+    "source": "codeberg",
+    "commit": "599cbcebd01124cc9b429bdb78e0cade7a59bc66",
+    "tree": "https://codeberg.org/Enocstocks/gas-mode.el"
+  },
+  {
+    "name": "gdshader-mode",
+    "summary": "Major mode for Godot gdshader files",
+    "version": "0.1.0.0.20251123.1852",
+    "url": "https://github.com/bbbscarter/gdshader-mode",
+    "source": "github",
+    "commit": "8e9efda9393d44be96009f37ff7201df3d36f05f",
+    "tree": "https://github.com/bbbscarter/gdshader-mode"
+  },
+  {
+    "name": "git",
+    "summary": "An Elisp API for programmatically using Git",
+    "version": "0.1.1",
+    "url": "https://github.com/rejeep/git.el",
+    "source": "github",
+    "commit": "8b7f1477ef367b5b7de452589dd9a8ab30150d0a",
+    "tree": "https://github.com/rejeep/git.el"
+  },
+  {
+    "name": "github-elpa",
+    "summary": "Build and publish ELPA repositories with GitHub Pages",
+    "version": "0.0.1.0.20231201.804",
+    "url": "https://github.com/10sr/github-elpa",
+    "source": "github",
+    "commit": "c818883d9dc8d34eaee03691574e0408f18db28a",
+    "tree": "https://github.com/10sr/github-elpa"
+  },
+  {
+    "name": "github-tags",
+    "summary": "Retrieve tags information through GitHub API",
+    "version": "0.1.0.0.20260101.600",
+    "url": "https://github.com/jcs-elpa/github-tags",
+    "source": "github",
+    "commit": "11e3d032da682d29b91e1d8aad887cbfd769aac7",
+    "tree": "https://github.com/jcs-elpa/github-tags"
+  },
+  {
+    "name": "google-gemini",
+    "summary": "Elisp library for the Google Gemini API",
+    "version": "0.1.0.0.20260101.538",
+    "url": "https://github.com/emacs-openai/google-gemini",
+    "source": "github",
+    "commit": "45838ff35e4128d40258c20fd2b26e9a1701b149",
+    "tree": "https://github.com/emacs-openai/google-gemini"
+  },
+  {
+    "name": "goto-char-preview",
+    "summary": "Preview character when executing `goto-char` command",
+    "version": "0.2.0.0.20260204.956",
+    "url": "https://github.com/emacs-vs/goto-char-preview",
+    "source": "github",
+    "commit": "d81c7186dc3c916ba84a5d8ce2f06c652c1186a8",
+    "tree": "https://github.com/emacs-vs/goto-char-preview"
+  },
+  {
+    "name": "goto-line-preview",
+    "summary": "Preview line when executing `goto-line` command",
+    "version": "0.2.0.0.20260204.956",
+    "url": "https://github.com/emacs-vs/goto-line-preview",
+    "source": "github",
+    "commit": "7c86228bc4f92b5129302824881f36d7ae39ee0a",
+    "tree": "https://github.com/emacs-vs/goto-line-preview"
+  },
+  {
+    "name": "gptscript-mode",
+    "summary": "Major mode for editing GPTScript natural language",
+    "version": "0.0.1.0.20260101.538",
+    "url": "https://github.com/emacs-openai/gptscript-mode",
+    "source": "github",
+    "commit": "ed6c1a7e0fd0b42bb0c09a239c5eddbc0bbfbb1b",
+    "tree": "https://github.com/emacs-openai/gptscript-mode"
+  },
+  {
+    "name": "guard-lf",
+    "summary": "Guard large files",
+    "version": "0.1.0.0.20260101.600",
+    "url": "https://github.com/jcs-elpa/guard-lf",
+    "source": "github",
+    "commit": "cea3ccc0b91e2bf4947e21bde777c00ed5b47ecb",
+    "tree": "https://github.com/jcs-elpa/guard-lf"
+  },
+  {
+    "name": "helafy",
+    "summary": "Minify/Uglify/Prettify contents",
+    "version": "0.1.0.0.20260101.600",
+    "url": "https://github.com/jcs-elpa/helafy",
+    "source": "github",
+    "commit": "8c03b293e64a4d000a66322a00ee4c8a21ecce47",
+    "tree": "https://github.com/jcs-elpa/helafy"
+  },
+  {
+    "name": "highlight-indent-guides",
+    "summary": "Minor mode to highlight indentation",
+    "version": "0.9.2.0.20260202.1243",
+    "url": "https://github.com/DarthFennec/highlight-indent-guides",
+    "source": "github",
+    "commit": "802fb2eaf67ead730d7e3483b9a1e9639705f267",
+    "tree": "https://github.com/DarthFennec/highlight-indent-guides"
+  },
+  {
+    "name": "hl-preproc",
+    "summary": "Unhighlight invalid preprocessor region",
+    "version": "0.1.0.0.20260101.549",
+    "url": "https://github.com/emacs-vs/hl-preproc",
+    "source": "github",
+    "commit": "2b196be632871a5e30de056eb7460dbdb902fdeb",
+    "tree": "https://github.com/emacs-vs/hl-preproc"
+  },
+  {
+    "name": "hlsl-mode",
+    "summary": "Major mode for Open HLSL shader files",
+    "version": "1.0",
+    "url": "https://github.com/darfink/hlsl-mode",
+    "source": "github",
+    "commit": "c9c80ce43a274a78ffdaa662e23ef81408d25549",
+    "tree": "https://github.com/darfink/hlsl-mode"
+  },
+  {
+    "name": "hurl-mode",
+    "summary": "Major mode for hurl",
+    "version": "0.1.0",
+    "url": "https://github.com/azzamsa/emacs-hurl",
+    "source": "github",
+    "commit": "aa87da4a6f5dc6a612a576d34a81000835b819e0",
+    "tree": "https://github.com/azzamsa/emacs-hurl"
+  },
+  {
+    "name": "ic",
+    "summary": "Pretty print to debug",
+    "version": "0.1.0.0.20260101.600",
+    "url": "https://github.com/jcs-elpa/ic",
+    "source": "github",
+    "commit": "0132c401d74b757005530dda01f3c607f5a2696f",
+    "tree": "https://github.com/jcs-elpa/ic"
+  },
+  {
+    "name": "indent-bars",
+    "summary": "Highlight indentation with bars",
+    "version": "1.0.0.0.20260418.1303",
+    "url": "https://github.com/jdtsmith/indent-bars",
+    "source": "github",
+    "commit": "f95fee11d9932cba71d686807025239be0319e91",
+    "tree": "https://github.com/jdtsmith/indent-bars"
+  },
+  {
+    "name": "indent-control",
+    "summary": "Management for indentation level",
+    "version": "0.4.0.0.20260128.1027",
+    "url": "https://github.com/jcs-elpa/indent-control",
+    "source": "github",
+    "commit": "8bd4a44c2ae51f781bc3b86f09869f71343ca1ff",
+    "tree": "https://github.com/jcs-elpa/indent-control"
+  },
+  {
+    "name": "isearch-project",
+    "summary": "Incremental search through the whole project",
+    "version": "0.2.6.0.20260101.600",
+    "url": "https://github.com/jcs-elpa/isearch-project",
+    "source": "github",
+    "commit": "e67c997c9b36690a8b1b7712ff1ba9664020d8b2",
+    "tree": "https://github.com/jcs-elpa/isearch-project"
+  },
+  {
+    "name": "ivy-describe-modes",
+    "summary": "Ivy interface to `describe-mode`",
+    "version": "0.2.0.0.20240101.1004",
+    "url": "https://github.com/jcs-elpa/ivy-describe-modes",
+    "source": "github",
+    "commit": "31e6f8b69c4a051b01ddc17bd263cc900d2f6deb",
+    "tree": "https://github.com/jcs-elpa/ivy-describe-modes"
+  },
+  {
+    "name": "ivy-point-history",
+    "summary": "Point-history with ivy interface",
+    "version": "0.0.3.0.20200726.1639",
+    "url": "https://github.com/SuzumiyaAoba/ivy-point-history",
+    "source": "github",
+    "commit": "5d450a91656503c98a548557a563ee99d65b46b3",
+    "tree": "https://github.com/SuzumiyaAoba/ivy-point-history"
+  },
+  {
+    "name": "jack-mode",
+    "summary": "Major mode for Jack language",
+    "version": "1.0.0.0.20231022.1812",
+    "url": "https://github.com/nverno/jack-mode",
+    "source": "github",
+    "commit": "4db6d97017e82eeb46777eb0ae8e33a2a6cac192",
+    "tree": "https://github.com/nverno/jack-mode"
+  },
+  {
+    "name": "jai-mode",
+    "summary": "Major mode for JAI",
+    "version": "0.1.0",
+    "url": "https://github.com/elp-revive/jai-mode",
+    "source": "github",
+    "commit": "fa7ef41ca03c2475496742a11a23e6d95f05eeaf",
+    "tree": "https://github.com/elp-revive/jai-mode"
+  },
+  {
+    "name": "javap-mode",
+    "summary": "Javap major mode",
+    "version": "9.0.0.0.20220523.1728",
+    "url": "https://github.com/elp-revive/javap-mode",
+    "source": "github",
+    "commit": "25c3cd0d13b122fa1f06c054e319ef8218f9b48f",
+    "tree": "https://github.com/elp-revive/javap-mode"
+  },
+  {
+    "name": "jayces-mode",
+    "summary": "Major mode for editing JayCeS file",
+    "version": "0.0.2.0.20260410.621",
+    "url": "https://github.com/jayces-lang/jayces-mode",
+    "source": "github",
+    "commit": "a58b5474b933e6a91fe0a66c7d94c99648e15122",
+    "tree": "https://github.com/jayces-lang/jayces-mode"
+  },
+  {
+    "name": "jcs-echobar",
+    "summary": "An echo-bar for jcs-emacs",
+    "version": "0.1.0.0.20260128.745",
+    "url": "https://github.com/jcs-emacs/jcs-echobar",
+    "source": "github",
+    "commit": "c591041b81db465654b9bcb9cc68bc74f827399a",
+    "tree": "https://github.com/jcs-emacs/jcs-echobar"
+  },
+  {
+    "name": "jcs-frametitle",
+    "summary": "A frame title for jcs-emacs",
+    "version": "0.1.0.0.20251231.1614",
+    "url": "https://github.com/jcs-emacs/jcs-frametitle",
+    "source": "github",
+    "commit": "caacf59fc8afc8e9b0b194ac998e8de05cda1bc6",
+    "tree": "https://github.com/jcs-emacs/jcs-frametitle"
+  },
+  {
+    "name": "jcs-modeline",
+    "summary": "A modeline for jcs-emacs",
+    "version": "0.2.0.0.20260214.636",
+    "url": "https://github.com/jcs-emacs/jcs-modeline",
+    "source": "github",
+    "commit": "a136c07fbe65628f5ff6ef80b466163ef02c3df5",
+    "tree": "https://github.com/jcs-emacs/jcs-modeline"
+  },
+  {
+    "name": "jcs-poptip",
+    "summary": "Generic popup tip",
+    "version": "0.1.0.0.20260116.214",
+    "url": "https://github.com/jcs-emacs/jcs-poptip",
+    "source": "github",
+    "commit": "0ad228748e5d8f74fe036748f7544d96a9b22d48",
+    "tree": "https://github.com/jcs-emacs/jcs-poptip"
+  },
+  {
+    "name": "jcs-screensaver",
+    "summary": "A screensaver for jcs-emacs",
+    "version": "0.1.0.0.20251231.1614",
+    "url": "https://github.com/jcs-emacs/jcs-screensaver",
+    "source": "github",
+    "commit": "4e34534e1432956a711d5aa0b9c8e07948238f0c",
+    "tree": "https://github.com/jcs-emacs/jcs-screensaver"
+  },
+  {
+    "name": "jcs-template",
+    "summary": "Template module for jcs-emacs",
+    "version": "0.1.0.0.20251231.1614",
+    "url": "https://github.com/jcs-emacs/jcs-template",
+    "source": "github",
+    "commit": "5c92762e4339c920e0ff04f1792fceb07030d0d9",
+    "tree": "https://github.com/jcs-emacs/jcs-template"
+  },
+  {
+    "name": "jenkinsfile-mode",
+    "summary": "Major mode for editing Jenkins declarative pipeline syntax",
+    "version": "0.0.1.0.20240117.1043",
+    "url": "https://github.com/elp-revive/jenkinsfile-mode",
+    "source": "github",
+    "commit": "9ba38d93bad383c7321a14d6e24b8fd8b18a767e",
+    "tree": "https://github.com/elp-revive/jenkinsfile-mode"
+  },
+  {
+    "name": "jet",
+    "summary": "Emacs integration for jet Clojure tool",
+    "version": "1.2.0",
+    "url": "https://github.com/ericdallo/jet.el",
+    "source": "github",
+    "commit": "67ded216a0a6af0bb8d6874a7faea538912c0345",
+    "tree": "https://github.com/ericdallo/jet.el"
+  },
+  {
+    "name": "kaomoji",
+    "summary": "Input kaomoji superb easily",
+    "version": "0.1.0.0.20220727.1634",
+    "url": "https://github.com/elp-revive/kaomoji.el",
+    "source": "github",
+    "commit": "a2e78406afdcb7d5650975006a69afd3e7c4c6ac",
+    "tree": "https://github.com/elp-revive/kaomoji.el"
+  },
+  {
+    "name": "knockknock",
+    "summary": "Unobtrusive notifications with icons and SVG support",
+    "version": "0.3.0.0.20260107.706",
+    "url": "https://github.com/mikaelkonradsson/knockknock",
+    "source": "github",
+    "commit": "0920b9b390d4b4cc0818574e115d87eb245a41b5",
+    "tree": "https://github.com/mikaelkonradsson/knockknock"
+  },
+  {
+    "name": "lambda-line",
+    "summary": "A custom status line",
+    "version": "0.1.0.0.20260413.10",
+    "url": "https://github.com/Lambda-Emacs/lambda-line",
+    "source": "github",
+    "commit": "0ca6b32b591f6201c342d6c5ef14577aea7cfb49",
+    "tree": "https://github.com/Lambda-Emacs/lambda-line"
+  },
+  {
+    "name": "lemmington",
+    "summary": "RPC Emacs server",
+    "version": "0.0.1.0.20230902.1617",
+    "url": "https://github.com/lem-project/lemmington.git",
+    "source": "github",
+    "commit": "e3fe31a903501f003109816abe0474bfa94fe917",
+    "tree": "https://github.com/lem-project/lemmington.git"
+  },
+  {
+    "name": "let-completion",
+    "summary": "Show let-binding values in Elisp completion",
+    "version": "0.2.0.0.20260407.1428",
+    "url": "https://github.com/gggion/let-completion.el",
+    "source": "github",
+    "commit": "460cdd5a73d857d6d91469e28f84f02465db8dac",
+    "tree": "https://github.com/gggion/let-completion.el"
+  },
+  {
+    "name": "license-templates",
+    "summary": "Create LICENSE using GitHub API",
+    "version": "0.1.3.0.20260101.600",
+    "url": "https://github.com/jcs-elpa/license-templates",
+    "source": "github",
+    "commit": "c53a4e9f748be1a9c4c032602b927f9ab5a16702",
+    "tree": "https://github.com/jcs-elpa/license-templates"
+  },
+  {
+    "name": "line-reminder",
+    "summary": "Line annotation for changed and saved lines",
+    "version": "0.5.2.0.20260414.1746",
+    "url": "https://github.com/emacs-vs/line-reminder",
+    "source": "github",
+    "commit": "9a20500704f5b21772d00e4d0a9ff16dac943400",
+    "tree": "https://github.com/emacs-vs/line-reminder"
+  },
+  {
+    "name": "llm",
+    "summary": "Interface to pluggable llm backends",
+    "version": "0.30.3.0.20260501.1446",
+    "url": "https://github.com/ahyatt/llm",
+    "source": "github",
+    "commit": "4ef511ad1ce11539e3848edf8a2f0ef439506c01",
+    "tree": "https://github.com/ahyatt/llm"
+  },
+  {
+    "name": "llvm-mode",
+    "summary": "Major mode for the LLVM assembler language",
+    "version": "1.0.0.0.20260219.1847",
+    "url": "http://llvm.org/",
+    "source": "github",
+    "commit": "d5b6b465ff87d8a233cfe50dc5d01a873c560b37",
+    "tree": "http://llvm.org/"
+  },
+  {
+    "name": "logms",
+    "summary": "Log message with clickable links to context",
+    "version": "0.3.1.0.20260101.600",
+    "url": "https://github.com/jcs-elpa/logms",
+    "source": "github",
+    "commit": "7f430ce289d4f46597e67bf46a24e51a8d7471aa",
+    "tree": "https://github.com/jcs-elpa/logms"
+  },
+  {
+    "name": "lsp-biome",
+    "summary": "A lsp-mode client for Biome",
+    "version": "0.1.0.0.20251029.511",
+    "url": "https://github.com/cxa/lsp-biome",
+    "source": "github",
+    "commit": "145c8196c72ff889f47e084c4f70c9adbc8518f2",
+    "tree": "https://github.com/cxa/lsp-biome"
+  },
+  {
+    "name": "lsp-compose",
+    "summary": "Lsp-mode client for compose server",
+    "version": "0.1.0",
+    "url": "https://github.com/lepisma/compose-language-server.el",
+    "source": "github",
+    "commit": "44df194778503cd2e29e907af4c6989c7ea27d1c",
+    "tree": "https://github.com/lepisma/compose-language-server.el"
+  },
+  {
+    "name": "lsp-ellsp",
+    "summary": "LSP Clients for Ellsp",
+    "version": "0.2.0.0.20260223.1021",
+    "url": "https://github.com/elisp-lsp/lsp-ellsp",
+    "source": "github",
+    "commit": "172299b8d211344e3c7865d6efa0cf1a1bdf15a1",
+    "tree": "https://github.com/elisp-lsp/lsp-ellsp"
+  },
+  {
+    "name": "lsp-grammarly-un",
+    "summary": "LSP Clients for Grammarly (Unofficial)",
+    "version": "0.2.2.0.20230409.535",
+    "url": "https://github.com/emacs-grammarly/lsp-grammarly-un",
+    "source": "github",
+    "commit": "cf9142c57b9a1514f58bb5e17b2627bb928736d4",
+    "tree": "https://github.com/emacs-grammarly/lsp-grammarly-un"
+  },
+  {
+    "name": "lsp-ltex-plus",
+    "summary": "LSP Clients for LTEX+",
+    "version": "0.3.0.0.20260503.1233",
+    "url": "https://github.com/emacs-languagetool/lsp-ltex-plus",
+    "source": "github",
+    "commit": "c6bf97f4b75ca8485baa6e951536cee410010938",
+    "tree": "https://github.com/emacs-languagetool/lsp-ltex-plus"
+  },
+  {
+    "name": "lsp-p4",
+    "summary": "P4 support for lsp-mode",
+    "version": "1.0.0.0.20190127.1049",
+    "url": "https://github.com/dmakarov/p4ls",
+    "source": "github",
+    "commit": "084e33a5782f9153502d9b03e63d9cbbe81cdaeb",
+    "tree": "https://github.com/dmakarov/p4ls"
+  },
+  {
+    "name": "lsp-pylyzer",
+    "summary": "Python LSP client using pylyzer",
+    "version": "0.1.0.0.20250228.2204",
+    "url": "https://github.com/emacs-lsp/lsp-pylyzer",
+    "source": "github",
+    "commit": "2d0bf3f181259b319ebf8b1923c257fbcb74a732",
+    "tree": "https://github.com/emacs-lsp/lsp-pylyzer"
+  },
+  {
+    "name": "lsp-shader",
+    "summary": "LSP Clients for ShaderLab",
+    "version": "0.0.1.0.20260503.1236",
+    "url": "https://github.com/shader-ls/lsp-shader",
+    "source": "github",
+    "commit": "85430cd7d20019aa39e624990fd814650af9b3a2",
+    "tree": "https://github.com/shader-ls/lsp-shader"
+  },
+  {
+    "name": "lsp-smart-req",
+    "summary": "Lazy load LSP packages",
+    "version": "0.1.0.0.20260503.1230",
+    "url": "https://github.com/jcs-elpa/lsp-smart-req",
+    "source": "github",
+    "commit": "2316b59f186241ce6adf7d56d2817e44b8c7cc0c",
+    "tree": "https://github.com/jcs-elpa/lsp-smart-req"
+  },
+  {
+    "name": "lsp-uniteai",
+    "summary": "LSP Clients for UniteAI",
+    "version": "0.1.0.0.20260503.1231",
+    "url": "https://github.com/emacs-openai/lsp-uniteai",
+    "source": "github",
+    "commit": "7ce0a1a56fe5f0afbeba5d37bee1732443a93f43",
+    "tree": "https://github.com/emacs-openai/lsp-uniteai"
+  },
+  {
+    "name": "magik-company",
+    "summary": "Magik backend for company-mode",
+    "version": "1.1.1",
+    "url": "https://github.com/reinierkof/magik-company",
+    "source": "github",
+    "commit": "f11e7054fc9038ab34eae1702bbc0fb30fa34246",
+    "tree": "https://github.com/reinierkof/magik-company"
+  },
+  {
+    "name": "maple-line",
+    "summary": "Maple line configuration",
+    "version": "0.0.0.0.20200519.1557",
+    "url": "https://github.com/honmaple/emacs-maple-line",
+    "source": "github",
+    "commit": "266dae95df1d9e9394cc61e57f3b88327a79d6f5",
+    "tree": "https://github.com/honmaple/emacs-maple-line"
+  },
+  {
+    "name": "marquee-header",
+    "summary": "Code interface for displaying marquee in header",
+    "version": "0.1.0.0.20260101.601",
+    "url": "https://github.com/jcs-elpa/marquee-header",
+    "source": "github",
+    "commit": "c0e884eea86ef818a652dba9a1719b50489813a6",
+    "tree": "https://github.com/jcs-elpa/marquee-header"
+  },
+  {
+    "name": "mbs",
+    "summary": "Minibuffer Stats",
+    "version": "0.1.0.0.20260101.601",
+    "url": "https://github.com/jcs-elpa/mbs",
+    "source": "github",
+    "commit": "92286e02a4e2f8bcf966b9dad6263329dba7591e",
+    "tree": "https://github.com/jcs-elpa/mbs"
+  },
+  {
+    "name": "meta-net",
+    "summary": "Parse .NET assembly's XML",
+    "version": "1.1.0.0.20260101.549",
+    "url": "https://github.com/emacs-vs/meta-net",
+    "source": "github",
+    "commit": "d4025869ff051fce9bf480fa2777ae71d9772791",
+    "tree": "https://github.com/emacs-vs/meta-net"
+  },
+  {
+    "name": "meta-view",
+    "summary": "View metadata from .NET assemblies",
+    "version": "0.1.0.0.20260101.549",
+    "url": "https://github.com/emacs-vs/meta-view",
+    "source": "github",
+    "commit": "d4f145e7f513e2bd9205f7fff19c93b01e6e53e8",
+    "tree": "https://github.com/emacs-vs/meta-view"
+  },
+  {
+    "name": "mint-mode",
+    "summary": "Major mode for the Mint programming language",
+    "version": "2.0.0",
+    "url": "https://github.com/creatorrr/emacs-mint-mode",
+    "source": "github",
+    "commit": "7bb0f9946f5833eada199e880fdc4efa6df09e0b",
+    "tree": "https://github.com/creatorrr/emacs-mint-mode"
+  },
+  {
+    "name": "mode-minder",
+    "summary": "List all major and minor modes",
+    "version": "0.0.2.0.20240109.2307",
+    "url": "https://github.com/jdtsmith/mode-minder",
+    "source": "github",
+    "commit": "5ada69ca537d7b06daddf6181419b9205415eb89",
+    "tree": "https://github.com/jdtsmith/mode-minder"
+  },
+  {
+    "name": "modeline-region",
+    "summary": "Show region information in the mode-line",
+    "version": "1.0.0",
+    "url": "https://www.emacswiki.org/emacs/modeline-region.el",
+    "source": "github",
+    "commit": "10ffd7dd5378b401301612b13bd3add50994b27f",
+    "tree": "https://www.emacswiki.org/emacs/modeline-region.el"
+  },
+  {
+    "name": "msg-clean",
+    "summary": "Keep messages buffer clean",
+    "version": "0.1.0.0.20260204.825",
+    "url": "https://github.com/jcs-elpa/msg-clean",
+    "source": "github",
+    "commit": "cac89fdd54272d059f8e6e42596e2ee43198eec4",
+    "tree": "https://github.com/jcs-elpa/msg-clean"
+  },
+  {
+    "name": "msgu",
+    "summary": "Utility functions help output the messages",
+    "version": "0.1.0.0.20260101.601",
+    "url": "https://github.com/jcs-elpa/msgu",
+    "source": "github",
+    "commit": "68abe654c82e16b7f90e05cc8be7c087a1707712",
+    "tree": "https://github.com/jcs-elpa/msgu"
+  },
+  {
+    "name": "multi-shell",
+    "summary": "Managing multiple shell buffers",
+    "version": "0.1.1.0.20260101.601",
+    "url": "https://github.com/jcs-elpa/multi-shell",
+    "source": "github",
+    "commit": "c532904abb0f01f35161198015e4e2ec42f8bec7",
+    "tree": "https://github.com/jcs-elpa/multi-shell"
+  },
+  {
+    "name": "nand-hdl-mode",
+    "summary": "Major mode for NAND hdl files",
+    "version": "1.0.0.0.20231124.826",
+    "url": "https://github.com/nverno/nand-hdl-mode",
+    "source": "github",
+    "commit": "b7701cf416b7fdbffd3ad0c3467e08f9c6a92abf",
+    "tree": "https://github.com/nverno/nand-hdl-mode"
+  },
+  {
+    "name": "nerd-icons",
+    "summary": "Emacs Nerd Font Icons Library",
+    "version": "0.1.0.0.20260424.1510",
+    "url": "https://github.com/rainstormstudio/nerd-icons.el",
+    "source": "github",
+    "commit": "3f6e8b36436d99659234d5bbbd84ba5c09282692",
+    "tree": "https://github.com/rainstormstudio/nerd-icons.el"
+  },
+  {
+    "name": "nerd-icons-archive",
+    "summary": "Shows icons for each file in archive-mode and tar-mode",
+    "version": "0.1.0.0.20240705.2113",
+    "url": "https://github.com/abougouffa/nerd-icons-archive",
+    "source": "github",
+    "commit": "9dc13f24b4c04ac85aa06719cc0e01d4415468a1",
+    "tree": "https://github.com/abougouffa/nerd-icons-archive"
+  },
+  {
+    "name": "nerd-icons-buffer-menu",
+    "summary": "Display nerd icons in `buffer-menu'",
+    "version": "0.1.0.0.20260128.938",
+    "url": "https://github.com/jcs-elpa/nerd-icons-buffer-menu",
+    "source": "github",
+    "commit": "8e6b13584e91496a208d514549cd410c8aa7ce26",
+    "tree": "https://github.com/jcs-elpa/nerd-icons-buffer-menu"
+  },
+  {
+    "name": "nerd-icons-completion",
+    "summary": "Add icons to completion candidates",
+    "version": "0.0.1.0.20260412.243",
+    "url": "https://github.com/rainstormstudio/nerd-icons-completion",
+    "source": "github",
+    "commit": "45b585d972192a3eaeb239e15e55de7f46f8920a",
+    "tree": "https://github.com/rainstormstudio/nerd-icons-completion"
+  },
+  {
+    "name": "noflet",
+    "summary": "Locally override functions",
+    "version": "0.0.15.0.20230414.531",
+    "url": "https://github.com/elp-revive/noflet",
+    "source": "github",
+    "commit": "b2645dace4646977369c81e840324c0d4df746fa",
+    "tree": "https://github.com/elp-revive/noflet"
+  },
+  {
+    "name": "odin-mode",
+    "summary": "A major mode for Odin",
+    "version": "20230912.1527",
+    "url": "https://git.sr.ht/~mgmarlow/odin-mode",
+    "source": "sourcehut",
+    "commit": "5b017380561ebc4c4edefe4da9ba66be5d7de757",
+    "tree": "https://git.sr.ht/~mgmarlow/odin-mode"
+  },
+  {
+    "name": "on",
+    "summary": "Hooks for faster startup",
+    "version": "0.1.0.0.20230823.39",
+    "url": "https://github.com/elp-revive/on.el",
+    "source": "github",
+    "commit": "26ff01594a1e326af468350e1a22dcd1b7da71ae",
+    "tree": "https://github.com/elp-revive/on.el"
+  },
+  {
+    "name": "openai",
+    "summary": "Elisp library for the OpenAI API",
+    "version": "0.1.0.0.20260220.1736",
+    "url": "https://github.com/emacs-openai/openai",
+    "source": "github",
+    "commit": "f5439fff3a32c9f76338f79e0654473ff6096a63",
+    "tree": "https://github.com/emacs-openai/openai"
+  },
+  {
+    "name": "org-bars",
+    "summary": "Add bars to virtual indentation",
+    "version": "0.1.0.0.20211105.1700",
+    "url": "https://github.com/tonyaldon/org-bars",
+    "source": "github",
+    "commit": "94c37f63fcfec9cdde6b99457b4dac5275589d95",
+    "tree": "https://github.com/tonyaldon/org-bars"
+  },
+  {
+    "name": "org-modern-indent",
+    "summary": "Indent blocks like org-modern",
+    "version": "0.5.1.0.20260103.325",
+    "url": "https://github.com/jdtsmith/org-modern-indent",
+    "source": "github",
+    "commit": "476348d67e5043ed8fece78178d1623d6f323848",
+    "tree": "https://github.com/jdtsmith/org-modern-indent"
+  },
+  {
+    "name": "origami",
+    "summary": "Flexible text folding",
+    "version": "4.1.0.0.20260101.554",
+    "url": "https://github.com/elp-revive/origami.el",
+    "source": "github",
+    "commit": "1a21a9fc31c59e44059cd7e386c9c54d5a52cccd",
+    "tree": "https://github.com/elp-revive/origami.el"
+  },
+  {
+    "name": "outli",
+    "summary": "Org-like code outliner",
+    "version": "0.3.0",
+    "url": "https://github.com/jdtsmith/outli",
+    "source": "github",
+    "commit": "009e74c1757143040a0427f477ae882107b14592",
+    "tree": "https://github.com/jdtsmith/outli"
+  },
+  {
+    "name": "package-build",
+    "summary": "Curate an Emacs Lisp package archive",
+    "version": "4.0.0.0.20260503.1532",
+    "url": "https://github.com/melpa/package-build",
+    "source": "github",
+    "commit": "d0e2788033fe8ba263675dbd6fbc4937f4364177",
+    "tree": "https://github.com/melpa/package-build"
+  },
+  {
+    "name": "pallet",
+    "summary": "Manage your packages with Cask",
+    "version": "0.9.2",
+    "url": "https://github.com/rdallasgray/pallet",
+    "source": "github",
+    "commit": "0e1ae11e1ebfe644cbf832df62ac2dbf6ecd0501",
+    "tree": "https://github.com/rdallasgray/pallet"
+  },
+  {
+    "name": "pkg-dm",
+    "summary": "Package dependencies management",
+    "version": "0.1.0.0.20260220.1724",
+    "url": "https://github.com/jcs-elpa/pkg-dm",
+    "source": "github",
+    "commit": "60ac3d12d6413d64fc54fc70db3f07acd401665f",
+    "tree": "https://github.com/jcs-elpa/pkg-dm"
+  },
+  {
+    "name": "point-history",
+    "summary": "Show the history of points you visited before",
+    "version": "0.1.0.0.20200721.1117",
+    "url": "https://github.com/blue0513/point-history",
+    "source": "github",
+    "commit": "dd6d42cfbb25b3432786b263451f433a68eebabf",
+    "tree": "https://github.com/blue0513/point-history"
+  },
+  {
+    "name": "point-undo",
+    "summary": "Undo/redo position",
+    "version": "0.0.0.0.20211208.842",
+    "url": "https://github.com/ncaq/point-undo",
+    "source": "github",
+    "commit": "971efe20e3ef5764587168c5510c4b65406aca02",
+    "tree": "https://github.com/ncaq/point-undo"
+  },
+  {
+    "name": "powerline",
+    "summary": "Rewrite of Powerline",
+    "version": "2.4.0.0.20221110.1956",
+    "url": "https://github.com/milkypostman/powerline/",
+    "source": "github",
+    "commit": "c35c35bdf5ce2d992882c1f06f0f078058870d4a",
+    "tree": "https://github.com/milkypostman/powerline/"
+  },
+  {
+    "name": "preview-it",
+    "summary": "Preview anything at point",
+    "version": "1.1.0.0.20260101.602",
+    "url": "https://github.com/jcs-elpa/preview-it",
+    "source": "github",
+    "commit": "abb0e5b27f9497c4c3ada405064487c30e571b20",
+    "tree": "https://github.com/jcs-elpa/preview-it"
+  },
+  {
+    "name": "prt",
+    "summary": "Progress Reporter Library",
+    "version": "0.1.0.0.20260101.602",
+    "url": "https://github.com/jcs-elpa/prt",
+    "source": "github",
+    "commit": "4ee1b9f7959b95c109cb57186f7f6360ab6fac56",
+    "tree": "https://github.com/jcs-elpa/prt"
+  },
+  {
+    "name": "punch-line",
+    "summary": "A customizeable mode-line with Evil",
+    "version": "1.0.0.0.20260225.626",
+    "url": "https://github.com/konrad1977/punch-line",
+    "source": "github",
+    "commit": "1b592e0bef5678dcb7bf78557b43a308321985c0",
+    "tree": "https://github.com/konrad1977/punch-line"
+  },
+  {
+    "name": "qob-mode",
+    "summary": "Major mode for editing Qob files",
+    "version": "0.1.0.0.20250101.919",
+    "url": "https://github.com/cl-qob/qob-mode",
+    "source": "github",
+    "commit": "3585d637a24450d06bc16b5399809ff250d8f241",
+    "tree": "https://github.com/cl-qob/qob-mode"
+  },
+  {
+    "name": "qsharp-mode",
+    "summary": "Programming mode for the Q# language",
+    "version": "0.0.0.0.20230502.727",
+    "url": "https://github.com/forked-from-1kasper/emacs-qsharp-mode",
+    "source": "github",
+    "commit": "402bf231c823776480323c00a3dba85f9467e0cf",
+    "tree": "https://github.com/forked-from-1kasper/emacs-qsharp-mode"
+  },
+  {
+    "name": "qss-mode",
+    "summary": "Major mode for Qt Style Sheets",
+    "version": "0.1.0.0.20260101.602",
+    "url": "https://github.com/jcs-elpa/qss-mode",
+    "source": "github",
+    "commit": "418b91498171d845da010a8ff8c9ce4d542efd48",
+    "tree": "https://github.com/jcs-elpa/qss-mode"
+  },
+  {
+    "name": "query-ts-mode",
+    "summary": "Tree-sitter support for tree-sitter queries",
+    "version": "0.0.1.0.20241109.658",
+    "url": "https://github.com/nverno/query-ts-mode",
+    "source": "github",
+    "commit": "109b1c35c8f384809e3525c011a4bc664ff8884a",
+    "tree": "https://github.com/nverno/query-ts-mode"
+  },
+  {
+    "name": "quick-peek",
+    "summary": "Inline quick-peek windows",
+    "version": "1.0.0.0.20220223.1938",
+    "url": "https://github.com/emacs-vs/quick-peek",
+    "source": "github",
+    "commit": "5eadb029d2e3abe92de54a995fb00ee425bf9bf8",
+    "tree": "https://github.com/emacs-vs/quick-peek"
+  },
+  {
+    "name": "quickrun",
+    "summary": "Run commands quickly",
+    "version": "2.3.1.0.20260103.1800",
+    "url": "https://github.com/emacsorphanage/quickrun",
+    "source": "github",
+    "commit": "9199e222f95104ee83e115a9d5ac159d86816706",
+    "tree": "https://github.com/emacsorphanage/quickrun"
+  },
+  {
+    "name": "rainbow-csv",
+    "summary": "Highlight CSV and TSV files in different rainbow colors",
+    "version": "0.1.0.0.20260101.550",
+    "url": "https://github.com/emacs-vs/rainbow-csv",
+    "source": "github",
+    "commit": "5b0bbaca8c6c1785b5ddd48fdf16817acc046ad2",
+    "tree": "https://github.com/emacs-vs/rainbow-csv"
+  },
+  {
+    "name": "recentf-excl",
+    "summary": "Exclude commands for recent files",
+    "version": "0.1.0.0.20260503.1218",
+    "url": "https://github.com/jcs-elpa/recentf-excl",
+    "source": "github",
+    "commit": "46a322a8a76d5ede2d80ec8e2dd7b5f6f7941050",
+    "tree": "https://github.com/jcs-elpa/recentf-excl"
+  },
+  {
+    "name": "region-occurrences-highlighter",
+    "summary": "Mark occurrences of current region (selection)",
+    "version": "1.6.2.0.20241219.1705",
+    "url": "https://github.com/alvarogonzalezsotillo/region-occurrences-highlighter",
+    "source": "github",
+    "commit": "4c2c7a241fd257dd51f2726715cd1be022b3445a",
+    "tree": "https://github.com/alvarogonzalezsotillo/region-occurrences-highlighter"
+  },
+  {
+    "name": "repos-window",
+    "summary": "Reposition window if when needed",
+    "version": "0.1.0.0.20260101.602",
+    "url": "https://github.com/jcs-elpa/repos-window",
+    "source": "github",
+    "commit": "786dddace1d22fb572f5627513fcb71307545e8a",
+    "tree": "https://github.com/jcs-elpa/repos-window"
+  },
+  {
+    "name": "responsive-window",
+    "summary": "Adapt to different screen sizes automatically",
+    "version": "0.1.0.0.20260101.602",
+    "url": "https://github.com/jcs-elpa/responsive-window",
+    "source": "github",
+    "commit": "a5394eb2cfcede890a24a126db584e8acf3f48ea",
+    "tree": "https://github.com/jcs-elpa/responsive-window"
+  },
+  {
+    "name": "resurrect",
+    "summary": "[No description available]",
+    "version": "0.0.0.0.20140829.1717",
+    "url": "https://github.com/fbkante/resurrect",
+    "source": "github",
+    "commit": "e1bf23fec27989a7a7b9d5ffc827752aea094c29",
+    "tree": "https://github.com/fbkante/resurrect"
+  },
+  {
+    "name": "reveal-in-folder",
+    "summary": "Reveal current file/directory in folder",
+    "version": "0.1.2.0.20260101.602",
+    "url": "https://github.com/jcs-elpa/reveal-in-folder",
+    "source": "github",
+    "commit": "70c9ba29705ce6a0fc7a718cc4d6016b9691d408",
+    "tree": "https://github.com/jcs-elpa/reveal-in-folder"
+  },
+  {
+    "name": "savefold",
+    "summary": "Persistence for various folding systems",
+    "version": "0.0.1.0.20251002.924",
+    "url": "https://github.com/jcfk/savefold.el",
+    "source": "github",
+    "commit": "068f67dcfca6653187fe4c208d66a08b1f5e642a",
+    "tree": "https://github.com/jcfk/savefold.el"
+  },
+  {
+    "name": "selection-highlight-mode",
+    "summary": "Auto highlights matches to the current active region",
+    "version": "0.1.0",
+    "url": "https://github.com/balloneij/selection-highlight-mode",
+    "source": "github",
+    "commit": "a1960f9e098b9980b2f07791488305ac835047ff",
+    "tree": "https://github.com/balloneij/selection-highlight-mode"
+  },
+  {
+    "name": "send-to-osx-grammarly",
+    "summary": "A simple plugin to sent text to Grammarly",
+    "version": "0.0.0.0.20251231.1727",
+    "url": "https://github.com/emacs-grammarly/send-to-osx-grammarly",
+    "source": "github",
+    "commit": "e4ee071e704e30f2704ca3fa3e233249e726a9ae",
+    "tree": "https://github.com/emacs-grammarly/send-to-osx-grammarly"
+  },
+  {
+    "name": "show-eof-mode",
+    "summary": "[No description available]",
+    "version": "0.0.0.0.20240720.1434",
+    "url": "https://github.com/zk-phi/show-eof-mode",
+    "source": "github",
+    "commit": "cb1881df257ff8fb96478829ba14c0d94dc94667",
+    "tree": "https://github.com/zk-phi/show-eof-mode"
+  },
+  {
+    "name": "sideline",
+    "summary": "Show information on the side",
+    "version": "0.2.0.0.20260101.540",
+    "url": "https://github.com/emacs-sideline/sideline",
+    "source": "github",
+    "commit": "b4ada1ddf7da96c2e87453130f6ff7b7d577810f",
+    "tree": "https://github.com/emacs-sideline/sideline"
+  },
+  {
+    "name": "sideline-blame",
+    "summary": "Show blame messages with sideline",
+    "version": "0.1.0.0.20260101.541",
+    "url": "https://github.com/emacs-sideline/sideline-blame",
+    "source": "github",
+    "commit": "107479557021dbfcb27ad26a8e357c73e9b1249e",
+    "tree": "https://github.com/emacs-sideline/sideline-blame"
+  },
+  {
+    "name": "sideline-cider",
+    "summary": "Show CIDER result with sideline",
+    "version": "0.1.0.0.20260101.541",
+    "url": "https://github.com/emacs-sideline/sideline-cider",
+    "source": "github",
+    "commit": "f2e1d606fa159952e823cb329845ea96f10ca293",
+    "tree": "https://github.com/emacs-sideline/sideline-cider"
+  },
+  {
+    "name": "sideline-color",
+    "summary": "Show color information with sideline",
+    "version": "0.1.0.0.20260101.541",
+    "url": "https://github.com/emacs-sideline/sideline-color",
+    "source": "github",
+    "commit": "c8e7282f5068c296df2a80e3fb1d6dd2b8ab08b8",
+    "tree": "https://github.com/emacs-sideline/sideline-color"
+  },
+  {
+    "name": "sideline-eglot",
+    "summary": "Show eglot information with sideline",
+    "version": "0.1.0.0.20260101.541",
+    "url": "https://github.com/emacs-sideline/sideline-eglot",
+    "source": "github",
+    "commit": "aeb1991a7f25301438806a06c588e7e732c6f533",
+    "tree": "https://github.com/emacs-sideline/sideline-eglot"
+  },
+  {
+    "name": "sideline-eldoc",
+    "summary": "Sideline backend for eldoc",
+    "version": "0.0.0.0.20240727.532",
+    "url": "https://github.com/ginqi7/sideline-eldoc",
+    "source": "github",
+    "commit": "70f616af494586e19e6d79f491391b600321056b",
+    "tree": "https://github.com/ginqi7/sideline-eldoc"
+  },
+  {
+    "name": "sideline-emoji",
+    "summary": "Show emoji information with sideline",
+    "version": "0.1.0.0.20260101.541",
+    "url": "https://github.com/emacs-sideline/sideline-emoji",
+    "source": "github",
+    "commit": "cfc8f8c4c31d00e0c619936dac0ea1a3085be7f8",
+    "tree": "https://github.com/emacs-sideline/sideline-emoji"
+  },
+  {
+    "name": "sideline-eros",
+    "summary": "Show EROS result with sideline",
+    "version": "0.1.0.0.20260101.541",
+    "url": "https://github.com/emacs-sideline/sideline-eros",
+    "source": "github",
+    "commit": "39f036b8ed074c5762f7982dee2557a5845b186a",
+    "tree": "https://github.com/emacs-sideline/sideline-eros"
+  },
+  {
+    "name": "sideline-flycheck",
+    "summary": "Show flycheck errors with sideline",
+    "version": "0.2.0.0.20260101.541",
+    "url": "https://github.com/emacs-sideline/sideline-flycheck",
+    "source": "github",
+    "commit": "5a4d63210acf735829b08164897fef6a2abc8bab",
+    "tree": "https://github.com/emacs-sideline/sideline-flycheck"
+  },
+  {
+    "name": "sideline-flymake",
+    "summary": "Show flymake errors with sideline",
+    "version": "0.2.0.0.20260101.541",
+    "url": "https://github.com/emacs-sideline/sideline-flymake",
+    "source": "github",
+    "commit": "ad296589a97ad7225f3f1e9519443577b2c5a49b",
+    "tree": "https://github.com/emacs-sideline/sideline-flymake"
+  },
+  {
+    "name": "sideline-geiser",
+    "summary": "Show Geiser result with sideline",
+    "version": "0.1.0.0.20260101.541",
+    "url": "https://github.com/emacs-sideline/sideline-geiser",
+    "source": "github",
+    "commit": "e93ac0afd43468b50d76f102868e0a9db4970725",
+    "tree": "https://github.com/emacs-sideline/sideline-geiser"
+  },
+  {
+    "name": "sideline-load-cost",
+    "summary": "Display load/require module size with sideline",
+    "version": "0.1.0.0.20260101.542",
+    "url": "https://github.com/emacs-sideline/sideline-load-cost",
+    "source": "github",
+    "commit": "49179633bf9bbedd23052d845525a032679934cd",
+    "tree": "https://github.com/emacs-sideline/sideline-load-cost"
+  },
+  {
+    "name": "sideline-lsp",
+    "summary": "Show lsp information with sideline",
+    "version": "0.1.0.0.20260503.1235",
+    "url": "https://github.com/emacs-sideline/sideline-lsp",
+    "source": "github",
+    "commit": "393459a7a947a62eb3f1d587fe576937afefb63f",
+    "tree": "https://github.com/emacs-sideline/sideline-lsp"
+  },
+  {
+    "name": "sideline-racket",
+    "summary": "Show racket result with sideline",
+    "version": "0.1.0.0.20260101.542",
+    "url": "https://github.com/emacs-sideline/sideline-racket",
+    "source": "github",
+    "commit": "0141f401fef21d6620034c65b3e522d98ba40930",
+    "tree": "https://github.com/emacs-sideline/sideline-racket"
+  },
+  {
+    "name": "sideline-sly",
+    "summary": "Show SLY result with sideline",
+    "version": "0.1.0.0.20260101.542",
+    "url": "https://github.com/emacs-sideline/sideline-sly",
+    "source": "github",
+    "commit": "8d7ef316474769d7c9aaaac955fb3ce29bdf095a",
+    "tree": "https://github.com/emacs-sideline/sideline-sly"
+  },
+  {
+    "name": "sln-mode",
+    "summary": "A major-mode for msvc's *.sln files",
+    "version": "0.0.0.0.20150212.752",
+    "url": "https://github.com/sensorflo/sln-mode",
+    "source": "github",
+    "commit": "0f91d1b957c7d2a7bab9278ec57b54d57f1dbd9c",
+    "tree": "https://github.com/sensorflo/sln-mode"
+  },
+  {
+    "name": "smartchr",
+    "summary": "Emacs version of smartchr.vim",
+    "version": "0.0.0.0.20220606.1252",
+    "url": "https://github.com/imakado/emacs-smartchr",
+    "source": "github",
+    "commit": "b2410de732484030758f72b07e619cc594e6d287",
+    "tree": "https://github.com/imakado/emacs-smartchr"
+  },
+  {
+    "name": "sound-async",
+    "summary": "Play sound asynchronously",
+    "version": "0.1.0.0.20260101.602",
+    "url": "https://github.com/jcs-elpa/sound-async",
+    "source": "github",
+    "commit": "bf25ff858284cb232f704b67c3cbac127c2907a8",
+    "tree": "https://github.com/jcs-elpa/sound-async"
+  },
+  {
+    "name": "sublime-fuzzy",
+    "summary": "Fuzzy matching algorithm like Sublime Text's string search",
+    "version": "0.1.0.0.20240101.1006",
+    "url": "https://github.com/jcs-elpa/sublime-fuzzy",
+    "source": "github",
+    "commit": "a0f1c86601e3287e96956fd79cc46252f21ef8aa",
+    "tree": "https://github.com/jcs-elpa/sublime-fuzzy"
+  },
+  {
+    "name": "toggle-profiler",
+    "summary": "Useful functions to interact with profiler",
+    "version": "0.1.0.0.20260101.603",
+    "url": "https://github.com/jcs-elpa/toggle-profiler",
+    "source": "github",
+    "commit": "08763f55aa0fb5e1cea241749ac91b4d5b898b46",
+    "tree": "https://github.com/jcs-elpa/toggle-profiler"
+  },
+  {
+    "name": "tree-sitter",
+    "summary": "Incremental parsing system",
+    "version": "0.19.4",
+    "url": "https://github.com/emacs-tree-sitter/elisp-tree-sitter",
+    "source": "github",
+    "commit": "8f0bd387ad7a1cf7e8fdd5977d386a17ea70a82d",
+    "tree": "https://github.com/emacs-tree-sitter/elisp-tree-sitter"
+  },
+  {
+    "name": "tree-sitter-indent",
+    "summary": "Provide indentation with a Tree-sitter backend",
+    "version": "0.3.0.0.20220411.1439",
+    "url": "https://codeberg.org/FelipeLema/tree-sitter-indent.el",
+    "source": "codeberg",
+    "commit": "4ef246db3e4ff99f672fe5e4b416c890f885c09e",
+    "tree": "https://codeberg.org/FelipeLema/tree-sitter-indent.el"
+  },
+  {
+    "name": "tree-sitter-langs",
+    "summary": "Grammar bundle for tree-sitter",
+    "version": "0.13.48",
+    "url": "https://github.com/emacs-tree-sitter/tree-sitter-langs",
+    "source": "github",
+    "commit": "a247cc323f2e29f27f91710a7b0e1ff9f6238fff",
+    "tree": "https://github.com/emacs-tree-sitter/tree-sitter-langs"
+  },
+  {
+    "name": "treemacs-nerd-icons",
+    "summary": "Emacs Nerd Font Icons theme for treemacs",
+    "version": "0.0.1.0.20251024.1914",
+    "url": "https://github.com/rainstormstudio/treemacs-nerd-icons",
+    "source": "github",
+    "commit": "0c5ddcb978da639f01ddb023febc40fc755171e5",
+    "tree": "https://github.com/rainstormstudio/treemacs-nerd-icons"
+  },
+  {
+    "name": "treesit-auto",
+    "summary": "Automatically use tree-sitter enhanced major modes",
+    "version": "1.0.9.0.20260210.2010",
+    "url": "https://github.com/renzmann/treesit-auto.git",
+    "source": "github",
+    "commit": "31466e4ccfd4f896ce3145c95c4c1f8b59d4bfdf",
+    "tree": "https://github.com/renzmann/treesit-auto.git"
+  },
+  {
+    "name": "treesit-fold",
+    "summary": "Code folding using treesit",
+    "version": "0.2.0.0.20260417.1708",
+    "url": "https://github.com/emacs-tree-sitter/treesit-fold",
+    "source": "github",
+    "commit": "e6b215b8f25f8c58606ab4f850794b61b61111e1",
+    "tree": "https://github.com/emacs-tree-sitter/treesit-fold"
+  },
+  {
+    "name": "treesit-langs",
+    "summary": "Language bundle for Emacs's treesit.el",
+    "version": "0.1.0.0.20260428.358",
+    "url": "https://github.com/emacs-tree-sitter/treesit-langs",
+    "source": "github",
+    "commit": "61d24142c72426224ef5e0cee04f863952752d1b",
+    "tree": "https://github.com/emacs-tree-sitter/treesit-langs"
+  },
+  {
+    "name": "ts-docstr",
+    "summary": "A document string minor mode using tree-sitter",
+    "version": "0.1.0.0.20260101.550",
+    "url": "https://github.com/emacs-vs/ts-docstr",
+    "source": "github",
+    "commit": "f292ad9c433b3db08daf25679511e1e6a64987aa",
+    "tree": "https://github.com/emacs-vs/ts-docstr"
+  },
+  {
+    "name": "ts-fold",
+    "summary": "Code folding using tree-sitter",
+    "version": "0.4.0.0.20260417.1712",
+    "url": "https://github.com/emacs-tree-sitter/ts-fold",
+    "source": "github",
+    "commit": "9563e4e9501ed3c95a372148844ba6a89f959d54",
+    "tree": "https://github.com/emacs-tree-sitter/ts-fold"
+  },
+  {
+    "name": "tsc",
+    "summary": "Core Tree-sitter APIs",
+    "version": "0.19.4",
+    "url": "https://github.com/emacs-tree-sitter/elisp-tree-sitter",
+    "source": "github",
+    "commit": "8f0bd387ad7a1cf7e8fdd5977d386a17ea70a82d",
+    "tree": "https://github.com/emacs-tree-sitter/elisp-tree-sitter"
+  },
+  {
+    "name": "tspew",
+    "summary": "Clean and format \"template spew\" errors from gcc and Clang",
+    "version": "0.0.0.0.20240806.2006",
+    "url": "https://github.com/jefftrull/tspew",
+    "source": "github",
+    "commit": "582b7f63fe5bd69b343d5733d0f109f4d9a826a3",
+    "tree": "https://github.com/jefftrull/tspew"
+  },
+  {
+    "name": "turbo-log",
+    "summary": "The simple package for fast log selected region",
+    "version": "3.0.0",
+    "url": "https://github.com/Artawower/turbo-log",
+    "source": "github",
+    "commit": "8fccc8b80b847fee49c06c48acf0f88cbf850eed",
+    "tree": "https://github.com/Artawower/turbo-log"
+  },
+  {
+    "name": "txl",
+    "summary": "Provides machine translation via DeepL's REST API",
+    "version": "0.0.2.0.20260202.1114",
+    "url": "https://github.com/tmalsburg/txl.el",
+    "source": "github",
+    "commit": "87fcd5f65cd572dd992abcbbff1b1f5990d8de7e",
+    "tree": "https://github.com/tmalsburg/txl.el"
+  },
+  {
+    "name": "typst-mode",
+    "summary": "A major mode for working with Typst typesetting system",
+    "version": "0.1.0.0.20230925.39",
+    "url": "https://github.com/Ziqi-Yang/typst-mode.el",
+    "source": "github",
+    "commit": "5776fd4f3608350ff6a2b61b118d38165d342aa3",
+    "tree": "https://github.com/Ziqi-Yang/typst-mode.el"
+  },
+  {
+    "name": "ueval",
+    "summary": "Universal Evaluation Utilities",
+    "version": "0.1.0.0.20260101.603",
+    "url": "https://github.com/jcs-elpa/ueval",
+    "source": "github",
+    "commit": "00cbad0e5bed59c74ca183bef86dd41d987e2caf",
+    "tree": "https://github.com/jcs-elpa/ueval"
+  },
+  {
+    "name": "undo-hl",
+    "summary": "Highlight undo/redo",
+    "version": "1.0.0.0.20220523.557",
+    "url": "https://github.com/casouri/undo-hl",
+    "source": "github",
+    "commit": "89fdcc62e3d938854433bc14d95e1c8e505eee20",
+    "tree": "https://github.com/casouri/undo-hl"
+  },
+  {
+    "name": "undo-tree-vf",
+    "summary": "Visualizer follow mode for undo-tree",
+    "version": "0.1.0.0.20260101.603",
+    "url": "https://github.com/jcs-elpa/undo-tree-vf",
+    "source": "github",
+    "commit": "ce2981be47f417d5be5358d9913d2af44060885e",
+    "tree": "https://github.com/jcs-elpa/undo-tree-vf"
+  },
+  {
+    "name": "use-ttf",
+    "summary": "Keep font consistency across different OSs",
+    "version": "0.1.3.0.20260101.603",
+    "url": "https://github.com/jcs-elpa/use-ttf",
+    "source": "github",
+    "commit": "af34fb0d5cc46851b7b567fe171759724b3cdfd4",
+    "tree": "https://github.com/jcs-elpa/use-ttf"
+  },
+  {
+    "name": "vbs-repl",
+    "summary": "Run visual basic repl as inferior process",
+    "version": "0.0.0.0.20160720.820",
+    "url": "http://www.emacswiki.org/emacs/VbsReplMode",
+    "source": "github",
+    "commit": "483dd5a2c8c4675ddb3c32fdd93146c6d248285d",
+    "tree": "http://www.emacswiki.org/emacs/VbsReplMode"
+  },
+  {
+    "name": "vbscript-mode",
+    "summary": "[No description available]",
+    "version": "2.1",
+    "url": "http://www.emacswiki.org/emacs/VbsReplMode",
+    "source": "github",
+    "commit": "483dd5a2c8c4675ddb3c32fdd93146c6d248285d",
+    "tree": "http://www.emacswiki.org/emacs/VbsReplMode"
+  },
+  {
+    "name": "vc-refresh",
+    "summary": "Refresh vc-state in certain events for better UX",
+    "version": "0.1.0.0.20260101.603",
+    "url": "https://github.com/jcs-elpa/vc-refresh",
+    "source": "github",
+    "commit": "e819edbaa19b7436381521425b8d77619964c717",
+    "tree": "https://github.com/jcs-elpa/vc-refresh"
+  },
+  {
+    "name": "vertico-flx",
+    "summary": "Flx integration for vertico",
+    "version": "0.1.0.0.20260101.603",
+    "url": "https://github.com/jcs-elpa/vertico-flx",
+    "source": "github",
+    "commit": "bbfdbbb24937b3f172bfe0b1532a7e7fff411652",
+    "tree": "https://github.com/jcs-elpa/vertico-flx"
+  },
+  {
+    "name": "visual-basic-mode",
+    "summary": "A mode for editing Visual Basic programs",
+    "version": "0.0.0.0.20160720.820",
+    "url": "http://www.emacswiki.org/cgi-bin/wiki/visual-basic-mode.el",
+    "source": "github",
+    "commit": "483dd5a2c8c4675ddb3c32fdd93146c6d248285d",
+    "tree": "http://www.emacswiki.org/cgi-bin/wiki/visual-basic-mode.el"
+  },
+  {
+    "name": "vs-comment-return",
+    "summary": "Comment return like Visual Studio",
+    "version": "0.1.0.0.20260101.550",
+    "url": "https://github.com/emacs-vs/vs-comment-return",
+    "source": "github",
+    "commit": "3f26e9337c0ed11621fdeb6b02a3f751b5e7bf19",
+    "tree": "https://github.com/emacs-vs/vs-comment-return"
+  },
+  {
+    "name": "vs-dark-theme",
+    "summary": "Visual Studio IDE dark theme",
+    "version": "2.0.0.0.20260217.1623",
+    "url": "https://github.com/emacs-vs/vs-dark-theme",
+    "source": "github",
+    "commit": "ebc176a83808772746c55c91420a95b28b84c869",
+    "tree": "https://github.com/emacs-vs/vs-dark-theme"
+  },
+  {
+    "name": "vs-edit-mode",
+    "summary": "Minor mode accomplish editing experience in Visual Studio",
+    "version": "0.2.0.0.20260212.828",
+    "url": "https://github.com/emacs-vs/vs-edit-mode",
+    "source": "github",
+    "commit": "d3c5ca0d3f4fb99d8f058da1b00ef273ed4d2cb5",
+    "tree": "https://github.com/emacs-vs/vs-edit-mode"
+  },
+  {
+    "name": "vs-electric-spacing",
+    "summary": "Add spacing around operators like Visual Studio",
+    "version": "0.1.0.0.20260101.550",
+    "url": "https://github.com/jcs-elpa/vs-electric-spacing",
+    "source": "github",
+    "commit": "dd99f91a264520d3ec79b7c883174b917557e16c",
+    "tree": "https://github.com/jcs-elpa/vs-electric-spacing"
+  },
+  {
+    "name": "vs-light-theme",
+    "summary": "Visual Studio IDE light theme",
+    "version": "2.0.0.0.20260217.1623",
+    "url": "https://github.com/emacs-vs/vs-light-theme",
+    "source": "github",
+    "commit": "105c9f2530b4834e1a0ea35964dbbe2c52bbbe5f",
+    "tree": "https://github.com/emacs-vs/vs-light-theme"
+  },
+  {
+    "name": "vs-revbuf",
+    "summary": "Revert buffers like Visual Studio",
+    "version": "0.1.0.0.20260101.550",
+    "url": "https://github.com/emacs-vs/vs-revbuf",
+    "source": "github",
+    "commit": "891b9742cbd38891377dcf4ca70ab784291e6b6b",
+    "tree": "https://github.com/emacs-vs/vs-revbuf"
+  },
+  {
+    "name": "vsc-edit-mode",
+    "summary": "Implement editing experience like VSCode",
+    "version": "0.1.0.0.20260202.626",
+    "url": "https://github.com/emacs-vs/vsc-edit-mode",
+    "source": "github",
+    "commit": "68fdde8e9a829867f45d060a86e5e23f76be9789",
+    "tree": "https://github.com/emacs-vs/vsc-edit-mode"
+  },
+  {
+    "name": "vsc-multiple-cursors",
+    "summary": "Multiple-cursors integration behave like VSCode",
+    "version": "0.1.0.0.20260101.550",
+    "url": "https://github.com/emacs-vs/vsc-multiple-cursors",
+    "source": "github",
+    "commit": "2c7cec417e70b0c07ca27351d1425fa5ca4c1a15",
+    "tree": "https://github.com/emacs-vs/vsc-multiple-cursors"
+  },
+  {
+    "name": "wat-mode",
+    "summary": "A major mode for WebAssembly",
+    "version": "1.0.0.0.20220713.251",
+    "url": "https://github.com/devonsparks/wat-mode",
+    "source": "github",
+    "commit": "46b4df83e92c585295d659d049560dbf190fe501",
+    "tree": "https://github.com/devonsparks/wat-mode"
+  },
+  {
+    "name": "yank-indent",
+    "summary": "Automatically indent yanked text",
+    "version": "0.3.0",
+    "url": "https://github.com/jimeh/yank-indent",
+    "source": "github",
+    "commit": "15fd7271bd8b5ff085eacaf047c97530a5af236d",
+    "tree": "https://github.com/jimeh/yank-indent"
+  },
+  {
+    "name": "yasnippet-capf",
+    "summary": "Yasnippet Completion At Point Function",
+    "version": "0.0.3.0.20250520.1105",
+    "url": "https://github.com/elken/yasnippet-capf",
+    "source": "github",
+    "commit": "f53c42a996b86fc95b96bdc2deeb58581f48c666",
+    "tree": "https://github.com/elken/yasnippet-capf"
+  },
+  {
+    "name": "zig-mode",
+    "summary": "A major mode for the Zig programming language",
+    "version": "0.0.8.0.20250915.1207",
+    "url": "https://github.com/zig-lang/zig-mode",
+    "source": "github",
+    "commit": "8c1f0bd07e88a443e16e6ffd3abd1d3e76e10f35",
+    "tree": "https://github.com/zig-lang/zig-mode"
+  },
+  {
+    "name": "zoom-to-point",
+    "summary": "Zoom in or out on the line at point",
+    "version": "0.2",
+    "url": "https://github.com/rmloveland/zoom-to-point",
+    "source": "github",
+    "commit": "38b11fe8f110eae4c8c7e1a0b40e05f9e58c7f36",
+    "tree": "https://github.com/rmloveland/zoom-to-point"
+  }
+]
