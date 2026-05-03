@@ -1,9 +1,0 @@
-(lsp-biome
- . [(20251029 511) ((lsp-mode (8 0 0))) "A lsp-mode client for Biome"
-    tar
-    ((:url . "https://github.com/cxa/lsp-biome")
-     (:commit . "145c8196c72ff889f47e084c4f70c9adbc8518f2")
-     (:revdesc . "145c8196c72f") (:keywords "biome")
-     (:authors ("realazy" . "xianan.chen@gmail.com"))
-     (:maintainers ("realazy" . "xianan.chen@gmail.com"))
-     (:maintainer "realazy" . "xianan.chen@gmail.com"))])

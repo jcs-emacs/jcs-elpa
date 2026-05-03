@@ -1,0 +1,5 @@
+(pallet
+ . [(0 9 2) nil "Manage your packages with Cask" tar
+    ((:url . "https://github.com/rdallasgray/pallet")
+     (:commit . "0e1ae11e1ebfe644cbf832df62ac2dbf6ecd0501")
+     (:revdesc . "0.9.2-0-g0e1ae11e1ebf") (:keywords "elpa" "package"))])

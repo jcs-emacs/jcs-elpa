@@ -1,0 +1,6 @@
+(modeline-region
+ . [(1 0 0) nil "Show region information in the mode-line" tar
+    ((:url . "https://www.emacswiki.org/emacs/modeline-region.el")
+     (:commit . "10ffd7dd5378b401301612b13bd3add50994b27f")
+     (:revdesc . "1.0.0-0-g10ffd7dd5378")
+     (:keywords "mode-line" "region" "faces" "help" "column"))])
