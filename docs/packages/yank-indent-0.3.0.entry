@@ -1,0 +1,9 @@
+(yank-indent
+ . [(0 3 0) ((emacs (25 1))) "Automatically indent yanked text" tar
+    ((:url . "https://github.com/jimeh/yank-indent")
+     (:commit . "15fd7271bd8b5ff085eacaf047c97530a5af236d")
+     (:revdesc . "15fd7271bd8b")
+     (:keywords "convenience" "yank" "indent")
+     (:authors ("Jim Myhrberg" . "contact@jimeh.me"))
+     (:maintainers ("Jim Myhrberg" . "contact@jimeh.me"))
+     (:maintainer "Jim Myhrberg" . "contact@jimeh.me"))])
