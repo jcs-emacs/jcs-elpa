@@ -1676,10 +1676,10 @@
   {
     "name": "on",
     "summary": "Hooks for faster startup",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "url": "https://github.com/elp-revive/on.el",
     "source": "github",
-    "commit": "4ff6b2582b1c4c103a580bb681821b247686fc05",
+    "commit": "b7b8b05a940385f2bda7552f5e2a424752ff68c9",
     "tree": "https://github.com/elp-revive/on.el"
   },
   {
