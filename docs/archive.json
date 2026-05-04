@@ -1666,20 +1666,20 @@
   },
   {
     "name": "odin-mode",
-    "summary": "A major mode for Odin",
-    "version": "20230912.1527",
-    "url": "https://git.sr.ht/~mgmarlow/odin-mode",
+    "summary": "A minor mode for odin",
+    "version": "0.0.0.0.20260219.1459",
+    "url": "https://github.com/glassofethanol/odin-mode",
     "source": "github",
-    "commit": "5b017380561ebc4c4edefe4da9ba66be5d7de757",
-    "tree": "https://git.sr.ht/~mgmarlow/odin-mode"
+    "commit": "21c6ff8b49f5eaa2d3b9969feeb08de921f11e92",
+    "tree": "https://github.com/glassofethanol/odin-mode"
   },
   {
     "name": "on",
     "summary": "Hooks for faster startup",
-    "version": "0.1.0.0.20230823.39",
+    "version": "0.1.0",
     "url": "https://github.com/elp-revive/on.el",
     "source": "github",
-    "commit": "26ff01594a1e326af468350e1a22dcd1b7da71ae",
+    "commit": "4ff6b2582b1c4c103a580bb681821b247686fc05",
     "tree": "https://github.com/elp-revive/on.el"
   },
   {
