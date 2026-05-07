@@ -1469,10 +1469,10 @@
   {
     "name": "lsp-pylyzer",
     "summary": "Python LSP client using pylyzer",
-    "version": "0.1.0.0.20250228.2204",
+    "version": "0.1.0.0.20260507.1747",
     "url": "https://github.com/emacs-lsp/lsp-pylyzer",
     "source": "github",
-    "commit": "2d0bf3f181259b319ebf8b1923c257fbcb74a732",
+    "commit": "1eb1fb5c00d6239c8f77afe85e6b85abe663bbbc",
     "tree": "https://github.com/emacs-lsp/lsp-pylyzer"
   },
   {
@@ -1730,10 +1730,10 @@
   {
     "name": "package-build",
     "summary": "Curate an Emacs Lisp package archive",
-    "version": "4.0.0.0.20260503.1532",
+    "version": "4.0.0.0.20260507.1703",
     "url": "https://github.com/melpa/package-build",
     "source": "github",
-    "commit": "d0e2788033fe8ba263675dbd6fbc4937f4364177",
+    "commit": "9ffd40c4f6bfc315e4c370826c4f933e6384de50",
     "tree": "https://github.com/melpa/package-build"
   },
   {
