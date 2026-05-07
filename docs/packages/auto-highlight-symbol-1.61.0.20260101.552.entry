@@ -1,5 +1,5 @@
 (auto-highlight-symbol
- . [(1 61 0 0 20260101 552) ((emacs (26 1)) (ht (2 3)))
+ . [(1 61 0 20260101 552) ((emacs (26 1)) (ht (2 3)))
     "Automatic highlighting current symbol minor mode" tar
     ((:url . "https://github.com/elp-revive/auto-highlight-symbol")
      (:commit . "e84da32e7cf1baefb0a9eef42a2fc842cf18f8b3")

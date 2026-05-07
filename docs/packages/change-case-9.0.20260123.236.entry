@@ -1,6 +1,5 @@
 (change-case
- . [(9 0 0 0 20260123 236)
-    ((emacs (25 1)) (dash (2 16 0)) (s (1 12 0)))
+ . [(9 0 20260123 236) ((emacs (25 1)) (dash (2 16 0)) (s (1 12 0)))
     "Case conversion between camelCase, PascalCase, snake_case and more"
     tar
     ((:url . "https://github.com/TakesxiSximada/change-case.el")

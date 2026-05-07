@@ -1,5 +1,5 @@
 (company-mlton
- . [(1 0 0 0 20201207 1445)
+ . [(1 0 0 20201207 1445)
     ((emacs (24 4)) (company (0 9 4)) (dash (2 13 0)))
     "Company-mode backend for MLton/Standard ML" tar
     ((:url . "https://github.com/MatthewFluet/company-mlton")

@@ -1,5 +1,5 @@
 (company-graphql
- . [(0 0 0 0 20171018 105)
+ . [(0 0 0 20171018 105)
     ((emacs (25 2 1)) (cl-lib (0 5 0)) (dash (2 13 0)) (s (1 19 0))
      (company (0 9 4)) (request (0 3 0)) (graphql-mode (20170929 4)))
     "Company completion for graphql file" tar

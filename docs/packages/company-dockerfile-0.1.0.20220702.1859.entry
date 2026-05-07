@@ -1,5 +1,5 @@
 (company-dockerfile
- . [(0 1 0 0 20220702 1859)
+ . [(0 1 0 20220702 1859)
     ((emacs (24 4)) (company (0 8 12)) (dockerfile-mode (1 0)))
     "Company mode backend for dockefile" tar
     ((:url . "https://github.com/elp-revive/company-dockerfile")
