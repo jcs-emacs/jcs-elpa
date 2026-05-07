@@ -1,5 +1,5 @@
 (org-bars
- . [(0 1 0 0 20211105 1700)
+ . [(0 1 0 20211105 1700)
     ((emacs (27 1)) (dash (2 17 0)) (s (1 12 0)))
     "Add bars to virtual indentation" tar
     ((:url . "https://github.com/tonyaldon/org-bars")

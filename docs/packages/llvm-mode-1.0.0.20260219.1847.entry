@@ -1,5 +1,5 @@
 (llvm-mode
- . [(1 0 0 0 20260219 1847) ((emacs (24 3)))
+ . [(1 0 0 20260219 1847) ((emacs (24 3)))
     "Major mode for the LLVM assembler language" tar
     ((:url . "http://llvm.org/")
      (:commit . "d5b6b465ff87d8a233cfe50dc5d01a873c560b37")

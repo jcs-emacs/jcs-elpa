@@ -1,5 +1,5 @@
 (origami
- . [(4 1 0 0 20260101 554)
+ . [(4 1 0 20260101 554)
     ((emacs (27 1)) (s (1 9 0)) (dash (2 5 0)) (fringe-helper (1 0 1)))
     "Flexible text folding" tar
     ((:url . "https://github.com/elp-revive/origami.el")

@@ -1,5 +1,5 @@
 (maple-line
- . [(0 0 0 0 20200519 1557) nil "Maple line configuration" tar
+ . [(0 0 0 20200519 1557) nil "Maple line configuration" tar
     ((:url . "https://github.com/honmaple/emacs-maple-line")
      (:commit . "266dae95df1d9e9394cc61e57f3b88327a79d6f5")
      (:revdesc . "266dae95df1d")

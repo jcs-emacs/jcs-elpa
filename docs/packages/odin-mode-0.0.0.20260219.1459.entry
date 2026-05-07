@@ -1,6 +1,5 @@
 (odin-mode
- . [(0 0 0 0 20260219 1459) ((emacs (24 1))) "A minor mode for odin"
-    tar
+ . [(0 0 0 20260219 1459) ((emacs (24 1))) "A minor mode for odin" tar
     ((:url . "https://github.com/glassofethanol/odin-mode")
      (:commit . "21c6ff8b49f5eaa2d3b9969feeb08de921f11e92")
      (:revdesc . "21c6ff8b49f5")
