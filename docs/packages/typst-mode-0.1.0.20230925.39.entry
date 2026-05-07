@@ -1,5 +1,5 @@
 (typst-mode
- . [(0 1 0 0 20230925 39) ((polymode (0 2 2)) (emacs (24 3)))
+ . [(0 1 0 20230925 39) ((polymode (0 2 2)) (emacs (24 3)))
     "A major mode for working with Typst typesetting system" tar
     ((:url . "https://github.com/Ziqi-Yang/typst-mode.el")
      (:commit . "5776fd4f3608350ff6a2b61b118d38165d342aa3")

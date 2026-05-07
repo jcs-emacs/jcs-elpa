@@ -1,5 +1,5 @@
 (undo-hl
- . [(1 0 0 0 20220523 557) ((emacs (26 0))) "Highlight undo/redo" tar
+ . [(1 0 0 20220523 557) ((emacs (26 0))) "Highlight undo/redo" tar
     ((:url . "https://github.com/casouri/undo-hl")
      (:commit . "89fdcc62e3d938854433bc14d95e1c8e505eee20")
      (:revdesc . "89fdcc62e3d9") (:keywords "undo")
