@@ -1,5 +1,5 @@
 (flycheck-hl-todo
- . [(1 0 0 0 20230807 1500)
+ . [(1 0 0 20230807 1500)
     ((emacs (25 1)) (hl-todo (1 9 0)) (flycheck (0 14)))
     "Display hl-todo keywords in flycheck" tar
     ((:url
