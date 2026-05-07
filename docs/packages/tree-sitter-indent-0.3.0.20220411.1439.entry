@@ -1,5 +1,5 @@
 (tree-sitter-indent
- . [(0 3 0 0 20220411 1439)
+ . [(0 3 0 20220411 1439)
     ((emacs (26 1)) (tree-sitter (0 12 1)) (seq (2 20)))
     "Provide indentation with a Tree-sitter backend" tar
     ((:url . "https://codeberg.org/FelipeLema/tree-sitter-indent.el")

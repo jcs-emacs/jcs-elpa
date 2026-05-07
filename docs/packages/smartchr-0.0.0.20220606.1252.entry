@@ -1,5 +1,5 @@
 (smartchr
- . [(0 0 0 0 20220606 1252) ((emacs (24 3)))
+ . [(0 0 0 20220606 1252) ((emacs (24 3)))
     "Emacs version of smartchr.vim" tar
     ((:url . "https://github.com/imakado/emacs-smartchr")
      (:commit . "b2410de732484030758f72b07e619cc594e6d287")

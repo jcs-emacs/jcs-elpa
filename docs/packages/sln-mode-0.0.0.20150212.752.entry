@@ -1,6 +1,5 @@
 (sln-mode
- . [(0 0 0 0 20150212 752) nil "A major-mode for msvc's *.sln files"
-    tar
+ . [(0 0 0 20150212 752) nil "A major-mode for msvc's *.sln files" tar
     ((:url . "https://github.com/sensorflo/sln-mode")
      (:commit . "0f91d1b957c7d2a7bab9278ec57b54d57f1dbd9c")
      (:revdesc . "0f91d1b957c7") (:keywords "languages")

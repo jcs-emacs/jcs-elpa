@@ -1,5 +1,5 @@
 (tspew
- . [(0 0 0 0 20240806 2006) ((emacs (29 1)))
+ . [(0 0 0 20240806 2006) ((emacs (29 1)))
     "Clean and format \"template spew\" errors from gcc and Clang" tar
     ((:url . "https://github.com/jefftrull/tspew")
      (:commit . "582b7f63fe5bd69b343d5733d0f109f4d9a826a3")

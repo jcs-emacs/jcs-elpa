@@ -1,5 +1,5 @@
 (qsharp-mode
- . [(0 0 0 0 20230502 727) ((emacs (24 1)))
+ . [(0 0 0 20230502 727) ((emacs (24 1)))
     "Programming mode for the Q# language" tar
     ((:url
       . "https://github.com/forked-from-1kasper/emacs-qsharp-mode")

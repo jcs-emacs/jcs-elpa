@@ -1,6 +1,6 @@
 (quick-peek
- . [(1 0 0 0 20220223 1938) ((emacs (24 3)))
-    "Inline quick-peek windows" tar
+ . [(1 0 0 20220223 1938) ((emacs (24 3))) "Inline quick-peek windows"
+    tar
     ((:url . "https://github.com/emacs-vs/quick-peek")
      (:commit . "5eadb029d2e3abe92de54a995fb00ee425bf9bf8")
      (:revdesc . "5eadb029d2e3")

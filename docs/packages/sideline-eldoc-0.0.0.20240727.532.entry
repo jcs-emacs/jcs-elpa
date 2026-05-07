@@ -1,5 +1,5 @@
 (sideline-eldoc
- . [(0 0 0 0 20240727 532) nil "Sideline backend for eldoc" tar
+ . [(0 0 0 20240727 532) nil "Sideline backend for eldoc" tar
     ((:url . "https://github.com/ginqi7/sideline-eldoc")
      (:commit . "70f616af494586e19e6d79f491391b600321056b")
      (:revdesc . "70f616af4945")
