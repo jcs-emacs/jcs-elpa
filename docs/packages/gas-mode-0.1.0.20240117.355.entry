@@ -1,5 +1,5 @@
 (gas-mode
- . [(0 1 0 0 20240117 355) nil
+ . [(0 1 0 20240117 355) nil
     "Mode for editing assembly code with AT&T sintax" tar
     ((:url . "https://codeberg.org/Enocstocks/gas-mode.el")
      (:commit . "599cbcebd01124cc9b429bdb78e0cade7a59bc66")
