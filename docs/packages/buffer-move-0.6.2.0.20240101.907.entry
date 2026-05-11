@@ -3,5 +3,8 @@
     ((:url . "https://github.com/elp-revive/buffer-move/")
      (:commit . "d20de0065695ee815f1c17cf2de527d6e9a7bbf1")
      (:revdesc . "d20de0065695") (:keywords "convenience")
+     (:authors ("Lucas Bonnet" . "lucas@rincevent.net")
+	       ("Mathis Hofer" . "mathis@fsfe.org")
+	       ("Geyslan G. Bem" . "geyslan@gmail.com"))
      (:maintainers ("Jen-Chieh Shen" . "jcs090218@gmail.com"))
      (:maintainer "Jen-Chieh Shen" . "jcs090218@gmail.com"))])
