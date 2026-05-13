@@ -1766,10 +1766,10 @@
   {
     "name": "point-undo",
     "summary": "Undo/redo position",
-    "version": "0.0.0.20211208.842",
+    "version": "0.0.0.20260513.523",
     "url": "https://github.com/ncaq/point-undo",
     "source": "github",
-    "commit": "971efe20e3ef5764587168c5510c4b65406aca02",
+    "commit": "dd580a9f68ecab5718aba7c9132e3c9140f761f0",
     "tree": "https://github.com/ncaq/point-undo"
   },
   {
