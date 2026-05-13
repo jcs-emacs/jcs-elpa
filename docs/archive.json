@@ -1730,10 +1730,10 @@
   {
     "name": "package-build",
     "summary": "Curate an Emacs Lisp package archive",
-    "version": "4.0.0.0.20260510.2151",
+    "version": "4.0.0.0.20260513.1752",
     "url": "https://github.com/melpa/package-build",
     "source": "github",
-    "commit": "fecc57e36f802fdb85e9c08acc00842c2b77a0ee",
+    "commit": "f290c0e7acbf057886f50db7c22e6f5565c69d43",
     "tree": "https://github.com/melpa/package-build"
   },
   {
