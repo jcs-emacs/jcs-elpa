@@ -1,0 +1,5 @@
+(point-undo
+ . [(0 0 0 20260513 6) ((emacs (24 3))) "Undo/redo position" tar
+    ((:url . "https://github.com/ncaq/point-undo")
+     (:commit . "dd580a9f68ecab5718aba7c9132e3c9140f761f0")
+     (:revdesc . "dd580a9f68ec"))])
