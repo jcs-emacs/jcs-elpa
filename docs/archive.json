@@ -1397,10 +1397,10 @@
   {
     "name": "llvm-mode",
     "summary": "Major mode for the LLVM assembler language",
-    "version": "1.0.0.20260219.288371",
+    "version": "1.0.0.20260526.300356",
     "url": "http://llvm.org/",
     "source": "github",
-    "commit": "d5b6b465ff87d8a233cfe50dc5d01a873c560b37",
+    "commit": "d685a3b0e30f1375acc2796f9ce9f090cec85332",
     "tree": "http://llvm.org/"
   },
   {
