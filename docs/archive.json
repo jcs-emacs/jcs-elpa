@@ -1460,10 +1460,10 @@
   {
     "name": "lsp-mlua",
     "summary": "LSP Clients for mLua",
-    "version": "0.0.1.0.20260616.1",
+    "version": "0.1.0.0.20260616.9",
     "url": "https://github.com/MSW-cmty/lsp-mlua",
     "source": "github",
-    "commit": "cc0e2d84c8318163d135627c5746fffd2388f3bd",
+    "commit": "5c924c216a317727e1e05fb4d41f01cf13fa04a1",
     "tree": "https://github.com/MSW-cmty/lsp-mlua"
   },
   {
