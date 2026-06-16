@@ -1,0 +1,3 @@
+(mlua-mode
+ :fetcher github
+ :repo "MSW-cmty/mlua-mode")
