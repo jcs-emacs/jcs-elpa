@@ -1487,10 +1487,10 @@
   {
     "name": "lsp-smart-req",
     "summary": "Lazy load LSP packages",
-    "version": "0.1.0.0.20260503.23",
+    "version": "0.1.0.0.20260616.24",
     "url": "https://github.com/jcs-elpa/lsp-smart-req",
     "source": "github",
-    "commit": "2316b59f186241ce6adf7d56d2817e44b8c7cc0c",
+    "commit": "13b9eed3c3532babfb429cde919bf9380967d500",
     "tree": "https://github.com/jcs-elpa/lsp-smart-req"
   },
   {
@@ -2198,10 +2198,10 @@
   {
     "name": "treesit-langs",
     "summary": "Language bundle for Emacs's treesit.el",
-    "version": "0.1.0.0.20260610.138",
+    "version": "0.1.0.0.20260616.139",
     "url": "https://github.com/emacs-tree-sitter/treesit-langs",
     "source": "github",
-    "commit": "ef5fa8317a334675e6d8b8a27f386a6c68e4571b",
+    "commit": "cf616d163d54fea584606c233fcfdedf9256f40d",
     "tree": "https://github.com/emacs-tree-sitter/treesit-langs"
   },
   {
