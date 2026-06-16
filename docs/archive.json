@@ -2351,10 +2351,10 @@
   {
     "name": "vertico-flx",
     "summary": "Flx integration for vertico",
-    "version": "0.1.0.0.20260101.25",
+    "version": "0.1.0.0.20260616.26",
     "url": "https://github.com/jcs-elpa/vertico-flx",
     "source": "github",
-    "commit": "bbfdbbb24937b3f172bfe0b1532a7e7fff411652",
+    "commit": "115dfad9d1c60d877cb31e80034ce0f3a178d192",
     "tree": "https://github.com/jcs-elpa/vertico-flx"
   },
   {
