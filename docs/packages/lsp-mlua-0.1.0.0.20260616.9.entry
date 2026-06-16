@@ -1,9 +1,9 @@
 (lsp-mlua
- . [(0 0 1 0 20260616 1) ((emacs (29 1)) (lsp-mode (6 1)))
+ . [(0 1 0 0 20260616 9) ((emacs (29 1)) (lsp-mode (6 1)))
     "LSP Clients for mLua" tar
     ((:url . "https://github.com/MSW-cmty/lsp-mlua")
-     (:commit . "cc0e2d84c8318163d135627c5746fffd2388f3bd")
-     (:revdesc . "cc0e2d84c831") (:keywords "convenience" "lsp")
+     (:commit . "5c924c216a317727e1e05fb4d41f01cf13fa04a1")
+     (:revdesc . "5c924c216a31") (:keywords "convenience" "lsp")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
