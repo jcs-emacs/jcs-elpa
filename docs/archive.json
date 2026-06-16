@@ -1458,6 +1458,15 @@
     "tree": "https://github.com/emacs-languagetool/lsp-ltex-plus"
   },
   {
+    "name": "lsp-mlua",
+    "summary": "LSP Clients for mLua",
+    "version": "0.0.1.0.20260616.1",
+    "url": "https://github.com/MSW-cmty/lsp-mlua",
+    "source": "github",
+    "commit": "cc0e2d84c8318163d135627c5746fffd2388f3bd",
+    "tree": "https://github.com/MSW-cmty/lsp-mlua"
+  },
+  {
     "name": "lsp-p4",
     "summary": "P4 support for lsp-mode",
     "version": "1.0.0.20190127.159",
@@ -1564,6 +1573,15 @@
     "source": "github",
     "commit": "7bb0f9946f5833eada199e880fdc4efa6df09e0b",
     "tree": "https://github.com/creatorrr/emacs-mint-mode"
+  },
+  {
+    "name": "mlua-mode",
+    "summary": "Major mode for mLua",
+    "version": "0.1.0.0.20260615.1",
+    "url": "https://github.com/MSW-cmty/mlua-mode",
+    "source": "github",
+    "commit": "f102d367f5ecb3599c51a6f754bd339acba4b6a1",
+    "tree": "https://github.com/MSW-cmty/mlua-mode"
   },
   {
     "name": "mode-minder",
