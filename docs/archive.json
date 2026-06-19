@@ -488,10 +488,10 @@
   {
     "name": "copilot",
     "summary": "An Emacs plugin for GitHub Copilot",
-    "version": "0.5.0.0.20260617.13",
+    "version": "0.5.0.0.20260619.14",
     "url": "https://github.com/copilot-emacs/copilot.el",
     "source": "github",
-    "commit": "c72f9b28ac94320bed28d9887fe3c8322f034d4d",
+    "commit": "4870dac784b49fdcf2319d3b1eea9b643432f767",
     "tree": "https://github.com/copilot-emacs/copilot.el"
   },
   {
@@ -1388,10 +1388,10 @@
   {
     "name": "llm",
     "summary": "Interface to pluggable llm backends",
-    "version": "0.31.0.0.20260611.2",
+    "version": "0.31.0.0.20260619.3",
     "url": "https://github.com/ahyatt/llm",
     "source": "github",
-    "commit": "5f852b6bb303e3bb3e34af10646f54fdb854e348",
+    "commit": "f7977825b6d91b525c4374480496421e667eeb37",
     "tree": "https://github.com/ahyatt/llm"
   },
   {
@@ -1640,10 +1640,10 @@
   {
     "name": "nerd-icons",
     "summary": "Emacs Nerd Font Icons Library",
-    "version": "0.1.0.0.20260617.139",
+    "version": "0.1.0.0.20260619.140",
     "url": "https://github.com/rainstormstudio/nerd-icons.el",
     "source": "github",
-    "commit": "7409583c9b87204b1ece0fc631beb564a6fa3295",
+    "commit": "a9a9177e135dd407d508609ac4d9915eb8608b4f",
     "tree": "https://github.com/rainstormstudio/nerd-icons.el"
   },
   {
