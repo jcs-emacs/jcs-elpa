@@ -4,8 +4,8 @@
      (s (1 12 0)) (company (0 8 12)) (msgu (0 1 0)))
     "Elisp Language Server" tar
     ((:url . "https://github.com/elisp-lsp/Ellsp")
-     (:commit . "7a3a8b77e0c3f7172f21273011be27e578c6eee7")
-     (:revdesc . "7a3a8b77e0c3") (:keywords "convenience" "lsp")
+     (:commit . "36580dd6e6f29a73c8a9ac53966d450b0399679b")
+     (:revdesc . "36580dd6e6f2") (:keywords "convenience" "lsp")
      (:authors ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainers ("Jen-Chieh" . "jcs090218@gmail.com"))
      (:maintainer "Jen-Chieh" . "jcs090218@gmail.com"))])
