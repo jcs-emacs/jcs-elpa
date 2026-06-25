@@ -488,10 +488,10 @@
   {
     "name": "copilot",
     "summary": "An Emacs plugin for GitHub Copilot",
-    "version": "0.6.0.0.20260624.5",
+    "version": "0.6.0.0.20260625.7",
     "url": "https://github.com/copilot-emacs/copilot.el",
     "source": "github",
-    "commit": "4ab1e2c0fa70ed5be2343495134e77f8ccf2b303",
+    "commit": "47302f99ecf2aee4eac22dcb095e13f93061d376",
     "tree": "https://github.com/copilot-emacs/copilot.el"
   },
   {
@@ -2216,10 +2216,10 @@
   {
     "name": "treesit-langs",
     "summary": "Language bundle for Emacs's treesit.el",
-    "version": "0.1.0.0.20260616.139",
+    "version": "0.1.0.0.20260625.141",
     "url": "https://github.com/emacs-tree-sitter/treesit-langs",
     "source": "github",
-    "commit": "cf616d163d54fea584606c233fcfdedf9256f40d",
+    "commit": "e304bcf3c908668df45e37f0d88ec76927906106",
     "tree": "https://github.com/emacs-tree-sitter/treesit-langs"
   },
   {
