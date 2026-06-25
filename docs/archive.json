@@ -488,10 +488,10 @@
   {
     "name": "copilot",
     "summary": "An Emacs plugin for GitHub Copilot",
-    "version": "0.6.0.0.20260625.11",
+    "version": "0.6.0.0.20260625.15",
     "url": "https://github.com/copilot-emacs/copilot.el",
     "source": "github",
-    "commit": "1eab7e7c466f6dbe269130b466f8b30d33f140b4",
+    "commit": "3e79b1ac12d1c26e92f80bc243c0e8dfc1c10324",
     "tree": "https://github.com/copilot-emacs/copilot.el"
   },
   {
@@ -1397,10 +1397,10 @@
   {
     "name": "llvm-mode",
     "summary": "Major mode for the LLVM assembler language",
-    "version": "1.0.0.20260601.301086",
+    "version": "1.0.0.20260625.304240",
     "url": "http://llvm.org/",
     "source": "github",
-    "commit": "080286d051efe040c8678aef122d235785d74d5e",
+    "commit": "c07bc2962c5f76ebcbd040c4e97fe5d129530087",
     "tree": "http://llvm.org/"
   },
   {
