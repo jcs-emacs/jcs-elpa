@@ -1,9 +1,9 @@
 (package-build
- . [(5 0 0) ((emacs (26 1)) (compat (31 0)))
+ . [(5 0 0 0 20260710 2) ((emacs (26 1)) (compat (31 0)))
     "Curate an Emacs Lisp package archive" tar
     ((:url . "https://github.com/melpa/package-build")
-     (:commit . "f19a7f58cf4b2e573a6d551d8d3dbe265c2566b4")
-     (:revdesc . "v5.0.0-0-gf19a7f58cf4b") (:keywords "maint" "tools")
+     (:commit . "d31dec67631f14ef8be3ad6438e172a07298082b")
+     (:revdesc . "v5.0.0-2-gd31dec67631f") (:keywords "maint" "tools")
      (:authors ("Donald Ephraim Curtis" . "dcurtis@milkbox.net")
 	       ("Steve Purcell" . "steve@sanityinc.com")
 	       ("Jonas Bernoulli" . "jonas@bernoulli.dev"))
