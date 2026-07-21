@@ -261,4 +261,8 @@
 =======
 2026-07-10T18:23:46+0000  e-unit                     Command ‘git clone https\://codeberg.org/Trevoke/e-unit.el /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/e-unit/’ exited with non-zero exit-code: 128
 >>>>>>> Stashed changes
+<<<<<<< Updated upstream
 2026-07-21T11:08:41+0000  e-unit                     Command ‘git clone https\://codeberg.org/Trevoke/e-unit.el /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/e-unit/’ exited with non-zero exit-code: 128
+=======
+2026-07-21T11:09:04+0000  tree-sitter-indent         Command ‘git clone https\://codeberg.org/FelipeLema/tree-sitter-indent.el /home/runner/work/jcs-elpa/jcs-elpa/.github-elpa-working/tree-sitter-indent/’ exited with non-zero exit-code: 128
+>>>>>>> Stashed changes
