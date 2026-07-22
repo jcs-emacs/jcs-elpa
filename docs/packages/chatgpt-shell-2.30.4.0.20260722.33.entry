@@ -1,8 +1,8 @@
 (chatgpt-shell
- . [(2 30 4 0 20260221 25)
+ . [(2 30 4 0 20260722 33)
     ((emacs (28 1)) (shell-maker (0 82 3)) (transient (0 9 3)))
     "A family of utilities to interact with LLMs (ChatGPT, Claude, DeepSeek, Gemini, Kagi, Ollama, Perplexity)"
     tar
     ((:url . "https://github.com/xenodium/chatgpt-shell")
-     (:commit . "cbad6ffc9cbde1962a7317cf6d1d4d50ac1c1ac2")
-     (:revdesc . "cbad6ffc9cbd"))])
+     (:commit . "1e0e5c7af3a30de78b2e527679464b4cc6a18b21")
+     (:revdesc . "1e0e5c7af3a3"))])
