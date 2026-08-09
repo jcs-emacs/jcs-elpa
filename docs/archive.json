@@ -533,10 +533,10 @@
   {
     "name": "dashboard",
     "summary": "A startup screen extracted from Spacemacs",
-    "version": "1.8.0.0.20260402.113",
+    "version": "1.8.0.0.20260809.118",
     "url": "https://github.com/emacs-dashboard/dashboard",
     "source": "github",
-    "commit": "176d641a55543bda1f0c7506fb954702350c1857",
+    "commit": "a2c49ba27f3a906fd8b059da55104c1ec562b8b6",
     "tree": "https://github.com/emacs-dashboard/dashboard"
   },
   {
