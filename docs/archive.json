@@ -83,7 +83,7 @@
   {
     "name": "bitwarden",
     "summary": "Bitwarden command wrapper",
-    "version": "0.1.1.0.20240417.36",
+    "version": "0.1.1.0.20240417.42",
     "url": "https://github.com/seanfarley/emacs-bitwarden",
     "source": "github",
     "commit": "50c0078d356e0ac0bcaf26b40113700ba4123ec3",
@@ -1343,7 +1343,7 @@
   {
     "name": "lambda-line",
     "summary": "A custom status line",
-    "version": "0.1.0.20260528.144",
+    "version": "0.1.0.20260528.82",
     "url": "https://github.com/Lambda-Emacs/lambda-line",
     "source": "github",
     "commit": "b276afa194b692b36a50592985131211b371dfd7",
