@@ -1640,10 +1640,10 @@
   {
     "name": "nerd-icons",
     "summary": "Emacs Nerd Font Icons Library",
-    "version": "0.1.0.0.20260805.146",
+    "version": "0.1.0.0.20260823.149",
     "url": "https://github.com/rainstormstudio/nerd-icons.el",
     "source": "github",
-    "commit": "1e75075e323dedaf9f2fd5837082c60a2d0dfae3",
+    "commit": "17faac7977242b470732efd417d3bcc8eb5a830e",
     "tree": "https://github.com/rainstormstudio/nerd-icons.el"
   },
   {
