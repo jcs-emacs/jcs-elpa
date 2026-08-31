@@ -2198,10 +2198,10 @@
   {
     "name": "treesit-auto",
     "summary": "Automatically use tree-sitter enhanced major modes",
-    "version": "1.0.9.0.20260817.14",
+    "version": "1.0.9.0.20260831.18",
     "url": "https://github.com/renzmann/treesit-auto.git",
     "source": "github",
-    "commit": "c227806dddd4b413009a453c450285d1123e7d72",
+    "commit": "3106c739c2a84bec2cb671997fe074e5dd5dd967",
     "tree": "https://github.com/renzmann/treesit-auto.git"
   },
   {
