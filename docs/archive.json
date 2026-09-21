@@ -956,10 +956,10 @@
   {
     "name": "flymake-vale",
     "summary": "Flymake integration for vale",
-    "version": "0.0.2.0.20240402.2",
+    "version": "0.0.2.0.20260921.7",
     "url": "https://github.com/tpeacock19/new",
     "source": "github",
-    "commit": "32691d788a378915b98dba81e3af63227a630af3",
+    "commit": "3ae16071d7e1ab7cf4b0d30a731584d65a6d1977",
     "tree": "https://github.com/tpeacock19/new"
   },
   {
@@ -1667,10 +1667,10 @@
   {
     "name": "nerd-icons-completion",
     "summary": "Add icons to completion candidates",
-    "version": "0.0.1.0.20260412.39",
+    "version": "0.0.1.0.20260921.41",
     "url": "https://github.com/rainstormstudio/nerd-icons-completion",
     "source": "github",
-    "commit": "45b585d972192a3eaeb239e15e55de7f46f8920a",
+    "commit": "f924dd490c8c4c1066fd97a76e0dc31e303fca30",
     "tree": "https://github.com/rainstormstudio/nerd-icons-completion"
   },
   {
