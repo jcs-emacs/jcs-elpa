@@ -524,10 +524,10 @@
   {
     "name": "dape",
     "summary": "Debug Adapter Protocol for Emacs",
-    "version": "0.27.1.0.20260924.10",
+    "version": "0.28.0",
     "url": "https://github.com/svaante/dape",
     "source": "github",
-    "commit": "a5dcf2d086a91fbe6e600b6de482d8f680f4410c",
+    "commit": "1d45904b40bfdbdbe0e29546a13d7859a478f710",
     "tree": "https://github.com/svaante/dape"
   },
   {
@@ -1172,10 +1172,10 @@
   {
     "name": "indent-bars",
     "summary": "Highlight indentation with bars",
-    "version": "1.0.1.0.20260828.4",
+    "version": "1.0.1.0.20261026.7",
     "url": "https://github.com/jdtsmith/indent-bars",
     "source": "github",
-    "commit": "5d4b9131696b2c5992df24cfbcbe029cc16c7cb4",
+    "commit": "7ef4c38cb1f54cac8f5b43661aee6795b530966c",
     "tree": "https://github.com/jdtsmith/indent-bars"
   },
   {
