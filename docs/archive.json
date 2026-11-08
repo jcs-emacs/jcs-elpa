@@ -740,10 +740,10 @@
   {
     "name": "elfmt",
     "summary": "Code formatter for Elisp",
-    "version": "0.0.0.0.20260105.65",
+    "version": "0.0.0.0.20261108.67",
     "url": "https://github.com/riscy/elfmt",
     "source": "github",
-    "commit": "b0c5264324742ecfa88b1f381a0ccbb30cad90f7",
+    "commit": "a7c344b9aa3b2b2852a2fcf014474f95765ac05b",
     "tree": "https://github.com/riscy/elfmt"
   },
   {
