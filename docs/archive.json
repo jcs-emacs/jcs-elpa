@@ -1820,10 +1820,10 @@
   {
     "name": "punch-line",
     "summary": "A customizeable mode-line with Evil",
-    "version": "1.0.0.20260225.60",
+    "version": "1.0.0.20261111.64",
     "url": "https://github.com/konrad1977/punch-line",
     "source": "github",
-    "commit": "1b592e0bef5678dcb7bf78557b43a308321985c0",
+    "commit": "971e90ff14a57d199d7a5dc2964fc52f03ed83db",
     "tree": "https://github.com/konrad1977/punch-line"
   },
   {
