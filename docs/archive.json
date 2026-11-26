@@ -263,10 +263,10 @@
   {
     "name": "colorful-mode",
     "summary": "Preview any color in your buffer in real time",
-    "version": "1.2.6.0.20261016.2",
+    "version": "1.2.6.0.20261126.10",
     "url": "https://github.com/DevelopmentCool2449/colorful-mode",
     "source": "github",
-    "commit": "e834189f13c7b8add86fd419b3c243dd9afa90e9",
+    "commit": "2f42b8fdfb94f052162a7c5496089077e0e8da1e",
     "tree": "https://github.com/DevelopmentCool2449/colorful-mode"
   },
   {
@@ -2297,10 +2297,10 @@
   {
     "name": "undo-hl",
     "summary": "Highlight undo/redo",
-    "version": "1.0.0.20220523.10",
+    "version": "1.0.0.20261126.13",
     "url": "https://github.com/casouri/undo-hl",
     "source": "github",
-    "commit": "89fdcc62e3d938854433bc14d95e1c8e505eee20",
+    "commit": "084493681dead95d3b5710d75612a61c38a411e2",
     "tree": "https://github.com/casouri/undo-hl"
   },
   {
