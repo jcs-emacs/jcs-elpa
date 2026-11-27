@@ -101,10 +101,10 @@
   {
     "name": "breadcrumb",
     "summary": "Project and imenu-based breadcrumb paths",
-    "version": "1.1.0",
+    "version": "1.1.0.0.20261127.4",
     "url": "https://github.com/joaotavora/breadcrumb",
     "source": "github",
-    "commit": "f636f2643a2492f350d7c3624b8e6b9ed9bd2a7f",
+    "commit": "194f206ee956203a72d5992ee072d4d131fc76ba",
     "tree": "https://github.com/joaotavora/breadcrumb"
   },
   {
@@ -1397,10 +1397,10 @@
   {
     "name": "llvm-mode",
     "summary": "Major mode for the LLVM assembler language",
-    "version": "1.0.0.20260625.304240",
+    "version": "1.0.0.20261127.329683",
     "url": "http://llvm.org/",
     "source": "github",
-    "commit": "c07bc2962c5f76ebcbd040c4e97fe5d129530087",
+    "commit": "6c38085b39bb1b994856783d49d3bafad59a497c",
     "tree": "http://llvm.org/"
   },
   {
